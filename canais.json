@@ -531,7 +531,8 @@
       "#pixcc-home-raf-cx",
       "#squad_loan_seguimento",
       "#subacquirer-cx",
-      "#seguro_pix-cartão_cx"
+      "#seguro_pix-cartão_cx",
+      "#the-voice-cx"
     ],
     "schema_tabela_eventos": [
       "data",
@@ -547,34 +548,8 @@
       "Feature",
       "Comunicado"
     ],
-    "regra_correlacao_cruzada": "Ao analisar variacao de qualquer indicador em qualquer vertical, checar a tabela COMPLETA de eventos (todas as squads), nao apenas os eventos do canal sendo reportado. Citar explicitamente a origem quando o evento correlacionado vier de outro canal."
-  },
-  "pipeline_duas_etapas": {
-    "descricao": "Routine A (Rascunho) e Routine B (Validacao, painel e Slack) encadeadas com janela de comentarios humanos",
-    "routine_a_rascunho": {
-      "horario": "08:00 BRT (segunda)",
-      "destino": "#the-voice-cx (todos os 21 sets)",
-      "marcador_cabecalho": "[RASCUNHO -> #canal-real]",
-      "estrutura_de_cada_set": "mensagem raiz + thread 1 (report completo) + thread 2 (alertas) + thread 3 (estrutura de dados do report do painel, JSON do contrato v1)",
-      "janela_comentarios": "ate 12:00 BRT"
-    },
-    "routine_b_validacao": {
-      "horario": "12:15 BRT (segunda)",
-      "acao": "rele rascunho + comentarios em #the-voice-cx, revalida dados do zero, reconcilia, monta os reports de squad, atualiza o painel 156 e so entao dispara o Slack (mensagem principal + thread)",
-      "ordem": [
-        "4A montar os JSON dos reports",
-        "4B atualizar o painel 156 (html + rationale_md)",
-        "4C enviar o Slack aos canais reais (mensagem principal + thread)"
-      ],
-      "destino": "painel 156 + canal real de cada squad (sem marcador)",
-      "classificacao_comentarios": [
-        "correcao_factual",
-        "contexto_adicional",
-        "discordancia_interpretacao",
-        "pergunta_em_aberto"
-      ]
-    },
-    "the_voice_cx_channel_id": "C060F2QUJCD"
+    "regra_correlacao_cruzada": "Ao analisar variacao de qualquer indicador em qualquer vertical, checar a tabela COMPLETA de eventos (todas as squads), nao apenas os eventos do canal sendo reportado. Citar explicitamente a origem quando o evento correlacionado vier de outro canal.",
+    "nota_the_voice_cx": "Ler #the-voice-cx apenas como fonte de eventos e incidentes (ex.: instabilidades); ignorar posts antigos com o marcador [RASCUNHO ->]."
   },
   "painel": {
     "descricao": "Painel Arturito 156 (Experiencia do Produto / Experiencia RecargaPay): a Routine B grava ali, toda segunda, um report por squad. O Slack recebe so o resumo curto com links.",
@@ -654,5 +629,24 @@
     },
     "formatacao": "negrito com **dois asteriscos**; um asterisco so vira italico",
     "linhas_por_resposta": 3
+  },
+  "rotina_unica": {
+    "descricao": "Rotina unica semanal (v3.18): analisa, monta os reports, atualiza o painel 156 e envia o Slack aos canais reais. Nao ha rascunho nem janela de comentarios.",
+    "horario": "09:30 BRT (segunda)",
+    "ordem": [
+      "Fases 0-3 (dados frescos)",
+      "Fase 3.5 autoverificacao",
+      "4A montar os JSON dos reports",
+      "4B atualizar o painel 156 (html + rationale_md)",
+      "4C enviar o Slack aos canais reais (mensagem principal + 3 respostas na thread; Executivo tambem com o report completo)"
+    ],
+    "modos": {
+      "UNICO": "producao: PAINEL_ID=156 e canais reais",
+      "TESTE": "PAINEL_ID=485 e tudo em CANAL_TESTE (padrao #the-voice-cx) com prefixo [TESTE -> #canal-real], sem @here"
+    },
+    "destino": "painel 156 + canal real de cada squad",
+    "executivo_report_completo": true,
+    "executivo_canal": "#lideres-cx-e-cxm",
+    "canal_teste_padrao": "C060F2QUJCD"
   }
 }

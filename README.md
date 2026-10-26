@@ -1,50 +1,36 @@
 # VoC Report Automation — Setup Guide
 
-Pipeline semanal de VoC RecargaPay via **duas Claude Code Routines encadeadas**, com
-janela de revisão humana entre elas.
+Pipeline semanal de VoC RecargaPay em **uma única Claude Code Routine**: analisa a semana, monta os
+reports, atualiza o painel Arturito 156 e envia aos canais reais. Sem rascunho e sem janela de revisão.
 
 **Responsável:** Artur Nunes (artur.nunes@recargapay.com)
-**Última atualização:** 19/10/2026 (SKILL.md 3.15 — Slack em mensagem principal + 3 respostas objetivas na thread, com manchete, UX do produto e links por produto)
+**Última atualização:** 26/10/2026 (SKILL.md 3.18 — Rotina única; Routine A e Routine B unificadas)
 
 ---
 
-## Arquitetura — duas Routines, uma janela de revisão humana
+## Arquitetura — uma Rotina
 
 ```
-Segunda 08:00 BRT ──► Routine A (Rascunho) ──► #the-voice-cx (21 sets, marcados [RASCUNHO → #canal])
-                                                  cada set: raiz + thread 1 (report completo)
-                                                  + thread 2 (alertas) + thread 3 (dados do painel, JSON)
-                                                          │
-                                                janela de comentários do time
-                                                     (até 12:00 BRT)
-                                                          │
-Segunda 12:15 BRT ──► Routine B (Validação) ──► relê rascunho + comentários, revalida dados do zero
-                                                          │
-                                       1) monta o report de cada squad (JSON; inclui Seguros)
-                                       2) ATUALIZA O PAINEL ARTURITO 156 (html + rationale_md)
-                                       3) envia o Slack (mensagem principal + thread) aos canais reais, com os links
+Segunda 09:30 BRT ──► Rotina única (MODO=UNICO)
+                        Fases 0–3   dados frescos, uma vez só (21 sets: Geral, Executivo e 19 produtos)
+                        Fase 3.5    autoverificação (datas, totais, eventos com fonte, alertas, validador)
+                        Fase 4A     JSON de cada report (inclui Seguros)
+                        Fase 4B     ATUALIZA O PAINEL ARTURITO 156 (html + rationale_md)
+                        Fase 4C     Slack nos canais reais: mensagem principal + 3 respostas na thread
 ```
 
-**Routine A (Rascunho):** gera os 21 sets normalmente e envia **todos** para `#the-voice-cx`,
-cada um com o cabeçalho `[RASCUNHO → #canal-real]`, o report completo, os alertas e a
-**estrutura de dados** (o JSON que irá ao painel). Isso abre uma janela para o time comentar ou
-apontar ajustes diretamente na thread de cada set, até 12h. A Routine A não escreve em canal real
-nem no painel.
+**O que mudou em relação às duas Routines:** saem o rascunho em `#the-voice-cx`, a janela de
+comentários até 12h, a leitura de comentários e a segunda execução (a coleta e a revalidação
+rodavam duas vezes). O conteúdo enviado continua o mesmo: o mesmo painel com os 21 reports e as
+mesmas mensagens nos canais.
 
-**Routine B (Validação, Painel e Slack):** roda depois da janela fechar. Relê os dados do zero
-(não reaproveita os números da manhã), localiza os rascunhos e comentários em `#the-voice-cx`,
-faz o double-check de indicadores/eventos/datas/impactos e incorpora correções do time quando
-plausíveis. Depois **atualiza o painel 156** (campos `html` e `rationale_md`, nunca `js`, `css` ou
-`queries`) com um report por squad e, **só então**, envia a cada canal real uma **mensagem
-principal** (título, manchete sobre o produto e links do report da squad no painel 156 e do painel
-Experiência RecargaPay, 141) e, na **thread** dela, os resultados, alertas, eventos e incidentes,
-menções e o destaque de UX do produto (3 respostas curtas que só indicam o que há no Report). Se o painel não puder ser atualizado, a mensagem sai só com o
-link do painel 156 geral. Os grupos executivos
-recebem também os links de todos os reports de squad.
-
-As duas Routines compartilham o mesmo repositório e o mesmo `SKILL.md` — a diferença de
-comportamento vem do `MODO` definido no prompt de cada uma (ver seção "MODO DE EXECUÇÃO"
-no `SKILL.md`). O painel 156 e o formato dos links estão em `painel-156/contrato-report-v1.md`.
+**Slack (por set):** **mensagem principal** (título na primeira linha, manchete sobre o produto,
+linha fina e links com hiperlink no nome: `Report de {produto}` e `Experiência RecargaPay`) e, na
+**thread**, 3 respostas curtas — Resultados · Alertas e Destaques · Menções e UX do produto — que só
+indicam o que há no Report do painel 156. O Seguros sai em `#seguro_pix-cartão_cx`. Em
+`#lideres-cx-e-cxm`, além disso, o **Report Executivo completo** em 3 respostas na mesma thread (pode
+ser desligado em `canais.json › rotina_unica › executivo_report_completo`). Se o painel não puder ser
+atualizado, a mensagem sai só com o link do painel 156 geral.
 
 ---
 
@@ -52,7 +38,7 @@ no `SKILL.md`). O painel 156 e o formato dos links estão em `painel-156/contrat
 
 | Arquivo | Função | Frequência de edição |
 |---|---|---|
-| `SKILL.md` | Lógica principal — fases, filtros, templates, lógica dos dois MODOs | Raramente (mudança estrutural) |
+| `SKILL.md` | Lógica principal — fases, filtros, templates e MODO (UNICO ou TESTE) | Raramente (mudança estrutural) |
 | `canais.json` | Mapeamento canal → verticais → tags → aberturas obrigatórias | Ao mudar canais ou verticais |
 | `orientacoes-editoriais.md` | Instruções de análise por canal + `contexto_pontual` | `contexto_pontual` semanal; demais raramente |
 | `skill-databricks-mcp.md` | Tabelas, campos e queries padrão do Databricks | Ao adicionar tabelas ou métricas |
@@ -69,23 +55,23 @@ no `SKILL.md`). O painel 156 e o formato dos links estão em `painel-156/contrat
 ## Pré-requisitos por membro do time
 
 ### Plano Claude
-Requer plano **Pro, Max, Team ou Enterprise** com Claude Code habilitado. Como agora são
-**duas execuções semanais** (Rascunho + Validação) em vez de uma, o consumo de quota
-dobra — ainda cabe com folga no plano Pro (5 execuções/dia), mas vale considerar Max se
-o time usar Claude Code intensamente na mesma manhã de segunda.
+Requer plano **Pro, Max, Team ou Enterprise** com Claude Code habilitado. Como a Rotina é **uma execução semanal**, o consumo de quota é mínimo e cabe com folga no plano Pro.
 Acesso em: `claude.ai/code/routines`
 
-### MCPs necessários (conectar em Settings > Connectors) — os mesmos para as duas Routines
+### MCPs necessários (conectar em Settings > Connectors)
 
 | MCP | Finalidade | Obrigatório |
 |---|---|---|
 | `[TEST] MCP Gateway AWS AgentCore` | Queries Zendesk — motivos, causas raiz, análise qualitativa | ✅ Sim |
-| `Slack` | Leitura de canais de contexto, leitura de threads de comentários, envio dos reports | ✅ Sim |
+| `Slack` | Leitura de canais de contexto e envio dos reports | ✅ Sim |
 | `MCP Data - RecargaPay` | NPS, CSAT, Retenção de Bot, funil, perfil de clientes via Databricks | ✅ Sim |
 
 **Nota:** a integração com a API IndeCX (chamada HTTP direta, fora do protocolo MCP)
 foi removida em Jul/2026 após identificarmos que essa dependência de rede externa
 causava bloqueio de egress (HTTP 403) no ambiente de execução das Routines.
+
+---
+
 
 ---
 
@@ -97,42 +83,50 @@ Em `claude.ai` → Settings → Connectors:
 - Slack MCP — confirmar autenticação com conta RecargaPay
 - `MCP Data - RecargaPay` → `https://mcp-data.recargapay.com/mcp`
 
-### 2. Criar a Routine A — Rascunho
 
-Em `claude.ai/code/routines` → New Routine:
+### 2. Criar (ou editar) a Rotina
 
-- **Name:** `VoC Report Semanal — Rascunho (Routine A)`
-- **Repository:** `VoC-Product-Reports`
-- **Trigger:** Schedule → Weekly → Monday → 11:00 UTC (= 08:00 BRT)
-- **Connectors:** manter AgentCore + Slack + MCP Data RP; remover os demais
+Em `claude.ai/code/routines`, **edite a rotina "Report Produto A"** (não crie uma nova — assim o
+repositório e os conectores já estão certos):
+- **Nome:** `Report VoC` (ou o que preferir)
+- **Instruções:** o prompt abaixo (cópia em `prompt-rotina-unica.txt`; o prompt vive na Rotina, não no GitHub)
+- **Repositório:** `VoC-Product-Reports` (o mesmo)
+- **Gatilho:** toda segunda-feira às **9:30 BRT** (o mesmo da Routine A)
+- **Conectores:** os 5 atuais (MCP Data - RecargaPay, AWS AgentCore MCP Gateway, MCP-Proxy-RecargaPay, Slack e o gateway de teste)
+- **Depois:** **desative ou apague a Routine B.** Se as duas ficarem ativas, os canais recebem mensagem duplicada.
 
-**Prompt da Routine A:**
-```
-Você é um analista especializado em Voice of Customer (VoC) da RecargaPay executando a
-Routine A (Rascunho) de um pipeline de duas etapas, com Claude Sonnet 5.
+O prompt gera os 21 sets, usa `MODO=UNICO` e `PAINEL_ID=156`; `MODO=TESTE` usa o painel 485 e o
+`CANAL_TESTE`.
 
-MODO=RASCUNHO
+```text
+Você é um analista especializado em Voice of Customer (VoC) da RecargaPay executando a Rotina única
+de reports VoC (análise, painel 156 e Slack) com Claude Sonnet 5.
+
+MODO=UNICO
+PAINEL_ID=156
 
 VALIDAÇÃO INICIAL (antes da Fase 0)
-Confirme que as tools dos 3 MCPs abaixo estão de fato registradas nesta sessão (busque
-por nome exato de cada uma).
+Confirme que as tools dos 3 MCPs abaixo estão de fato registradas nesta sessão (busque por nome exato
+de cada uma; no caso do Zendesk, localize a tool pelo sufixo `zendesk___zendesk`, porque o prefixo do
+servidor varia por ambiente).
 
-**Databricks e Slack são obrigatórios e bloqueantes.** Se qualquer um dos dois não
-retornar tools utilizáveis, encerre a execução sem dados parciais ou inventados,
-registre exatamente o que falhou e notifique.
+**Databricks e Slack são obrigatórios e bloqueantes.** Se qualquer um dos dois não retornar tools
+utilizáveis, encerre a execução sem dados parciais ou inventados, registre exatamente o que falhou e
+notifique. Isso é crítico: esta Rotina atualiza o painel 156 e publica nos canais reais das squads.
+A ferramenta `arturito_update_dashboard` do MCP Data - RecargaPay NÃO é bloqueante: se faltar ou falhar,
+siga o formato de falha do painel descrito em EXECUÇÃO.
 
-**Zendesk NUNCA é motivo para abortar a execução — é complemento, não obrigatório.**
-Se o MCP Gateway AWS AgentCore (`zendesk___zendesk`) não estiver disponível, tentar o
-fallback `MCP-Proxy-RecargaPay` (tool `zendesk`). Se **nenhum dos dois** estiver
-disponível, seguir direto para o "MODO DEGRADADO — SOMENTE DATABRICKS" do SKILL.md —
-sem nova tentativa, sem hesitação, sem encerrar a execução. A maior parte do pipeline já
-roda 100% em Databricks independente de Zendesk (NPS, CSAT, volume, retenção de bot,
-Central de Ajuda, rankings de motivo/causa raiz) — Zendesk ao vivo serve só para
-aprofundar a leitura qualitativa, que tem substituto direto via
-`fat_tickets_transcription_summary` no próprio Databricks.
+**Zendesk NUNCA é motivo para abortar a execução — é complemento, não obrigatório.** Se o
+AWS-AgentCore-MCP-Gateway (tool `zendesk___zendesk`) não estiver disponível, tentar o fallback
+`MCP-Proxy-RecargaPay` (tool `zendesk`), se existir nesta sessão. Se nenhum dos dois estiver disponível,
+seguir direto para o "MODO DEGRADADO — SOMENTE DATABRICKS" do SKILL.md, sem nova tentativa e sem
+encerrar a execução. A maior parte do pipeline roda 100% em Databricks (NPS, CSAT, volume, retenção de
+bot, Central de Ajuda, rankings de motivo/causa raiz); o Zendesk ao vivo só aprofunda a leitura
+qualitativa, que tem substituto direto em `fat_tickets_transcription_summary` (respeitando o gate de
+cobertura do SKILL.md). Sem esta regra, as squads simplesmente não recebem report naquela semana.
 
-Execute o pipeline completo de reports VoC conforme as instruções do SKILL.md deste
-repositório, respeitando o MODO=RASCUNHO definido na seção "MODO DE EXECUÇÃO" do SKILL.md.
+Execute o pipeline completo de reports VoC conforme as instruções do SKILL.md deste repositório,
+respeitando o MODO=UNICO definido na seção "MODO DE EXECUÇÃO" do SKILL.md.
 
 CONFIGURAÇÃO
 - Período: semana anterior completa em BRT (segunda 00:00 a domingo 23:59)
@@ -140,228 +134,115 @@ CONFIGURAÇÃO
 - Modelo: claude-sonnet-5
 
 ARQUIVOS DE REFERÊNCIA — repositório (ler na Fase 0)
-- SKILL.md → lógica principal, fases de execução, templates e lógica de MODO
-- canais.json → canais, verticais, tags Zendesk, aberturas obrigatórias e thresholds
+- SKILL.md → lógica principal, fases de execução, templates e MODO
+- canais.json → canais, verticais, tags Zendesk, aberturas obrigatórias, thresholds e a rotina única
 - orientacoes-editoriais.md → instruções de análise por canal e contexto_pontual
-- skill-databricks-mcp.md → queries específicas da Routine não cobertas pelas skills organizacionais
-- skill-zendesk-cx.md → protocolo complementar de queries Zendesk desta Routine
+- skill-databricks-mcp.md → queries específicas da Rotina não cobertas pelas skills organizacionais
+- skill-zendesk-cx.md → protocolo complementar de queries Zendesk desta Rotina
 - mapeamento-produtos-painel141.json → produtos e temas (regex) do painel 141, para as menções em NPS Relacional, lojas e redes
-- painel-156/contrato-report-v1.md e painel-156/registro-painel.json → contrato de dados do report no painel 156 e chave de cada set
+- painel-156/contrato-report-v1.md, painel-156/registro-painel.json, painel-156/montar_html_reports.py,
+  painel-156/validar_report.py, painel-156/html-esqueleto.html e painel-156/rationale-painel-156.md
 
 SKILLS ORGANIZACIONAIS — ler na Fase 0 Passo 0, têm precedência QUANDO DISPONÍVEIS
-Tentar em dois caminhos: /mnt/skills/organization/{nome}/ (ambiente de chat) primeiro,
-depois /root/.claude/skills/{nome}/ (ambiente de execução de Routines) se o primeiro
-não existir. Se a skill ou seus arquivos de references/ não forem encontrados em
-NENHUM dos dois: usar o fallback do próprio repositório (ver tabela de fallback no
-SKILL.md) e sinalizar isso SOMENTE na notificação interna, nunca no texto dos reports
-enviados às squads — NÃO bloquear a execução por
-skill organizacional ausente.
+Tentar em dois caminhos: /mnt/skills/organization/{nome}/ (ambiente de chat) primeiro, depois
+/root/.claude/skills/{nome}/ (ambiente de execução de Routines) se o primeiro não existir. Se a skill ou
+seus arquivos de references/ não forem encontrados em NENHUM dos dois: usar o fallback do próprio
+repositório (ver tabela de fallback no SKILL.md) e sinalizar isso SOMENTE na notificação interna, nunca
+no texto dos reports enviados às squads — NÃO bloquear a execução por skill organizacional ausente.
 
-- cx-orchestrator-reference/references/exclusions.md → lista completa e atualizada de
-  exclusões obrigatórias. Fallback: skill-zendesk-cx.md §5.
-- cx-orchestrator-reference/references/custom-field-values.md → tags exatas de
-  Vertical/Motivo de Contato/Causa Raiz. Fallback: skill-zendesk-cx.md §8.
-- cx-orchestrator-reference/references/security-anti-injection.md → obrigatório em toda
-  leitura de body/transcrição de ticket. Fallback: seção "SEGURANÇA — ANTI-INJECTION" do SKILL.md.
-- cx-helpcenter-impact/SKILL.md → apenas para descrever mudanças de conteúdo em artigos
-  da Central de Ajuda. Sem fallback — se ausente, apenas omitir essa descrição qualitativa.
+- cx-orchestrator-reference/references/exclusions.md → exclusões obrigatórias. Fallback: skill-zendesk-cx.md §5.
+- cx-orchestrator-reference/references/custom-field-values.md → tags exatas de Vertical/Motivo de Contato/Causa Raiz. Fallback: skill-zendesk-cx.md §8.
+- cx-orchestrator-reference/references/security-anti-injection.md → obrigatório em toda leitura de body/transcrição de ticket. Fallback: seção "SEGURANÇA — ANTI-INJECTION" do SKILL.md.
+- cx-helpcenter-impact/SKILL.md → só para descrever mudanças de conteúdo em artigos da Central de Ajuda. Sem fallback — se ausente, omitir essa descrição.
 
 DADOS DE PERÍODO FECHADO — MCP Data - RecargaPay (Databricks + DataHub)
-A skill cx-product-insights foi APOSENTADA pela organização (cx-orchestrator-reference v15.0):
-NÃO a procure e NÃO bloqueie a execução por ela. NPS, CSAT, volume, retenção de bot, Central de
-Ajuda e rankings de motivo/causa raiz vêm do MCP Data - RecargaPay (agg_overview e demais tabelas),
-seguindo o fluxo oficial (cx-orchestrator-reference/references/mcp-routing.md): (1) chamar get_skill
-com name='workflow' (Step 0) e depois name='concepts' ANTES da primeira query; (2) localizar a
-tabela e a métrica no DataHub (datahub_search, datahub_search_glossary_terms, datahub_get_dataset,
+A skill cx-product-insights foi APOSENTADA pela organização (cx-orchestrator-reference v15.0): NÃO a
+procure e NÃO bloqueie a execução por ela. NPS, CSAT, volume, retenção de bot, Central de Ajuda e
+rankings de motivo/causa raiz vêm do MCP Data - RecargaPay (agg_overview e demais tabelas), seguindo o
+fluxo oficial (cx-orchestrator-reference/references/mcp-routing.md): (1) chamar get_skill com
+name='workflow' (Step 0) e depois name='concepts' ANTES da primeira query; (2) localizar a tabela e a
+métrica no DataHub (datahub_search, datahub_search_glossary_terms, datahub_get_dataset,
 datahub_get_glossary_term) e ler as descrições de tabela e coluna — é delas que vêm a definição
 oficial, os filtros e o grão; não assumir tabela, coluna, flag ou fórmula de memória; (3) checar o
-frescor com datahub_get_dataset_quality (dado fechado é D-1); (4) rodar a query com
-databricks_run_query, ou databricks_query_governed_metric quando a métrica for governada.
-Divergência entre o DataHub e o repositório: prevalece o DataHub; registrar só na notificação
-interna. As queries do skill-databricks-mcp.md continuam como ponto de partida, validadas contra o DataHub.
+frescor com datahub_get_dataset_quality (dado fechado é D-1); (4) rodar a query com databricks_run_query,
+ou databricks_query_governed_metric quando a métrica for governada. Divergência entre o DataHub e o
+repositório: prevalece o DataHub; registrar só na notificação interna.
 
-NÃO invocar: cx-realtime-overview, cx-realtime-insights, cx-realtime-vertical-analysis —
-são skills de tempo real ("hoje/agora"); esta Routine sempre cobre período fechado
-(semana anterior), que é sempre roteado para o MCP Data - RecargaPay (cx-orchestrator-reference/references/skill-routing.md §0).
+NÃO invocar: cx-realtime-overview, cx-realtime-insights, cx-realtime-vertical-analysis — são skills de
+tempo real; esta Rotina cobre período fechado (semana anterior), roteado para o MCP Data - RecargaPay
+(cx-orchestrator-reference/references/skill-routing.md §0).
 
 MCPs — únicas integrações permitidas
-- Zendesk: [TEST] MCP Gateway AWS AgentCore (tool zendesk___zendesk) — PRIMÁRIO, nunca
-  bloqueante (ver "Hierarquia de importância" no SKILL.md)
-- Zendesk — FALLBACK AUTORIZADO: MCP-Proxy-RecargaPay (tool zendesk), usar
-  imediatamente se o primário não retornar tools utilizáveis — sem necessidade de
-  múltiplas tentativas antes de decidir isso. Se nenhum dos dois funcionar, seguir para
-  o MODO DEGRADADO (SKILL.md) — nunca abortar por isso. Sinalizar sempre no
-  log/notificação interna quando o fallback ou o modo degradado forem usados.
-- Dados: MCP Data - RecargaPay (databricks_run_query / databricks_preview_query) — CRÍTICO, bloqueante
+- Zendesk: AWS-AgentCore-MCP-Gateway (tool zendesk___zendesk, localizada pelo sufixo) — PRIMÁRIO, nunca bloqueante
+- Zendesk — FALLBACK AUTORIZADO (legado): MCP-Proxy-RecargaPay (tool zendesk), usado imediatamente se o
+  primário não retornar tools utilizáveis. Se nenhum dos dois funcionar, seguir para o MODO DEGRADADO
+  (SKILL.md) — nunca abortar por isso. Registrar só na notificação interna.
+- Dados: MCP Data - RecargaPay (databricks_run_query / databricks_preview_query / get_skill / datahub_*) — CRÍTICO, bloqueante
+- Painel: MCP Data - RecargaPay (arturito_update_dashboard) — escrita SOMENTE no dashboard PAINEL_ID,
+  SOMENTE nos campos html e rationale_md; nunca js, css ou queries; nunca outro dashboard
 - Contexto e envio: Slack MCP — CRÍTICO, bloqueante
 ⛔ Não realizar chamadas HTTP diretas a domínios externos.
 
-FALLBACK DE ZENDESK — quando usar
-Se a validação inicial encontrar falha de conexão no MCP Gateway AWS AgentCore (ex:
-erro 502, SdkHttpError, timeout — não apenas "tool não registrada", que pode ser
-variação de sessão e merece nova tentativa antes de qualquer coisa): tentar de novo uma
-vez. Se a falha se repetir da mesma forma na segunda tentativa, isso é falha real de
-infraestrutura, não intermitência de sessão — autorizado usar o MCP-Proxy-RecargaPay
-(tool `zendesk`) como fonte de Zendesk para toda a execução, em vez de abortar. Registrar
-isso claramente SOMENTE na notificação interna — nunca no texto dos reports, nem de forma
-discreta.
-Nunca abortar a execução só porque o gateway primário falhou, se o fallback autorizado
-estiver funcional — o objetivo desta regra é justamente evitar que os 21 reports deixem
-de ser gerados por uma falha pontual de um único gateway.
-
 FILTROS CRÍTICOS — sempre usar a versão corrigida
 Ao consultar `dim_zendesk_tickets_summary` ou `agg_overview` no Databricks, usar sempre
-`friendly_service_channel <> 'derivacao'` (nunca `key_channel NOT LIKE '%deriva%'`). Ver
-lista completa de exclusões em cx-orchestrator-reference/references/exclusions.md ou,
-se ausente, em skill-zendesk-cx.md §5.
+`friendly_service_channel <> 'derivacao'` (nunca `key_channel NOT LIKE '%deriva%'`). Lista completa de
+exclusões em cx-orchestrator-reference/references/exclusions.md ou, se ausente, em skill-zendesk-cx.md §5.
 
 EXECUÇÃO
-Execute as fases em sequência sem interrupção conforme o MODO=RASCUNHO: gere os 21 sets
-de report e envie TODOS para #the-voice-cx (ID C060F2QUJCD), cada um com o cabeçalho
-[RASCUNHO → #canal-real] e o convite a comentários até 12h, conforme especificado no
-SKILL.md Fase 4. Cada set tem a mensagem raiz e TRÊS threads: (1) report completo,
-(2) alertas e (3) a estrutura de dados do report do painel 156 (JSON do contrato v1, em
-painel-156/contrato-report-v1.md), com os mesmos números do report completo. Nesta Routine
-você NÃO escreve em canais reais das squads e NÃO atualiza o painel 156. Na Fase 1, ler os
-últimos 14 dias de TODOS os canais de destino e montar a tabela única de eventos e incidentes
-de todas as squads, usando-a para correlação cruzada em cada report. Se um MCP falhar após
-passar na validação inicial, omita as seções afetadas e continue com os dados disponíveis.
+Execute, em uma única passada e sem interrupção, as Fases 0 a 3 (dados frescos, uma vez só). Na Fase 1,
+leia os últimos 14 dias de todos os canais de destino e de #the-voice-cx (só como fonte de eventos e
+incidentes; ignore posts antigos com [RASCUNHO →]) e monte a tabela única de eventos e incidentes de
+todas as squads, usando-a na correlação cruzada de cada report. Faça a Fase 3.5 (autoverificação) e,
+na Fase 4A, monte o JSON final de cada um dos 21 reports (Geral, Executivo e 19 produtos, incluindo
+Seguros). Não há rascunho nem comentários do time: nada é postado antes da publicação.
+Na Fase 4B, monte e valide o campo html com painel-156/montar_html_reports.py e atualize o dashboard
+PAINEL_ID com arturito_update_dashboard, enviando SOMENTE html e rationale_md (copiados integralmente
+dos arquivos, sem alterar). Se a atualização falhar duas vezes, ou se a ferramenta não estiver
+disponível, NÃO aborte: registre a falha só na notificação interna e siga.
+Só depois do painel, na Fase 4C, envie ao canal real de cada squad, conforme canais.json, a MENSAGEM
+PRINCIPAL e, na thread dela (thread_ts = ts devolvido), TRÊS respostas curtas, seguindo o TEMPLATE
+SLACK DA ROTINA do SKILL.md. Principal: na PRIMEIRA linha o título ":bar_chart: Report VoC — {produto} ·
+Semana {NN} · {DD/MM}–{DD/MM/AAAA}"; logo depois a manchete (um destaque do produto ligado a evento,
+incidente ou novo resultado, relacionando com a semana anterior quando houver dado), a linha fina, os
+links (hiperlink no nome: "Report de {produto}" e "Experiência RecargaPay") e o aviso de que na thread
+há resultados, alertas, destaques, menções e UX. Thread, nesta ordem: (1) Resultados; (2) Alertas e
+Destaques; (3) Menções e UX do produto. Cada resposta é objetiva (só nomes e números), apenas indica o
+que há disponível no Report do painel 156 e termina com o link "Ver no Report"; o detalhe, o impacto
+observado, os temas e os trechos ficam no Report. Em #lideres-cx-e-cxm, depois dessas 3 respostas,
+poste na mesma thread o Report Executivo completo em 3 respostas (resultado, satisfação e volume;
+eventos e pontos de atenção; alertas), conforme o SKILL.md. Nunca poste o conteúdo da thread como
+mensagem solta no canal. Seguros vai ao canal #seguro_pix-cartão_cx (ID C0BDW931ZA9). Formatação:
+negrito com **dois asteriscos**; um asterisco só vira itálico. Na URL dos links escreva o & simples
+(nunca &amp;). Com o painel atualizado e o report publicado, use o link do report da squad e o do painel
+141; se o painel falhou ou o report ficou ausente, SOMENTE o link do painel 156 geral. Nunca mencione o
+processo, a validação, falhas de ferramenta ou skill ausente no texto enviado. Se um MCP falhar após a
+validação inicial, omita as seções afetadas e continue.
+
+MODO TESTE (só quando o prompt disser MODO=TESTE): use PAINEL_ID=485 (nunca o 156) e envie tudo para o
+CANAL_TESTE indicado (padrão #the-voice-cx, ID C060F2QUJCD), com o prefixo [TESTE → #canal-real] no
+título e sem <!here>.
 ```
 
-### 3. Criar a Routine B — Validação, Painel e Slack
+### 3. Testar antes da primeira execução real
 
-Em `claude.ai/code/routines` → New Routine:
-
-- **Name:** `VoC Report Semanal — Validação, Painel e Slack (Routine B)`
-- **Repository:** `VoC-Product-Reports` (mesmo repositório da Routine A)
-- **Trigger:** Schedule → Weekly → Monday → 15:15 UTC (= 12:15 BRT — 15 min após o fim
-  da janela de comentários)
-- **Connectors:** os mesmos 3 da Routine A. O conector `MCP Data - RecargaPay` precisa estar
-  autenticado com a conta do **dono do painel 156** (Artur): só o dono atualiza o dashboard.
-- **Antes de ativar:** pausar a Routine antiga "Atualização semanal - CXM - VoC - Experiência
-  Produto" — ela escreve em variáveis que não existem mais no JS do painel 156.
-
-**Prompt da Routine B:**
+Com **Run now**, troque no topo do prompt `MODO=UNICO`/`PAINEL_ID=156` por:
 ```
-Você é um analista especializado em Voice of Customer (VoC) da RecargaPay executando a
-Routine B (Validação, Painel e Slack) de um pipeline de duas etapas, com Claude Sonnet 5.
-
-MODO=VALIDACAO
-PAINEL_ID=156
-
-VALIDAÇÃO INICIAL (antes da Fase 0)
-Confirme que as tools dos 3 MCPs abaixo estão de fato registradas nesta sessão.
-
-**Databricks e Slack são obrigatórios e bloqueantes.** Se qualquer um dos dois não
-retornar tools utilizáveis, encerre a execução, registre o que falhou e notifique. Isso
-é crítico nesta Routine, já que ela atualiza o painel 156 e publica nos canais reais das squads.
-A ferramenta `arturito_update_dashboard` do MCP Data - RecargaPay NÃO é bloqueante: se faltar
-ou falhar, siga o formato de falha do painel descrito em EXECUÇÃO.
-
-**Zendesk NUNCA é motivo para abortar a execução — nem aqui, nem na Routine A. É
-complemento, não obrigatório.** Se o MCP Gateway AWS AgentCore (`zendesk___zendesk`) não
-estiver disponível, tentar o fallback `MCP-Proxy-RecargaPay` (tool `zendesk`). Se
-**nenhum dos dois** estiver disponível, seguir direto para o "MODO DEGRADADO — SOMENTE
-DATABRICKS" do SKILL.md — sem nova tentativa, sem hesitação, sem encerrar a execução. Sem
-esta regra, a squad simplesmente não recebe report nenhum naquela semana, mesmo havendo
-dado suficiente via Databricks para publicar algo com qualidade — essa é exatamente a
-falha que esta instrução existe para evitar.
-
-Execute o pipeline completo de reports VoC conforme as instruções do SKILL.md deste
-repositório, respeitando o MODO=VALIDACAO definido na seção "MODO DE EXECUÇÃO" do SKILL.md.
-
-CONFIGURAÇÃO
-- Período: mesmo período da Routine A desta manhã (semana anterior completa em BRT)
-- Modelo: claude-sonnet-5
-
-ARQUIVOS DE REFERÊNCIA E SKILLS ORGANIZACIONAIS
-Mesmos da Routine A — ver SKILL.md, canais.json, orientacoes-editoriais.md,
-skill-databricks-mcp.md, skill-zendesk-cx.md, mapeamento-produtos-painel141.json, e as skills
-organizacionais listadas no SKILL.md (cx-orchestrator-reference, cx-helpcenter-impact) e o fluxo do MCP Data - RecargaPay para dado fechado.
-Além deles, desta Routine: painel-156/contrato-report-v1.md, painel-156/registro-painel.json,
-painel-156/montar_html_reports.py, painel-156/validar_report.py, painel-156/html-esqueleto.html e
-painel-156/rationale-painel-156.md.
-
-MCPs — únicas integrações permitidas
-- Zendesk: [TEST] MCP Gateway AWS AgentCore (tool zendesk___zendesk) — PRIMÁRIO, nunca
-  bloqueante (ver "Hierarquia de importância" no SKILL.md — mesma regra da Routine A)
-- Zendesk — FALLBACK AUTORIZADO: MCP-Proxy-RecargaPay (tool zendesk), usar
-  imediatamente se o primário não retornar tools utilizáveis — sem necessidade de
-  múltiplas tentativas. Se nenhum dos dois funcionar, seguir para o MODO DEGRADADO
-  (SKILL.md) — nunca abortar por isso, mesmo esta Routine publicando a versão final.
-  Sinalizar sempre no log/notificação interna.
-- Dados: MCP Data - RecargaPay (databricks_run_query / databricks_preview_query) — CRÍTICO, bloqueante
-- Painel: MCP Data - RecargaPay (arturito_update_dashboard) — escrita SOMENTE no dashboard PAINEL_ID,
-  SOMENTE nos campos html e rationale_md; nunca js, css ou queries; nunca outro dashboard
-- Contexto, leitura de rascunho/comentários e envio final: Slack MCP — CRÍTICO, bloqueante
-⛔ Não realizar chamadas HTTP diretas a domínios externos.
-
-FILTROS CRÍTICOS — mesmos da Routine A (ver skill-zendesk-cx.md e exclusions.md)
-
-EXECUÇÃO
-Execute as Fases 0 a 3 do zero — revalidar todos os dados com informação fresca, não
-reaproveitar números da Routine A. Em seguida, execute a Fase 3.5 (exclusiva do
-MODO=VALIDACAO): localizar em #the-voice-cx os 21 sets postados pela Routine A hoje
-(marcador [RASCUNHO →]), ler cada thread por completo incluindo comentários do time, e
-classificá-los conforme o SKILL.md (correção factual, contexto adicional, discordância,
-pergunta em aberto). Na Fase 4A, reconciliar os dados revalidados com o rascunho e os
-comentários, ajustando o report quando um comentário apontar uma correção plausível e
-verificável, e montar o JSON final de cada report de squad, incluindo Seguros.
-Na Fase 4B, montar e validar o campo html com painel-156/montar_html_reports.py e atualizar o
-dashboard PAINEL_ID com arturito_update_dashboard, enviando SOMENTE html e rationale_md
-(copiados integralmente dos arquivos, sem alterar). Se a atualização falhar duas vezes, ou se a
-ferramenta não estiver disponível, NÃO aborte: registre a falha só na notificação interna e siga.
-Só depois do painel, na Fase 4C, envie ao canal real de cada squad, conforme canais.json (sem o
-marcador [RASCUNHO →]), a MENSAGEM PRINCIPAL e, na thread dela (thread_ts = ts devolvido), TRÊS
-respostas curtas, seguindo o TEMPLATE SLACK DA ROUTINE B do SKILL.md. Principal: na PRIMEIRA linha o
-título ":bar_chart: Report VoC — {produto} · Semana {NN} · {DD/MM}–{DD/MM/AAAA}"; logo depois a
-manchete (um destaque do produto ligado a evento, incidente ou novo resultado, relacionando com a
-semana anterior quando houver dado), a linha fina, os links (hiperlink no nome: "Report de {produto}"
-e "Experiência RecargaPay") e o aviso de que na thread há resultados, alertas, destaques, menções e
-UX. Thread, nesta ordem: (1) Resultados; (2) Alertas e Destaques; (3) Menções e UX do produto. Cada
-resposta é objetiva (só nomes e números), apenas indica o que há disponível no Report do painel 156 e
-termina com o link "Ver no Report"; o detalhe, o impacto observado, os temas e os trechos ficam no
-Report. Nunca poste o conteúdo da thread como mensagem solta no canal. Formatação: negrito com
-**dois asteriscos**; um asterisco só vira itálico. Na URL dos links escreva o & simples (nunca &amp;). Com o painel atualizado e o report publicado, use
-o link do report da squad e o do painel 141; se o painel falhou ou o report ficou ausente, SOMENTE o
-link do painel 156 geral. Nunca mencione o processo
-de validação, o rascunho, falhas de ferramenta ou skill ausente no texto enviado. Se um MCP
-falhar após a validação inicial, omita as seções afetadas e continue.
+MODO=TESTE
+PAINEL_ID=485
+CANAL_TESTE=#the-voice-cx
 ```
+Isso valida a montagem do HTML, a chamada `arturito_update_dashboard` (permissão do dono, ~150 KB,
+marcador final) e todas as mensagens, **sem** publicar nos canais reais e sem tocar no painel 156.
+Depois do teste, volte o topo para `MODO=UNICO` e `PAINEL_ID=156` e faça **uma** execução real.
 
-### 4. Testar antes de ativar (as duas Routines)
-
-**Para a Routine A:** usar **Run now** normalmente — o próprio `MODO=RASCUNHO` já envia
-para `#the-voice-cx`, então não precisa de um modo teste adicional.
-
-**Para a Routine B:** antes de rodar contra os canais reais e o painel 156 pela primeira vez,
-trocar `PAINEL_ID=156` por `PAINEL_ID=485` (rascunho técnico) e adicionar temporariamente ao
-final do prompt:
-```
-MODO TESTE ADICIONAL: mesmo em MODO=VALIDACAO, redirecionar o envio final do Slack para
-#the-voice-cx em vez do canal real, com o marcador [VALIDADO-TESTE → #canal-real], e usar
-PAINEL_ID=485 (nunca o 156).
-```
-Isso valida a reconciliação, a montagem do HTML e a chamada `arturito_update_dashboard`
-(permissão do dono, tamanho de ~100 KB, marcador final) sem publicar nos canais reais das squads
-e sem tocar no painel de produção. Depois do teste: voltar `PAINEL_ID=156`, remover a linha de
-teste e fazer **uma** execução real, conferindo o checklist abaixo.
-
-**Diferença entre este "MODO TESTE ADICIONAL" e o `MODO=RASCUNHO`:** o rascunho é parte
-do fluxo normal de produção (roda toda semana, é esperado); o modo teste adicional é só
-para validar a Routine B antes de confiar nela para publicar de verdade — usar só durante
-o setup inicial ou após mudanças relevantes no `SKILL.md`.
-
-**Checklist da primeira execução real da Routine B:**
+**Checklist da primeira execução real:**
 - [ ] Painel 156 mostra a nova "Semana NN" em cada aba **Report da squad**
-- [ ] Os links `...id=156&r=<chave>/rep` das mensagens abrem o report certo (conferir 3: um simples,
-  um com sub-produto, um dos executivos) e o link do 141 abre
-- [ ] Os links abrem direto no Report: a URL usa `&` simples (se aparecer `&amp;` na URL, o link está errado)
-- [ ] Cada set sai como **mensagem principal** (título na primeira linha, manchete sobre o produto, links) e **3 respostas curtas na thread** (Resultados · Alertas e Destaques · Menções e UX), que só indicam o que há no Report; as respostas usam o `thread_ts` da principal
-- [ ] Links com hiperlink no nome (`Report de {produto}` e `Experiência RecargaPay`), sem URL por extenso
-- [ ] Negrito aparece como negrito (`**texto**`); nenhuma mensagem inteira em itálico
+- [ ] Os links `...id=156&r=<chave>/rep` abrem direto no Report (conferir 3: um simples, um com sub-produto, um dos executivos) e o link do 141 abre; a URL usa `&` simples
+- [ ] Cada set sai como **mensagem principal** (título na primeira linha, manchete, links) e **3 respostas curtas na thread**; `#seguro_pix-cartão_cx` recebeu o de Seguros
+- [ ] `#lideres-cx-e-cxm` recebeu também o Report Executivo completo (respostas 4 a 6)
+- [ ] Negrito aparece como negrito; nenhuma mensagem inteira em itálico
 - [ ] Números do Slack iguais aos do report no painel
-- [ ] Nenhuma frase sobre rascunho, validação ou falha de ferramenta nos textos
+- [ ] Nenhuma frase sobre processo, validação ou falha de ferramenta nos textos
 
 ---
 
@@ -371,21 +252,16 @@ o setup inicial ou após mudanças relevantes no `SKILL.md`.
 - Verificar se há `contexto_pontual` a preencher em algum canal do `orientacoes-editoriais.md`
 - Limpar os campos `contexto_pontual` que ficaram da semana anterior
 
-**Toda segunda, 08h–12h (janela de comentários):**
-- Acompanhar `#the-voice-cx` e comentar diretamente nas threads do rascunho quando algo
-  precisar de ajuste, contexto adicional ou correção
-
-**Toda segunda, após 12h15 (após a Routine B publicar):**
+**Toda segunda, depois das 9h30 (após a Rotina rodar):**
 - Abrir o painel 156 e conferir que os reports da semana estão nas abas das squads
-- Confirmar que as mensagens principais (com a thread de resultados, alertas e destaques) chegaram nos canais reais corretos, com os links
-- Conferir se os comentários feitos na janela da manhã foram de fato incorporados
+- Confirmar que as mensagens principais (com a thread) chegaram nos canais reais corretos, com os links
 - Tratar alertas 🔴 que exigem ação
-- Verificar se alguma seção foi omitida (possível falha de MCP em qualquer uma das duas Routines)
+- Verificar se alguma seção foi omitida (possível falha de MCP). **Como não há mais revisão antes do envio, vale ler o Report Executivo logo após a publicação.**
 
 **A cada sprint ou quando necessário:**
 - Atualizar tags Zendesk em `canais.json` se uma vertical mudar de nome
 - Adicionar queries em `skill-databricks-mcp.md` se uma nova tabela for usada
-- Validar a tag do Pix CC (marcada como CONFIRMAR no `canais.json`)
+- Validar a tag do Pix CC (marcada como CONFIRMAR no `canais.json`) e a tag Zendesk de Seguros
 - Se uma squad ou sub-produto mudar no painel 156 (lista `SQUADS` do JS), atualizar `painel-156/registro-painel.json`
 - Se o id do painel 156 mudar, atualizar `canais.json › painel` e a constante `PANEL_URL` do JS do painel
 
@@ -395,53 +271,42 @@ o setup inicial ou após mudanças relevantes no `SKILL.md`.
 
 | Aspecto | Detalhe |
 |---|---|
-| Execuções diárias | Pro: 5/dia · Max 5×: 15/dia · Team/Enterprise: 25/dia — **agora consome 2 por semana** (Rascunho + Validação), não 1 |
-| Duração estimada por execução | 20–40 min a Routine A; a Routine B tende a ser mais longa (monta ~21 reports e envia ~100 KB ao painel) |
+| Execuções | **1 por semana** (antes eram 2) |
+| Duração estimada | 30–60 min (a execução monta ~21 reports, atualiza o painel e envia as mensagens) |
 | Modelo | Claude Sonnet 5 (`claude-sonnet-5`) |
-| Custo estimado por execução | ~$1,50–3 (Sonnet 5) — **~$3–6/semana no total das duas Routines** |
-| Recomendação de plano | **Pro** ainda é suficiente para uso individual; **Max** se Claude Code for uso regular do time |
+| Custo estimado | ~$1,50–3 por execução — **cerca de metade do custo semanal anterior** (a coleta e a revalidação rodavam duas vezes) |
+| Recomendação de plano | **Pro** é suficiente |
 
 ---
 
 ## Perguntas frequentes
 
 **Os reports aparecem com meu nome no Slack?**
-Sim — as mensagens usam a identidade da conta que autenticou o Slack MCP em cada Routine.
+Sim — as mensagens usam a identidade da conta que autenticou o Slack MCP na Rotina.
 
-**O que as squads recebem no Slack agora?**
-Uma mensagem curta por set (alertas, NPS Transacional, suporte e menções em NPS Relacional, lojas
-e redes) com o link do report da squad no painel 156 e o link do painel Experiência RecargaPay
-(141). O report completo e as threads de alertas ficam no rascunho de `#the-voice-cx` e no painel.
+**O que as squads recebem no Slack?**
+Uma mensagem principal por set (título, manchete e links) e, na thread, 3 respostas curtas que indicam o
+que há no Report do painel. O detalhe fica no painel 156.
+
+**Como corrigir algo antes de sair, já que não há mais rascunho?**
+Rode com `MODO=TESTE` (painel 485 e `#the-voice-cx`) para revisar antes. Em produção, a Rotina faz uma
+autoverificação (Fase 3.5) e omite o que não conseguir confirmar. Se algo sair errado, corrija o painel
+e responda na thread do canal.
 
 **E se a atualização do painel falhar?**
-A Routine B tenta duas vezes. Se não der, a mensagem do Slack sai só com o link do painel 156 geral
-(sem link de report de squad), e a falha aparece só na notificação interna.
+A Rotina tenta duas vezes. Se não der, a mensagem do Slack sai só com o link do painel 156 geral (sem link
+de report de squad), e a falha aparece só na notificação interna.
 
 **Onde está o report de Seguros?**
-Seguros tem set próprio no canal `#seguro_pix-cartão_cx` (ID `C0BDW931ZA9`), como os demais produtos, e também aparece no painel 156 (aba Seguros › Report da squad). O RAF saiu do pipeline.
-
-**Se ninguém comentar nada no rascunho, o que acontece?**
-A Routine B atualiza o painel e envia as mensagens (principal + thread) normalmente — os dados são revalidados do zero de
-qualquer forma (não é uma cópia do rascunho), só não há ajuste vindo de comentário humano.
-
-**E se a Routine A falhar ou não rodar?**
-A Routine B detecta que não há rascunho em `#the-voice-cx` para aquele dia e prossegue
-gerando o painel e as mensagens (principal + thread) normalmente **direto no canal real da squad** — nunca de volta para
-`#the-voice-cx` (isso recriaria um rascunho sem ninguém revisar). Só não há comentários
-do time para incorporar; o resto do pipeline roda igual e a publicação final não fica
-bloqueada por falha da primeira etapa.
-
-**Posso comentar depois das 12h?**
-O comentário ainda vai estar na thread do rascunho em `#the-voice-cx`, mas a Routine B já
-terá rodado e publicado a versão final antes de ler — só entra na reconciliação da
-próxima semana caso o comentário faça sentido para o contexto histórico.
+Seguros tem set próprio no canal `#seguro_pix-cartão_cx` (ID `C0BDW931ZA9`) e aparece no painel 156 (aba
+Seguros › Report da squad). O RAF saiu do pipeline.
 
 **Como ajusto o período (ex: mês anterior)?**
-Edite o prompt de ambas as Routines temporariamente antes de usar "Run now". Restaure depois.
+Edite o prompt da Rotina temporariamente antes de usar "Run now". Restaure depois.
 
 **O que acontece se um MCP falhar?**
-Seções dependentes daquele MCP são omitidas silenciosamente — o report continua com os
-dados disponíveis, em qualquer uma das duas Routines.
+Seções dependentes daquele MCP são omitidas silenciosamente — o report continua com os dados
+disponíveis. Databricks ou Slack indisponíveis encerram a execução e notificam. Total: 21 sets.
 
 ---
 

@@ -141,21 +141,22 @@ Semana atual: *62 pts* (+4 vs sem. ant.) | Meta: 75
 *1.243 tickets* esta semana (+8% vs sem. ant. | +12% vs média 4 sem.)
 ```
 
-### O que vai ao Slack e o que vai ao painel (a partir de 09/10/2026)
+### O que vai ao Slack e o que vai ao painel (Rotina única, a partir de 26/10/2026)
 
-- **Rascunho (`#the-voice-cx`, Routine A):** tudo — report completo (thread 1), alertas (thread 2) e a
-  estrutura de dados do painel (thread 3). É a versão para o time revisar. As instruções de análise por
-  canal abaixo valem para esse conteúdo completo.
-- **Painel 156 (Routine B):** o report completo de cada squad, em dados (JSON) que o painel desenha:
-  alertas, indicadores, funil, motivos e causas, reclamações, menções, cenário e eventos.
-- **Canais reais das squads (Routine B):** **mensagem principal** (título na primeira linha, manchete com o
-  destaque do produto ligado a evento, incidente ou novo resultado, linha fina e links com hiperlink no nome:
-  `Report de {produto}` e Experiência RecargaPay) e, na **thread**, 3 respostas curtas — Resultados · Alertas
-  e Destaques · Menções e UX do produto — que só indicam o que há disponível no Report do painel 156 (nomes
-  e números). Análise, impacto observado, temas e trechos ficam no Report.
+- **Painel 156:** o report completo de cada squad, em dados (JSON) que o painel desenha: alertas,
+  indicadores, funil, motivos e causas, reclamações, menções, cenário e eventos. As instruções de análise
+  por canal abaixo valem para esse conteúdo completo.
+- **Canais reais das squads:** **mensagem principal** (título na primeira linha, manchete com o destaque do
+  produto ligado a evento, incidente ou novo resultado, linha fina e links com hiperlink no nome: `Report de
+  {produto}` e Experiência RecargaPay) e, na **thread**, 3 respostas curtas — Resultados · Alertas e
+  Destaques · Menções e UX do produto — que só indicam o que há disponível no Report do painel 156 (nomes e
+  números). Análise, impacto observado, temas e trechos ficam no Report.
+- **`#lideres-cx-e-cxm`:** além das 3 respostas curtas, o **Report Executivo completo** em 3 respostas na
+  mesma thread (resultado em 3 linhas, satisfação e volume; eventos e pontos de atenção; alertas).
 
-As três versões usam **os mesmos números**. A análise (inferência com fonte e data, correlação sem
-"causou", sem PII) é a mesma; muda só o quanto de texto vai a cada lugar.
+Não há mais rascunho nem revisão humana antes do envio. Todas as versões usam **os mesmos números**. A
+análise (inferência com fonte e data, correlação sem "causou", sem PII) é a mesma; muda só o quanto de
+texto vai a cada lugar.
 
 ---
 
