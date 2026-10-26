@@ -1,5 +1,5 @@
 {
-  "descricao": "Registro dos reports do painel 156: cada saida da automacao e a chave (squad[/sub]) sob a qual o report aparece no painel. Fundido=true: o set nao tem report proprio, o conteudo entra no report da mesma chave (Boleto de Cobranca em Contas e Boletos). origem=so_painel: report gerado so pela Routine B, sem set no Slack.",
+  "descricao": "Registro dos reports do painel 156: cada saida da automacao e a chave (squad[/sub]) sob a qual o report aparece no painel. Fundido=true: o set nao tem report proprio, o conteudo entra no report da mesma chave (Boleto de Cobranca em Contas e Boletos). Nenhum report e so-painel hoje: Seguros passou a ter set no canal #seguro_pix-cartão_cx (C0BDW931ZA9). RAF saiu do pipeline em 19/10/2026.",
   "painel_id": 156,
   "url_base": "https://optimus.recargapay.com/PHP/dashboard_view.php?id=156",
   "link_experiencia_recargapay": "https://optimus.recargapay.com/PHP/dashboard_view.php?id=141",
@@ -200,18 +200,6 @@
     {
       "ordem": 17,
       "origem": "produto",
-      "nome_report": "RAF",
-      "canal": "#pixcc-home-raf-cx",
-      "chave": "outros/raf",
-      "squad": "outros",
-      "sub": "raf",
-      "rotulo": "RAF",
-      "fundido": false,
-      "rotulo_link": "Report de RAF"
-    },
-    {
-      "ordem": 18,
-      "origem": "produto",
       "nome_report": "Emprestimo Pessoal",
       "canal": "#squad_loan_seguimento",
       "chave": "emprestimo/pessoal",
@@ -222,7 +210,7 @@
       "rotulo_link": "Report de Empréstimo Pessoal"
     },
     {
-      "ordem": 19,
+      "ordem": 18,
       "origem": "produto",
       "nome_report": "Emprestimo Consignado",
       "canal": "#squad_loan_seguimento",
@@ -234,7 +222,7 @@
       "rotulo_link": "Report de Empréstimo Consignado"
     },
     {
-      "ordem": 20,
+      "ordem": 19,
       "origem": "produto",
       "nome_report": "Tap to Pay",
       "canal": "#subacquirer-cx",
@@ -246,7 +234,7 @@
       "rotulo_link": "Report de Tap to Pay"
     },
     {
-      "ordem": 21,
+      "ordem": 20,
       "origem": "produto",
       "nome_report": "Link de Pagamento",
       "canal": "#subacquirer-cx",
@@ -258,16 +246,17 @@
       "rotulo_link": "Report de Link de Pagamento"
     },
     {
-      "ordem": 22,
-      "origem": "so_painel",
+      "ordem": 21,
+      "origem": "produto",
       "nome_report": "Seguros",
-      "canal": null,
+      "canal": "#seguro_pix-cartão_cx",
       "chave": "seguros",
       "squad": "seguros",
       "sub": null,
       "rotulo": "Seguros",
       "fundido": false,
-      "rotulo_link": "Report de Seguros"
+      "rotulo_link": "Report de Seguros",
+      "canal_id": "C0BDW931ZA9"
     }
   ],
   "formato_rotulo_link": "rotulo_link e o texto do hiperlink do Slack: <{url_base}&r={chave}/rep|{rotulo_link}>; o painel 141 e sempre \"Experiência RecargaPay\""
