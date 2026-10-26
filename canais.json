@@ -6,7 +6,7 @@
   },
   "funil_suporte": {
     "descricao": "Distribuicao de volume obrigatoria em TODOS os reports (Geral, Executivo, Produtos) -- decisao de negocio da VoC, distinta do channel_class4 oficial da organizacao",
-    "fonte": "prod.cx.agg_overview (via cx-product-insights) para volume; fat_help_center_events / CX-009 para Central de Ajuda",
+    "fonte": "prod.cx.agg_overview (via MCP Data - RecargaPay) para volume; fat_help_center_events / CX-009 para Central de Ajuda",
     "camadas": [
       {
         "nome": "RecargaBot",
@@ -15,7 +15,7 @@
         "observacao": "Independente de canal -- flag propria",
         "fonte_volume": "prod.cx.agg_overview (flg_retention_bot=true, ticket_count)",
         "fonte_retencao_pct": "prod.cx.agg_botmaker_metrics (SUM(retained_by_bot)/SUM(total_sessions), por stage se necessario)",
-        "observacao_retencao": "NAO usar CX-005 de cx-product-insights nem fat_botmaker_metrics (descontinuado) -- agg_botmaker_metrics e a fonte correta, com detalhamento por stage, overflow e abandono",
+        "observacao_retencao": "NAO usar a definicao generica de retencao do catalogo antigo nem fat_botmaker_metrics (descontinuado) -- agg_botmaker_metrics e a fonte correta, com detalhamento por stage, overflow e abandono",
         "fonte_csat_bot": "prod.cx.agg_botmaker_metrics (SUM(csat_promoter)/SUM(csat_answered))"
       },
       {
@@ -32,7 +32,7 @@
       }
     ],
     "central_de_ajuda": {
-      "metrica": "CX-009 Visitas Unicas Vertical (cx-product-insights)",
+      "metrica": "Visitas Unicas Vertical (MCP Data - RecargaPay; codigo antigo CX-009)",
       "filtro": "source='central' AND metric='vertical' AND product='total' AND vertical IS NOT NULL",
       "apresentar": "serie de 5 semanas, por produto em todo report de produto; agregado no Geral/Executivo"
     },
@@ -387,25 +387,9 @@
           "aberturas_especificas": [
             "perfil_new_newnew_repeat"
           ]
-        },
-        {
-          "nome_report": "Report de VoC - RAF",
-          "verticais": [
-            "RAF Indicado",
-            "RAF Indicador"
-          ],
-          "tags_zendesk": [
-            "raf-indicado",
-            "raf-indicador"
-          ],
-          "aberturas_especificas": [
-            "perfil_new_newnew_repeat"
-          ],
-          "agg_overview_vertical": "raf",
-          "agregada_em_agg_overview": true,
-          "nota_agregacao": "agg_overview nao separa Indicado/Indicador. Usar dim_zendesk_tickets_summary com vertical LIKE 'raf::%' para o subtipo."
         }
-      ]
+      ],
+      "nota_canal": "O RAF saiu do pipeline em 19/10/2026; o canal mantem o nome historico."
     },
     {
       "slack_channel": "#squad_loan_seguimento",
@@ -485,6 +469,29 @@
           ]
         }
       ]
+    },
+    {
+      "slack_channel": "#seguro_pix-cartão_cx",
+      "slack_channel_id": "C0BDW931ZA9",
+      "slack_channel_leitura": [
+        "#seguro_pix-cartão_cx",
+        "#lideres-cx-e-cxm",
+        "#comunicados_e_atualizações_cx"
+      ],
+      "tipo": "produto",
+      "nome_report": "Report de VoC - Seguros",
+      "verticais": [
+        "Seguros"
+      ],
+      "tags_zendesk": [],
+      "nota_tags": "Usar a vertical seguros em agg_overview e dim_zendesk_tickets_summary; confirmar a tag exata em custom-field-values.md (CF-1) antes de consultar o Zendesk.",
+      "aberturas_especificas": [
+        "protecao_pix_cartoes_vs_prestamista",
+        "perfil_new_newnew_repeat"
+      ],
+      "agg_overview_vertical": "seguros",
+      "inclui_nps_relacional": false,
+      "inclui_funil_completo": true
     }
   ],
   "alertas": {
@@ -500,7 +507,7 @@
   "hub_voc_url": "https://sites.google.com/recargapay.com/voc/",
   "skills_organizacionais": {
     "descricao": "Skills da organizacao com precedencia sobre arquivos deste repositorio",
-    "fonte_primaria_metricas": "/mnt/skills/organization/cx-product-insights/",
+    "fonte_primaria_metricas": "MCP Data - RecargaPay (Databricks + DataHub); get_skill workflow e concepts antes da primeira query. A skill cx-product-insights foi aposentada.",
     "exclusoes_e_taxonomia": "/mnt/skills/organization/cx-orchestrator-reference/references/",
     "central_de_ajuda_conteudo": "/mnt/skills/organization/cx-helpcenter-impact/",
     "nao_aplicavel": [
@@ -523,7 +530,8 @@
       "#melhoria-continua-verticais",
       "#pixcc-home-raf-cx",
       "#squad_loan_seguimento",
-      "#subacquirer-cx"
+      "#subacquirer-cx",
+      "#seguro_pix-cartão_cx"
     ],
     "schema_tabela_eventos": [
       "data",
@@ -590,13 +598,7 @@
       "queries"
     ],
     "dashboard_de_teste": 485,
-    "reports_so_painel": [
-      {
-        "nome": "Seguros",
-        "chave": "seguros",
-        "observacao": "Sem canal e sem set no Slack. Gerado so pela Routine B (agg_overview vertical seguros + resumos de transcricao)."
-      }
-    ],
+    "reports_so_painel": [],
     "relatorios_fundidos": [
       {
         "set": "Boleto de Cobranca",

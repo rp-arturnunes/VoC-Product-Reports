@@ -267,12 +267,6 @@
         "pixcc"
       ]
     },
-    "RAF": {
-      "produtos": [
-        "raf"
-      ],
-      "obs": "No painel 141 o significado de RAF ('indique um amigo') está marcado como assumido, a confirmar."
-    },
     "Empréstimo Pessoal": {
       "produtos": [
         "emp"
@@ -292,10 +286,15 @@
       "produtos": [
         "link"
       ]
+    },
+    "Seguros": {
+      "produtos": [
+        "seg"
+      ]
     }
   },
   "produtos_do_painel_sem_report_proprio": [
-    "seg (Seguros)",
+    "raf (RAF)",
     "of (Open Finance)"
   ]
 }

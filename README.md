@@ -22,7 +22,7 @@ Segunda 12:15 BRT ──► Routine B (Validação) ──► relê rascunho + c
                                                           │
                                        1) monta o report de cada squad (JSON; inclui Seguros)
                                        2) ATUALIZA O PAINEL ARTURITO 156 (html + rationale_md)
-                                       3) envia o Slack SIMPLIFICADO aos canais reais, com os links
+                                       3) envia o Slack (mensagem principal + thread) aos canais reais, com os links
 ```
 
 **Routine A (Rascunho):** gera os 21 sets normalmente e envia **todos** para `#the-voice-cx`,
@@ -155,13 +155,8 @@ não existir. Se a skill ou seus arquivos de references/ não forem encontrados 
 NENHUM dos dois: usar o fallback do próprio repositório (ver tabela de fallback no
 SKILL.md) e sinalizar isso SOMENTE na notificação interna, nunca no texto dos reports
 enviados às squads — NÃO bloquear a execução por
-skill organizacional ausente, exceto se cx-product-insights especificamente estiver
-ausente nos dois caminhos (aí sim é bloqueio legítimo).
+skill organizacional ausente.
 
-- cx-product-insights/SKILL.md + references/metrics.yml + references/support_tables.sql
-  → FONTE PRIMÁRIA para NPS, CSAT, volume, retenção de bot, rankings de motivo/causa
-  raiz (via agg_overview). Nunca reconstruir essas queries de memória. Sem fallback no
-  repositório — se ausente nos dois caminhos, bloquear e notificar.
 - cx-orchestrator-reference/references/exclusions.md → lista completa e atualizada de
   exclusões obrigatórias. Fallback: skill-zendesk-cx.md §5.
 - cx-orchestrator-reference/references/custom-field-values.md → tags exatas de
@@ -171,9 +166,23 @@ ausente nos dois caminhos (aí sim é bloqueio legítimo).
 - cx-helpcenter-impact/SKILL.md → apenas para descrever mudanças de conteúdo em artigos
   da Central de Ajuda. Sem fallback — se ausente, apenas omitir essa descrição qualitativa.
 
+DADOS DE PERÍODO FECHADO — MCP Data - RecargaPay (Databricks + DataHub)
+A skill cx-product-insights foi APOSENTADA pela organização (cx-orchestrator-reference v15.0):
+NÃO a procure e NÃO bloqueie a execução por ela. NPS, CSAT, volume, retenção de bot, Central de
+Ajuda e rankings de motivo/causa raiz vêm do MCP Data - RecargaPay (agg_overview e demais tabelas),
+seguindo o fluxo oficial (cx-orchestrator-reference/references/mcp-routing.md): (1) chamar get_skill
+com name='workflow' (Step 0) e depois name='concepts' ANTES da primeira query; (2) localizar a
+tabela e a métrica no DataHub (datahub_search, datahub_search_glossary_terms, datahub_get_dataset,
+datahub_get_glossary_term) e ler as descrições de tabela e coluna — é delas que vêm a definição
+oficial, os filtros e o grão; não assumir tabela, coluna, flag ou fórmula de memória; (3) checar o
+frescor com datahub_get_dataset_quality (dado fechado é D-1); (4) rodar a query com
+databricks_run_query, ou databricks_query_governed_metric quando a métrica for governada.
+Divergência entre o DataHub e o repositório: prevalece o DataHub; registrar só na notificação
+interna. As queries do skill-databricks-mcp.md continuam como ponto de partida, validadas contra o DataHub.
+
 NÃO invocar: cx-realtime-overview, cx-realtime-insights, cx-realtime-vertical-analysis —
 são skills de tempo real ("hoje/agora"); esta Routine sempre cobre período fechado
-(semana anterior), que é sempre roteado para cx-product-insights.
+(semana anterior), que é sempre roteado para o MCP Data - RecargaPay (cx-orchestrator-reference/references/skill-routing.md §0).
 
 MCPs — únicas integrações permitidas
 - Zendesk: [TEST] MCP Gateway AWS AgentCore (tool zendesk___zendesk) — PRIMÁRIO, nunca
@@ -268,7 +277,7 @@ CONFIGURAÇÃO
 ARQUIVOS DE REFERÊNCIA E SKILLS ORGANIZACIONAIS
 Mesmos da Routine A — ver SKILL.md, canais.json, orientacoes-editoriais.md,
 skill-databricks-mcp.md, skill-zendesk-cx.md, mapeamento-produtos-painel141.json, e as skills
-organizacionais listadas no SKILL.md (cx-product-insights, cx-orchestrator-reference, cx-helpcenter-impact).
+organizacionais listadas no SKILL.md (cx-orchestrator-reference, cx-helpcenter-impact) e o fluxo do MCP Data - RecargaPay para dado fechado.
 Além deles, desta Routine: painel-156/contrato-report-v1.md, painel-156/registro-painel.json,
 painel-156/montar_html_reports.py, painel-156/validar_report.py, painel-156/html-esqueleto.html e
 painel-156/rationale-painel-156.md.
@@ -297,7 +306,7 @@ MODO=VALIDACAO): localizar em #the-voice-cx os 21 sets postados pela Routine A h
 classificá-los conforme o SKILL.md (correção factual, contexto adicional, discordância,
 pergunta em aberto). Na Fase 4A, reconciliar os dados revalidados com o rascunho e os
 comentários, ajustando o report quando um comentário apontar uma correção plausível e
-verificável, e montar o JSON final de cada report de squad, incluindo Seguros (só painel).
+verificável, e montar o JSON final de cada report de squad, incluindo Seguros.
 Na Fase 4B, montar e validar o campo html com painel-156/montar_html_reports.py e atualizar o
 dashboard PAINEL_ID com arturito_update_dashboard, enviando SOMENTE html e rationale_md
 (copiados integralmente dos arquivos, sem alterar). Se a atualização falhar duas vezes, ou se a
@@ -313,7 +322,7 @@ UX. Thread, nesta ordem: (1) Resultados; (2) Alertas e Destaques; (3) Menções 
 resposta é objetiva (só nomes e números), apenas indica o que há disponível no Report do painel 156 e
 termina com o link "Ver no Report"; o detalhe, o impacto observado, os temas e os trechos ficam no
 Report. Nunca poste o conteúdo da thread como mensagem solta no canal. Formatação: negrito com
-**dois asteriscos**; um asterisco só vira itálico. Com o painel atualizado e o report publicado, use
+**dois asteriscos**; um asterisco só vira itálico. Na URL dos links escreva o & simples (nunca &amp;). Com o painel atualizado e o report publicado, use
 o link do report da squad e o do painel 141; se o painel falhou ou o report ficou ausente, SOMENTE o
 link do painel 156 geral. Nunca mencione o processo
 de validação, o rascunho, falhas de ferramenta ou skill ausente no texto enviado. Se um MCP
@@ -347,7 +356,7 @@ o setup inicial ou após mudanças relevantes no `SKILL.md`.
 - [ ] Painel 156 mostra a nova "Semana NN" em cada aba **Report da squad**
 - [ ] Os links `...id=156&r=<chave>/rep` das mensagens abrem o report certo (conferir 3: um simples,
   um com sub-produto, um dos executivos) e o link do 141 abre
-- [ ] Os links com `&amp;` no Slack renderizam corretamente (se aparecer `&amp;` literal na URL, trocar por `&`)
+- [ ] Os links abrem direto no Report: a URL usa `&` simples (se aparecer `&amp;` na URL, o link está errado)
 - [ ] Cada set sai como **mensagem principal** (título na primeira linha, manchete sobre o produto, links) e **3 respostas curtas na thread** (Resultados · Alertas e Destaques · Menções e UX), que só indicam o que há no Report; as respostas usam o `thread_ts` da principal
 - [ ] Links com hiperlink no nome (`Report de {produto}` e `Experiência RecargaPay`), sem URL por extenso
 - [ ] Negrito aparece como negrito (`**texto**`); nenhuma mensagem inteira em itálico
@@ -409,8 +418,7 @@ A Routine B tenta duas vezes. Se não der, a mensagem do Slack sai só com o lin
 (sem link de report de squad), e a falha aparece só na notificação interna.
 
 **Onde está o report de Seguros?**
-Só no painel 156 (aba Seguros › Report da squad). Seguros não tem canal nem set no Slack; o link dele
-entra nas mensagens dos grupos executivos.
+Seguros tem set próprio no canal `#seguro_pix-cartão_cx` (ID `C0BDW931ZA9`), como os demais produtos, e também aparece no painel 156 (aba Seguros › Report da squad). O RAF saiu do pipeline.
 
 **Se ninguém comentar nada no rascunho, o que acontece?**
 A Routine B atualiza o painel e envia as mensagens (principal + thread) normalmente — os dados são revalidados do zero de

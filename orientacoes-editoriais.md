@@ -82,7 +82,7 @@ mesmo que a organização classifique socialmente como N1 no `channel_class4` of
 Não ajustar para bater com a classificação oficial da organização.
 
 **Central de Ajuda — evolução por produto (obrigatório em todo report de produto):**
-Apresentar série de 5 semanas de visitas únicas à vertical (CX-009 via `cx-product-insights`).
+Apresentar série de 5 semanas de visitas únicas à vertical (visitas únicas da vertical, via `MCP Data - RecargaPay`).
 Report Geral/Executivo apresentam o agregado de todas as verticais + top 3 produtos por volume.
 
 **Central de Ajuda — segmentar por `event_category` quando disponível na tabela granular:**
@@ -685,10 +685,10 @@ contexto_pontual: ""
 
 ---
 
-## ⚡ #pixcc-home-raf-cx — PIX · PIX CC · RAF
+## ⚡ #pixcc-home-raf-cx — PIX · PIX CC
 
-**Público:** Squad Pix, Pix CC, RAF e CX  
-**Formato:** Um report por produto — 3 sets separados
+**Público:** Squad Pix, Pix CC e CX  
+**Formato:** Um report por produto — 2 sets separados
 
 ### Instruções de análise
 
@@ -738,7 +738,7 @@ Temas dos detratores.
 🔗 CXM - Briefing de Suporte: https://optimus.recargapay.com/PHP/dashboard_view.php?id=246
 ```
 
-**Para Pix CC e RAF:** usar estrutura padrão de produto sem a abertura de subtipo de Pix.
+**Para Pix CC:** usar estrutura padrão de produto sem a abertura de subtipo de Pix.
 
 ```
 contexto_pontual: ""
@@ -903,6 +903,29 @@ contexto_pontual: ""
 
 ---
 
+## 🛡️ #seguro_pix-cartão_cx — SEGUROS
+
+**Público:** Squad Seguros (Proteção Pix e Cartões, Prestamista) e CX  
+**Formato:** Um report de produto — 1 set  
+**Canal:** `#seguro_pix-cartão_cx` (ID `C0BDW931ZA9`)
+
+### Instruções de análise
+
+Ler `#seguro_pix-cartão_cx` dos últimos 7 dias, além de `#lideres-cx-e-cxm` e
+`#comunicados_e_atualizações_cx`, como nos demais produtos.
+
+**Aberturas obrigatórias:**
+- Subproduto: Proteção Pix e Cartões · Prestamista (só se houver tickets)
+- Motivos de maior volume (ex.: estorno e cancelamento) e as causas raiz de cada um
+- Perfil: New · NewNew · Repeat
+
+**Dados:** vertical `seguros` na `agg_overview` (tickets humanos da semana e das 4 semanas anteriores,
+motivos e causas raiz, CSAT N1, retenção do bot, visitas à Central de Ajuda e TX da fonte `seguros` para
+o contact rate) e resumos de transcrição para as causas. Sem NPS transacional se a base não tiver.
+Lançamentos e mudanças de produto de Seguros (ex.: novo seguro) entram nos Destaques, com fonte e data.
+
+---
+
 ## REGRAS GLOBAIS DE ANÁLISE
 
 ### O que sempre fazer
@@ -947,7 +970,7 @@ AUTO vs MANUAL.
 
 **Verticais agregadas em `agg_overview` — usar `dim_zendesk_tickets_summary` para o corte fino:**
 Rendimento CDI (agregada em "cashback e rendimento"), Contas e Boletos e Boleto de
-Cobrança (ambas agregadas em "utilities"), Pix In/Out/Chaves e RAF Indicado/Indicador
+Cobrança (ambas agregadas em "utilities"), Pix In/Out/Chaves
 (sem subtipo em `agg_overview.vertical`). Ver tabela completa em `skill-zendesk-cx.md` §8.
 
 **Dados parciais no início da semana:**

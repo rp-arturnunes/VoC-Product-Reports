@@ -5,7 +5,8 @@
     "Patty passa a ser responsavel por Emprestimo Pessoal, Emprestimo Consignado, Contas e Boletos, Boleto de Cobranca, Transporte e Recarga de Celular (antes: Cassio e 'On Demand')",
     "Eduardo Reis passa a ser responsavel por CDB, Rendimento CDI e Movimentacoes Financeiras (Investimentos) e por RAF (antes: Alexandre e Cassio)",
     "Cassio Mitherhofer nao aparece mais na planilha",
-    "Nenhuma das 19 verticais mapeadas esta mais como 'On Demand'"
+    "Nenhuma das 19 verticais mapeadas esta mais como 'On Demand'",
+    "19/10/2026: RAF removido do pipeline; Seguros passa a ter set no canal #seguro_pix-cartão_cx (C0BDW931ZA9)"
   ],
   "responsaveis": [
     {
@@ -111,13 +112,6 @@
       "user_id_slack": "U0BG3PP3Q6Q"
     },
     {
-      "squad": "RAF",
-      "canal_squad": "#pixcc-home-raf-cx",
-      "squad_planilha": "Home, RAF e Landing Pages",
-      "responsavel_cxm": "Eduardo Reis",
-      "user_id_slack": "U0BG3PP3Q6Q"
-    },
-    {
       "squad": "Emprestimo Pessoal",
       "canal_squad": "#squad_loan_seguimento",
       "squad_planilha": "Lending",
@@ -147,6 +141,15 @@
       "responsavel_cxm": "Alexandre Luz",
       "user_id_slack": "U03ABV9BG1F",
       "nota": "Link de Pagamento nao aparece na planilha; atribuido ao Alexandre por compartilhar o canal #subacquirer-cx com Tap to Pay e Acquirer. Confirmar."
+    },
+    {
+      "squad": "Seguros",
+      "canal_squad": "#seguro_pix-cartão_cx",
+      "canal_squad_id": "C0BDW931ZA9",
+      "squad_planilha": "Seguros",
+      "responsavel_cxm": "Eduardo Reis",
+      "user_id_slack": "U0BG3PP3Q6Q",
+      "nota": "Canal do report definido em 19/10/2026; a planilha lista #proj-seguros."
     }
   ],
   "squads_da_planilha_fora_do_escopo_desta_routine": {
