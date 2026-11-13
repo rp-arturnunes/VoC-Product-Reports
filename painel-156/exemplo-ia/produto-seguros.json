@@ -1,0 +1,276 @@
+{
+"analise": {
+"clientes": "O cliente diz que não contratou o seguro e quer o dinheiro de volta: 59% das 121 conversas de estorno dizem não ter autorizado ou contratado e 57% falam de cobrança ou desconto; entre os que querem cancelar, 51% dizem o mesmo e 28% falam da fatura do cartão. A explicação do atendimento (a proteção aparece antes do Pix e o cliente podia recusar) é lida como negativa, e o estorno exige cancelar no app e confirmar em um link.",
+"mudou": "Suporte humano cai 38,3% (200): estorno −30% (181 → 126) e cancelamento −49% (129 → 66); CSAT Suporte humano em 82,1%. O Seguro Acidente e Renda foi liberado para 100% (29/10, R$ 2,99/mês, opcional) e a Central de Ajuda do produto sobe a 1.970 visitas (1.376). Parte da queda pode refletir tickets ainda sem vertical.",
+"atencao": [
+"Seguro pré-marcado ou apresentado antes da confirmação do Pix: comentaristas do NPS Relacional e de redes reclamam de contratação que dizem não ter feito.",
+"Estorno em dois passos (cancelar e confirmar em link) mantém contatos de espera (42%).",
+"Visitas à Central de Ajuda em alta com o novo seguro: acompanhar se viram contato humano."
+]
+},
+"motivos": [
+{
+"t": "Quer estorno do seguro",
+"n": 126,
+"ant": 181,
+"var": "−30%",
+"det": {
+"res": "O cliente diz que não contratou o seguro e quer o dinheiro de volta: 59% das conversas dizem não ter autorizado ou contratado e 57% falam de cobrança ou desconto; o estorno exige confirmar em um link depois de cancelar.",
+"dor": [
+"<b>Não contratou:</b> 71 de 121 conversas (59%) dizem não ter autorizado ou contratado; \"nunca solicitei esse seguro, só percebi agora a cobrança\" (ticket 46707842).",
+"<b>Cobrança no extrato:</b> 69 de 121 (57%) falam de cobrança ou desconto; \"foi descontado um valor na minha conta na qual eu não autorizei\" (ticket 46716880).",
+"<b>Quer reembolso:</b> 81 de 121 (67%) pedem reembolso; o atendente orienta confirmar o estorno em um link depois do cancelamento (ticket 46733543)."
+],
+"exp": "Receber de volta o valor de um seguro que o cliente diz não ter contratado, sem passos extras.",
+"falha": [
+[
+"Produto",
+"A proteção é apresentada na tela, antes da confirmação do Pix, e o cliente diz não ter percebido que contratou (ticket 46715253)."
+]
+],
+"ex": [
+"em",
+"en",
+"e72",
+"e73",
+"e74"
+]
+},
+"ex": null
+},
+{
+"t": "Quer cancelar o seguro",
+"n": 66,
+"ant": 129,
+"var": "−49%",
+"det": {
+"res": "O cliente quer cancelar um seguro que diz não ter contratado: 51% das conversas dizem não ter contratado e 42% falam de cobrança, inclusive na fatura do cartão.",
+"dor": [
+"<b>Não contratou:</b> 33 de 65 conversas (51%); \"não contratei seguro e fui cobrado, quero reembolso\" (ticket 46715253).",
+"<b>Seguro na fatura:</b> 18 de 65 (28%) falam de cartão; \"acabei de ver a cobrança de um seguro na minha fatura que eu não contratei\" (ticket 46725546).",
+"<b>Como cancelar:</b> o atendente envia o caminho Perfil > Meus Seguros > Cancelar seguro (ticket 46703086)."
+],
+"exp": "Cancelar o seguro e receber de volta o que foi cobrado.",
+"falha": [
+[
+"Produto",
+"O seguro é oferecido na tela do Pix e cobrado no cartão ou na carteira, e o cliente não percebe a contratação."
+]
+],
+"ex": [
+"e2g",
+"e2h",
+"e77",
+"e78",
+"e79"
+]
+},
+"ex": null
+},
+{
+"t": "Atendimento não prestado",
+"n": 5,
+"ant": 1,
+"var": "+400%",
+"det": null,
+"ex": [
+"e7c",
+"e7d"
+]
+},
+{
+"t": "Não consegue contratar o seguro",
+"n": 4,
+"ant": 1,
+"var": "+300%",
+"det": null,
+"ex": [
+"e7e"
+]
+}
+],
+"temas": [],
+"eventos": [
+{
+"d": "29/10",
+"tag": "Produto",
+"t": "Novo Seguro Acidente e Renda liberado para 100% dos clientes (R$ 2,99/mês, opcional) e seguro AP no fluxo Meus Seguros. Impacto: visitas à Central de Ajuda de Seguros 1."
+}
+],
+"exemplos": {
+"Redes": [
+"e2i"
+]
+},
+"mencoes": {
+"texto": "Seguros quase não aparece em lojas e redes. No Reclame Aqui, Seguros vai de 12 para 20 reclamações na semana em que o Seguro Acidente e Renda chegou a toda a base, com relatos de contratação involuntária.",
+"ra": [
+"e1i"
+]
+},
+"subs": {
+"seg_pix": {
+"analise": {
+"clientes": "Quem procura o atendimento diz que não contratou: dos 797 contatos sobre o seguro na W45, 554 (70%) contestam a contratação e 575 pedem estorno; 266 querem cancelar e só 10 têm apenas dúvida. A venda acontece no pagamento Pix (436 mil das 449 mil apólices desde 31/08), e o cliente vê o desconto de R$ 5,99 sem reconhecer o aceite.",
+"mudou": "Os contatos sobre o seguro caem de 1.747 (W44) para 797 (W45), depois do pico de 2.776 e 3.041 nas W41 e W42; o suporte humano da vertical cai de 332 para 204. Foram 41,2 mil apólices novas e 14,9 mil cancelamentos pedidos pelo cliente (12,4 mil na W44), 4,2 mil deles no prazo de arrependimento.",
+"atencao": [
+"70% dos contatos sobre o seguro contestam a contratação: o cliente não reconhece o aceite feito no pagamento Pix.",
+"Cancelamentos pedidos pelo cliente sobem 20% (12,4 mil para 14,9 mil na W45).",
+"Na venda feita no pagamento de contas, 38% das 2,8 mil apólices desde 31/08 já foram canceladas."
+]
+},
+"temas": [
+{
+"canal": "Contatos classificados",
+"t": "Contesta a contratação",
+"n": 554,
+"tom": "neg",
+"x": "Diz que não contratou o seguro de R$ 5,99 descontado do saldo ou do cartão."
+},
+{
+"canal": "Contatos classificados",
+"t": "Pede estorno",
+"n": 575,
+"tom": "neg",
+"x": "Quer o valor de volta, inclusive depois de cancelar."
+},
+{
+"canal": "Contatos classificados",
+"t": "Quer cancelar",
+"n": 266,
+"tom": "neg",
+"x": "Pede o cancelamento da proteção."
+},
+{
+"canal": "Contatos classificados",
+"t": "Só dúvida",
+"n": 10,
+"tom": "neu",
+"x": "Pergunta sobre cobertura ou cobrança."
+}
+],
+"exemplos": {
+"Contatos classificados": [
+"e4bc",
+"e4bd",
+"e4be",
+"e4bf",
+"e72"
+]
+},
+"eventos": []
+},
+"seg_ar": {
+"analise": {
+"clientes": "Produto novo e com poucos contatos: 12 sobre o seguro na W45, metade só com dúvida (validade da apólice e por quanto tempo recebe a perda de renda), 5 pedindo estorno e 1 contestando a contratação. A venda é feita no Hub de Seguros (todas as 5,1 mil apólices desde 02/10).",
+"mudou": "Com a liberação para toda a base (29/10), as apólices novas vão de 5 (W43) para 1.354 (W44) e 1.589 (W45). Os cancelamentos pedidos pelo cliente vão de 52 para 79, e 75 deles são no prazo de arrependimento; o suporte humano da vertical teve 1 ticket.",
+"atencao": [
+"Arrependimento concentra os cancelamentos: 75 de 79 na W45, cerca de 5% das apólices novas da semana.",
+"Dúvidas de uso (validade e prazo da perda de renda) aparecem nos poucos contatos."
+]
+},
+"temas": [
+{
+"canal": "Contatos classificados",
+"t": "Só dúvida",
+"n": 6,
+"tom": "neu",
+"x": "Validade da apólice e por quanto tempo recebe a perda de renda."
+},
+{
+"canal": "Contatos classificados",
+"t": "Pede estorno",
+"n": 5,
+"tom": "neg",
+"x": "Quer o valor de volta depois de cancelar."
+},
+{
+"canal": "Contatos classificados",
+"t": "Quer cancelar",
+"n": 3,
+"tom": "neg",
+"x": "Pede o cancelamento do seguro."
+},
+{
+"canal": "Contatos classificados",
+"t": "Contesta a contratação",
+"n": 1,
+"tom": "neg",
+"x": "Diz que não contratou."
+}
+],
+"exemplos": {
+"Contatos classificados": [
+"e7e",
+"e4c0",
+"e4c1",
+"e4c2"
+]
+},
+"motivos": [],
+"eventos": [
+{
+"d": "29/10",
+"tag": "Produto",
+"t": "Novo Seguro Acidente e Renda liberado para 100% dos clientes (R$ 2,99/mês, opcional) e seguro AP no fluxo Meus Seguros. Impacto: visitas à Central de Ajuda de Seguros 1."
+}
+],
+"mencoes": {
+"texto": "As menções em lojas, redes e Reclame Aqui ainda não separam o tipo de seguro; veja a visão de Seguros (Todos)."
+}
+},
+"seg_emp": {
+"analise": {
+"clientes": "Quem procura o atendimento quer cancelar o seguro do empréstimo ou diz que ele veio junto sem ficar claro: 9 dos 11 tickets da W45 são de cancelamento. Há também dúvida de cobertura, como a de um cliente que sofreu acidente e não consegue quitar o empréstimo.",
+"mudou": "A adesão segue em torno de metade dos empréstimos elegíveis: 4.073 de 7.989 na W45 (51%), contra 2.689 de 5.443 na W44 (49%). Os pedidos de cancelamento no suporte vão de 3 para 9; nas bases, não há cancelamento fora da quitação antecipada na W45.",
+"atencao": [
+"Contratação percebida como pouco clara: clientes dizem que o seguro veio junto com o empréstimo e pedem devolução.",
+"Caminho de cancelamento: um cliente diz que não achou a opção no app e que a seguradora o mandou falar com o RecargaPay."
+]
+},
+"temas": [
+{
+"canal": "Suporte humano",
+"t": "Deseja cancelar o seguro",
+"n": 9,
+"tom": "neg",
+"x": "Diz que o seguro veio junto com o empréstimo sem ficar claro e pede devolução."
+},
+{
+"canal": "Suporte humano",
+"t": "Dúvidas sobre seguro",
+"n": 2,
+"tom": "neu",
+"x": "Cobrança na fatura e cobertura em caso de acidente."
+}
+],
+"exemplos": {
+"Suporte humano": [
+"e4c3",
+"e4c4",
+"e4c5",
+"e4c6",
+"e4c7"
+]
+},
+"motivos": [
+{
+"t": "Deseja cancelar o seguro",
+"n": 9,
+"ant": 3,
+"var": "+200%"
+},
+{
+"t": "Dúvidas sobre seguro",
+"n": 2,
+"ant": 4,
+"var": "−50%"
+}
+],
+"eventos": [],
+"mencoes": {
+"texto": "As menções em lojas, redes e Reclame Aqui ainda não separam o tipo de seguro; veja a visão de Seguros (Todos)."
+}
+}
+}
+}

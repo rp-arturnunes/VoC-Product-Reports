@@ -1,0 +1,160 @@
+{
+"analise": {
+"clientes": "Recarga paga e crédito que não aparece: 59% das 51 conversas falam de bilhete, ônibus ou validação (a recarga precisa ser validada no ônibus ou no guichê), 55% de cartão e 22% pedem estorno; o aviso de instabilidade do bot aparece em 47% delas, sem ligação com o problema. No NPS Transacional (114 comentários, nota 9,3) os poucos detratores falam de crédito que não entra; nas lojas, 3 de 5 avaliações são negativas (cartão antigo cancelado, obrigação de usar cartão de crédito).",
+"mudou": "Suporte humano cai 20,9% (102) e o NPS Transacional sobe a 81,2 (78,2), o maior da série; \"recarga realizada e crédito não disponibilizado\" sobe 10% (53). O aviso manual de Curitiba (ativo desde 30/10) foi desativado em 06/11 às 11:34. Nas lojas, a nota de quem cita transporte cai de 2,33 para 1,80.",
+"atencao": [
+"Incidentes abertos há mais de 5 dias: INC-16436 (carregar cartão de transporte, 22 dias) e INC-16588 (SPTrans sem crédito, 9 dias).",
+"CSAT Suporte humano em 50,0%, abaixo do piso de 75%.",
+"Posts em redes relatam erro ao processar recarga em Sorocaba e \"não existe suporte no app\"."
+]
+},
+"motivos": [
+{
+"t": "Recarga realizada e crédito não disponibilizado",
+"n": 53,
+"ant": 48,
+"var": "+10%",
+"det": {
+"res": "A recarga foi paga e o crédito não aparece no cartão de transporte: 59% das conversas falam de bilhete, ônibus ou validação, e o aviso de instabilidade do bot aparece em 47% delas.",
+"dor": [
+"<b>Crédito que não entra:</b> 30 de 51 conversas (59%) falam de bilhete, ônibus ou validar; \"não entendi porque não entrou a recarga\" (ticket 46718141).",
+"<b>Recarga paga:</b> \"depositei 40 reais e não caiu, já faz um dia\" (ticket 46736874).",
+"<b>Estorno:</b> 11 de 51 (22%) pedem estorno da recarga."
+],
+"exp": "Que a recarga paga apareça no cartão na hora, ou saber como validá-la.",
+"falha": [
+[
+"Produto",
+"A recarga fica pendente de validação no ônibus ou no guichê, e o cliente não sabe."
+]
+],
+"ex": [
+"e3q",
+"e3r",
+"e7y",
+"e7z",
+"e80"
+]
+},
+"ex": null
+},
+{
+"t": "Transação não realizada",
+"n": 18,
+"ant": 27,
+"var": "−33%",
+"det": {
+"res": "A recarga do bilhete aparece como cancelada e o cliente não sabe o motivo: 65% das conversas falam de recarga e 59% de cartão; o e-mail de explicação prometido não chega.",
+"dor": [
+"<b>Compra cancelada:</b> a recarga aparece como cancelada e o e-mail com o motivo \"nunca chega\" (ticket 46721733).",
+"<b>Cartão:</b> 10 de 17 conversas (59%) citam cartão; a orientação é usar saldo da carteira.",
+"<b>Motivo:</b> 4 de 17 (24%) perguntam o motivo do cancelamento."
+],
+"exp": "Saber por que a recarga foi cancelada e conseguir refazê-la.",
+"falha": [
+[
+"Produto",
+"A recarga é cancelada sem mostrar o motivo no app."
+]
+],
+"ex": [
+"e3s",
+"e81",
+"e82",
+"e83",
+"e84"
+]
+},
+"ex": null
+},
+{
+"t": "Instabilidade no app",
+"n": 8,
+"ant": 14,
+"var": "−43%",
+"det": null,
+"ex": [
+"e86",
+"e87",
+"e88",
+"e89",
+"e8a"
+]
+},
+{
+"t": "Quero cancelar e/ou estornar recarga",
+"n": 6,
+"ant": 7,
+"var": "−14%",
+"det": null,
+"ex": [
+"e8c",
+"e8d",
+"e8e",
+"e8f"
+]
+}
+],
+"temas": [
+{
+"canal": "NPS Transacional",
+"t": "Recargas, transporte e contas",
+"n": 22,
+"tom": "pos",
+"x": "Elogio ao cartão e à praticidade. O problema é a recarga que não entra e o crédito creditado a menos (depositou R$ 150, entraram R$ 146). (nota média 8,4 · 3 detratores (0–6))"
+},
+{
+"canal": "NPS Transacional",
+"t": "Empréstimo e limite",
+"n": 6,
+"tom": "neg",
+"x": "Quem cita limite é crítico: o limite baixou \"quando mais precisei\". (nota média 5,8 · 3 detratores (0–6))"
+},
+{
+"canal": "NPS Transacional",
+"t": "Cashback e benefícios",
+"n": 6,
+"tom": "mix",
+"x": "O desconto chama a atenção, mas um cliente acha que não passa do desconto de 1,5% do cartão (\"marketing desonesto\") e outro não gosta do desconto de R$ 6. (nota média 8,3 · 1 detratores (0–6))"
+},
+{
+"canal": "Lojas",
+"t": "Recargas, transporte e contas",
+"n": 5,
+"tom": "neg",
+"x": "Recarga no bilhete negada porque o cartão RP antigo foi cancelado, apesar de já ter gerado outro; reclamam também de excesso de informação na tela principal."
+}
+],
+"eventos": [
+{
+"d": "30/10",
+"tag": "Bot",
+"t": "Aviso manual de instabilidade em Curitiba ficou ativo para todos os usuários do app até 06/11 às 11:34; o bot exibiu o aviso em 21 sessões de Transporte em 05/11."
+},
+{
+"d": "31/10",
+"tag": "Incidente",
+"t": "Instabilidade de Transporte em SP por 1h05, com 3 contatos. Impacto: sem variação relevante nos indicadores."
+}
+],
+"exemplos": {
+"NPS Transacional": [
+"e3t",
+"e3u"
+],
+"Lojas": [
+"e3v",
+"e3w"
+],
+"Redes": [
+"e3x",
+"e3y"
+]
+},
+"mencoes": {
+"texto": "Nas lojas, o Transporte aparece em 5 avaliações na W45, nenhuma positiva (cartão antigo cancelado, crédito que não entra). No Reclame Aqui, Transporte vai de 4 para 9 reclamações, com recarga de vale-transporte não creditada.",
+"ra": [
+"e1j"
+]
+}
+}

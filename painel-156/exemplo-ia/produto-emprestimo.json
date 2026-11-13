@@ -1,0 +1,197 @@
+{
+"analise": {
+"clientes": "O cliente acha que paga duas vezes: 77% das 159 conversas de \"problemas com cartão de crédito\" citam fatura e cartão, 27% dizem já ter quitado o empréstimo e 25% falam em pagar duas vezes. Quem quer contratar não recebe nova oferta (74 de 113 contatos são de quem já teve empréstimo; 91% das conversas ouvem que a análise é automática). Quem se arrepende quer cancelar na hora (53% citam os 7 dias de desistência), mas só um agente faz isso. No NPS Relacional, 40% dos 212 comentários são de detratores (oferta baixa depois de pagar antecipado, limite que não aumenta);",
+"mudou": "\"Problemas com cartão de crédito\" quase dobra (86 → 164, +91%; alerta crítico de +324% em 04/11), enquanto \"não consegue contratar\" cai 49% (221 → 113) e o cancelamento 36% (135 → 86), após a investigação do erro de simulação (28/10). Suporte humano cai 11,4% (742). A nota média dos comentários de NPS Relacional que citam empréstimo cai de 6,97 para 6,80; o NPS Transacional do produto segue em 68,0 (68,2).",
+"atencao": [
+"Empréstimo que vira limite do cartão e gera fatura: sem mudança de produto ou de bot, o contato e o medo de pagar duas vezes continuam.",
+"Sem cancelamento no app: 63% das solicitações viram derivação ao backoffice; o roadmap do bot (prioridade 3) ainda não entregou.",
+"Oferta que não aparece após quitar: o atendente não vê nem libera; clientes dizem que vão encerrar a conta (NPS Relacional)."
+]
+},
+"motivos": [
+{
+"t": "Empréstimo – problemas com cartão de crédito",
+"n": 164,
+"ant": 86,
+"var": "+91%",
+"det": {
+"res": "O cliente acha que paga duas vezes: a parcela do empréstimo e a fatura do cartão que nasce do mesmo valor. 77% das conversas citam fatura e cartão, e em 64% o atendente explica o resgate do saldo.",
+"dor": [
+"<b>Fatura que não esperava:</b> 123 de 159 conversas (77%) citam a fatura do cartão; a dívida do cartão aparece na tela de empréstimos e o cliente não acha as faturas anteriores (ticket 46730533).",
+"<b>Pagar duas vezes:</b> 39 de 159 (25%) falam em duas vezes, dobro ou cobrança duplicada (tickets 46719674, 46713964).",
+"<b>Já quitou:</b> 43 de 159 (27%) dizem que já pagaram ou quitaram o empréstimo e ainda veem a fatura."
+],
+"exp": "Pagar só uma vez pelo dinheiro que contratou, ver o que deve e onde, e ter o desconto da antecipação.",
+"falha": [
+[
+"Produto",
+"O empréstimo vira limite no cartão e gera fatura sem que o cliente perceba a relação; a dívida aparece em duas telas."
+]
+],
+"ex": [
+"e1x",
+"e1y",
+"e58",
+"e59",
+"e5a"
+]
+},
+"ex": null
+},
+{
+"t": "Não consegue contratar um empréstimo",
+"n": 113,
+"ant": 221,
+"var": "−49%",
+"det": {
+"res": "A maior parte é cliente que já teve empréstimo e não recebe nova oferta; em 91% das conversas o texto cita análise ou liberação automática, e o atendimento não consegue verificar nem liberar.",
+"dor": [
+"<b>Sem nova oferta:</b> 84 de 113 contatos (74%) são de quem já teve ou antecipou empréstimo e não recebe nova oferta;",
+"<b>Sem critério nem prazo:</b> em 97 de 107 conversas (91%) a resposta é que a análise é automática e que \"não conseguimos liberar manualmente\" (ticket 46726517).",
+"<b>Limite:</b> 48 de 107 (45%) falam de limite; o atendente diz que o sistema faz novas análises conforme o uso do app, sem data."
+],
+"exp": "Receber uma nova oferta logo depois de quitar e poder pedir revisão quando a oferta não vem.",
+"falha": [
+[
+"Produto",
+"A oferta depende de análise automática sem aviso de quando ou por que não aparece; o cliente não sabe o que fazer para liberar."
+]
+],
+"ex": [
+"e1z",
+"e20",
+"e5d",
+"e5e",
+"e5f"
+]
+},
+"ex": null
+},
+{
+"t": "Deseja cancelar o empréstimo",
+"n": 86,
+"ant": 135,
+"var": "−36%",
+"det": {
+"res": "Quase todos se arrependeram e contrataram por engano; o cancelamento depende de um agente e leva até dois dias úteis: 53% das conversas citam os 7 dias de desistência e em 29% aparece o resgate do saldo.",
+"dor": [
+"<b>Os 7 dias:</b> 41 de 77 conversas (53%) citam o prazo de 7 dias de desistência; o cliente quer cancelar sem taxa.",
+"<b>Contratou por engano:</b> 12 de 77 (16%) falam de arrependimento ou engano: \"contratei por engano, o valor não foi utilizado\" (ticket 46728416).",
+"<b>Dinheiro na conta:</b> em 22 de 77 (29%) aparece o resgate do saldo; o cliente deve aguardar até dois dias úteis sem retirar o valor (ticket 46729942)."
+],
+"exp": "Cancelar na hora, pelo app, nos 7 dias de desistência.",
+"falha": [
+[
+"Produto",
+"Não há cancelamento no app: o pedido vira derivação ao backoffice (63% das solicitações, 325 de 517, entre 11/09 e 11/10)."
+]
+],
+"ex": [
+"e21",
+"e22",
+"e5g",
+"e5h",
+"e5i"
+]
+},
+"ex": null
+},
+{
+"t": "Desconhece ou não concorda com a cobrança",
+"n": 77,
+"ant": 105,
+"var": "−27%",
+"det": {
+"res": "O cliente não reconhece a cobrança do empréstimo: 65% citam empréstimo, 59% valor, 48% cartão e 28% falam de autorização do débito; muitos pagaram a fatura achando que o limite voltaria na hora.",
+"dor": [
+"<b>Pagou e o limite não voltou:</b> \"paguei a fatura do empréstimo, porém achei que ia liberar o mesmo valor de limite na hora\" (ticket 46711756).",
+"<b>Débito que não esperava:</b> 21 de 75 conversas (28%) falam de autorização do débito (ticket 46714092).",
+"<b>Quer o dinheiro de volta:</b> \"quero os 50 reais que recebi\" (ticket 46731579)."
+],
+"exp": "Entender de onde vem cada débito e ter o limite liberado logo após pagar.",
+"falha": [
+[
+"Produto",
+"O limite não é liberado na hora após o pagamento e o cliente não é avisado do prazo."
+]
+],
+"ex": [
+"e23",
+"e24",
+"e5j",
+"e5k",
+"e5l"
+]
+},
+"ex": null
+}
+],
+"temas": [
+{
+"canal": "NPS Transacional",
+"t": "Empréstimo e limite",
+"n": 267,
+"tom": "mix",
+"x": "Elogio dominante: praticidade, acesso fácil e agilidade. Críticas: limite baixo, limite que não é liberado ou aumentado após pagar e empréstimo reduzido mesmo com pagamento em dia (cliente que também."
+},
+{
+"canal": "NPS Transacional",
+"t": "Taxas, tarifas e juros",
+"n": 42,
+"tom": "mix",
+"x": "Juros e encargos: cliente que atrasou 2 dias por demora do salário reclama da cobrança; há elogio isolado à taxa de juros em conta. (nota média 7,0 · 15 detratores (0–6))"
+},
+{
+"canal": "NPS Transacional",
+"t": "Recargas, transporte e contas",
+"n": 11,
+"tom": "pos",
+"x": "nota média 10,0 · 0 detratores"
+},
+{
+"canal": "NPS Relacional",
+"t": "Empréstimo e limite",
+"n": 212,
+"tom": "mix",
+"x": "Cliente recorrente frustrado: a oferta cai depois de pagar antecipado, o limite não aumenta e \"liberam empréstimo para usar como limite no cartão, ganham duas vezes\"."
+}
+],
+"eventos": [
+{
+"d": "28/10",
+"tag": "Produto",
+"t": "Mesa de trabalho decide investigar o erro “cadastro não habilitado” na simulação (maior motivo, ~2 mil clientes/dia) e analisar tela de cancelamento."
+},
+{
+"d": "01/11",
+"tag": "Incidente",
+"t": "Certificado mTLS do Lending vencido: contratação e pagamento parados por ~5h25 na madrugada, 22 contatos. Impacto: Suporte humano quase dobrou no domingo (18 contra 9–10);"
+},
+{
+"d": "04/11",
+"tag": "Incidente",
+"t": "Contratação e negociação indisponíveis, 07:14–07:23: 29 contatos; manutenção Matera/Oracle 22:00–22:30. Impacto: volume no patamar normal do horário;"
+}
+],
+"exemplos": {
+"NPS Transacional": [],
+"NPS Relacional": [
+"ep",
+"eq"
+],
+"Lojas": [
+"e10"
+],
+"Redes": [
+"e25",
+"e26"
+]
+},
+"mencoes": {
+"texto": "Nas lojas, o Empréstimo aparece em 30 avaliações na W45, com 30% positivas: empréstimo cancelado mesmo com pagamento em dia, juros altos e \"propaganda enganosa\". Nas redes, as menções sobem de 7 para 12. No Reclame Aqui, vão de 90 para 132 na W45 (+47%): empréstimo de valor muito baixo (R$ 10), oferta que não volta depois de pagar e dinheiro do empréstimo preso no limite garantido.",
+"ra": [
+"e18",
+"e19"
+]
+}
+}

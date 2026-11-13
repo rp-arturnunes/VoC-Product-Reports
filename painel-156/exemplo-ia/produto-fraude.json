@@ -1,0 +1,111 @@
+{
+"analise": {
+"clientes": "Quem tem todo o saldo bloqueado quer saber quando recebe: 57% das 250 conversas perguntam de prazo, 19% pedem o motivo e 14% terminam com processo judicial. Quem teve só parte do saldo bloqueado vê o Pix no histórico e o saldo zerado: 45% falam disso e 36% recebem número de processo e tribunal para buscar com advogado. Nas redes, posts falam de carteira bloqueada há dias e de prazo informado que passou.",
+"mudou": "\"Saldo bloqueado – todo o saldo\" cai 34% (415 → 276), depois do pico de 86 tickets em 29/10; parte do saldo −11% (56). Suporte humano cai 25,3% (346). CSAT Suporte humano em 53,3%, o menor da série. Aparece \"atendimento não prestado\" (21, contra 3).",
+"atencao": [
+"Bloqueio sem motivo nem prazo visível ao cliente: o atendente não pode desbloquear e depende do retorno do setor.",
+"As telas de aviso do bloqueio judicial e os dados do bloqueio no app (prioridade até 15/11) atacam o que o cliente pede.",
+"CSAT Suporte humano abaixo do piso de 75% desde a W41."
+]
+},
+"motivos": [
+{
+"t": "Saldo da carteira bloqueado – todo o saldo",
+"n": 276,
+"ant": 415,
+"var": "−34%",
+"det": {
+"res": "O cliente com todo o saldo bloqueado quer saber quando recebe: 57% das conversas perguntam de prazo ou de quando o dinheiro volta e 19% pedem o motivo; o atendimento só informa que depende da análise de segurança.",
+"dor": [
+"<b>Sem prazo:</b> 143 de 250 conversas (57%) perguntam quando recebem o dinheiro; a resposta é que o valor só fica disponível após o desbloqueio, mediante análise de segurança (ticket 46734227).",
+"<b>Dinheiro de que precisa:</b> o cliente diz estar sem dinheiro para comer ou no meio de uma compra e pede o desbloqueio (ticket 46737650).",
+"<b>Sem motivo:</b> 47 de 250 (19%) pedem o motivo do bloqueio e 47 (19%) falam de contestação."
+],
+"exp": "Saber por que o saldo foi bloqueado, quando será liberado e poder usar o dinheiro enquanto isso.",
+"falha": [
+[
+"Produto",
+"O bloqueio não mostra motivo nem prazo ao cliente; ele só descobre ao falar com o atendimento."
+]
+],
+"ex": [
+"ee",
+"eh",
+"e8g",
+"e8h",
+"e8i"
+]
+},
+"ex": null
+},
+{
+"t": "Saldo da carteira bloqueado – parte do saldo",
+"n": 56,
+"ant": 63,
+"var": "−11%",
+"det": {
+"res": "Pix que aparece no histórico mas não no saldo: 45% das conversas falam disso e 36% terminam com dados de processo judicial para o cliente acompanhar com advogado.",
+"dor": [
+"<b>Valor que some:</b> 25 de 56 conversas (45%) dizem que o Pix aparece no histórico mas o saldo está zerado (ticket 46715620).",
+"<b>Não sabe onde foi o dinheiro:</b> \"eu tinha 1720,22 na conta e não sei onde esse dinheiro foi parar\" (ticket 46710051).",
+"<b>Processo judicial:</b> 20 de 56 (36%) recebem número do processo e tribunal; a liberação depende do juízo (ticket 46710051)."
+],
+"exp": "Saber que o valor foi bloqueado por decisão judicial, quanto e como liberar, sem precisar de advogado.",
+"falha": [
+[
+"Produto",
+"O app mostra o Pix no histórico e o saldo zerado, sem explicar o bloqueio judicial."
+]
+],
+"ex": [
+"e8",
+"eo",
+"e8k",
+"e8l",
+"e8m"
+]
+},
+"ex": null
+},
+{
+"t": "Atendimento não prestado",
+"n": 21,
+"ant": 3,
+"var": "+600%",
+"det": null,
+"ex": [
+"e8o",
+"e8p"
+]
+}
+],
+"temas": [
+{
+"canal": "Redes",
+"t": "Bloqueio e encerramento",
+"n": 3,
+"tom": "neu",
+"x": "Carteira bloqueada há dias, prazo informado vencido e prestador de serviço que diz ter tido o dinheiro bloqueado após um golpe."
+}
+],
+"eventos": [
+{
+"d": "29/10",
+"tag": "Pico",
+"t": "“Saldo da carteira bloqueado – todo o saldo”: 86 tickets no dia (+50% em volume vs baseline). Impacto: 276 na semana (415 na anterior, −33%)."
+}
+],
+"exemplos": {
+"Redes": [
+"e3z",
+"ei"
+]
+},
+"mencoes": {
+"texto": "Bloqueios quase não aparecem nas lojas, mas quando aparecem a nota é 1. Nas redes, os relatos são de carteira bloqueada há dias, com o prazo informado vencido. No Reclame Aqui, bloqueio e conta encerrada caem de 64 para 45 reclamações, mas seguem entre as mais graves: conta encerrada com saldo retido e sem prazo de devolução.",
+"ra": [
+"e1b",
+"e1f"
+]
+}
+}

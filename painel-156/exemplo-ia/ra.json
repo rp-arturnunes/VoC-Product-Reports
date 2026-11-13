@@ -1,0 +1,252 @@
+{
+"texto": "O Reclame Aqui recebeu 514 reclamações na W45, o maior volume em 10 semanas (+25% sobre a W44). O salto vem de cobrança, fatura e anuidade, que dobram (de 97 para 200) na semana do maior lote da anuidade, e de empréstimo e limite (+38%). Acesso e cadastro cresce pela terceira semana seguida (69, 77 e 90), em linha com o bloqueio de acesso fora do Brasil (29/10), e seguro não contratado dobra (de 13 para 27) na semana em que o Seguro Acidente e Renda chegou a toda a base. Saldo bloqueado e conta encerrada recua (de 113 para 96).",
+"aviso": "Base HugMe (prod.cx.fat_hugme_tickets), pela data da reclamação. Produto pela vertical da HugMe e, quando não classificada, pelo texto; temas pelo título e texto, e uma reclamação pode ter mais de um tema. A classificação de motivo da W45 ainda está incompleta.",
+"temas": [
+{
+"t": "Cobrança, fatura e anuidade",
+"v": [
+92,
+122,
+88,
+89,
+109,
+117,
+94,
+82,
+97,
+200
+],
+"p": "cartao",
+"ex": [
+"ed",
+"e17"
+],
+"det": "Dobra na W45, na semana do maior lote da anuidade (02/11). Além da anuidade de cartão que o cliente diz nunca ter usado, aparece a fatura sobre o dinheiro que o próprio cliente colocou no limite garantido."
+},
+{
+"t": "Empréstimo e limite",
+"v": [
+147,
+151,
+163,
+151,
+145,
+150,
+129,
+148,
+134,
+185
+],
+"p": "emprestimo",
+"ex": [
+"e18",
+"e19"
+],
+"det": "Sobe 38%: empréstimo de valor muito baixo, oferta que não volta depois de pagar e dinheiro do empréstimo preso no limite garantido."
+},
+{
+"t": "Atendimento sem solução",
+"v": [
+133,
+155,
+104,
+98,
+94,
+84,
+90,
+105,
+100,
+121
+],
+"p": null,
+"ex": [
+"e1a"
+],
+"det": ""
+},
+{
+"t": "Saldo bloqueado e conta encerrada",
+"v": [
+113,
+138,
+79,
+84,
+89,
+99,
+97,
+105,
+113,
+96
+],
+"p": "fraude",
+"ex": [
+"e1b",
+"e1c"
+],
+"det": "Recua na W45, mas segue entre os temas mais graves: conta encerrada com saldo retido e sem prazo de devolução."
+},
+{
+"t": "Pix não concluído ou não recebido",
+"v": [
+73,
+85,
+62,
+81,
+86,
+92,
+76,
+78,
+77,
+95
+],
+"p": "pix",
+"ex": [
+"e1d"
+],
+"det": ""
+},
+{
+"t": "Acesso e cadastro",
+"v": [
+60,
+60,
+59,
+56,
+57,
+60,
+59,
+69,
+77,
+90
+],
+"p": "conta",
+"ex": [
+"e1b",
+"e1c"
+],
+"det": "Cresce pela terceira semana seguida, em linha com o bloqueio de acesso fora do Brasil (29/10); inclui contas PJ encerradas e acesso perdido."
+},
+{
+"t": "Estorno e reembolso",
+"v": [
+61,
+82,
+59,
+50,
+61,
+72,
+53,
+57,
+65,
+81
+],
+"p": null,
+"ex": [
+"e1e"
+],
+"det": ""
+},
+{
+"t": "Golpe e fraude",
+"v": [
+34,
+41,
+43,
+36,
+42,
+49,
+30,
+48,
+43,
+50
+],
+"p": "fraude",
+"ex": [
+"e1f"
+],
+"det": ""
+},
+{
+"t": "Negativação",
+"v": [
+29,
+29,
+22,
+16,
+16,
+28,
+19,
+19,
+24,
+34
+],
+"p": "emprestimo",
+"ex": [
+"e1g",
+"e1h"
+],
+"det": "Sobe com casos de CPF usado para abrir conta sem consentimento e cobrança lançada no Serasa."
+},
+{
+"t": "Seguro não contratado",
+"v": [
+11,
+31,
+17,
+14,
+28,
+27,
+13,
+8,
+13,
+27
+],
+"p": "seguros",
+"ex": [
+"e1i"
+],
+"det": "Dobra na semana em que o Seguro Acidente e Renda chegou a toda a base (29/10), com relatos de contratação involuntária."
+},
+{
+"t": "Transporte",
+"v": [
+9,
+19,
+10,
+9,
+15,
+11,
+10,
+12,
+4,
+13
+],
+"p": "transp",
+"ex": [
+"e1j"
+],
+"det": ""
+},
+{
+"t": "Cashback, bônus e indicação",
+"v": [
+16,
+19,
+11,
+15,
+16,
+18,
+10,
+17,
+7,
+12
+],
+"p": "boletos",
+"ex": [
+"e1k",
+"e1l"
+],
+"det": ""
+}
+]
+}

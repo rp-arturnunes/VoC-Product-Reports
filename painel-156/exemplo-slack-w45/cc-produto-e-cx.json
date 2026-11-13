@@ -1,0 +1,12 @@
+{
+ "canal": "#cc-produto-e-cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Cartão de Crédito · Semana 45 · 02/11–08/11/2026\n**O NPS do Cartão cai a 41 (−11 pts), abaixo do mínimo de 55, na semana do maior lote da anuidade (02/11)**\nFatura que o cliente não reconhece e cancelamento para não pagar anuidade lideram os contatos; a causa da fatura (limite de empréstimo e de venda) segue sem mudança.\nNa thread: o resumo, os destaques da semana e as menções do Cartão.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Cartão de Crédito",
+   "chave": "cartao",
+   "texto": "**Cartão de Crédito**\n**Resumo:** O NPS Transacional do Cartão cai de 52,3 para 41,2 e o suporte humano sobe 26,7% (2.076), com pico de 603 tickets em 03/11, dia seguinte à maior cobrança (R$ 127 mil, 48,3 mil clientes). \"Não entende porque recebeu uma fatura\" vai de 207 a 367 e \"bloquear, desbloquear ou cancelar cartão\" de 360 a 431; o bot de cancelamento (100% da base desde 30/10) reteve só 15% de quem entrou (51 de 344).\n**Destaques da semana:**\n• NPS do Cartão abaixo do mínimo: NPS 41 (−11 pts); meta 75, mínimo 55. Não resolvido.\n• Reclame Aqui e Procon em alta: Reclame Aqui 4,3x; Procon +133%. Não resolvido.\n• Cancelamento do Cartão no bot ainda transborda para o agente: 7x mais rápido no bot; 40% ainda vão ao agente. Em andamento.\n**Menções:**\n• Nas lojas, o Cartão aparece em 43 avaliações na W45 (28 na W44) e só 26% são positivas (39% na W44): saldo que sumiu, estorno que leva duas faturas e contrato que o cliente diz não ter assinado. Nas redes, 32 interações, metade negativas, com dúvidas de cobrança e de Pix com cartão.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=cartao/rep|Ver no Report de Cartão de Crédito>"
+  }
+ ]
+}

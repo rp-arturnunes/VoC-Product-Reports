@@ -1,0 +1,180 @@
+{
+"analise": {
+"clientes": "O cliente que vive de pagar contas e boletos reclama do fim do cashback: \"não recebi o cashback\" (95) e \"informações sobre bônus e cashback\" (50) dominam os contatos. No NPS Transacional (99 comentários) o cashback é o tema mais negativo (nota 7,4); no Relacional, comentaristas dizem que vão parar de usar o app; nas lojas, 10 de 12 avaliações são negativas (as 5 que citam cashback são negativas) e nas redes agentes que recebem boletos reclamam da perda da comissão.",
+"mudou": "O cashback em contas e boletos pagos com saldo acabou em 05/11 (aviso a ~130 mil clientes em 04/11). O suporte humano sobe de 52 a 246 (+373%), com pico de 83 tickets em 05/11, e já cede (20 em 07/11, 3 em 08/11). O NPS Transacional está em 69,9 (terceira queda seguida) e a nota média das avaliações de loja foi de 3,33 para 1,75.",
+"atencao": [
+"Perfil que usa o app como renda extra (agentes, autônomos) fala em abandonar o app: risco de perder volume de boletos.",
+"Incidentes abertos em contas e boletos: INC-16470 (Itaú, 18 dias) e comprovantes indisponíveis (INC-16512, 16531 e 16543).",
+"Orientação ao atendimento: o fim do cashback não é falha, mas os tickets de \"não recebi o cashback\" seguem sendo abertos."
+]
+},
+"motivos": [
+{
+"t": "Não recebi o cashback",
+"n": 95,
+"ant": 2,
+"var": "+4650%",
+"det": {
+"res": "É o fim do cashback em contas e boletos pagos com saldo: 73% das conversas citam cashback, 49% pagamento e 44% cartão; o atendente explica que o cashback continua nos pagamentos com cartão de crédito.",
+"dor": [
+"<b>Fim do cashback:</b> 66 de 90 conversas (73%) citam cashback; \"a RecargaPay não vai pagar mais cashback para gente que trabalha com boleto\" (ticket 46715575).",
+"<b>Cartão de crédito:</b> 40 de 90 (44%) citam cartão; o atendente indica pagar com o cartão (ticket 46725790).",
+"<b>Boletos como renda:</b> 31 de 90 (34%) citam boletos; quem recebe pagamentos para outros perde a renda extra."
+],
+"exp": "Continuar recebendo cashback nos boletos e contas pagos com saldo, ou saber o que mudou antes.",
+"falha": [
+[
+"Produto",
+"O cashback acaba em pagamentos com saldo sem aviso no momento do pagamento; o aviso foi por e-mail e push em 04/11."
+]
+],
+"ex": [
+"e0",
+"e1",
+"e4t",
+"e4u",
+"e4v"
+]
+},
+"ex": null
+},
+{
+"t": "Informações sobre bônus e cashback",
+"n": 50,
+"ant": 2,
+"var": "+2400%",
+"det": {
+"res": "Dúvida sobre a mudança do cashback: 49% das conversas citam cashback, 31% pagamentos e 27% cartão; o cliente recebeu o e-mail e quer entender o que muda a partir de 05/11.",
+"dor": [
+"<b>E-mail da mudança:</b> \"recebi um e-mail que não vou mais receber cashback com os boletos pagos\" (ticket 46719600).",
+"<b>A partir de amanhã:</b> o cliente quer confirmar a data da mudança (ticket 46715117).",
+"<b>Cartão e saldo:</b> 13 de 48 (27%) citam cartão e 11 (23%) saldo."
+],
+"exp": "Entender o que muda e como continuar ganhando cashback.",
+"falha": [
+[
+"Produto",
+"A mudança de regra chega por e-mail e push, não no fluxo de pagamento."
+]
+],
+"ex": [
+"e2",
+"e1m",
+"e4w",
+"e4x",
+"e4y"
+]
+},
+"ex": null
+},
+{
+"t": "Não recebeu o cashback",
+"n": 19,
+"ant": 0,
+"var": "novo",
+"det": {
+"res": "O cliente nota contas pagas sem cashback: 68% das conversas citam contas, 63% cashback e 47% pagamento; o atendente explica que é a nova atualização.",
+"dor": [
+"<b>Contas sem cashback:</b> \"as últimas 4 contas que eu paguei apareceu uma informação que foi sem cashback\" (ticket 46720635).",
+"<b>\"Não ta pagando mais\":</b> o cliente pergunta por que não recebe mais cashback (ticket 46721014).",
+"<b>Atualização:</b> a resposta é que é devido à nova atualização (ticket 46720487)."
+],
+"exp": "Saber antes do pagamento que não haverá cashback.",
+"falha": [
+[
+"Produto",
+"A tela de pagamento mostra \"sem cashback\" só depois de pagar, sem explicar a mudança."
+]
+],
+"ex": [
+"e1n",
+"e1o",
+"e50",
+"e51",
+"e52"
+]
+},
+"ex": null
+},
+{
+"t": "Como utilizo o cashback",
+"n": 14,
+"ant": 1,
+"var": "+1300%",
+"det": null,
+"ex": [
+"e53",
+"e54",
+"e55",
+"e56",
+"e57"
+]
+}
+],
+"temas": [
+{
+"canal": "NPS Transacional",
+"t": "Taxas, tarifas e juros",
+"n": 19,
+"tom": "pos",
+"x": "Positivo em geral; pedem melhorar juros e cashback. (nota média 9,0 · 2 detratores (0–6))"
+},
+{
+"canal": "NPS Transacional",
+"t": "Empréstimo e limite",
+"n": 17,
+"tom": "pos",
+"x": "Pedido de oferta de crédito: \"único app que não me deu crédito\", comparando com Mercado Pago, Nubank e InfinitePay. (nota média 9,1 · 2 detratores (0–6))"
+},
+{
+"canal": "NPS Transacional",
+"t": "Cashback e benefícios",
+"n": 16,
+"tom": "mix",
+"x": "O fim do cashback: \"vocês tiraram o cashback, como vou ter minha renda?\" e \"pagar boletos sem cashback é horrível, não utilizarei mais o app\". Quem ainda recebe elogia."
+},
+{
+"canal": "NPS Relacional",
+"t": "Recargas, transporte e contas",
+"n": 6,
+"tom": "neg",
+"x": "Fim do cashback: \"não vamos mais receber por boleto, vamos ter que parar de usar o app\". Pedem de volta o cashback e a não cobrança de IR no rendimento do saldo. (nota média 6,5 · 3 detratores (0–6))"
+}
+],
+"eventos": [
+{
+"d": "05/11",
+"tag": "Produto",
+"t": "Fim do cashback em contas e boletos pagos com saldo (PF e PJ); e-mail e push a ~130 mil clientes em 04/11; cashback acumulado segue no saldo."
+},
+{
+"d": "04/11",
+"tag": "Central",
+"t": "Artigo “O cashback em contas e boletos pagos com saldo mudou” indicado na orientação ao atendimento."
+}
+],
+"exemplos": {
+"NPS Transacional": [
+"e1p"
+],
+"NPS Relacional": [
+"ek",
+"e1q"
+],
+"Lojas": [
+"ej",
+"e1r"
+],
+"Redes": [
+"e1s",
+"e1t"
+]
+},
+"mencoes": {
+"texto": "Nas lojas, Contas e Boletos vai de 3 para 12 avaliações na W45 e só 2 são positivas, todas depois do fim do cashback (05/11). Nas redes, as menções vão de 1 para 10, com agentes reclamando da perda da comissão. No Reclame Aqui, Contas e Boletos vai de 1 para 6 reclamações, com cashback de recarga não pago.",
+"ra": [
+"e1k",
+"e1l"
+]
+}
+}

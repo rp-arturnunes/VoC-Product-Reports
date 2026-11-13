@@ -1,0 +1,102 @@
+{
+"analise": {
+"clientes": "Lojistas esperam o valor da venda e não sabem o prazo: 59% das 32 conversas de \"não recebeu a venda\" falam de quando recebem; o valor cai no próximo dia útil até 13h e fins de semana e feriados não contam. Pedem cancelar a venda dentro do app (não há a opção) e simular o valor com a taxa para o cliente (NPS Transacional, 11 comentários).",
+"mudou": "Suporte humano estável (66, −2,9%). O NPS Transacional sobe de 48,7 a 53,7, ainda abaixo do mínimo de 55, e o CSAT Suporte humano recupera de 50,0% a 76,9%. Segue em andamento a regularização do incidente de taxa de 13/10 (59 vendas, R$ 1.773,36).",
+"atencao": [
+"NPS Transacional abaixo de 55 pts com base pequena (41 respostas; uma resposta move ~2,4 pts).",
+"O prazo de recebimento não aparece antes da venda; o feriado de 02/11 agravou a percepção de atraso.",
+"Crédito ao lojista do incidente de 13/10 ainda em andamento: nova reclamação se atrasar."
+]
+},
+"motivos": [
+{
+"t": "Não recebeu a venda",
+"n": 32,
+"ant": 36,
+"var": "−11%",
+"det": {
+"res": "O lojista espera o valor da venda e não sabe o prazo: 59% das conversas falam de prazo ou de quando recebem; o valor cai no próximo dia útil até 13h e fins de semana e feriados não contam.",
+"dor": [
+"<b>Venda que não caiu:</b> 19 de 32 conversas (59%) perguntam quando recebem; \"fiz a venda na sexta à noite e até agora não caiu\" (ticket 46704950).",
+"<b>Prazo do recebimento:</b> o atendente explica que o valor cai no próximo dia útil até 13h e que feriados e fins de semana não contam (ticket 46704950).",
+"<b>Cancelar a venda:</b> 6 de 32 (19%) querem cancelar, mas \"não aparece opção de cancelar venda\" (ticket 46735886)."
+],
+"exp": "Receber na hora ou saber o prazo antes de vender.",
+"falha": [
+[
+"Produto",
+"O prazo de recebimento (próximo dia útil até 13h) não aparece antes da venda."
+]
+],
+"ex": [
+"et",
+"e1u",
+"e5n",
+"e5o",
+"e5p"
+]
+},
+"ex": null
+},
+{
+"t": "Cancelamento de venda",
+"n": 11,
+"ant": 12,
+"var": "−8%",
+"det": null,
+"ex": [
+"e5r",
+"e5s",
+"e5t",
+"e5u",
+"e5v"
+]
+},
+{
+"t": "Cliente não consegue pagar o link",
+"n": 8,
+"ant": 7,
+"var": "+14%",
+"det": null,
+"ex": [
+"e5x",
+"e5y",
+"e5z",
+"e60",
+"e61"
+]
+},
+{
+"t": "Como funciona o link de pagamento",
+"n": 7,
+"ant": 5,
+"var": "+40%",
+"det": null,
+"ex": [
+"e64",
+"e65",
+"e66",
+"e67",
+"e68"
+]
+}
+],
+"temas": [],
+"eventos": [
+{
+"d": "13/10",
+"tag": "Incidente",
+"t": "Regra de preço sem condição aplicou juros de 11,90% em vendas parceladas entre 14h36 e 15h34;"
+}
+],
+"exemplos": {
+"NPS Transacional": [
+"e1v",
+"e1w"
+]
+},
+"mencoes": {
+"texto": "Link de Pagamento quase não aparece em lojas, redes e Reclame Aqui; a voz do cliente vem do NPS e do suporte. No Reclame Aqui, não houve reclamações na W45.",
+"ra": []
+}
+}

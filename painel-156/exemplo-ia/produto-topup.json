@@ -1,0 +1,80 @@
+{
+"analise": {
+"clientes": "Base mínima: 8 tickets do suporte humano. No NPS Transacional (46 comentários, nota 9,3) os clientes elogiam; um dos comentários mais críticos pede comissão maior na recarga (\"quase não compensa\").",
+"mudou": "Suporte humano de 5 para 8 tickets e NPS Transacional em 81,9 (79,5). A nota média dos comentários segue estável (9,26 contra 9,37).",
+"atencao": [
+"Comissão da recarga como ponto de atrito com quem revende.",
+"Base pequena: sem tendência confiável."
+]
+},
+"motivos": [
+{
+"t": "Não conseguiu realizar uma recarga",
+"n": 3,
+"ant": 2,
+"var": "+50%",
+"det": null,
+"ex": [
+"e8q",
+"e8r",
+"e8s"
+]
+},
+{
+"t": "Teve problema com a recarga de celular",
+"n": 3,
+"ant": 0,
+"var": "novo",
+"det": null,
+"ex": [
+"e8t",
+"e8u",
+"e8v"
+]
+},
+{
+"t": "Informações sobre bônus e cashback",
+"n": 1,
+"ant": 1,
+"var": "0%",
+"det": null,
+"ex": [
+"e8w"
+]
+}
+],
+"temas": [
+{
+"canal": "NPS Transacional",
+"t": "Empréstimo e limite",
+"n": 12,
+"tom": "pos",
+"x": "Sem críticas; pedem um cartão de crédito próprio. (nota média 10,0 · 0 detratores (0–6))"
+},
+{
+"canal": "NPS Transacional",
+"t": "Recargas, transporte e contas",
+"n": 8,
+"tom": "mix",
+"x": "A comissão da recarga é baixa para quem revende (\"quase não compensa\"); pedem barra de pesquisa e API para desenvolvedores. (nota média 8,4 · 2 detratores (0–6))"
+},
+{
+"canal": "NPS Transacional",
+"t": "Cashback e benefícios",
+"n": 3,
+"tom": "mix",
+"x": "nota média 8,3 · 1 detratores"
+}
+],
+"eventos": [],
+"exemplos": {
+"NPS Transacional": [
+"e2w",
+"e2x"
+]
+},
+"mencoes": {
+"texto": "Top Up quase não aparece em lojas e no Reclame Aqui; nas redes, as menções são de recarga de celular e comissão. No Reclame Aqui, houve 1 reclamação na W45.",
+"ra": []
+}
+}

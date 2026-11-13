@@ -1,0 +1,198 @@
+{
+"analise": {
+"clientes": "Dois grupos: quem paga com cartão de crédito e recebe recusa por segurança sem explicação (58% das 235 conversas de \"não consegue realizar o Pix\" citam cartão; 30% perguntam se o cartão foi cobrado) e quem espera um Pix que não chega (48% das 219 conversas de \"problemas com uma transação\", 76% já com comprovante e NSU). Quem foi vítima de golpe quer o dinheiro de volta e não sabe o passo a passo (47% das conversas de denúncia). No NPS Relacional, 13 de 32 comentários de Pix são de detratores, e o mais crítico lido fala de seguro pré-marcado no fluxo; nas lojas, 8 de 9 avaliações sobre a taxa do Pix Out CC são negativas.",
+"mudou": "Pix suporte humano sobe 15,2% (794). \"Problemas com uma transação Pix\" vai de 145 a 227 e \"instabilidade no app\" de 6 a 42, na semana da queda do DICT (06/11, 204 tickets do suporte humano no dia) e de duas indisponibilidades do BTG; o NPS Transacional cai a 65,1 e a nota média dos comentários, de 8,90 para 8,43. Começou em 05/11 o teste da taxa de 4,99% no Pix Out CC (35 tickets de dúvida sobre taxa). Denúncias de Pix indevido caem 43% (79).",
+"atencao": [
+"Taxa do Pix Out CC: clientes do teste (4,99%) e de fora veem taxas diferentes; 11% das conversas de \"transação\" citam taxa e um cliente diz que o destino recebe menos que o combinado.",
+"Recusa sem motivo nem próximo passo: o atendente não enxerga o critério e orienta usar outro cartão; risco de abandono do Pix Out CC.",
+"O aviso de instabilidade do bot aparece em 13% das conversas de \"transação\" (a maior taxa entre os motivos analisados) e passa por cima da intenção do cliente."
+]
+},
+"motivos": [
+{
+"t": "Não consegue realizar o Pix (Pix Out)",
+"n": 240,
+"ant": 242,
+"var": "−1%",
+"det": {
+"res": "Quase 60% das conversas são de Pix pago com cartão de crédito: o cliente recebe recusa por segurança, não sabe se o cartão foi cobrado e o atendimento não consegue aprovar nem explicar o critério.",
+"dor": [
+"<b>Recusa sem explicação:</b> 94 de 235 conversas (40%) citam recusa ou erro; um valor menor foi autorizado e o maior foi recusado, e a resposta é que a recusa é medida de segurança e não pode ser rev.",
+"<b>Cobrança no cartão sem Pix:</b> 71 de 235 (30%) perguntam se foram cobrados ou se haverá estorno; ouvem que é pré-autorização, estornada em até 15 dias ou 2 ciclos de fatura (ticket 46729967).",
+"<b>Quer o dinheiro de volta:</b> 52 de 235 (22%) pedem devolução ou estorno do valor."
+],
+"exp": "Saber o motivo da recusa e se o cartão foi cobrado, e conseguir concluir o Pix com o mesmo cartão.",
+"falha": [
+[
+"Produto",
+"A recusa chega sem motivo nem próximo passo; o cliente só descobre que foi medida de segurança ao falar com o atendimento."
+]
+],
+"ex": [
+"e2j",
+"e2k",
+"e6p",
+"e6q",
+"e6r"
+]
+},
+"ex": null
+},
+{
+"t": "Problemas com uma transação Pix (Pix Out)",
+"n": 183,
+"ant": 114,
+"var": "+61%",
+"det": {
+"res": "O cliente enviou ou espera um Pix que não aparece e não consegue provar: em 76% das conversas surge o comprovante com NSU, 48% dizem que o Pix não chegou e 13% viram o aviso de instabilidade do Pix.",
+"dor": [
+"<b>Pix que não chega:</b> 106 de 219 conversas (48%) dizem que o Pix não chegou ou não foi recebido; só depois do comprovante e do NSU (em 166, ou 76%) a análise avança (tickets 46730314, 46730664).",
+"<b>Pix não aprovado, valor no cartão:</b> 53 de 219 (24%) perguntam de cobrança ou estorno; ouvem que o valor é pré-autorização a ser estornada pelo emissor (ticket 46726890).",
+"<b>Quer o dinheiro de volta:</b> 58 de 219 (26%) pedem devolução; 16 (7%) falam de Pix para pessoa ou chave errada."
+],
+"exp": "Ver o Pix concluído ou o dinheiro de volta na hora, e que o destinatário receba o valor combinado.",
+"falha": [
+[
+"Produto",
+"Pix \"em processamento\" sem prazo nem comprovante utilizável; o cliente depende do NSU e não sabe onde achá-lo (76% das conversas)."
+]
+],
+"ex": [
+"e4",
+"e2l",
+"e6t",
+"e6u",
+"e6v"
+]
+},
+"ex": null
+},
+{
+"t": "Quero cancelar um Pix que fiz pelo app (Pix Out)",
+"n": 67,
+"ant": 68,
+"var": "−2%",
+"det": {
+"res": "O cliente enviou o Pix errado ou por engano e quer cancelar: 31% falam de cancelar, 28% de erro e 31% de cartão; a resposta é que Pix aprovado não pode ser cancelado e que a contestação só vale para fraude.",
+"dor": [
+"<b>Engano:</b> 17 de 61 conversas (28%) falam de valor errado ou de erro ao enviar (ticket 46711559).",
+"<b>Pagamento em processamento:</b> o cliente tem operações pendentes e quer cancelar (ticket 46711559).",
+"<b>Contestação sem fraude:</b> \"como você informou que realizou a transação por engano, não é possível contestar\" (ticket 46707392)."
+],
+"exp": "Poder desfazer um Pix enviado por engano logo depois do envio.",
+"falha": [
+[
+"Produto",
+"Não há cancelamento do Pix aprovado nem aviso claro antes do envio de que ele é definitivo."
+]
+],
+"ex": [
+"e2m",
+"e2n",
+"e6w",
+"e6x",
+"e6y"
+]
+},
+"ex": null
+},
+{
+"t": "Denunciar um Pix indevido (Pix Out)",
+"n": 62,
+"ant": 123,
+"var": "−50%",
+"det": {
+"res": "Quem foi vítima de golpe quer o dinheiro de volta e não sabe o passo a passo: 47% das conversas passam por comprovante ou NSU e 25% por boletim de ocorrência; parte termina sem recuperação.",
+"dor": [
+"<b>Golpe:</b> 24 de 73 conversas (33%) citam golpe ou fraude; o cliente espera devolução imediata e pergunta onde fica o Banco Central (ticket 46724290).",
+"<b>Dados da transação:</b> 34 de 73 (47%) passam por comprovante ou NSU; o cliente precisa do ID, dos dados do recebedor, da data e do valor, que estão no histórico do app.",
+"<b>Boletim de ocorrência:</b> 18 de 73 (25%) falam de BO; sem ele, dentro do prazo, a análise não segue (ticket 46728102)."
+],
+"exp": "Que a denúncia devolva o valor e que o processo seja rápido e simples.",
+"falha": [
+[
+"Processo",
+"A contestação exige várias idas e vindas: o atendente começa perguntando qual das três situações ocorreu e depois pede dados e BO."
+]
+],
+"ex": [
+"e2o",
+"e2p",
+"e6z",
+"e70",
+"e71"
+]
+},
+"ex": null
+}
+],
+"temas": [
+{
+"canal": "NPS Transacional",
+"t": "Empréstimo e limite",
+"n": 116,
+"tom": "mix",
+"x": "Pedido de mais limite e queixa de empréstimo que cai no cartão; elogio à praticidade de ter crédito dentro do app. (nota média 7,9 · 26 detratores (0–6))"
+},
+{
+"canal": "NPS Transacional",
+"t": "Pix e transferências",
+"n": 39,
+"tom": "pos",
+"x": "Elogio: agilidade para enviar e receber e clientes de 3 anos que \"não têm nada a reclamar\". (nota média 8,6 · 4 detratores (0–6))"
+},
+{
+"canal": "NPS Transacional",
+"t": "Cartão: anuidade, fatura e cobrança",
+"n": 28,
+"tom": "neg",
+"x": "Pix por cartão: críticas ao produto empurrado no fluxo, à falta de transparência e à anuidade paga sem uso. (nota média 6,1 · 12 detratores (0–6))"
+},
+{
+"canal": "NPS Relacional",
+"t": "Pix e transferências",
+"n": 32,
+"tom": "neg",
+"x": "Cobrança de taxa para enviar, app que \"fica fora do ar sem motivo\" e dificuldade de entrar em outro celular. Elogio ao Pix com cartão de crédito. (nota média 6,6 · 13 detratores (0–6))"
+}
+],
+"eventos": [
+{
+"d": "06/11",
+"tag": "Incidente",
+"t": "Queda do DICT do Banco Central (P2), 19:26–21:02: 110 contatos, 13,6% retidos no bot (39,6% em média nos incidentes de Pix em 30 dias)."
+},
+{
+"d": "06/11",
+"tag": "Incidente",
+"t": "Envio de Pix indisponível (BTG) de sábado 23:38 a domingo 07:51 (8h13): 50 contatos, 68,0% retidos no bot; volume dentro do normal da madrugada."
+},
+{
+"d": "03/11",
+"tag": "Incidente",
+"t": "Envio de Pix indisponível (parceiro BTG), 20:53–23:49 (2h56): 35 contatos; ~11,3 mil usuários com erro visível segundo o monitor do app."
+}
+],
+"exemplos": {
+"NPS Transacional": [
+"e2q"
+],
+"NPS Relacional": [
+"e2r"
+],
+"Lojas": [
+"e2s",
+"e2t"
+],
+"Redes": [
+"e2u",
+"e2v"
+]
+},
+"mencoes": {
+"texto": "Nas lojas, o Pix aparece em 21 avaliações na W45 (13 na W44), com 29% positivas, sobre taxa para enviar e Pix recusado no cartão. Nas redes, 22 interações com 59% negativas, a maior parcela desde a W42, na semana da queda do DICT. No Reclame Aqui, 39 reclamações na W45 (29 na W44), com Pix pendente e fatura cobrada sobre valor depositado via Pix no cartão.",
+"ra": [
+"e1d"
+]
+}
+}

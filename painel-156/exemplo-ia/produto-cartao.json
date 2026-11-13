@@ -1,0 +1,200 @@
+{
+"analise": {
+"clientes": "O cliente de Cartão fala de cobrança: 51% das 420 conversas de cancelamento citam a anuidade ou os R$ 9,90 e 55% das de pagamento de fatura falam em cancelar; 30% dizem não ter ou não reconhecer o cartão. Em \"não entende porque recebeu uma fatura\" (361 conversas), 41% citam empréstimo e 43%, saldo garantido: acham que o valor de um empréstimo ou de uma venda não deveria gerar fatura e que o saldo garantido quita sozinho. No NPS Transacional (282 comentários), empréstimo e limite (nota 5,9), cartão e fatura (4,9) e cashback (5,5) são os mais negativos;",
+"mudou": "O NPS Transacional do Cartão cai de 52,3 para 41,2 e o suporte humano sobe 26,7% (2.076), com pico de 603 tickets em 03/11, dia seguinte à maior cobrança (R$ 127 mil, 48,3 mil clientes). \"Não entende porque recebeu uma fatura\" vai de 207 a 367 e \"bloquear, desbloquear ou cancelar cartão\" de 360 a 431; o bot de cancelamento (100% da base desde 30/10) reteve só 15% de quem entrou (51 de 344). A nota média dos comentários de NPS cai de 8,04 para 7,06 e as avaliações de loja sobre cartão passam de 28 para 43 (nota 2,2).",
+"atencao": [
+"Cancelar o cartão não encerra a conta cartão nem a anuidade: 22% das conversas falam em encerrar e o estorno de anuidade em conta encerrada exige 3 ajustes manuais (42 casos).",
+"Cartão garantido recorrente tem a menor nota (6,8; 60 detratores em 168).",
+"Fatura de empréstimo e de venda do Tap to Pay: regra de fatura zero e bot ainda não identificam a origem do limite (reunião Cartão × CX de 19/10)."
+]
+},
+"motivos": [
+{
+"t": "Bloquear, desbloquear ou cancelar cartão",
+"n": 431,
+"ant": 360,
+"var": "+20%",
+"det": {
+"res": "O pico é de quem quer cancelar o cartão por causa da anuidade: em 51% das conversas o cliente cita a anuidade ou os R$ 9,90; cancelar o cartão não desfaz a cobrança já lançada nem encerra a conta cartão.",
+"dor": [
+"<b>Cancelar para não pagar:</b> 216 de 420 conversas (51%) citam a anuidade ou os R$ 9,90; o cliente entende que cancelar zera o que já foi cobrado.",
+"<b>Não pediu ou não reconhece o cartão:</b> 127 de 420 (30%) dizem que não têm, não pediram ou não reconhecem o cartão.",
+"<b>Cartão cancelado não é conta encerrada:</b> 93 de 420 (22%) falam em encerrar; só o encerramento da conta cartão, definitivo e com confirmação do cliente, interrompe as próximas anuidades."
+],
+"exp": "Que cancelar o cartão encerre as cobranças e que a anuidade já lançada seja estornada, já que ele não usa o cartão.",
+"falha": [
+[
+"Produto",
+"O cancelamento não deixa claro que cancelar o cartão não encerra a conta cartão nem a anuidade. Indício: 51% das conversas citam a anuidade e 76% a trazem, com a fala do atendente."
+]
+],
+"ex": [
+"e7",
+"e38",
+"e40",
+"e41",
+"e42"
+]
+},
+"ex": null
+},
+{
+"t": "Não entende porque recebeu uma fatura",
+"n": 367,
+"ant": 207,
+"var": "+77%",
+"det": {
+"res": "Dois cenários explicam quase todo o aumento: o valor de um empréstimo ou de uma venda do Tap to Pay que virou limite no cartão e gerou fatura, e a crença de que o saldo garantido paga a fatura sozinho.",
+"dor": [
+"<b>Cobrança vista como dupla:</b> quem contratou um empréstimo vê a parcela e, separadamente, uma fatura do cartão. Quem já quitou o empréstimo pergunta por que ainda tem fatura se não usou o limite.",
+"<b>\"Nem cartão eu tenho\":</b> não reconhece ter um cartão (físico não ativado, limite gerado por empréstimo ou venda) e estranha o aviso de vencimento do valor total.",
+"<b>\"Dinheiro que já é meu\":</b> espera que o saldo garantido pague a fatura sem ação dele; só paga se ele escolher \"pagar com limite garantido\" (ou após 8 dias de atraso, segundo o bot)."
+],
+"exp": "Que o valor recebido por empréstimo ou venda não gere fatura, que não seja cobrado duas vezes pelo mesmo dinheiro e que o saldo garantido quite a fatura sem passo extra. Quando há fatura, espera ver de onde vem o valor.",
+"falha": [
+[
+"Produto",
+"O aviso e a fatura mostram o valor total sem explicar a origem (empréstimo ou venda Tap to Pay) nem que o limite garantido pode quitar."
+]
+],
+"ex": [
+"e9",
+"ef",
+"e43",
+"e44",
+"e45"
+]
+},
+"ex": null
+},
+{
+"t": "Problema com o pagamento da fatura",
+"n": 216,
+"ant": 158,
+"var": "+37%",
+"det": {
+"res": "A maior parte é pedido de isenção ou cancelamento por causa da anuidade de R$ 9,90: 50% das conversas citam a anuidade e 55% falam em cancelar; a resposta do atendimento varia e o estorno fica sem prazo.",
+"dor": [
+"<b>Cobrança inesperada:</b> 105 de 211 conversas (50%) citam a anuidade ou os R$ 9,90; há quem tenha contratado há menos de 10 dias e veja a cobrança na primeira fatura (ticket 46711202).",
+"<b>Quer sair do cartão:</b> 115 de 211 (55%) falam em cancelar, e 71 (34%) dizem que não têm, não pediram ou não reconhecem o cartão.",
+"<b>Estorno sem retorno:</b> 41 de 211 (19%) pedem estorno; o caso vai para análise sem prazo."
+],
+"exp": "Que a anuidade só valesse para quem foi avisado e usa o cartão, e que o estorno fosse resolvido na hora.",
+"falha": [
+[
+"Produto",
+"Indício: metade das conversas cita a anuidade e os relatos dizem não tê-la visto na contratação; a regra (6 meses sem uso) só é explicada no atendimento."
+]
+],
+"ex": [
+"e39",
+"e3a",
+"e47",
+"e48",
+"e49"
+]
+},
+"ex": null
+},
+{
+"t": "Resgate de saldo garantido",
+"n": 156,
+"ant": 195,
+"var": "−20%",
+"det": {
+"res": "O cliente quer transformar em saldo da carteira o valor que ficou como limite no cartão: 70% das conversas citam cartão, 44% limite, 37% resgatar e 31% falam de venda, ou seja, dinheiro de uma venda do Tap to Pay que virou limite.",
+"dor": [
+"<b>Cartão no lugar da carteira:</b> 106 de 151 conversas (70%) citam cartão e 66 (44%), limite; o cliente quer o valor na carteira.",
+"<b>Venda que virou limite:</b> 47 de 151 (31%) falam de venda; é o dinheiro do Tap to Pay creditado como limite do Cartão Empreendedor.",
+"<b>Fatura que não esperava:</b> \"estou com uma fatura pendente de mais de 4 mil reais sendo que nunca gastei esse dinheiro\" (ticket 46727599)."
+],
+"exp": "Receber o dinheiro da venda ou do empréstimo na carteira, sem passar pelo limite do cartão e sem fatura.",
+"falha": [
+[
+"Produto",
+"O valor de venda ou de empréstimo entra como limite garantido; o cliente só descobre o resgate ao falar com o atendimento."
+]
+],
+"ex": [
+"er",
+"es",
+"e4a",
+"e4b",
+"e4c"
+]
+},
+"ex": null
+}
+],
+"temas": [
+{
+"canal": "NPS Transacional",
+"t": "Empréstimo e limite",
+"n": 107,
+"tom": "neg",
+"x": "O limite é a dor central: cliente que queria um cartão pré-pago, quem recebeu o empréstimo como limite do cartão e quem pede limite maior. Elogio a quem vê o limite crescer."
+},
+{
+"canal": "NPS Transacional",
+"t": "Cartão: anuidade, fatura e cobrança",
+"n": 63,
+"tom": "neg",
+"x": "Anuidade e fatura: informações inconsistentes entre telas sobre cashback e cobranças, débitos recorrentes de fatura que o cliente diz não ter autorizado (CDB Titan) e cobrança de cartão que não usa."
+},
+{
+"canal": "NPS Transacional",
+"t": "Cashback e benefícios",
+"n": 35,
+"tom": "neg",
+"x": "Cashback menor que o esperado e informação inconsistente. Pedem benefício maior para quem tem investimento (ex.: 3% para clientes com R$ 20 mil ou mais investidos)."
+},
+{
+"canal": "NPS Relacional",
+"t": "Cartão: anuidade, fatura e cobrança",
+"n": 72,
+"tom": "mix",
+"x": "Limite baixo ou travado: \"limite liberado de R$ 10 parece piada\" e limite não liberado depois de pagar a fatura com 2 dias de atraso. Quem elogia pede limite maior para empreendedor."
+}
+],
+"eventos": [
+{
+"d": "02/11",
+"tag": "Produto",
+"t": "Maior lote de cobrança de R$ 9,90 por inatividade: 48,3 mil clientes, R$ 127 mil (32% do acumulado). Impacto: Suporte humano do Cartão 2."
+},
+{
+"d": "03/11",
+"tag": "Pico",
+"t": "“Não entende porque recebeu uma fatura”: 144 tickets no dia (+443% vs baseline). Impacto: 367 na semana (207 na anterior)."
+},
+{
+"d": "30/10",
+"tag": "Bot",
+"t": "Bot passa a cancelar cartão físico e conta cartão para 100% da base; 28/10–02/11: 344 clientes no fluxo, 51 cancelaram sozinhos (15%)."
+}
+],
+"exemplos": {
+"NPS Transacional": [
+"ec",
+"e3b"
+],
+"NPS Relacional": [
+"e3c",
+"e3d"
+],
+"Lojas": [
+"eg",
+"e3e"
+],
+"Redes": [
+"e3f"
+]
+},
+"mencoes": {
+"texto": "Nas lojas, o Cartão aparece em 43 avaliações na W45 (28 na W44) e só 26% são positivas (39% na W44): saldo que sumiu, estorno que leva duas faturas e contrato que o cliente diz não ter assinado. Nas redes, 32 interações, metade negativas, com dúvidas de cobrança e de Pix com cartão. No Reclame Aqui, as reclamações do Cartão vão de 87 para 155 na W45 (+78%), puxadas por anuidade de cartão que o cliente diz nunca ter usado e por fatura sobre o dinheiro que o próprio cliente colocou no limite garantido.",
+"ra": [
+"ed",
+"e17"
+]
+}
+}

@@ -1,0 +1,156 @@
+{
+"analise": {
+"clientes": "O cliente de Minha Conta não consegue entrar ou validar a identidade: no acesso, 19% das 250 conversas falam de selfie, 16% de e-mail ou telefone antigo e 30% ouvem prazo de 48 horas ou 4 dias úteis; o código por SMS é só 3%. Na validação (78 conversas), 72% falam de selfie e 42% ouvem que a regra do Banco Central impede validação manual. Nas lojas, 5 de 6 avaliações são negativas: selfie recusada, sem suporte humano e dificuldade de cadastrar o cartão na carteira digital. Pedem resposta rápida e um caminho que não dependa de e-mail ou telefone antigos.",
+"mudou": "Suporte humano cai 41,7% (462): acesso ao cadastro −47% (506 → 268) e validação −45% (152 → 84), após a checagem de CPF encerrado (28/10), o ajuste de selfie (pedidos −89%) e a regra R6 refinada (bloqueios de 4,1% a 2,6%). Aparece \"atendimento não prestado\" (25, contra 3). Parte da queda pode refletir 593 tickets ainda sem vertical.",
+"atencao": [
+"CSAT Suporte humano em 64,0%, abaixo do piso de 75% (também na W43).",
+"O WAF aceita só acesso do Brasil desde 29/10: ~2.600 usuários únicos veem \"problema com a gente\" e 5% das conversas de acesso citam exterior, viagem ou VPN.",
+"Selfie recusada sem motivo: o cliente só ouve \"tente novamente\" e o caso leva até 4 dias úteis."
+]
+},
+"motivos": [
+{
+"t": "Não consegue acessar seu cadastro",
+"n": 268,
+"ant": 506,
+"var": "−47%",
+"det": {
+"res": "É um problema de validação de identidade: 19% das conversas falam de selfie ou reconhecimento facial e 16% de e-mail ou telefone antigo; código por SMS aparece em só 3%. Em 30% o atendente informa prazo de 48 horas ou 4 dias úteis.",
+"dor": [
+"<b>Selfie que não reconhece:</b> 48 de 250 conversas (19%) falam de selfie ou reconhecimento facial; a foto é recusada mesmo com a câmera funcionando (ticket 46703198).",
+"<b>Sem e-mail ou telefone antigo:</b> 39 de 250 (16%) citam e-mail ou telefone; sem acesso, o cliente não recebe o código (tickets 46715536, 46714582).",
+"<b>Erro e travamento:</b> 24 de 250 (10%) falam de erro, bug ou tela que não abre; um cliente tenta há 2 dias, mesmo reinstalando o app (ticket 46727165)."
+],
+"exp": "Recuperar o acesso falando com o suporte, sem depender de e-mail ou telefone antigos.",
+"falha": [
+[
+"Processo",
+"A recuperação sem e-mail e telefone depende de selfie e documento feitos no app; o suporte não pode validar manualmente por regra do Banco Central (citada em 10% das conversas)."
+]
+],
+"ex": [
+"e3g",
+"e3h",
+"e69",
+"e6a",
+"e6b"
+]
+},
+"ex": null
+},
+{
+"t": "Não consegue validar seu cadastro",
+"n": 84,
+"ant": 152,
+"var": "−45%",
+"det": {
+"res": "É quase sempre a selfie: 72% das conversas falam de selfie ou reconhecimento facial, e 42% trazem a explicação de que a validação não pode ser manual; o caso vai para análise interna.",
+"dor": [
+"<b>Selfie que não passa:</b> 56 de 78 conversas (72%) falam de selfie ou reconhecimento facial; a tela fica em branco ou a foto é recusada (tickets 46709410, 46735643).",
+"<b>Aparelho ou câmera:</b> 25 de 78 (32%) citam aparelho ou câmera; o atendente pede para tentar em outro aparelho.",
+"<b>Documento:</b> 16 de 79 (20%) citam documento (RG, CNH); a causa raiz oficial mais frequente é documento inválido (42 de 84)."
+],
+"exp": "Concluir a validação na primeira tentativa ou ter uma resposta rápida de por que não passa.",
+"falha": [
+[
+"Produto",
+"A validação não informa o motivo da recusa; o cliente só ouve \"tente novamente\" ou \"desinstale e reinstale\"."
+]
+],
+"ex": [
+"e3i",
+"e3j",
+"e6d",
+"e6e",
+"e6f"
+]
+},
+"ex": null
+},
+{
+"t": "Solicita encerramento do cadastro",
+"n": 53,
+"ant": 80,
+"var": "−34%",
+"det": {
+"res": "A maioria não diz o motivo; 45% das conversas pedem encerrar ou excluir a conta e 16% falam de cartão. O encerramento é feito pelo app e é definitivo.",
+"dor": [
+"<b>Quer sair com tudo:</b> 22 de 49 conversas (45%) pedem encerrar ou excluir; \"quero cancelar minha conta, cartão e tudo\" (ticket 46726195).",
+"<b>Cartão no meio:</b> 8 de 49 (16%) falam de cartão e pedem confirmação de que ele também será cancelado.",
+"<b>Vítima de golpe:</b> 3 de 49 (6%) falam de golpe, fraude ou roubo; um cliente pede o encerramento de qualquer conta aberta em seu nome (ticket 46716809)."
+],
+"exp": "Encerrar a conta e o cartão por uma solicitação ao suporte, sem precisar do app.",
+"falha": [
+[
+"Processo",
+"O encerramento só é feito pelo app; quem escreve por e-mail ou perdeu o acesso recebe a orientação de caminho e não o encerramento."
+]
+],
+"ex": [
+"e3k",
+"e3l",
+"e6h",
+"e6i",
+"e6j"
+]
+},
+"ex": null
+},
+{
+"t": "Atendimento não prestado",
+"n": 25,
+"ant": 3,
+"var": "+733%",
+"det": null,
+"ex": [
+"e6l",
+"e6m",
+"e6n",
+"e6o"
+]
+}
+],
+"temas": [
+{
+"canal": "Lojas",
+"t": "Cadastro e abertura de conta",
+"n": 5,
+"tom": "neg",
+"x": "Selfie recusada várias vezes, cadastro que não continua \"por falta de autorização\" e cartão na carteira digital sem CVC visível."
+}
+],
+"eventos": [
+{
+"d": "27/10",
+"tag": "Produto",
+"t": "Fraude refinou a regra R6 no onboarding: bloqueios caem de 4,1% para 2,6% dos novos usuários (~9 mil usuários/mês a menos bloqueados)."
+},
+{
+"d": "28/10",
+"tag": "Processo",
+"t": "Atendimento passa a checar cadastro encerrado do mesmo CPF antes de orientar, após o bloqueio de CPF de 14/10 gerar ~200 contatos/semana a mais."
+},
+{
+"d": "29/10",
+"tag": "Produto",
+"t": "WAF passa a aceitar só acesso do Brasil; ~2.600 usuários únicos afetados veem “problema com a gente” e já há reclamações nas redes."
+}
+],
+"exemplos": {
+"Lojas": [
+"e3m",
+"e3n"
+],
+"Redes": [
+"e3o",
+"e3p"
+]
+},
+"mencoes": {
+"texto": "Nas lojas, Minha Conta tem poucas avaliações, quase todas negativas (selfie recusada, cadastro que não continua e cartão na carteira digital sem CVC). No Reclame Aqui, Minha Conta fica alta por três semanas (53, 66 e 57), com dificuldade de acesso, inclusive de quem está fora do Brasil, e contas abertas sem consentimento do titular.",
+"ra": [
+"e1g",
+"e1h"
+]
+}
+}

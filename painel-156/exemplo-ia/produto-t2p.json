@@ -1,0 +1,159 @@
+{
+"analise": {
+"clientes": "O lojista não vê o dinheiro da venda: 72% das 109 conversas de \"não recebeu a venda\" falam de cartão, limite ou Cartão Empreendedor (46 vendas creditadas no cartão, 36 negadas) e 49% passam pelo resgate de 6 passos. Quem quer mudar o destino da venda não acha onde (Vender > Recebimentos Tap to Pay). No NPS Transacional (54 comentários, nota 9,4) o pedido é mais valor e mais parcelas de empréstimo.",
+"mudou": "Suporte humano sobe 8,8% (248) e \"atendimento não prestado\" aparece (11, contra 0) sem evento associado. O NPS Transacional sobe a 84,2 (77,4) e o CSAT Suporte humano fica em 81,1%. \"Insatisfação com as taxas do plano\" vai de 2 a 7, no teste de taxas de repasse de 20/10.",
+"atencao": [
+"A venda como limite do Cartão Empreendedor segue como principal motivo de contato e leva clientes a ter fatura ligada às vendas (14% dos contatos de fatura têm colateral do Tap to Pay).",
+"Espera pelo primeiro humano de 1h22 e 1h44 em dois atendimentos.",
+"Teste de taxas de repasse: o sistema não mostra o grupo do cliente e a diretriz pede discurso neutro."
+]
+},
+"motivos": [
+{
+"t": "Não recebeu a venda",
+"n": 113,
+"ant": 106,
+"var": "+7%",
+"det": {
+"res": "O dinheiro da venda foi para o Cartão Empreendedor e o cliente espera vê-lo na carteira: 72% das conversas falam de cartão, limite ou Empreendedor e em 49% o atendente explica o resgate.",
+"dor": [
+"<b>Venda no cartão, não na carteira:</b> 79 de 109 conversas (72%) falam de cartão, limite ou Empreendedor; o lojista não vê a venda no saldo (ticket 46708492).",
+"<b>Resgate com muitos passos:</b> em 53 de 109 (49%) aparece o resgate (Central de Ajuda > Cartão RP > Resgatar saldo) (ticket 46713698).",
+"<b>Cartão negativo ou fatura:</b> 31 de 109 (28%) falam de cartão negativo ou de fatura ligada às vendas."
+],
+"exp": "Receber o valor da venda na carteira, na hora, sem passos extras.",
+"falha": [
+[
+"Produto",
+"O recebimento padrão vai para o Cartão Empreendedor e o cliente não escolheu isso de forma consciente (indício: 72% das conversas citam cartão ou limite)."
+]
+],
+"ex": [
+"e2y",
+"e2z",
+"e7f",
+"e7g",
+"e7h"
+]
+},
+"ex": null
+},
+{
+"t": "Dúvidas sobre a utilização",
+"n": 72,
+"ant": 70,
+"var": "+3%",
+"det": {
+"res": "O lojista não entende que a venda pode entrar no Cartão Empreendedor ou na carteira nem como trocar: 58% das conversas falam de cartão ou limite e 55% passam pelo resgate; as dúvidas de taxa de repasse começam a aparecer.",
+"dor": [
+"<b>Receber na carteira:</b> 39 de 67 conversas (58%) citam cartão ou limite e 37 (55%) o resgate; o cliente quer o valor do limite no saldo e evitar que se repita (ticket 46737586).",
+"<b>Cartão ou carteira:</b> 21 de 67 (31%) citam saldo ou carteira; não sabem que as próximas vendas podem ser escolhidas para outro destino (tickets 46724864, 46707958).",
+"<b>Taxa maior no repasse:</b> 12 de 67 (18%) falam de taxa ou repasse; um cliente vê 3,08% na venda e acha que mudou, mas usa o repasse de taxas (ticket 46728211)."
+],
+"exp": "Escolher com clareza onde a venda cai e entender o custo de cada opção.",
+"falha": [
+[
+"Produto",
+"A forma de recebimento (cartão ou carteira) fica em Vender > Recebimentos Tap to Pay, longe de onde o cliente procura."
+]
+],
+"ex": [
+"e30",
+"e31",
+"e7k",
+"e7l",
+"e7m"
+]
+},
+"ex": null
+},
+{
+"t": "Não consegue concluir a cobrança",
+"n": 20,
+"ant": 16,
+"var": "+25%",
+"det": {
+"res": "O lojista não consegue terminar a cobrança por erro na tela ou ao aproximar o cartão; o caso vai para análise com prazo de 1 a 7 dias.",
+"dor": [
+"<b>Cartão que não passa:</b> 12 de 20 conversas (60%) citam cartão; um cliente vê erro antes de aproximar o cartão (ticket 46719974).",
+"<b>Venda cancelada e estornada:</b> 6 de 20 (30%) falam de cancelamento ou estorno; o lojista precisa avisar o seu cliente e não tem previsão do estorno (ticket 46715797).",
+"<b>Sem opção de continuar:</b> a tela não oferece o botão para seguir (ticket 46727800)."
+],
+"exp": "Concluir a cobrança na hora do atendimento ao cliente final.",
+"falha": [
+[
+"Produto",
+"Erros de cobrança sem mensagem que explique o que fazer; o lojista precisa abrir chamado."
+]
+],
+"ex": [
+"e32",
+"e33",
+"e7o",
+"e7p",
+"e7q"
+]
+},
+"ex": null
+},
+{
+"t": "Dúvida sobre descredenciamento",
+"n": 13,
+"ant": 12,
+"var": "+8%",
+"det": null,
+"ex": [
+"e7s",
+"e7t",
+"e7u",
+"e7v",
+"e7w"
+]
+}
+],
+"temas": [
+{
+"canal": "NPS Transacional",
+"t": "Empréstimo e limite",
+"n": 10,
+"tom": "mix",
+"x": "Pedem mais valor e mais parcelas de empréstimo; um cliente relata que \"sumiram R$ 20\" ao pedir o cartão de crédito. (nota média 8,3 · 2 detratores (0–6))"
+},
+{
+"canal": "NPS Transacional",
+"t": "Taxas, tarifas e juros",
+"n": 6,
+"tom": "pos",
+"x": "Elogio à aproximação para receber, ao celular como máquina e à taxa de juros em conta. (nota média 9,2 · 0 detratores (0–6))"
+},
+{
+"canal": "NPS Transacional",
+"t": "Cartão: anuidade, fatura e cobrança",
+"n": 5,
+"tom": "pos",
+"x": "nota média 9,4 · 0 detratores"
+}
+],
+"eventos": [
+{
+"d": "20/10",
+"tag": "Produto",
+"t": "Teste de taxas de repasse com 5 dúvidas novas. Impacto: “insatisfação com as taxas do plano” 7 na W45 (2 na 44)."
+}
+],
+"exemplos": {
+"NPS Transacional": [
+"e34",
+"e35"
+],
+"Redes": [
+"e36"
+]
+},
+"mencoes": {
+"texto": "O Tap to Pay tem poucas menções nas lojas. Nas redes, outubro teve 60 interações, a maioria classificada como positiva; a classificação de sentimento das redes não é confiável, então o volume vale mais que o tom. No Reclame Aqui, Tap to Pay vai de 7 para 12 reclamações, com venda que caiu no cartão em vez do saldo.",
+"ra": [
+"e37"
+]
+}
+}

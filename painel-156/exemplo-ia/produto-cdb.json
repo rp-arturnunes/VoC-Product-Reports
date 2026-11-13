@@ -1,0 +1,155 @@
+{
+"analise": {
+"clientes": "Quem investiu quer o dinheiro antes do vencimento: 86% das 121 conversas falam de resgate, 58% perguntam quando e 37% citam cartão (resgate ligado ao limite). No NPS Transacional (17 comentários, nota 9,2) quase todos elogiam; no Relacional e nas lojas (12 avaliações, 8 negativas) pedem clareza sobre a liquidez diária e reclamam de rendimento que não caiu e de fatura de cartão gerada sobre rendimentos.",
+"mudou": "Suporte humano cai 9,4% (184), com resgate antecipado em 129 (+10%); a tela de resgate que não avançava (26/10, 2h03) já não aparece nos números. \"Problemas ao contratar o CDB\" vai de 1 a 7 após a nova jornada para 10% da base (26/10). As avaliações de loja que citam investimento passam de 5 para 12 (nota 2,2); NPS Transacional em 67,9.",
+"atencao": [
+"Resgate antecipado depende de agente e do cartão; a nota 9,2 do NPS Transacional esconde essa fricção.",
+"Nova jornada de contratação em 10% da base: sem relato lido que confirme a ligação com os 7 \"problemas ao contratar\".",
+"Rendimento prometido que não caiu em 48 horas (loja) e Rendimento CDI com 7 \"não recebeu o rendimento\" (+250%)."
+]
+},
+"motivos": [
+{
+"t": "Quer resgatar CDB antes do vencimento",
+"n": 129,
+"ant": 117,
+"var": "+10%",
+"det": {
+"res": "Quem investiu em CDB quer o dinheiro antes do vencimento: 86% das conversas falam de resgate e 58% de prazo; 37% citam cartão e 26% limite ou fatura, porque o resgate se liga ao cartão.",
+"dor": [
+"<b>Quer o dinheiro antes:</b> 104 de 121 conversas (86%) falam de resgate; \"quero tirar os dois antes do prazo\" (ticket 46733091).",
+"<b>Cartão no meio:</b> 45 de 121 (37%) citam cartão; um cliente quer resgatar o CDB e cancelar o cartão (ticket 46709469).",
+"<b>Precisa do dinheiro:</b> 70 de 121 (58%) perguntam quando; \"quero saber do resgate do meu dinheiro que eu tô precisando e vocês não resolvem\" (ticket 46715261)."
+],
+"exp": "Resgatar o CDB na hora, sem depender do atendente e sem confundir com o cartão.",
+"falha": [
+[
+"Produto",
+"O resgate antecipado passa pelo atendente: 86% das conversas falam de resgate e o pedido é feito por chat."
+]
+],
+"ex": [
+"e27",
+"e28",
+"e4e",
+"e4f",
+"e4g"
+]
+},
+"ex": null
+},
+{
+"t": "Dúvidas sobre resgate de CDB de liquidez diária",
+"n": 23,
+"ant": 43,
+"var": "−46%",
+"det": {
+"res": "O cliente quer saber quando o dinheiro do CDB de liquidez diária fica disponível: 73% das conversas falam de resgate, 68% de investimento e 23% de disponibilidade; a resposta é até 1 dia útil, de forma automática.",
+"dor": [
+"<b>Sem opção de resgate:</b> \"não aparece a opção de resgate no CDB diário, já passou de 1 dia útil\" (ticket 46715126).",
+"<b>Prazo da aplicação:</b> o cliente contratou um investimento com prazo específico achando que podia resgatar a qualquer momento (ticket 46720763).",
+"<b>Disponibilidade:</b> 5 de 22 (23%) perguntam quando fica disponível."
+],
+"exp": "Resgatar o CDB diário em um passo, com o prazo visível antes de contratar.",
+"falha": [
+[
+"Produto",
+"A opção de resgate some depois do prazo e o prazo da aplicação não fica claro na contratação."
+]
+],
+"ex": [
+"e29",
+"e2a"
+]
+},
+"ex": null
+},
+{
+"t": "Dúvida sobre rendimento do CDB contratado",
+"n": 10,
+"ant": 9,
+"var": "+11%",
+"det": null,
+"ex": [
+"e4j",
+"e4k",
+"e4l"
+]
+},
+{
+"t": "Dúvidas na contratação do CDB",
+"n": 9,
+"ant": 11,
+"var": "−18%",
+"det": null,
+"ex": [
+"e4m",
+"e4n",
+"e4o",
+"e4p",
+"e4q"
+]
+}
+],
+"temas": [
+{
+"canal": "NPS Transacional",
+"t": "Investimentos e rendimento",
+"n": 5,
+"tom": "mix",
+"x": "Elogio ao CDB e ao resgate diário; queixa de empréstimo reduzido e de anuidade de cartão bloqueado que levou o cliente a encerrar a conta. (nota média 8,0 · 1 detratores (0–6))"
+},
+{
+"canal": "NPS Relacional",
+"t": "Investimentos e rendimento",
+"n": 11,
+"tom": "mix",
+"x": "Pedem resgate mais simples e clareza sobre liquidez diária; criticam mudanças frequentes de políticas e benefícios; elogiam, com pedido de atendimento mais rápido."
+},
+{
+"canal": "NPS Relacional",
+"t": "Empréstimo e limite",
+"n": 5,
+"tom": "mix",
+"x": "nota média 8,8 · 1 detratores"
+},
+{
+"canal": "NPS Relacional",
+"t": "Recargas, transporte e contas",
+"n": 3,
+"tom": "mix",
+"x": "nota média 8,0 · 1 detratores"
+}
+],
+"eventos": [
+{
+"d": "26/10",
+"tag": "Incidente",
+"t": "Tela de resgate não avançava em “continuar resgate”: 2h03 (10:02–12:05), 34 contatos, 31 tickets humanos, o dobro da mesma faixa de 19/10."
+},
+{
+"d": "26/10",
+"tag": "Produto",
+"t": "Nova jornada de contratação do CDB liberada para 10% da base. Impacto: “problemas ao contratar” 7 (1 na anterior); “dúvidas na contratação” 9 (11)."
+}
+],
+"exemplos": {
+"NPS Transacional": [
+"e2b"
+],
+"NPS Relacional": [
+"e2c",
+"e2d"
+],
+"Lojas": [
+"e2e"
+],
+"Redes": [
+"e2f"
+]
+},
+"mencoes": {
+"texto": "Nas lojas, investimentos aparecem em 12 avaliações na W45 (5 na W44), com 25% positivas: rendimento que não caiu e fatura gerada sobre o investimento em garantia. No Reclame Aqui, CDB tem 4 reclamações na W45 (10 na W44), sobre resgate e investimento em garantia.",
+"ra": []
+}
+}

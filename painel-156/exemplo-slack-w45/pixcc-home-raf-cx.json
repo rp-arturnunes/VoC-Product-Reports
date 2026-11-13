@@ -1,0 +1,17 @@
+{
+ "canal": "#pixcc-home-raf-cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Pix e Pix CC · Semana 45 · 02/11–08/11/2026\n**A queda do DICT (06/11) leva a instabilidade do Pix Out ao terceiro pico em 10 semanas, e o teste da taxa de 4,99% já aparece nas lojas**\nO suporte humano do Pix sobe 15,2% e o NPS Transacional cai a 65,1; no Pix CC, 8 de 9 avaliações de loja sobre a taxa são negativas.\nNa thread: um resumo, os destaques da semana e as menções de cada produto (Pix e Pix CC).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Pix",
+   "chave": "pix",
+   "texto": "**Pix**\n**Resumo:** O suporte humano sobe 15,2% (794 contatos) e o NPS Transacional cai a 65,1, na semana da queda do DICT (06/11, 204 tickets no dia) e de duas indisponibilidades do BTG. \"Problemas com uma transação Pix\" vai de 145 a 227 e \"instabilidade no app\" de 6 a 42. Denúncias de Pix indevido caem 43%.\n**Destaques da semana:**\n• Instabilidade no app volta no Pix Out: 3º pico em 10 semanas (W37, W40 e W45); coincide com a queda do DICT, as oscilações do BTG e o aviso de instabilidade exibido a todos. Parcialmente resolvido: aviso retirado em 06/11 às 11h34.\n• Pix que não chega: 48% das 219 conversas de \"problemas com uma transação\" (76% já com comprovante e NSU).\n• Golpe: 47% das conversas de denúncia querem o dinheiro de volta e não sabem o passo a passo.\n**Menções:**\n• Lojas: 21 avaliações (13 na W44), 29% positivas, sobre taxa para enviar e Pix recusado no cartão.\n• Redes: 22 interações, 59% negativas, a maior parcela desde a W42.\n• Reclame Aqui: 39 reclamações (29 na W44), com Pix pendente e fatura cobrada sobre valor depositado via Pix no cartão.\n• NPS Relacional: 13 de 32 comentários de Pix são de detratores.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=pix/rep|Ver no Report de Pix>"
+  },
+  {
+   "produto": "Pix CC",
+   "chave": "pix/cartao",
+   "texto": "**Pix CC**\n**Resumo:** O teste da taxa de 4,99% (antes 2,99%) começou em 05/11 para metade dos clientes com limite concedido e gerou 35 tickets de dúvida sobre taxa. 11% das conversas de \"transação\" citam taxa, e clientes do teste e de fora veem valores diferentes.\n**Destaques da semana:**\n• Taxa do Pix Out CC nos comentários: 17% dos comentários de Pix Out CC; teste ativo desde 05/11, sem data de encerramento registrada.\n• Recusa sem motivo nem próximo passo: o atendente não enxerga o critério e orienta usar outro cartão; há risco de abandono do Pix Out CC.\n• O aviso de instabilidade do bot aparece em 13% das conversas de \"transação\", a maior taxa entre os motivos analisados.\n**Menções:**\n• Lojas: 8 de 9 avaliações sobre a taxa do Pix Out CC são negativas.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=pix/cartao/rep|Ver no Report de Pix CC>"
+  }
+ ]
+}

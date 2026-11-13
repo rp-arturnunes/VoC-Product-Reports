@@ -1,0 +1,74 @@
+<div id="px-root">
+<header class="top"><div class="wrap">
+  <div class="brand"><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Experiência do Produto</div>
+  <div class="sp"></div>
+  <div class="seg" role="group" aria-label="Período dos indicadores" id="per">
+    <button type="button" data-per="dia" aria-pressed="false">Dia</button>
+    <button type="button" data-per="semana" aria-pressed="true">Semana</button>
+    <button type="button" data-per="mes" aria-pressed="false">Mês</button>
+  </div>
+  <div class="week" id="wk"></div>
+</div></header>
+<nav class="nav" aria-label="Seções"><div class="wrap">
+  <a href="#pulso" class="on">Pulso</a><a href="#produtos">Produtos</a><a href="#destaques">Destaques</a><a href="#radar">Radar</a><a href="#indicadores">Indicadores</a><a href="#vozes">O que os clientes dizem</a><a href="#lojasredes">Lojas, redes e RA</a><a href="#movimentos">Movimentos</a><a href="#dados">Sobre os dados</a>
+</div></nav>
+<div class="wrap"><div class="banner" id="px-banner" hidden></div></div>
+<main class="wrap">
+  <section class="pulse" id="pulso"><div class="when" id="when"></div><h1 id="headline"></h1><p class="lead" id="lead"></p></section>
+  <section class="blk" id="produtos">
+    <div class="h2"><h2>Produtos</h2><span class="src db">Databricks</span></div>
+    <p class="sub" id="psub"></p>
+    <div class="sum" id="psum"></div><div class="prods" id="prods"></div>
+  </section>
+  <section class="blk" id="destaques">
+    <div class="h2"><h2>Destaques da semana</h2><span class="src ia">Análise IA</span></div>
+    <p class="sub">Os cinco temas de maior impacto e urgência da semana e, ao lado, os temas em alta que também merecem acompanhamento. Clique em um card ou em um item da lista para abrir a análise completa, com gráficos e exemplos.</p>
+    <div class="sum" id="dsum"></div><div class="nw-wrap" id="dest"></div>
+  </section>
+  <section class="blk" id="radar">
+    <div class="h2"><h2>Radar de experiência</h2><span class="src db">Databricks</span></div>
+    <p class="sub" id="rsub"></p>
+    <div class="sum" id="rsum"></div><div class="radar"><div class="rctl" role="group" aria-label="Indicador do radar" id="rctl"></div><div class="grid" id="grid"></div><div class="foot" id="rfoot"></div></div>
+  </section>
+  <section class="blk" id="indicadores">
+    <div class="h2"><h2>Indicadores gerais</h2><span class="src db">Databricks</span></div>
+    <p class="sub" id="ksub"></p>
+    <div class="sum" id="ksum"></div><div class="kpis" id="kpis"></div>
+  </section>
+  <section class="blk" id="vozes">
+    <div class="h2"><h2>O que os clientes dizem</h2><span class="src ia">Análise IA</span></div>
+    <p class="sub">Temas da semana em atendimento, NPS, lojas e redes, com o produto de origem.</p>
+    <div class="sum" id="vsum"></div><div class="voices" id="voices"></div>
+  </section>
+  <section class="blk" id="lojasredes">
+    <div class="h2"><h2>Lojas, redes sociais e Reclame Aqui</h2><span class="src db">Databricks</span><span class="src ia">Análise IA</span></div>
+    <p class="sub">O que os clientes falam em público sobre o RecargaPay, com a evolução das 10 semanas, os temas e exemplos da semana.</p>
+    <div class="sum" id="lrsum"></div><div class="lr" id="lr"></div>
+  </section>
+  <section class="blk" id="movimentos">
+    <div class="h2"><h2>Movimentos da empresa</h2><span class="src ia">Análise IA</span></div>
+    <p class="sub">Do mais recente para o mais antigo, com o efeito observado em cada canal. Clique para abrir a análise.</p>
+    <div class="sum" id="msum"></div><div id="tl30"></div><div class="tl" id="tl"></div>
+  </section>
+  <section class="blk" id="dados">
+    <div class="h2"><h2>Sobre os dados</h2></div>
+    <p class="sub">O painel tem duas origens, atualizadas de formas diferentes.</p>
+    <div class="how">
+      <div><h3>Indicadores <span class="src db">Databricks</span></h3><ul>
+        <li>Suporte humano, CSAT, retenção do bot, NPS Transacional e NPS Relacional vêm das queries do painel e mudam a cada carga.</li>
+        <li>Dia, semana e mês são calculados a partir da mesma base; lojas e redes por produto estão disponíveis só por semana.</li>
+        <li>As metas são fixas no painel: NPS Transacional 75 (mínimo 55) e CSAT 80% (piso 75%).</li></ul></div>
+      <div><h3>Análises <span class="src ia">Análise IA</span></h3><ul>
+        <li>Pulso, destaques, temas, motivos detalhados e movimentos são escritos uma vez por semana pela rotina de IA, a partir das mesmas queries e das transcrições.</li>
+        <li>As análises valem para a semana publicada e não mudam com o seletor de período.</li>
+        <li>Os números citados nos textos vêm das queries; a IA não cria indicadores novos.</li></ul></div>
+    </div>
+  </section>
+</main>
+<div class="scrim" id="scrim"></div>
+<aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="ptitle">
+  <div class="ph"><div class="row"><h3 id="ptitle"></h3><button class="x" type="button" id="pclose" aria-label="Fechar painel">✕</button></div><div class="subs" id="psubs"></div><div class="tabs" role="tablist" id="ptabs"></div></div>
+  <div class="pb" id="pbody"></div>
+</aside>
+<div class="tip" id="tip"></div>
+</div>

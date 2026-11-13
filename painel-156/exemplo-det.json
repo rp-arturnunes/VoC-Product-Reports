@@ -1,0 +1,105 @@
+{
+ "res": "Dois cenários explicam quase todo o aumento: o valor de um empréstimo ou de uma venda do Tap to Pay que virou limite no cartão e gerou fatura, e a crença de que o saldo garantido paga a fatura sozinho.",
+ "cen": "O motivo foi de 207 para 367 contatos (+77%) e responde por 25% dos motivos listados. Quase tudo cai em duas causas: o cliente acredita que o cartão é pré-pago ou que nem tem cartão (188, contra 99) e que o saldo garantido quita a fatura sozinho (173, contra 104). Nas conversas lidas, o gatilho é a fatura aparecer: em 10 das 25, o valor veio de um empréstimo (5) ou de uma venda recebida pelo Tap to Pay (5) e o cliente não liga os dois.",
+ "dor": [
+  "<b>Cobrança vista como dupla:</b> quem contratou um empréstimo vê a parcela e, separadamente, uma fatura do cartão. Quem já quitou o empréstimo pergunta por que ainda tem fatura se não usou o limite.",
+  "<b>\"Nem cartão eu tenho\":</b> não reconhece ter um cartão (físico não ativado, limite gerado por empréstimo ou venda) e estranha o aviso de vencimento do valor total.",
+  "<b>\"Dinheiro que já é meu\":</b> espera que o saldo garantido pague a fatura sem ação dele; só paga se ele escolher \"pagar com limite garantido\" (ou após 8 dias de atraso, segundo o bot).",
+  "<b>Sem retorno:</b> casos em análise de diferença entre limite e fatura ficam sem prazo; o atendimento não consegue confirmar \"ainda hoje\"."
+ ],
+ "exp": "Que o valor recebido por empréstimo ou venda não gere fatura, que não seja cobrado duas vezes pelo mesmo dinheiro e que o saldo garantido quite a fatura sem passo extra. Quando há fatura, espera ver de onde vem o valor.",
+ "falha": [
+  {
+   "o": "Produto",
+   "t": "O aviso e a fatura mostram o valor total sem explicar a origem (empréstimo ou venda Tap to Pay) nem que o limite garantido pode quitar. Indício: o cliente só descobre o caminho \"Cartão > Pagar agora > Limite reservado\" ao falar com o atendimento."
+  },
+  {
+   "o": "Bot",
+   "t": "Em 4 das 11 conversas lidas na abertura, o bot começou por outro assunto (Open Finance, Tap to Pay, golpes) e o cliente precisou redirecionar; em 3 houve saudação duplicada."
+  },
+  {
+   "o": "Atendimento",
+   "t": "Os atendentes repetem o passo a passo manualmente; fatura no CXpedia e role de antecipação no Admin ainda não estão em uso. Casos em análise não têm prazo."
+  },
+  {
+   "o": "Canal",
+   "t": "Ligações (c2c) quase não têm texto na transcrição, então parte dos casos não pôde ser lida."
+  }
+ ],
+ "causas": [
+  [
+   "Entende que o cartão é pré-pago",
+   188
+  ],
+  [
+   "Entende que o saldo garantido quita automaticamente a fatura",
+   173
+  ],
+  [
+   "Outras causas",
+   6
+  ]
+ ],
+ "serie": [
+  207,
+  367
+ ],
+ "serie_lbl": [
+  "sem. anterior",
+  "sem. atual"
+ ],
+ "ev": [
+  {
+   "d": "19/10",
+   "f": "#cc-produto-e-cx",
+   "t": "Reunião Cartão × CX: 563 contatos desse motivo entre 01 e 18/10; 64% com saldo vindo de empréstimo e 14% de Tap to Pay",
+   "e": "Os mesmos dois cenários dominam as conversas desta semana. Ficou alinhado melhorar o bot para identificar a origem da colateral e segurar a fatura zero do Tap to Pay."
+  },
+  {
+   "d": "06/10",
+   "f": "#lideres-cx-e-cxm",
+   "t": "Empréstimo passou a oferecer cartão ou carteira a quem ainda não tem cartão garantido (A/B)",
+   "e": "Quem escolhe o cartão recebe o valor como limite garantido e passa a ter fatura; há relato de empréstimo que \"foi para o limite do cartão\"."
+  },
+  {
+   "d": "30/10",
+   "f": "#lideres-cx-e-cxm",
+   "t": "Role de antecipação de fatura no Admin (treinamento até 10/11) e fatura no CXpedia (até 16/11)",
+   "e": "Ainda não estavam em uso em 02–08/11; os atendentes explicam o caminho de pagamento manualmente."
+  },
+  {
+   "d": "03/11",
+   "f": "#lideres-cx-e-cxm",
+   "t": "Última onda de cobrança de anuidade (91 mil usuários) e feriado de 02/11",
+   "e": "Coincide com a semana do pico, mas nas falas lidas a dúvida é sobre a fatura do empréstimo ou da venda, não sobre a anuidade."
+  }
+ ],
+ "rel": [
+  {
+   "t": "Fiz empréstimo de 1.200,00 para pagamento em 3 X parcelas, a primeira vence dia 05.11, não entendi pq estou recebendo aviso que vence os 1.200 no dia de hj 03.11",
+   "m": "ticket 46706868 · chat online · empréstimo"
+  },
+  {
+   "t": "Solicitei um empréstimo q foi para o limite do cartão RecargaPay, mas já quitei esse empréstimo e n usei o limite para fazer compras. Por que tenho que pagar uma fatura",
+   "m": "ticket 46726812 · chat online · empréstimo"
+  },
+  {
+   "t": "Como eu estou pagando fatura se nem cartão eu tenho",
+   "m": "ticket 46715329 · c2c · cartão físico não ativo"
+  },
+  {
+   "t": "Como vou pagar um dinheiro já meu ???",
+   "m": "ticket 46710559 · chat online · saldo garantido"
+  },
+  {
+   "t": "Eu peguei um empréstimo de 100 reais e agora estão me cobrando uma fatura de 102 mais 125 desse empréstimo, isso é abuso",
+   "m": "ticket 46708786 · chat online · empréstimo"
+  }
+ ],
+ "base": {
+  "lidos": 25,
+  "total": 367,
+  "met": "Amostra aleatória estratificada por causa: início (fala do cliente e do bot) e final (resposta do atendente) de cada conversa, dados pessoais mascarados; citações sem nome.",
+  "lim": "7% do motivo; ligações (c2c) têm pouco texto. Os números \"X de Y\" mostram padrões da amostra, não proporção da base."
+ }
+}

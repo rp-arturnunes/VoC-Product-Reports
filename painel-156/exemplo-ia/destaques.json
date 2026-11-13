@@ -1,0 +1,456 @@
+{
+"novos": [
+{
+"t": "Cashback em boletos vira o 1º motivo e ameaça quem usa o app como renda",
+"p": "boletos",
+"m": "\"Não recebi o cashback\" vai a 1º motivo; lojas: só 2 de 12 avaliações positivas",
+"x": "Fim do cashback em contas e boletos pagos com saldo (05/11): agentes e autônomos falam em procurar outro app.",
+"sl": "Não resolvido",
+"s": "O contato já cai (07 e 08/11 perto do normal), mas lojas e redes seguem negativas e não há alternativa registrada para agentes e autônomos.",
+"serie": {
+"l": "Contatos de cashback no suporte humano (3 motivos)",
+"v": [
+6,
+4,
+6,
+5,
+3,
+4,
+5,
+7,
+4,
+164
+],
+"u": ""
+},
+"det": "O fim do cashback em contas e boletos pagos com saldo (05/11, comunicado a ~130 mil clientes em 04/11) criou dois motivos que não existiam: \"não recebi o cashback\" e \"não recebeu o cashback\". O contato tem pico no dia da mudança e já cede (07 e 08/11 perto do normal), mas a reação migrou para as lojas (só 2 de 12 avaliações positivas) e para as redes, onde agentes que recebem boletos falam em trocar de app. Em Recarga de Celular, um cliente também reclama de cashback não creditado na recarga paga com cartão.",
+"ex": [
+"e0",
+"e1",
+"e2",
+"e4t",
+"e4u"
+],
+"img": "https://lh3.googleusercontent.com/d/11Zn5LBGjudPAm0ta4X4ygbnuPoLo41Ob=w400",
+"rank": 3,
+"ps": [
+"topup"
+]
+},
+{
+"t": "Instabilidade no app volta no Pix Out",
+"p": "pix",
+"m": "3º pico em 10 semanas (W37, W40 e W45)",
+"x": "Coincide com a queda do DICT (06/11), com oscilações do BTG e com o aviso de instabilidade exibido a todos os usuários.",
+"sl": "Parcialmente resolvido",
+"s": "Aviso de instabilidade retirado em 06/11 às 11h34; o volume da W46 ainda não está disponível.",
+"serie": {
+"l": "\"Instabilidade no app\" no Pix Out (suporte humano)",
+"v": [
+17,
+63,
+0,
+5,
+40,
+2,
+4,
+2,
+5,
+38
+],
+"u": ""
+},
+"serie2": {
+"l": "\"Instabilidade no app\" no Pix In",
+"v": [
+2,
+4,
+0,
+0,
+10,
+0,
+2,
+0,
+1,
+4
+],
+"u": ""
+},
+"det": "O motivo \"instabilidade no app\" do Pix Out sobe de novo na W45, no dia da queda do DICT (06/11) e das oscilações do BTG. Não é um tema novo: é o terceiro pico em 10 semanas (W37 e W40 tiveram picos maiores), sempre seguido de queda na semana seguinte, o que indica instabilidade recorrente e não um evento isolado. Na mesma semana, um aviso de instabilidade pensado para Curitiba apareceu para todos os usuários e foi retirado em 06/11. O Pix In acompanha o movimento em menor escala.",
+"ex": [
+"e3",
+"e4",
+"e9g",
+"e9h",
+"e6t"
+],
+"img": "https://lh3.googleusercontent.com/d/1kPKL1mQ4g4IhTQYCb8GK66VCjdBa_NGq=w400",
+"rank": 5
+},
+{
+"t": "Taxa do Pix Out CC nos comentários",
+"p": "pix",
+"m": "17% dos comentários de Pix Out CC",
+"x": "Teste da taxa de 4,99% (antes 2,99%) desde 05/11 para metade dos clientes com limite concedido.",
+"sl": "Em andamento",
+"s": "Teste ativo desde 05/11, sem data de encerramento registrada.",
+"serie": {
+"l": "NPS do Pix Out CC (todas as respostas)",
+"v": [
+72,
+73,
+75,
+71,
+74,
+74,
+72,
+68,
+68,
+69
+],
+"u": "pts"
+},
+"det": "Desde 05/11, metade dos clientes com limite concedido paga 4,99% no Pix Out CC (antes 2,99%). A taxa aparece em 17% dos comentários de Pix Out CC na W45, com críticas (\"absurdo\") e com clientes que comparam com a taxa dos bancos. O NPS do Pix Out CC fica em 69 na W45 (68 na W44), então o teste ainda não aparece na nota; o atendimento não vê o grupo do cliente e a diretriz é não citar que é teste.",
+"ex": [
+"e5",
+"e6v",
+"e6q",
+"e6x",
+"e9i"
+],
+"img": "https://lh3.googleusercontent.com/d/1BgSX6CZinC6qSvdBOhou_4WgzKv3INTx=w400",
+"rank": 12
+},
+{
+"t": "Contratação do CDB pela nova jornada",
+"p": "cdb",
+"m": "\"Problemas ao contratar\": de 1 para 7 contatos",
+"x": "A nova jornada foi liberada para 10% da base em 26/10; a base ainda é pequena.",
+"sl": "Sem registro",
+"s": "Nenhum tratamento registrado; volume baixo.",
+"det": "A nova jornada de contratação do CDB foi liberada para 10% da base em 26/10 e os contatos de problema ao contratar saem de praticamente zero. Entre os casos lidos, um cliente aplicou R$ 15 mil no CDB Titan para obter o cartão e ainda vê o saldo sem o limite; outro caso classificado no mesmo motivo trata de anuidade, sinal de classificação imprecisa.",
+"ex": [
+"e6",
+"e4m",
+"e4n",
+"e4o",
+"e4p"
+],
+"img": "https://lh3.googleusercontent.com/d/1FaWpztB4nKO6EQkegcTUCwPwPIL10EyN=w400",
+"rank": 14
+}
+],
+"oport": [
+{
+"t": "Cancelamento do Cartão no bot ainda transborda para o agente",
+"p": "cartao",
+"m": "7x mais rápido no bot; 40% ainda vão ao agente",
+"x": "O fluxo resolve sozinho só 15% de quem entra; transbordos sem pedido do cliente chegam a 9,9%.",
+"sl": "Em andamento",
+"s": "Fluxo ativo para 100% da base desde 30/10; 40% de quem entra ainda vai ao agente.",
+"img": "https://lh3.googleusercontent.com/d/1zloB4GsGfvI8B53YBfmNMZMd9sAe-WWu=w400",
+"det": "O cancelamento do cartão físico direto no bot foi liberado para 100% da base em 30/10 e leva 4 minutos, contra 27 com o agente, cerca de 7 vezes mais rápido. Mesmo assim, só 15% de quem entra cancela sozinho e 40% ainda vão ao agente; os transbordos sem pedido do cliente chegam a 9,9%. É a principal resposta ao motivo de bloquear, desbloquear ou cancelar o cartão, que cresce 20% na W45.",
+"ex": [
+"e7",
+"e38",
+"e40",
+"e41",
+"e42"
+],
+"rank": 9
+},
+{
+"t": "Motivo e prazo do bloqueio não aparecem no app",
+"p": "fraude",
+"m": "57% perguntam quando recebem",
+"x": "É o principal pedido de quem tem a carteira bloqueada; as telas de aviso estão previstas até 15/11.",
+"sl": "Em andamento",
+"s": "Telas de aviso do bloqueio judicial e dados do bloqueio no app previstos até 15/11.",
+"img": "https://lh3.googleusercontent.com/d/1YAh50j2jrGFmpOc033oHpKAbtB6biDKu=w400",
+"det": "Quem tem a carteira bloqueada pergunta sobretudo quando recebe o saldo: 57% das conversas de saldo bloqueado, e 14% terminam com processo judicial. O atendente depende do retorno do setor para responder. As telas de aviso do bloqueio judicial e os dados do bloqueio no app estão previstos até 15/11.",
+"ex": [
+"e8",
+"ee",
+"eh",
+"e8g",
+"e8h"
+],
+"rank": 10
+},
+{
+"t": "A fatura não mostra a origem do limite (empréstimo e venda)",
+"p": "cartao",
+"m": "Fatura: 41% citam empréstimo; Empréstimo: \"problemas com cartão\" +91%",
+"x": "O cliente não entende por que um valor de empréstimo ou de venda gera fatura e acha que paga duas vezes.",
+"sl": "Sem solução registrada",
+"s": "Tema discutido na reunião Cartão × CX de 19/10, sem entrega registrada.",
+"img": "https://lh3.googleusercontent.com/d/1yOAZWizKX0vBRFR9crFl_TvsgNr7gUv1=w400",
+"det": "Em \"não entende porque recebeu uma fatura\" (+77% na W45), 41% das conversas citam empréstimo e 43%, saldo garantido (venda do Tap to Pay que virou limite). No Empréstimo, \"problemas com cartão de crédito\" quase dobra (86 para 164) e 27% dizem já ter quitado. O cliente não sabe de onde vem o valor e acredita que paga duas vezes. Tema discutido na reunião Cartão × CX de 19/10, sem entrega registrada.",
+"ex": [
+"e9",
+"e43",
+"e44",
+"e45",
+"e58"
+],
+"rank": 11,
+"ps": [
+"emprestimo"
+]
+},
+{
+"t": "Tap to Pay e Transporte como referência de experiência",
+"p": "t2p",
+"m": "NPS 84 e 81, os maiores do portfólio",
+"x": "Elogios a praticidade, agilidade e taxa clara.",
+"sl": "Estável",
+"s": "NPS acima de 80 nas últimas semanas.",
+"img": "https://lh3.googleusercontent.com/d/1PxAFlj6fbSoZSzzMmjd1xIzIYhoO3AxA=w400",
+"det": "Tap to Pay (NPS 84) e Transporte (NPS 81) têm os maiores NPS do portfólio na W45, e o Transporte chega ao maior valor da série. Os elogios falam de praticidade, agilidade e taxa clara; os promotores do Tap to Pay também pedem mais crédito e organização das transações.",
+"serie": {
+"l": "NPS Transacional do Tap to Pay",
+"v": [
+83,
+86,
+81,
+76,
+86,
+85,
+81,
+81,
+77,
+84
+],
+"u": "pts"
+},
+"serie2": {
+"l": "NPS Transacional do Transporte",
+"v": [
+87,
+75,
+84,
+74,
+77,
+67,
+77,
+79,
+78,
+80
+],
+"u": "pts"
+},
+"ex": [
+"e8y",
+"e91",
+"e90",
+"e93",
+"e94"
+],
+"rank": 15,
+"ps": [
+"transp"
+]
+}
+],
+"agir": [
+{
+"t": "NPS do Cartão abaixo do mínimo",
+"p": "cartao",
+"m": "NPS 41 (−11 pts); meta 75, mínimo 55",
+"x": "Anuidade explica o cancelamento; a fatura vem de empréstimo e venda que viram limite.",
+"sl": "Não resolvido",
+"s": "A onda de anuidade terminou em 03/11; a causa da fatura (limite de empréstimo e de venda) segue sem mudança.",
+"img": "https://lh3.googleusercontent.com/d/1W96dnU7NnKDk3Qk9CdESooD2q4FbBXDo=w400",
+"det": "O NPS Transacional do Cartão cai de 52 para 41 pontos na W45, o menor da série e abaixo do mínimo de 55. Sem o Cartão, o NPS dos demais produtos fica em 69 (70 na W44). A queda coincide com o maior lote da anuidade (02/11, 48,3 mil clientes) e com a alta dos contatos de fatura que o cliente não reconhece (+77%). Só 3% dessas conversas citam anuidade: 41% citam empréstimo e 43%, saldo garantido.",
+"serie": {
+"l": "NPS Transacional do Cartão (todas as respostas)",
+"v": [
+60,
+61,
+62,
+57,
+57,
+58,
+56,
+53,
+52,
+41
+],
+"u": "pts"
+},
+"ex": [
+"ec",
+"e43",
+"e44",
+"e40",
+"e46"
+],
+"rank": 1
+},
+{
+"t": "Reclame Aqui e Procon em alta",
+"p": "cartao",
+"m": "Reclame Aqui 4,3x; Procon +133%",
+"x": "A insatisfação com cobrança e com o fim do cashback sai do canal próprio.",
+"sl": "Não resolvido",
+"s": "Sem dono do indicador de reputação definido.",
+"img": "https://lh3.googleusercontent.com/d/1IHaWUCXxrBrtsxgcBlxTh5JaSoGbOMMs=w400",
+"det": "Reclame Aqui em 4,3x (pico de 22x em 28/10) e Procon em +133%, segundo o material da Tribe. Na base do Reclame Aqui, a W45 tem o maior volume em 10 semanas (+25%): cobrança, fatura e anuidade dobram (97 para 200), empréstimo e limite sobem 38%, acesso e cadastro vai de 77 para 90 e seguro não contratado dobra (13 para 27).",
+"serie": {
+"l": "Reclamações no Reclame Aqui por semana",
+"v": [
+440,
+494,
+404,
+385,
+400,
+402,
+361,
+395,
+410,
+514
+]
+},
+"ex": [
+"ed",
+"e18",
+"e1a",
+"e1b",
+"e1d"
+],
+"rank": 2,
+"ps": [
+"emprestimo",
+"conta",
+"seguros"
+]
+},
+{
+"t": "CSAT abaixo do piso em quatro verticais",
+"p": "fraude",
+"m": "Carteira 53%, Chargeback 45%, Transporte 50%, Minha Conta 64%",
+"x": "Piso de 75%; em Carteira e Chargeback é a 5ª semana abaixo.",
+"sl": "Não resolvido",
+"s": "Carteira Desativada e Chargeback Recovery estão abaixo do piso há 5 semanas.",
+"img": "https://lh3.googleusercontent.com/d/1i_8s5MK3RaOcvbs2hrlZWScef5vw9x6L=w400",
+"det": "Em quatro verticais o CSAT do suporte fica abaixo do piso de 75% na W45: Carteira Desativada 53%, Chargeback Recovery 45%, Transporte 50% e Minha Conta 64%. Em Carteira Desativada e Chargeback Recovery é a quinta semana seguida abaixo do piso. Nos casos de bloqueio o cliente pede motivo e prazo que o atendimento não consegue informar: 57% perguntam quando recebem o saldo.",
+"ex": [
+"ee",
+"e8h",
+"e8i",
+"e8k",
+"e8d"
+],
+"rank": 4,
+"ps": [
+"transp",
+"conta"
+]
+},
+{
+"t": "Dados incompletos na semana",
+"p": null,
+"m": "16,4% dos tickets sem classificação",
+"x": "Quedas de motivos podem ser efeito de classificação; Central sem dados desde 06/11.",
+"sl": "Em apuração",
+"s": "A engenharia de dados apura a carga da Central (06/11); a classificação será reaberta na quarta-feira.",
+"img": "https://lh3.googleusercontent.com/d/1YpbZiMUH90ngHNyrXUBYjf34vqMh_KZU=w400",
+"det": "16,4% dos tickets humanos da semana estão sem motivo de contato, então parte das quedas por motivo pode ser efeito de classificação e não melhora real. A Central de Ajuda está sem dado desde 06/11, por volta das 8h, e a análise da semana trata esse período como parcial. A engenharia de dados apura a carga e a classificação será reaberta na quarta-feira.",
+"rank": 13,
+"ex": [
+"e6l",
+"e6m",
+"e8o",
+"e7d",
+"e6n"
+]
+},
+{
+"t": "Selfie recusada sem motivo trava o acesso em Minha Conta",
+"p": "conta",
+"m": "CSAT 64%, abaixo do piso de 75%; 5 de 6 avaliações de loja negativas",
+"x": "72% das conversas de validação falam de selfie e 42% ouvem que a regra do Banco Central impede validação manual.",
+"sl": "Parcialmente resolvido",
+"s": "O ajuste de selfie (28/10) derruba os pedidos em 89% e o suporte cai 41,7%, mas o CSAT segue abaixo do piso.",
+"det": "No acesso (250 conversas), 19% falam de selfie, 16% de e-mail ou telefone antigo e 30% ouvem prazo de 48 horas ou 4 dias úteis. Na validação (78 conversas), 72% falam de selfie. Depois da checagem de CPF encerrado, do ajuste de selfie (28/10) e da regra R6 refinada, o suporte humano cai 41,7% e o acesso ao cadastro cai 47%, mas o CSAT fica em 64%. Desde 29/10, o acesso só do Brasil gera \"problema com a gente\" para ~2.600 usuários únicos.",
+"serie": {
+"l": "Reclamações de acesso e cadastro no Reclame Aqui",
+"v": [
+60,
+60,
+59,
+56,
+57,
+60,
+59,
+69,
+77,
+90
+]
+},
+"ex": [
+"e6d",
+"e6e",
+"e6f",
+"ev2",
+"e69"
+],
+"img": "https://lh3.googleusercontent.com/d/1PiVbmBTFM1AreGRzBT_vKiV5Tw1HSDDS=w400",
+"rank": 6
+},
+{
+"t": "Seguro que o cliente diz não ter contratado segue gerando estorno",
+"p": "seguros",
+"m": "Reclame Aqui: de 13 para 27; 59% das conversas de estorno dizem não ter contratado",
+"x": "A proteção aparece antes do Pix e o estorno exige cancelar no app e confirmar em um link.",
+"sl": "Sem solução registrada",
+"s": "Sem mudança no fluxo registrada: 42% dos contatos de estorno são de espera pelo segundo passo.",
+"det": "59% das 121 conversas de estorno dizem não ter autorizado ou contratado e 57% falam de cobrança ou desconto; entre os que querem cancelar, 51% dizem o mesmo e 28% falam da fatura do cartão. A explicação de que a proteção aparece antes do Pix e podia ser recusada é lida como negativa. Comentários do NPS Relacional e das redes reclamam de seguro pré-marcado. O Seguro Acidente e Renda chegou a 100% da base em 29/10 (R$ 2,99/mês, opcional).",
+"serie": {
+"l": "Reclamações de seguro não contratado no Reclame Aqui",
+"v": [
+11,
+31,
+17,
+14,
+28,
+27,
+13,
+8,
+13,
+27
+]
+},
+"ex": [
+"e72",
+"e73",
+"e74",
+"e77",
+"e78"
+],
+"img": "https://lh3.googleusercontent.com/d/1YAh50j2jrGFmpOc033oHpKAbtB6biDKu=w400",
+"rank": 7
+},
+{
+"t": "Lojista não vê o dinheiro da venda no Tap to Pay e no Link de Pagamento",
+"p": "t2p",
+"ps": [
+"link"
+],
+"m": "\"Não recebeu a venda\": 72% das 109 conversas (Tap to Pay) e 59% das 32 (Link)",
+"x": "No Tap to Pay a venda cai como limite do Cartão Empreendedor; no Link o lojista não sabe o prazo de recebimento.",
+"sl": "Sem solução registrada",
+"s": "A venda que vira limite segue como principal motivo no Tap to Pay; o prazo do Link não aparece antes da venda.",
+"det": "No Tap to Pay, 72% das 109 conversas de \"não recebeu a venda\" falam de cartão, limite ou Cartão Empreendedor (46 vendas creditadas no cartão, 36 negadas) e 49% passam pelo resgate de 6 passos. No Link de Pagamento, 59% das 32 conversas do mesmo motivo perguntam quando recebem: o valor cai no próximo dia útil até 13h, e o feriado de 02/11 agravou a percepção de atraso. A regularização do incidente de taxa do Link de 13/10 (59 vendas, R$ 1.773,36) segue em andamento.",
+"ex": [
+"e7f",
+"e7h",
+"ev4",
+"e5o",
+"ev6"
+],
+"img": "https://lh3.googleusercontent.com/d/1PxAFlj6fbSoZSzzMmjd1xIzIYhoO3AxA=w400",
+"rank": 8
+}
+]
+}

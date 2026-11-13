@@ -1,263 +1,506 @@
 {
-  "descricao": "Registro dos reports do painel 156: cada saida da automacao e a chave (squad[/sub]) sob a qual o report aparece no painel. Fundido=true: o set nao tem report proprio, o conteudo entra no report da mesma chave (Boleto de Cobranca em Contas e Boletos). Nenhum report e so-painel hoje: Seguros passou a ter set no canal #seguro_pix-cartão_cx (C0BDW931ZA9). RAF saiu do pipeline em 19/10/2026.",
-  "painel_id": 156,
-  "url_base": "https://optimus.recargapay.com/PHP/dashboard_view.php?id=156",
-  "link_experiencia_recargapay": "https://optimus.recargapay.com/PHP/dashboard_view.php?id=141",
-  "formato_link": "{url_base}&r={chave}/rep",
-  "registro": [
+ "descricao": "Registro dos reports do painel 156. `registro` lista as 21 saídas de análise (cada uma tem a chave squad[/sub] sob a qual o report aparece no painel); `canais` define o que vai ao Slack desde a v3.21: UM report por canal (11 canais), com uma resposta na thread para cada produto do canal (ou 3 respostas nos canais executivo e geral). Fundido=true: o set não tem report próprio, o conteúdo entra no report da mesma chave (Boleto de Cobrança em Contas e Boletos). RAF saiu do pipeline em 19/10/2026 e não tem report nem texto. `painel` (em cada canal de produto) lista os produtos do painel 156 desse squad: o painel e a rotina exigem pelo menos um destaque da semana por squad.",
+ "painel_id": 156,
+ "url_base": "https://optimus.recargapay.com/PHP/dashboard_view.php?id=156",
+ "link_experiencia_recargapay": "https://optimus.recargapay.com/PHP/dashboard_view.php?id=141",
+ "formato_link": "{url_base}&r={chave}/rep",
+ "registro": [
+  {
+   "ordem": 1,
+   "origem": "geral",
+   "nome_report": "Report VoC (Geral)",
+   "canal": "#cxm-team",
+   "chave": "geral",
+   "squad": "geral",
+   "sub": null,
+   "rotulo": "Visão geral",
+   "fundido": false,
+   "rotulo_link": "Report Geral"
+  },
+  {
+   "ordem": 2,
+   "origem": "executivo",
+   "nome_report": "Report VoC (Executivo)",
+   "canal": "#lideres-cx-e-cxm",
+   "chave": "geral/executivo",
+   "squad": "geral",
+   "sub": "executivo",
+   "rotulo": "Executivo",
+   "fundido": false,
+   "rotulo_link": "Report Executivo"
+  },
+  {
+   "ordem": 3,
+   "origem": "produto",
+   "nome_report": "Minha Conta",
+   "canal": "#account_cx",
+   "chave": "account",
+   "squad": "account",
+   "sub": null,
+   "rotulo": "Minha Conta",
+   "fundido": false,
+   "rotulo_link": "Report de Minha Conta"
+  },
+  {
+   "ordem": 4,
+   "origem": "produto",
+   "nome_report": "Cartao de Credito",
+   "canal": "#cc-produto-e-cx",
+   "chave": "cartao",
+   "squad": "cartao",
+   "sub": null,
+   "rotulo": "Cartao de Credito",
+   "fundido": false,
+   "rotulo_link": "Report de Cartão de Crédito"
+  },
+  {
+   "ordem": 5,
+   "origem": "produto",
+   "nome_report": "Conta Desativada",
+   "canal": "#cx_fraud",
+   "chave": "fraude/conta desativada",
+   "squad": "fraude",
+   "sub": "conta desativada",
+   "rotulo": "Conta Desativada",
+   "fundido": false,
+   "rotulo_link": "Report de Conta Desativada"
+  },
+  {
+   "ordem": 6,
+   "origem": "produto",
+   "nome_report": "Carteira Desativada",
+   "canal": "#cx_fraud",
+   "chave": "fraude/carteira desativada",
+   "squad": "fraude",
+   "sub": "carteira desativada",
+   "rotulo": "Carteira Desativada",
+   "fundido": false,
+   "rotulo_link": "Report de Carteira Desativada"
+  },
+  {
+   "ordem": 7,
+   "origem": "produto",
+   "nome_report": "Chargeback Recovery",
+   "canal": "#cx_fraud",
+   "chave": "fraude/chargeback recovery",
+   "squad": "fraude",
+   "sub": "chargeback recovery",
+   "rotulo": "Chargeback Recovery",
+   "fundido": false,
+   "rotulo_link": "Report de Chargeback Recovery"
+  },
+  {
+   "ordem": 8,
+   "origem": "produto",
+   "nome_report": "CDB",
+   "canal": "#investments-e-cx",
+   "chave": "cdb",
+   "squad": "cdb",
+   "sub": null,
+   "rotulo": "CDB",
+   "fundido": false,
+   "rotulo_link": "Report de CDB"
+  },
+  {
+   "ordem": 9,
+   "origem": "produto",
+   "nome_report": "Rendimento CDI",
+   "canal": "#investments-e-cx",
+   "chave": "outros/cashback e rendimento",
+   "squad": "outros",
+   "sub": "cashback e rendimento",
+   "rotulo": "Rendimento CDI",
+   "fundido": false,
+   "rotulo_link": "Report de Rendimento CDI"
+  },
+  {
+   "ordem": 10,
+   "origem": "produto",
+   "nome_report": "Movimentacoes Financeiras",
+   "canal": "#investments-e-cx",
+   "chave": "outros/movimentações financeiras",
+   "squad": "outros",
+   "sub": "movimentações financeiras",
+   "rotulo": "Movimentacoes Financeiras",
+   "fundido": false,
+   "rotulo_link": "Report de Movimentações Financeiras"
+  },
+  {
+   "ordem": 11,
+   "origem": "produto",
+   "nome_report": "Transporte",
+   "canal": "#melhoria-continua-verticais",
+   "chave": "transporte",
+   "squad": "transporte",
+   "sub": null,
+   "rotulo": "Transporte",
+   "fundido": false,
+   "rotulo_link": "Report de Transporte"
+  },
+  {
+   "ordem": 12,
+   "origem": "produto",
+   "nome_report": "Contas e Boletos",
+   "canal": "#melhoria-continua-verticais",
+   "chave": "outros/utilities",
+   "squad": "outros",
+   "sub": "utilities",
+   "rotulo": "Contas e Boletos",
+   "fundido": false,
+   "rotulo_link": "Report de Contas e Boletos"
+  },
+  {
+   "ordem": 13,
+   "origem": "produto",
+   "nome_report": "Boleto de Cobranca",
+   "canal": "#melhoria-continua-verticais",
+   "chave": "outros/utilities",
+   "squad": "outros",
+   "sub": "utilities",
+   "rotulo": "Boleto de Cobranca",
+   "fundido": true,
+   "rotulo_link": "Report de Contas e Boletos (inclui Boleto de Cobrança)"
+  },
+  {
+   "ordem": 14,
+   "origem": "produto",
+   "nome_report": "Recarga de Celular",
+   "canal": "#melhoria-continua-verticais",
+   "chave": "outros/topup",
+   "squad": "outros",
+   "sub": "topup",
+   "rotulo": "Recarga de Celular",
+   "fundido": false,
+   "rotulo_link": "Report de Recarga de Celular"
+  },
+  {
+   "ordem": 15,
+   "origem": "produto",
+   "nome_report": "Pix",
+   "canal": "#pixcc-home-raf-cx",
+   "chave": "pix",
+   "squad": "pix",
+   "sub": null,
+   "rotulo": "Pix",
+   "fundido": false,
+   "rotulo_link": "Report de Pix"
+  },
+  {
+   "ordem": 16,
+   "origem": "produto",
+   "nome_report": "Pix CC",
+   "canal": "#pixcc-home-raf-cx",
+   "chave": "pix/cartao",
+   "squad": "pix",
+   "sub": "cartao",
+   "rotulo": "Pix CC",
+   "fundido": false,
+   "rotulo_link": "Report de Pix CC"
+  },
+  {
+   "ordem": 17,
+   "origem": "produto",
+   "nome_report": "Emprestimo Pessoal",
+   "canal": "#squad_loan_seguimento",
+   "chave": "emprestimo/pessoal",
+   "squad": "emprestimo",
+   "sub": "pessoal",
+   "rotulo": "Emprestimo Pessoal",
+   "fundido": false,
+   "rotulo_link": "Report de Empréstimo Pessoal"
+  },
+  {
+   "ordem": 18,
+   "origem": "produto",
+   "nome_report": "Emprestimo Consignado",
+   "canal": "#squad_loan_seguimento",
+   "chave": "emprestimo/consignado",
+   "squad": "emprestimo",
+   "sub": "consignado",
+   "rotulo": "Emprestimo Consignado",
+   "fundido": false,
+   "rotulo_link": "Report de Empréstimo Consignado"
+  },
+  {
+   "ordem": 19,
+   "origem": "produto",
+   "nome_report": "Tap to Pay",
+   "canal": "#subacquirer-cx",
+   "chave": "t2p",
+   "squad": "t2p",
+   "sub": null,
+   "rotulo": "Tap to Pay",
+   "fundido": false,
+   "rotulo_link": "Report de Tap to Pay"
+  },
+  {
+   "ordem": 20,
+   "origem": "produto",
+   "nome_report": "Link de Pagamento",
+   "canal": "#subacquirer-cx",
+   "chave": "link",
+   "squad": "link",
+   "sub": null,
+   "rotulo": "Link de Pagamento",
+   "fundido": false,
+   "rotulo_link": "Report de Link de Pagamento"
+  },
+  {
+   "ordem": 21,
+   "origem": "produto",
+   "nome_report": "Seguros",
+   "canal": "#seguro_pix-cartão_cx",
+   "chave": "seguros",
+   "squad": "seguros",
+   "sub": null,
+   "rotulo": "Seguros",
+   "fundido": false,
+   "rotulo_link": "Report de Seguros",
+   "canal_id": "C0BDW931ZA9"
+  }
+ ],
+ "formato_rotulo_link": "rotulo_link e o texto do hiperlink do Slack: <{url_base}&r={chave}/rep|{rotulo_link}>; o painel 141 e sempre \"Experiência RecargaPay\"",
+ "canais": [
+  {
+   "slug": "cxm-team",
+   "canal": "#cxm-team",
+   "tipo": "geral",
+   "chave": "geral",
+   "nome": "Visão geral",
+   "links": "painel",
+   "threads": [
+    "Resumo geral",
+    "Destaques da semana",
+    "Menções por produto"
+   ]
+  },
+  {
+   "slug": "lideres-cx-e-cxm",
+   "canal": "#lideres-cx-e-cxm",
+   "tipo": "executivo",
+   "chave": "geral/executivo",
+   "nome": "Executivo",
+   "links": "painel",
+   "threads": [
+    "Resumo geral",
+    "Destaques da semana",
+    "Menções por produto"
+   ]
+  },
+  {
+   "slug": "account_cx",
+   "canal": "#account_cx",
+   "tipo": "produto",
+   "links": "report",
+   "nome": "Minha Conta",
+   "produtos": [
     {
-      "ordem": 1,
-      "origem": "geral",
-      "nome_report": "Report VoC (Geral)",
-      "canal": "#cxm-team",
-      "chave": "geral",
-      "squad": "geral",
-      "sub": null,
-      "rotulo": "Visão geral",
-      "fundido": false,
-      "rotulo_link": "Report Geral"
-    },
-    {
-      "ordem": 2,
-      "origem": "executivo",
-      "nome_report": "Report VoC (Executivo)",
-      "canal": "#lideres-cx-e-cxm",
-      "chave": "geral/executivo",
-      "squad": "geral",
-      "sub": "executivo",
-      "rotulo": "Executivo",
-      "fundido": false,
-      "rotulo_link": "Report Executivo"
-    },
-    {
-      "ordem": 3,
-      "origem": "produto",
-      "nome_report": "Minha Conta",
-      "canal": "#account_cx",
-      "chave": "account",
-      "squad": "account",
-      "sub": null,
-      "rotulo": "Minha Conta",
-      "fundido": false,
-      "rotulo_link": "Report de Minha Conta"
-    },
-    {
-      "ordem": 4,
-      "origem": "produto",
-      "nome_report": "Cartao de Credito",
-      "canal": "#cc-produto-e-cx",
-      "chave": "cartao",
-      "squad": "cartao",
-      "sub": null,
-      "rotulo": "Cartao de Credito",
-      "fundido": false,
-      "rotulo_link": "Report de Cartão de Crédito"
-    },
-    {
-      "ordem": 5,
-      "origem": "produto",
-      "nome_report": "Conta Desativada",
-      "canal": "#cx_fraud",
-      "chave": "fraude/conta desativada",
-      "squad": "fraude",
-      "sub": "conta desativada",
-      "rotulo": "Conta Desativada",
-      "fundido": false,
-      "rotulo_link": "Report de Conta Desativada"
-    },
-    {
-      "ordem": 6,
-      "origem": "produto",
-      "nome_report": "Carteira Desativada",
-      "canal": "#cx_fraud",
-      "chave": "fraude/carteira desativada",
-      "squad": "fraude",
-      "sub": "carteira desativada",
-      "rotulo": "Carteira Desativada",
-      "fundido": false,
-      "rotulo_link": "Report de Carteira Desativada"
-    },
-    {
-      "ordem": 7,
-      "origem": "produto",
-      "nome_report": "Chargeback Recovery",
-      "canal": "#cx_fraud",
-      "chave": "fraude/chargeback recovery",
-      "squad": "fraude",
-      "sub": "chargeback recovery",
-      "rotulo": "Chargeback Recovery",
-      "fundido": false,
-      "rotulo_link": "Report de Chargeback Recovery"
-    },
-    {
-      "ordem": 8,
-      "origem": "produto",
-      "nome_report": "CDB",
-      "canal": "#investments-e-cx",
-      "chave": "cdb",
-      "squad": "cdb",
-      "sub": null,
-      "rotulo": "CDB",
-      "fundido": false,
-      "rotulo_link": "Report de CDB"
-    },
-    {
-      "ordem": 9,
-      "origem": "produto",
-      "nome_report": "Rendimento CDI",
-      "canal": "#investments-e-cx",
-      "chave": "outros/cashback e rendimento",
-      "squad": "outros",
-      "sub": "cashback e rendimento",
-      "rotulo": "Rendimento CDI",
-      "fundido": false,
-      "rotulo_link": "Report de Rendimento CDI"
-    },
-    {
-      "ordem": 10,
-      "origem": "produto",
-      "nome_report": "Movimentacoes Financeiras",
-      "canal": "#investments-e-cx",
-      "chave": "outros/movimentações financeiras",
-      "squad": "outros",
-      "sub": "movimentações financeiras",
-      "rotulo": "Movimentacoes Financeiras",
-      "fundido": false,
-      "rotulo_link": "Report de Movimentações Financeiras"
-    },
-    {
-      "ordem": 11,
-      "origem": "produto",
-      "nome_report": "Transporte",
-      "canal": "#melhoria-continua-verticais",
-      "chave": "transporte",
-      "squad": "transporte",
-      "sub": null,
-      "rotulo": "Transporte",
-      "fundido": false,
-      "rotulo_link": "Report de Transporte"
-    },
-    {
-      "ordem": 12,
-      "origem": "produto",
-      "nome_report": "Contas e Boletos",
-      "canal": "#melhoria-continua-verticais",
-      "chave": "outros/utilities",
-      "squad": "outros",
-      "sub": "utilities",
-      "rotulo": "Contas e Boletos",
-      "fundido": false,
-      "rotulo_link": "Report de Contas e Boletos"
-    },
-    {
-      "ordem": 13,
-      "origem": "produto",
-      "nome_report": "Boleto de Cobranca",
-      "canal": "#melhoria-continua-verticais",
-      "chave": "outros/utilities",
-      "squad": "outros",
-      "sub": "utilities",
-      "rotulo": "Boleto de Cobranca",
-      "fundido": true,
-      "rotulo_link": "Report de Contas e Boletos (inclui Boleto de Cobrança)"
-    },
-    {
-      "ordem": 14,
-      "origem": "produto",
-      "nome_report": "Recarga de Celular",
-      "canal": "#melhoria-continua-verticais",
-      "chave": "outros/topup",
-      "squad": "outros",
-      "sub": "topup",
-      "rotulo": "Recarga de Celular",
-      "fundido": false,
-      "rotulo_link": "Report de Recarga de Celular"
-    },
-    {
-      "ordem": 15,
-      "origem": "produto",
-      "nome_report": "Pix",
-      "canal": "#pixcc-home-raf-cx",
-      "chave": "pix",
-      "squad": "pix",
-      "sub": null,
-      "rotulo": "Pix",
-      "fundido": false,
-      "rotulo_link": "Report de Pix"
-    },
-    {
-      "ordem": 16,
-      "origem": "produto",
-      "nome_report": "Pix CC",
-      "canal": "#pixcc-home-raf-cx",
-      "chave": "pix/cartao",
-      "squad": "pix",
-      "sub": "cartao",
-      "rotulo": "Pix CC",
-      "fundido": false,
-      "rotulo_link": "Report de Pix CC"
-    },
-    {
-      "ordem": 17,
-      "origem": "produto",
-      "nome_report": "Emprestimo Pessoal",
-      "canal": "#squad_loan_seguimento",
-      "chave": "emprestimo/pessoal",
-      "squad": "emprestimo",
-      "sub": "pessoal",
-      "rotulo": "Emprestimo Pessoal",
-      "fundido": false,
-      "rotulo_link": "Report de Empréstimo Pessoal"
-    },
-    {
-      "ordem": 18,
-      "origem": "produto",
-      "nome_report": "Emprestimo Consignado",
-      "canal": "#squad_loan_seguimento",
-      "chave": "emprestimo/consignado",
-      "squad": "emprestimo",
-      "sub": "consignado",
-      "rotulo": "Emprestimo Consignado",
-      "fundido": false,
-      "rotulo_link": "Report de Empréstimo Consignado"
-    },
-    {
-      "ordem": 19,
-      "origem": "produto",
-      "nome_report": "Tap to Pay",
-      "canal": "#subacquirer-cx",
-      "chave": "t2p",
-      "squad": "t2p",
-      "sub": null,
-      "rotulo": "Tap to Pay",
-      "fundido": false,
-      "rotulo_link": "Report de Tap to Pay"
-    },
-    {
-      "ordem": 20,
-      "origem": "produto",
-      "nome_report": "Link de Pagamento",
-      "canal": "#subacquirer-cx",
-      "chave": "link",
-      "squad": "link",
-      "sub": null,
-      "rotulo": "Link de Pagamento",
-      "fundido": false,
-      "rotulo_link": "Report de Link de Pagamento"
-    },
-    {
-      "ordem": 21,
-      "origem": "produto",
-      "nome_report": "Seguros",
-      "canal": "#seguro_pix-cartão_cx",
-      "chave": "seguros",
-      "squad": "seguros",
-      "sub": null,
-      "rotulo": "Seguros",
-      "fundido": false,
-      "rotulo_link": "Report de Seguros",
-      "canal_id": "C0BDW931ZA9"
+     "nome": "Minha Conta",
+     "chave": "account",
+     "rotulo_link": "Report de Minha Conta"
     }
-  ],
-  "formato_rotulo_link": "rotulo_link e o texto do hiperlink do Slack: <{url_base}&r={chave}/rep|{rotulo_link}>; o painel 141 e sempre \"Experiência RecargaPay\""
+   ],
+   "painel": [
+    "conta"
+   ]
+  },
+  {
+   "slug": "cc-produto-e-cx",
+   "canal": "#cc-produto-e-cx",
+   "tipo": "produto",
+   "links": "report",
+   "nome": "Cartão de Crédito",
+   "produtos": [
+    {
+     "nome": "Cartão de Crédito",
+     "chave": "cartao",
+     "rotulo_link": "Report de Cartão de Crédito"
+    }
+   ],
+   "painel": [
+    "cartao"
+   ]
+  },
+  {
+   "slug": "cx_fraud",
+   "canal": "#cx_fraud",
+   "tipo": "produto",
+   "links": "report",
+   "nome": "Bloqueios e fraude",
+   "produtos": [
+    {
+     "nome": "Conta Desativada",
+     "chave": "fraude/conta desativada",
+     "rotulo_link": "Report de Conta Desativada"
+    },
+    {
+     "nome": "Carteira Desativada",
+     "chave": "fraude/carteira desativada",
+     "rotulo_link": "Report de Carteira Desativada"
+    },
+    {
+     "nome": "Chargeback Recovery",
+     "chave": "fraude/chargeback recovery",
+     "rotulo_link": "Report de Chargeback Recovery"
+    }
+   ],
+   "painel": [
+    "fraude"
+   ]
+  },
+  {
+   "slug": "investments-e-cx",
+   "canal": "#investments-e-cx",
+   "tipo": "produto",
+   "links": "report",
+   "nome": "CDB e investimentos",
+   "produtos": [
+    {
+     "nome": "CDB",
+     "chave": "cdb",
+     "rotulo_link": "Report de CDB"
+    },
+    {
+     "nome": "Rendimento CDI",
+     "chave": "outros/cashback e rendimento",
+     "rotulo_link": "Report de Rendimento CDI"
+    },
+    {
+     "nome": "Movimentações Financeiras",
+     "chave": "outros/movimentações financeiras",
+     "rotulo_link": "Report de Movimentações Financeiras"
+    }
+   ],
+   "painel": [
+    "cdb"
+   ]
+  },
+  {
+   "slug": "melhoria-continua-verticais",
+   "canal": "#melhoria-continua-verticais",
+   "tipo": "produto",
+   "links": "report",
+   "nome": "Transporte, Contas e Boletos e Recarga",
+   "produtos": [
+    {
+     "nome": "Transporte",
+     "chave": "transporte",
+     "rotulo_link": "Report de Transporte"
+    },
+    {
+     "nome": "Contas e Boletos",
+     "chave": "outros/utilities",
+     "rotulo_link": "Report de Contas e Boletos",
+     "inclui": [
+      "Boleto de Cobrança"
+     ]
+    },
+    {
+     "nome": "Recarga de Celular",
+     "chave": "outros/topup",
+     "rotulo_link": "Report de Recarga de Celular"
+    }
+   ],
+   "painel": [
+    "transp",
+    "boletos",
+    "topup"
+   ]
+  },
+  {
+   "slug": "pixcc-home-raf-cx",
+   "canal": "#pixcc-home-raf-cx",
+   "tipo": "produto",
+   "links": "report",
+   "nome": "Pix e Pix CC",
+   "nota": "O nome do canal cita RAF, mas o RAF saiu do pipeline: não há report nem texto de RAF.",
+   "produtos": [
+    {
+     "nome": "Pix",
+     "chave": "pix",
+     "rotulo_link": "Report de Pix"
+    },
+    {
+     "nome": "Pix CC",
+     "chave": "pix/cartao",
+     "rotulo_link": "Report de Pix CC"
+    }
+   ],
+   "painel": [
+    "pix"
+   ]
+  },
+  {
+   "slug": "squad_loan_seguimento",
+   "canal": "#squad_loan_seguimento",
+   "tipo": "produto",
+   "links": "report",
+   "nome": "Empréstimo",
+   "produtos": [
+    {
+     "nome": "Empréstimo Pessoal",
+     "chave": "emprestimo/pessoal",
+     "rotulo_link": "Report de Empréstimo Pessoal"
+    },
+    {
+     "nome": "Empréstimo Consignado",
+     "chave": "emprestimo/consignado",
+     "rotulo_link": "Report de Empréstimo Consignado"
+    }
+   ],
+   "painel": [
+    "emprestimo"
+   ]
+  },
+  {
+   "slug": "subacquirer-cx",
+   "canal": "#subacquirer-cx",
+   "tipo": "produto",
+   "links": "report",
+   "nome": "Tap to Pay e Link de Pagamento",
+   "produtos": [
+    {
+     "nome": "Tap to Pay",
+     "chave": "t2p",
+     "rotulo_link": "Report de Tap to Pay"
+    },
+    {
+     "nome": "Link de Pagamento",
+     "chave": "link",
+     "rotulo_link": "Report de Link de Pagamento"
+    }
+   ],
+   "painel": [
+    "t2p",
+    "link"
+   ]
+  },
+  {
+   "slug": "seguro_pix-cartao_cx",
+   "canal": "#seguro_pix-cartão_cx",
+   "canal_id": "C0BDW931ZA9",
+   "tipo": "produto",
+   "links": "report",
+   "nome": "Seguros",
+   "produtos": [
+    {
+     "nome": "Seguros",
+     "chave": "seguros",
+     "rotulo_link": "Report de Seguros"
+    }
+   ],
+   "painel": [
+    "seguros"
+   ]
+  }
+ ],
+ "regras_slack": {
+  "um_report_por_canal": true,
+  "sem_raf": true,
+  "links": {
+   "painel": "apenas o link do painel (url_base), uma vez, na mensagem principal; sem links de report e sem o painel 141",
+   "report": "mensagem principal com o link Experiência RecargaPay (painel 141, como antes); cada resposta de produto termina com o link do report do produto"
+  },
+  "formato_principal": ":bar_chart: Report VoC — {nome} · Semana {NN} · {DD/MM}–{DD/MM/AAAA}"
+ }
 }

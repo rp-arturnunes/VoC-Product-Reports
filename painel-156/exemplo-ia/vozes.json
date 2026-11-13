@@ -1,0 +1,414 @@
+{
+"reclamam": [
+{
+"t": "Fatura que não reconhecem e anuidade de R$ 9,90",
+"p": "cartao",
+"d": "41% das conversas de fatura citam empréstimo e 43% saldo garantido; a anuidade explica 51% dos cancelamentos.",
+"serie": {
+"l": "\"Não entende porque recebeu uma fatura\" (Cartão)",
+"v": [
+124,
+160,
+114,
+140,
+195,
+271,
+209,
+110,
+207,
+367
+],
+"u": ""
+},
+"det": "É o motivo que mais cresce no Cartão (+77% na W45) e o mais citado nos comentários do produto. Nas conversas, só 3% falam de anuidade: o cliente vê fatura de um empréstimo ou de uma venda do Tap to Pay que virou limite e acha que paga duas vezes. Coincide com o maior lote de anuidade (02/11).",
+"ex": [
+"e9",
+"ef",
+"eg",
+"e43",
+"e44"
+]
+},
+{
+"t": "Saldo bloqueado sem motivo nem prazo",
+"p": "fraude",
+"d": "57% perguntam quando recebem; 14% terminam com processo judicial.",
+"serie": {
+"l": "Saldo bloqueado: todo o saldo (Carteira Desativada)",
+"v": [
+492,
+405,
+411,
+265,
+453,
+443,
+294,
+324,
+394,
+276
+],
+"u": ""
+},
+"det": "O volume cai desde o pico de 29/10 (W44), mas a queixa não muda: o cliente não sabe por que nem até quando o saldo fica retido. 57% perguntam quando recebem e 14% terminam com processo judicial; nas redes há relatos de carteira bloqueada há quase 10 dias com o prazo vencido.",
+"ex": [
+"ee",
+"eh",
+"ei",
+"e8g",
+"e8h"
+]
+},
+{
+"t": "Fim do cashback em boletos",
+"p": "boletos",
+"d": "Só 2 de 12 avaliações de loja positivas na semana da mudança.",
+"serie": {
+"l": "Contatos de cashback (Contas e Boletos)",
+"v": [
+6,
+4,
+6,
+5,
+3,
+4,
+5,
+7,
+4,
+164
+],
+"u": ""
+},
+"det": "A queixa surge com o fim do cashback em boletos pagos com saldo (05/11). O suporte já normaliza, mas lojas e redes concentram a reação de agentes e autônomos, que usam o app como renda extra.",
+"ex": [
+"ej",
+"ek",
+"el",
+"e50",
+"e51"
+]
+},
+{
+"t": "Seguro que dizem não ter contratado",
+"p": "seguros",
+"d": "59% das conversas de estorno dizem não ter autorizado.",
+"serie": {
+"l": "\"Quer estorno do seguro\" (Seguros)",
+"v": [
+67,
+98,
+144,
+91,
+169,
+241,
+226,
+200,
+183,
+126
+],
+"u": ""
+},
+"det": "O estorno de seguro cai 31% na W45 e está em queda desde a W41, mas 59% das conversas ainda dizem que o cliente não contratou. Lojas e NPS Relacional falam de seguro pré-marcado no fluxo do Pix; o Seguro Acidente e Renda foi liberado para 100% em 29/10.",
+"ex": [
+"em",
+"en",
+"e72",
+"e73",
+"e74"
+]
+},
+{
+"t": "Taxa no Pix Out CC",
+"p": "pix",
+"d": "Taxa aparece em 17% dos comentários de Pix Out CC durante o teste de 4,99%.",
+"serie": {
+"l": "NPS do Pix Out CC (todas as respostas)",
+"v": [
+72,
+73,
+75,
+71,
+74,
+74,
+72,
+68,
+68,
+69
+],
+"u": "pts"
+},
+"det": "A taxa de 4,99% em teste desde 05/11 aparece em 17% dos comentários de Pix Out CC. O NPS do produto ainda não cai, mas as críticas falam de taxa \"absurda\" e de pagar fatura sobre dinheiro próprio.",
+"ex": [
+"e5",
+"e6v",
+"e6q",
+"e6x",
+"e9i"
+]
+}
+],
+"pedem": [
+{
+"t": "Prazo e motivo quando o saldo é bloqueado",
+"p": "fraude",
+"d": "É o principal pedido de quem tem a carteira bloqueada.",
+"serie": {
+"l": "Saldo bloqueado: todo o saldo (Carteira Desativada)",
+"v": [
+492,
+405,
+411,
+265,
+453,
+443,
+294,
+324,
+394,
+276
+],
+"u": ""
+},
+"det": "O pedido de prazo e motivo se repete em todas as semanas do período: o atendente não consegue informar e depende do retorno do setor. As telas de aviso do bloqueio no app estão previstas até 15/11.",
+"ex": [
+"e8",
+"eo",
+"e8k",
+"e8l",
+"e8m"
+]
+},
+{
+"t": "Limite que volte depois de pagar em dia",
+"p": "emprestimo",
+"d": "NPS Relacional: oferta menor depois de quitar antecipado.",
+"serie": {
+"l": "Comentários de NPS Relacional que citam empréstimo",
+"v": [
+92,
+106,
+102,
+120,
+109,
+89,
+97,
+216,
+232,
+212
+],
+"u": ""
+},
+"det": "Os comentários de NPS Relacional sobre empréstimo dobram desde a W43 e 40% são de detratores na W45. O pedido é limite e oferta que voltem depois de pagar em dia ou antecipado.",
+"ex": [
+"ep",
+"eq",
+"e5d",
+"e5e",
+"e5f"
+]
+},
+{
+"t": "Resgate de saldo garantido e CDB sem passos extras",
+"p": "cartao",
+"d": "Resgate por artigo de 6 passos; 37% das conversas de resgate citam cartão.",
+"serie": {
+"l": "\"Resgate de saldo garantido\" (Cartão)",
+"v": [
+104,
+219,
+247,
+173,
+134,
+144,
+86,
+112,
+192,
+156
+],
+"u": ""
+},
+"det": "O cliente quer o valor do limite garantido de volta na carteira; o caminho é um artigo de 6 passos e 31% das conversas falam de venda do Tap to Pay que virou limite.",
+"ex": [
+"er",
+"es",
+"e4a",
+"e4b",
+"e4c"
+]
+},
+{
+"t": "Cashback de volta para quem paga boletos",
+"p": "boletos",
+"d": "Agentes e autônomos que usam o app como renda extra.",
+"serie": {
+"l": "Contatos de cashback (Contas e Boletos)",
+"v": [
+6,
+4,
+6,
+5,
+3,
+4,
+5,
+7,
+4,
+164
+],
+"u": ""
+},
+"det": "Quem paga boletos como renda extra pede o cashback de volta; o pedido aparece no suporte, no NPS Relacional e nas redes desde 05/11.",
+"ex": [
+"ek",
+"el",
+"e57",
+"e56",
+"e55"
+]
+},
+{
+"t": "Cancelar a venda dentro do app",
+"p": "link",
+"d": "Não existe a opção hoje; o lojista precisa do atendimento.",
+"serie": {
+"l": "Suporte humano de Link de Pagamento",
+"v": [
+62,
+114,
+104,
+71,
+77,
+87,
+82,
+92,
+71,
+66
+],
+"u": ""
+},
+"det": "Lojistas pedem para cancelar a venda dentro do app; hoje dependem do atendimento. O volume do produto é baixo e estável.",
+"ex": [
+"et",
+"e5r",
+"e5s",
+"e5t",
+"e5u"
+]
+}
+],
+"elogiam": [
+{
+"t": "Aproximação para receber no celular",
+"p": "t2p",
+"d": "Tap to Pay com NPS 84,2, o maior do portfólio.",
+"serie": {
+"l": "NPS do Tap to Pay (todas as respostas)",
+"v": [
+83,
+86,
+81,
+76,
+86,
+85,
+81,
+81,
+77,
+84
+],
+"u": "pts"
+},
+"det": "O Tap to Pay mantém o maior NPS do portfólio. Os elogios falam de praticidade e de usar o celular como máquina; os pedidos dos promotores são mais crédito e organização das transações.",
+"ex": [
+"ea",
+"eu",
+"e8x",
+"e8y",
+"e8z"
+]
+},
+{
+"t": "Praticidade e agilidade do empréstimo",
+"p": "emprestimo",
+"d": "Tema mais citado entre promotores do NPS Transacional.",
+"serie": {
+"l": "NPS do Empréstimo (todas as respostas)",
+"v": [
+70,
+72,
+69,
+72,
+71,
+71,
+71,
+70,
+68,
+68
+],
+"u": "pts"
+},
+"det": "O empréstimo tem nota estável e elogios à agilidade; mesmo os promotores pedem limite maior e cartão com limite.",
+"ex": [
+"ev",
+"e97",
+"e98",
+"e99",
+"e9a"
+]
+},
+{
+"t": "Recarga de transporte simples",
+"p": "transp",
+"d": "Transporte com NPS 81,2, o maior da série.",
+"serie": {
+"l": "NPS do Transporte (todas as respostas)",
+"v": [
+87,
+75,
+84,
+74,
+77,
+67,
+77,
+79,
+78,
+80
+],
+"u": "pts"
+},
+"det": "O Transporte sobe para o maior NPS da série na W45; os comentários falam de facilidade e de instabilidade rara.",
+"ex": [
+"eb",
+"ew",
+"e92",
+"e93",
+"e94"
+]
+},
+{
+"t": "Agilidade do Pix",
+"p": "pix",
+"d": "Pix Out Wallet: 73% dos comentários positivos.",
+"serie": {
+"l": "NPS do Pix Out Wallet (todas as respostas)",
+"v": [
+72,
+67,
+71,
+67,
+69,
+64,
+69,
+73,
+68,
+61
+],
+"u": "pts"
+},
+"det": "Os promotores do Pix destacam facilidade e confiança; a ressalva mais citada é a demora na notificação de recebimento.",
+"ex": [
+"ex",
+"ey",
+"e9c",
+"e9d",
+"e9e"
+]
+}
+]
+}

@@ -1,0 +1,106 @@
+{
+"texto": "Nas lojas, as avaliações positivas caem de 66% (W41) para 57% (W45), a menor parcela em 10 semanas, com 307 avaliações na semana. Cartão, Contas e Boletos e suporte puxam a queda com os mesmos temas do atendimento: saldo que sumiu, estorno que leva duas faturas, fim do cashback e respostas automáticas. As redes têm volume menor que no pico da W44, mas 57% das interações da W45 são negativas, a maior parcela em 10 semanas, com relatos de carteira bloqueada, perda do cashback em boletos e golpe misturados a notícias e respostas da marca.",
+"aviso": "A classificação de sentimento das redes (Buzzmonitor) marca reclamações e conteúdo fora do tema como positivos; por isso a % positiva das redes deve ser lida com cuidado. Exemplos abaixo.",
+"loja": {
+"temas": [
+{
+"t": "Empréstimo e limite",
+"n": 70,
+"tom": "mix",
+"x": "Propaganda enganosa (\"fala que tem cartão e empréstimo aprovado, mas tem que abrir conta e depositar\"), empréstimo cancelado com pagamento em dia e juros altos. Elogio de quem ganhou limite de R$ 50 e cartão digital."
+},
+{
+"t": "Recargas, transporte e contas",
+"n": 43,
+"tom": "mix",
+"x": "Saldo de R$ 10 no cartão que sumiu, fim do cashback em boletos e perda de comissões. Elogio à variedade de formas de pagamento."
+},
+{
+"t": "Cartão: anuidade, fatura e cobrança",
+"n": 43,
+"tom": "neg",
+"x": "\"O app mais desonesto\", contratos que o cliente diz não ter assinado, estorno que demora até 2 faturas e Pix Out CC recusado sem suporte."
+},
+{
+"t": "Taxas, tarifas e juros",
+"n": 25,
+"tom": "neg",
+"x": "Seguro adicionado sem permissão e cobrado, taxa para enviar Pix e taxa do cartão. Contraponto: quem acha as taxas do Pix e do boleto no cartão menores que as do banco."
+},
+{
+"t": "Pix e transferências",
+"n": 21,
+"tom": "neg",
+"x": "Central de ajuda que não informa nada, resposta automática, chave Pix excluída com cadastro cancelado e taxa para enviar Pix."
+},
+{
+"t": "Suporte e atendimento",
+"n": 20,
+"tom": "neg",
+"x": "\"A central de ajuda não informa nada e a resposta é automática\"; \"não tive o suporte necessário\" (Pix recusado no cartão); não encontram como falar com atendente."
+}
+],
+"neg": [
+"eg",
+"ez",
+"eg",
+"e10",
+"ej"
+],
+"pos": [
+"e11",
+"e12",
+"e13"
+]
+},
+"rede": {
+"temas": [
+{
+"t": "Suporte e atendimento",
+"n": 79,
+"tom": "neu",
+"x": "Predomina conteúdo que não é de cliente (ranking de SEO, notícias de maquininhas). Entre os relatos de clientes: pedido de ajuda para sacar saldo de conta encerrada."
+},
+{
+"t": "Recargas, transporte e contas",
+"n": 78,
+"tom": "neu",
+"x": "Matérias sobre maquininhas e relatos de recarga de transporte com erro (Sorocaba)."
+},
+{
+"t": "Bloqueio e encerramento",
+"n": 69,
+"tom": "neu",
+"x": "Respostas oficiais com instruções de recuperação de acesso e relatos de carteira bloqueada há quase 10 dias, com o prazo informado (04/11) vencido."
+},
+{
+"t": "App: instabilidade e acesso",
+"n": 40,
+"tom": "neu",
+"x": ""
+},
+{
+"t": "Cartão: anuidade, fatura e cobrança",
+"n": 35,
+"tom": "neu",
+"x": ""
+},
+{
+"t": "Empréstimo e limite",
+"n": 31,
+"tom": "neu",
+"x": ""
+}
+],
+"neg": [
+"e14",
+"ei",
+"ei",
+"el"
+],
+"falsopos": [
+"e15",
+"e16"
+]
+}
+}
