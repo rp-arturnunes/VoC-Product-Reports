@@ -282,13 +282,13 @@
  ],
  "agir": [
   {
-   "t": "Pix indisponível por certificado vencido do BTG",
+   "t": "Pix fora do ar em 15/11: certificado do BTG vencido, 699 casos no dia",
    "p": "pix",
-   "m": "Pix +91% no suporte humano; redes 23 para 104; Reclame Aqui 96 para 164",
-   "x": "Pix Out por chave e QR Code ficou indisponível no domingo 15/11 e o recebimento voltou a falhar em 16/11.",
+   "m": "Domingo 15/11: 699 casos (média de 140/dia); semana +91% no suporte humano; redes 23 para 104",
+   "x": "Pix Out por chave e QR Code indisponível em 15/11 por certificado mTLS vencido do BTG; recebimento falhou de novo em 16/11.",
    "sl": "Parcialmente resolvido",
-   "s": "Squad confirmou o certificado vencido em #escalation_incidents (15/11); recebimento voltou a falhar em 16/11 00:03–05:23.",
-   "det": "O suporte humano do Pix passa de 803 para 1.535 casos e \"instabilidade no app\" de 42 para 628. O domingo 15/11 chega a 699 casos, contra cerca de 140 por dia nos seis dias anteriores. A squad confirmou o vencimento do certificado mTLS do BTG e a Cyber atuou na renovação. Nas redes, as citações ao Pix vão de 23 para 104 e, no Reclame Aqui, de 96 para 164; os clientes falam de Pix pendente por horas e de dinheiro sem estorno.",
+   "s": "Squad confirmou o vencimento em #escalation_incidents (15/11) e a Cyber atuou na renovação; recebimento voltou a falhar em 16/11 00:03–05:23.",
+   "det": "Ontem, domingo 15/11, o Pix Out por chave e QR Code ficou indisponível porque o certificado mTLS do BTG venceu. O suporte humano do Pix chegou a 699 casos no dia, contra cerca de 140 por dia nos seis dias anteriores, e \"instabilidade no app\" foi de 42 para 628 na semana (Pix +91%: 803 para 1.535). A squad confirmou o vencimento e a Cyber atuou na renovação; o recebimento ainda falhou em 16/11 (00:03–05:23). Nas redes as citações vão de 23 para 104 e no Reclame Aqui de 96 para 164, com Pix pendente por horas e dinheiro sem estorno.",
    "ex": [
     "erd1",
     "erd2",
