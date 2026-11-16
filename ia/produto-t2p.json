@@ -1,0 +1,22 @@
+{
+ "analise": {
+  "clientes": "O Tap to Pay mantém o NPS alto em 81,1, mas o CSAT cai de 81,6% para 71,0% e os comentários falam de venda que não cai.",
+  "mudou": "Suporte humano +6% (249 para 263).",
+  "atencao": [
+   "CSAT abaixo do piso de 75% em base de 62 respostas."
+  ]
+ },
+ "motivos": [],
+ "temas": [],
+ "exemplos": {
+  "NPS Transacional": [
+   "e22",
+   "e23"
+  ]
+ },
+ "mencoes": {
+  "texto": "",
+  "ra": []
+ },
+ "eventos": []
+}

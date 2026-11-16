@@ -1,0 +1,23 @@
+{
+ "analise": {
+  "clientes": "O Transporte perde 10,1 pts de NPS (80,2 para 70,1) na semana do alerta de recarga que ficou ligado por mais de 12h.",
+  "mudou": "Suporte humano de 103 para 45, com parte dos casos de 15/11 ainda sem classificação.",
+  "atencao": [
+   "Comentários citam recarga que demora e aplicativo indisponível."
+  ]
+ },
+ "motivos": [],
+ "temas": [],
+ "exemplos": {
+  "NPS Transacional": [
+   "e31",
+   "e32",
+   "e33"
+  ]
+ },
+ "mencoes": {
+  "texto": "",
+  "ra": []
+ },
+ "eventos": []
+}

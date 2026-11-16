@@ -1,0 +1,22 @@
+{
+ "analise": {
+  "clientes": "Seguros cai 28% no suporte humano (200 para 144), mas o CSAT recua a 65,7% e a resolutividade a 69,6%.",
+  "mudou": "Casos especiais de 10 para 4; bases de 23 a 35 respostas.",
+  "atencao": [
+   "Comentários de Pix e Empréstimo citam seguro contratado sem autorização."
+  ]
+ },
+ "motivos": [],
+ "temas": [],
+ "exemplos": {
+  "NPS Transacional": [
+   "e11",
+   "e15"
+  ]
+ },
+ "mencoes": {
+  "texto": "",
+  "ra": []
+ },
+ "eventos": []
+}

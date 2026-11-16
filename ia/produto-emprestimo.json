@@ -1,0 +1,60 @@
+{
+ "analise": {
+  "clientes": "O Empréstimo Pessoal perde satisfação na semana da falha da Equifax: CSAT de 72,6% para 61,7% e NPS de 68,2 para 64,0.",
+  "mudou": "Suporte humano cai 15% (748 para 632), com contratar e cancelar em alta.",
+  "atencao": [
+   "Resolutividade de 69% para 60%.",
+   "Incidente de pagamento aberto em 16/11."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Não consegue contratar um empréstimo",
+   "n": 124,
+   "ant": 110,
+   "var": "+13%",
+   "det": null,
+   "ex": [
+    "e16"
+   ]
+  },
+  {
+   "t": "Deseja cancelar o empréstimo",
+   "n": 102,
+   "ant": 86,
+   "var": "+19%",
+   "det": null,
+   "ex": []
+  },
+  {
+   "t": "Desconhece ou não concorda com a cobrança",
+   "n": 82,
+   "ant": 76,
+   "var": "+8%",
+   "det": null,
+   "ex": [
+    "e12"
+   ]
+  },
+  {
+   "t": "Empréstimo, problemas com cartão de crédito",
+   "n": 66,
+   "ant": 158,
+   "var": "-58%",
+   "det": null,
+   "ex": []
+  }
+ ],
+ "temas": [],
+ "exemplos": {
+  "NPS Transacional": [
+   "e13",
+   "e14"
+  ]
+ },
+ "mencoes": {
+  "texto": "",
+  "ra": []
+ },
+ "eventos": []
+}

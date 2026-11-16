@@ -1,0 +1,22 @@
+{
+ "analise": {
+  "clientes": "A Recarga de Celular perde 6,5 pts de NPS (81,5 para 75,0) em 96 respostas, com comentários sobre cashback retirado.",
+  "mudou": "Suporte humano de 8 para 10 casos.",
+  "atencao": [
+   "Base pequena."
+  ]
+ },
+ "motivos": [],
+ "temas": [],
+ "exemplos": {
+  "NPS Transacional": [
+   "e27",
+   "e28"
+  ]
+ },
+ "mencoes": {
+  "texto": "",
+  "ra": []
+ },
+ "eventos": []
+}

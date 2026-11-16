@@ -1,0 +1,42 @@
+{
+ "analise": {
+  "clientes": "Minha Conta tem o suporte humano 39% menor, com o acesso ao cadastro caindo de 343 para 165.",
+  "mudou": "CSAT em 94% (16 de 17), contra 61,5% na W45; parte dos casos de 15/11 sem classificação.",
+  "atencao": [
+   "Base de satisfação pequena."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Não consegue acessar seu cadastro",
+   "n": 165,
+   "ant": 343,
+   "var": "-52%",
+   "det": null,
+   "ex": []
+  },
+  {
+   "t": "Não consegue validar seu cadastro",
+   "n": 84,
+   "ant": 92,
+   "var": "-9%",
+   "det": null,
+   "ex": []
+  },
+  {
+   "t": "Solicita encerramento do cadastro",
+   "n": 47,
+   "ant": 59,
+   "var": "-20%",
+   "det": null,
+   "ex": []
+  }
+ ],
+ "temas": [],
+ "exemplos": {},
+ "mencoes": {
+  "texto": "",
+  "ra": []
+ },
+ "eventos": []
+}

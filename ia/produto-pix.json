@@ -1,0 +1,67 @@
+{
+ "analise": {
+  "clientes": "O Pix tem a maior alta de contato da semana, com o suporte humano de 803 para 1.535 casos por conta da indisponibilidade do Pix Out em 15/11.",
+  "mudou": "Suporte humano +91%, NPS Transacional estável em 65,1 e CSAT de 67,7% para 69,7%.",
+  "atencao": [
+   "Certificado mTLS do BTG vencido em 15/11 e recebimento instável em 16/11.",
+   "Pix CC sobe 23% pelo recorte de causa raiz com cartão (35 para 43)."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Instabilidade no app",
+   "n": 628,
+   "ant": 42,
+   "var": "+1395%",
+   "det": null,
+   "ex": [
+    "e6",
+    "e7",
+    "e9"
+   ]
+  },
+  {
+   "t": "Não consegue realizar o pix",
+   "n": 382,
+   "ant": 241,
+   "var": "+59%",
+   "det": null,
+   "ex": [
+    "e6",
+    "e7",
+    "e10"
+   ]
+  },
+  {
+   "t": "Problemas com uma transação Pix",
+   "n": 225,
+   "ant": 227,
+   "var": "-1%",
+   "det": null,
+   "ex": [
+    "e7",
+    "e10"
+   ]
+  },
+  {
+   "t": "Denunciar um Pix indevido",
+   "n": 111,
+   "ant": 88,
+   "var": "+26%",
+   "det": null,
+   "ex": []
+  }
+ ],
+ "temas": [],
+ "exemplos": {
+  "NPS Transacional": [
+   "e8",
+   "e11"
+  ]
+ },
+ "mencoes": {
+  "texto": "",
+  "ra": []
+ },
+ "eventos": []
+}

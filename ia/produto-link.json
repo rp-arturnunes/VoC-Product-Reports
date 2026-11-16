@@ -1,0 +1,22 @@
+{
+ "analise": {
+  "clientes": "O Link de Pagamento perde 24,7 pts de NPS (53,7 para 29,0) com detratores de 8 para 19, em base de 62 respostas.",
+  "mudou": "Suporte humano estável em 66 casos e bot retém 3 sessões contra 16.",
+  "atencao": [
+   "Prazo para o dinheiro cair e taxa do cartão aparecem nos comentários."
+  ]
+ },
+ "motivos": [],
+ "temas": [],
+ "exemplos": {
+  "NPS Transacional": [
+   "e17",
+   "e18"
+  ]
+ },
+ "mencoes": {
+  "texto": "",
+  "ra": []
+ },
+ "eventos": []
+}

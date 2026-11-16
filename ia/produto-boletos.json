@@ -1,0 +1,37 @@
+{
+ "analise": {
+  "clientes": "Contas e Boletos perde 11,8 pts de NPS (69,0 para 57,2) depois do fim do cashback de 05/11, com \"não recebi o cashback\" de 96 para 51.",
+  "mudou": "Suporte humano de 249 para 135 e CSAT de 75,7% para 89,3%.",
+  "atencao": [
+   "Cashback ainda é o 1º motivo do produto."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Não recebi o cashback",
+   "n": 51,
+   "ant": 96,
+   "var": "-47%",
+   "det": null,
+   "ex": [
+    "e25",
+    "e26",
+    "e27",
+    "e28",
+    "e29"
+   ]
+  }
+ ],
+ "temas": [],
+ "exemplos": {
+  "NPS Transacional": [
+   "e25",
+   "e26"
+  ]
+ },
+ "mencoes": {
+  "texto": "",
+  "ra": []
+ },
+ "eventos": []
+}

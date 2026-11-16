@@ -1,0 +1,362 @@
+[
+ {
+  "d": "16/11",
+  "t": "Alerta de recebimento de Pix indisponível (BTG)",
+  "tipo": "Incidente",
+  "res": "Alerta de Pix In ativo das 00:03 às 05:23, com 502 em cascata ligado ao parceiro BTG.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "ainda não medido (W47 em andamento)"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "As investigações automáticas de #escalation_incidents ligam as falhas ao BTG (transporte e autenticação). O efeito em suporte e NPS fica para a W47.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se persistir, o efeito aparece em \"instabilidade no app\" e \"problemas com uma transação Pix\" na W47."
+ },
+ {
+  "d": "15/11",
+  "t": "Pix Out indisponível por certificado mTLS do BTG vencido",
+  "tipo": "Incidente",
+  "res": "Pix Out por chave e QR Code ficou indisponível; a squad confirmou o vencimento do certificado e a Cyber atuou na renovação.",
+  "imp": [
+   [
+    "Suporte",
+    "Crítico",
+    "Pix +91%; 699 casos em 15/11"
+   ],
+   [
+    "NPS Tx",
+    "Em linha",
+    "Pix 65,1 (65,0 na W45)"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Os alertas começam em 14/11 às 23:34 e a falha de autenticação do BTG derruba o envio por chave e QR Code na manhã de 15/11. \"Instabilidade no app\" no Pix vai de 42 para 628 ocorrências na semana.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "O NPS Transacional do Pix mede quem concluiu o Pix; o efeito do domingo tende a aparecer na W47."
+ },
+ {
+  "d": "14/11",
+  "t": "Alerta de taxa de aprovação de Pix In",
+  "tipo": "Incidente",
+  "res": "Alerta [PIX IN] Taxa de Aprovação de Orders às 23:34, ligado ao BTG.",
+  "imp": [
+   [
+    "Suporte",
+    "Atenção",
+    "soma-se ao pico de 15/11"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Primeiro alerta da sequência que culmina no vencimento do certificado de 15/11.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Parte do pico de 15/11 pode vir desta falha."
+ },
+ {
+  "d": "13/11",
+  "t": "Solução para instabilidades no resgate do CDB",
+  "tipo": "Feature",
+  "res": "Solução implementada para instabilidades no resgate dentro da jornada, anunciada em #cxm-team.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "NPS Tx",
+    "Em linha",
+    "CDB 70,0 (67,9 na W45)"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "A entrega foi no final da semana; o efeito nos contatos de resgate só é medível na W47.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se funcionar, os contatos de resgate caem na W47."
+ },
+ {
+  "d": "12/11",
+  "t": "Atraso nas tabelas da IndeCX",
+  "tipo": "Comunicado",
+  "res": "Instabilidade na gravação das tabelas da IndeCX deixou os resultados da manhã em D-2.",
+  "imp": [
+   [
+    "NPS Tx",
+    "Atenção",
+    "resultados da manhã de 12/11 em D-2"
+   ],
+   [
+    "Suporte",
+    "Sem efeito",
+    "não afeta tickets"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "não afeta"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "não afeta"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura"
+   ]
+  ],
+  "analise": "Aviso do time de dados em #ajuda-reports-cx; o NPS e o CSAT da W46 foram lidos depois da normalização, mas conferem com a base atual.",
+  "marca": "Sem leitura de marca.",
+  "pred": "Sem efeito esperado após a normalização."
+ },
+ {
+  "d": "11/11",
+  "t": "Incidente de Pix com o BTG (06:39–08:29)",
+  "tipo": "Incidente",
+  "res": "Pix de recebimento e envio instável por cerca de 1h50 com o parceiro BTG, segundo o mapeamento de #the-voice-cx.",
+  "imp": [
+   [
+    "Suporte",
+    "Atenção",
+    "91 contatos; absorção de bot e Central de 88,3% (média 96,7%)"
+   ],
+   [
+    "NPS Tx",
+    "Em linha",
+    "Pix 65,1 na semana"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "O bot reteve só 16,5% dos contatos, contra 39,5% de média; o motivo \"instabilidade no app\" teve 28 contatos humanos.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Mesmo parceiro e mesma janela de manhã dos alertas seguintes."
+ },
+ {
+  "d": "11/11",
+  "t": "Alerta de recarga de transporte ligado por mais de 12h",
+  "tipo": "Incidente",
+  "res": "Alerta automático \"Instabilidade na recarga de transporte\" ativo desde 11/11 21:39, acima do limite de 2h.",
+  "imp": [
+   [
+    "Suporte",
+    "Atenção",
+    "Transporte 45 casos (parte sem classificação)"
+   ],
+   [
+    "NPS Tx",
+    "Atenção",
+    "Transporte 70,1 (−10,1)"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "O alerta ficou ligado além do limite de 2h, segundo #cxm-team (12/11). Os comentários do NPS falam de recarga que demora e de app indisponível.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "A queda do NPS coincide com a janela; a ligação não está registrada nos reports."
+ },
+ {
+  "d": "09/11",
+  "t": "Falha da Equifax no empréstimo (13:53–15:54)",
+  "tipo": "Incidente",
+  "res": "Equifax instável e erro 500 nos endpoints de empréstimo por cerca de 2h, segundo #the-voice-cx (10/11).",
+  "imp": [
+   [
+    "Suporte",
+    "Em linha",
+    "28 contatos; nenhum dos 25 tickets humanos cita a falha"
+   ],
+   [
+    "NPS Tx",
+    "Atenção",
+    "Empréstimo 64,0 (−4,2)"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "O impacto apareceu no produto e não no atendimento, com 94,3% de absorção de bot e Central.",
+  "marca": "Sem leitura de marca.",
+  "pred": "A queda de CSAT do Empréstimo coincide com a semana; a ligação não está registrada."
+ },
+ {
+  "d": "09/11",
+  "t": "Revisão dos alertas de instabilidade da Central",
+  "tipo": "Comunicado",
+  "res": "Em #squad_cx, só 1% de quem viu o aviso na home era da cidade afetada pela instabilidade de Transporte.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura"
+   ]
+  ],
+  "analise": "Os alertas por produto serão discutidos na agenda do time.",
+  "marca": "Sem leitura de marca.",
+  "pred": "Sem efeito esperado até a priorização."
+ },
+ {
+  "d": "05/11",
+  "t": "Fim do cashback em contas e boletos",
+  "tipo": "Feature",
+  "res": "Cashback deixa de ser pago em contas e boletos pagos com saldo (report da W45).",
+  "imp": [
+   [
+    "Suporte",
+    "Em linha",
+    "\"Não recebi o cashback\" de 96 para 51"
+   ],
+   [
+    "NPS Tx",
+    "Atenção",
+    "Contas e Boletos 57,2 (−11,8)"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura"
+   ]
+  ],
+  "analise": "O contato cede, mas o NPS e os comentários seguem negativos na W46.",
+  "marca": "Sem leitura de marca nesta rodada.",
+  "pred": "Comentários seguem citando cashback retirado."
+ }
+]

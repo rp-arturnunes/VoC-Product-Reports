@@ -1,0 +1,45 @@
+{
+ "analise": {
+  "clientes": "Carteira Desativada mais que dobra (349 para 776) com o saldo bloqueado total indo de 271 para 667 ocorrências.",
+  "mudou": "Conta Desativada estável (373); Chargeback Recovery +16% (237); CSAT de 56,1%, 23,8% e 46,4%.",
+  "atencao": [
+   "Prazo prometido de 72 horas para desbloqueio aparece nos resumos de tickets."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Saldo da carteira bloqueado, todo o saldo",
+   "n": 667,
+   "ant": 271,
+   "var": "+146%",
+   "det": null,
+   "ex": [
+    "e40",
+    "e41",
+    "e42",
+    "e43",
+    "e44"
+   ]
+  },
+  {
+   "t": "Saldo da carteira bloqueado, parte do saldo",
+   "n": 55,
+   "ant": 55,
+   "var": "+0%",
+   "det": null,
+   "ex": []
+  }
+ ],
+ "temas": [],
+ "exemplos": {
+  "Suporte": [
+   "e43",
+   "e45"
+  ]
+ },
+ "mencoes": {
+  "texto": "",
+  "ra": []
+ },
+ "eventos": []
+}

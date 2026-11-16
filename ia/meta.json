@@ -1,0 +1,16 @@
+{
+ "semana": {
+  "w": "W46",
+  "ini": "09/11",
+  "fim": "15/11/2026",
+  "pub": "16/11/2026",
+  "modelo": "Sonnet (rotina semanal)"
+ },
+ "pulso": "Semana fecha com NPS Transacional em 63,6 (−2,1 pp), o menor das últimas 5 semanas, e CSAT em 69,7%, abaixo do piso de 75%. O suporte humano sobe 19%, puxado pelo Pix (+91%), que concentra o pico no domingo 15/11 com o certificado mTLS do BTG vencido, e pela Carteira Desativada (+122%). O Cartão recua 12% depois do pico da anuidade.",
+ "atencao": [
+  "Pix indisponível por certificado mTLS vencido do BTG: o domingo 15/11 concentra o pico e o recebimento voltou a falhar na madrugada de 16/11, então o efeito segue na W47.",
+  "NPS e CSAT em queda ao mesmo tempo: Contas e Boletos, Transporte, Link de Pagamento e Empréstimo perdem de 4 a 25 pts de NPS; CSAT de Empréstimo (61,7%) e Carteira Desativada (56,1%) seguem abaixo do piso.",
+  "Carteira Desativada mais que dobra no saldo bloqueado total (271 para 667) e não há evento correlato registrado.",
+  "Parte dos casos de 15/11 ainda sem classificação de produto (691 contra 167): as quedas de Minha Conta, Transporte, Contas e Boletos e Seguros podem estar superestimadas."
+ ]
+}

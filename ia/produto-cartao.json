@@ -1,0 +1,56 @@
+{
+ "analise": {
+  "clientes": "O Cartão recua 12% no suporte humano depois do pico da anuidade, mas \"problemas com o uso do cartão\" mais que dobra.",
+  "mudou": "NPS Transacional de 41,4 para 45,8 e CSAT de 82,8% para 75,5%.",
+  "atencao": [
+   "NPS ainda abaixo do mínimo de 55.",
+   "\"Problemas com o uso do cartão\" de 91 para 209 sem evento correlato registrado."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Bloquear, desbloquear ou cancelar cartão",
+   "n": 288,
+   "ant": 435,
+   "var": "-34%",
+   "det": null,
+   "ex": []
+  },
+  {
+   "t": "Não entende porque recebeu uma fatura",
+   "n": 287,
+   "ant": 358,
+   "var": "-20%",
+   "det": null,
+   "ex": []
+  },
+  {
+   "t": "Problemas com o uso do cartão",
+   "n": 209,
+   "ant": 91,
+   "var": "+130%",
+   "det": null,
+   "ex": []
+  },
+  {
+   "t": "Alterar ou entender o limite",
+   "n": 127,
+   "ant": 133,
+   "var": "-5%",
+   "det": null,
+   "ex": []
+  }
+ ],
+ "temas": [],
+ "exemplos": {
+  "NPS Transacional": [
+   "e1",
+   "e3"
+  ]
+ },
+ "mencoes": {
+  "texto": "",
+  "ra": []
+ },
+ "eventos": []
+}
