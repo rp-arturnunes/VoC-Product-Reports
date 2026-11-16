@@ -1,0 +1,19 @@
+{
+ "canal": "#squad_loan_seguimento",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Empréstimo · Semana 46 · 09/11–15/11/2026\n**O CSAT do Empréstimo Pessoal cai a 61,7% (−10,9 pp) e o NPS a 64,0, na semana do incidente da Equifax**\nConsignado tem queda de 26% no suporte humano, em base pequena.\nNa thread: um resumo, os destaques da semana e as menções de cada produto (Empréstimo Pessoal e Empréstimo Consignado).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Empréstimo Pessoal",
+   "chave": "emprestimo/pessoal",
+   "texto": "**Empréstimo Pessoal**\n**Resumo:** O CSAT cai de 72,6% para 61,7% (71 de 115) e o NPS Transacional de 68,2 para 64,0, com detratores de 172 para 200. O suporte humano cai 15% (748 para 632), mas \"não consegue contratar\" sobe de 110 para 124 e \"deseja cancelar\" de 86 para 102; \"problemas com cartão de crédito\" cai de 158 para 66.\n**Destaques da semana:**\n• Incidente da Equifax em 09/11 — Equifax instável e erro 500 nos endpoints, das 13:53 às 15:54, segundo o mapeamento de #the-voice-cx (10/11); nenhum dos 25 tickets humanos do período cita a falha. Resolvido.\n• Novo incidente de pagamento — #escalation_incidents (16/11) registra indisponibilidade para pagar e negociar empréstimo, fora da janela da semana. Em andamento.\n• CSAT e resolutividade em queda — 61,7% e 60% (69% na W45). Não resolvido.\n• Contratação e cancelamento em alta — 124 e 102 ocorrências; sem evento correlato além da Equifax. Em acompanhamento.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  },
+  {
+   "produto": "Empréstimo Consignado",
+   "chave": "emprestimo/consignado",
+   "texto": "**Empréstimo Consignado**\n**Resumo:** O suporte humano cai de 42 para 31 (−26%) e o bot retém 5 sessões contra 20. O CSAT está em 6 de 6 respostas e o NPS tem só 11 respostas, bases pequenas.\n**Destaques da semana:**\n• Volume baixo e em queda — 31 casos humanos, sem evento correlato registrado. Estável.\n• Bases de satisfação pequenas — 6 respostas de CSAT e 11 de NPS; leitura preliminar. Em acompanhamento.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  }
+ ]
+}

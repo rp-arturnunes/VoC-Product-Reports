@@ -1,0 +1,25 @@
+{
+ "canal": "#investments-e-cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — CDB e investimentos · Semana 46 · 09/11–15/11/2026\n**O NPS do CDB sobe a 70,0 e a solução para instabilidades no resgate foi implementada em 13/11**\nMovimentações Financeiras tem alta de 28% no suporte humano; Rendimento CDI segue com volume residual.\nNa thread: um resumo, os destaques da semana e as menções de cada produto (CDB, Rendimento CDI e Movimentações Financeiras).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "CDB",
+   "chave": "cdb",
+   "texto": "**CDB**\n**Resumo:** O NPS Transacional vai de 67,9 para 70,0 (39 promotores e 4 detratores em 50 respostas) e o CSAT de 83,3% para 79,4% (27 de 34). O suporte humano sobe 6% (186 para 198) e o bot retém bem menos sessões (123 para 49).\n**Destaques da semana:**\n• Solução para instabilidades no resgate — anunciada em #cxm-team em 13/11, dentro da jornada de resgate; o efeito nos contatos ainda não é medível por falta de dias após a entrega. Em acompanhamento.\n• NPS em alta — 70,0 (+2,1), abaixo da meta de 75. Em acompanhamento.\n• CSAT levemente abaixo da meta — 79,4% contra 80%. Estável.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  },
+  {
+   "produto": "Rendimento CDI",
+   "chave": "outros/cashback e rendimento",
+   "texto": "**Rendimento CDI**\n**Resumo:** O volume segue residual: 1 caso no suporte humano contra 11 na W45, e 6 sessões retidas pelo bot contra 11.\n**Destaques da semana:**\n• Volume residual — sem base suficiente para NPS ou CSAT. Estável.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  },
+  {
+   "produto": "Movimentações Financeiras",
+   "chave": "outros/movimentações financeiras",
+   "texto": "**Movimentações Financeiras**\n**Resumo:** O suporte humano sobe 28% (105 para 134) e os casos especiais caem de 30 para 25. O CSAT está em 58,3% (7 de 12), contra 14,3% (1 de 7) na W45; a base é muito pequena.\n**Destaques da semana:**\n• Alta moderada no suporte humano — 105 para 134, sem evento correlato registrado. Em acompanhamento.\n• CSAT em base pequena — 58,3% (7 de 12), leitura preliminar. Em acompanhamento.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  }
+ ]
+}

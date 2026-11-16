@@ -1,0 +1,19 @@
+{
+ "canal": "#subacquirer-cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Tap to Pay e Link de Pagamento · Semana 46 · 09/11–15/11/2026\n**O NPS do Link de Pagamento cai de 53,7 para 29,0 e o CSAT do Tap to Pay para 71,0%**\nOs dois produtos mantêm o suporte humano estável; as quedas de satisfação vêm de bases de 60 a 285 respostas.\nNa thread: um resumo, os destaques da semana e as menções de cada produto (Tap to Pay e Link de Pagamento).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Tap to Pay",
+   "chave": "t2p",
+   "texto": "**Tap to Pay**\n**Resumo:** O NPS Transacional vai de 84,3 para 81,1 (250 promotores e 19 detratores em 285 respostas) e o CSAT de 81,6% para 71,0% (44 de 62). O suporte humano sobe 6% (249 para 263).\n**Destaques da semana:**\n• CSAT abaixo do piso — 71,0% (−10,6 pp), abaixo do piso de 75%; sem evento correlato nos reports ou no Slack. Em acompanhamento.\n• NPS ainda acima da meta — 81,1 (−3,2). Estável.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  },
+  {
+   "produto": "Link de Pagamento",
+   "chave": "link",
+   "texto": "**Link de Pagamento**\n**Resumo:** O NPS cai de 53,7 para 29,0 (37 promotores e 19 detratores em 62 respostas, contra 8 detratores na W45); o suporte humano fica em 66 nas duas semanas e o bot retém 3 sessões contra 16. O CSAT tem só 6 respostas.\n**Destaques da semana:**\n• NPS em queda forte — 29,0 (−24,7), com detratores de 8 para 19, em base de 62 respostas; sem evento correlato registrado. Não resolvido.\n• Retenção do bot cai — de 16 para 3 sessões; sem causa registrada nos reports. Em acompanhamento.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  }
+ ]
+}

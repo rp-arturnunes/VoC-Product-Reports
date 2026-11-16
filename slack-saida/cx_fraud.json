@@ -1,0 +1,25 @@
+{
+ "canal": "#cx_fraud",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Bloqueios e fraude · Semana 46 · 09/11–15/11/2026\n**Carteira Desativada mais que dobra e o saldo bloqueado total passa de 271 para 667 ocorrências**\nConta Desativada e Chargeback Recovery ficam estáveis em volume, mas com CSAT em 23,8% e 46,4%, ambos em bases pequenas.\nNa thread: um resumo, os destaques da semana e as menções de cada produto (Conta Desativada, Carteira Desativada e Chargeback Recovery).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Conta Desativada",
+   "chave": "fraude/conta desativada",
+   "texto": "**Conta Desativada**\n**Resumo:** O suporte humano fica estável (362 para 373, +3%) e os casos especiais caem de 51 para 38. O CSAT cai de 50,0% para 23,8% (5 de 21 respostas), com resolutividade de 35% (6 de 17); a base é pequena, então a leitura é preliminar.\n**Destaques da semana:**\n• CSAT muito baixo em base pequena — 23,8% (5 de 21 respostas), contra 50,0% (4 de 8). Sem evento correlato nos reports ou no Slack. Em acompanhamento.\n• Volume estável com menos casos especiais — 51 para 38. Estável.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  },
+  {
+   "produto": "Carteira Desativada",
+   "chave": "fraude/carteira desativada",
+   "texto": "**Carteira Desativada**\n**Resumo:** O suporte humano passa de 349 para 776 (+122%), quase todo em \"saldo da carteira bloqueado, todo o saldo\" (271 para 667, +146%); o bloqueio parcial fica em 55. O CSAT está em 56,1% (23 de 41), igual aos 56,3% da W45, e a resolutividade em 57%.\n**Destaques da semana:**\n• Bloqueio total de saldo dispara — 271 para 667 ocorrências (+146%); sem evento correlato registrado nos reports ou no Slack da semana. Não resolvido.\n• CSAT estável e baixo — 56,1% (23 de 41), abaixo do piso de 75%. Não resolvido.\n• Bloqueio parcial sem mudança — 55 ocorrências nas duas semanas. Estável.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  },
+  {
+   "produto": "Chargeback Recovery",
+   "chave": "fraude/chargeback recovery",
+   "texto": "**Chargeback Recovery**\n**Resumo:** O suporte humano sobe 16% (204 para 237) e os casos especiais caem de 18 para 9. O CSAT vai de 42,9% para 46,4% (13 de 28) e a resolutividade de 35% para 43%, ainda muito abaixo da meta de 80%.\n**Destaques da semana:**\n• CSAT ainda abaixo do piso — 46,4% (13 de 28), melhora de 3,5 pp sobre a W45. Não resolvido.\n• Volume em alta moderada — +16% no suporte humano, sem evento correlato registrado. Em acompanhamento.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  }
+ ]
+}

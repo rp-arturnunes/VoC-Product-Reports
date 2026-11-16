@@ -1,0 +1,13 @@
+{
+ "canal": "#cc-produto-e-cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Cartão de Crédito · Semana 46 · 09/11–15/11/2026\n**O NPS do Cartão sobe a 45,8 (+4,4 pts) mas segue abaixo do mínimo de 55, e o CSAT cai a 75,5%**\nSuporte humano recua 12% depois do pico da anuidade, mas \"problemas com o uso do cartão\" mais que dobra (91 para 209).\nNa thread: o resumo, os destaques da semana e as menções do produto.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Cartão de Crédito",
+   "chave": "cartao",
+   "texto": "**Cartão de Crédito**\n**Resumo:** O NPS Transacional sobe de 41,4 para 45,8, com 93 detratores em 432 respostas, e o CSAT cai de 82,8% para 75,5% (410 de 543). O suporte humano recua 11,8% (2.088 para 1.841): bloquear, desbloquear ou cancelar cartão vai de 435 para 288 e \"não entende porque recebeu uma fatura\" de 358 para 287, depois do maior lote da anuidade da W45.\n**Destaques da semana:**\n• Uso do cartão em alta — \"problemas com o uso do cartão\" vai de 91 para 209 (+130%); sem evento correlato nos reports ou no Slack da semana. Novo tema, em acompanhamento.\n• NPS abaixo do mínimo — 45,8 contra mínimo de 55 e meta de 75, ainda assim melhor que os 41,4 da W45. Não resolvido.\n• CSAT em queda — 75,5% (−7,3 pp), abaixo da meta de 80%, na semana em que o volume de fatura e de bloqueio cede. Em acompanhamento.\n• Pagamento de fatura com menos problemas — \"teve um problema com o pagamento da fatura\" cai de 217 para 136. Em melhora.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  }
+ ]
+}

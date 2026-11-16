@@ -1,0 +1,13 @@
+{
+ "canal": "#account_cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Minha Conta · Semana 46 · 09/11–15/11/2026\n**O suporte humano de Minha Conta cai 39% e o acesso ao cadastro cai pela metade**\nDificuldade de acessar o cadastro passa de 343 para 165 ocorrências; CSAT em 94% numa base de 17 respostas.\nNa thread: o resumo, os destaques da semana e as menções do produto.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Minha Conta",
+   "chave": "account",
+   "texto": "**Minha Conta**\n**Resumo:** O suporte humano cai de 603 para 367 (−39%), puxado por \"não consegue acessar o cadastro\" (343 para 165); validar cadastro (92 para 84) e encerrar cadastro (59 para 47) ficam estáveis. O CSAT chega a 94% (16 de 17 respostas), contra 61,5% na W45. Parte dos casos de 15/11 ainda aguarda classificação de produto, então a queda pode estar superestimada.\n**Destaques da semana:**\n• Acesso ao cadastro cai pela metade — 343 para 165 ocorrências; sem evento correlato nos reports ou no Slack da semana. Em queda.\n• Validação de cadastro estável — 92 para 84 ocorrências, ainda o 2º motivo do produto. Estável.\n• CSAT em 94% com base de 17 respostas — leitura preliminar. Em acompanhamento.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  }
+ ]
+}

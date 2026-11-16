@@ -1,0 +1,13 @@
+{
+ "canal": "#seguro_pix-cartão_cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Seguros · Semana 46 · 09/11–15/11/2026\n**O suporte humano de Seguros cai 28%, mas o CSAT recua a 65,7% e a resolutividade a 69,6%**\nAs quedas de satisfação vêm de 35 respostas de CSAT; parte dos casos de 15/11 ainda aguarda classificação de produto.\nNa thread: o resumo, os destaques da semana e as menções do produto.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Seguros",
+   "chave": "seguros",
+   "texto": "**Seguros**\n**Resumo:** O suporte humano cai de 200 para 144 (−28%) e os casos especiais de 10 para 4. O CSAT cai de 82,1% para 65,7% (23 de 35) e a resolutividade de 84,2% para 69,6% (16 de 23).\n**Destaques da semana:**\n• CSAT e resolutividade em queda — 65,7% e 69,6%, ambos abaixo da W45; sem evento correlato nos reports ou no Slack da semana. Em acompanhamento.\n• Volume em queda por três semanas — 344, 332, 200 e 144 casos humanos desde a W43. Em queda.\n• Base de satisfação pequena — 35 respostas de CSAT; leitura preliminar. Em acompanhamento.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
+   "link_painel": true
+  }
+ ]
+}

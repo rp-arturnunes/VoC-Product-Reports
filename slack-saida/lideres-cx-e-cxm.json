@@ -1,0 +1,19 @@
+{
+ "canal": "#lideres-cx-e-cxm",
+ "tipo": "executivo",
+ "principal": ":bar_chart: Report VoC — Executivo · Semana 46 · 09/11–15/11/2026\n**Pix indisponível por certificado vencido do BTG puxa o suporte humano para cima, e o NPS Transacional cai a 63,6, o menor em 5 semanas**\nO Pix concentra a alta de volume (+91%), a Carteira Desativada mais que dobra e o CSAT cai para 69,7%, abaixo do piso de 75%.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Experiência do Produto>",
+ "threads": [
+  {
+   "secao": "Resumo geral",
+   "texto": "**Resumo geral**\n**Resultado:** NPS Transacional em 63,6 (−2,1 pp), o menor das últimas 5 semanas. O NPS Relacional também recua, para 39,2 (−6,9 pts), com detratores em 25,8% das respostas (22,7% na W45).\n**Satisfação:** CSAT do suporte em 69,7% (−6,7 pp), abaixo do piso de 75% e da meta de 80%; Cartão (75,5%), Empréstimo (61,7%), Carteira Desativada (56,1%) e Conta Desativada (23,8%, base pequena) puxam a queda.\n**Volume:** suporte humano +19% e casos especiais +44% sobre a W45, com o bot retendo 16% menos. A alta vem do Pix (+91%, pico no domingo 15/11) e da Carteira Desativada (+122%); o Cartão recua 12% depois do pico da anuidade. Parte dos casos de 15/11 ainda aguarda classificação de produto, então as quedas de Minha Conta, Transporte e Contas e Boletos devem ser lidas com cautela."
+  },
+  {
+   "secao": "Destaques da semana",
+   "texto": "**Destaques da semana**\n• Pix indisponível por vencimento do certificado mTLS do BTG — o Pix sobe 91% no suporte humano e o motivo \"instabilidade no app\" passa de 42 para 628 ocorrências; o domingo 15/11 concentra o pico. A squad confirmou o vencimento do certificado em #escalation_incidents (15/11) e a renovação estava com a Cyber; o recebimento voltou a falhar na madrugada de 16/11. Em andamento.\n• NPS Transacional no menor nível em 5 semanas — 63,6 (−2,1 pp), com queda em Contas e Boletos (57,2, −11,8), Transporte (70,1, −10,1), Link de Pagamento (29,0, −24,7, base de 62 respostas) e Empréstimo (64,0, −4,2). Não resolvido.\n• Carteira Desativada mais que dobra — +122% no suporte humano, com \"saldo da carteira bloqueado, todo o saldo\" de 271 para 667 ocorrências e CSAT em 56,1%. Sem evento correlato nos reports ou no Slack da semana. Não resolvido.\n• CSAT abaixo do piso em Empréstimo Pessoal — 61,7% (−10,9 pp) e resolutividade de 60% (69% na W45). A falha da Equifax de 09/11 (13:53–15:54) não aparece nos tickets humanos, segundo o mapeamento de #the-voice-cx (10/11); um novo incidente de pagamento de empréstimo foi aberto em 16/11. Em acompanhamento.\n• Cartão recupera o NPS, mas segue abaixo do mínimo — 45,8 (+4,4) contra mínimo de 55; \"problemas com o uso do cartão\" mais que dobra (91 para 209) sem evento correlato registrado. Em acompanhamento."
+  },
+  {
+   "secao": "Menções por produto",
+   "texto": "**Menções por produto**\n• **NPS Relacional:** 39,2 (−6,9 pts) com 1.149 respostas na semana; os promotores caem de 68,7% para 65,0% e os detratores sobem de 22,7% para 25,8%, na semana do incidente do Pix."
+  }
+ ]
+}
