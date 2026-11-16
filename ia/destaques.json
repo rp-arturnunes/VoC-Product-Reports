@@ -49,7 +49,7 @@
     ],
     "u": "pts"
    },
-   "img": "https://lh3.googleusercontent.com/d/1p242JTJ7riP3yuBzcGZBNAGs6Ddw1Lem=w400"
+   "img": "https://lh3.googleusercontent.com/d/1IYGlA3VFWljQ8UEBXnFMhVYA0RGAnKXT=w400"
   },
   {
    "t": "Recebimento de Pix volta a falhar ligado ao BTG",
@@ -84,7 +84,7 @@
     ],
     "u": ""
    },
-   "img": "https://lh3.googleusercontent.com/d/1VlgqGZ6oZAG7NRUVlg4V5UmO8uvimx2v=w400"
+   "img": "https://lh3.googleusercontent.com/d/1vIOIIPDwXpe7meE9Q4SD_XAt-lGbt6M_=w400"
   },
   {
    "t": "Recarga de transporte demora ou falha",
@@ -278,41 +278,6 @@
     "u": ""
    },
    "img": "https://lh3.googleusercontent.com/d/1FaWpztB4nKO6EQkegcTUCwPwPIL10EyN=w400"
-  },
-  {
-   "t": "NPS de Recarga de Celular cai 6,5 pts",
-   "p": "topup",
-   "m": "NPS 75,0 (−6,5) em 96 respostas",
-   "x": "Base pequena; comentários citam cashback retirado e taxas.",
-   "sl": "Em acompanhamento",
-   "s": "Sem evento correlato além do fim do cashback em 05/11; volume de suporte humano de 10 casos.",
-   "det": "O NPS cai de 81,5 para 75,0 com 82 promotores e 10 detratores. O suporte humano vai de 8 para 10 casos. Os comentários citam cashback retirado, pedido de cashback em todas as recargas e taxas altas.",
-   "ex": [
-    "e27",
-    "e28",
-    "e30",
-    "e38",
-    "e39",
-    "e3a"
-   ],
-   "rank": 15,
-   "serie": {
-    "l": "NPS Transacional de Recarga de Celular (10 semanas)",
-    "v": [
-     80.0,
-     80.5,
-     73.3,
-     84.3,
-     80.0,
-     78.5,
-     85.0,
-     79.5,
-     81.5,
-     75.0
-    ],
-    "u": "pts"
-   },
-   "img": "https://lh3.googleusercontent.com/d/1LU1E91gcAthQ3K4Irt5BEDTf-aZgTwr_=w400"
   }
  ],
  "agir": [
@@ -365,7 +330,7 @@
     ],
     "u": ""
    },
-   "img": "https://lh3.googleusercontent.com/d/1ZheqbpCeTJdmSobCY_iGxdwoi5zh3a4P=w400"
+   "img": "https://lh3.googleusercontent.com/d/1VlgqGZ6oZAG7NRUVlg4V5UmO8uvimx2v=w400"
   },
   {
    "t": "NPS Transacional no menor nível em 10 semanas",
@@ -425,20 +390,20 @@
    "img": "https://lh3.googleusercontent.com/d/1IHaWUCXxrBrtsxgcBlxTh5JaSoGbOMMs=w400"
   },
   {
-   "t": "Carteira Desativada mais que dobra no saldo bloqueado",
+   "t": "Carteira Desativada dobra e CSAT de Conta Desativada cai a 23,8%",
    "p": "fraude",
-   "m": "Suporte humano +122%; saldo bloqueado total 271 para 667",
-   "x": "\"Saldo da carteira bloqueado, todo o saldo\" concentra a alta, com CSAT em 56,1%.",
+   "m": "Suporte humano +122%; saldo bloqueado 271 para 667; CSAT Conta Desativada 23,8%",
+   "x": "\"Saldo da carteira bloqueado, todo o saldo\" concentra a alta, com CSAT em 56,1%. Conta Desativada e Chargeback Recovery seguem com satisfação muito abaixo do piso de 75%.",
    "sl": "Não resolvido",
    "s": "Sem evento correlato nos reports ou no Slack da semana; CSAT estável e baixo (56,1% contra 56,3%).",
-   "det": "O suporte humano de Carteira Desativada vai de 349 para 776 casos e o bloqueio total de saldo de 271 para 667 (+146%). Nas conversas, o cliente diz que o prazo de desbloqueio prometido não foi cumprido, que não sabe a origem do bloqueio (contestação de Pix que diz não ter feito) e que precisa do valor para pagar contas. Nas redes, as interações sobre bloqueio vão de 9 para 16 (15 negativas).",
+   "det": "Suporte humano de Carteira Desativada vai de 349 para 776 casos e o saldo bloqueado total de 271 para 667 (+146%). O cliente diz que o prazo de desbloqueio não foi cumprido e que não sabe a origem do bloqueio. Em Conta Desativada o CSAT cai de 50,0% para 23,8% e em Chargeback Recovery fica em 46,4%, com saldo bloqueado, cobrança não reconhecida e Pix barrado por débito em aberto.",
    "ex": [
     "et3",
     "et4",
     "et5",
     "et6",
-    "et7",
-    "erf1"
+    "ec2",
+    "ec3"
    ],
    "rank": 3,
    "serie": {
@@ -458,18 +423,18 @@
     "u": ""
    },
    "serie2": {
-    "l": "Redes sociais: interações sobre bloqueio e encerramento (10 semanas)",
+    "l": "CSAT de Conta Desativada, % satisfeitos (10 semanas)",
     "v": [
-     2,
-     9,
-     12,
-     11,
-     5,
-     13,
-     4,
-     5,
-     9,
-     16
+     20.0,
+     43.8,
+     16.7,
+     42.9,
+     44.8,
+     45.0,
+     51.9,
+     35.3,
+     50.0,
+     23.8
     ],
     "u": ""
    },
@@ -619,57 +584,6 @@
    "img": "https://lh3.googleusercontent.com/d/1dLYRTfETmcQg3C9nu6aZz586VrNf2WFX=w400"
   },
   {
-   "t": "CSAT de Conta Desativada e Chargeback Recovery muito baixo",
-   "p": "fraude",
-   "m": "Conta Desativada 23,8% (5 de 21); Chargeback 46,4% (13 de 28)",
-   "x": "Volumes estáveis ou em leve alta com satisfação muito abaixo do piso de 75%.",
-   "sl": "Em acompanhamento",
-   "s": "Sem evento correlato registrado; bases pequenas.",
-   "det": "Conta Desativada fica com 373 casos (+3%) e CSAT de 23,8%, contra 50,0% na W45. Chargeback Recovery sobe 16% (204 para 237) e o CSAT vai de 42,9% para 46,4% com resolutividade de 43%. Os relatos falam de saldo bloqueado com prazo vencido, de cobrança por compra que o cliente diz não ter feito e de Pix que não sai por débito em aberto.",
-   "ex": [
-    "ec1",
-    "ec2",
-    "ec3",
-    "eb1",
-    "eb4",
-    "eb5"
-   ],
-   "rank": 13,
-   "serie": {
-    "l": "CSAT de Conta Desativada, % satisfeitos (10 semanas)",
-    "v": [
-     20.0,
-     43.8,
-     16.7,
-     42.9,
-     44.8,
-     45.0,
-     51.9,
-     35.3,
-     50.0,
-     23.8
-    ],
-    "u": ""
-   },
-   "serie2": {
-    "l": "CSAT de Chargeback Recovery, % satisfeitos (10 semanas)",
-    "v": [
-     57.1,
-     64.3,
-     56.2,
-     45.8,
-     41.7,
-     25.0,
-     57.1,
-     45.8,
-     42.9,
-     46.4
-    ],
-    "u": ""
-   },
-   "img": "https://lh3.googleusercontent.com/d/1YpbZiMUH90ngHNyrXUBYjf34vqMh_KZU=w400"
-  },
-  {
    "t": "Seguro cobrado sem contratação e CSAT em 65,7%",
    "p": "seguros",
    "m": "CSAT 65,7% (−16,4 pp); contatos do seguro Pix e Cartão −41%",
@@ -685,7 +599,7 @@
     "es6",
     "era15"
    ],
-   "rank": 14,
+   "rank": 13,
    "serie": {
     "l": "Suporte humano de Seguros (10 semanas)",
     "v": [
@@ -719,6 +633,41 @@
     "u": ""
    },
    "img": "https://lh3.googleusercontent.com/d/1YAh50j2jrGFmpOc033oHpKAbtB6biDKu=w400"
+  },
+  {
+   "t": "NPS de Recarga de Celular cai 6,5 pts",
+   "p": "topup",
+   "m": "NPS 75,0 (−6,5) em 96 respostas",
+   "x": "Base pequena; comentários citam cashback retirado e taxas.",
+   "sl": "Em acompanhamento",
+   "s": "Sem evento correlato além do fim do cashback em 05/11; volume de suporte humano de 10 casos.",
+   "det": "O NPS cai de 81,5 para 75,0 com 82 promotores e 10 detratores. O suporte humano vai de 8 para 10 casos. Os comentários citam cashback retirado, pedido de cashback em todas as recargas e taxas altas.",
+   "ex": [
+    "e27",
+    "e28",
+    "e30",
+    "e38",
+    "e39",
+    "e3a"
+   ],
+   "rank": 14,
+   "serie": {
+    "l": "NPS Transacional de Recarga de Celular (10 semanas)",
+    "v": [
+     80.0,
+     80.5,
+     73.3,
+     84.3,
+     80.0,
+     78.5,
+     85.0,
+     79.5,
+     81.5,
+     75.0
+    ],
+    "u": "pts"
+   },
+   "img": "https://lh3.googleusercontent.com/d/1LU1E91gcAthQ3K4Irt5BEDTf-aZgTwr_=w400"
   }
  ]
 }
