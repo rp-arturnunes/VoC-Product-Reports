@@ -175,7 +175,7 @@
     "sem leitura"
    ]
   ],
-  "analise": "Aviso do time de dados em #ajuda-reports-cx; o NPS e o CSAT da W46 foram lidos depois da normalização, mas conferem com a base atual.",
+  "analise": "Aviso do time de dados em #ajuda-reports-cx; a normalização não foi confirmada nos canais lidos, então o NPS e o CSAT da manhã de 12/11 podem estar incompletos.",
   "marca": "Sem leitura de marca.",
   "pred": "Sem efeito esperado após a normalização."
  },
