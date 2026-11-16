@@ -229,13 +229,13 @@
    "img": "https://lh3.googleusercontent.com/d/1YpEHur6-STULZzwYNlz-npP5TomuGHXC=w400"
   },
   {
-   "t": "Solução para instabilidades no resgate do CDB",
+   "t": "Resgate do CDB agendado cobre instabilidades; efeito não medido",
    "p": "cdb",
-   "m": "NPS 70,0 (+2,1); CSAT 79,4%",
-   "x": "Solução implementada em 13/11 na jornada de resgate.",
+   "m": "NPS 70,0 (+2,1); CSAT 79,4%; suporte humano 198 (+6%)",
+   "x": "Em 13/11 o time confirmou que o agendamento de resgate e aplicação evita que o cliente sinta instabilidades do Matera.",
    "sl": "Parcialmente resolvido",
-   "s": "Anunciada em #cxm-team em 13/11; efeito ainda não medível por falta de dias após a entrega.",
-   "det": "O NPS vai de 67,9 para 70,0 com 39 promotores e 4 detratores em 50 respostas; o CSAT de 83,3% para 79,4%. O suporte humano sobe 6% (186 para 198) e o bot retém 49 sessões contra 123. Os relatos da semana, anteriores à entrega, falam de resgate que o app dizia levar um dia útil e não chegou e de CDB do cartão Titan que só sai cancelando o cartão.",
+   "s": "Anunciada em #cxm-team em 13/11; falta o artigo para o bot explicar o agendamento. Efeito ainda não medível.",
+   "det": "Em 13/11 foi anunciada uma solução para instabilidades no resgate do CDB dentro da jornada. O CDB já tem agendamento de resgate e de aplicação: quando o Matera deixa essas funções indisponíveis, a operação fica agendada e o cliente não sente o efeito. Por isso não será criado alerta na Home; a ação proposta é um artigo sobre agendamento para o bot explicar ao cliente que abrir chat. Os relatos da semana são anteriores à entrega: resgate prometido em um dia útil que não aparece e CDB do cartão Titan que só sai cancelando o cartão. NPS 70,0 (+2,1) e CSAT 79,4% (83,3% na W45).",
    "ex": [
     "em1",
     "em2",
