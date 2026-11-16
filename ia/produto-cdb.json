@@ -64,8 +64,18 @@
  "eventos": [
   {
    "d": "13/11",
-   "tag": "Feature",
-   "t": "Solução implementada para instabilidades no resgate do CDB dentro da jornada (#cxm-team)."
+   "tag": "Produto",
+   "t": "Solução implementada para instabilidades no resgate do CDB dentro da jornada (#cxm-team). Efeito nos contatos de resgate ainda não medido."
+  },
+  {
+   "d": "26/10",
+   "tag": "Incidente",
+   "t": "Tela de resgate não avançava em \"continuar resgate\": 2h03 (10:02–12:05), 34 contatos, 31 tickets humanos, o dobro da mesma faixa de 19/10."
+  },
+  {
+   "d": "26/10",
+   "tag": "Produto",
+   "t": "Nova jornada de contratação do CDB liberada para 10% da base. Impacto: \"problemas ao contratar\" de 1 para 7 contatos."
   }
  ],
  "jornada": {

@@ -43,7 +43,13 @@
   "texto": "Recarga de Celular quase não aparece em lojas e redes; no Reclame Aqui, 32 reclamações (30 na W45).",
   "ra": []
  },
- "eventos": [],
+ "eventos": [
+  {
+   "d": "05/11",
+   "tag": "Produto",
+   "t": "Fim do cashback em contas e boletos: comentários do NPS Transacional de Recarga de Celular (09 a 15/11) citam cashback retirado e pedem cashback em todas as recargas."
+  }
+ ],
  "jornada": {
   "bonus": "Bônus e cashback tem a menor parcela positiva da jornada.",
   "recarga": "Recarga: parcela positiva estável."

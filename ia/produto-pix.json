@@ -166,17 +166,47 @@
   {
    "d": "16/11",
    "tag": "Incidente",
-   "t": "Recebimento de Pix indisponível das 00:03 às 05:23, ligado ao BTG; alerta de Pix In reaberto às 05:29."
+   "t": "Recebimento de Pix indisponível das 00:03 às 05:23 e alerta reaberto às 05:29, ligado ao BTG (#escalation_incidents)."
   },
   {
    "d": "15/11",
    "tag": "Incidente",
-   "t": "Certificado mTLS do BTG vencido: Pix Out por chave e QR Code indisponível; a Cyber atuou na renovação (#escalation_incidents)."
+   "t": "Certificado mTLS do BTG vencido: Pix Out por chave e QR Code indisponível; a Cyber atuou na renovação. Impacto: 699 casos de Pix no dia, \"instabilidade no app\" de 42 para 628 na semana."
+  },
+  {
+   "d": "14/11",
+   "tag": "Incidente",
+   "t": "Alerta [PIX IN] Taxa de Aprovação de Orders às 23:34, primeiro da sequência do vencimento do certificado."
   },
   {
    "d": "11/11",
    "tag": "Incidente",
-   "t": "Pix instável com o BTG das 06:39 às 08:29: 91 contatos, 88,3% de absorção de bot e Central (96,7% de média)."
+   "t": "Pix instável com o BTG das 06:39 às 08:29: 91 contatos, absorção de bot e Central de 88,3% (96,7% de média), bot reteve 16,5%."
+  },
+  {
+   "d": "11/11",
+   "tag": "Incidente",
+   "t": "Instabilidade no serviço de usuários (cliente de cache) exigiu escalar o cluster com urgência; os times de Pix e Cartão relataram impacto."
+  },
+  {
+   "d": "06/11",
+   "tag": "Incidente",
+   "t": "Queda do DICT do Banco Central (P2), 19:26–21:02: 110 contatos, 13,6% retidos no bot (39,6% em média nos incidentes de Pix em 30 dias)."
+  },
+  {
+   "d": "06/11",
+   "tag": "Incidente",
+   "t": "Envio de Pix indisponível (BTG) de sábado 23:38 a domingo 07:51 (8h13): 50 contatos, 68,0% retidos no bot."
+  },
+  {
+   "d": "05/11",
+   "tag": "Produto",
+   "t": "Teste da taxa de 4,99% no Pix com cartão (antes 2,99%) para 50% dos clientes com limite concedido. Impacto: dúvidas de taxa; em 09 e 11/11 clientes relatam 3,99% anunciado e 4,99% na confirmação."
+  },
+  {
+   "d": "03/11",
+   "tag": "Incidente",
+   "t": "Envio de Pix indisponível (parceiro BTG), 20:53–23:49 (2h56): 35 contatos; cerca de 11,3 mil usuários com erro visível segundo o monitor do app."
   }
  ],
  "jornada": {

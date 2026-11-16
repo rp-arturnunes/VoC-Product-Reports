@@ -60,7 +60,18 @@
    "era14"
   ]
  },
- "eventos": [],
+ "eventos": [
+  {
+   "d": "19/10",
+   "tag": "Processo",
+   "t": "Reunião Cartão × CX: a regra de fatura zero e o bot ainda não identificam a origem do limite (empréstimo ou venda do Tap to Pay), o que alimenta o motivo \"não entende porque recebeu uma fatura\"."
+  },
+  {
+   "d": "20/10",
+   "tag": "Produto",
+   "t": "Teste de taxas de repasse no Tap to Pay. Impacto: dúvidas sobre taxa do plano de 2 para 7 na W45; NPS segue o mais alto do portfólio (81,1 na W46)."
+  }
+ ],
  "jornada": {
   "recebimento": "Recebimento é a etapa mais citada e fica estável; a piora está em venda e limite.",
   "taxas": "Taxas: a parcela positiva cai frente ao período anterior.",

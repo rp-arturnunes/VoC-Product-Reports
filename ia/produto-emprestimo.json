@@ -171,9 +171,39 @@
  },
  "eventos": [
   {
+   "d": "16/11",
+   "tag": "Incidente",
+   "t": "Indisponibilidade para pagar e negociar empréstimo aberta em #escalation_incidents (severidade P2, 11 a 100 clientes); fora da semana, efeito a medir na W47."
+  },
+  {
+   "d": "11/11",
+   "tag": "Incidente",
+   "t": "Timeouts no parceiro entre 17:51 e 17:56: cerca de 1.350 clientes viram erro no empréstimo."
+  },
+  {
+   "d": "11/11",
+   "tag": "Processo",
+   "t": "Trava de volume nas novas contratações de empréstimo, que recusa contratações quando o volume foge do normal dos últimos 14 dias; já estava bloqueando."
+  },
+  {
    "d": "09/11",
    "tag": "Incidente",
-   "t": "Equifax instável e erro 500 nos endpoints de empréstimo, 13:53–15:54: 28 contatos, 94,3% de absorção; nenhum dos 25 tickets humanos cita a falha."
+   "t": "Equifax instável e erro 500 nos endpoints de empréstimo das 13:53 às 15:54: 28 contatos, 94,3% de absorção de bot e Central; nenhum dos 25 tickets humanos cita a falha (#the-voice-cx, 10/11)."
+  },
+  {
+   "d": "04/11",
+   "tag": "Incidente",
+   "t": "Contratação e negociação indisponíveis das 07:14 às 07:23: 29 contatos; manutenção Matera/Oracle 22:00–22:30. Volume no patamar normal do horário."
+  },
+  {
+   "d": "01/11",
+   "tag": "Incidente",
+   "t": "Certificado mTLS do Lending vencido: contratação e pagamento parados por cerca de 5h25 na madrugada, 22 contatos; suporte humano quase dobrou no domingo."
+  },
+  {
+   "d": "28/10",
+   "tag": "Processo",
+   "t": "Mesa de trabalho decide investigar o erro \"cadastro não habilitado\" na simulação (maior motivo, cerca de 2 mil clientes por dia) e analisar a tela de cancelamento."
   }
  ],
  "jornada": {

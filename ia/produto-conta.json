@@ -121,7 +121,28 @@
    "era20"
   ]
  },
- "eventos": [],
+ "eventos": [
+  {
+   "d": "09/11",
+   "tag": "Produto",
+   "t": "Versão 5.11.32 do app (com bloqueio de ameaças appDome) publicada: Android a 100% em 11/11; versão 5.11.34 publicada em 13/11 e a 100% no Android em 15/11 (#mobile-app). Sem correlação registrada com os contatos de acesso."
+  },
+  {
+   "d": "29/10",
+   "tag": "Produto",
+   "t": "WAF passa a aceitar só acesso do Brasil; cerca de 2.600 usuários únicos afetados veem \"problema com a gente\" e há reclamações nas redes."
+  },
+  {
+   "d": "28/10",
+   "tag": "Processo",
+   "t": "Atendimento passa a checar cadastro encerrado do mesmo CPF antes de orientar, depois de o bloqueio de CPF de 14/10 gerar cerca de 200 contatos por semana a mais."
+  },
+  {
+   "d": "27/10",
+   "tag": "Produto",
+   "t": "Fraude refina a regra R6 no onboarding: bloqueios de novos usuários de 4,1% para 2,6% (cerca de 9 mil usuários por mês a menos); pedidos de selfie caem 89%."
+  }
+ ],
  "jornada": {
   "validacao": "Validação de identidade: selfie recusada e biometria que não reconhece aparecem nos relatos.",
   "acesso": "Acesso e senha: reconhecimento facial depois da atualização do app.",

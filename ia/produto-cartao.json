@@ -169,7 +169,48 @@
    "era18"
   ]
  },
- "eventos": [],
+ "eventos": [
+  {
+   "d": "12/11",
+   "tag": "Comunicado",
+   "t": "Anuidade CC RP: ciclo 1 fechado (24/09 a 08/11) com 166 mil clientes cobrados (R$ 473 mil), 2,9 mil contatos e contact rate acumulado de 1,63%; 49% retidos pelo bot e 47% no suporte humano. Começa o ciclo 2 (#lideres-cx-e-cxm)."
+  },
+  {
+   "d": "10/11",
+   "tag": "Bot",
+   "t": "Cancelamento de cartão físico por link no chatbot disponível (CX-2554, #cx-sprint 04–10/11). Efeito nos contatos de cancelamento ainda não medido."
+  },
+  {
+   "d": "09/11",
+   "tag": "Produto",
+   "t": "Início do rollout faseado de Negociação de Saldo Devedor Total no CC RP, nova opção de renegociação para clientes em atraso (#lideres-cx-e-cxm, 09/11). Efeito nos contatos ainda não medido."
+  },
+  {
+   "d": "05/11",
+   "tag": "Produto",
+   "t": "Teste da taxa de 4,99% no Pix com cartão (antes 2,99%) para 50% dos clientes com limite concedido. Impacto: dúvidas de taxa; em 09 e 11/11 clientes relatam 3,99% anunciado e 4,99% na confirmação."
+  },
+  {
+   "d": "11/11",
+   "tag": "Incidente",
+   "t": "Instabilidade no serviço de usuários (cliente de cache) exigiu escalar o cluster com urgência; os times de Pix e Cartão relataram impacto."
+  },
+  {
+   "d": "02–03/11",
+   "tag": "Cobrança",
+   "t": "Maior onda de cobrança da anuidade de R$ 9,90 por inatividade: lote de 02/11 com 48,3 mil clientes (R$ 127 mil). Impacto: pico de 144 tickets de \"não entende porque recebeu uma fatura\" em 03/11; suporte humano do Cartão em 2.076 na W45 e NPS em 41,2."
+  },
+  {
+   "d": "30/10",
+   "tag": "Bot",
+   "t": "Bot passa a cancelar cartão físico e conta cartão para 100% da base. Impacto: 344 clientes no fluxo entre 28/10 e 02/11, 51 cancelaram sozinhos (15%); \"bloquear, desbloquear ou cancelar cartão\" cai de 435 para 288 na W46."
+  },
+  {
+   "d": "19/10",
+   "tag": "Processo",
+   "t": "Reunião Cartão × CX: a regra de fatura zero e o bot ainda não identificam a origem do limite (empréstimo ou venda do Tap to Pay), o que alimenta o motivo \"não entende porque recebeu uma fatura\"."
+  }
+ ],
  "jornada": {
   "uso": "Uso e compras concentra a piora da semana, com compras recusadas e pagamento com carteira digital recusado.",
   "custos": "Custos e tarifas: anuidade e juros seguem no centro dos comentários negativos.",

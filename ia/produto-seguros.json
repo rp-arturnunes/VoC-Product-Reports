@@ -66,7 +66,18 @@
    "era16"
   ]
  },
- "eventos": [],
+ "eventos": [
+  {
+   "d": "10/11",
+   "tag": "Comunicado",
+   "t": "Revisão dos artigos do Seguro Pix + Cartões na Central de Ajuda: o artigo \"Tenho direito a reembolso?\" não dá instruções claras de como pedir o reembolso nem diz quem é elegível (#seguro_pix-cartão_cx)."
+  },
+  {
+   "d": "29/10",
+   "tag": "Produto",
+   "t": "Novo Seguro Acidente e Renda liberado para 100% dos clientes (R$ 2,99 por mês, opcional). Impacto: apólices novas de 1.589 (W45) para 3.700 (W46); cancelamentos pedidos de 79 para 140."
+  }
+ ],
  "jornada": {
   "cobranca": "Cobrança: desconto de R$ 5,99 junto a um Pix ou venda que o cliente não reconhece.",
   "cancelamento": "Cancelamento e estorno: valor que não retorna depois de cancelar."

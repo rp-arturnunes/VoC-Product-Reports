@@ -84,8 +84,13 @@
  "eventos": [
   {
    "d": "05/11",
-   "tag": "Feature",
-   "t": "Fim do cashback em contas e boletos pagos com saldo (report da W45)."
+   "tag": "Produto",
+   "t": "Fim do cashback em contas e boletos pagos com saldo (PF e PJ); e-mail e push a cerca de 130 mil clientes em 04/11; o cashback acumulado segue no saldo. Impacto: \"não recebi o cashback\" de 96 para 51 na W46, NPS de 69,0 para 57,2."
+  },
+  {
+   "d": "04/11",
+   "tag": "Comunicado",
+   "t": "Artigo da Central \"O cashback em contas e boletos pagos com saldo mudou\" indicado na orientação ao atendimento."
   }
  ],
  "jornada": {

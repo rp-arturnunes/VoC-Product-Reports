@@ -101,7 +101,23 @@
    "era6"
   ]
  },
- "eventos": [],
+ "eventos": [
+  {
+   "d": "13/11",
+   "tag": "Processo",
+   "t": "Squad de fraude libera uma leva grande de carteiras bloqueadas e passa a acompanhar; alguns casos não são desbloqueados porque configuram fraude (#cx_fraud). Efeito nos contatos ainda não medido."
+  },
+  {
+   "d": "09/11",
+   "tag": "Pico",
+   "t": "\"Saldo da carteira bloqueado\" chega a 110 contatos no dia contra 43 a 73 nos dias anteriores; 34 vêm de bloqueio por regra automática, contra 5 a 10 por dia (#cx_fraud, 10/11). Impacto: bloqueio total de 271 para 667 na semana."
+  },
+  {
+   "d": "29/10",
+   "tag": "Pico",
+   "t": "\"Saldo da carteira bloqueado – todo o saldo\": 86 tickets no dia (+50% vs baseline); 276 na semana (415 na anterior)."
+  }
+ ],
  "jornada": {
   "prazo": "Prazo e liberação é o centro da dor: prazo informado que vence.",
   "bloqueio": "Bloqueio: contestação de Pix que o cliente nega."

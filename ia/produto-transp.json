@@ -85,7 +85,22 @@
   {
    "d": "11/11",
    "tag": "Incidente",
-   "t": "Alerta de instabilidade na recarga de transporte ativo desde 21:39, acima do limite de 2h (#cxm-team, 12/11)."
+   "t": "Alerta automático \"Instabilidade na recarga de transporte\" ativo desde 21:39, acima do limite de 2h (#cxm-team, 12/11); em 20:43–21:18 o serviço respondeu com 228 erros 5xx. Impacto: NPS de Transporte de 80,2 para 70,1."
+  },
+  {
+   "d": "09/11",
+   "tag": "Comunicado",
+   "t": "Revisão dos alertas de instabilidade da Central (#squad_cx): só 1% de quem viu o aviso na home era da cidade afetada pela instabilidade de Transporte."
+  },
+  {
+   "d": "31/10",
+   "tag": "Incidente",
+   "t": "Instabilidade de Transporte em SP por 1h05, com 3 contatos; sem variação relevante nos indicadores."
+  },
+  {
+   "d": "30/10",
+   "tag": "Bot",
+   "t": "Aviso manual de instabilidade em Curitiba ficou ativo para todos os usuários do app até 06/11 às 11:34; o bot exibiu o aviso em 21 sessões de Transporte em 05/11."
   }
  ],
  "jornada": {
