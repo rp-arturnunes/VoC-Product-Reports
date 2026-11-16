@@ -6,7 +6,7 @@ import json,os,re,sys
 PRODS=['pix','cartao','emprestimo','t2p','link','conta','seguros','cdb','transp','fraude','boletos','topup']
 SITU=['Resolvido','Parcialmente resolvido','Em andamento','Em acompanhamento','Em apuração','Sem solução registrada','Sem registro','Não resolvido','Estável']
 EMOJI='💸💳🤝📲🔗👤🛡📈🚌🔒🧾📱'
-LIM={'pulso':500,'resumo':700,'t':110,'m':120,'x':260,'s':180,'det':600,'ex_t':140,'texto':700}
+LIM={'pulso':500,'resumo':700,'t':110,'m':120,'x':260,'s':180,'det':600,'ex_t':720,'texto':700}
 erros=[];avisos=[];POOL={}
 def E(m): erros.append(m)
 def A(m): avisos.append(m)
