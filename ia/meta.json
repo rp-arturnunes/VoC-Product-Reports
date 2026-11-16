@@ -6,11 +6,27 @@
   "pub": "16/11/2026",
   "modelo": "Sonnet (rotina semanal)"
  },
- "pulso": "Semana fecha com NPS Transacional em 63,6 (−2,1 pp), o menor das últimas 5 semanas, e CSAT em 69,7%, abaixo do piso de 75%. O suporte humano sobe 19%, puxado pelo Pix (+91%), que concentra o pico no domingo 15/11 com o certificado mTLS do BTG vencido, e pela Carteira Desativada (+122%). O Cartão recua 12% depois do pico da anuidade.",
+ "pulso": "Semana fecha com NPS Transacional em 63,6 (−2,1 pp), o menor das últimas 10 semanas, e CSAT em 69,7%, abaixo do piso de 75%. O suporte humano sobe 19%, puxado pelo Pix (+91%), que concentra o pico no domingo 15/11 com o certificado mTLS do BTG vencido, e pela Carteira Desativada (+122%). Nas redes, as interações sobem 65% e as citações ao Pix vão de 23 para 104; no Reclame Aqui o Pix passa de 96 para 164.",
  "atencao": [
-  "Pix indisponível por certificado mTLS vencido do BTG: o domingo 15/11 concentra o pico e o recebimento voltou a falhar na madrugada de 16/11, então o efeito segue na W47.",
-  "NPS e CSAT em queda ao mesmo tempo: Contas e Boletos, Transporte, Link de Pagamento e Empréstimo perdem de 4 a 25 pts de NPS; CSAT de Empréstimo (61,7%) e Carteira Desativada (56,1%) seguem abaixo do piso.",
-  "Carteira Desativada mais que dobra no saldo bloqueado total (271 para 667) e não há evento correlato registrado.",
+  "Pix indisponível por certificado mTLS vencido do BTG: o domingo 15/11 concentra o pico, o recebimento voltou a falhar na madrugada de 16/11 e as redes, lojas e o Reclame Aqui já refletem a semana.",
+  "NPS e CSAT em queda ao mesmo tempo: Contas e Boletos, Transporte, Link de Pagamento e Empréstimo perdem de 4 a 25 pts de NPS; CSAT de Empréstimo (61,7%), Carteira Desativada (56,1%) e Tap to Pay (71,0%) abaixo do piso.",
+  "Carteira Desativada mais que dobra no saldo bloqueado total (271 para 667), com prazos de desbloqueio que clientes dizem não cumpridos e sem evento correlato registrado.",
+  "Tap to Pay: relatos de venda que vira limite e fatura do cartão empreendedor aparecem em atendimento e no Reclame Aqui; o volume do produto segue estável.",
   "Parte dos casos de 15/11 ainda sem classificação de produto (691 contra 167): as quedas de Minha Conta, Transporte, Contas e Boletos e Seguros podem estar superestimadas."
- ]
+ ],
+ "imagens": {
+  "pix": "https://lh3.googleusercontent.com/d/1ZheqbpCeTJdmSobCY_iGxdwoi5zh3a4P=w400",
+  "cartao": "https://lh3.googleusercontent.com/d/1p242JTJ7riP3yuBzcGZBNAGs6Ddw1Lem=w400",
+  "emprestimo": "https://lh3.googleusercontent.com/d/1d07zoUjKi3hOieTLWr5O1z8c9IY02Pjh=w400",
+  "t2p": "https://lh3.googleusercontent.com/d/1dLYRTfETmcQg3C9nu6aZz586VrNf2WFX=w400",
+  "link": "https://lh3.googleusercontent.com/d/1coBm8idviYCCIZLG7IFJ1D5T7MfL0omP=w400",
+  "conta": "https://lh3.googleusercontent.com/d/1PiVbmBTFM1AreGRzBT_vKiV5Tw1HSDDS=w400",
+  "seguros": "https://lh3.googleusercontent.com/d/1YAh50j2jrGFmpOc033oHpKAbtB6biDKu=w400",
+  "cdb": "https://lh3.googleusercontent.com/d/1FaWpztB4nKO6EQkegcTUCwPwPIL10EyN=w400",
+  "transp": "https://lh3.googleusercontent.com/d/1kPKL1mQ4g4IhTQYCb8GK66VCjdBa_NGq=w400",
+  "fraude": "https://lh3.googleusercontent.com/d/17gN8pInhyH3YPvOGwFAfm993U1mxXG63=w400",
+  "boletos": "https://lh3.googleusercontent.com/d/1YpEHur6-STULZzwYNlz-npP5TomuGHXC=w400",
+  "topup": "https://lh3.googleusercontent.com/d/1LU1E91gcAthQ3K4Irt5BEDTf-aZgTwr_=w400",
+  "_": "https://lh3.googleusercontent.com/d/1IHaWUCXxrBrtsxgcBlxTh5JaSoGbOMMs=w400"
+ }
 }

@@ -1,0 +1,84 @@
+{
+ "texto": "Nas lojas, 74% das avaliações com texto são de 4 e 5 estrelas (75% na W45) e 22% de 1 e 2 estrelas; o Pix concentra a piora, com 13% positivas em 39 avaliações (26% em 23 na W45). O fim do cashback segue nas avaliações de boleto (13 e 8 nas duas últimas semanas). Nas redes, as interações públicas sobem de 412 para 679 e as negativas de 222 para 280; as que citam o Pix vão de 23 para 104, com 66 negativas, a maior alta em 10 semanas. Bloqueio e encerramento de conta chegam a 16 interações, 15 negativas.",
+ "aviso": "A classificação de sentimento das redes (Buzzmonitor) marca reclamações e conteúdo fora do tema como positivos; por isso a % positiva das redes deve ser lida com cuidado. Lojas: coleta por scraping desde 31/08. Produto inferido por texto (mapeamento do painel 141); uma interação pode citar mais de um produto.",
+ "loja": {
+  "temas": [
+   {
+    "t": "Pix pendente e instável",
+    "n": 39,
+    "tom": "neg",
+    "x": "Pix que fica em processamento por horas, app em manutenção na hora de pagar e Pix que não dá para cancelar. 13% positivas na semana."
+   },
+   {
+    "t": "Cashback retirado",
+    "n": 8,
+    "tom": "neg",
+    "x": "Boleto e cartão com limite garantido sem cashback; clientes dizem que vão desinstalar e que perdem a renda extra."
+   },
+   {
+    "t": "Empréstimo baixo e que não evolui",
+    "n": 41,
+    "tom": "mix",
+    "x": "Limite de R$ 10 ou R$ 20 mesmo pagando em dia, empréstimo pago adiantado que aparece em atraso e conta encerrada com oferta de crédito."
+   },
+   {
+    "t": "Cadastro e acesso",
+    "n": 6,
+    "tom": "neg",
+    "x": "Cadastro que não avança por e-mail já em uso, selfie que não é enviada e CPF tido como em uso."
+   },
+   {
+    "t": "Recarga de transporte",
+    "n": 7,
+    "tom": "neg",
+    "x": "Crédito que demora para cair no bilhete e QR code que não é lido na catraca."
+   }
+  ],
+  "neg": [
+   "elj1",
+   "elj2",
+   "elj3",
+   "elj5",
+   "elb2",
+   "ele1"
+  ],
+  "pos": []
+ },
+ "rede": {
+  "temas": [
+   {
+    "t": "Pix pendente desde 14/11",
+    "n": 104,
+    "tom": "neg",
+    "x": "Pix pendente por mais de 5 horas, dinheiro preso sem estorno e falta de aviso. 66 negativas na semana."
+   },
+   {
+    "t": "Bloqueio e encerramento de conta",
+    "n": 16,
+    "tom": "neg",
+    "x": "Carteira bloqueada depois de Pix recebido, sem retorno, e conta encerrada sem direito de defesa. 15 negativas."
+   },
+   {
+    "t": "Seguro de R$ 5,99 descontado",
+    "n": 3,
+    "tom": "neg",
+    "x": "Desconto mensal no cartão que o cliente diz não ter autorizado."
+   },
+   {
+    "t": "Empréstimo de R$ 10 e juros",
+    "n": 15,
+    "tom": "neg",
+    "x": "Empréstimo de R$ 10 oferecido, dificuldade de gerar o QR para pagar e juros por parcela atrasada."
+   }
+  ],
+  "neg": [
+   "erd1",
+   "erd2",
+   "erd3",
+   "erf1",
+   "erc4",
+   "ere1"
+  ],
+  "falsopos": []
+ }
+}

@@ -1,22 +1,69 @@
 {
  "analise": {
-  "clientes": "O Tap to Pay mantém o NPS alto em 81,1, mas o CSAT cai de 81,6% para 71,0% e os comentários falam de venda que não cai.",
-  "mudou": "Suporte humano +6% (249 para 263).",
+  "clientes": "O Tap to Pay mantém o NPS alto em 81,1, mas o CSAT cai de 81,6% para 71,0% e os clientes falam de venda que vira limite e fatura do cartão empreendedor, de venda aprovada no banco do comprador que não entra e de compra cancelada sem reembolso.",
+  "mudou": "Suporte humano +6% (249 para 263); Reclame Aqui de 39 para 46 e redes de 3 para 8 citações. NPS de 84,3 para 81,1.",
   "atencao": [
-   "CSAT abaixo do piso de 75% em base de 62 respostas."
+   "CSAT abaixo do piso de 75% em base de 62 respostas.",
+   "Venda do Tap to Pay que gera fatura de cartão aparece em tickets e no Reclame Aqui."
   ]
  },
- "motivos": [],
- "temas": [],
+ "motivos": [
+  {
+   "t": "Não recebeu a venda",
+   "n": 0,
+   "ant": 0,
+   "var": "–",
+   "det": null,
+   "ex": [
+    "eh1",
+    "eh2",
+    "e22",
+    "e24",
+    "era13",
+    "era12"
+   ]
+  }
+ ],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Venda que não cai e vai para a carteira",
+   "n": 19,
+   "tom": "neg",
+   "x": "Detratores de 13 para 19: venda que não caiu na conta e toda venda indo para a carteira."
+  },
+  {
+   "canal": "Reclame Aqui",
+   "t": "Venda que vira fatura do cartão empreendedor",
+   "n": 46,
+   "tom": "neg",
+   "x": "Venda sacada que gera fatura, valor que não é liberado para resgate e taxa descontada."
+  }
+ ],
  "exemplos": {
   "NPS Transacional": [
    "e22",
-   "e23"
+   "e23",
+   "e24"
+  ],
+  "Reclame Aqui": [
+   "era12",
+   "era13",
+   "era14"
   ]
  },
  "mencoes": {
-  "texto": "",
-  "ra": []
+  "texto": "Nas lojas, o Tap to Pay aparece em 2 avaliações, uma delas sobre recebimento por aproximação recusado. Nas redes, 8 interações (3 na W45). No Reclame Aqui, 46 reclamações (39 na W45), com venda que vira fatura do cartão empreendedor.",
+  "ra": [
+   "era12",
+   "era13",
+   "era14"
+  ]
  },
- "eventos": []
+ "eventos": [],
+ "jornada": {
+  "recebimento": "Recebimento é a etapa mais citada e fica estável; a piora está em venda e limite.",
+  "taxas": "Taxas: a parcela positiva cai frente ao período anterior.",
+  "limite": "Limite no cartão: relatos de venda que vira limite e fatura."
+ }
 }

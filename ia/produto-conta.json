@@ -1,9 +1,10 @@
 {
  "analise": {
-  "clientes": "Minha Conta tem o suporte humano 39% menor, com o acesso ao cadastro caindo de 343 para 165.",
+  "clientes": "Minha Conta tem o suporte humano 39% menor, com o acesso ao cadastro caindo de 343 para 165; os relatos que sobram são de reconhecimento facial que falha depois da atualização do app, selfie recusada por semanas e data de nascimento tida como errada.",
   "mudou": "CSAT em 94% (16 de 17), contra 61,5% na W45; parte dos casos de 15/11 sem classificação.",
   "atencao": [
-   "Base de satisfação pequena."
+   "Base de satisfação pequena.",
+   "Conta aberta sem o cliente ter pedido, no Reclame Aqui (11/11)."
   ]
  },
  "motivos": [
@@ -12,16 +13,74 @@
    "n": 165,
    "ant": 343,
    "var": "-52%",
-   "det": null,
-   "ex": []
+   "det": {
+    "res": "O contato cai pela metade, e o que permanece é o acesso bloqueado pelo reconhecimento facial e por dados que o app considera divergentes.",
+    "dor": [
+     "<b>Facial que não reconhece:</b> o cliente tenta há dias depois da atualização do app.",
+     "<b>Dado divergente:</b> data de nascimento tida como errada.",
+     "<b>Login com erro:</b> propostas por WhatsApp, mas o login falha por dados."
+    ],
+    "exp": "Entrar no app com o próprio rosto ou documento sem ficar bloqueado por semanas.",
+    "falha": [
+     [
+      "Produto",
+      "O reconhecimento facial recusa o mesmo cliente por dias, sem alternativa. Indício: relatos de 09 e 11/11 sobre facial e data de nascimento."
+     ]
+    ],
+    "ex": [
+     "ea1",
+     "ea2",
+     "ea3",
+     "eln1",
+     "eln3",
+     "era19"
+    ]
+   },
+   "ex": [
+    "ea1",
+    "ea2",
+    "ea3",
+    "eln1",
+    "eln3",
+    "era19"
+   ]
   },
   {
    "t": "Não consegue validar seu cadastro",
    "n": 84,
    "ant": 92,
    "var": "-9%",
-   "det": null,
-   "ex": []
+   "det": {
+    "res": "Selfie recusada e método alternativo também recusado, às vezes por semanas.",
+    "dor": [
+     "<b>Selfie que só dá recusada:</b> duas semanas tentando.",
+     "<b>Biometria que não identifica o rosto:</b> o cliente tentou luz e acessórios diferentes.",
+     "<b>Alternativa recusada:</b> o método alternativo também é rejeitado."
+    ],
+    "exp": "Validar a identidade por outro meio quando a selfie falha.",
+    "falha": [
+     [
+      "Produto",
+      "A validação não oferece um caminho humano quando a selfie falha repetidas vezes. Indício: relatos de 09 e 11/11 com várias tentativas."
+     ]
+    ],
+    "ex": [
+     "ea4",
+     "ea5",
+     "ea6",
+     "eln3",
+     "eln2",
+     "ea2"
+    ]
+   },
+   "ex": [
+    "ea4",
+    "ea5",
+    "ea6",
+    "eln3",
+    "eln2",
+    "ea2"
+   ]
   },
   {
    "t": "Solicita encerramento do cadastro",
@@ -29,14 +88,43 @@
    "ant": 59,
    "var": "-20%",
    "det": null,
-   "ex": []
+   "ex": [
+    "ea7",
+    "ea8",
+    "ea9",
+    "ea10",
+    "era20",
+    "era19"
+   ]
   }
  ],
- "temas": [],
- "exemplos": {},
- "mencoes": {
-  "texto": "",
-  "ra": []
+ "temas": [
+  {
+   "canal": "Lojas de apps",
+   "t": "Cadastro e acesso",
+   "n": 6,
+   "tom": "neg",
+   "x": "E-mail já em uso, selfie que não é enviada e CPF tido como em uso."
+  }
+ ],
+ "exemplos": {
+  "Lojas de apps": [
+   "eln1",
+   "eln2",
+   "eln3"
+  ]
  },
- "eventos": []
+ "mencoes": {
+  "texto": "Nas lojas, 6 avaliações citam cadastro e acesso (6 na W45), quase todas negativas. Nas redes, 7 interações. No Reclame Aqui, 50 reclamações (53 na W45), com login com e-mail antigo e conta aberta sem pedido.",
+  "ra": [
+   "era19",
+   "era20"
+  ]
+ },
+ "eventos": [],
+ "jornada": {
+  "validacao": "Validação de identidade: selfie recusada e biometria que não reconhece aparecem nos relatos.",
+  "acesso": "Acesso e senha: reconhecimento facial depois da atualização do app.",
+  "abertura": "Abertura e cadastro: e-mail já em uso interrompe o cadastro."
+ }
 }

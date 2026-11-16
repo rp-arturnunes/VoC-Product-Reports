@@ -1,10 +1,11 @@
 {
  "analise": {
-  "clientes": "O Pix tem a maior alta de contato da semana, com o suporte humano de 803 para 1.535 casos por conta da indisponibilidade do Pix Out em 15/11.",
-  "mudou": "Suporte humano +91%, NPS Transacional estável em 65,1 e CSAT de 67,7% para 69,7%.",
+  "clientes": "O Pix concentra a semana: o suporte humano sobe 91% e os clientes falam de Pix que fica pendente por horas, de dinheiro que não entra e de falta de aviso, com o pico no domingo 15/11 e o certificado mTLS do BTG vencido. No Pix com cartão, os relatos são de taxa de 3,99% ou 4,99% que muda entre as telas.",
+  "mudou": "O suporte humano vai de 803 para 1.535 casos e \"instabilidade no app\" de 42 para 628; \"não consegue realizar o pix\" sobe 58%. O NPS Transacional fica estável (65,0 para 65,1) e o CSAT sobe de 67,7% para 69,7%. Nas redes, as citações ao Pix vão de 23 para 104 e, no Reclame Aqui, de 96 para 164.",
   "atencao": [
    "Certificado mTLS do BTG vencido em 15/11 e recebimento instável em 16/11.",
-   "Pix CC sobe 23% pelo recorte de causa raiz com cartão (35 para 43)."
+   "Pix com cartão: taxa informada de 3,99% e de 4,99% na mesma jornada.",
+   "Pix recebido que é cancelado depois de creditado (12/11)."
   ]
  },
  "motivos": [
@@ -13,11 +14,36 @@
    "n": 628,
    "ant": 42,
    "var": "+1395%",
-   "det": null,
+   "det": {
+    "res": "O motivo é novo no Pix: Pix recebido ou enviado que fica em processamento. O pico é o domingo 15/11 (699 casos no Pix), depois do incidente de 11/11 com o mesmo parceiro.",
+    "dor": [
+     "<b>Pix recebido que não entra:</b> o cliente vê o Pix como enviado pelo outro banco e o valor não aparece na carteira.",
+     "<b>Urgência concreta:</b> o valor era para a passagem, a van ou uma conta do dia.",
+     "<b>Sem aviso:</b> clientes dizem não ter recebido alerta antes de enviar."
+    ],
+    "exp": "Que o Pix caia na hora, ou que o app avise antes quando estiver instável e devolva o valor sem que o cliente precise pedir.",
+    "falha": [
+     [
+      "Produto",
+      "O app mostra o Pix como em processamento sem prazo nem estorno automático. Indício: relatos de 11/11 em que o cliente já sabia que o sistema tinha normalizado e o valor seguia pendente."
+     ]
+    ],
+    "ex": [
+     "ek1",
+     "ek2",
+     "ek3",
+     "ek4",
+     "ek5",
+     "ek6"
+    ]
+   },
    "ex": [
-    "e6",
-    "e7",
-    "e9"
+    "ek1",
+    "ek2",
+    "ek3",
+    "ek4",
+    "ek5",
+    "ek6"
    ]
   },
   {
@@ -25,11 +51,36 @@
    "n": 382,
    "ant": 241,
    "var": "+59%",
-   "det": null,
+   "det": {
+    "res": "O contato cresce com o Pix e inclui o Pix com cartão: o cliente tenta pagar e a tela mostra taxa diferente da informada.",
+    "dor": [
+     "<b>Taxa diferente entre telas:</b> 3,99% anunciado e 4,99% na confirmação do Pix com Google Pay ou Apple Pay.",
+     "<b>Cartão ou limite retido:</b> cartão bloqueado e limite que não libera para o Pix.",
+     "<b>QR Code que não paga:</b> relatos de 15/11 de pagamento por QR Code sem sucesso."
+    ],
+    "exp": "Que a taxa mostrada seja a cobrada e que o Pix com cartão conclua quando há limite.",
+    "falha": [
+     [
+      "Produto",
+      "A mesma jornada mostra taxas diferentes por forma de pagamento. Indício: três relatos de 09 e 11/11 citam 3,99% e 4,99%."
+     ]
+    ],
+    "ex": [
+     "ef1",
+     "ef2",
+     "ef3",
+     "ef4",
+     "ef5",
+     "e6"
+    ]
+   },
    "ex": [
-    "e6",
-    "e7",
-    "e10"
+    "ef1",
+    "ef2",
+    "ef3",
+    "ef4",
+    "ef5",
+    "e6"
    ]
   },
   {
@@ -39,8 +90,12 @@
    "var": "-1%",
    "det": null,
    "ex": [
+    "ek7",
     "e7",
-    "e10"
+    "e10",
+    "elj2",
+    "ek2",
+    "ek5"
    ]
   },
   {
@@ -49,19 +104,84 @@
    "ant": 88,
    "var": "+26%",
    "det": null,
-   "ex": []
+   "ex": [
+    "ed1",
+    "ed2",
+    "ed3",
+    "ed4",
+    "ed5",
+    "era3"
+   ]
   }
  ],
- "temas": [],
+ "temas": [
+  {
+   "canal": "Redes sociais",
+   "t": "Pix pendente desde 14/11",
+   "n": 104,
+   "tom": "neg",
+   "x": "Pix pendente por mais de 5 horas, dinheiro preso sem estorno e falta de aviso; 66 interações negativas."
+  },
+  {
+   "canal": "Lojas de apps",
+   "t": "Pix em processamento e app em manutenção",
+   "n": 39,
+   "tom": "neg",
+   "x": "13% de avaliações positivas, contra 26% na W45; clientes passam vergonha ao pagar."
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Confirmação e estabilidade",
+   "n": 215,
+   "tom": "mix",
+   "x": "Detratores do Pix sobem de 214 para 215; os comentários pedem confirmação mais rápida e aviso do valor recebido."
+  }
+ ],
  "exemplos": {
+  "Redes sociais": [
+   "erd1",
+   "erd2",
+   "erd3"
+  ],
+  "Lojas de apps": [
+   "elj1",
+   "elj2",
+   "elj4"
+  ],
   "NPS Transacional": [
-   "e8",
-   "e11"
+   "e6",
+   "e7",
+   "e10"
   ]
  },
  "mencoes": {
-  "texto": "",
-  "ra": []
+  "texto": "Nas lojas, o Pix aparece em 39 avaliações (23 na W45) e só 13% são positivas, com relatos de Pix pendente por horas. Nas redes, as interações que citam Pix vão de 23 para 104, com 66 negativas. No Reclame Aqui, 164 reclamações (96 na W45), com Pix pendente e valor que sumiu depois de três tentativas.",
+  "ra": [
+   "era1",
+   "era2",
+   "era3"
+  ]
  },
- "eventos": []
+ "eventos": [
+  {
+   "d": "16/11",
+   "tag": "Incidente",
+   "t": "Recebimento de Pix indisponível das 00:03 às 05:23, ligado ao BTG; alerta de Pix In reaberto às 05:29."
+  },
+  {
+   "d": "15/11",
+   "tag": "Incidente",
+   "t": "Certificado mTLS do BTG vencido: Pix Out por chave e QR Code indisponível; a Cyber atuou na renovação (#escalation_incidents)."
+  },
+  {
+   "d": "11/11",
+   "tag": "Incidente",
+   "t": "Pix instável com o BTG das 06:39 às 08:29: 91 contatos, 88,3% de absorção de bot e Central (96,7% de média)."
+  }
+ ],
+ "jornada": {
+  "falhas": "Erros e instabilidade concentram a piora: o salto de 15/11 e o recebimento pendente de 11/11 aparecem nos comentários da jornada.",
+  "cartao": "O Pix com cartão tem relatos de taxa informada diferente da cobrada na confirmação.",
+  "recebimento": "Recebimento é a etapa em que o Pix pendente pesa: o valor que o outro banco já enviou não aparece na carteira."
+ }
 }

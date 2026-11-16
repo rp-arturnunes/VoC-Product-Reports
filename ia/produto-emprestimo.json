@@ -1,10 +1,11 @@
 {
  "analise": {
-  "clientes": "O Empréstimo Pessoal perde satisfação na semana da falha da Equifax: CSAT de 72,6% para 61,7% e NPS de 68,2 para 64,0.",
-  "mudou": "Suporte humano cai 15% (748 para 632), com contratar e cancelar em alta.",
+  "clientes": "O Empréstimo Pessoal perde satisfação na semana da falha da Equifax: os clientes falam de limite que cai para R$ 10 ou R$ 20 mesmo pagando em dia, de empréstimo que virou limite do cartão sem entender e de cobrança em cartão de terceiro cadastrado.",
+  "mudou": "CSAT de 72,6% para 61,7% e NPS Transacional de 68,2 para 64,0. O suporte humano cai 15% (748 para 632), mas contratar sobe 13% e cancelar 19%; \"problemas com cartão de crédito\" cai de 158 para 66.",
   "atencao": [
    "Resolutividade de 69% para 60%.",
-   "Incidente de pagamento aberto em 16/11."
+   "Incidente de pagamento de empréstimo aberto em 16/11.",
+   "Cobrança no cartão de crédito de terceiro cadastrado no app aparece em vários relatos."
   ]
  },
  "motivos": [
@@ -13,9 +14,36 @@
    "n": 124,
    "ant": 110,
    "var": "+13%",
-   "det": null,
+   "det": {
+    "res": "O cliente que paga em dia espera limite maior e recebe R$ 10 ou R$ 20; quem não recebe oferta procura outra saída.",
+    "dor": [
+     "<b>Limite que cai depois de pagar:</b> de R$ 50 para R$ 10 após quitar.",
+     "<b>Limite que não volta:</b> o cliente pagou certinho e a oferta não retornou.",
+     "<b>Sem oferta:</b> pediu cartão com urgência e não recebeu proposta."
+    ],
+    "exp": "Que pagar em dia aumente o limite e que o valor ofertado resolva a necessidade.",
+    "falha": [
+     [
+      "Produto",
+      "O limite ofertado é pequeno e não evolui com o pagamento. Indício: relatos de 09 a 12/11 de limite de R$ 10 depois de pagar R$ 50."
+     ]
+    ],
+    "ex": [
+     "eg1",
+     "eg2",
+     "eg3",
+     "e16",
+     "e14",
+     "ele1"
+    ]
+   },
    "ex": [
-    "e16"
+    "eg1",
+    "eg2",
+    "eg3",
+    "e16",
+    "e14",
+    "ele1"
    ]
   },
   {
@@ -23,38 +51,134 @@
    "n": 102,
    "ant": 86,
    "var": "+19%",
-   "det": null,
-   "ex": []
+   "det": {
+    "res": "O cliente quer devolver o empréstimo pequeno que pegou sem querer ou que não aparece na carteira.",
+    "dor": [
+     "<b>Pegou sem querer:</b> eram R$ 10 ou R$ 20 pré-aprovados.",
+     "<b>Valor que não aparece:</b> o dinheiro consta no histórico, mas não na carteira.",
+     "<b>Foi para o cartão:</b> o empréstimo virou limite que o cliente diz não ter usado."
+    ],
+    "exp": "Que o empréstimo possa ser desfeito logo e que o valor apareça onde o cliente espera.",
+    "falha": [
+     [
+      "Produto",
+      "A contratação rápida de valor baixo não tem caminho claro de arrependimento. Indício: relatos de 09 e 12/11 pedindo devolução de R$ 10 ou R$ 20."
+     ]
+    ],
+    "ex": [
+     "eg4",
+     "eg5",
+     "eg6",
+     "eg7",
+     "eg8",
+     "e12"
+    ]
+   },
+   "ex": [
+    "eg4",
+    "eg5",
+    "eg6",
+    "eg7",
+    "eg8",
+    "e12"
+   ]
   },
   {
    "t": "Desconhece ou não concorda com a cobrança",
    "n": 82,
    "ant": 76,
    "var": "+8%",
-   "det": null,
+   "det": {
+    "res": "Cobrança no cartão de crédito cadastrado no app, às vezes de terceiro, para pagar empréstimo em atraso.",
+    "dor": [
+     "<b>Desconto em cartão de terceiro:</b> o cliente diz que o cartão é de outra pessoa.",
+     "<b>Sem autorização:</b> contrato só falava de débito automático, segundo o cliente.",
+     "<b>Pagamento já feito:</b> cobrança chega depois de pagar."
+    ],
+    "exp": "Que a cobrança siga a forma de pagamento do contrato e que o cliente seja avisado antes.",
+    "falha": [
+     [
+      "Produto",
+      "A cobrança no cartão cadastrado não estava descrita no contrato, segundo o cliente. Indício: relato de 11/11 sobre a cláusula do contrato."
+     ]
+    ],
+    "ex": [
+     "eg9",
+     "eg10",
+     "eg11",
+     "eg12",
+     "eg13",
+     "ere2"
+    ]
+   },
    "ex": [
-    "e12"
+    "eg9",
+    "eg10",
+    "eg11",
+    "eg12",
+    "eg13",
+    "ere2"
    ]
-  },
-  {
-   "t": "Empréstimo, problemas com cartão de crédito",
-   "n": 66,
-   "ant": 158,
-   "var": "-58%",
-   "det": null,
-   "ex": []
   }
  ],
- "temas": [],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Limite e evolução",
+   "n": 200,
+   "tom": "neg",
+   "x": "Detratores de 172 para 200: limite reduzido apesar de pagamento em dia e cobrança depois de pagamento antecipado."
+  },
+  {
+   "canal": "Lojas de apps",
+   "t": "Empréstimo baixo",
+   "n": 41,
+   "tom": "mix",
+   "x": "39% positivas; limite de R$ 10 ou R$ 20 que não aumenta, pagamento adiantado que aparece em atraso."
+  },
+  {
+   "canal": "Redes sociais",
+   "t": "Empréstimo de R$ 10 e QR para pagar",
+   "n": 15,
+   "tom": "neg",
+   "x": "Empréstimo de R$ 10 oferecido e dificuldade de gerar o QR para pagar a parcela."
+  }
+ ],
  "exemplos": {
   "NPS Transacional": [
    "e13",
-   "e14"
+   "e14",
+   "e12"
+  ],
+  "Lojas de apps": [
+   "ele1",
+   "ele2",
+   "ele3"
+  ],
+  "Redes sociais": [
+   "ere1",
+   "ere2",
+   "ere3"
   ]
  },
  "mencoes": {
-  "texto": "",
-  "ra": []
+  "texto": "Nas lojas, o Empréstimo aparece em 41 avaliações (33 na W45), 39% positivas, com limite de R$ 10 ou R$ 20 que não evolui. Nas redes, 15 interações (12 na W45), com empréstimo de R$ 10 e dificuldade de gerar o QR para pagar. No Reclame Aqui, 127 reclamações (132 na W45), com empréstimo enviado ao cartão bloqueado e cobrança depois do pagamento.",
+  "ra": [
+   "era7",
+   "era8",
+   "era9"
+  ]
  },
- "eventos": []
+ "eventos": [
+  {
+   "d": "09/11",
+   "tag": "Incidente",
+   "t": "Equifax instável e erro 500 nos endpoints de empréstimo, 13:53–15:54: 28 contatos, 94,3% de absorção; nenhum dos 25 tickets humanos cita a falha."
+  }
+ ],
+ "jornada": {
+  "parcelas": "Parcelas e pagamento: o QR de pagamento e a cobrança no cartão aparecem nos relatos da semana.",
+  "cobranca": "Cobrança e atraso tem a menor parcela positiva da jornada.",
+  "juros": "Juros e custos concentram comentários negativos."
+ }
 }

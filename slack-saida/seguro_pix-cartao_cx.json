@@ -6,8 +6,8 @@
   {
    "produto": "Seguros",
    "chave": "seguros",
-   "texto": "**Seguros**\n**Resumo:** O suporte humano cai de 200 para 144 (−28%) e os casos especiais de 10 para 4. O CSAT cai de 82,1% para 65,7% (23 de 35) e a resolutividade de 84,2% para 69,6% (16 de 23).\n**Destaques da semana:**\n• CSAT e resolutividade em queda — 65,7% e 69,6%, ambos abaixo da W45; sem evento correlato nos reports ou no Slack da semana. Em acompanhamento.\n• Volume em queda por três semanas — 344, 332, 200 e 144 casos humanos desde a W43. Em queda.\n• Base de satisfação pequena — 35 respostas de CSAT; leitura preliminar. Em acompanhamento.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
-   "link_painel": true
+   "texto": "**Seguros**\n**Resumo:** O suporte humano cai de 200 para 144 (−28%) e os casos especiais de 10 para 4. O CSAT cai de 82,1% para 65,7% (23 de 35) e a resolutividade de 84,2% para 69,6% (16 de 23).\n**Destaques da semana:**\n• CSAT e resolutividade em queda — 65,7% e 69,6%, ambos abaixo da W45; sem evento correlato nos reports ou no Slack da semana. Em acompanhamento.\n• Volume em queda por três semanas — 344, 332, 200 e 144 casos humanos desde a W43. Em queda.\n• Base de satisfação pequena — 35 respostas de CSAT; leitura preliminar. Em acompanhamento.\n**Menções:**\n• Nas redes, 3 interações com desconto de R$ 5,99 no cartão.\n• No Reclame Aqui, 4 reclamações (8 na W45), com R$ 5,99 descontados sem contratação.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=seguros/rep|Ver no Report de Seguros>",
+   "link_painel": false
   }
  ]
 }

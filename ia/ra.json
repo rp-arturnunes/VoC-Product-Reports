@@ -1,0 +1,179 @@
+{
+ "texto": "O Reclame Aqui recebeu 554 reclamações na W46 (+8% sobre a W45, o maior volume em 10 semanas). O Pix vai de 96 para 164 (+71%), com Pix pendente e dinheiro que não entra; o Tap to Pay de 39 para 46 e CDB de 38 para 41. O Cartão (232 para 207) e o Empréstimo (132 para 127) recuam depois do pico da W45, e Contas e Boletos cai de 20 para 11. Seguro cobrado sem contratação segue com relatos de R$ 5,99.",
+ "aviso": "Base HugMe (prod.cx.fat_hugme_tickets), pela data da reclamação. Produto pelo texto da reclamação (mapeamento do painel 141); uma reclamação pode citar mais de um produto, então os produtos não somam o total.",
+ "temas": [
+  {
+   "t": "Pix pendente e dinheiro que não entra",
+   "p": "pix",
+   "v": [
+    86,
+    64,
+    82,
+    86,
+    92,
+    76,
+    79,
+    77,
+    96,
+    164
+   ],
+   "det": "Reclamações que citam Pix vão de 96 para 164. Os relatos falam de Pix recebido pendente por mais de 7 horas, de valor que sumiu depois de três tentativas e de transações que o cliente diz não ter feito.",
+   "ex": [
+    "era1",
+    "era2",
+    "era3"
+   ]
+  },
+  {
+   "t": "Cartão: fatura, anuidade e cashback",
+   "p": "cartao",
+   "v": [
+    173,
+    140,
+    121,
+    144,
+    138,
+    131,
+    127,
+    147,
+    232,
+    207
+   ],
+   "det": "Reclamações do Cartão recuam de 232 para 207 depois do pico da anuidade. Os relatos falam de fatura de venda do Tap to Pay, anuidade de cartão virtual sem uso e cashback que não funciona em compras grandes.",
+   "ex": [
+    "era10",
+    "era11",
+    "era18"
+   ]
+  },
+  {
+   "t": "Empréstimo: cobrança e valor baixo",
+   "p": "emprestimo",
+   "v": [
+    111,
+    118,
+    122,
+    112,
+    116,
+    108,
+    102,
+    83,
+    132,
+    127
+   ],
+   "det": "Reclamações de empréstimo ficam em 127. Os relatos falam de empréstimo enviado ao cartão bloqueado, cobrança depois do pagamento e desconto no cartão de crédito sem aviso.",
+   "ex": [
+    "era7",
+    "era8",
+    "era9"
+   ]
+  },
+  {
+   "t": "Saldo bloqueado e conta encerrada",
+   "p": "fraude",
+   "v": [
+    197,
+    92,
+    105,
+    108,
+    123,
+    97,
+    115,
+    126,
+    139,
+    123
+   ],
+   "det": "As reclamações de bloqueio e encerramento ficam em 123. Os clientes citam prazo de análise vencido e conta cancelada sem os itens dos Termos de Uso.",
+   "ex": [
+    "era4",
+    "era5",
+    "era6"
+   ]
+  },
+  {
+   "t": "Tap to Pay: venda que vira fatura",
+   "p": "t2p",
+   "v": [
+    55,
+    21,
+    17,
+    28,
+    24,
+    23,
+    21,
+    33,
+    39,
+    46
+   ],
+   "det": "Reclamações do Tap to Pay vão de 39 para 46. Os relatos falam de venda que foi para o cartão empreendedor, de valor sacado que gera fatura e de resgate que não é liberado.",
+   "ex": [
+    "era12",
+    "era13",
+    "era14"
+   ]
+  },
+  {
+   "t": "Seguro cobrado sem contratação",
+   "p": "seguros",
+   "v": [
+    6,
+    1,
+    0,
+    3,
+    5,
+    2,
+    3,
+    0,
+    8,
+    4
+   ],
+   "det": "Reclamações do seguro ficam em 4 na W46 (8 na W45). Os relatos falam de R$ 5,99 descontados do cartão sem contratação e de cancelamento que não é concluído.",
+   "ex": [
+    "era15",
+    "era16"
+   ]
+  },
+  {
+   "t": "Cashback sumido",
+   "p": "boletos",
+   "v": [
+    25,
+    14,
+    12,
+    20,
+    14,
+    9,
+    16,
+    7,
+    20,
+    11
+   ],
+   "det": "Reclamações de cashback ficam em 11. O cliente diz que o saldo de cashback sumiu e que é cobrado por fatura que não reconhece.",
+   "ex": [
+    "era17",
+    "era18"
+   ]
+  },
+  {
+   "t": "Acesso e abertura de conta",
+   "p": "conta",
+   "v": [
+    40,
+    44,
+    44,
+    50,
+    46,
+    42,
+    57,
+    56,
+    53,
+    50
+   ],
+   "det": "Reclamações de cadastro e acesso ficam em 50. Os relatos falam de login com e-mail antigo e de conta aberta sem o cliente ter pedido, quando só queria recarregar o bilhete.",
+   "ex": [
+    "era19",
+    "era20"
+   ]
+  }
+ ]
+}

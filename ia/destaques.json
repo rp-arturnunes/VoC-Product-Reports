@@ -4,18 +4,52 @@
    "t": "Uso do Cartão em alta",
    "p": "cartao",
    "m": "\"Problemas com o uso do cartão\" de 91 para 209 (+130%)",
-   "x": "Novo tema do Cartão sem evento correlato registrado, na semana em que fatura e bloqueio recuam.",
+   "x": "Compras recusadas no app e aprovadas no banco do cartão, pagamento com Apple Pay recusado e parcelamento negado.",
    "sl": "Em acompanhamento",
    "s": "Sem evento correlato nos reports ou no Slack da semana; NPS 45,8 ainda abaixo do mínimo de 55.",
-   "det": "O motivo dobra e passa a ser o 4º do Cartão. Fatura (358 para 287) e bloqueio/cancelamento (435 para 288) recuam depois do maior lote da anuidade da W45. O CSAT cai de 82,8% para 75,5% e o NPS sobe de 41,4 para 45,8. Comentários seguem sobre anuidade e juros.",
+   "det": "O motivo dobra e passa a ser o 3º do Cartão, atrás de bloqueio/cancelamento (288) e fatura (287), que recuam depois do maior lote da anuidade da W45. O CSAT cai de 82,8% para 75,5% e o NPS sobe de 41,4 para 45,8. Os relatos falam de compra autorizada pelo banco e rejeitada no app, de pagamento do empréstimo de outro app recusado e de parcelamento negado.",
    "ex": [
-    "e1",
-    "e2",
-    "e3",
-    "e4",
-    "e5"
+    "eu1",
+    "eu2",
+    "eu3",
+    "eu4",
+    "eu5",
+    "ef5"
    ],
-   "rank": 6
+   "rank": 6,
+   "serie": {
+    "l": "Suporte humano: Cartão (10 semanas)",
+    "v": [
+     1791,
+     1614,
+     1241,
+     1513,
+     1688,
+     1556,
+     1288,
+     1689,
+     2088,
+     1841
+    ],
+    "u": ""
+   },
+   "serie2": {
+    "l": "NPS Transacional do Cartão (10 semanas)",
+    "v": [
+     61.0,
+     62.3,
+     57.1,
+     57.4,
+     57.9,
+     55.9,
+     52.5,
+     52.4,
+     41.4,
+     45.8
+    ],
+    "u": "pts"
+   },
+   "img": "https://lh3.googleusercontent.com/d/1p242JTJ7riP3yuBzcGZBNAGs6Ddw1Lem=w400"
   },
   {
    "t": "Recebimento de Pix volta a falhar ligado ao BTG",
@@ -24,43 +58,119 @@
    "x": "O padrão se repete desde 06/11 e também em 11/11 (06:39–08:29).",
    "sl": "Em andamento",
    "s": "Alertas automáticos em #escalation_incidents ligam as falhas ao BTG; 11/11 teve absorção de bot e Central de 88,3% (média 96,7%).",
-   "det": "As investigações de #escalation_incidents apontam falha de transporte e de autenticação no BTG como origem do 502 em cascata. Em 11/11 o incidente tem 91 contatos e o bot retém só 16,5%. Em 16/11 o alerta fica ativo das 00:03 às 05:23.",
+   "det": "As investigações de #escalation_incidents apontam falha de transporte e de autenticação no BTG como origem do 502 em cascata. Em 11/11 o incidente tem 91 contatos e o bot retém só 16,5%. Os clientes de 11/11 falam de Pix recebido em processamento e do valor que não entra para pagar a van ou a recarga do transporte; em 12/11, de Pix recebido que foi cancelado.",
    "ex": [
-    "e6",
-    "e7",
-    "e9",
-    "e10",
-    "e8"
+    "ek1",
+    "ek2",
+    "ek3",
+    "ek4",
+    "ek5",
+    "ek7"
    ],
-   "rank": 7
+   "rank": 7,
+   "serie": {
+    "l": "Suporte humano: Pix (10 semanas)",
+    "v": [
+     947,
+     716,
+     681,
+     771,
+     846,
+     801,
+     863,
+     739,
+     803,
+     1535
+    ],
+    "u": ""
+   },
+   "img": "https://lh3.googleusercontent.com/d/1VlgqGZ6oZAG7NRUVlg4V5UmO8uvimx2v=w400"
   },
   {
    "t": "Recarga de transporte demora ou falha",
    "p": "transp",
    "m": "NPS 70,1 (−10,1); alerta ligado por mais de 12h em 11/11",
-   "x": "Comentários falam de recarga que demora até 24h e de app indisponível.",
+   "x": "Relatos de recarga que não cai no bilhete e de cadastro de bilhete com erro.",
    "sl": "Em acompanhamento",
    "s": "Alerta NewRelic desde 11/11 21:39, acima do limite de 2h (#cxm-team, 12/11); só 1% de quem viu o aviso era da cidade afetada (#squad_cx, 09/11).",
-   "det": "O NPS cai de 80,2 para 70,1 (26 detratores em 254 respostas) e o suporte humano de 103 para 45, com parte dos casos de 15/11 ainda sem classificação. Os comentários falam de recarga que não entra antes de pegar o ônibus, tentativas repetidas e indisponibilidade de dias.",
+   "det": "O NPS cai de 80,2 para 70,1 (26 detratores em 254 respostas) e o suporte humano de 103 para 45, com parte dos casos de 15/11 ainda sem classificação. Os relatos falam de recarga que não entra no bilhete depois de 24h, de cadastro de bilhete único com erro e de valor debitado que não chegou ao cartão de transporte.",
    "ex": [
-    "e31",
-    "e32",
-    "e33",
-    "e34",
-    "e35"
+    "er1",
+    "er2",
+    "er3",
+    "er4",
+    "er5",
+    "e33"
    ],
-   "rank": 8
+   "rank": 8,
+   "serie": {
+    "l": "NPS Transacional de Transporte (10 semanas)",
+    "v": [
+     75.0,
+     84.2,
+     74.1,
+     77.2,
+     67.4,
+     76.8,
+     79.2,
+     78.2,
+     80.2,
+     70.1
+    ],
+    "u": "pts"
+   },
+   "serie2": {
+    "l": "Suporte humano: Transporte (10 semanas)",
+    "v": [
+     198,
+     163,
+     128,
+     121,
+     158,
+     109,
+     98,
+     132,
+     103,
+     45
+    ],
+    "u": ""
+   },
+   "img": "https://lh3.googleusercontent.com/d/1kPKL1mQ4g4IhTQYCb8GK66VCjdBa_NGq=w400"
   },
   {
-   "t": "Acesso ao cadastro cai pela metade em Minha Conta",
+   "t": "Acesso e validação de identidade em Minha Conta",
    "p": "conta",
    "m": "\"Não consegue acessar o cadastro\" de 343 para 165",
-   "x": "Suporte humano de Minha Conta cai 39% com CSAT em 94% numa base de 17 respostas.",
+   "x": "Suporte humano de Minha Conta cai 39%; os relatos que sobram são de selfie recusada e login com erro.",
    "sl": "Em acompanhamento",
    "s": "Sem evento correlato registrado; parte dos casos de 15/11 ainda sem classificação.",
-   "det": "O suporte humano cai de 603 para 367; validar cadastro (92 para 84) e encerrar cadastro (59 para 47) ficam estáveis. O CSAT chega a 94% (16 de 17), contra 61,5% na W45.",
-   "ex": [],
-   "rank": 10
+   "det": "O suporte humano cai de 603 para 367; validar cadastro (92 para 84) e encerrar cadastro (59 para 47) ficam estáveis. O CSAT chega a 94% (16 de 17), contra 61,5% na W45. Os relatos que persistem são de reconhecimento facial que não funciona depois da atualização do app, selfie recusada por semanas e data de nascimento tida como errada.",
+   "ex": [
+    "ea1",
+    "ea2",
+    "ea4",
+    "ea5",
+    "ea6",
+    "eln1"
+   ],
+   "rank": 10,
+   "serie": {
+    "l": "Suporte humano: Minha Conta (10 semanas)",
+    "v": [
+     766,
+     795,
+     553,
+     651,
+     747,
+     768,
+     989,
+     829,
+     603,
+     367
+    ],
+    "u": ""
+   },
+   "img": "https://lh3.googleusercontent.com/d/1PiVbmBTFM1AreGRzBT_vKiV5Tw1HSDDS=w400"
   }
  ],
  "oport": [
@@ -71,18 +181,52 @@
    "x": "Fim do cashback em 05/11 coincide com NPS menor e com comentários de abandono.",
    "sl": "Em acompanhamento",
    "s": "Fim do cashback em 05/11 mapeado no report da W45; contato cede, NPS e comentários seguem negativos.",
-   "det": "O suporte humano de Contas e Boletos cai de 249 para 135 e o CSAT sobe de 75,7% para 89,3%. O NPS cai de 69,0 para 57,2 com detratores de 18 para 26. Em Recarga de Celular, o NPS cai de 81,5 para 75,0 com comentários de cashback retirado.",
+   "det": "O suporte humano de Contas e Boletos cai de 249 para 135 e o CSAT sobe de 75,7% para 89,3%. O NPS cai de 69,0 para 57,2 com detratores de 18 para 26. Nas lojas, as avaliações que citam boleto e cashback vão de 3 para 13 na W45 e ficam em 8 na W46, quase todas de 1 a 3 estrelas, com relatos de desinstalação.",
    "ex": [
-    "e25",
-    "e26",
-    "e27",
-    "e28",
-    "e29"
+    "elb1",
+    "elb2",
+    "elb3",
+    "elb4",
+    "elb5",
+    "elb6"
    ],
    "rank": 11,
    "ps": [
     "topup"
-   ]
+   ],
+   "serie": {
+    "l": "NPS Transacional de Contas e Boletos (10 semanas)",
+    "v": [
+     69.5,
+     73.0,
+     73.9,
+     73.1,
+     76.7,
+     82.4,
+     76.8,
+     70.6,
+     69.0,
+     57.2
+    ],
+    "u": "pts"
+   },
+   "serie2": {
+    "l": "Lojas de apps: avaliações que citam boleto e cashback (10 semanas)",
+    "v": [
+     2,
+     4,
+     1,
+     4,
+     3,
+     4,
+     2,
+     3,
+     13,
+     8
+    ],
+    "u": ""
+   },
+   "img": "https://lh3.googleusercontent.com/d/1YpEHur6-STULZzwYNlz-npP5TomuGHXC=w400"
   },
   {
    "t": "Solução para instabilidades no resgate do CDB",
@@ -91,26 +235,49 @@
    "x": "Solução implementada em 13/11 na jornada de resgate.",
    "sl": "Parcialmente resolvido",
    "s": "Anunciada em #cxm-team em 13/11; efeito ainda não medível por falta de dias após a entrega.",
-   "det": "O NPS vai de 67,9 para 70,0 com 39 promotores e 4 detratores em 50 respostas; o CSAT de 83,3% para 79,4%. O suporte humano sobe 6% (186 para 198) e o bot retém 49 sessões contra 123.",
-   "ex": [],
-   "rank": 12
-  },
-  {
-   "t": "NPS do Cartão recupera, mas segue abaixo do mínimo",
-   "p": "cartao",
-   "m": "NPS 45,8 (+4,4); mínimo 55",
-   "x": "Detratores 93 em 432 respostas; CSAT cai a 75,5%.",
-   "sl": "Não resolvido",
-   "s": "NPS segue abaixo do mínimo de 55 e da meta de 75.",
-   "det": "O NPS do Cartão sobe de 41,4 para 45,8, mas fica abaixo do mínimo de 55. O CSAT cai 7,3 pp e o suporte humano recua 11,8% (2.088 para 1.841).",
+   "det": "O NPS vai de 67,9 para 70,0 com 39 promotores e 4 detratores em 50 respostas; o CSAT de 83,3% para 79,4%. O suporte humano sobe 6% (186 para 198) e o bot retém 49 sessões contra 123. Os relatos da semana, anteriores à entrega, falam de resgate que o app dizia levar um dia útil e não chegou e de CDB do cartão Titan que só sai cancelando o cartão.",
    "ex": [
-    "e1",
-    "e2",
-    "e3",
-    "e4",
-    "e5"
+    "em1",
+    "em2",
+    "em3",
+    "em4",
+    "em5",
+    "eld1"
    ],
-   "rank": 14
+   "rank": 12,
+   "serie": {
+    "l": "NPS Transacional do CDB (10 semanas)",
+    "v": [
+     55.9,
+     71.9,
+     66.7,
+     65.7,
+     64.8,
+     55.3,
+     74.1,
+     71.4,
+     67.9,
+     70.0
+    ],
+    "u": "pts"
+   },
+   "serie2": {
+    "l": "Suporte humano: CDB (10 semanas)",
+    "v": [
+     149,
+     167,
+     179,
+     155,
+     182,
+     164,
+     169,
+     210,
+     186,
+     198
+    ],
+    "u": ""
+   },
+   "img": "https://lh3.googleusercontent.com/d/1FaWpztB4nKO6EQkegcTUCwPwPIL10EyN=w400"
   },
   {
    "t": "NPS de Recarga de Celular cai 6,5 pts",
@@ -119,48 +286,102 @@
    "x": "Base pequena; comentários citam cashback retirado e taxas.",
    "sl": "Em acompanhamento",
    "s": "Sem evento correlato além do fim do cashback em 05/11; volume de suporte humano de 10 casos.",
-   "det": "O NPS cai de 81,5 para 75,0 com 82 promotores e 10 detratores. O suporte humano vai de 8 para 10 casos. Os comentários citam cashback retirado e taxas altas.",
+   "det": "O NPS cai de 81,5 para 75,0 com 82 promotores e 10 detratores. O suporte humano vai de 8 para 10 casos. Os comentários citam cashback retirado, pedido de cashback em todas as recargas e taxas altas.",
    "ex": [
     "e27",
     "e28",
     "e30",
-    "e29"
+    "e38",
+    "e39",
+    "e3a"
    ],
-   "rank": 15
+   "rank": 15,
+   "serie": {
+    "l": "NPS Transacional de Recarga de Celular (10 semanas)",
+    "v": [
+     80.0,
+     80.5,
+     73.3,
+     84.3,
+     80.0,
+     78.5,
+     85.0,
+     79.5,
+     81.5,
+     75.0
+    ],
+    "u": "pts"
+   },
+   "img": "https://lh3.googleusercontent.com/d/1LU1E91gcAthQ3K4Irt5BEDTf-aZgTwr_=w400"
   }
  ],
  "agir": [
   {
    "t": "Pix indisponível por certificado vencido do BTG",
    "p": "pix",
-   "m": "Pix +91% no suporte humano; \"instabilidade no app\" de 42 para 628",
+   "m": "Pix +91% no suporte humano; redes 23 para 104; Reclame Aqui 96 para 164",
    "x": "Pix Out por chave e QR Code ficou indisponível no domingo 15/11 e o recebimento voltou a falhar em 16/11.",
    "sl": "Parcialmente resolvido",
    "s": "Squad confirmou o certificado vencido em #escalation_incidents (15/11); recebimento voltou a falhar em 16/11 00:03–05:23.",
-   "det": "O suporte humano do Pix passa de 803 para 1.535 casos. \"Instabilidade no app\" vai de 42 para 628 e \"não consegue realizar o pix\" de 241 para 382. O domingo 15/11 chega a 699 casos, contra cerca de 140 por dia nos seis dias anteriores. A investigação automática de 15/11 09:11 aponta 43 mil erros 502 em 33 minutos; a squad confirmou o vencimento do certificado mTLS do BTG e a Cyber atuou na renovação.",
+   "det": "O suporte humano do Pix passa de 803 para 1.535 casos e \"instabilidade no app\" de 42 para 628. O domingo 15/11 chega a 699 casos, contra cerca de 140 por dia nos seis dias anteriores. A squad confirmou o vencimento do certificado mTLS do BTG e a Cyber atuou na renovação. Nas redes, as citações ao Pix vão de 23 para 104 e, no Reclame Aqui, de 96 para 164; os clientes falam de Pix pendente por horas e de dinheiro sem estorno.",
    "ex": [
-    "e6",
-    "e7",
-    "e8",
-    "e9",
-    "e10"
+    "erd1",
+    "erd2",
+    "elj1",
+    "elj2",
+    "era1",
+    "e6"
    ],
-   "rank": 1
+   "rank": 1,
+   "serie": {
+    "l": "Redes sociais: interações públicas que citam Pix (10 semanas)",
+    "v": [
+     10,
+     4,
+     10,
+     6,
+     3,
+     19,
+     14,
+     16,
+     23,
+     104
+    ],
+    "u": ""
+   },
+   "serie2": {
+    "l": "Reclame Aqui: reclamações que citam Pix (10 semanas)",
+    "v": [
+     86,
+     64,
+     82,
+     86,
+     92,
+     76,
+     79,
+     77,
+     96,
+     164
+    ],
+    "u": ""
+   },
+   "img": "https://lh3.googleusercontent.com/d/1ZheqbpCeTJdmSobCY_iGxdwoi5zh3a4P=w400"
   },
   {
-   "t": "NPS Transacional no menor nível em 5 semanas",
+   "t": "NPS Transacional no menor nível em 10 semanas",
    "p": "cartao",
    "m": "NPS 63,6 (−2,1 pp); Link −24,7, Contas e Boletos −11,8, Transporte −10,1",
    "x": "Quedas em quatro produtos e CSAT geral em 69,7%, abaixo do piso de 75%.",
    "sl": "Não resolvido",
-   "s": "Semana fecha em 63,6 contra 65,7 na W45 e 70,1 na W42.",
+   "s": "Semana fecha em 63,6 contra 65,7 na W45 e 71,5 na W38.",
    "det": "O NPS Transacional geral cai de 65,7 para 63,6 (4.361 respostas). Link de Pagamento (53,7 para 29,0, base de 62), Contas e Boletos (69,0 para 57,2), Transporte (80,2 para 70,1) e Empréstimo (68,2 para 64,0) perdem pontos; o Cartão recupera de 41,4 para 45,8. O CSAT geral cai de 76,4% para 69,7%. O NPS Relacional também recua, de 46,1 para 39,2.",
    "ex": [
     "e1",
     "e17",
     "e25",
     "e31",
-    "e12"
+    "e12",
+    "e27"
    ],
    "rank": 2,
    "ps": [
@@ -168,7 +389,40 @@
     "transp",
     "link",
     "emprestimo"
-   ]
+   ],
+   "serie": {
+    "l": "NPS Transacional geral (10 semanas)",
+    "v": [
+     70.6,
+     71.5,
+     69.5,
+     70.9,
+     69.5,
+     70.1,
+     70.2,
+     67.9,
+     65.7,
+     63.6
+    ],
+    "u": "pts"
+   },
+   "serie2": {
+    "l": "CSAT geral, % satisfeitos (10 semanas)",
+    "v": [
+     70.6,
+     74.7,
+     75.6,
+     73.1,
+     77.1,
+     75.3,
+     72.7,
+     78.2,
+     76.4,
+     69.7
+    ],
+    "u": ""
+   },
+   "img": "https://lh3.googleusercontent.com/d/1IHaWUCXxrBrtsxgcBlxTh5JaSoGbOMMs=w400"
   },
   {
    "t": "Carteira Desativada mais que dobra no saldo bloqueado",
@@ -177,15 +431,49 @@
    "x": "\"Saldo da carteira bloqueado, todo o saldo\" concentra a alta, com CSAT em 56,1%.",
    "sl": "Não resolvido",
    "s": "Sem evento correlato nos reports ou no Slack da semana; CSAT estável e baixo (56,1% contra 56,3%).",
-   "det": "O suporte humano de Carteira Desativada vai de 349 para 776 casos e o bloqueio total de saldo de 271 para 667 (+146%); o parcial fica em 55. Os resumos dos tickets falam de bloqueio sem explicação do motivo, prazo prometido de 72 horas que não é cumprido e valor necessário para pagar aluguel ou remédio. O CSAT está em 56,1% (23 de 41).",
+   "det": "O suporte humano de Carteira Desativada vai de 349 para 776 casos e o bloqueio total de saldo de 271 para 667 (+146%). Nas conversas, o cliente diz que o prazo de desbloqueio prometido não foi cumprido, que não sabe a origem do bloqueio (contestação de Pix que diz não ter feito) e que precisa do valor para pagar contas. Nas redes, as interações sobre bloqueio vão de 9 para 16 (15 negativas).",
    "ex": [
-    "e40",
-    "e41",
-    "e42",
-    "e43",
-    "e44"
+    "et3",
+    "et4",
+    "et5",
+    "et6",
+    "et7",
+    "erf1"
    ],
-   "rank": 3
+   "rank": 3,
+   "serie": {
+    "l": "Suporte humano: Carteira Desativada (10 semanas)",
+    "v": [
+     499,
+     486,
+     328,
+     551,
+     547,
+     370,
+     407,
+     480,
+     349,
+     776
+    ],
+    "u": ""
+   },
+   "serie2": {
+    "l": "Redes sociais: interações sobre bloqueio e encerramento (10 semanas)",
+    "v": [
+     2,
+     9,
+     12,
+     11,
+     5,
+     13,
+     4,
+     5,
+     9,
+     16
+    ],
+    "u": ""
+   },
+   "img": "https://lh3.googleusercontent.com/d/17gN8pInhyH3YPvOGwFAfm993U1mxXG63=w400"
   },
   {
    "t": "CSAT do Empréstimo Pessoal em 61,7%",
@@ -194,55 +482,141 @@
    "x": "CSAT e resolutividade (60%) caem; contratar (124) e cancelar (102) sobem.",
    "sl": "Não resolvido",
    "s": "Equifax instável em 09/11 (13:53–15:54) sem relato nos tickets humanos; novo incidente de pagamento em 16/11.",
-   "det": "O CSAT cai de 72,6% para 61,7% e a resolutividade de 69% para 60%. Os detratores do NPS sobem de 172 para 200. \"Não consegue contratar\" vai de 110 para 124 e \"deseja cancelar\" de 86 para 102. Os comentários falam de limite reduzido apesar de pagamento em dia e de cobrança depois de pagamento antecipado.",
+   "det": "O CSAT cai de 72,6% para 61,7% e a resolutividade de 69% para 60%; os detratores do NPS sobem de 172 para 200. \"Não consegue contratar\" vai de 110 para 124 e \"deseja cancelar\" de 86 para 102. Os relatos falam de limite que cai para R$ 10 ou R$ 20 mesmo com pagamento em dia, de empréstimo que virou limite do cartão sem o cliente entender e de cobrança em cartão de terceiro cadastrado.",
    "ex": [
-    "e12",
-    "e13",
-    "e14",
-    "e15",
-    "e16"
+    "eg1",
+    "eg2",
+    "eg4",
+    "eg9",
+    "eg14",
+    "e13"
    ],
-   "rank": 4
+   "rank": 4,
+   "serie": {
+    "l": "CSAT do Empréstimo, % satisfeitos (10 semanas)",
+    "v": [
+     71.8,
+     75.3,
+     78.2,
+     72.0,
+     81.9,
+     65.1,
+     70.8,
+     68.2,
+     72.6,
+     61.7
+    ],
+    "u": ""
+   },
+   "serie2": {
+    "l": "NPS Transacional do Empréstimo (10 semanas)",
+    "v": [
+     71.7,
+     68.9,
+     71.9,
+     71.0,
+     71.0,
+     70.6,
+     70.4,
+     68.2,
+     68.2,
+     64.0
+    ],
+    "u": "pts"
+   },
+   "img": "https://lh3.googleusercontent.com/d/1d07zoUjKi3hOieTLWr5O1z8c9IY02Pjh=w400"
   },
   {
    "t": "NPS do Link de Pagamento cai de 53,7 para 29,0",
    "p": "link",
    "m": "NPS −24,7; detratores de 8 para 19 em 62 respostas",
-   "x": "O comentário recorrente é o prazo para o dinheiro cair e a taxa do cartão.",
+   "x": "O comentário recorrente é o prazo para o dinheiro cair e o link que recusa o pagamento do cliente.",
    "sl": "Sem registro",
    "s": "Sem evento correlato nos reports ou no Slack da semana; base de 62 respostas.",
-   "det": "O NPS cai de 53,7 para 29,0 com 37 promotores e 19 detratores em 62 respostas. O suporte humano fica em 66 casos nas duas semanas e o bot retém 3 sessões contra 16. Os comentários falam de demora para receber (próximo dia útil que não chega), taxa do cartão somada à taxa normal e venda que precisa de espera no fim de semana. O Tap to Pay tem o mesmo tema de dinheiro que não cai.",
+   "det": "O NPS cai de 53,7 para 29,0 com 37 promotores e 19 detratores em 62 respostas. O suporte humano fica em 66 casos nas duas semanas e o bot retém 3 sessões contra 16. Os relatos falam de link que recusa o pagamento do cliente, link não encontrado e venda aprovada no banco do cliente que não aparece no app; nos comentários, a demora para receber e a taxa do cartão.",
    "ex": [
-    "e17",
-    "e18",
-    "e19",
-    "e20",
-    "e21"
+    "el1",
+    "el2",
+    "el3",
+    "el4",
+    "el5",
+    "e17"
    ],
    "rank": 5,
    "ps": [
     "t2p"
-   ]
+   ],
+   "serie": {
+    "l": "NPS Transacional do Link de Pagamento (10 semanas)",
+    "v": [
+     34.3,
+     39.6,
+     62.7,
+     39.0,
+     48.3,
+     40.7,
+     61.0,
+     48.7,
+     53.7,
+     29.0
+    ],
+    "u": "pts"
+   },
+   "img": "https://lh3.googleusercontent.com/d/1coBm8idviYCCIZLG7IFJ1D5T7MfL0omP=w400"
   },
   {
-   "t": "CSAT do Seguros e do Tap to Pay abaixo do piso",
-   "p": "seguros",
-   "m": "Seguros 65,7% (−16,4 pp); Tap to Pay 71,0% (−10,6 pp)",
-   "x": "Seguros também perde resolutividade (84,2% para 69,6%).",
+   "t": "Venda no Tap to Pay vira limite e fatura do cartão",
+   "p": "t2p",
+   "m": "CSAT 71,0% (−10,6 pp); Reclame Aqui 39 para 46",
+   "x": "Clientes dizem que a venda foi para o cartão empreendedor e gerou fatura; o volume de suporte do produto está estável.",
    "sl": "Sem registro",
-   "s": "Sem evento correlato nos reports ou no Slack da semana; bases de 35 e 62 respostas.",
-   "det": "O CSAT do Seguros cai de 82,1% para 65,7% (23 de 35) e a resolutividade de 84,2% para 69,6%. O suporte humano cai de 200 para 144. No Tap to Pay, o CSAT vai de 81,6% para 71,0% (44 de 62) com o NPS ainda em 81,1. Comentários de Pix e Empréstimo citam seguro contratado sem autorização.",
+   "s": "Sem evento correlato nos reports ou no Slack da semana; relatos em atendimento e no Reclame Aqui.",
+   "det": "O CSAT cai de 81,6% para 71,0% (44 de 62) com o NPS ainda em 81,1; o suporte humano sobe 6% (249 para 263) e o Reclame Aqui vai de 39 para 46. Os relatos falam de valor da venda que vai para o cartão empreendedor, é sacado e depois vem como fatura, de venda aprovada no banco do cliente que não entra e de compra cancelada sem reembolso. O mesmo tema de limite e fatura aparece no Cartão.",
    "ex": [
-    "e11",
-    "e15",
-    "e22",
-    "e23",
-    "e24"
+    "eh1",
+    "eh2",
+    "eh3",
+    "eh4",
+    "eh5",
+    "era12"
    ],
    "rank": 9,
    "ps": [
-    "t2p"
-   ]
+    "cartao"
+   ],
+   "serie": {
+    "l": "CSAT do Tap to Pay, % satisfeitos (10 semanas)",
+    "v": [
+     75.0,
+     97.8,
+     77.4,
+     94.7,
+     83.8,
+     86.5,
+     77.8,
+     83.9,
+     81.6,
+     71.0
+    ],
+    "u": ""
+   },
+   "serie2": {
+    "l": "Reclame Aqui: reclamações que citam Tap to Pay (10 semanas)",
+    "v": [
+     55,
+     21,
+     17,
+     28,
+     24,
+     23,
+     21,
+     33,
+     39,
+     46
+    ],
+    "u": ""
+   },
+   "img": "https://lh3.googleusercontent.com/d/1dLYRTfETmcQg3C9nu6aZz586VrNf2WFX=w400"
   },
   {
    "t": "CSAT de Conta Desativada e Chargeback Recovery muito baixo",
@@ -251,9 +625,100 @@
    "x": "Volumes estáveis ou em leve alta com satisfação muito abaixo do piso de 75%.",
    "sl": "Em acompanhamento",
    "s": "Sem evento correlato registrado; bases pequenas.",
-   "det": "Conta Desativada fica com 373 casos (+3%) e CSAT de 23,8%, contra 50,0% na W45. Chargeback Recovery sobe 16% (204 para 237) e o CSAT vai de 42,9% para 46,4% com resolutividade de 43%. Bases de 8 a 28 respostas pedem leitura preliminar.",
-   "ex": [],
-   "rank": 13
+   "det": "Conta Desativada fica com 373 casos (+3%) e CSAT de 23,8%, contra 50,0% na W45. Chargeback Recovery sobe 16% (204 para 237) e o CSAT vai de 42,9% para 46,4% com resolutividade de 43%. Os relatos falam de saldo bloqueado com prazo vencido, de cobrança por compra que o cliente diz não ter feito e de Pix que não sai por débito em aberto.",
+   "ex": [
+    "ec1",
+    "ec2",
+    "ec3",
+    "eb1",
+    "eb4",
+    "eb5"
+   ],
+   "rank": 13,
+   "serie": {
+    "l": "CSAT de Conta Desativada, % satisfeitos (10 semanas)",
+    "v": [
+     20.0,
+     43.8,
+     16.7,
+     42.9,
+     44.8,
+     45.0,
+     51.9,
+     35.3,
+     50.0,
+     23.8
+    ],
+    "u": ""
+   },
+   "serie2": {
+    "l": "CSAT de Chargeback Recovery, % satisfeitos (10 semanas)",
+    "v": [
+     57.1,
+     64.3,
+     56.2,
+     45.8,
+     41.7,
+     25.0,
+     57.1,
+     45.8,
+     42.9,
+     46.4
+    ],
+    "u": ""
+   },
+   "img": "https://lh3.googleusercontent.com/d/1YpbZiMUH90ngHNyrXUBYjf34vqMh_KZU=w400"
+  },
+  {
+   "t": "Seguro cobrado sem contratação e CSAT em 65,7%",
+   "p": "seguros",
+   "m": "CSAT 65,7% (−16,4 pp); contatos do seguro Pix e Cartão −41%",
+   "x": "Os contatos sobre o seguro caem, mas quem procura o atendimento diz que não contratou os R$ 5,99.",
+   "sl": "Em acompanhamento",
+   "s": "Contatos do seguro Pix e Cartão de 797 para 472; relatos de desconto não reconhecido em atendimento, NPS e Reclame Aqui.",
+   "det": "O CSAT do Seguros cai de 82,1% para 65,7% (23 de 35) e a resolutividade de 84,2% para 69,6%; o suporte humano cai de 200 para 144. No Pix e Cartão, os contatos de segurados caem de 797 para 472 e 341 contestam a contratação; os relatos são de desconto de R$ 5,99 junto a um Pix ou venda que o cliente não reconhece.",
+   "ex": [
+    "es1",
+    "es2",
+    "es3",
+    "es4",
+    "es6",
+    "era15"
+   ],
+   "rank": 14,
+   "serie": {
+    "l": "Suporte humano de Seguros (10 semanas)",
+    "v": [
+     230,
+     240,
+     160,
+     278,
+     455,
+     402,
+     344,
+     332,
+     200,
+     144
+    ],
+    "u": ""
+   },
+   "serie2": {
+    "l": "CSAT do Seguros, % satisfeitos (10 semanas)",
+    "v": [
+     78.9,
+     84.6,
+     95.0,
+     78.9,
+     91.8,
+     74.1,
+     90.0,
+     93.1,
+     82.1,
+     65.7
+    ],
+    "u": ""
+   },
+   "img": "https://lh3.googleusercontent.com/d/1YAh50j2jrGFmpOc033oHpKAbtB6biDKu=w400"
   }
  ]
 }

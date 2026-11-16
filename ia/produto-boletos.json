@@ -1,9 +1,10 @@
 {
  "analise": {
-  "clientes": "Contas e Boletos perde 11,8 pts de NPS (69,0 para 57,2) depois do fim do cashback de 05/11, com \"não recebi o cashback\" de 96 para 51.",
-  "mudou": "Suporte humano de 249 para 135 e CSAT de 75,7% para 89,3%.",
+  "clientes": "Contas e Boletos perde 11,8 pts de NPS (69,0 para 57,2) depois do fim do cashback de 05/11: os clientes dizem que a regra mudou de uma hora para outra e que vão desinstalar o app.",
+  "mudou": "Suporte humano de 249 para 135, CSAT de 75,7% para 89,3% e \"não recebi o cashback\" de 96 para 51.",
   "atencao": [
-   "Cashback ainda é o 1º motivo do produto."
+   "Cashback ainda é o 1º motivo do produto.",
+   "Avaliações de loja sobre boleto e cashback: 13 na W45 e 8 na W46."
   ]
  },
  "motivos": [
@@ -12,26 +13,83 @@
    "n": 51,
    "ant": 96,
    "var": "-47%",
-   "det": null,
+   "det": {
+    "res": "O contato cede, mas o cliente cita o fim do cashback como motivo para deixar o app.",
+    "dor": [
+     "<b>Regra que muda sem aviso:</b> o cliente diz que o ganho foi retirado de uma hora para outra.",
+     "<b>Renda extra perdida:</b> quem recebe boletos em loja diz que o app não paga mais.",
+     "<b>Abandono:</b> clientes dizem que estão desinstalando."
+    ],
+    "exp": "Que o cashback prometido continue ou que a mudança seja comunicada antes.",
+    "falha": [
+     [
+      "Produto",
+      "O fim do cashback não veio acompanhado de alternativa para quem vive dele. Indício: avaliações de 09 a 12/11 pedindo o ganho de volta."
+     ]
+    ],
+    "ex": [
+     "elb1",
+     "elb2",
+     "elb3",
+     "elb4",
+     "elb5",
+     "e25"
+    ]
+   },
    "ex": [
-    "e25",
-    "e26",
-    "e27",
-    "e28",
-    "e29"
+    "elb1",
+    "elb2",
+    "elb3",
+    "elb4",
+    "elb5",
+    "e25"
    ]
   }
  ],
- "temas": [],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Cashback retirado",
+   "n": 26,
+   "tom": "neg",
+   "x": "Detratores de 18 para 26: cashback retirado de pagamentos de contas e taxas iguais às dos concorrentes."
+  },
+  {
+   "canal": "Lojas de apps",
+   "t": "Fim do cashback",
+   "n": 8,
+   "tom": "neg",
+   "x": "Boleto e cashback: avaliações com desinstalação."
+  }
+ ],
  "exemplos": {
   "NPS Transacional": [
    "e25",
-   "e26"
+   "e26",
+   "e29"
+  ],
+  "Lojas de apps": [
+   "elb2",
+   "elb3",
+   "elb4"
   ]
  },
  "mencoes": {
-  "texto": "",
-  "ra": []
+  "texto": "Nas lojas, 8 avaliações citam boleto e cashback (13 na W45), 2 positivas. Nas redes, 3 interações (10 na W45). No Reclame Aqui, 11 reclamações (20 na W45), com cashback sumido.",
+  "ra": [
+   "era17",
+   "era18"
+  ]
  },
- "eventos": []
+ "eventos": [
+  {
+   "d": "05/11",
+   "tag": "Feature",
+   "t": "Fim do cashback em contas e boletos pagos com saldo (report da W45)."
+  }
+ ],
+ "jornada": {
+  "cashback": "Cashback: a parcela positiva cai frente ao período anterior.",
+  "pagamento": "Pagamento de contas: parcela positiva menor que no período anterior."
+ }
 }

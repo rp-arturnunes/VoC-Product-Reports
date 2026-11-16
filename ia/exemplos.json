@@ -11,14 +11,6 @@
   "t": "a política de anuidade, me decepcionou grandemente. já indiquei no passado, uso a recarga pay há anos",
   "m": "NPS Transacional · usuário 4253094 · 15/11"
  },
- "e4": {
-  "t": "as taxas de juros para pagamento à vista e parcelado subiram consideravelmente e sem explicação nos últimos 2 m…",
-  "m": "NPS Transacional · usuário 51273801 · 09/11"
- },
- "e5": {
-  "t": "eu tenho vários cartões que eu nunca paguei a anuidade. e aí vem o recarga pay me cobra",
-  "m": "NPS Transacional · usuário 16624929 · 13/11"
- },
  "e6": {
   "t": "até agora não consigo fazer pagamento via qr code via pix para outras contas",
   "m": "NPS Transacional · usuário 50298921 · 15/11"
@@ -26,14 +18,6 @@
  "e7": {
   "t": "não consigo enviar para a pessoa o pix porque está pendente. eu quero resolver esse problema.",
   "m": "NPS Transacional · usuário 42503271 · 15/11"
- },
- "e8": {
-  "t": "o que eu melhoraria seria a estabilidade do aplicativo, mais agilidade",
-  "m": "NPS Transacional · usuário 42439010 · 12/11"
- },
- "e9": {
-  "t": "um absurdo o app demora muito vc faz pix demora cair atualizar",
-  "m": "NPS Transacional · usuário 31519293 · 13/11"
  },
  "e10": {
   "t": "deveria chegar mais rápido a confirmação de pagamento e na notificação aparecer logo o valor recebido",
@@ -139,36 +123,704 @@
   "t": "muito burocracia para fazer uma recarga simples e me obrigar atualizar o aplicativo",
   "m": "NPS Transacional · usuário 34864863 · 12/11"
  },
- "e36": {
-  "t": "a taxa esta mal explicada, contra intuitiva. como você paga valor total menor e a taxa aumenta?",
-  "m": "NPS Transacional · usuário 32064665 · 11/11"
+ "e38": {
+  "t": "o retorno dos cashback com valor maior pra valorizar o trabalho",
+  "m": "NPS Transacional · usuário 35425548 · 11/11"
  },
- "e37": {
-  "t": "colocaram o valor em um cartão que não solicitei e fui obrigado a solicitá-lo porque seria a única maneira de s…",
-  "m": "NPS Transacional · usuário 42335445 · 09/11"
+ "e39": {
+  "t": "poderiam dar cashback em todas as recargas",
+  "m": "NPS Transacional · usuário 48658622 · 09/11"
  },
- "e40": {
-  "t": "Dificuldade em remover o dinheiro da carteira e necessidade de utilizar o valor para uma medicação importante",
-  "m": "Suporte (resumo do ticket) · ticket 46744562 · 09/11"
+ "e3a": {
+  "t": "boa experiência nas as taxas muito altas",
+  "m": "NPS Transacional · usuário 53275740 · 15/11"
  },
- "e41": {
-  "t": "Demora no desbloqueio da carteira e necessidade de resolver o problema rapidamente para pagar aluguel",
-  "m": "Suporte (resumo do ticket) · ticket 46747510 · 10/11"
+ "ep1": {
+  "t": "muito prático para enviar e receber pix sem problemas sem demora, só tenho a agradecer",
+  "m": "NPS Transacional · usuário 42078282 · 13/11"
  },
- "e42": {
-  "t": "Dificuldade em entender o motivo do bloqueio e falta de informação sobre a movimentação que causou o bloqueio",
-  "m": "Suporte (resumo do ticket) · ticket 46742965 · 09/11"
+ "ep2": {
+  "t": "o que mais gostei foi a facilidade para movimentar e fazer pix com cartão de crédito que ajuda nos momentos opo…",
+  "m": "NPS Transacional · usuário 59358542 · 09/11"
  },
- "e43": {
-  "t": "Demora no atendimento e não cumprimento do prazo prometido de 72 horas para desbloqueio da conta",
-  "m": "Suporte (resumo do ticket) · ticket 46753922 · 11/11"
+ "ep3": {
+  "t": "muito rápido e prático, mas poderia liberar um limite maior",
+  "m": "NPS Transacional · usuário 59513644 · 14/11"
  },
- "e44": {
-  "t": "Dificuldade em resgatar valor total de R$ 3.020,00 devido a bloqueio da conta e erro no aplicativo",
-  "m": "Suporte (resumo do ticket) · ticket 46749599 · 10/11"
+ "ep4": {
+  "t": "recarga pay é o melhor banco de todos, não terei outro além de vcs",
+  "m": "NPS Transacional · usuário 59511784 · 11/11"
  },
- "e45": {
-  "t": "Demora excessiva na resolução do problema e falta de informações claras sobre o que está acontecendo",
-  "m": "Suporte (resumo do ticket) · ticket 46750310 · 10/11"
+ "ep5": {
+  "t": "aplicativo muito bom, mas poderia colocar a opção pix pra colocar na tela inicial do celular, para facilitar os…",
+  "m": "NPS Transacional · usuário 58983296 · 14/11"
+ },
+ "ep6": {
+  "t": "pela facilidade e rapidez com q a gente consegue fazer as transações. além da oferta de empréstimos e condições…",
+  "m": "NPS Transacional · usuário 50617410 · 10/11"
+ },
+ "ep7": {
+  "t": "o percentual de cashback e a possibilidade de isenção dos encargos com apenas 1 dia de atraso.",
+  "m": "NPS Transacional · usuário 15088552 · 11/11"
+ },
+ "ep8": {
+  "t": "muito boa, e às compras feitas com crédito tem cash back isso é muito bom e faz com que as pessoas usem mais es…",
+  "m": "NPS Transacional · usuário 35383237 · 15/11"
+ },
+ "ep9": {
+  "t": "ótimo app, fácil de usar e muito intuitivo. aqui em casa o meu filho e minha esposa usam também.",
+  "m": "NPS Transacional · usuário 21772012 · 15/11"
+ },
+ "ep10": {
+  "t": "sempre satisfeita com todas as operações que realizei no app, principalmente recarga de bilhete único.",
+  "m": "NPS Transacional · usuário 45263225 · 11/11"
+ },
+ "eq1": {
+  "t": "colocaria limites compatíveis com a renda do cliente. 10 reias o cliente faz nada",
+  "m": "NPS Transacional · usuário 58820168 · 14/11"
+ },
+ "eq2": {
+  "t": "só preciso do meu empréstimo de volta paguei não recebi outra proposta até agora",
+  "m": "NPS Transacional · usuário 48152376 · 13/11"
+ },
+ "eq4": {
+  "t": "poderia colocar a opção pix pra colocar na tela inicial do celular, para facilitar os pagamentos",
+  "m": "NPS Transacional · usuário 58983296 · 14/11"
+ },
+ "eq5": {
+  "t": "ficaria melhor se eu tivesse o meu limite aumentado, mas acredito que utilizando o que já tenho disponível terei",
+  "m": "NPS Transacional · usuário 55710565 · 15/11"
+ },
+ "eq6": {
+  "t": "poderia ser também uma corretora de investimentos de cripto, ações, etc.",
+  "m": "NPS Transacional · usuário 21772012 · 15/11"
+ },
+ "eq7": {
+  "t": "habilitar a consulta do saldo do bilhete único sp através do nfc.",
+  "m": "NPS Transacional · usuário 35818874 · 14/11"
+ },
+ "eq8": {
+  "t": "só acho que na hora de transferir pix poderia ter senha de transferência, no caso não pede",
+  "m": "NPS Transacional · usuário 59511784 · 11/11"
+ },
+ "et1": {
+  "t": "Tem depósito externo, inclusive eu fiz a portabilidade da minha chave pix para o Recarga Pay, tive que cancelar…",
+  "m": "Suporte · ticket 46740472 · 09/11"
+ },
+ "et2": {
+  "t": "Acabei de receber uma mensagem no e-mail falando que minha conta será encerrada que eu preciso fazer o Pix com…",
+  "m": "Suporte · ticket 46753531 · 11/11"
+ },
+ "et3": {
+  "t": "vocês já me deram um prazo não cumpriram, deram outro prazo para o desbloqueio da minha conta, também não cumpr…",
+  "m": "Suporte · ticket 46763320 · 12/11"
+ },
+ "et4": {
+  "t": "Não sei que data foi feita a contestação, provavelmente foi mesmo horário de ontem às 22h da noite, porque eu N…",
+  "m": "Suporte · ticket 46753096 · 11/11"
+ },
+ "et5": {
+  "t": "Olá tem 3 dias que minha conta está bloqueada, a contestação que minha esposa fez foi cancelada no mesmo dia pq…",
+  "m": "Suporte · ticket 46741599 · 09/11"
+ },
+ "et6": {
+  "t": "ontem acabei levando um golpe, fizeram eu abrir essa conta com vocês e transferir valores pra ela, preciso reto…",
+  "m": "Suporte · ticket 46754713 · 11/11"
+ },
+ "et7": {
+  "t": "Eu tive um bloqueio de um valor no qual eu já fiz o procedimento judicial e já foi deferido, queria saber o pq…",
+  "m": "Suporte · ticket 46747332 · 10/11"
+ },
+ "et8": {
+  "t": "Não tem transferência nenhuma, é como se vocês tivessem roubado meu dinheiro, não tem resolução, uma confusão p…",
+  "m": "Suporte · ticket 46749801 · 10/11"
+ },
+ "ec1": {
+  "t": "Minha conta foi bloqueada para análise e derao um prazo do dia 6 e até agora não liberou para retirada do saldo",
+  "m": "Suporte · ticket 46742404 · 09/11"
+ },
+ "ec2": {
+  "t": "estou com meu dinheiro em conta e preciso paga meu aluguel e o prazo que vás me deram já passou e não liberou",
+  "m": "Suporte · ticket 46742658 · 09/11"
+ },
+ "ec3": {
+  "t": "Olha abri essa conta tem 5 dias. Recebi um pix da minha mae 20 reais para compra leite para meu filho e voces s…",
+  "m": "Suporte · ticket 46749597 · 10/11"
+ },
+ "ec4": {
+  "t": "Boa tarde não consigo tirar o valor da carteira tá bloqueado como faço pra liberar",
+  "m": "Suporte · ticket 46764591 · 12/11"
+ },
+ "ec5": {
+  "t": "Isso sobre o bloqueio da conta, preciso desbloquear o meu saldo pois tenho muitas conta para pagar",
+  "m": "Suporte · ticket 46742466 · 09/11"
+ },
+ "eb1": {
+  "t": "A fatura já está paga sim, como sempre vocês enrolando para devolver o meu dinheiro.",
+  "m": "Suporte · ticket 46747718 · 10/11"
+ },
+ "eb4": {
+  "t": "Estou sendo cobrado por compras que nunca fiz. É um valor baixo, mas não fui eu.",
+  "m": "Suporte · ticket 46751609 · 10/11"
+ },
+ "eb5": {
+  "t": "Foi tentar fazer um Pix com saldo da conta, no entanto Meu dinheiro está bloqueado na carteira, por conta de dé…",
+  "m": "Suporte · ticket 46756216 · 11/11"
+ },
+ "ek1": {
+  "t": "Recebi um pagamento porém na minha conta não entrou o dinheiro e mostra isso mas fotos que eu te mandei",
+  "m": "Suporte · ticket 46754226 · 11/11"
+ },
+ "ek2": {
+  "t": "Vi que normalizou o sistema pix, mais cedo fiz um mas ate agora ainda esta em processamento",
+  "m": "Suporte · ticket 46754480 · 11/11"
+ },
+ "ek3": {
+  "t": "Recebi um pixel mais ainda não caiu em minha carteira e onde retirei o pixel está tudo ok",
+  "m": "Suporte · ticket 46754012 · 11/11"
+ },
+ "ek4": {
+  "t": "recebi um Pix de 49,50 e consta em processamento eu necessito com urgência da recarga pois preciso ir trabalhar",
+  "m": "Suporte · ticket 46754120 · 11/11"
+ },
+ "ek5": {
+  "t": "Eu tenho um Pix para receber e quero saber o motivo do processamento ainda",
+  "m": "Suporte · ticket 46754182 · 11/11"
+ },
+ "ek6": {
+  "t": "Precisava do dinheiro para pagar a van para mim ir no banco do Brasil resolver uma situação urgente. Logo hoje…",
+  "m": "Suporte · ticket 46754711 · 11/11"
+ },
+ "ek7": {
+  "t": "Recebi Pix 303,80 na minha conta recargapay e hoje eu estou que esse Pix foi cancelado então esse Pix não está…",
+  "m": "Suporte · ticket 46763306 · 12/11"
+ },
+ "ef1": {
+  "t": "se eu prosseguir com o pagamento, será cobrado a taxa de 3,99% anunciada, ainda que a tela de confirmação estej…",
+  "m": "Suporte · ticket 46741961 · 09/11"
+ },
+ "ef2": {
+  "t": "para fazer um pix com cartão de crédito, todas a opções de pagamento: Apple Pay, cartão recarga Pay e outros ca…",
+  "m": "Suporte · ticket 46755465 · 11/11"
+ },
+ "ef3": {
+  "t": "quando seleciono Google Pay ainda fica aparecendo a taxa de 4,99%",
+  "m": "Suporte · ticket 46741429 · 09/11"
+ },
+ "ef4": {
+  "t": "Um aplicativo que foi feito para utilizar cartão de crédito para fazer pix e causa esse transtorno todo, um car…",
+  "m": "Suporte · ticket 46744989 · 09/11"
+ },
+ "ef5": {
+  "t": "Já tenho cartão cadastrado no Google Pay. No Recarga Pay vocês informam que, se fizer Pix usando a opção do Goo…",
+  "m": "Suporte · ticket 46757804 · 11/11"
+ },
+ "ed1": {
+  "t": "Mais uma vez vcs bloquearam a minha conta e pediu a devolução na minha conta pessoal de + 3.000.00",
+  "m": "Suporte · ticket 46752889 · 11/11"
+ },
+ "ed2": {
+  "t": "Quero fazer contestação de um valor enviado para o banco Mais Up, o valor é de R$ 25,00.. E gostaria de receber…",
+  "m": "Suporte · ticket 46755929 · 11/11"
+ },
+ "ed3": {
+  "t": "Fiz esse pix para o banco mais card porém depois eu descobri que era golpe",
+  "m": "Suporte · ticket 46743183 · 09/11"
+ },
+ "ed4": {
+  "t": "Eu lavei o carro do cara e ele tentou dar um golpe em mim fez o Pix e queria o dinheiro de volta",
+  "m": "Suporte · ticket 46743239 · 09/11"
+ },
+ "ed5": {
+  "t": "o pix foi feito no memo momento e foi enviado pro Rio Grande do Sul e uma empresa eu moro em Aracaju nao conheç…",
+  "m": "Suporte · ticket 46743839 · 09/11"
+ },
+ "eu1": {
+  "t": "Oi tudo bem quando eu passo meu cartão ele não funciona então o que que tá acontecendo diz que compra recusada",
+  "m": "Suporte · ticket 46763901 · 12/11"
+ },
+ "eu2": {
+  "t": "Fui pagar o empréstimo do picpay com a opção do próprio app de pagar com o saldo do cartão e por Apple Pay e am…",
+  "m": "Suporte · ticket 46760758 · 11/11"
+ },
+ "eu3": {
+  "t": "Preciso da liberação de compra de forma parcelada. Fui fazer uma compra que foi rejeitada na plataforma da Hotm…",
+  "m": "Suporte · ticket 46742854 · 09/11"
+ },
+ "eu4": {
+  "t": "fiz uma compra no eBay e deu tudo certo por aqui, foi autorizada, e no app também. Porém, quando eu entrei lá e…",
+  "m": "Suporte · ticket 46761213 · 12/11"
+ },
+ "eu5": {
+  "t": "Meu contato é referente a uma compra que foi rejeitada ontem à noite, porém no banco do cartão a compra está ap…",
+  "m": "Suporte · ticket 46762511 · 12/11"
+ },
+ "ev1": {
+  "t": "Bom dia eu quero fazer o encerramento da conta do cartão Platinum, por vários motivos, e um deles é porque esta…",
+  "m": "Suporte · ticket 46746349 · 10/11"
+ },
+ "ev2": {
+  "t": "Eu faço esse procedimento e no final diz que eu n tenho cartao de credito, justamente isso. Nao tenho cartao e…",
+  "m": "Suporte · ticket 46742211 · 09/11"
+ },
+ "ev3": {
+  "t": "Não irei pagar, infelizmente. Não fui informado sobre isso. E como eu falei, é inadmissível pagar algo que é meu",
+  "m": "Suporte · ticket 46748282 · 10/11"
+ },
+ "ev4": {
+  "t": "Eu gostaria de saber pq ainda estão me cobrando uma parcela a mais do meu empréstimo? Sendo que eu paguei tudo…",
+  "m": "Suporte · ticket 46740100 · 09/11"
+ },
+ "ev5": {
+  "t": "Eu paguei esse valor nas faturas do cartão e depois vocês me cobraram esse valor se não iriam bloquear a minha…",
+  "m": "Suporte · ticket 46742888 · 09/11"
+ },
+ "ev6": {
+  "t": "É sobre passar o valor pra carteira, eu não sabia. Isso é ruim. Pq quem pede empréstimo, precisa do dinheiro e…",
+  "m": "Suporte · ticket 46754131 · 11/11"
+ },
+ "ev8": {
+  "t": "Porque eu coloquei dinheiro no cartão r$ 200 no cartão e vocês estão gerando uma fatura para mim pagar sendo qu…",
+  "m": "Suporte · ticket 46744511 · 09/11"
+ },
+ "eg1": {
+  "t": "Já tenho uns trabalhando com vcs, não venho mais limite só venho apenas 10 reais meu limite já tava 50 reais de…",
+  "m": "Suporte · ticket 46749932 · 10/11"
+ },
+ "eg2": {
+  "t": "Aí sempre que eu paguei o limite estava aumentando entendeu Aí eu paguei essa última vez e não retornou mais",
+  "m": "Suporte · ticket 46742422 · 09/11"
+ },
+ "eg3": {
+  "t": "não recebi nenhuma oferta e empréstimo então para não ficar com dor de cabeça quero pegar 50% do meu investimen…",
+  "m": "Suporte · ticket 46764705 · 12/11"
+ },
+ "eg4": {
+  "t": "Quero cancelar meu empréstimo de R$ 20. Fiz há 3 dias, foi para o Cartão e está R$ 0,00 utilizado, não usei nad…",
+  "m": "Suporte · ticket 46742311 · 09/11"
+ },
+ "eg5": {
+  "t": "queria que meu empréstimo fosse devolvido pois pedi sem querer e o meu limite no empréstimo é dez reais e eu pe…",
+  "m": "Suporte · ticket 46756819 · 11/11"
+ },
+ "eg6": {
+  "t": "Olá quero cancelar o empréstimo que eu fiz porque não aparece na minha carteira e não consigo pegar o cartão",
+  "m": "Suporte · ticket 46761515 · 12/11"
+ },
+ "eg7": {
+  "t": "Sim eu fiz sem querer, na verdade eu estava querendo um cartão de crédito ou um valor maior mas era 10 reais o…",
+  "m": "Suporte · ticket 46762977 · 12/11"
+ },
+ "eg8": {
+  "t": "E onde está o valor do empréstimo que fiz? Não está no recarga Pay, não está na carteira, mas consta no históri…",
+  "m": "Suporte · ticket 46741580 · 09/11"
+ },
+ "eg9": {
+  "t": "Na cláusula do contrato do empréstimo não havia nada mencionando desconto no cartão de crédito cadastrado no app",
+  "m": "Suporte · ticket 46755374 · 11/11"
+ },
+ "eg10": {
+  "t": "oi eu tenho um cartão vinculado a minha conta que não é meu é de outra pessoa que me emprestou um dia eu estava…",
+  "m": "Suporte · ticket 46761987 · 12/11"
+ },
+ "eg11": {
+  "t": "Então mais quem autorizou vcs tirar o limite de um cartão de credito de outro banco pra pagar, eu não autorizei…",
+  "m": "Suporte · ticket 46747344 · 10/11"
+ },
+ "eg12": {
+  "t": "Essa cobrança é sobre um empréstimo que eu tinha em atraso com vocês, estava correndo atrás para levantar o val…",
+  "m": "Suporte · ticket 46763364 · 12/11"
+ },
+ "eg13": {
+  "t": "E outra eu quero que você exclui todos os cartão de crédito que tiver na minha conta aí porque de terceiro eu n…",
+  "m": "Suporte · ticket 46756908 · 11/11"
+ },
+ "eg14": {
+  "t": "Contratei um empréstimo de R$ 50, que foi convertido em limite do cartão. Realizei um Pix de R$ 48 utilizando e…",
+  "m": "Suporte · ticket 46747894 · 10/11"
+ },
+ "ea1": {
+  "t": "Estou desde ontem tentando acessar o app que atualizou e por meio da identificação facial não está sendo possív…",
+  "m": "Suporte · ticket 46754401 · 11/11"
+ },
+ "ea2": {
+  "t": "Estou tentando entra na minha conta está dizendo que não posso pois minha data de nascimento está errada",
+  "m": "Suporte · ticket 46744982 · 09/11"
+ },
+ "ea3": {
+  "t": "Fico recebendo propostas por whatsapp mas quando tento logar da erro na minha conta por conta de dados",
+  "m": "Suporte · ticket 46756137 · 11/11"
+ },
+ "ea4": {
+  "t": "já tem duas semanas que tento cadastrar minha selfie e só dá recusada",
+  "m": "Suporte · ticket 46759120 · 11/11"
+ },
+ "ea5": {
+  "t": "Não consigo validar minha identidade pelo aplicativo. Já tentei a selfie várias vezes e também o método alterna…",
+  "m": "Suporte · ticket 46743146 · 09/11"
+ },
+ "ea6": {
+  "t": "biometria não identifica meu rosto. já tentei em diferentes luzes, sem acessórios, sem maquiagem, apenas não vai",
+  "m": "Suporte · ticket 46750797 · 10/11"
+ },
+ "ea7": {
+  "t": "Tinha um relacionamento bom com o recargapay, tinha limite de crédito, passei por um problema financeiro e acab…",
+  "m": "Suporte · ticket 46766245 · 12/11"
+ },
+ "ea8": {
+  "t": "Fiz o pagamento de um valor que estava em aberto sexta feira, e desde então só recebo mensagem de vocês me cobr…",
+  "m": "Suporte · ticket 46741570 · 09/11"
+ },
+ "ea9": {
+  "t": "Preciso cancelar a minha conta pj porque minha esposa que era minha sócia faleceu.",
+  "m": "Suporte · ticket 46749023 · 10/11"
+ },
+ "ea10": {
+  "t": "Segunda falei com uma atendente, que me garantiu que eu conseguiria movimentar a conta na terça a noite. Hj é q…",
+  "m": "Suporte · ticket 46741722 · 09/11"
+ },
+ "es1": {
+  "t": "Eu fiz um pix no valor de 7,31 reais para esta conta e foi descontado 5,99 referente a um seguro que eu não ass…",
+  "m": "Suporte · ticket 46757651 · 11/11"
+ },
+ "es2": {
+  "t": "Não assinei nada de seguro de pix e cartões e foi cobrado incorretamente, nunca tive interesse neste tipo de se…",
+  "m": "Suporte · ticket 46740507 · 09/11"
+ },
+ "es3": {
+  "t": "me comeram mais de 5 reais de seguro que eu nem contratei na msm HR cancelei o seguro mais o valor não retornou",
+  "m": "Suporte · ticket 46746328 · 10/11"
+ },
+ "es4": {
+  "t": "Eu não controlei nada de seguro de cartão pra todas vez tirar meu dinheiro esm eu manda isso e errado",
+  "m": "Suporte · ticket 46760624 · 11/11"
+ },
+ "es5": {
+  "t": "Foi passado uma compra avista de 60,82, pra receber 59,00 descontaram 6 reais e caiu so 53,00 oque aconteceu??",
+  "m": "Suporte · ticket 46742956 · 09/11"
+ },
+ "es6": {
+  "t": "Foi descontado da minha conta um valor referente ao Seguro Proteção Pix e Cartão, sem que eu tivesse conhecimen…",
+  "m": "Suporte · ticket 46762774 · 12/11"
+ },
+ "er1": {
+  "t": "Carreguei meu cartão só que o saldo não caiu mesmo após as 24 horas já fui no Itaqua passes e me falaram que nã…",
+  "m": "Suporte · ticket 46755661 · 11/11"
+ },
+ "er2": {
+  "t": "Já verifiquei no site do consórcio e também pessoalmente no posto de atendimento e não consta a recarga. Cadê o…",
+  "m": "Suporte · ticket 46748257 · 10/11"
+ },
+ "er3": {
+  "t": "Está dando erro para cadastrar um novo bilhete único, quero saber quando irá estabilizar",
+  "m": "Suporte · ticket 46743267 · 09/11"
+ },
+ "er4": {
+  "t": "Fiz uma recarga de 280,00, porém não caiu no meu bem fácil e também não voltou pro banco",
+  "m": "Suporte · ticket 46758458 · 11/11"
+ },
+ "er5": {
+  "t": "o dinheiro que eu depositei da recarga ainda não caiu, sendo que eu fiz o depósito quarta-feira passada, fazem…",
+  "m": "Suporte · ticket 46741203 · 09/11"
+ },
+ "er6": {
+  "t": "Eu fiz uma recarga no meu cartão de transporte ontem na noite e hoje de manhã fiquei sem poder pagar para usar…",
+  "m": "Suporte · ticket 46758759 · 11/11"
+ },
+ "el1": {
+  "t": "Minha cliente tentou pagar meu link de pagamento e não conseguiu, e o cartão dela está ok!",
+  "m": "Suporte · ticket 46746810 · 10/11"
+ },
+ "el2": {
+  "t": "gerei um link porém a pessoa tá tentando pagar e só dá recusado",
+  "m": "Suporte · ticket 46744841 · 09/11"
+ },
+ "el3": {
+  "t": "quando meu cliente abre o link que envio, sempre está dando como link não encontrado",
+  "m": "Suporte · ticket 46746877 · 10/11"
+ },
+ "el4": {
+  "t": "fiz um link de pagamento ontem e foi aprovada no banco do cliente, porém não aparece nenhuma compra aprovada no…",
+  "m": "Suporte · ticket 46740584 · 09/11"
+ },
+ "el5": {
+  "t": "Só está aparecendo pendente e eu preciso do dinheiro todas as vendas que fiz deu certo mais essa não está caind…",
+  "m": "Suporte · ticket 46741898 · 09/11"
+ },
+ "el6": {
+  "t": "Eu gero o link mando para o cliente e quando ele vai realizar o pagamento dá erro no aplicativo.",
+  "m": "Suporte · ticket 46765359 · 12/11"
+ },
+ "eh1": {
+  "t": "Sobre a venda de 1000 reais feita hj pela manhã, a moça ligou para o banco e falaram que pra eles esta como apr…",
+  "m": "Suporte · ticket 46755402 · 11/11"
+ },
+ "eh2": {
+  "t": "Passei uma compra do cliente no tap to pay. A compra foi aprovada e depois cancelada pelo recargapay. Até o mom…",
+  "m": "Suporte · ticket 46760719 · 11/11"
+ },
+ "eh3": {
+  "t": "Preciso q retiram essa cobrança, como q eu vendo um valor, apenas faço o Pix pra minha conta e agora fico c uma…",
+  "m": "Suporte · ticket 46753463 · 11/11"
+ },
+ "eh4": {
+  "t": "eu passei o cartão de uma pessoa, o dinheiro caiu e eu saquei, e agora está vindo na minha fatura cobrando o va…",
+  "m": "Suporte · ticket 46748884 · 10/11"
+ },
+ "eh5": {
+  "t": "usei o Tap to Pay, resgatei o limite e fiz um Pix. Agora apareceu fatura, eu quero saber se pode contestar para…",
+  "m": "Suporte · ticket 46751831 · 10/11"
+ },
+ "em1": {
+  "t": "Bom dia eu tenho investimentos no cdb limite de cartão onde na tela de aplicação aparecia que eu poderia fazer…",
+  "m": "Suporte · ticket 46753831 · 11/11"
+ },
+ "em2": {
+  "t": "Entrei no aplicativo e o valor está em rendimento no CDI e eu não autorizei e eu estou precisando do dinheiro p…",
+  "m": "Suporte · ticket 46754002 · 11/11"
+ },
+ "em3": {
+  "t": "Gostaria de retirar o CDB do cartão Titan. Me disseram que só dá pra fazer isso cancelando o cartão e pagando t…",
+  "m": "Suporte · ticket 46747779 · 10/11"
+ },
+ "em4": {
+  "t": "Eu gostaria de resgatar o limite do cartão que eu coloquei e não consigo. Por aqui o bot respondeu que não era…",
+  "m": "Suporte · ticket 46746221 · 10/11"
+ },
+ "em5": {
+  "t": "conversei com vcs na sexta feira e foi me garantido a devolução do dinheiro até o final do dia da sexta",
+  "m": "Suporte · ticket 46743716 · 09/11"
+ },
+ "em6": {
+  "t": "Olá. Gostaria de retirar o CDB do cartão Titan. Me disseram que só dá pra fazer isso cancelando o cartão",
+  "m": "Suporte · ticket 46747779 · 10/11"
+ },
+ "elj1": {
+  "t": "estou muito insatisfeita, ando passando vergonha na hora de pagar e fazer pix, pq da instabilidade e tenho q ag…",
+  "m": "Loja de apps · 15/11 · 2 estrelas"
+ },
+ "elj2": {
+  "t": "quero cancelar o Pix, está como pendente, só diz que devo aguardar o outro banco confirmar, não aparece nenhuma…",
+  "m": "Loja de apps · 15/11 · 1 estrela"
+ },
+ "elj3": {
+  "t": "às vezes o aplicativo fica manutenção você está na fila para comprar alguma coisa e você não consegue fazer o p…",
+  "m": "Loja de apps · 15/11 · 1 estrela"
+ },
+ "elj4": {
+  "t": "comecei a usar o app e estava gostando, mas agora vive com problemas pra fazer Pix e passa horas pra voltar ao…",
+  "m": "Loja de apps · 15/11 · 2 estrelas"
+ },
+ "elj5": {
+  "t": "Em menos de 1 mes varios pix ficaram pendentes no app uma demora eterna para eles resolver o problema",
+  "m": "Loja de apps · 11/11 · 1 estrela"
+ },
+ "elb1": {
+  "t": "teve atualização no dia 05/11/2026 que suspendeu o cashaback nos boletos.",
+  "m": "Loja de apps · 09/11 · 3 estrelas"
+ },
+ "elb2": {
+  "t": "foi bom enquanto durou! não está ganhando mais cashback. desinstalando...",
+  "m": "Loja de apps · 10/11 · 3 estrelas"
+ },
+ "elb3": {
+  "t": "retiraram os ganhos por pagamento de contas de uma hora pra outra isso é muito ruim e vai impactar negativament…",
+  "m": "Loja de apps · 12/11 · 2 estrelas"
+ },
+ "elb4": {
+  "t": "A cada dia esse aplicativo fica pior, não tem nada de bom nele, até o cashback de boleto eles removeram.",
+  "m": "Loja de apps · 10/11 · 1 estrela"
+ },
+ "elb5": {
+  "t": "Se você pretende fazer pagamentos em sua loja para ganhar cashback, ter uma renda extra, ESQUEÇA. O app nao pag…",
+  "m": "Loja de apps · 09/11 · 1 estrela"
+ },
+ "elb6": {
+  "t": "era um ótimo app, até ACABAREM COM O CASHBACK do cartão com limite garantido e do BOLETO. EXCLUINDO MINHA CONTA…",
+  "m": "Loja de apps · 10/11 · 1 estrela"
+ },
+ "elc1": {
+  "t": "recargapay cadê meu cartão de crédito ou meu dinheiro de volta atendimento no chat não presta atendimento físic…",
+  "m": "Loja de apps · 15/11 · 1 estrela"
+ },
+ "elc2": {
+  "t": "Fiz uma transferência usando cartão de crédito e não foi debitado na minha conta, o banco emissor consta como a…",
+  "m": "Loja de apps · 13/11 · 1 estrela"
+ },
+ "elc3": {
+  "t": "Já desinstalei o aplicativo e fica chegando mensagem com mentiras dizendo que estou devendo, o cartão sendo que…",
+  "m": "Loja de apps · 09/11 · 3 estrelas"
+ },
+ "ele1": {
+  "t": "fiz o pedido de empréstimo liberou r$ 10 aí eu peguei e paguei e pedi de novo só liberou r$ 10 e outra vez",
+  "m": "Loja de apps · 14/11 · 1 estrela"
+ },
+ "ele2": {
+  "t": "Estou com medo de usar outros serviços do Recarga pay, fiz um empréstimo, paguei adiantado, e estao dizendo que…",
+  "m": "Loja de apps · 11/11 · 1 estrela"
+ },
+ "ele3": {
+  "t": "gosto mto do app porém o empréstimo deles é mto baixo, oq se faz com um empréstimo de 20,00? e nunca aumenta ms…",
+  "m": "Loja de apps · 11/11 · 1 estrela"
+ },
+ "eln1": {
+  "t": "Não consigo nem entrar, fiz todo o cadastro, escolhi ate a senha. Apresentou um erro, e agora nao consigo acess…",
+  "m": "Loja de apps · 14/11 · 1 estrela"
+ },
+ "eln2": {
+  "t": "na hora de finalizar o cadastro diz que o email já está sendo utilizado...não avança....desisti",
+  "m": "Loja de apps · 14/11 · 1 estrela"
+ },
+ "eln3": {
+  "t": "não consigo acessar, preciso recarregar com o dinheiro que já foi enviado e houve um bloqueio na senha e a self…",
+  "m": "Loja de apps · 11/11 · 2 estrelas"
+ },
+ "elt1": {
+  "t": "demorar muito para os créditos cair n cartão gerando constrangimento quando vamos passar n catracas dos ônibus",
+  "m": "Loja de apps · 13/11 · 2 estrelas"
+ },
+ "elt2": {
+  "t": "Não carregou meu bilhete Sempre usei o RecargaPay e minhas cargas todas entraram mas essa última coloquei 40 re…",
+  "m": "Loja de apps · 10/11 · 1 estrela"
+ },
+ "elt3": {
+  "t": "muita burocracia pra conseguir recarregar e quando eu fui tentar passar a passagem de ônibus o qr code não pega…",
+  "m": "Loja de apps · 10/11 · 1 estrela"
+ },
+ "eld1": {
+  "t": "OFERECER PRAZO MAIOR NO CDB DO CARTÃO TITAN, 3 MESES OBRIGA CLIENTE PAGAR O IMPOSTO DE RENDA MÁXIMO NO RESGATE",
+  "m": "Loja de apps · 13/11 · 3 estrelas"
+ },
+ "erd1": {
+  "t": "Transferências 0, não consigo ir para casa pois o app não esta fazendo pix desde as 21:00, passei a noite senta…",
+  "m": "Redes sociais · Instagram · 15/11"
+ },
+ "erd2": {
+  "t": "Nunca vi um pix ficar mais de 5 horas em processamento, não tem o estorno e o din fica preso",
+  "m": "Redes sociais · Facebook · 15/11"
+ },
+ "erd3": {
+  "t": "De novo esse aplicativo com problemas no Pix, o pior que pelos comentários é desde ontem e eles não coloca nem…",
+  "m": "Redes sociais · Instagram · 15/11"
+ },
+ "erd4": {
+  "t": "eu também estou com três pix pendente para receber e um pix pendente para pagar! um absurdo desde as 23:30h de…",
+  "m": "Redes sociais · Instagram · 15/11"
+ },
+ "erc1": {
+  "t": "Fiquei na dúvida, recebi um pagamento no cartão de crédito, o valor ficou como limite. Eu transferi o valor que…",
+  "m": "Redes sociais · Instagram · 10/11"
+ },
+ "erc3": {
+  "t": "tenho cartão de crédito, consigo pagar uma conta de 1500$ em 12x de 150$ mas tá bom, juros menor do que parcela…",
+  "m": "Redes sociais · Instagram · 13/11"
+ },
+ "erc4": {
+  "t": "Vocês estão mim roubando todo mês 5.99 do meu cartão de crédito a justiça já então atrás de vocês",
+  "m": "Redes sociais · Facebook · 10/11"
+ },
+ "erf1": {
+  "t": "recebi um pix e eles bloqueram a minha carteira alegando que a pessoa contestou o pagamento (oque não ocorreu)…",
+  "m": "Redes sociais · Instagram · 11/11"
+ },
+ "erf2": {
+  "t": "a minha esta bloqueada, e eles não dão retorno nenhum!",
+  "m": "Redes sociais · Instagram · 11/11"
+ },
+ "erf3": {
+  "t": "bloqueiam e encerram a conta sem dar direito de defesa",
+  "m": "Redes sociais · Instagram · 12/11"
+ },
+ "ere1": {
+  "t": "10,00 de empréstimo aff ainda tem coragem de oferecer isso.",
+  "m": "Redes sociais · Facebook · 09/11"
+ },
+ "ere2": {
+  "t": "espero que não cobrem juros pela parcela do empréstimo que está atrasada há 3 dias. Estou tentando pagar desde…",
+  "m": "Redes sociais · Instagram · 11/11"
+ },
+ "ere3": {
+  "t": "tá difícil gerar o Qr pra pagar o empréstimo",
+  "m": "Redes sociais · Instagram · 15/11"
+ },
+ "era1": {
+  "t": "Recebi dois pix hoje de madrugada, tenho que pagar um empréstimo dentro do aplicativo, e o pix consta como pend…",
+  "m": "Reclame Aqui · 15/11"
+ },
+ "era2": {
+  "t": "Coloquei 1500 no cartão RecargaPay, tentei usar 1200 desse valor via pix em 3 vezes, o pix não caiu, o valor su…",
+  "m": "Reclame Aqui · 10/11"
+ },
+ "era3": {
+  "t": "Entre os dias 06 e 09/11/2026 foram realizadas transações financeiras e retirada de valores da minha conta digi…",
+  "m": "Reclame Aqui · 12/11"
+ },
+ "era4": {
+  "t": "Solicito a liberação imediata do meu saldo. O próprio aplicativo informou que o prazo da análise terminaria hoj…",
+  "m": "Reclame Aqui · 09/11"
+ },
+ "era5": {
+  "t": "Criei uma conta pj no meu nome onde a primeira transação que eu fiz para minha conta eles efetuaram o bloqueio…",
+  "m": "Reclame Aqui · 09/11"
+ },
+ "era6": {
+  "t": "Primeiro a conta parou de receber PIX. Em contato com RECARGAPAY informaram que iriam cancelar unilateralmente…",
+  "m": "Reclame Aqui · 11/11"
+ },
+ "era7": {
+  "t": "Solicitei um empréstimo de 530 reais. Desta vez, eles enviaram o empréstimo para o cartão de crédito, que estav…",
+  "m": "Reclame Aqui · 11/11"
+ },
+ "era8": {
+  "t": "Cobranças abusivas mesmo após o pagamento da dívida, solicitei uma valor muito baixo de empréstimo pois estava…",
+  "m": "Reclame Aqui · 13/11"
+ },
+ "era9": {
+  "t": "No dia de ontem 10/11 fui carregar meu bilhete único e quando coloquei os dados do meu cartão de crédito já des…",
+  "m": "Reclame Aqui · 12/11"
+ },
+ "era10": {
+  "t": "Hoje entrei no app do recargapay para passar um cartão no tap pay, tive uma surpresa uma fatura de 1338,00 avis…",
+  "m": "Reclame Aqui · 09/11"
+ },
+ "era11": {
+  "t": "Não consigo cancelar um cartão virtual sem uso, que está gerando cobrança de anuidade.",
+  "m": "Reclame Aqui · 12/11"
+ },
+ "era12": {
+  "t": "Realizei uma venda via Tap to Pay (NFC) no valor total de R$ 2.780,00. Descontada a taxa de R$ 85,00, saquei im…",
+  "m": "Reclame Aqui · 10/11"
+ },
+ "era13": {
+  "t": "Passei 200 reais no pagamento na maquininha e o dinheiro foi pro cartão empreendedor. Não autorizei até mesmo p…",
+  "m": "Reclame Aqui · 11/11"
+ },
+ "era14": {
+  "t": "Fiz a venda do meu celular usando o Taptopay, precisei ontem de pagar o meu cartão em outro banco e NÃO CONSIGO…",
+  "m": "Reclame Aqui · 12/11"
+ },
+ "era15": {
+  "t": "Venho recebendo a cobrança de 5,99 de um seguro que eu não contratei e desconheço, tentei entrar em contato par…",
+  "m": "Reclame Aqui · 10/11"
+ },
+ "era16": {
+  "t": "Debitou um seguro cartão no meu app sem meu consentimento, ou provavelmente embutido em alguma coisa pois eu nã…",
+  "m": "Reclame Aqui · 10/11"
+ },
+ "era17": {
+  "t": "Sumiu o dinheiro dos Cashback que tinha era mais de 50 RS e ainda estão me cobrando uma factura que eu não reco…",
+  "m": "Reclame Aqui · 14/11"
+ },
+ "era18": {
+  "t": "Cartão diz ter 2% de cashback eai você vai doido pra usar em compras grandes e não funciona. Só passa em compri…",
+  "m": "Reclame Aqui · 14/11"
+ },
+ "era19": {
+  "t": "Estou enfrentando dificuldades para acessar minha conta RecargaPay, pois não estou conseguindo realizar o login…",
+  "m": "Reclame Aqui · 15/11"
+ },
+ "era20": {
+  "t": "Me cadastrei nesta empresa pensando que seria apenas para recarregar o bilhete Único para meu filho, mas já abr…",
+  "m": "Reclame Aqui · 11/11"
  }
 }

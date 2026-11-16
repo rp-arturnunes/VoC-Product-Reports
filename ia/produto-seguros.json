@@ -1,22 +1,143 @@
 {
  "analise": {
-  "clientes": "Seguros cai 28% no suporte humano (200 para 144), mas o CSAT recua a 65,7% e a resolutividade a 69,6%.",
-  "mudou": "Casos especiais de 10 para 4; bases de 23 a 35 respostas.",
+  "clientes": "O Seguros cai 28% no suporte humano (200 para 144), mas o CSAT recua a 65,7% e a resolutividade a 69,6%; quem procura o atendimento do seguro Pix e Cartão diz que o desconto de R$ 5,99 veio sem contratação.",
+  "mudou": "Casos especiais de 10 para 4; bases de 23 a 35 respostas. Contatos de segurados do Pix e Cartão de 797 para 472.",
   "atencao": [
-   "Comentários de Pix e Empréstimo citam seguro contratado sem autorização."
+   "Seguro de R$ 5,99 descontado junto a Pix e vendas que o cliente diz não ter contratado.",
+   "Cancelamentos pedidos pelo cliente: 13,5 mil no Pix e Cartão na semana."
   ]
  },
- "motivos": [],
- "temas": [],
+ "motivos": [
+  {
+   "t": "Quer cancelar o seguro",
+   "n": 0,
+   "ant": 0,
+   "var": "–",
+   "det": null,
+   "ex": [
+    "es1",
+    "es2",
+    "es3",
+    "es4",
+    "es5",
+    "es6"
+   ]
+  },
+  {
+   "t": "Quer estorno do seguro",
+   "n": 0,
+   "ant": 0,
+   "var": "–",
+   "det": null,
+   "ex": [
+    "es3",
+    "es6",
+    "es1",
+    "es2",
+    "es5",
+    "e11"
+   ]
+  }
+ ],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Seguro sem autorização",
+   "n": 2,
+   "tom": "neg",
+   "x": "Seguro contratado durante um Pix ou junto de empréstimo sem autorização."
+  }
+ ],
  "exemplos": {
   "NPS Transacional": [
    "e11",
    "e15"
+  ],
+  "Suporte": [
+   "es1",
+   "es2",
+   "es5"
   ]
  },
  "mencoes": {
-  "texto": "",
-  "ra": []
+  "texto": "Seguros quase não aparece em lojas; nas redes, 3 interações com desconto de R$ 5,99 no cartão. No Reclame Aqui, 4 reclamações (8 na W45), com R$ 5,99 descontados sem contratação.",
+  "ra": [
+   "era15",
+   "era16"
+  ]
  },
- "eventos": []
+ "eventos": [],
+ "jornada": {
+  "cobranca": "Cobrança: desconto de R$ 5,99 junto a um Pix ou venda que o cliente não reconhece.",
+  "cancelamento": "Cancelamento e estorno: valor que não retorna depois de cancelar."
+ },
+ "subs": {
+  "seg_pix": {
+   "analise": {
+    "clientes": "Quem procura o atendimento do seguro Pix e Cartão diz que não contratou: dos 472 contatos de segurados na W46, 341 (72%) contestam a contratação, e os relatos são de R$ 5,99 descontados junto a um Pix ou a uma venda.",
+    "mudou": "Os contatos de segurados caem de 797 para 472 (−41%), depois do pico de 3.041 na W42; o suporte humano da vertical vai de 204 para 143. Foram 41,6 mil apólices novas (41,2 mil na W45) e 13,5 mil cancelamentos pedidos pelo cliente (14,9 mil), 3,4 mil no prazo de arrependimento (4,2 mil).",
+    "atencao": [
+     "72% dos contatos de segurados contestam a contratação.",
+     "Cancelamentos pedidos pelo cliente seguem em um terço das apólices novas da semana.",
+     "O desconto de R$ 5,99 aparece junto a um Pix ou a uma venda e o cliente não reconhece o aceite."
+    ]
+   },
+   "temas": [
+    {
+     "canal": "Contatos classificados",
+     "t": "Contesta a contratação",
+     "n": 341,
+     "tom": "neg",
+     "x": "Diz que não contratou o seguro de R$ 5,99 descontado do saldo ou do cartão."
+    },
+    {
+     "canal": "Suporte humano",
+     "t": "Quer estorno do seguro",
+     "n": 0,
+     "tom": "neg",
+     "x": "Pede o valor de volta, inclusive depois de cancelar."
+    }
+   ],
+   "exemplos": {
+    "Suporte": [
+     "es1",
+     "es2",
+     "es3"
+    ],
+    "Reclame Aqui": [
+     "era15",
+     "era16"
+    ]
+   },
+   "eventos": []
+  },
+  "seg_ar": {
+   "analise": {
+    "clientes": "O seguro Acidente e Renda tem poucos contatos: 9 de segurados na W46, sem relatos classificados de contestação.",
+    "mudou": "As apólices novas vão de 1.589 para 3.700 (+133%) depois da chegada do seguro a toda a base; os cancelamentos pedidos pelo cliente vão de 79 para 140, 126 deles no prazo de arrependimento.",
+    "atencao": [
+     "Cancelamentos acompanham a alta de vendas: 140 pedidos para 3.700 apólices novas, quase todos no arrependimento."
+    ]
+   },
+   "temas": [],
+   "exemplos": {},
+   "eventos": []
+  },
+  "seg_emp": {
+   "analise": {
+    "clientes": "O seguro prestamista do empréstimo quase não gera contato: nenhum contato classificado de segurados na W46 e 6 tickets humanos na vertical Seguros.",
+    "mudou": "A adesão fica em 46,3% dos contratos elegíveis (3.121 de 6.744), contra 51,0% na W45 (4.074 de 7.990); os cancelamentos, fora quitação antecipada, ficam em 3.",
+    "atencao": [
+     "Adesão cai 4,7 pp frente à W45, com menos contratos elegíveis."
+    ]
+   },
+   "temas": [],
+   "exemplos": {
+    "NPS Transacional": [
+     "e15"
+    ]
+   },
+   "eventos": []
+  }
+ }
 }

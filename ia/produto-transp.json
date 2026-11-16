@@ -1,23 +1,96 @@
 {
  "analise": {
-  "clientes": "O Transporte perde 10,1 pts de NPS (80,2 para 70,1) na semana do alerta de recarga que ficou ligado por mais de 12h.",
+  "clientes": "O Transporte perde 10,1 pts de NPS (80,2 para 70,1) na semana do alerta de recarga que ficou ligado por mais de 12h: os clientes falam de recarga que não entra no bilhete depois de 24h, de cadastro de bilhete único com erro e de valor debitado que não chegou.",
   "mudou": "Suporte humano de 103 para 45, com parte dos casos de 15/11 ainda sem classificação.",
   "atencao": [
-   "Comentários citam recarga que demora e aplicativo indisponível."
+   "Recarga que demora até 24h e aplicativo indisponível nos comentários.",
+   "Só 1% de quem viu o aviso de instabilidade era da cidade afetada (#squad_cx, 09/11)."
   ]
  },
- "motivos": [],
- "temas": [],
+ "motivos": [
+  {
+   "t": "Problemas para validar recarga",
+   "n": 0,
+   "ant": 0,
+   "var": "–",
+   "det": null,
+   "ex": [
+    "er1",
+    "er2",
+    "er5",
+    "er6",
+    "e31",
+    "e33"
+   ]
+  },
+  {
+   "t": "Recarga realizada e crédito não disponibilizado",
+   "n": 0,
+   "ant": 0,
+   "var": "–",
+   "det": null,
+   "ex": [
+    "er4",
+    "er5",
+    "er6",
+    "er1",
+    "e31",
+    "e34"
+   ]
+  },
+  {
+   "t": "Dificuldade para realizar recarga",
+   "n": 0,
+   "ant": 0,
+   "var": "–",
+   "det": null,
+   "ex": [
+    "er3",
+    "e32",
+    "e35",
+    "e34",
+    "elt3",
+    "elt2"
+   ]
+  }
+ ],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Recarga que demora ou falha",
+   "n": 26,
+   "tom": "neg",
+   "x": "Detratores de 15 para 26: recarga que não entra antes de pegar o ônibus e tentativas repetidas."
+  }
+ ],
  "exemplos": {
   "NPS Transacional": [
    "e31",
    "e32",
    "e33"
+  ],
+  "Lojas de apps": [
+   "elt1",
+   "elt2",
+   "elt3"
   ]
  },
  "mencoes": {
-  "texto": "",
-  "ra": []
+  "texto": "Nas lojas, 7 avaliações citam transporte (5 na W45), 3 positivas. Nas redes, 1 interação. No Reclame Aqui, 9 reclamações (14 na W45).",
+  "ra": [
+   "era9"
+  ]
  },
- "eventos": []
+ "eventos": [
+  {
+   "d": "11/11",
+   "tag": "Incidente",
+   "t": "Alerta de instabilidade na recarga de transporte ativo desde 21:39, acima do limite de 2h (#cxm-team, 12/11)."
+  }
+ ],
+ "jornada": {
+  "confirmacao": "Crédito no bilhete: parcela positiva baixa, com recarga que não aparece no cartão de transporte.",
+  "recarga": "Recarga: queda da parcela positiva frente ao período anterior.",
+  "cadastro": "Cadastro do bilhete: erro ao cadastrar novo bilhete único (09/11)."
+ }
 }

@@ -1,17 +1,76 @@
 {
  "analise": {
-  "clientes": "O CDB tem NPS de 70,0 (+2,1) e a solução para instabilidades no resgate foi implementada em 13/11.",
-  "mudou": "Suporte humano +6% (186 para 198); CSAT de 83,3% para 79,4%.",
+  "clientes": "O CDB tem NPS de 70,0 (+2,1) e a solução para instabilidades no resgate foi implementada em 13/11; os relatos anteriores falam de resgate prometido em um dia útil que não chegou e de CDB do cartão Titan que só sai cancelando o cartão.",
+  "mudou": "Suporte humano +6% (186 para 198); CSAT de 83,3% para 79,4%; bot retém 49 sessões contra 123.",
   "atencao": [
-   "Efeito da solução de resgate ainda não medível."
+   "Efeito da solução de resgate ainda não medível.",
+   "Valor aplicado em CDI sem autorização, segundo cliente (11/11)."
   ]
  },
- "motivos": [],
- "temas": [],
- "exemplos": {},
- "mencoes": {
-  "texto": "",
-  "ra": []
+ "motivos": [
+  {
+   "t": "Quer resgatar CDB antes do vencimento",
+   "n": 0,
+   "ant": 0,
+   "var": "–",
+   "det": null,
+   "ex": [
+    "em3",
+    "em4",
+    "em6",
+    "em1",
+    "em2",
+    "eld1"
+   ]
+  },
+  {
+   "t": "Dúvidas sobre resgate de liquidez diária",
+   "n": 0,
+   "ant": 0,
+   "var": "–",
+   "det": null,
+   "ex": [
+    "em1",
+    "em2",
+    "em5",
+    "em4",
+    "em3",
+    "eld1"
+   ]
+  }
+ ],
+ "temas": [
+  {
+   "canal": "Lojas de apps",
+   "t": "Prazo do CDB do cartão Titan",
+   "n": 2,
+   "tom": "neg",
+   "x": "Pedido de prazo maior para reduzir imposto de renda no resgate."
+  }
+ ],
+ "exemplos": {
+  "Lojas de apps": [
+   "eld1"
+  ]
  },
- "eventos": []
+ "mencoes": {
+  "texto": "Nas lojas, 2 avaliações citam CDB ou rendimento (14 na W45). Nas redes, 4 interações (9 na W45). No Reclame Aqui, 41 reclamações (38 na W45), com resgate de CDB e CDB Titan retido.",
+  "ra": [
+   "era6",
+   "era2",
+   "era3"
+  ]
+ },
+ "eventos": [
+  {
+   "d": "13/11",
+   "tag": "Feature",
+   "t": "Solução implementada para instabilidades no resgate do CDB dentro da jornada (#cxm-team)."
+  }
+ ],
+ "jornada": {
+  "resgate": "Resgate tem a menor parcela positiva da jornada no período; a solução entrou em 13/11.",
+  "rendimento": "Rendimento: relato de valor em CDI sem autorização.",
+  "cartao": "Garantia do cartão: CDB que só sai cancelando o cartão."
+ }
 }

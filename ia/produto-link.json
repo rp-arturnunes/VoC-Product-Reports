@@ -1,22 +1,67 @@
 {
  "analise": {
-  "clientes": "O Link de Pagamento perde 24,7 pts de NPS (53,7 para 29,0) com detratores de 8 para 19, em base de 62 respostas.",
-  "mudou": "Suporte humano estável em 66 casos e bot retém 3 sessões contra 16.",
+  "clientes": "O Link de Pagamento perde 24,7 pts de NPS (53,7 para 29,0), em base de 62 respostas: os lojistas dizem que o cliente não consegue pagar o link, que o link não é encontrado e que a venda aprovada no banco não aparece no app.",
+  "mudou": "Suporte humano estável em 66 casos nas duas semanas, com bot retendo 3 sessões contra 16; detratores de 8 para 19.",
   "atencao": [
-   "Prazo para o dinheiro cair e taxa do cartão aparecem nos comentários."
+   "Prazo para o dinheiro cair e taxa do cartão aparecem nos comentários.",
+   "CSAT com apenas 6 respostas."
   ]
  },
- "motivos": [],
- "temas": [],
+ "motivos": [
+  {
+   "t": "Cliente não consegue pagar o link",
+   "n": 0,
+   "ant": 0,
+   "var": "–",
+   "det": null,
+   "ex": [
+    "el1",
+    "el2",
+    "el3",
+    "el6",
+    "e18",
+    "e20"
+   ]
+  },
+  {
+   "t": "Não recebeu a venda",
+   "n": 0,
+   "ant": 0,
+   "var": "–",
+   "det": null,
+   "ex": [
+    "el4",
+    "el5",
+    "e17",
+    "e19",
+    "e21",
+    "e24"
+   ]
+  }
+ ],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Prazo para receber e taxa do cartão",
+   "n": 19,
+   "tom": "neg",
+   "x": "Detratores de 8 para 19: dinheiro que não cai no mesmo dia e taxa do cartão somada à taxa normal."
+  }
+ ],
  "exemplos": {
   "NPS Transacional": [
    "e17",
-   "e18"
+   "e18",
+   "e19"
   ]
  },
  "mencoes": {
-  "texto": "",
+  "texto": "Link de Pagamento quase não aparece em lojas e redes (3 interações nas redes); no Reclame Aqui, 1 reclamação.",
   "ra": []
  },
- "eventos": []
+ "eventos": [],
+ "jornada": {
+  "pagamento": "Pagamento do cliente concentra a piora: link que recusa, link não encontrado e erro no app do comprador.",
+  "recebimento": "Recebimento: venda aprovada no banco do cliente que não aparece no app."
+ }
 }

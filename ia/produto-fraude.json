@@ -1,9 +1,10 @@
 {
  "analise": {
-  "clientes": "Carteira Desativada mais que dobra (349 para 776) com o saldo bloqueado total indo de 271 para 667 ocorrências.",
+  "clientes": "Carteira Desativada mais que dobra (349 para 776) com o saldo bloqueado total indo de 271 para 667 ocorrências: os clientes dizem que o prazo de desbloqueio informado não foi cumprido e não sabem a origem do bloqueio.",
   "mudou": "Conta Desativada estável (373); Chargeback Recovery +16% (237); CSAT de 56,1%, 23,8% e 46,4%.",
   "atencao": [
-   "Prazo prometido de 72 horas para desbloqueio aparece nos resumos de tickets."
+   "Prazo prometido de 72 horas para desbloqueio aparece nos relatos.",
+   "Contestação de Pix que o cliente diz não ter feito é a origem citada em vários bloqueios."
   ]
  },
  "motivos": [
@@ -12,13 +13,40 @@
    "n": 667,
    "ant": 271,
    "var": "+146%",
-   "det": null,
+   "det": {
+    "res": "O bloqueio total é quase toda a alta: o cliente diz que o prazo prometido venceu, que a contestação de Pix não foi dele e que precisa do valor.",
+    "dor": [
+     "<b>Prazo que vence:</b> prazos de 72 horas e de data fixa que não são cumpridos.",
+     "<b>Contestação que o cliente nega:</b> bloqueio por Pix que ele diz não ter contestado.",
+     "<b>Conta encerrada com saldo:</b> aviso de encerramento sem conseguir transferir."
+    ],
+    "exp": "Saber por que a carteira foi bloqueada e receber o saldo no prazo informado.",
+    "falha": [
+     [
+      "Produto",
+      "O prazo informado ao cliente não é cumprido nem renovado com aviso. Indício: relatos de 09 a 12/11 de prazos vencidos."
+     ],
+     [
+      "Atendimento",
+      "O motivo do bloqueio não é dito ao cliente. Indício: relato de 09/11 sem informação sobre a movimentação."
+     ]
+    ],
+    "ex": [
+     "et1",
+     "et2",
+     "et3",
+     "et4",
+     "et5",
+     "et6"
+    ]
+   },
    "ex": [
-    "e40",
-    "e41",
-    "e42",
-    "e43",
-    "e44"
+    "et1",
+    "et2",
+    "et3",
+    "et4",
+    "et5",
+    "et6"
    ]
   },
   {
@@ -27,19 +55,55 @@
    "ant": 55,
    "var": "+0%",
    "det": null,
-   "ex": []
+   "ex": [
+    "et7",
+    "et8",
+    "ec4",
+    "ec5",
+    "erf2",
+    "era4"
+   ]
   }
  ],
- "temas": [],
+ "temas": [
+  {
+   "canal": "Redes sociais",
+   "t": "Bloqueio e encerramento de conta",
+   "n": 16,
+   "tom": "neg",
+   "x": "Carteira bloqueada depois de Pix recebido, sem retorno, e conta encerrada sem direito de defesa; 15 negativas."
+  },
+  {
+   "canal": "Reclame Aqui",
+   "t": "Saldo bloqueado e conta encerrada",
+   "n": 123,
+   "tom": "neg",
+   "x": "Prazo de análise vencido e conta cancelada sem os itens dos Termos de Uso."
+  }
+ ],
  "exemplos": {
-  "Suporte": [
-   "e43",
-   "e45"
+  "Redes sociais": [
+   "erf1",
+   "erf2",
+   "erf3"
+  ],
+  "Reclame Aqui": [
+   "era4",
+   "era5",
+   "era6"
   ]
  },
  "mencoes": {
-  "texto": "",
-  "ra": []
+  "texto": "Nas lojas, 3 avaliações citam bloqueio ou encerramento (6 na W45), todas negativas. Nas redes, 16 interações (9 na W45), 15 negativas. No Reclame Aqui, 123 reclamações (139 na W45).",
+  "ra": [
+   "era4",
+   "era5",
+   "era6"
+  ]
  },
- "eventos": []
+ "eventos": [],
+ "jornada": {
+  "prazo": "Prazo e liberação é o centro da dor: prazo informado que vence.",
+  "bloqueio": "Bloqueio: contestação de Pix que o cliente nega."
+ }
 }

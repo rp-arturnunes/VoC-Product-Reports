@@ -1,22 +1,51 @@
 {
  "analise": {
-  "clientes": "A Recarga de Celular perde 6,5 pts de NPS (81,5 para 75,0) em 96 respostas, com comentários sobre cashback retirado.",
-  "mudou": "Suporte humano de 8 para 10 casos.",
+  "clientes": "A Recarga de Celular perde 6,5 pts de NPS (81,5 para 75,0) em 96 respostas, com comentários de cashback retirado e pedido de cashback em todas as recargas; o volume de suporte é muito pequeno.",
+  "mudou": "Suporte humano de 8 para 10 casos; Reclame Aqui em 32 (30 na W45).",
   "atencao": [
    "Base pequena."
   ]
  },
- "motivos": [],
- "temas": [],
+ "motivos": [
+  {
+   "t": "Cashback e bônus",
+   "n": 0,
+   "ant": 0,
+   "var": "–",
+   "det": null,
+   "ex": [
+    "e27",
+    "e28",
+    "e30",
+    "e38",
+    "e39",
+    "e3a"
+   ]
+  }
+ ],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Cashback e taxas",
+   "n": 10,
+   "tom": "neg",
+   "x": "Detratores de 6 para 10: cashback retirado e taxas altas."
+  }
+ ],
  "exemplos": {
   "NPS Transacional": [
    "e27",
-   "e28"
+   "e38",
+   "e39"
   ]
  },
  "mencoes": {
-  "texto": "",
+  "texto": "Recarga de Celular quase não aparece em lojas e redes; no Reclame Aqui, 32 reclamações (30 na W45).",
   "ra": []
  },
- "eventos": []
+ "eventos": [],
+ "jornada": {
+  "bonus": "Bônus e cashback tem a menor parcela positiva da jornada.",
+  "recarga": "Recarga: parcela positiva estável."
+ }
 }

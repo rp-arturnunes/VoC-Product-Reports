@@ -1,10 +1,11 @@
 {
  "analise": {
-  "clientes": "O Cartão recua 12% no suporte humano depois do pico da anuidade, mas \"problemas com o uso do cartão\" mais que dobra.",
-  "mudou": "NPS Transacional de 41,4 para 45,8 e CSAT de 82,8% para 75,5%.",
+  "clientes": "O Cartão recua 12% no suporte humano depois do pico da anuidade, mas os clientes falam de compra autorizada pelo banco e recusada no app, de valor de empréstimo ou de venda que virou fatura e de anuidade em cartão que não usam.",
+  "mudou": "NPS Transacional de 41,4 para 45,8, abaixo do mínimo de 55, e CSAT de 82,8% para 75,5%. \"Problemas com o uso do cartão\" vai de 91 para 209 (+130%) e fatura e bloqueio recuam depois do maior lote da anuidade da W45.",
   "atencao": [
    "NPS ainda abaixo do mínimo de 55.",
-   "\"Problemas com o uso do cartão\" de 91 para 209 sem evento correlato registrado."
+   "\"Problemas com o uso do cartão\" de 91 para 209 sem evento correlato registrado.",
+   "Valor de empréstimo e de venda do Tap to Pay que vira limite e fatura aparece também no Reclame Aqui."
   ]
  },
  "motivos": [
@@ -13,44 +14,165 @@
    "n": 288,
    "ant": 435,
    "var": "-34%",
-   "det": null,
-   "ex": []
+   "det": {
+    "res": "O contato recua 34% depois do pico da anuidade, e o cliente que cancela ainda associa o cancelamento à cobrança mensal e à anuidade.",
+    "dor": [
+     "<b>Cancelar para parar de pagar:</b> o cliente diz que quer encerrar o cartão porque é cobrado todo mês.",
+     "<b>Cartão que o cliente não reconhece:</b> o fluxo diz que ele não tem cartão e ele quer cancelar.",
+     "<b>Anuidade em cartão cancelado:</b> a cobrança chega mesmo depois do cancelamento."
+    ],
+    "exp": "Que cancelar o cartão encerre as cobranças e que a anuidade lançada seja estornada.",
+    "falha": [
+     [
+      "Produto",
+      "O cancelamento no app não confirma o encerramento das cobranças. Indício: relato de anuidade cobrada depois do cancelamento (13/11)."
+     ]
+    ],
+    "ex": [
+     "ev1",
+     "ev2",
+     "e2",
+     "e3",
+     "elb6",
+     "elc1"
+    ]
+   },
+   "ex": [
+    "ev1",
+    "ev2",
+    "e2",
+    "e3",
+    "elb6",
+    "elc1"
+   ]
   },
   {
    "t": "Não entende porque recebeu uma fatura",
    "n": 287,
    "ant": 358,
    "var": "-20%",
-   "det": null,
-   "ex": []
+   "det": {
+    "res": "A fatura cai 20%, mas segue entre os principais motivos: o cliente não liga a fatura ao empréstimo ou à venda que virou limite e acha que paga duas vezes.",
+    "dor": [
+     "<b>\"Dinheiro que já é meu\":</b> colocou saldo no cartão ou recebeu venda e vê fatura do mesmo valor.",
+     "<b>Empréstimo que vira limite:</b> quem pede empréstimo precisa do dinheiro e não de limite no cartão.",
+     "<b>Cobrança depois de pagar:</b> parcela a mais e fatura que o cliente diz já ter quitado."
+    ],
+    "exp": "Que o valor recebido por empréstimo ou venda não gere fatura e que a cobrança seja explicada.",
+    "falha": [
+     [
+      "Produto",
+      "O valor que vira limite do cartão não é explicado antes de a fatura chegar. Indício: três relatos de 09 a 12/11 de fatura sobre dinheiro que o cliente diz ser seu."
+     ]
+    ],
+    "ex": [
+     "ev3",
+     "ev4",
+     "ev5",
+     "ev6",
+     "ev8",
+     "e1"
+    ]
+   },
+   "ex": [
+    "ev3",
+    "ev4",
+    "ev5",
+    "ev6",
+    "ev8",
+    "e1"
+   ]
   },
   {
    "t": "Problemas com o uso do cartão",
    "n": 209,
    "ant": 91,
    "var": "+130%",
-   "det": null,
-   "ex": []
-  },
-  {
-   "t": "Alterar ou entender o limite",
-   "n": 127,
-   "ant": 133,
-   "var": "-5%",
-   "det": null,
-   "ex": []
+   "det": {
+    "res": "Motivo que mais cresce: compra recusada no app e aprovada no banco do cartão, pagamento do empréstimo de outro app recusado e parcelamento negado.",
+    "dor": [
+     "<b>Autorizada de um lado, recusada do outro:</b> o banco aprova, o app mostra rejeitada e o valor fica debitado.",
+     "<b>Pagamento recusado em carteiras:</b> Apple Pay e saldo do cartão recusados no mesmo pagamento.",
+     "<b>Parcelamento negado:</b> compra rejeitada porque o cartão só faz à vista."
+    ],
+    "exp": "Que a compra aprovada pelo banco apareça como aprovada no app e que o parcelamento tenha regra clara.",
+    "falha": [
+     [
+      "Produto",
+      "O app e o banco emissor mostram status diferentes para a mesma compra. Indício: dois relatos de 12/11 com compra aprovada no banco e rejeitada no app."
+     ]
+    ],
+    "ex": [
+     "eu1",
+     "eu2",
+     "eu3",
+     "eu4",
+     "eu5",
+     "ef5"
+    ]
+   },
+   "ex": [
+    "eu1",
+    "eu2",
+    "eu3",
+    "eu4",
+    "eu5",
+    "ef5"
+   ]
   }
  ],
- "temas": [],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Cartão: anuidade, fatura e cobrança",
+   "n": 63,
+   "tom": "neg",
+   "x": "Anuidade em cartão cancelado, fatura de algo que o cliente diz não ter consumido e juros que subiram sem explicação."
+  },
+  {
+   "canal": "Lojas de apps",
+   "t": "Cartão e cashback",
+   "n": 29,
+   "tom": "mix",
+   "x": "31% positivas; cartão com limite garantido sem cashback e cartão que o cliente não recebeu."
+  },
+  {
+   "canal": "Redes sociais",
+   "t": "Pix com cartão e fatura",
+   "n": 27,
+   "tom": "neg",
+   "x": "Juros do Pix parcelado, valor recebido no cartão que virou limite e fatura sem acesso ao app; 20 negativas."
+  }
+ ],
  "exemplos": {
   "NPS Transacional": [
    "e1",
+   "e2",
    "e3"
+  ],
+  "Lojas de apps": [
+   "elc1",
+   "elc2",
+   "elc3"
+  ],
+  "Redes sociais": [
+   "erc1",
+   "erc3",
+   "erc4"
   ]
  },
  "mencoes": {
-  "texto": "",
-  "ra": []
+  "texto": "Nas lojas, o Cartão aparece em 29 avaliações (46 na W45), 31% positivas, com cartão com limite garantido sem cashback. Nas redes, 27 interações (32 na W45), 20 negativas, sobre juros do Pix parcelado e desconto de R$ 5,99 no cartão. No Reclame Aqui, 207 reclamações (232 na W45), com fatura de venda do Tap to Pay e anuidade de cartão virtual sem uso.",
+  "ra": [
+   "era10",
+   "era11",
+   "era18"
+  ]
  },
- "eventos": []
+ "eventos": [],
+ "jornada": {
+  "uso": "Uso e compras concentra a piora da semana, com compras recusadas e pagamento com carteira digital recusado.",
+  "custos": "Custos e tarifas: anuidade e juros seguem no centro dos comentários negativos.",
+  "encerramento": "Encerramento tem a menor parcela positiva: quem cancela ainda é cobrado."
+ }
 }

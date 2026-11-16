@@ -6,20 +6,20 @@
   {
    "produto": "Transporte",
    "chave": "transporte",
-   "texto": "**Transporte**\n**Resumo:** O NPS cai de 80,2 para 70,1 (204 promotores e 26 detratores em 254 respostas) e o suporte humano de 103 para 45 (−56%), com CSAT em 3 de 6 respostas. Parte dos casos de 15/11 ainda aguarda classificação, então a queda de volume pode estar superestimada.\n**Destaques da semana:**\n• Alerta de recarga de transporte ligado por mais de 12h — o alerta automático do NewRelic \"Instabilidade na recarga de transporte\" ficou ativo desde 11/11 21:39, acima do limite de 2h, segundo #cxm-team (12/11); coincide com a queda do NPS. Em acompanhamento.\n• Alcance do aviso na home — em #squad_cx (09/11), a revisão dos alertas mostrou que só 1% de quem viu o aviso era da cidade afetada. Em acompanhamento.\n• NPS fora do recorde da W45 — 70,1 contra 80,2, o maior da série. Em queda.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
-   "link_painel": true
+   "texto": "**Transporte**\n**Resumo:** O NPS cai de 80,2 para 70,1 (204 promotores e 26 detratores em 254 respostas) e o suporte humano de 103 para 45 (−56%), com CSAT em 3 de 6 respostas. Parte dos casos de 15/11 ainda aguarda classificação, então a queda de volume pode estar superestimada.\n**Destaques da semana:**\n• Alerta de recarga de transporte ligado por mais de 12h — o alerta automático do NewRelic \"Instabilidade na recarga de transporte\" ficou ativo desde 11/11 21:39, acima do limite de 2h, segundo #cxm-team (12/11); coincide com a queda do NPS. Em acompanhamento.\n• Alcance do aviso na home — em #squad_cx (09/11), a revisão dos alertas mostrou que só 1% de quem viu o aviso era da cidade afetada. Em acompanhamento.\n• NPS fora do recorde da W45 — 70,1 contra 80,2, o maior da série. Em queda.\n**Menções:**\n• Nas lojas, 7 avaliações citam transporte (5 na W45), 3 positivas, com crédito que demora e QR code não lido na catraca.\n• No Reclame Aqui, 9 reclamações (14 na W45).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=transporte/rep|Ver no Report de Transporte>",
+   "link_painel": false
   },
   {
    "produto": "Contas e Boletos",
    "chave": "outros/utilities",
-   "texto": "**Contas e Boletos**\n**Resumo:** O NPS cai de 69,0 para 57,2 (121 promotores e 26 detratores em 166 respostas); o CSAT sobe de 75,7% para 89,3% (25 de 28). O suporte humano cai de 249 para 135 (−46%) e \"não recebi o cashback\" de 96 para 51, depois do fim do cashback de 05/11 mapeado no report da W45.\n**Destaques da semana:**\n• Cashback ainda é o principal motivo — \"não recebi o cashback\" cai de 96 para 51, mas segue como o 1º motivo do produto; coincide com o fim do cashback em 05/11. Em acompanhamento.\n• NPS abaixo da W45 — 57,2 (−11,8), com detratores de 18 para 26. Em queda.\n• CSAT em recuperação — 89,3%, acima da meta de 80%. Em melhora.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
-   "link_painel": true
+   "texto": "**Contas e Boletos**\n**Resumo:** O NPS cai de 69,0 para 57,2 (121 promotores e 26 detratores em 166 respostas); o CSAT sobe de 75,7% para 89,3% (25 de 28). O suporte humano cai de 249 para 135 (−46%) e \"não recebi o cashback\" de 96 para 51, depois do fim do cashback de 05/11 mapeado no report da W45.\n**Destaques da semana:**\n• Cashback ainda é o principal motivo — \"não recebi o cashback\" cai de 96 para 51, mas segue como o 1º motivo do produto; coincide com o fim do cashback em 05/11. Em acompanhamento.\n• NPS abaixo da W45 — 57,2 (−11,8), com detratores de 18 para 26. Em queda.\n• CSAT em recuperação — 89,3%, acima da meta de 80%. Em melhora.\n**Menções:**\n• Nas lojas, 8 avaliações citam boleto e cashback (13 na W45), 2 positivas, com relatos de desinstalação.\n• Nas redes, 3 interações (10 na W45). No Reclame Aqui, 11 reclamações (20 na W45), com cashback sumido.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=outros/utilities/rep|Ver no Report de Contas e Boletos>",
+   "link_painel": false
   },
   {
    "produto": "Recarga de Celular",
    "chave": "outros/topup",
-   "texto": "**Recarga de Celular**\n**Resumo:** O NPS cai de 81,5 para 75,0 (82 promotores e 10 detratores em 96 respostas). O suporte humano vai de 8 para 10 e os casos especiais de 0 para 2, volumes muito pequenos.\n**Destaques da semana:**\n• NPS em queda moderada — 75,0 (−6,5), ainda na meta de 75. Em acompanhamento.\n• Volume de suporte baixo — 10 casos humanos na semana, sem evento correlato. Estável.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156|Ver no painel de Experiência do Produto>",
-   "link_painel": true
+   "texto": "**Recarga de Celular**\n**Resumo:** O NPS cai de 81,5 para 75,0 (82 promotores e 10 detratores em 96 respostas). O suporte humano vai de 8 para 10 e os casos especiais de 0 para 2, volumes muito pequenos.\n**Destaques da semana:**\n• NPS em queda moderada — 75,0 (−6,5), ainda na meta de 75. Em acompanhamento.\n• Volume de suporte baixo — 10 casos humanos na semana, sem evento correlato. Estável.\n**Menções:**\n• Nas lojas, 2 avaliações; nas redes, 4 interações. No Reclame Aqui, 32 reclamações (30 na W45).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=outros/topup/rep|Ver no Report de Recarga de Celular>",
+   "link_painel": false
   }
  ]
 }
