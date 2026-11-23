@@ -49,7 +49,7 @@
     ],
     "u": ""
    },
-   "det": "O tema sobe desde a W42 e chega ao pico na W45 (98), com 92 na W46; a W47 (parcial) tem 67. É a reclamação mais constante do período e aparece em NPS, lojas e redes. Os comentários falam de taxa que aumentou, anuidade cobrada de quem tentava cancelar o cartão e taxa de Pix.",
+   "det": "O tema sobe desde a W42 e chega ao pico na W45 (98), com 92 na W46; a W47 tem 67, abaixo da W46 e acima das semanas de setembro (52 a 66). É a reclamação mais constante do período e aparece em NPS, lojas e redes. Os comentários falam de taxa que aumentou, anuidade cobrada de quem tentava cancelar o cartão e taxa de Pix.",
    "ex": [
     "efq",
     "efr",
@@ -61,7 +61,7 @@
   {
    "t": "Pix e app com erro ou instabilidade",
    "p": "pix",
-   "d": "Pico na W46 (91 menções, três vezes o patamar de outubro) com relatos de Pix fora do ar em 14 e 15/11; cai para 30 na W47.",
+   "d": "Pico na W46 (91 menções, três vezes o patamar de outubro) com relatos de Pix fora do ar em 14 e 15/11; cai para 30 na W47, já sem o pico de 15/11.",
    "serie": {
     "l": "Menções negativas a erro, travamento e instabilidade (NPS, lojas e redes)",
     "v": [
@@ -78,7 +78,7 @@
     ],
     "u": ""
    },
-   "det": "A alta da W46 coincide com os relatos de 14 e 15/11: lojas e redes falam de quase 24 horas sem conseguir fazer Pix e de falta de explicação no app; na Reclame Aqui o tema Pix chega a 164 reclamações na W46 e volta a 76 na W47. Na W47 permanecem relatos isolados de Pix que recusa por saldo, mesmo com saldo na carteira (22/11).",
+   "det": "A alta da W46 coincide com os relatos de 14 e 15/11: lojas e redes falam de quase 24 horas sem conseguir fazer Pix; na Reclame Aqui o tema Pix chega a 164 reclamações na W46 (74 só em 15/11) e volta a 76 na W47. Em 22/11, as redes têm 7 interações sobre Pix, todas negativas (média de 1,5 por dia de 16 a 21/11); cinco, entre 03h41 e 05h34, falam de Pix que não funciona ou que recusa por saldo, logo após a janela de falha de 00h18 a 03h21.",
    "ex": [
     "efv",
     "efw",
@@ -285,7 +285,7 @@
     ],
     "u": ""
    },
-   "det": "Vem de promotores do NPS e de avaliações positivas das lojas. O cliente destaca simplicidade de uso, comprovantes e fazer compras sem abrir o app. A W47 é parcial (dados até 21/11) e fica abaixo apenas por ter menos dias.",
+   "det": "Vem de promotores do NPS e de avaliações positivas das lojas. O cliente destaca simplicidade de uso, comprovantes e fazer compras sem abrir o app. A W47 fica 18% abaixo da W46, junto com a queda de 19% nas respostas do NPS Transacional e de 43% nas avaliações das lojas na semana.",
    "ex": [
     "egu",
     "egv",

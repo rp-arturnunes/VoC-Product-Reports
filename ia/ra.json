@@ -1,5 +1,5 @@
 {
- "texto": "O Reclame Aqui recebeu 383 reclamações na W47, 31% abaixo da W46 (554) e no patamar de 360 a 410 das semanas anteriores à W45. A queda vem de Pix (-54% depois do pico da W46, que coincide com a instabilidade de 14 e 15/11), cobrança, fatura e anuidade (-33%, depois do pico da W45) e atendimento sem solução (-32%). Golpe e fraude (+2%) e seguro não contratado (estável) não recuam. Empréstimo e limite (-20%) e saldo bloqueado e conta encerrada (-22%) seguem como temas de maior volume junto com cobrança.",
+ "texto": "O Reclame Aqui recebeu 383 reclamações na W47, 31% abaixo da W46 (554, com 111 só em 15/11) e no patamar de 360 a 410 das semanas anteriores à W45. A queda vem de Pix (-54% depois do pico da W46, que coincide com a instabilidade de 14 e 15/11), cobrança, fatura e anuidade (-33%, depois do pico da W45) e atendimento sem solução (-32%). Golpe e fraude (+2%) e seguro não contratado (estável) não recuam. Em 22/11, dia da falha de Pix, foram 30 reclamações, 2 sobre Pix, sem repetir o pico de 15/11.",
  "aviso": "Base HugMe (prod.cx.fat_hugme_tickets), pela data da reclamação. Os temas são identificados por palavras no título e no texto, e uma reclamação pode ter mais de um tema. Os exemplos são títulos literais das reclamações; o id é o da reclamação no Reclame Aqui.",
  "temas": [
   {

@@ -1,6 +1,6 @@
 {
- "texto": "Nas lojas, 53% das avaliações da W47 (parcial, até 22/11) são positivas, contra 50% na W46, a menor parcela em 10 semanas (era de 68% na W41), e o volume da W47 é menor por ter menos dias. Cartão, Empréstimo e Pix concentram as avaliações negativas: anuidade e cashback retirado, empréstimo de valor muito baixo e Pix que não deixa usar o saldo. As redes têm 57% de interações negativas na W47 contra 43% na W46, quando o volume foi o maior do período (586 interações) com a instabilidade do Pix de 14 e 15/11; os relatos de bloqueio e de falta de atendimento ficam mais isolados.",
- "aviso": "A classificação de sentimento das redes (Buzzmonitor) marca reclamações e conteúdo fora do tema como positivos; por isso a % positiva das redes não é usada e a leitura é pela % negativa. Produtos pela mesma regra da query Lojas Redes Produtos (palavras-chave no texto; um comentário pode ter mais de um produto). Exemplos abaixo.",
+ "texto": "Nas lojas, 53% das avaliações da W47 são positivas, contra 50% na W46, a menor parcela em 10 semanas (era de 68% na W38); o volume cai 43% (224 contra 391) porque a W46 inclui o pico de 15/11 (88 avaliações no dia, 66 negativas). Cartão, Empréstimo e Pix concentram as avaliações negativas. As redes têm 57% de interações negativas na W47 contra 43% na W46, quando o volume foi o maior do período (586 interações) com a instabilidade do Pix; o volume cai 69% (184). Em 22/11 há 7 interações sobre Pix, todas negativas, contra média de 1,5 por dia de 16 a 21/11.",
+ "aviso": "A classificação de sentimento das redes (Buzzmonitor) marca reclamações e conteúdo fora do tema como positivos; por isso a % positiva das redes não é usada e a leitura é pela % negativa. Produtos pela mesma regra da query Lojas Redes Produtos (palavras-chave no texto; um comentário pode ter mais de um produto). A coleta das lojas em 22/11 tinha só 3 avaliações, então o domingo está subcontado. Exemplos abaixo.",
  "loja": {
   "temas": [
    {
@@ -92,7 +92,7 @@
     "n": 16,
     "neg": 14,
     "tom": "neg",
-    "x": "Relatos de Pix que não funciona e de erro de saldo insuficiente com saldo na carteira (22/11). Na W46 (101 interações, 65 negativas) concentram a instabilidade de 14 e 15/11 em Instagram."
+    "x": "Relatos de Pix que não funciona e de erro de saldo insuficiente com saldo na carteira: 7 das 16 interações da W47 são de 22/11, todas negativas e, cinco delas, entre 03h41 e 05h34. Na W46 (101 interações, 65 negativas) concentram a instabilidade de 14 e 15/11 em Instagram."
    },
    {
     "t": "Bloqueio, conta e saldo",
