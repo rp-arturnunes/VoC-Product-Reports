@@ -1,7 +1,7 @@
 {
  "analise": {
-  "clientes": "O cliente do Empréstimo quer pagar e ter o limite de volta: o Suporte humano cai cerca de 25% na W47 (dados até 21/11), mas o contato migra para limite reduzido depois de quitar, cobrança automática e fatura do cartão. Quem quita antes do prazo relata oferta de R$ 10 ou nenhuma oferta; quem atrasa conta que saldo ou limite do cartão cadastrado foi debitado sem aviso. Em 16/11, clientes não conseguiram gerar Pix ou QR para pagar a parcela (\"serviço indisponível\"). No NPS Transacional, cerca de 36% dos comentários citam limite, a maioria pedindo valor maior.",
-  "mudou": "Suporte humano −25% (Empréstimo e Consignado somados, 16–21/11 contra 09–14/11). \"Problemas com cartão de crédito\" cai 53%, \"desconhece a cobrança\" 45% e \"deseja cancelar\" 37%; sobem \"não consegue efetuar o pagamento\" (+60%), \"discorda do limite\" (+24%) e \"instabilidade no app\", que não aparecia na W46 comparável. NPS Transacional em 65,3 (63,9 na W46) e CSAT em 59,8% (63,1%).",
+  "clientes": "O cliente do Empréstimo quer pagar e ter o limite de volta: o Suporte humano cai 25% na W47 (Empréstimo Pessoal −25% e Consignado −33%, este em base pequena), mas o contato migra para limite reduzido depois de quitar, cobrança automática e fatura do cartão. Quem quita antes do prazo relata oferta de R$ 10 ou nenhuma oferta; quem atrasa conta que saldo ou limite do cartão cadastrado foi debitado sem aviso. Em 16/11, clientes não conseguiram gerar Pix ou QR para pagar a parcela (\"serviço indisponível\"). No NPS Transacional, cerca de 26% dos comentários citam limite, a maioria pedindo valor maior.",
+  "mudou": "Suporte humano −25% no Empréstimo Pessoal e −33% no Consignado (base pequena), W47 contra W46; a W46 já tinha caído 17% sobre a W45. \"Problemas com cartão de crédito\" cai 52%, \"desconhece a cobrança\" 45% e \"deseja cancelar\" 38%; sobem \"não consegue efetuar o pagamento\" (+39%), \"discorda do limite\" (+21%) e \"instabilidade no app\", concentrada em 16/11. NPS Transacional em 65,3 (63,9 na W46) e CSAT em 60,0% (63,1%). Em 22/11, sem efeito mensurável do incidente de Pix e checkout.",
   "atencao": [
    "Limite que cai ou fica em R$ 10 depois de quitar: aparece em NPS, lojas e redes na W47; sem solução registrada nas fontes consultadas.",
    "Débito automático de saldo e do limite do cartão cadastrado em empréstimo atrasado: clientes dizem não ter autorizado (16/11 a 20/11); sem posicionamento registrado.",
@@ -11,9 +11,9 @@
  "motivos": [
   {
    "t": "Não consegue contratar um empréstimo",
-   "n": 104,
-   "ant": 131,
-   "var": "−21%",
+   "n": 113,
+   "ant": 147,
+   "var": "−23%",
    "det": {
     "res": "Quem já quitou não vê nova oferta ou vê um valor menor, e a resposta é que a análise é automática. Parte tenta contratar o valor exibido e recebe \"cadastro não habilitado\".",
     "dor": [
@@ -41,9 +41,9 @@
   },
   {
    "t": "Deseja cancelar o empréstimo",
-   "n": 59,
-   "ant": 94,
-   "var": "−37%",
+   "n": 65,
+   "ant": 105,
+   "var": "−38%",
    "det": {
     "res": "Contratação feita sem querer ou sem entender que o valor foi para o limite do cartão; o cliente quer cancelar ou resgatar o saldo e há quem relate cobrança com juros depois de cancelamento aprovado.",
     "dor": [
@@ -71,8 +71,8 @@
   },
   {
    "t": "Desconhece ou não concorda com a cobrança",
-   "n": 57,
-   "ant": 103,
+   "n": 59,
+   "ant": 107,
    "var": "−45%",
    "det": {
     "res": "Na W47 aparece o débito automático de saldo e do limite de cartão cadastrado para cobrir empréstimo em atraso, que o cliente diz não ter autorizado; também há dúvida sobre valores já pagos.",
@@ -101,9 +101,9 @@
   },
   {
    "t": "Quer entender porque seu pagamento não compensou",
-   "n": 39,
+   "n": 41,
    "ant": 42,
-   "var": "−7%",
+   "var": "−2%",
    "det": {
     "res": "O cliente pagou e continua recebendo cobrança ou vê o empréstimo em atraso; há casos de pagamento parcial sem abatimento e de renegociação paga como quitação total.",
     "dor": [
@@ -134,28 +134,28 @@
   {
    "canal": "NPS Transacional",
    "t": "Limite e valor do empréstimo",
-   "n": 140,
+   "n": 114,
    "tom": "mix",
-   "x": "Elogio: rapidez (\"cai na hora\") e ajuda em necessidade. Crítica: limite fixo ou reduzido a R$ 10 mesmo pagando em dia; pedem valor maior. 32 dos 74 detratores citam limite."
+   "x": "Elogio: rapidez (\"cai na hora\") e ajuda em necessidade. Crítica: limite fixo ou reduzido a R$ 10 mesmo pagando em dia; pedem valor maior. 27 dos 84 detratores com comentário citam limite."
   },
   {
    "canal": "NPS Transacional",
    "t": "Juros e taxas",
-   "n": 23,
+   "n": 24,
    "tom": "neg",
    "x": "Juros no atraso e juros altos aparecem junto de elogio ao produto, em notas entre 6 e 10."
   },
   {
    "canal": "Lojas",
    "t": "Oferta que cai depois de quitar",
-   "n": 21,
+   "n": 22,
    "tom": "neg",
-   "x": "Limite reduzido a R$ 10 após pagamento antecipado, cobrança de juros e painel que mostra dívida depois de pagar. 29% das avaliações são positivas."
+   "x": "Limite reduzido a R$ 10 após pagamento antecipado, cobrança de juros e painel que mostra dívida depois de pagar. 27% das avaliações são positivas."
   },
   {
    "canal": "Redes",
    "t": "Oferta de R$ 7 a R$ 10",
-   "n": 19,
+   "n": 20,
    "tom": "neg",
    "x": "Clientes comparam oferta anterior (R$ 185) com a atual (R$ 7 a R$ 10); um mesmo comentário sobre fatura e empréstimo se repete várias vezes."
   }
@@ -175,7 +175,7 @@
   ]
  },
  "mencoes": {
-  "texto": "Nas lojas, o Empréstimo aparece em menos avaliações na W47 (21 contra 41 na W46, mesmos dias até 21/11) e 29% são positivas (37% na W46): limite reduzido a R$ 10 depois de quitar e juros cobrados. Nas redes, as menções vão de 16 para 19 e a maioria é negativa, com um mesmo comentário repetido várias vezes. No Reclame Aqui, as reclamações caem de 163 (W46) para 108 (W47 até 21/11) e as resolvidas passam de 20 para 7: cobrança de empréstimo quitado, cobrança em cartão de outro banco e consignado assinado que desaparece do app.",
+  "texto": "Nas lojas, o Empréstimo aparece em menos avaliações na W47 (22 contra 41 na W46) e 27% são positivas (37% na W46): limite reduzido a R$ 10 depois de quitar e juros cobrados. Nas redes, as menções vão de 16 para 20 e 75% são negativas (44% na W46), com um mesmo comentário repetido várias vezes. No Reclame Aqui, as reclamações caem de 140 (W46) para 103 (W47) e as resolvidas passam de 18 para 5: cobrança de empréstimo quitado, cobrança em cartão de outro banco e consignado assinado que desaparece do app.",
   "ra": [
    "e9j",
    "e9k",
@@ -184,27 +184,28 @@
  },
  "eventos": [
   {
-   "d": "19/11",
+   "d": "22/11",
    "tag": "Incidente",
-   "t": "Admin: aba de Empréstimos fora do ar até ~20:28 (impacto interno, 0 contatos atribuíveis); coincide com o dia de maior volume de \"discorda do limite\" da W47. Efeito no cliente ainda não medido."
+   "t": "Pix e checkout com falha de 00h18 a 03h21 (aprovações −34%). Em Empréstimo, 2 contatos de instabilidade no app às 02h coincidem com a janela; o dia fecha com o menor volume de domingo das últimas 6 semanas. Efeito não mensurável."
+  },
+  {
+   "d": "18/11",
+   "tag": "Incidente",
+   "t": "Matera: virada do dia 01h00-04h35 (contratações recusadas) e manutenção 21h00-22h50; coincide com o dia de maior volume de \"discorda do limite\" e o segundo de \"não consegue efetuar o pagamento\" da W47."
   },
   {
    "d": "16/11",
    "tag": "Incidente",
-   "t": "Clientes não conseguem gerar Pix ou QR para pagar a parcela (\"serviço indisponível\"); o bot avisou instabilidade de Pix na manhã de 16/11. Impacto: contatos por instabilidade no app aparecem na W47, sem registro na W46."
-  },
-  {
-   "d": "19/11",
-   "tag": "Produto",
-   "t": "Squad Lending adapta testes e2e ao novo layout da home de Empréstimos (PR no #squad-lending). Impacto ainda não medido."
+   "t": "Clientes não conseguem gerar Pix ou QR para pagar a parcela (\"serviço indisponível\", 08h00-10h44); coincide com 86% dos contatos de \"instabilidade no app\" da W47 e o maior dia de \"não consegue efetuar o pagamento\"."
   }
  ],
  "jornada": {
-  "limite": "1.288 comentários (35% do produto), 61% positivos, abaixo da média do produto (65%) e da faixa anterior (65%).",
-  "oferta": "596 comentários (16% do produto), 52% positivos, abaixo da média do produto (65%); estável contra os 30 dias anteriores.",
-  "parcelas": "409 comentários (11% do produto), 50% positivos, abaixo da média do produto (65%); eram 52%.",
-  "cartao": "238 comentários (7% do produto), 48% positivos, bem abaixo da média (65%); volume +58% sobre os 30 dias anteriores (151).",
-  "cobranca": "69 comentários (2% do produto), 36% positivos e volume +64% (eram 42); a menor satisfação da jornada.",
-  "atendimento": "231 comentários (6% do produto), 74% positivos, acima da média do produto (65%)."
+  "limite": "1.190 comentários (36% do produto), 61% positivos, abaixo da média do produto (65%) e da faixa anterior (65%).",
+  "oferta": "544 comentários (16% do produto), 51% positivos, abaixo da média do produto (65%); estável contra os 30 dias anteriores (50%).",
+  "parcelas": "368 comentários (11% do produto), 50% positivos, abaixo da média do produto (65%); eram 52%.",
+  "cartao": "194 comentários (6% do produto), 44% positivos, bem abaixo da média (65%), acima dos 30 dias anteriores (41%); volume +64% sobre os 30 dias anteriores (118).",
+  "juros": "205 comentários (6% do produto), 44% positivos, bem abaixo da média do produto (65%); eram 51%.",
+  "cobranca": "56 comentários (2% do produto), 29% positivos e volume +56% (eram 36); a menor satisfação da jornada.",
+  "atendimento": "216 comentários (7% do produto), 73% positivos, acima da média do produto (65%), mas abaixo dos 30 dias anteriores (79%)."
  }
 }

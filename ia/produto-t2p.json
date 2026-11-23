@@ -1,31 +1,31 @@
 {
  "analise": {
-  "clientes": "O lojista segue sem ver o dinheiro da venda onde esperava: 74% das conversas de \"não recebeu a venda\" falam de cartão, limite ou Cartão Empreendedor e 40% dizem que o valor foi debitado do cliente final. Cresce o relato de venda que aparece como rejeitada no app e foi cobrada no cartão do cliente (22% das conversas do motivo). No NPS Transacional (99 comentários) predomina o elogio à praticidade (51) e o pedido é por limite de crédito maior (17).",
-  "mudou": "Suporte humano cai 46,2% (W47 parcial, dados até 21/11, contra 09–14/11), com queda em todos os motivos; as transações do Tap to Pay caem 16,5% no mesmo recorte. O NPS Transacional vai de 81,2 a 83,3 (228 respostas) e o CSAT Suporte humano de 71,0% a 84,2% (19 respostas). \"Cancelamento de venda\" cai 66%, o que coincide com o botão de cancelar transação (D+1) no recibo, publicado em 16/11. \"Atendimento não prestado\" sobe 43%.",
+  "clientes": "O lojista segue sem ver o dinheiro da venda onde esperava: 62% das conversas de \"não recebeu a venda\" falam de cartão, limite, fatura ou Cartão Empreendedor (55% na W46) e 27% dizem que o cliente final foi debitado. No NPS Transacional (86 comentários) predomina o elogio à praticidade e ao primeiro uso (70 comentários, nota média 9,9); as críticas são poucas: funcionamento do app na venda (4), pedido de mais limite de crédito (4) e dinheiro preso ou descontado do empréstimo (2).",
+  "mudou": "Suporte humano cai 43,0% na W47 contra a W46, com queda nos quatro principais motivos; a W47 também fica abaixo da W45 (−40%) e da W44 (−34%), então a queda não vem só do pico de 15/11. As transações do Tap to Pay caem 15,7%, mas só 1% contra a W44. O NPS Transacional vai de 81,2 a 83,1 (266 respostas) e o CSAT Suporte humano de 71,0% a 78,3% (23 respostas). \"Cancelamento de venda\" cai 63%, o que coincide com o botão de cancelar (D+1) publicado em 16/11. \"Atendimento não prestado\" sobe 25% sobre base pequena.",
   "atencao": [
-   "Venda rejeitada no app e cobrada no cartão do cliente: 22% das conversas de \"não recebeu a venda\". A regra \"Reject By User Risk Score\" surgiu em 09/11 e a pergunta do CX ao squad (17/11) segue sem resposta registrada.",
-   "A venda que vira limite do Cartão Empreendedor segue como maior causa do não recebimento (74% das conversas) e aparece como fatura nas reclamações do Reclame Aqui e em 8 comentários do NPS Transacional.",
-   "\"Atendimento não prestado\" sobe 43% mesmo com a queda geral; clientes dizem que recebem só as mesmas opções da ajuda e pedem atendente (ticket 46798905)."
+   "Venda rejeitada no app e cobrada no cartão do cliente: 10% das conversas de \"não recebeu a venda\" (9% na W46). A regra \"Reject By User Risk Score\" surgiu em 09/11 e a pergunta do CX ao squad (17/11) segue sem resposta registrada.",
+   "A venda que vira limite do Cartão Empreendedor segue como maior causa do não recebimento (62% das conversas) e aparece como fatura nas reclamações do Reclame Aqui.",
+   "Atraso no pagamento de vendas em 22/11 (alerta de 02h00 a 19h34): sem efeito visível nos indicadores do dia; contatos e transações ficam no padrão de um domingo."
   ]
  },
  "motivos": [
   {
    "t": "Não recebeu a venda",
-   "n": 70,
-   "ant": 141,
-   "var": "−50%",
+   "n": 76,
+   "ant": 143,
+   "var": "−47%",
    "det": {
-    "res": "O lojista não vê o dinheiro da venda: 74% das conversas falam de cartão, limite ou Cartão Empreendedor e 22% descrevem venda rejeitada no app com o cliente final debitado.",
+    "res": "O lojista não vê o dinheiro da venda: 62% das conversas falam de cartão, limite, fatura ou Cartão Empreendedor e 27% dizem que o cliente final foi debitado; 10% descrevem venda rejeitada no app.",
     "dor": [
-     "<b>Rejeitada no app, cobrada no cartão:</b> 22% das conversas; o limite do cartão do cliente foi usado e o lojista não recebe (tickets 46818213, 46819026).",
-     "<b>Venda no cartão, não na carteira:</b> 74% falam de cartão, limite ou Empreendedor; o valor vira fatura (ticket 46817829).",
-     "<b>Prazo e estorno:</b> 31% perguntam do prazo (próximo dia útil até 13h) e 22% do estorno ao cliente (tickets 46808580, 46806306)."
+     "<b>Rejeitada no app, cobrada no cartão:</b> 10% das conversas; o limite do cartão do cliente foi usado e o lojista não recebe (tickets 46818213, 46819026).",
+     "<b>Venda no cartão, não na carteira:</b> 62% falam de cartão, limite, fatura ou Empreendedor; o valor vira fatura (ticket 46817829).",
+     "<b>Prazo e estorno:</b> perguntas sobre o prazo (próximo dia útil até 13h) e sobre o estorno ao cliente (tickets 46808580, 46806306)."
     ],
     "exp": "Receber o valor na carteira, ver a venda como aprovada e, se rejeitada, não ter o cliente final cobrado.",
     "falha": [
      [
       "Produto",
-      "Venda rejeitada no app pode manter a cobrança no cartão do cliente e o lojista não vê o estorno (indício: 22% das conversas)."
+      "Venda rejeitada no app pode manter a cobrança no cartão do cliente e o lojista não vê o estorno (indício: 10% das conversas)."
      ]
     ],
     "ex": [
@@ -41,9 +41,9 @@
   },
   {
    "t": "Dúvidas sobre a utilização",
-   "n": 25,
-   "ant": 52,
-   "var": "−52%",
+   "n": 28,
+   "ant": 55,
+   "var": "−49%",
    "det": {
     "res": "O lojista não entende para onde vai o valor da venda nem quanto recebe líquido nas parcelas; as dúvidas de taxa de parcelamento e de ativação seguem presentes.",
     "dor": [
@@ -71,9 +71,9 @@
   },
   {
    "t": "Não consegue concluir a cobrança",
-   "n": 15,
-   "ant": 25,
-   "var": "−40%",
+   "n": 17,
+   "ant": 26,
+   "var": "−35%",
    "det": {
     "res": "A cobrança não conclui por recusa antes de aproximar o cartão, erro de NFC ou operação não suportada; em alguns casos a venda aparece rejeitada e o cliente é cobrado.",
     "dor": [
@@ -101,9 +101,9 @@
   },
   {
    "t": "Cancelamento de venda",
-   "n": 11,
+   "n": 12,
    "ant": 32,
-   "var": "−66%",
+   "var": "−63%",
    "det": {
     "res": "O lojista quer desfazer a venda e devolver o valor ao cliente; o botão de cancelar no recibo só vale para D+1 e o cancelamento D+0 ainda está em desenvolvimento.",
     "dor": [
@@ -132,43 +132,48 @@
  "temas": [
   {
    "canal": "NPS Transacional",
-   "t": "Praticidade e rapidez",
-   "n": 51,
+   "t": "Elogio e praticidade",
+   "n": 70,
    "tom": "pos",
-   "x": "Elogio à cobrança por aproximação, ao recebimento rápido e à facilidade, inclusive de quem usa pela primeira vez. (nota média 9,9 · 0 detratores (0–6))"
+   "x": "Elogio à cobrança por aproximação, à facilidade e ao primeiro uso; novos lojistas aprovam a experiência. (nota média 9,9 · 1 detrator (0–6))"
   },
   {
    "canal": "NPS Transacional",
    "t": "Limite de crédito e empréstimo",
-   "n": 17,
+   "n": 4,
    "tom": "mix",
-   "x": "Pedem limite maior no cartão e mais facilidade para contratar crédito. (nota média 9,3 · 1 detrator (0–6))"
+   "x": "Pedem mais limite e oferta de crédito para o negócio. (nota média 7,0 · 1 detrator (0–6))"
   },
   {
    "canal": "NPS Transacional",
-   "t": "Prazo e disponibilidade do valor",
-   "n": 10,
+   "t": "Funcionamento do app na venda",
+   "n": 4,
    "tom": "mix",
-   "x": "Querem o valor da venda no mesmo dia; parte elogia o recebimento na hora. (nota média 7,9 · 3 detratores (0–6))"
+   "x": "App demora a reconhecer o celular, uso sem internet e pedido de aproximação mais rápida. (nota média 7,8 · 2 detratores (0–6))"
   },
   {
    "canal": "NPS Transacional",
-   "t": "Venda que cai no cartão ou na fatura",
-   "n": 8,
+   "t": "Valor preso ou descontado",
+   "n": 2,
    "tom": "neg",
-   "x": "Reclamam que a venda caiu no Cartão Empreendedor ou foi descontada e querem receber na carteira. (nota média 5,9 · 4 detratores (0–6))"
+   "x": "Relatam dinheiro preso e valor da venda descontado do empréstimo. (nota média 0,0 · 2 detratores (0–6))"
   }
  ],
  "eventos": [
   {
+   "d": "22/11",
+   "tag": "Incidente",
+   "t": "Atraso no pagamento de vendas do Tap to Pay: alerta desde 02h00 e resolvido às 19h34 (#the-voice-cx). Sem efeito medido: contatos e transações do domingo ficam no padrão, NPS do dia em 81,6."
+  },
+  {
    "d": "16/11",
    "tag": "Produto",
-   "t": "Cancelamento de transação do Tap to Pay (botão no recibo, só D+1) aparece no Changelog; D+0 em desenvolvimento. Coincide com \"cancelamento de venda\" −66%."
+   "t": "Cancelamento de transação do Tap to Pay (botão no recibo, só D+1) aparece no Changelog; D+0 em desenvolvimento. Coincide com \"cancelamento de venda\" −63%."
   },
   {
    "d": "09/11",
    "tag": "Regra",
-   "t": "Regra \"Reject By User Risk Score\" surge no Tap to Pay; o CX relata mais reclamações de venda negada desde 09/11 e, até 21/11, sem resposta registrada no canal."
+   "t": "Regra \"Reject By User Risk Score\" surge no Tap to Pay; o CX relata mais reclamações de venda negada desde 09/11 e, até 22/11, sem resposta registrada nos canais lidos."
   }
  ],
  "exemplos": {
@@ -182,7 +187,7 @@
   ]
  },
  "mencoes": {
-  "texto": "O Tap to Pay tem pouca presença nas lojas de apps: 1 avaliação na W47, negativa. Nas redes, 5 menções (40% negativas, contra 25% na W46); como o Buzzmonitor classifica mal o sentimento, vale mais o volume que o tom. No Reclame Aqui há 13 reclamações até 21/11 contra 28 na semana anterior inteira, e os temas são os mesmos do suporte: venda que virou limite ou fatura do Cartão Empreendedor, venda rejeitada com cliente debitado e estorno demorado.",
+  "texto": "O Tap to Pay tem pouca presença nas lojas de apps: 1 avaliação na W47, negativa. Nas redes, 5 menções (40% negativas, contra 25% na W46); como o Buzzmonitor classifica mal o sentimento, vale mais o volume que o tom. No Reclame Aqui, 5 reclamações classificadas como Tap to Pay na W47 contra 12 na W46, nenhuma em 22/11; os temas são os mesmos do suporte: venda que virou limite ou fatura do Cartão Empreendedor, venda rejeitada com cliente debitado e estorno demorado.",
   "ra": [
    "eee",
    "eef",
@@ -190,9 +195,9 @@
   ]
  },
  "jornada": {
-  "recebimento": "44 comentários (16% do produto), 77% positivos, abaixo da média do produto (82%); venda que vira limite ou fatura (suporte e Reclame Aqui) puxa os negativos.",
-  "venda": "41 comentários (15% do produto), 71% positivos, abaixo da média (82%); no suporte, cobrança recusada antes de aproximar o cartão e venda rejeitada com cliente debitado (tickets 46816869, 46809098).",
-  "ativacao": "38 comentários (14% do produto), 84% positivos, em linha com a média (82%); novos lojistas elogiam o primeiro uso.",
-  "taxas": "16 comentários (6% do produto), 56% positivos contra 83% nos 30 dias anteriores; no suporte, dúvidas da taxa de parcelamento (tickets 46817617, 46801207)."
+  "recebimento": "44 comentários (17% do produto), 75% positivos, abaixo da média do produto (84%); venda que vira limite ou fatura (suporte e Reclame Aqui) puxa os negativos.",
+  "venda": "43 comentários (17% do produto), 70% positivos, abaixo da média (84%); no suporte, cobrança recusada antes de aproximar o cartão e venda rejeitada com cliente debitado (tickets 46816869, 46809098).",
+  "ativacao": "34 comentários (13% do produto), 85% positivos, em linha com a média (84%); novos lojistas elogiam o primeiro uso.",
+  "taxas": "15 comentários (6% do produto), 60% positivos contra 85% nos 30 dias anteriores; no suporte, dúvidas da taxa de parcelamento (tickets 46817617, 46801207)."
  }
 }

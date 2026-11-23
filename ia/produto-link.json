@@ -1,11 +1,11 @@
 {
  "analise": {
-  "clientes": "Os lojistas ficaram sem o Link de Pagamento a partir de 17/11: o time de Cyber desligou o endpoint depois de um ataque (relato do squad em 18/11) e o app passou a mostrar \"Em breve\". \"Instabilidade no app\" vira o maior motivo, sem registro na semana anterior; os clientes acham que é erro ou restrição na própria conta e perguntam quando volta (retorno previsto para 23/11, segundo o CX). Antes disso, o que mais pesava era o prazo de recebimento: 17 dos 31 comentários do NPS Transacional falam de esperar o próximo dia útil.",
-  "mudou": "Suporte humano sobe 13,8% (W47 parcial, dados até 21/11, contra 09–14/11), com pico em 18/11, e as transações do Link de Pagamento caem 77% no mesmo recorte, sem registro a partir de 18/11. O NPS Transacional vai de 30,2 a 21,2 (33 respostas, base pequena) e o CSAT Suporte humano de 62,5% a 78,6% (14 respostas). \"Não recebeu a venda\" cai 56%.",
+  "clientes": "Os lojistas seguem sem o Link de Pagamento desde 17/11: o time de Cyber desligou o endpoint depois de um ataque (relato do squad em 18/11) e o app mostra \"Em breve\"; a base não registra transação do Link desde 17/11 às 22h35, nem em 22/11 nem na manhã de 23/11, dia previsto para o retorno. \"Instabilidade no app\" vira o maior motivo, sem registro na semana anterior; os clientes acham que é erro ou restrição na conta e perguntam quando volta (ticket 46824551, de 22/11). Antes disso, o prazo de recebimento pesava: 10 dos 16 comentários do NPS Transacional da W47 pedem o valor no mesmo dia.",
+  "mudou": "Suporte humano sobe 11,8% na W47 contra a W46, com pico em 18/11 e queda a um nível mínimo de 20 a 22/11, e as transações do Link de Pagamento caem 79%, sem registro a partir de 18/11. O NPS Transacional vai de 30,2 a 21,2 (33 respostas, base pequena; as respostas param em 18/11) e o CSAT Suporte humano de 62,5% a 78,6% (14 respostas). \"Não recebeu a venda\" cai 55%.",
   "atencao": [
-   "Retorno do produto previsto para 23/11 (relato do CX em 19/11); até 21/11 os clientes ainda perguntam quando volta e desconfiam da própria conta (tickets 46801679, 46821005).",
+   "Retorno previsto para 23/11 (relato do CX em 19/11); até a manhã de 23/11 a base não mostra transação do Link, e em 22/11 ainda há contato com \"Em breve\" ao gerar o link (ticket 46824551).",
    "O alerta \"Instabilidade no Link de Pagamento\" da Central de Ajuda ligou em 18/11 e passou do limite de 2h (aviso de 19/11).",
-   "NPS Transacional em 21,2 pts com 33 respostas (uma resposta move ~3 pts); 17 de 31 comentários falam do prazo de recebimento."
+   "NPS Transacional em 21,2 pts com 33 respostas (uma resposta move ~3 pts); 10 de 16 comentários falam do prazo de recebimento."
   ]
  },
  "motivos": [
@@ -41,9 +41,9 @@
   },
   {
    "t": "Não recebeu a venda",
-   "n": 18,
-   "ant": 41,
-   "var": "−56%",
+   "n": 19,
+   "ant": 42,
+   "var": "−55%",
    "det": {
     "res": "O lojista espera o valor de vendas por link e não sabe quando cai: perguntam do prazo das 13h, venda aprovada que segue \"a receber\" e cliente debitado sem o valor na conta.",
     "dor": [
@@ -100,9 +100,9 @@
   },
   {
    "t": "Como funciona o link de pagamento",
-   "n": 7,
+   "n": 8,
    "ant": 1,
-   "var": "+600%",
+   "var": "+700%",
    "det": {
     "res": "Perguntas sobre quando o link volta, por que a conta não gera mais e como funciona o recebimento de vendas parceladas.",
     "dor": [
@@ -133,35 +133,35 @@
   {
    "canal": "NPS Transacional",
    "t": "Prazo de recebimento",
-   "n": 17,
+   "n": 10,
    "tom": "neg",
-   "x": "Querem o valor no mesmo dia e reclamam de esperar o próximo dia útil, sobretudo de sexta para segunda. (nota média 5,4 · 12 detratores (0–6))"
+   "x": "Querem o valor no mesmo dia e reclamam de esperar o próximo dia útil, sobretudo de sexta para segunda. (nota média 6,3 · 5 detratores (0–6))"
   },
   {
    "canal": "NPS Transacional",
    "t": "Praticidade do link",
-   "n": 11,
+   "n": 5,
    "tom": "pos",
-   "x": "Elogio à facilidade de gerar o link e de o cliente pagar. (nota média 8,8 · 2 detratores (0–6))"
+   "x": "Elogio à facilidade de gerar o link e de o cliente pagar. (nota média 9,4 · 0 detratores (0–6))"
   },
   {
    "canal": "NPS Transacional",
-   "t": "Taxas e juros",
-   "n": 9,
+   "t": "Taxas",
+   "n": 2,
    "tom": "mix",
-   "x": "Pedem taxas menores e juros visíveis antes da venda. (nota média 7,6 · 4 detratores (0–6))"
+   "x": "Pedem taxas menores; uma resposta reclama da taxa alta no primeiro uso. (nota média 7,0 · 1 detrator (0–6))"
   }
  ],
  "eventos": [
   {
    "d": "18/11",
    "tag": "Incidente",
-   "t": "Time de Cyber desliga o endpoint do Link de Pagamento após ataque (relato do squad); app mostra \"Em breve\" e as transações somem a partir de 18/11. Coincide com \"instabilidade no app\" como maior motivo."
+   "t": "Time de Cyber desliga o endpoint do Link de Pagamento após ataque (relato do squad); app mostra \"Em breve\". Último registro de transação em 17/11 às 22h35 e nenhum em 22/11 nem na manhã de 23/11. Coincide com \"instabilidade no app\" como maior motivo."
   },
   {
    "d": "05/11",
    "tag": "Incidente",
-   "t": "Regularização do incidente de taxa de 13/10 (INC-16517/16518): crédito de R$ 1.773,36 a 56 usuários; sem registro de conclusão até 21/11."
+   "t": "Regularização do incidente de taxa de 13/10 (INC-16517/16518): crédito de R$ 1.773,36 a 56 usuários; sem registro de conclusão até 22/11."
   }
  ],
  "exemplos": {
@@ -175,7 +175,7 @@
   ]
  },
  "mencoes": {
-  "texto": "O Link de Pagamento quase não aparece nas lojas de apps (nenhuma avaliação na W47). Nas redes, 4 menções (2 negativas), contra 3 na W46; o sentimento do Buzzmonitor é pouco confiável, então vale o volume. No Reclame Aqui, uma reclamação em 21/11 conta o aviso \"Em breve\" ao gerar o link. A voz do cliente vem do NPS Transacional e do suporte.",
+  "texto": "O Link de Pagamento quase não aparece nas lojas de apps (nenhuma avaliação na W47). Nas redes, 4 menções (2 negativas), contra 3 na W46; o sentimento do Buzzmonitor é pouco confiável, então vale o volume. No Reclame Aqui, uma reclamação em 21/11 conta o aviso \"Em breve\" ao gerar o link. A voz do cliente vem do NPS Transacional, que para de receber respostas em 18/11, e do suporte.",
   "ra": [
    "efk"
   ]
@@ -183,7 +183,7 @@
  "jornada": {
   "recebimento": "23 comentários (39% do produto), 22% positivos, abaixo da média do produto (44%); o prazo do próximo dia útil domina as menções.",
   "pagamento": "18 comentários (31% do produto), 17% positivos, abaixo da média (44%); no suporte, compradores que não conseguem pagar e, a partir de 17/11, links que não abrem (tickets 46799226, 46796996).",
-  "criar": "12 comentários (20% do produto), 25% positivos, abaixo da média (44%); a partir de 18/11, \"Em breve\" no lugar de gerar o link (ticket 46812855).",
+  "criar": "12 comentários (20% do produto), 25% positivos, abaixo da média (44%); a partir de 18/11, \"Em breve\" no lugar de gerar o link, ainda em 22/11 (tickets 46812855, 46824551).",
   "taxas": "7 comentários (12% do produto), 43% positivos, em linha com a média (44%)."
  }
 }

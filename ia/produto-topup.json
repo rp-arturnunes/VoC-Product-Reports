@@ -1,9 +1,9 @@
 {
  "analise": {
-  "clientes": "O NPS Transacional do Top Up cai 17 pontos na W47 (58,4 contra 75,5 na W46), com mais detratores, e os comentários citam o fim do cashback e da bonificação nos pagamentos. No Suporte humano a base é muito pequena: poucos tickets de recarga que não chegou ou desistência, sem tendência confiável. Quem revende reclama da comissão da recarga (05/11).",
-  "mudou": "Suporte humano −67% sobre a W46 comparável, em base de poucos tickets. NPS Transacional 58,4 (75,5) e detratores de 10 para 15 respondentes; cerca de 18% dos comentários citam cashback ou bonificação. Na jornada, comentários sobre bônus passam de 8 para 18 nos últimos 30 dias, com 39% positivos.",
+  "clientes": "O NPS Transacional do Top Up cai 17 pontos na W47 (58,4 contra 75,5 na W46), com mais detratores (15 contra 10 respondentes), e os comentários trazem queixa do corte do cashback e da bonificação nos pagamentos de boletos (20/11 e 21/11). As menções a cashback ou bonificação são as mesmas da W46 (7 em cada semana), e metade dos comentários elogia rapidez e praticidade. No Suporte humano a base é muito pequena: poucos tickets de recarga que não chegou ou desistência, sem tendência confiável. Quem revende reclama da comissão da recarga (18/11 e 20/11).",
+  "mudou": "Suporte humano −67% sobre a W46, em base de poucos tickets; em 22/11 não houve contato humano de Top Up. NPS Transacional 58,4 (75,5) e detratores de 10 para 15 respondentes; 14% dos comentários citam cashback ou bonificação, no mesmo nível da W46. CSAT sem base (1 resposta na W46, nenhuma na W47). Na jornada, comentários sobre bônus passam de 8 para 18 nos últimos 30 dias, com 39% positivos.",
   "atencao": [
-   "Queda de 17 pontos no NPS Transacional do Top Up; comentários citam a retirada do cashback de boletos (15/11 a 21/11).",
+   "Queda de 17 pontos no NPS Transacional do Top Up; comentários citam o corte do cashback de boletos (20/11 e 21/11), mas as menções ficam no nível da W46.",
    "Recarga que debita e não credita: dois tickets na W47 (16/11 e 18/11); sem solução registrada.",
    "Base pequena no Suporte humano: variações percentuais não indicam tendência."
   ]
@@ -54,19 +54,19 @@
    "t": "Cashback e bonificação",
    "n": 7,
    "tom": "neg",
-   "x": "Clientes citam o fim do cashback em boletos e bonificação que \"tiraram\"; pedem cashback nas recargas."
+   "x": "Clientes citam o corte do cashback em boletos e bonificação que \"tiraram\" (20/11); pedem cashback maior nas recargas. Mesmo volume da W46 (7 comentários)."
   },
   {
    "canal": "NPS Transacional",
    "t": "Taxas e comissão",
-   "n": 4,
+   "n": 5,
    "tom": "mix",
    "x": "Comissão baixa para quem revende e taxas altas; convivem com elogio à experiência."
   },
   {
    "canal": "NPS Transacional",
    "t": "Rapidez e praticidade da recarga",
-   "n": 13,
+   "n": 24,
    "tom": "pos",
    "x": "\"Melhor app de recargas\", facilidade e rapidez; elogio dominante entre promotores."
   }
@@ -77,15 +77,21 @@
    "ea1"
   ]
  },
- "eventos": [],
+ "eventos": [
+  {
+   "d": "22/11",
+   "tag": "Incidente",
+   "t": "Pagamentos com wallet, sobretudo Pix, falharam de 00h18 a 03h21 (aprovações −34% no checkout). Top Up sem contato humano no dia e 1 contato retido pelo bot; base pequena, efeito não mensurável."
+  }
+ ],
  "mencoes": {
-  "texto": "Top Up aparece pouco fora do NPS: 1 avaliação de loja na W47 (3 na W46) e 1 menção nas redes (4 na W46), sem reclamação classificada no Reclame Aqui nas duas semanas. No NPS Transacional, 40 comentários na W47: elogio à recarga e queixa do fim do cashback em boletos.",
+  "texto": "Top Up aparece pouco fora do NPS: 1 avaliação de loja na W47 (3 na W46) e 1 menção nas redes (4 na W46), sem reclamação classificada no Reclame Aqui nas duas semanas. No NPS Transacional, 50 comentários na W47 (50 na W46): elogio à recarga e queixa do corte do cashback em boletos.",
   "ra": []
  },
  "jornada": {
-  "recarga": "76 comentários (34% do produto), 66% positivos, abaixo da média do produto (76%) e dos 30 dias anteriores (74%).",
-  "pagamento": "42 comentários (19% do produto), 62% positivos, abaixo da média do produto (76%).",
-  "bonus": "18 comentários (8% do produto), 39% positivos, volume mais que dobra (eram 8); a etapa mais crítica do produto.",
-  "atendimento": "9 comentários (4% do produto), 67% positivos, abaixo da média do produto (76%), em base pequena."
+  "recarga": "61 comentários (29% do produto), 61% positivos, abaixo da média do produto (75%) e dos 30 dias anteriores (86%).",
+  "pagamento": "36 comentários (17% do produto), 58% positivos, abaixo da média do produto (75%); eram 65%.",
+  "bonus": "18 comentários (9% do produto), 39% positivos, volume mais que dobra (eram 8); a etapa mais crítica do produto.",
+  "atendimento": "8 comentários (4% do produto), 75% positivos, em linha com a média (75%), em base pequena."
  }
 }
