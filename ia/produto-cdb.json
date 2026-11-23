@@ -1,21 +1,21 @@
 {
  "analise": {
-  "clientes": "Quem investiu em CDB quer o dinheiro antes do vencimento: 96% dos contatos de Suporte humano do produto têm a causa raiz de resgate antecipado, muitas vezes por prazo fechado que o cliente diz não ter visto. Em W47 surgem relatos de CDB reinvestido no vencimento e indisponível para resgate. NPS Transacional em 68,1 e CSAT Suporte humano em 80,0%; quem comenta no NPS pede taxa maior e acha o app confuso. Nas redes, um post fala de reaplicação a 103% do CDI sem autorização.",
-  "mudou": "Suporte humano cai 5,0% (dados até 21/11, contra os mesmos 6 dias da W46). Resgate antecipado cai 9%; \"Não recebi o valor do CDB\" sobe de 5 para 13 e \"Problemas ao contratar o CDB\" de 2 para 6. NPS Transacional vai de 70,0 para 68,1 e o CSAT Suporte humano de 79,4% para 80,0%. Nenhuma avaliação de loja cita investimento em W47 (2 no mesmo período da W46) e o Reclame Aqui não tem reclamação de CDB (3 antes).",
+  "clientes": "Quem investiu em CDB quer o dinheiro antes do vencimento: 97% dos contatos de Suporte humano do produto têm a causa raiz de resgate antecipado, muitas vezes por prazo fechado que o cliente diz não ter visto. Desde os vencimentos de 17/11 surgem relatos de CDB reinvestido em 103% do CDI e indisponível para resgate, e a opção de 107% diário some das novas aplicações. NPS Transacional em 68,1 e CSAT Suporte humano em 80,0%; quem comenta no NPS pede taxa maior e acha o app confuso. Nas redes, um post de 19/11 fala de reaplicação a 103% do CDI sem autorização, e no Reclame Aqui há resgate que o app não habilita.",
+  "mudou": "Suporte humano cai 2,4% (W47 contra W46). Resgate antecipado cai 7%; \"Não recebi o valor do CDB\" sobe de 5 para 13 e \"Problemas ao contratar o CDB\" de 2 para 6. NPS Transacional vai de 70,0 para 68,1 e o CSAT Suporte humano de 79,4% para 80,0%. Nenhuma avaliação de loja cita investimento em W47 (3 na W46) e o Reclame Aqui passa de 7 para 5 reclamações. Em 22/11, dia do incidente de Pix e checkout de madrugada, o volume do produto não sobe em relação a 21/11.",
   "atencao": [
-   "CDB reinvestido no vencimento e indisponível para resgate aparece em dois tickets (17 e 18/11) e em post de 19/11; nenhuma fonte lida confirma a regra do produto.",
-   "Taxa de 110% para 103% do CDI citada no NPS Transacional (18/11, nota 2) coincide com a opção de 107% diário não aparecer em nova aplicação (tickets de 18 e 19/11).",
+   "CDB reinvestido no vencimento e indisponível para resgate aparece em tickets de 17 e 18/11, em post de 19/11 e no Reclame Aqui de 16/11; coincide com o reinvestimento automático em 103% informado em 18/11.",
+   "Taxa de 110% para 103% do CDI citada no NPS Transacional (18/11, nota 2) coincide com a saída da opção de 107% diário das novas aplicações (tickets de 18 e 19/11).",
    "\"Não recebi o valor do CDB\" sobe 160%, com relatos de 16 e 17/11 de resgate que saiu do investimento e não entrou na carteira."
   ]
  },
  "motivos": [
   {
    "t": "Quer resgatar CDB antes do vencimento",
-   "n": 135,
-   "ant": 149,
-   "var": "−9%",
+   "n": 149,
+   "ant": 160,
+   "var": "−7%",
    "det": {
-    "res": "Quem aplicou em CDB de prazo fechado pede o dinheiro antes do vencimento, por engano de prazo ou por precisar do valor; 96% dos contatos têm a causa raiz \"solicita resgate antecipado\".",
+    "res": "Quem aplicou em CDB de prazo fechado pede o dinheiro antes do vencimento, por engano de prazo ou por precisar do valor; 97% dos contatos têm a causa raiz \"solicita resgate antecipado\".",
     "dor": [
      "<b>Aplicou sem ver o prazo:</b> investiu 150 reais por engano em CDB de 110% e ficou com o dinheiro travado (ticket 46788861); outro aceita perder rendimento para ter 100 reais hoje (ticket 46787955).",
      "<b>Regra sem explicação prévia:</b> \"Vocês estão explicando AGORA! Antes não foi explicado\", com ameaça de ouvidoria e processo (ticket 46798668).",
@@ -100,9 +100,9 @@
   },
   {
    "t": "Dúvidas na contratação do CDB",
-   "n": 11,
+   "n": 12,
    "ant": 12,
-   "var": "−8%",
+   "var": "0%",
    "det": {
     "res": "Quem já tem CDB não vê a opção de liquidez diária a 107% em nova aplicação e pergunta se pode somar valores ao mesmo CDB; a contratação ligada ao cartão também gera dúvida.",
     "dor": [
@@ -168,12 +168,12 @@
   {
    "d": "17/11",
    "tag": "Produto",
-   "t": "Tickets de 17 e 18/11 e post de 19/11 relatam CDB reinvestido no vencimento e indisponível para resgate; sem comunicado de produto lido que confirme a regra."
+   "t": "Vencimentos de CDB começam em 17/11 com reinvestimento automático em 103%; tickets de 17 e 18/11 e post de 19/11 relatam CDB reinvestido e indisponível para resgate."
   },
   {
    "d": "18/11",
    "tag": "Produto",
-   "t": "NPS Transacional (18/11, nota 2) cita taxa de 110% caindo para 103% do CDI; tickets de 18 e 19/11 dizem que a opção de 107% diário não aparece em nova aplicação."
+   "t": "Comunicado interno: 107% de liquidez diária desligado temporariamente (fora do app desde 16/11); NPS Transacional de 18/11 (nota 2) cita taxa de 110% para 103%; tickets de 18 e 19/11 dizem que o 107% não aparece."
   }
  ],
  "exemplos": {
@@ -187,16 +187,25 @@
   ],
   "Redes": [
    "e2e"
+  ],
+  "Reclame Aqui": [
+   "e1jk",
+   "e1jl",
+   "e1jm"
   ]
  },
  "mencoes": {
-  "texto": "Nas lojas, nenhuma avaliação cita investimento em W47 (2 no mesmo período da W46, ambas negativas: prazo maior no CDB Titan e instabilidade do app com dinheiro investido). Nas redes, o post relevante de 19/11 relata reaplicação a 103% do CDI sem autorização. No Reclame Aqui, nenhuma reclamação de CDB em W47 (3 na W46). No NPS Transacional, em 68,1, quem comenta elogia o investimento e pede taxa maior.",
-  "ra": []
+  "texto": "Nas lojas, nenhuma avaliação cita investimento em W47 (3 na W46, duas negativas: prazo maior no CDB Titan e instabilidade do app com dinheiro investido). Nas redes, o post relevante de 19/11 relata reaplicação a 103% do CDI sem autorização. No Reclame Aqui, 5 reclamações em W47 (7 na W46): resgate que o app não habilita (18 e 22/11), valor travado e renovado sem pedido (16/11) e cartão físico do CDB atrasado (21/11). No NPS Transacional, em 68,1, quem comenta elogia o investimento e pede taxa maior.",
+  "ra": [
+   "e1jk",
+   "e1jl",
+   "e1jm"
+  ]
  },
  "jornada": {
-  "aplicacao": "199 comentários (65% do produto) nos últimos 30 dias, 35% positivos, abaixo da média do produto (41%); o NPS de 17/11 acha o app confuso para chegar aos valores.",
-  "cartao": "156 comentários (51% do produto), 31% positivos, abaixo da média (41%); resgate ligado ao limite do cartão Titan aparece em ticket de 16/11 (cartão recusando compras com limite investido).",
-  "rendimento": "107 comentários (35% do produto), 31% positivos, abaixo da média (41%); taxa de 110% para 103% do CDI citada no NPS de 18/11.",
-  "resgate": "32 comentários (10% do produto), 3% positivos (1 de 32), muito abaixo da média (41%); tickets de 16 a 18/11 relatam resgate pendente e CDB reinvestido."
+  "aplicacao": "21 comentários (14% do produto) nos últimos 30 dias, 29% positivos, abaixo da média do produto (46%); o NPS de 17/11 acha o app confuso para chegar aos valores.",
+  "cartao": "66 comentários (45% do produto), 30% positivos, abaixo da média (46%); ticket de 16/11 relata cartão recusando compras com limite investido no CDB Titan e o Reclame Aqui de 21/11 cartão físico do CDB atrasado.",
+  "rendimento": "73 comentários (50% do produto), 30% positivos, abaixo da média (46%); taxa de 110% para 103% do CDI citada no NPS de 18/11.",
+  "resgate": "15 comentários (10% do produto), 0% positivos, muito abaixo da média (46%); tickets de 16 a 18/11 relatam resgate pendente e CDB reinvestido, e o Reclame Aqui de 18 e 22/11 diz que o app não habilita o resgate."
  }
 }

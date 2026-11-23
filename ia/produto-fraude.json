@@ -1,21 +1,21 @@
 {
  "analise": {
-  "clientes": "Quem teve a carteira ou a conta bloqueada quer saber o motivo e o prazo: saldo todo bloqueado, parte do saldo por ofício judicial e Pix preso por contestação concentram o Suporte humano do produto. Em Conta Desativada lideram golpes e conta aberta com dados de terceiros; em Chargeback Recovery, o cliente diz ter pago a contestação e segue com Pix bloqueado por pagamento em aberto. Nas lojas, 6 avaliações e nenhuma positiva; nas redes, 4 posts negativos sobre venda no Tap to Pay seguida de carteira bloqueada.",
-  "mudou": "Suporte humano cai 34,5% (dados até 21/11, contra os mesmos 6 dias da W46): Carteira Desativada −37,8%, Conta Desativada −39,3% e Chargeback Recovery −15,8%. Carteira Desativada tem o maior dia da W47 em 16/11 e os mais baixos em 20 e 21/11. \"Parte do saldo\" sobe 32%, puxado por ofícios (85 contra 62). CSAT Suporte humano em 53,7% (45,7% na W46). Reclame Aqui: 20 reclamações contra 48 no mesmo período da W46.",
+  "clientes": "Quem teve a carteira ou a conta bloqueada quer saber o motivo e o prazo: saldo todo bloqueado, parte do saldo por ofício judicial e Pix preso por contestação concentram o Suporte humano do produto. Em Conta Desativada lideram golpes e conta aberta com dados de terceiros; em Chargeback Recovery, o cliente diz ter pago a contestação e segue com Pix bloqueado por pagamento em aberto. Nas lojas, 5 avaliações e nenhuma positiva; nas redes, 3 posts negativos sobre saldo bloqueado em análise de segurança.",
+  "mudou": "Suporte humano cai 35,3% (W47 contra W46): Carteira Desativada −40,4%, Conta Desativada −38,6% e Chargeback Recovery −12,8%. A W46 traz o pico de Carteira Desativada em 12 e 13/11, com a rotina de desbloqueio parada de 08 a 15/11; em W47 o maior dia é 16/11 e 20 a 22/11 são os mais baixos. \"Parte do saldo\" sobe 27%, puxado por ofícios (84 contra 64). CSAT Suporte humano em 52,3% (45,7% na W46). Reclame Aqui: 52 reclamações contra 62.",
   "atencao": [
    "Bloqueio sem motivo nem prazo visível: carteira bloqueada há 16 e 20 dias nas redes de 09 e 11/11 e prazo de 24 a 72 horas sem retorno em ticket de 20/11.",
    "Contestação de Pix (MED) de R$ 200 bloqueou saldo de R$ 500 em ticket de 21/11; Pix com cartão contestado e cobrança em cartão de terceiros aparecem em ticket e no Reclame Aqui (17 e 21/11).",
-   "CSAT Suporte humano em 53,7%, abaixo de 75%; em Conta Desativada fica em 31,3%."
+   "CSAT Suporte humano em 52,3%, abaixo de 75%; em Conta Desativada fica em 29,4%."
   ]
  },
  "motivos": [
   {
    "t": "Saldo da carteira bloqueado – todo o saldo",
-   "n": 328,
-   "ant": 621,
-   "var": "−47%",
+   "n": 357,
+   "ant": 698,
+   "var": "−49%",
    "det": {
-    "res": "Quem teve todo o saldo bloqueado quer saber o motivo e quando recebe; as causas raiz mais frequentes são bloqueio operacional (23%), automático (18%) e Pix com infração ou estatística de fraude (44%).",
+    "res": "Quem teve todo o saldo bloqueado quer saber o motivo e quando recebe; causas raiz: bloqueio operacional (22%), automático (19%) e Pix com infração ou estatística de fraude (43%, contra 51% na W46). A queda coincide com a retomada da rotina de desbloqueio em 16 e 17/11.",
     "dor": [
      "<b>Sem motivo claro:</b> \"não considero justo ter que aguardar sem receber informações claras sobre o motivo do bloqueio\" (ticket 46794241).",
      "<b>Bloqueio maior que a contestação:</b> contestação de Pix (MED) de R$ 200 e saldo total de R$ 500 bloqueado (ticket 46818770).",
@@ -41,11 +41,11 @@
   },
   {
    "t": "Problemas com a segurança no cadastro",
-   "n": 165,
-   "ant": 264,
-   "var": "−38%",
+   "n": 183,
+   "ant": 289,
+   "var": "−37%",
    "det": {
-    "res": "Em Conta Desativada, golpe e invasão lideram: suspeita de invasão (48%), celular roubado ou furtado (24%) e conta criada por outra pessoa com dados do cliente (25%); o cliente vê a conta restrita e não consegue encerrar nem recuperar o saldo.",
+    "res": "Em Conta Desativada, golpe e invasão lideram: suspeita de invasão (49%), celular roubado ou furtado (24%) e conta criada por outra pessoa com dados do cliente (24%); o cliente vê a conta restrita e não consegue encerrar nem recuperar o saldo.",
     "dor": [
      "<b>Golpe por telefone:</b> contato dizendo ser de outra instituição pede para criar conta \"para bloqueio\" (ticket 46810337); outro foi instruído a baixar o app e acessar o e-mail (ticket 46821774).",
      "<b>Valor retido:</b> o cliente não consegue encerrar o cadastro porque há valor retido e é orientado a transferir (ticket 46800787).",
@@ -70,11 +70,11 @@
   },
   {
    "t": "Não entende ou concorda com a cobrança",
-   "n": 143,
-   "ant": 160,
-   "var": "−11%",
+   "n": 158,
+   "ant": 170,
+   "var": "−7%",
    "det": {
-    "res": "Cliente com contestação (chargeback) devida vê Pix e saque bloqueados por \"pagamento em aberto\"; \"CBK devido\" é 66% do volume e \"não reconhece a contestação\" sobe 21%.",
+    "res": "Cliente com contestação (chargeback) devida vê Pix e saque bloqueados por \"pagamento em aberto\"; \"CBK devido\" é 64% do volume e \"não reconhece a contestação\" sobe 26%.",
     "dor": [
      "<b>Saldo preso por dívida:</b> saldo de R$ 30,00 bloqueado por dívida de cerca de R$ 250,00 de contestação (ticket 46800231).",
      "<b>Cartão de terceiros:</b> cobrança no cartão de terceiros por empréstimo atrasado, com reembolso negado (ticket 46819411).",
@@ -99,11 +99,11 @@
   },
   {
    "t": "Saldo da carteira bloqueado – parte do saldo",
-   "n": 86,
-   "ant": 65,
-   "var": "+32%",
+   "n": 85,
+   "ant": 67,
+   "var": "+27%",
    "det": {
-    "res": "Parte do saldo bloqueada por ofício judicial (85 de 86 contatos tiveram essa causa raiz) ou venda no Tap to Pay que cai menor na carteira.",
+    "res": "Parte do saldo bloqueada por ofício judicial (84 de 85 contatos tiveram essa causa raiz) ou venda no Tap to Pay que cai menor na carteira.",
     "dor": [
      "<b>Tap to Pay menor:</b> venda de R$ 1.220,00 (líquido de R$ 1.149,36) com só R$ 570,00 na carteira (ticket 46809927); outra de R$ 55,00 não cai (ticket 46787251).",
      "<b>Judicial ou administrativo:</b> cliente pergunta se é SISBAJUD e pede número do processo (ticket 46803220).",
@@ -132,30 +132,35 @@
   {
    "canal": "Lojas",
    "t": "Bloqueio sem motivo",
-   "n": 6,
+   "n": 5,
    "tom": "neg",
-   "x": "Seis avaliações, nenhuma positiva: conta bloqueada ou encerrada sem aviso nem motivo, dinheiro preso de 6 a 18 dias e prazo de desbloqueio vencido."
+   "x": "Cinco avaliações, nenhuma positiva: conta bloqueada sem aviso nem motivo, dinheiro preso de 6 a 18 dias, prazo de desbloqueio vencido e cliente que perdeu dinheiro em golpe."
   },
   {
    "canal": "Redes",
-   "t": "Tap to Pay e carteira bloqueada",
-   "n": 4,
+   "t": "Saldo bloqueado em análise",
+   "n": 3,
    "tom": "neg",
-   "x": "Venda no Tap to Pay em 23/10 seguida de carteira bloqueada, análise com prazo de 15 dias vencido e conta encerrada."
+   "x": "Posts de 16 e 18/11: saldo bloqueado por análise de segurança com liberação prevista só para 01/12 e denúncia de compra feita às 3h45 de 13/11; posts de 09 a 17/11 ligam a carteira bloqueada a venda no Tap to Pay."
   },
   {
    "canal": "Reclame Aqui",
    "t": "Conta bloqueada sem resposta",
-   "n": 20,
+   "n": 52,
    "tom": "neg",
-   "x": "Conta bloqueada há mais de 5 dias, Pix com cartão contestado, chave Pix marcada como suspeita e golpe do boleto falso sem resposta."
+   "x": "Conta bloqueada ou suspensa sem devolução do saldo, vítimas de golpe pedindo estorno, Pix com cartão contestado e chave Pix marcada como suspeita, sem resposta."
   }
  ],
  "eventos": [
   {
-   "d": "16/11",
-   "tag": "Pico",
-   "t": "Carteira Desativada: 141 tickets de Suporte humano em 16/11, o maior dia da W47, depois de 148 em 12/11 e 140 em 13/11; 20 e 21/11 caem para 30 e 36. A queda semanal coincide com menos tickets por Pix com infração ou estatística de fraude."
+   "d": "22/11",
+   "tag": "Backlog",
+   "t": "Backlog de carteiras bloqueadas em queda por 3 dias seguidos (3.814 em 15/11 e 2.370 em 22/11), 355 acima do SLA; 20 a 22/11 são os dias mais baixos de Carteira Desativada, sem sinal de efeito do incidente de Pix e checkout da madrugada."
+  },
+  {
+   "d": "17/11",
+   "tag": "Correção",
+   "t": "Rotina de desbloqueio, parada de 08 a 15/11, volta em parte em 16/11 (maior dia da W47 em Carteira Desativada) e roda o dia todo desde 17/11; a queda de 49% em saldo todo bloqueado coincide com a retomada."
   },
   {
    "d": "17/11",
@@ -179,7 +184,7 @@
   ]
  },
  "mencoes": {
-  "texto": "Nas lojas, 6 avaliações citam bloqueio ou encerramento em W47 (3 no mesmo período da W46), nenhuma positiva: conta bloqueada sem aviso, dinheiro preso e prazo de desbloqueio vencido. Nas redes, 4 posts, todos negativos (14 negativos na W46), sobre carteira bloqueada após venda no Tap to Pay e prazo de análise vencido. No Reclame Aqui, 20 reclamações contra 48 no mesmo período da W46: conta bloqueada sem resposta, Pix com cartão contestado, chave Pix marcada como suspeita e golpe do boleto falso.",
+  "texto": "Nas lojas, 5 avaliações citam bloqueio ou golpe em W47 (2 na W46), nenhuma positiva: conta bloqueada sem aviso, dinheiro preso e prazo de desbloqueio vencido. Nas redes, 3 posts, todos negativos (13 negativos na W46): saldo bloqueado em análise de segurança com liberação só em 01/12 e compra de madrugada denunciada. No Reclame Aqui, 52 reclamações contra 62 na W46: conta bloqueada ou suspensa sem devolução do saldo, golpe e fraude Pix com pedido de estorno, Pix com cartão contestado e chave Pix marcada como suspeita.",
   "ra": [
    "e4y",
    "e4z",
@@ -187,29 +192,30 @@
   ]
  },
  "jornada": {
-  "bloqueio": "12 comentários (80% do produto) nos últimos 30 dias, 0% positivos, em linha com a média do produto (0%); loja de 19/11 relata conta bloqueada sem aviso há mais de 18 dias.",
-  "prazo": "8 comentários (53% do produto), 0% positivos, em linha com a média (0%); redes de 09 e 11/11 citam prazo de análise de 15 dias vencido.",
-  "atendimento": "6 comentários (40% do produto), 0% positivos, em linha com a média (0%); tickets de 16 e 17/11 citam demora e ameaça de Procon.",
-  "contestacao": "5 comentários (33% do produto), 0% positivos (2 de 3 na janela anterior); tickets de 17 e 18/11 falam de contestação paga e saldo ainda bloqueado."
+  "bloqueio": "10 comentários (100% do produto) nos últimos 30 dias, 0% positivos, em linha com a média do produto (0%); loja de 19/11 relata conta bloqueada sem aviso há mais de 18 dias.",
+  "motivo": "3 comentários (30% do produto), 0% positivos, em linha com a média (0%); lojas de 17 e 20/11 perguntam por que a conta foi bloqueada, sem aviso nem motivo.",
+  "prazo": "3 comentários (30% do produto), 0% positivos, em linha com a média (0%); redes de 09 e 11/11 citam prazo de análise de 15 dias vencido.",
+  "atendimento": "2 comentários (20% do produto), 0% positivos, em linha com a média (0%); tickets de 16 e 17/11 citam demora e ameaça de Procon."
  },
  "subs": {
   "f_cart": {
    "analise": {
     "clientes": "Quem tem a carteira bloqueada quer motivo e prazo: saldo todo bloqueado por regras de Pix e bloqueio operacional, e parte do saldo por ofício judicial ou venda no Tap to Pay que cai menor. Quem escreve no Reclame Aqui e nas lojas fala de dias sem resposta e prazo de desbloqueio vencido.",
-    "mudou": "Suporte humano cai 37,8% (dados até 21/11, contra os mesmos 6 dias da W46). Todo o saldo cai 47%, parte do saldo sobe 32% (ofícios 85 contra 62) e \"Atendimento não prestado\" fica estável. CSAT Suporte humano em 63,4% (56,8%). Pico de 141 tickets em 16/11.",
+    "mudou": "Suporte humano cai 40,4% (W47 contra W46). Todo o saldo cai 49%, parte do saldo sobe 27% (ofícios 84 contra 64) e \"Atendimento não prestado\" fica estável. CSAT Suporte humano em 60,9% (56,8%). O maior dia da W47 é 16/11 e a queda se concentra de 20 a 22/11, com a rotina de desbloqueio de volta desde 17/11 e o backlog de carteiras em queda.",
     "atencao": [
      "Carteira bloqueada há 16 a 20 dias com prazo de análise vencido nas redes de 09 e 11/11.",
-     "Ofício judicial recebe canal sem resposta no Reclame Aqui (18/11): servidor pede canal oficial para ofícios."
+     "Ofício judicial recebe canal sem resposta no Reclame Aqui (18/11): servidor pede canal oficial para ofícios.",
+     "Em 22/11, 355 carteiras seguem acima do SLA, com o backlog em queda por 3 dias seguidos."
     ]
    },
    "motivos": [
     {
      "t": "Saldo da carteira bloqueado – todo o saldo",
-     "n": 328,
-     "ant": 621,
-     "var": "−47%",
+     "n": 357,
+     "ant": 698,
+     "var": "−49%",
      "det": {
-      "res": "Quem teve todo o saldo bloqueado quer saber o motivo e quando recebe; as causas raiz mais frequentes são bloqueio operacional (23%), automático (18%) e Pix com infração ou estatística de fraude (44%).",
+      "res": "Quem teve todo o saldo bloqueado quer saber o motivo e quando recebe; causas raiz: bloqueio operacional (22%), automático (19%) e Pix com infração ou estatística de fraude (43%, contra 51% na W46). A queda coincide com a retomada da rotina de desbloqueio em 16 e 17/11.",
       "dor": [
        "<b>Sem motivo claro:</b> \"não considero justo ter que aguardar sem receber informações claras sobre o motivo do bloqueio\" (ticket 46794241).",
        "<b>Bloqueio maior que a contestação:</b> contestação de Pix (MED) de R$ 200 e saldo total de R$ 500 bloqueado (ticket 46818770).",
@@ -235,11 +241,11 @@
     },
     {
      "t": "Saldo da carteira bloqueado – parte do saldo",
-     "n": 86,
-     "ant": 65,
-     "var": "+32%",
+     "n": 85,
+     "ant": 67,
+     "var": "+27%",
      "det": {
-      "res": "Parte do saldo bloqueada por ofício judicial (85 de 86 contatos tiveram essa causa raiz) ou venda no Tap to Pay que cai menor na carteira.",
+      "res": "Parte do saldo bloqueada por ofício judicial (84 de 85 contatos tiveram essa causa raiz) ou venda no Tap to Pay que cai menor na carteira.",
       "dor": [
        "<b>Tap to Pay menor:</b> venda de R$ 1.220,00 (líquido de R$ 1.149,36) com só R$ 570,00 na carteira (ticket 46809927); outra de R$ 55,00 não cai (ticket 46787251).",
        "<b>Judicial ou administrativo:</b> cliente pergunta se é SISBAJUD e pede número do processo (ticket 46803220).",
@@ -265,8 +271,8 @@
     },
     {
      "t": "Atendimento não prestado",
-     "n": 35,
-     "ant": 34,
+     "n": 38,
+     "ant": 37,
      "var": "+3%",
      "det": null,
      "ex": [
@@ -283,20 +289,20 @@
   "f_conta": {
    "analise": {
     "clientes": "Em Conta Desativada lideram golpes, invasão e conta aberta com dados de terceiros; quem recebe aviso de encerramento não entende o motivo e há quem tenha valor retido sem conseguir encerrar. No Reclame Aqui, conta suspensa, abertura reprovada e chave Pix marcada como suspeita.",
-    "mudou": "Suporte humano cai 39,3% (dados até 21/11, contra os mesmos 6 dias da W46). Segurança no cadastro cai 38%, \"Não entende encerramento da conta\" cai 37%, \"Denúncia de fraude\" cai 56%. CSAT Suporte humano em 31,3% (23,8%).",
+    "mudou": "Suporte humano cai 38,6% (W47 contra W46). Segurança no cadastro cai 37%, \"Não entende encerramento da conta\" cai 38%, \"Denúncia de fraude\" cai 52%. CSAT Suporte humano em 29,4% (23,8%). Celular roubado ou furtado cai 54%; em 18/11 o bloqueio automático dos formulários de segurança passou a validar só CPF e data de nascimento.",
     "atencao": [
-     "CSAT Suporte humano em 31,3%, o menor entre os subprodutos.",
+     "CSAT Suporte humano em 29,4%, o menor entre os subprodutos.",
      "Aviso de encerramento sem explicação (tickets de 17 e 20/11) e cliente que diz movimentar a conta todo mês e ser tratado como \"desinteresse\"."
     ]
    },
    "motivos": [
     {
      "t": "Problemas com a segurança no cadastro",
-     "n": 165,
-     "ant": 264,
-     "var": "−38%",
+     "n": 183,
+     "ant": 289,
+     "var": "−37%",
      "det": {
-      "res": "Em Conta Desativada, golpe e invasão lideram: suspeita de invasão (48%), celular roubado ou furtado (24%) e conta criada por outra pessoa com dados do cliente (25%); o cliente vê a conta restrita e não consegue encerrar nem recuperar o saldo.",
+      "res": "Em Conta Desativada, golpe e invasão lideram: suspeita de invasão (49%), celular roubado ou furtado (24%) e conta criada por outra pessoa com dados do cliente (24%); o cliente vê a conta restrita e não consegue encerrar nem recuperar o saldo.",
       "dor": [
        "<b>Golpe por telefone:</b> contato dizendo ser de outra instituição pede para criar conta \"para bloqueio\" (ticket 46810337); outro foi instruído a baixar o app e acessar o e-mail (ticket 46821774).",
        "<b>Valor retido:</b> o cliente não consegue encerrar o cadastro porque há valor retido e é orientado a transferir (ticket 46800787).",
@@ -321,9 +327,9 @@
     },
     {
      "t": "Não entende encerramento da conta",
-     "n": 64,
-     "ant": 101,
-     "var": "−37%",
+     "n": 66,
+     "ant": 107,
+     "var": "−38%",
      "det": null,
      "ex": [
       "e47",
@@ -335,9 +341,9 @@
     },
     {
      "t": "Desativação da conta",
-     "n": 49,
-     "ant": 74,
-     "var": "−34%",
+     "n": 52,
+     "ant": 81,
+     "var": "−36%",
      "det": null,
      "ex": [
       "e4c",
@@ -349,9 +355,9 @@
     },
     {
      "t": "Denúncia de fraude",
-     "n": 19,
-     "ant": 43,
-     "var": "−56%",
+     "n": 21,
+     "ant": 44,
+     "var": "−52%",
      "det": null,
      "ex": [
       "e4g",
@@ -364,20 +370,20 @@
   "f_chb": {
    "analise": {
     "clientes": "Quem deve contestação (chargeback) vê Pix e saque bloqueados por pagamento em aberto; parte diz já ter pago, outros não reconhecem a contestação ou tiveram o cartão de terceiros cobrado. Cresce o pedido de ajuda para resolver.",
-    "mudou": "Suporte humano cai 15,8% (dados até 21/11, contra os mesmos 6 dias da W46). \"Não entende ou concorda com a cobrança\" cai 11%, \"Precisa de ajuda para resolver\" sobe 11% e \"Resolvido sendo cobrado\" cai 45%. CSAT Suporte humano em 52,0% (44,8%).",
+    "mudou": "Suporte humano cai 12,8% (W47 contra W46). \"Não entende ou concorda com a cobrança\" cai 7%, \"Precisa de ajuda para resolver\" sobe 10% e \"Resolvido sendo cobrado\" cai 42%. CSAT Suporte humano em 52,0% (44,8%).",
     "atencao": [
-     "\"Não reconhece a contestação\" sobe 21% como causa raiz, enquanto \"cobrança indevida\" cai 46%.",
+     "\"Não reconhece a contestação\" sobe 26% como causa raiz, enquanto \"cobrança indevida\" cai 42%.",
      "Pagamento da contestação liberado na fatura e dinheiro da conta ainda não liberado (ticket de 19/11)."
     ]
    },
    "motivos": [
     {
      "t": "Não entende ou concorda com a cobrança",
-     "n": 143,
-     "ant": 160,
-     "var": "−11%",
+     "n": 158,
+     "ant": 170,
+     "var": "−7%",
      "det": {
-      "res": "Cliente com contestação (chargeback) devida vê Pix e saque bloqueados por \"pagamento em aberto\"; \"CBK devido\" é 66% do volume e \"não reconhece a contestação\" sobe 21%.",
+      "res": "Cliente com contestação (chargeback) devida vê Pix e saque bloqueados por \"pagamento em aberto\"; \"CBK devido\" é 64% do volume e \"não reconhece a contestação\" sobe 26%.",
       "dor": [
        "<b>Saldo preso por dívida:</b> saldo de R$ 30,00 bloqueado por dívida de cerca de R$ 250,00 de contestação (ticket 46800231).",
        "<b>Cartão de terceiros:</b> cobrança no cartão de terceiros por empréstimo atrasado, com reembolso negado (ticket 46819411).",
@@ -402,9 +408,9 @@
     },
     {
      "t": "Precisa de ajuda para resolver",
-     "n": 41,
-     "ant": 37,
-     "var": "+11%",
+     "n": 43,
+     "ant": 39,
+     "var": "+10%",
      "det": null,
      "ex": [
       "e3y",
@@ -416,9 +422,9 @@
     },
     {
      "t": "Resolvido sendo cobrado",
-     "n": 21,
+     "n": 22,
      "ant": 38,
-     "var": "−45%",
+     "var": "−42%",
      "det": null,
      "ex": [
       "e43",

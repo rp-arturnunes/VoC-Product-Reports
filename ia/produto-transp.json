@@ -1,7 +1,7 @@
 {
  "analise": {
   "clientes": "Recarga paga e crédito que não aparece é a dor do Transporte: o cliente usa o bilhete e o validador diz sem saldo, ou a operadora do cartão manda procurar o RecargaPay. No NPS Transacional (75,5) quem comenta elogia a praticidade e pede crédito imediato ou aviso de que o valor foi creditado. Nas lojas, 6 avaliações, 33% positivas, com recarga que não funcionou e cadastro de bilhete burocrático; no Reclame Aqui há recarga não creditada em cartão URBS e em bilhete único.",
-  "mudou": "Suporte humano cai 14,9% (dados até 21/11, contra os mesmos 6 dias da W46); \"Recarga realizada e crédito não disponibilizado\" fica estável. NPS Transacional sobe de 70,3 para 75,5. CSAT Suporte humano em 44,4% (50,0% na W46), base de 9 respostas, leitura direcional. Reclame Aqui: 4 reclamações contra 6 no mesmo período da W46.",
+  "mudou": "Suporte humano cai 8,5% (W47 contra W46); \"Recarga realizada e crédito não disponibilizado\" sobe 4%. NPS Transacional sobe de 70,3 para 75,5. CSAT Suporte humano em 44,4% (50,0% na W46), base de 9 respostas, leitura direcional. Reclame Aqui: 4 reclamações contra 6 na W46. Em 22/11, dia do incidente de Pix e checkout de madrugada, o volume do produto segue baixo e as 9 respostas do NPS Transacional do dia não têm detratores.",
   "atencao": [
    "O crédito só fica disponível depois de validar em máquina ou terminal e o cliente descobre isso na catraca; NPS de 19/11 cita o \"pós recarga\" sem crédito imediato.",
    "Cadastro de novo bilhete: \"não deixa colocar o novo número\" em ticket de 11/11 e reclamação do Reclame Aqui de 19/11 com uma semana sem solução.",
@@ -11,9 +11,9 @@
  "motivos": [
   {
    "t": "Recarga realizada e crédito não disponibilizado",
-   "n": 26,
+   "n": 27,
    "ant": 26,
-   "var": "0%",
+   "var": "+4%",
    "det": {
     "res": "Recarga paga e saldo que não aparece no cartão de transporte: o cliente tenta usar no ônibus, o terminal diz sem saldo e a operadora manda falar com o RecargaPay; a causa raiz mais citada é \"validei meus créditos mas a recarga não caiu\".",
     "dor": [
@@ -41,9 +41,9 @@
   },
   {
    "t": "Transação não realizada",
-   "n": 5,
+   "n": 6,
    "ant": 7,
-   "var": "−29%",
+   "var": "−14%",
    "det": {
     "res": "A recarga aparece como cancelada ou não é aprovada e o dinheiro não volta; quem paga com cartão virtual de outro banco ou cartão de benefício não consegue concluir.",
     "dor": [
@@ -102,16 +102,16 @@
   {
    "canal": "NPS Transacional",
    "t": "Praticidade da recarga",
-   "n": 12,
+   "n": 13,
    "tom": "pos",
    "x": "Elogio à facilidade de recarregar o bilhete pelo app e às recargas de emergência; a nota do NPS Transacional é 75,5."
   },
   {
    "canal": "NPS Transacional",
    "t": "Crédito que não fica disponível de imediato",
-   "n": 5,
+   "n": 6,
    "tom": "mix",
-   "x": "Pedem recarga imediata ou aviso quando o valor for creditado; um cliente espera cerca de 30 minutos antes de poder usar."
+   "x": "Pedem recarga imediata ou aviso quando o valor for creditado; um cliente espera cerca de 30 minutos antes de poder usar e outro, em 22/11, relata dificuldade para validar o cartão."
   },
   {
    "canal": "Lojas",
@@ -129,6 +129,11 @@
   }
  ],
  "eventos": [
+  {
+   "d": "22/11",
+   "tag": "Incidente",
+   "t": "Pix e checkout instáveis de 00h18 a 03h21; sem sinal de efeito no Transporte: volume de Suporte humano segue baixo e o NPS Transacional do dia não tem detratores."
+  },
   {
    "d": "15/11",
    "tag": "Incidente",
@@ -149,7 +154,7 @@
   ]
  },
  "mencoes": {
-  "texto": "Nas lojas, 6 avaliações citam bilhete ou ônibus em W47 (7 no mesmo período da W46), 33% positivas: carga de cartão indisponível, recarga que não funcionou e cadastro burocrático, contra elogio à facilidade e à rapidez. As redes não trazem posts do tema em W47. No Reclame Aqui, 4 reclamações (6 na W46): recarga em cartão URBS nunca creditada, saldo que não caiu no bilhete único e cadastro de novo bilhete. No NPS Transacional, 75,5.",
+  "texto": "Nas lojas, 6 avaliações citam bilhete ou ônibus em W47 (8 na W46), 33% positivas: carga de cartão indisponível, recarga que não funcionou e cadastro burocrático, contra elogio à facilidade e à rapidez. As redes não trazem posts do tema em W47. No Reclame Aqui, 4 reclamações (6 na W46): recarga em cartão URBS nunca creditada, saldo que não caiu no bilhete único e cadastro de novo bilhete. No NPS Transacional, 75,5.",
   "ra": [
    "e38",
    "e39",
@@ -157,9 +162,9 @@
   ]
  },
  "jornada": {
-  "praticidade": "106 comentários (24% do produto) nos últimos 30 dias, 88% positivos, acima da média do produto (76%); loja de 21/11 e NPS elogiam a facilidade.",
-  "recarga": "128 comentários (29% do produto), 62% positivos, abaixo da média (76%); recarga que não funcionou e crédito que demora aparecem em loja (20/11) e ticket de 18/11.",
-  "confirmacao": "28 comentários (6% do produto), 39% positivos, bem abaixo da média (76%); NPS de 19/11 pede crédito imediato após a recarga.",
-  "cadastro": "37 comentários (8% do produto), 49% positivos, abaixo da média (76%); cadastro de novo bilhete sem solução em ticket de 11/11 e no Reclame Aqui de 19/11."
+  "praticidade": "95 comentários (23% do produto) nos últimos 30 dias, 91% positivos, acima da média do produto (79%); loja de 21/11 e NPS elogiam a facilidade.",
+  "recarga": "111 comentários (27% do produto), 66% positivos, abaixo da média (79%); recarga que não funcionou e crédito que demora aparecem em loja (20/11) e ticket de 18/11.",
+  "confirmacao": "20 comentários (5% do produto), 40% positivos, bem abaixo da média (79%); NPS de 19/11 pede crédito imediato após a recarga e o de 22/11 relata dificuldade para validar o cartão.",
+  "cadastro": "24 comentários (6% do produto), 50% positivos, abaixo da média (79%); cadastro de novo bilhete sem solução em ticket de 11/11 e no Reclame Aqui de 19/11."
  }
 }

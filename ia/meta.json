@@ -6,13 +6,13 @@
   "pub": "23/11/2026",
   "modelo": "Sonnet (rotina semanal)"
  },
- "pulso": "W47 parcial (dados até 21/11): NPS Transacional em 65,1 (63,6) e suporte humano em queda na maioria dos produtos, mas o NPS Relacional cai para 37,1 e as redes ficam mais negativas (57%). O Link de Pagamento fica fora do ar após ataque e o fim do cashback segue como principal reclamação em contas, boletos e Top Up. Pix e checkout falham de novo em 22/11.",
+ "pulso": "W47 completa (16 a 22/11): NPS Transacional em 65,1 (63,6) e suporte humano 26% abaixo da W46, que inclui o pico de instabilidade de 15/11. O Link de Pagamento segue fora do ar após ataque, Pix e checkout falham de novo na madrugada de 22/11 (NPS do Pix Out Wallet do dia em 42,2) e o fim do cashback é a principal reclamação em contas e boletos. O NPS Relacional cai a 37,1 e as redes ficam 57% negativas.",
  "atencao": [
-  "Link de Pagamento desligado desde 17/11 após ataque; retorno previsto para 23/11, sem confirmação nos dados.",
-  "Fim do cashback: reclamações de 1 para 39 em dez semanas e NPS do Top Up de 75,5 para 58,4.",
-  "Cartão: compra recusada com limite lidera o suporte humano (+56%).",
-  "Acidente e Renda: vendas e cancelamentos por arrependimento disparam em 19 a 21/11, sem evento que explique.",
-  "Dados até 21/11: o domingo 22/11 ainda não estava consolidado."
+  "Link de Pagamento sem transação desde 17/11; retorno previsto para 23/11 ainda não aparece na base.",
+  "Madrugada de 22/11: Pix e checkout falham de 00h18 a 03h21; NPS do Pix Out Wallet do dia cai a 42,2 e 6 de 7 posts de redes citam Pix sem funcionar.",
+  "Cartão: compra recusada com limite sobe 56% e cartão físico que não chega, 35%.",
+  "Acidente e Renda: apólices +169% e cancelamentos +249% entre 19 e 22/11, sem evento que explique.",
+  "CSAT de Bloqueios e fraude em 52,3%, abaixo do piso de 75%; Conta Desativada em 29,4%."
  ],
  "imagens": {
   "pix": "https://lh3.googleusercontent.com/d/1LbV6FWjIDl06HSLiGWgTx_oczTbVOr39=w400",
