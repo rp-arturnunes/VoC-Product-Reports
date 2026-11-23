@@ -11,14 +11,14 @@ def safe(o):
 def bloco(k,o): return '<div hidden data-px-ia="%s">%s</div>'%(k,safe(o))
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--ia',default='ia'); ap.add_argument('--shell',default='shell.html'); ap.add_argument('--out',default='html-painel-156.html')
-    ap.add_argument('--snapshot'); ap.add_argument('--max-total',type=int,default=185000); ap.add_argument('--sem-validar',action='store_true')
+    ap.add_argument('--snapshot'); ap.add_argument('--max-total',type=int,default=260000); ap.add_argument('--sem-validar',action='store_true'); ap.add_argument('--historico',help='pasta com as semanas arquivadas (arquivar_semana.py)'); ap.add_argument('--semanas-historico',type=int,default=3,help='semanas ANTERIORES incluidas (3 + a atual = 4 semanas)'); ap.add_argument('--parcial',action='store_true',help='so para pre-visualizacao: nao exige completude e omite blocos invalidos (a rotina semanal NUNCA usa)')
     ap.add_argument('--estrito',action='store_true',help='falha se qualquer bloco for invalido (padrao: omite o bloco invalido e segue)'); a=ap.parse_args()
     here=os.path.dirname(os.path.abspath(__file__))
     omitir=set()
     if not a.sem_validar:
-        r=subprocess.run([sys.executable,os.path.join(here,'validar_ia.py'),a.ia],capture_output=True,text=True); print(r.stdout.strip())
+        r=subprocess.run([sys.executable,os.path.join(here,'validar_ia.py'),a.ia]+([] if a.parcial else ['--completo']),capture_output=True,text=True); print(r.stdout.strip())
         if r.returncode!=0:
-            if a.estrito: print('IA invalida: html NAO gerado.'); sys.exit(1)
+            if a.estrito or not a.parcial: print('IA incompleta ou invalida: html NAO gerado. Corrija os erros acima (nunca publique um painel parcial).'); sys.exit(1)
             for ln in r.stdout.splitlines():
                 if not ln.startswith('ERRO'): continue
                 m=ln[5:].strip(); k=m.split(':')[0]
@@ -42,6 +42,13 @@ def main():
     for pid in PRODS:
         o=L('produto-'+pid)
         if o is not None and 'produto:'+pid not in omitir: parts.append(bloco('produto:'+pid,o))
+    if a.historico:
+        sys.path.insert(0,here); import historico as HI
+        cur=(L('meta') or {}).get('semana',{}).get('w'); ant=[h for h in HI.carregar(a.historico) if h['semana']['w']!=cur][:max(a.semanas_historico,0)]
+        if ant:
+            b64,raw=HI.bloco_b64(ant); parts.append('<div hidden data-px-hist>%s</div>'%b64)
+            print('historico: %d semanas anteriores (%s), %d KB bruto -> %d KB no html'%(len(ant),', '.join(h['semana']['w'] for h in ant),raw//1024,len(b64)//1024))
+        else: print('AVISO: sem semanas anteriores em %s; o painel mostra so a semana atual (restaure com extrair_historico.py)'%a.historico)
     if a.snapshot: parts.append('<div hidden data-px-db>%s</div>'%safe(json.load(open(a.snapshot,encoding='utf-8'))))
     html='\n'.join(parts)+'\n'
     n=len(html.encode('utf-8'))

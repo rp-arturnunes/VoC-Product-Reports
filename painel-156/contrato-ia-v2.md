@@ -33,12 +33,42 @@ O JS nunca quebra por causa da IA: bloco ausente ou com JSON inválido só some,
 | `ra.json` | `texto` (700), `aviso`, `temas`: até 12, cada um com `t`, `p`, `v` (10 números por semana), `det`, `ex` (até 2) |
 | `eventos.json` | Até 12 movimentos, do mais recente ao mais antigo: `d`, `t`, `tipo`, `res` (220), `imp` (até 5 itens [canal, nível, texto]), `analise` (440), `marca` (300), `pred` (300) |
 | `exemplos.json` | **Bloco único de exemplos reais.** Objeto `{"e1": {"t": trecho do cliente (até 112 caracteres, cortado com …), "m": "Suporte · ticket 46715308 · 04/11 · usuário 32366365"}, ...}`. Destaques, vozes, motivos, Reclame Aqui, lojas e redes citam os exemplos **por id** (`"ex": ["e1","e7",...]`), então o mesmo exemplo pode aparecer em vários temas sem repetir o texto |
-| `produto-{id}.json` | Um por produto (`pix`, `cartao`, `emprestimo`, `t2p`, `link`, `conta`, `seguros`, `cdb`, `transp`, `fraude`, `boletos`, `topup`): `analise` {`clientes` (650), `mudou` (550), `atencao` (até 3 de 220)}, `motivos` (até 4, com `det`: `res` 320, `dor` até 3, `exp` 220, `falha` até 1, `ex` pelo menos 5 por id), `temas` (até 4), `exemplos` por canal (até 2), `mencoes` {`texto` (750), `ra` (até 3 exemplos)}, `eventos` (até 3), `jornada` (opcional: `{"etapa": "análise de até 300 caracteres"}` com as etapas da aba Jornada; os números vêm das queries de jornada) |
+| `produto-{id}.json` | Um por produto (`pix`, `cartao`, `emprestimo`, `t2p`, `link`, `conta`, `seguros`, `cdb`, `transp`, `fraude`, `boletos`, `topup`): `analise` {`clientes` (650), `mudou` (550), `atencao` (até 3 de 220)}, `motivos` (até 4, com `det`: `res` 320, `dor` até 3, `exp` 220, `falha` até 1, `ex` pelo menos 5 por id), `temas` (até 4), `exemplos` por canal (até 2), `mencoes` {`texto` (750), `ra` (até 3 exemplos)}, `eventos` (até 3), `jornada` (obrigatório: `{"etapa": "análise de até 300 caracteres, com evidência"}` para as 3 etapas de maior volume da aba Jornada e para as que fogem da média do produto; ids de etapa por produto no `ETAPAS` do `validar_ia.py`; os números vêm das queries de jornada) |
 
-`exemplo-ia/` traz os 19 arquivos da W45, já validados. Use-os como modelo de campos e de tom.
+`exemplo-ia/` traz os 20 arquivos da W45 como modelo de campos e de tom (veja o LEIA-ME da pasta: ele passa na validação normal, mas não no `--completo`). Use-os como modelo de campos e de tom.
 
 ### Situação dos destaques (`sl`)
 `Resolvido`, `Parcialmente resolvido`, `Em andamento`, `Em acompanhamento`, `Em apuração`, `Sem solução registrada`, `Sem registro`, `Não resolvido` ou `Estável`. O campo `s` traz a evidência com data. Sem evidência, use `Sem registro`.
+
+## Histórico de semanas (pelo menos 4 semanas)
+Os blocos de IA do html são substituídos por completo a cada rodada, então o painel mantém o histórico num bloco separado e comprimido: `<div hidden data-px-hist>BASE64</div>` (JSON em gzip + base64). O JS só o descomprime quando a página abre (`DecompressionStream`), e o código do painel cresce ~3 KB.
+
+- **O que cada semana guarda** (`historico/{W}.json`): `semana`, `pulso`, `resumo` (da seção Destaques), os 15 `destaques` (com no máximo 3 exemplos cada, resolvidos num `exemplos` próprio da semana), e os `eventos` cujo dia cai dentro daquela semana (a lista da rodada cobre 30 dias; cada semana guarda só os seus).
+- **No painel:** um seletor "Semana" acima dos Destaques, da mais antiga para a atual (da esquerda para a direita), que abre sempre na atual (W atual + 3 anteriores). A semana arquivada mostra os 5 cards, os 10 temas em alta, o painel de análise de cada um e a lista "Movimentos da semana". Os indicadores continuam sempre os da semana atual, e a aba "Destaques" de cada produto também.
+- **Custo no html:** ~11 KB por semana arquivada (comprimido). Com 3 semanas anteriores: ~35 KB; com 7: ~85 KB. Teto do montador: 260 KB.
+- **Rotina:** `arquivar_semana.py` (grava a semana da rodada), `extrair_historico.py` (restaura `historico/` a partir de um html publicado) e `montar_html_painel.py --historico historico/ --semanas-historico 3`. A pasta `historico/` guarda todas as semanas; o painel usa as 3 mais recentes antes da atual. Sem histórico, o painel mostra só a semana atual.
+- **Limites:** exige navegador com `DecompressionStream` (Chrome, Edge, Safari 16.4+, Firefox 113+); sem ele o seletor não aparece. As semanas arquivadas guardam 3 exemplos por destaque (a semana atual mostra todos). Vozes, lojas, redes e Reclame Aqui não entram no histórico.
+
+## Completude obrigatória (toda rodada)
+A rotina semanal escreve **os 20 blocos completos em toda execução, inclusive em MODO=TESTE e em envios para DM**. Não existe execução reduzida: o montador recusa gerar o html se `python3 validar_ia.py ia --completo` tiver qualquer erro, e um painel parcial nunca é publicado (a semana anterior permanece e os erros vão para a notificação interna).
+
+O modo `--completo` exige:
+| Bloco | O que precisa existir |
+|---|---|
+| `meta` | `imagens` com os 12 produtos (link da pasta do Drive) |
+| `destaques` | sempre 15; todos com `img` e pelo menos 5 `ex`; todo squad coberto |
+| `vozes` | `reclamam`, `pedem` e `elogiam` com pelo menos 3 temas cada, `serie` de 10 semanas e pelo menos 5 `ex` por tema (NPS, lojas e redes) |
+| `lojasredes` | `loja` e `rede` com pelo menos 3 temas e 5 exemplos negativos |
+| `ra` | pelo menos 8 temas de `fat_hugme_tickets`, série de 10 semanas e pelo menos 5 reclamações literais por tema |
+| `eventos` | pelo menos 1 movimento dos últimos 30 dias |
+| `produto-{id}` (12) | `analise` completa, `motivos` com pelo menos 5 exemplos (ou todos, se o motivo tem menos contatos), `temas`, `mencoes.texto`, `eventos` (pode ser `[]`) e `jornada` com pelo menos 3 etapas |
+| Seguros | `subs` com `seg_ar`, `seg_emp` e `seg_pix`: análise, temas e pelo menos 5 exemplos |
+
+**`base_pequena: true`** (no destaque, tema, voz, subproduto ou produto) dispensa a regra de pelo menos 5 exemplos, de `temas` e de `jornada` quando o volume da semana realmente não permite (ex.: Seguros teve 2 feedbacks em 30 dias). Nunca vale para um destaque, voz ou tema de Reclame Aqui com volume, e deve ser citada na notificação interna.
+
+**Frases literais** são trechos reais do cliente (NPS, ticket, loja, rede ou Reclame Aqui), sem nome, CPF, e-mail ou telefone, nunca resumos. Para tickets, use a mensagem mais longa do cliente; se a transcrição estiver atrasada, use os dias mais recentes e complete com as outras fontes.
+
+**Imagens:** em toda rodada a pasta do Drive é listada inteira (todas as páginas, nunca só por palavra-chave) e cada destaque e cada produto recebe a imagem que combina com o tema. Se o Drive falhar, use `imagens-drive.json` (`padrao_por_produto`); `img` nunca fica vazio.
 
 ### Cobertura: todo squad tem pelo menos um destaque
 - São **15 destaques** por semana: 5 cards e 10 temas em alta.

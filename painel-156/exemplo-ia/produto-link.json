@@ -98,5 +98,11 @@
 "mencoes": {
 "texto": "Link de Pagamento quase não aparece em lojas, redes e Reclame Aqui; a voz do cliente vem do NPS e do suporte. No Reclame Aqui, não houve reclamações na W45.",
 "ra": []
-}
+},
+"jornada": {
+"recebimento": "26 comentários (41% do produto), 19% positivos, abaixo da média do produto (47%).",
+"pagamento": "14 comentários (22% do produto), 29% positivos, abaixo da média do produto (47%).",
+"criar": "8 comentários (12% do produto), 38% positivos, abaixo da média do produto (47%)."
+},
+"base_pequena": true
 }

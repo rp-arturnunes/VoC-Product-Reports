@@ -217,7 +217,8 @@
 ],
 "mencoes": {
 "texto": "As menções em lojas, redes e Reclame Aqui ainda não separam o tipo de seguro; veja a visão de Seguros (Todos)."
-}
+},
+"base_pequena": true
 },
 "seg_emp": {
 "analise": {
@@ -272,5 +273,7 @@
 "texto": "As menções em lojas, redes e Reclame Aqui ainda não separam o tipo de seguro; veja a visão de Seguros (Todos)."
 }
 }
-}
+},
+"jornada": {},
+"base_pequena": true
 }

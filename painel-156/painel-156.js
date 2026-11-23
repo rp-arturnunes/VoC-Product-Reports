@@ -220,6 +220,37 @@ function drawDest(){
   nwFix($('#dest'));
 }
 drawDest();
+/* -------- historico de semanas: bloco compactado (gzip + base64) lido sob demanda, sem peso no codigo -------- */
+var NWH=null, NWHW=null, NWH0=null;
+function IAcur(){ return NWH0||IA.destaques; }
+function nwhEv(h){ var L=h.eventos||[]; if(!L.length) return '<div class="nw-hev"><h3 class="nw-h">Movimentos da semana</h3><p class="sub">Nenhum movimento da empresa foi registrado nessa semana.</p></div>';
+  return '<div class="nw-hev"><h3 class="nw-h">Movimentos da semana <small>'+L.length+(L.length===1?' registro':' registros')+'</small></h3><ul>'+L.map(function(e){ return '<li><b>'+esc(e.d)+'</b> <span class="nw-hevt">'+esc(e.tipo||'')+'</span> '+esc(e.t)+(e.res?'<span>'+esc(e.res)+'</span>':'')+'</li>'; }).join('')+'</ul></div>'; }
+function nwhBar(){
+  var host=$('#dest'); if(!host||!NWH||!NWH.length) return;
+  var bar=$('#dwk'); if(!bar){ bar=document.createElement('div'); bar.id='dwk'; bar.className='nw-hbar'; host.parentNode.insertBefore(bar,host); }
+  var cur=(IA.semana&&IA.semana.w)||'Atual';
+  bar.innerHTML='<b>Semana</b>'+NWH.slice().reverse().map(function(h){ return '<button type="button" data-hw="'+esc(h.semana.w)+'" aria-pressed="'+(NWHW&&NWHW.semana.w===h.semana.w?'true':'false')+'">'+esc(h.semana.w)+'</button>'; }).join('')+'<button type="button" data-hw="" aria-pressed="'+(NWHW?'false':'true')+'">'+esc(cur)+' (atual)</button>'+(NWHW?'<span class="nw-hnote">Análise arquivada de '+esc(NWHW.semana.ini)+' a '+esc(NWHW.semana.fim)+'. Os indicadores do painel seguem a semana atual.</span>':'');
+  var ev=$('#dhev'); if(!ev){ ev=document.createElement('div'); ev.id='dhev'; host.parentNode.insertBefore(ev,host.nextSibling); }
+  ev.innerHTML=NWHW?nwhEv(NWHW):'';
+}
+function nwhSel(w){
+  if(!w){ if(NWH0){ IA.destaques=NWH0; NWH0=null; } NWHW=null; $('#dsum').innerHTML=IAsum('destaques'); }
+  else { var h=NWH.filter(function(x){ return x.semana.w===w; })[0]; if(!h) return; if(!NWH0) NWH0=IA.destaques; IA.destaques=h._d; NWHW=h; $('#dsum').innerHTML=h.resumo?'<p><span class="lbl">Análise da '+esc(h.semana.w)+'</span>'+esc(h.resumo)+'</p>':''; }
+  nwhBar(); drawDest();
+}
+function nwhLoad(){
+  var el=document.querySelector('[data-px-hist]'); if(!el||typeof DecompressionStream==='undefined'||typeof Response==='undefined'||typeof Blob==='undefined') return;
+  try{
+    var bin=atob(el.textContent.replace(/\s+/g,'')), u=new Uint8Array(bin.length); for(var i=0;i<bin.length;i++) u[i]=bin.charCodeAt(i);
+    new Response(new Blob([u]).stream().pipeThrough(new DecompressionStream('gzip'))).text().then(function(t){
+      var L=JSON.parse(t); if(!Array.isArray(L)||!L.length) return;
+      L.forEach(function(h){ var d=h.destaques||{}; ['novos','oport','agir'].forEach(function(k){ d[k]=d[k]||[]; }); h._d=PXresolve(d,h.exemplos||{}); });
+      NWH=L; nwhBar();
+    }).catch(function(){});
+  }catch(e){}
+}
+document.addEventListener('click',function(e){ var b=e.target.closest&&e.target.closest('[data-hw]'); if(b) nwhSel(b.getAttribute('data-hw')); });
+nwhLoad();
 
 /* -------- radar -------- */
 var MET=[
@@ -499,7 +530,7 @@ function tabResumo(a,isSub){
 }
 function tabDest(id,a){
   var G=[['novos','Temas novos','var(--sky)'],['oport','Oportunidades','var(--green)'],['agir','Atenção imediata','var(--red)']], h='', any=false;
-  G.forEach(function(g){ var L=(IA.destaques[g[0]]||[]).filter(function(x){return x.p===id;}); if(!L.length) return; any=true;
+  G.forEach(function(g){ var L=(IAcur()[g[0]]||[]).filter(function(x){return x.p===id||(x.ps||[]).indexOf(id)>=0;}); if(!L.length) return; any=true;
     h+='<h4><i style="width:12px;height:12px;border-radius:3px;display:inline-block;background:'+g[2]+'"></i>'+g[1]+' <span class="src ia">Análise IA</span></h4>'+L.map(function(x){ return '<div class="box"><b>'+esc(x.t)+'</b><div><span style="display:inline-block;margin:6px 0;font-size:13px;font-weight:700;background:#eef2f8;border-radius:6px;padding:2px 8px">'+esc(x.m)+'</span></div><p style="margin:0">'+esc(x.x)+'</p>'+stHtml(x)+'</div>'; }).join(''); });
   var alta=(a.motivos||[]).filter(function(m){ var v=parseFloat(String(m.var||'').replace('−','-').replace('%','')); return m.n>=30&&v>=40; });
   if(alta.length){ any=true; h+='<h4>Motivos de contato em alta na semana <span class="src db">Databricks</span></h4><div class="box"><ul class="b">'+alta.map(function(m){ return '<li><b>'+esc(m.t)+'</b>: '+fN(m.n)+' contatos ('+esc(m.var)+' contra '+fN(m.ant)+')</li>'; }).join('')+'</ul></div>'; }

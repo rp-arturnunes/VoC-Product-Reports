@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Valida os blocos de IA do painel 156 (ia/*.json) antes de montar o html.
-Uso: python3 validar_ia.py <pasta-ia>   (saida 0 = ok, 1 = erro; avisos nao bloqueiam)"""
+Uso: python3 validar_ia.py <pasta-ia> [--completo]   (saida 0 = ok, 1 = erro; avisos nao bloqueiam)\n--completo: exige as 20 analises, imagens, series, exemplos e jornada em toda rodada (a rotina semanal sempre usa)"""
 import json,os,re,sys
 PRODS=['pix','cartao','emprestimo','t2p','link','conta','seguros','cdb','transp','fraude','boletos','topup']
 SITU=['Resolvido','Parcialmente resolvido','Em andamento','Em acompanhamento','Em apuração','Sem solução registrada','Sem registro','Não resolvido','Estável']
@@ -69,7 +69,74 @@ def ler(d,n,obrig=True):
         (E if obrig else A)(f'{n}.json ausente'); return None
     try: return json.load(open(p,encoding='utf-8'))
     except Exception as e: E(f'{n}.json invalido: {e}'); return None
-def main(d):
+ETAPAS={'cartao':['contratacao','ativacao','limite','uso','fatura','beneficios','custos','atendimento','seguranca','decisao','encerramento'],'pix':['chave','envio','recebimento','rapidez','falhas','limite','cartao','custos','seguranca','atendimento'],
+ 'emprestimo':['oferta','contratacao','recebimento','parcelas','juros','limite','cartao','cobranca','atendimento'],'t2p':['ativacao','venda','recebimento','taxas','limite','resgate','atendimento'],'link':['criar','pagamento','recebimento','taxas','cancelamento','atendimento'],
+ 'conta':['abertura','validacao','acesso','app','dados','seguranca','encerramento','atendimento'],'seguros':['oferta','cobranca','cobertura','cancelamento','atendimento'],'cdb':['aplicacao','rendimento','resgate','cartao','acompanhamento','atendimento'],
+ 'transp':['cadastro','recarga','confirmacao','pagamento','praticidade','estorno','atendimento'],'fraude':['bloqueio','motivo','prazo','analise','contestacao','encerramento','atendimento'],'boletos':['pagamento','cashback','renda','taxas','compensacao','atendimento'],'topup':['recarga','pagamento','credito','bonus','atendimento']}
+def completo(d):
+    """Completude obrigatoria (modo --completo): toda analise do painel precisa existir em toda rodada. O que nao for possivel por volume pequeno leva base_pequena: true."""
+    def Jf(n):
+        p=os.path.join(d,n+'.json')
+        try: return json.load(open(p,encoding='utf-8'))
+        except Exception: return None
+    def ex5(path,o,minimo=5):
+        if o.get('base_pequena'): return
+        n=len(o.get('ex') or [])
+        if n<minimo: E(f'{path}: {n} exemplos; todo tema precisa de pelo menos {minimo} frases literais de clientes com data (ou base_pequena: true se o volume da semana nao permitir)')
+    for n in ('meta','resumos','destaques','vozes','lojasredes','ra','eventos','exemplos')+tuple('produto-'+p for p in PRODS):
+        if Jf(n) in (None,{},[]): E(f'completo: bloco {n} ausente ou vazio; toda rodada escreve os 20 blocos')
+    m=Jf('meta') or {}
+    im=m.get('imagens') or {}
+    for p in PRODS:
+        if not im.get(p) or not IMGOK(im[p]): E(f'meta.imagens.{p}: toda rodada define a imagem de cada produto (pasta do Drive ou imagens-drive.json)')
+    de=Jf('destaques') or {}; L=[x for g in ('novos','oport','agir') for x in de.get(g,[])]
+    if len(L)!=15: E(f'destaques: {len(L)} itens; sao sempre 15 (5 cards + 10 temas em alta)')
+    for i,x in enumerate(L):
+        if not x.get('img'): E(f'destaques[{i}] "{str(x.get("t"))[:40]}": sem img; todo destaque leva uma imagem da pasta do Drive')
+        ex5(f'destaques[{i}] "{str(x.get("t"))[:40]}"',x)
+    vz=Jf('vozes') or {}
+    for g in ('reclamam','pedem','elogiam'):
+        if len(vz.get(g,[]))<3: E(f'vozes.{g}: {len(vz.get(g,[]))} temas; escreva pelo menos 3 por grupo')
+        for i,x in enumerate(vz.get(g,[])):
+            if len(x.get('serie') or [])<2 and not (x.get('serie') or {}).get('v'): E(f'vozes.{g}[{i}]: sem serie de 10 semanas')
+            ex5(f'vozes.{g}[{i}] "{str(x.get("t"))[:36]}"',x)
+    ls=Jf('lojasredes') or {}
+    for c in ('loja','rede'):
+        o=ls.get(c) or {}
+        if len(o.get('temas',[]))<3: E(f'lojasredes.{c}: escreva pelo menos 3 temas (fonte: fat_app_reviews e fat_buzzmonitor_posts)')
+        if len(o.get('neg',[]))<5 and not o.get('base_pequena'): E(f'lojasredes.{c}.neg: {len(o.get("neg",[]))} exemplos; pelo menos 5')
+    ra=Jf('ra') or {}
+    if len(ra.get('temas',[]))<8: E(f'ra.temas: {len(ra.get("temas",[]))} temas; escreva pelo menos 8 (fonte: fat_hugme_tickets)')
+    for i,t in enumerate(ra.get('temas',[])): ex5(f'ra.temas[{i}] "{str(t.get("t"))[:36]}"',t)
+    if not isinstance(Jf('eventos'),list) or len(Jf('eventos') or [])<1: E('eventos: liste os movimentos dos ultimos 30 dias')
+    for pid in PRODS:
+        p=Jf('produto-'+pid) or {}; a=p.get('analise') or {}
+        for k in ('clientes','mudou'):
+            if not a.get(k): E(f'{pid}.analise.{k}: obrigatorio')
+        if not a.get('atencao'): E(f'{pid}.analise.atencao: pelo menos 1 ponto')
+        if not p.get('motivos'): E(f'{pid}.motivos: obrigatorio')
+        for i,mo in enumerate(p.get('motivos',[])):
+            try: n=int(float(mo.get('n') or 0))
+            except Exception: n=0
+            dd=mo.get('det') or {}
+            if not mo.get('base_pequena') and len(dd.get('ex') or mo.get('ex') or [])<min(5,n): E(f'{pid}.motivos[{i}] "{str(mo.get("t"))[:36]}": {len(dd.get("ex") or mo.get("ex") or [])} exemplos para {n} contatos; use pelo menos {min(5,n)}')
+        if not (p.get('mencoes') or {}).get('texto'): E(f'{pid}.mencoes.texto: obrigatorio (lojas, redes, NPS e Reclame Aqui do produto)')
+        if 'eventos' not in p: E(f'{pid}.eventos: inclua a lista (pode ser [] se nao houve movimento do produto)')
+        if not p.get('temas') and not p.get('base_pequena'): E(f'{pid}.temas: escreva pelo menos 1 tema (ou base_pequena: true no produto se o volume nao permitir)')
+        jr=p.get('jornada') or {}; et=ETAPAS[pid]
+        if len(jr)<min(3,len(et)) and not p.get('base_pequena'): E(f'{pid}.jornada: {len(jr)} etapas analisadas; escreva a nota de pelo menos {min(3,len(et))} (as de maior volume e as que fogem da media do produto)')
+        for k in jr:
+            if k not in et: E(f'{pid}.jornada.{k}: etapa invalida; use {et}')
+    sg=((Jf('produto-seguros') or {}).get('subs')) or {}
+    for s in ('seg_ar','seg_emp','seg_pix'):
+        o=sg.get(s)
+        if not o: E(f'seguros.subs.{s}: toda rodada escreve os 3 subprodutos'); continue
+        for k in ('clientes','mudou'):
+            if not (o.get('analise') or {}).get(k): E(f'seguros.subs.{s}.analise.{k}: obrigatorio')
+        if not o.get('temas'): E(f'seguros.subs.{s}.temas: obrigatorio')
+        nex=sum(len(x) for x in (o.get('exemplos') or {}).values())
+        if nex<5 and not o.get('base_pequena'): E(f'seguros.subs.{s}.exemplos: {nex}; pelo menos 5 frases literais (ou base_pequena: true)')
+def main(d,comp=False):
     pool=ler(d,'exemplos')
     if pool:
         for k,v in pool.items():
@@ -181,10 +248,11 @@ def main(d):
         mc=p.get('mencoes') or {}
         txt_ok(f'{pid}.mencoes.texto',mc.get('texto',''),750); exemplos(f'{pid}.mencoes.ra',mc.get('ra'),3)
         for c,L in (p.get('exemplos') or {}).items(): exemplos(f'{pid}.exemplos.{c}',L,3)
+    if comp: completo(d)
     return not erros
 if __name__=='__main__':
-    d=sys.argv[1] if len(sys.argv)>1 else 'ia'
-    ok=main(d)
+    args=[x for x in sys.argv[1:] if not x.startswith('--')]; d=args[0] if args else 'ia'
+    ok=main(d,'--completo' in sys.argv)
     for a in avisos: print('AVISO',a)
     for e in erros: print('ERRO ',e)
     print('OK' if ok else f'{len(erros)} erro(s)'); sys.exit(0 if ok else 1)
