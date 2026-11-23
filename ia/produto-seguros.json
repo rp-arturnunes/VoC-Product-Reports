@@ -1,19 +1,19 @@
 {
  "analise": {
-  "clientes": "Quem procura o atendimento de Seguros quer o dinheiro de volta: 69% dos contatos sobre o seguro contestam a contratação e 71% pedem estorno. O desconto de R$ 5,99 (Pix e Cartão) ou R$ 2,99 (Acidente e Renda) aparece no saldo ou na fatura, 33% querem cancelar e só 3% têm apenas dúvida; há quem diga que a cobrança voltou ou que o valor não foi devolvido depois de cancelar.",
-  "mudou": "Suporte humano da vertical sobe 5% (16 a 21/11 contra 09 a 14/11) e o CSAT Suporte humano fica em 78,3% (dados até 20/11). Os contatos sobre seguro caem 5% no conjunto: Pix e Cartão −7%, Acidente e Renda +42% (base pequena). As vendas do Acidente e Renda crescem a partir de 19/11 (apólices novas +159%) e seus cancelamentos pedidos pelo cliente sobem 255%. No Empréstimo, a adesão cai para 44% dos elegíveis (47% em 09 a 14/11).",
+  "clientes": "Quem procura o atendimento de Seguros quer o dinheiro de volta: 69% dos contatos sobre o seguro contestam a contratação e 71% pedem estorno. O desconto de R$ 5,99 (Pix e Cartão) ou R$ 2,99 (Acidente e Renda) aparece no saldo ou na fatura, 32% querem cancelar e só 3% têm apenas dúvida; há quem diga que a cobrança voltou ou que o valor não foi devolvido depois de cancelar.",
+  "mudou": "Suporte humano da vertical fica estável (+1%) e o CSAT Suporte humano sobe para 75,5% (66,7% na W46). Os contatos sobre seguro caem 7% no conjunto: Pix e Cartão −9%, Acidente e Renda +71% (base pequena). As vendas do Acidente e Renda saltam a partir de 19/11 (apólices novas +169%) e seus cancelamentos pedidos pelo cliente sobem 249%; o movimento seguiu em 22/11, abaixo do pico de 20 e 21/11. No Empréstimo, a adesão cai para 44% dos elegíveis (46% na W46).",
   "atencao": [
-   "Contestação da contratação: 69% dos contatos sobre seguro dizem não ter contratado; no Acidente e Renda vai de 5% para 37% dos contatos.",
-   "Acidente e Renda: apólices novas +159% e cancelamentos pedidos pelo cliente +255% (95% no prazo de arrependimento), com salto em 19, 20 e 21/11.",
+   "Contestação da contratação: 69% dos contatos sobre seguro dizem não ter contratado; no Acidente e Renda vai de 5% para 42% dos contatos.",
+   "Acidente e Renda: apólices novas +169% e cancelamentos pedidos pelo cliente +249% (96% no prazo de arrependimento), com salto de 19 a 22/11 e 22/11 abaixo do pico de 20 e 21/11.",
    "Adesão ao seguro do Empréstimo cai para 44% dos elegíveis, de 69% na semana de 14/09."
   ]
  },
  "motivos": [
   {
    "t": "Quer estorno do seguro",
-   "n": 72,
-   "ant": 73,
-   "var": "−1%",
+   "n": 76,
+   "ant": 83,
+   "var": "−8%",
    "det": {
     "res": "O cliente quer o valor de volta de um seguro que diz não ter contratado ou que já cancelou: 69% dos contatos sobre seguro contestam a contratação e 71% pedem estorno.",
     "dor": [
@@ -41,11 +41,11 @@
   },
   {
    "t": "Quer cancelar o seguro",
-   "n": 60,
-   "ant": 54,
-   "var": "+11%",
+   "n": 65,
+   "ant": 58,
+   "var": "+12%",
    "det": {
-    "res": "O cliente quer cancelar o seguro, em geral porque diz não tê-lo contratado; 33% dos contatos sobre seguro pedem cancelamento, e parte relata cobrança depois de cancelar.",
+    "res": "O cliente quer cancelar o seguro, em geral porque diz não tê-lo contratado; 32% dos contatos sobre seguro pedem cancelamento, e parte relata cobrança depois de cancelar.",
     "dor": [
      "<b>Não pediu:</b> \"Eu não solicitei Seguro pix + cartões. Gostaria de cancelar e ter o reembolso.\" (ticket 46794903).",
      "<b>Cobrado após cancelar:</b> \"Eu havia cancelado o seguro e ontem eu depositei e cobrou do meu saldo\" (ticket 46818790).",
@@ -65,28 +65,6 @@
       "Produto",
       "Há relatos de cobrança depois do cancelamento (ticket 46818790, 21/11)."
      ]
-    ]
-   },
-   "ex": null
-  },
-  {
-   "t": "Atendimento não prestado",
-   "n": 5,
-   "ant": 2,
-   "var": "+150%",
-   "det": {
-    "res": "O motivo reúne pedidos de reembolso de seguro que o cliente diz não ter contratado, registrados como atendimento não prestado.",
-    "dor": [
-     "<b>Reembolso:</b> \"Preciso que façam meu reembolso, por que em nenhum momento assinei nada.\" (ticket 46812704).",
-     "<b>Repetição:</b> \"Pela segunda vez recebo desconto de seguro\" (ticket 46820193)."
-    ],
-    "exp": "Ter o pedido de estorno atendido no primeiro contato.",
-    "ex": [
-     "ecq",
-     "ecr",
-     "ecs",
-     "ect",
-     "ecu"
     ]
    },
    "ex": null
@@ -117,28 +95,28 @@
   {
    "canal": "Contatos classificados",
    "t": "Contesta a contratação",
-   "n": 479,
+   "n": 517,
    "tom": "neg",
    "x": "Diz que não contratou o seguro descontado do saldo ou da fatura do cartão."
   },
   {
    "canal": "Contatos classificados",
    "t": "Pede estorno",
-   "n": 495,
+   "n": 534,
    "tom": "neg",
    "x": "Quer o valor de volta, inclusive depois de cancelar."
   },
   {
    "canal": "Contatos classificados",
    "t": "Quer cancelar",
-   "n": 230,
+   "n": 244,
    "tom": "neg",
    "x": "Pede o cancelamento do seguro."
   },
   {
    "canal": "Reclame Aqui",
    "t": "Seguro Pix e Cartão sem contratação",
-   "n": 10,
+   "n": 13,
    "tom": "neg",
    "x": "Cobrança de R$ 5,99 que o cliente não reconhece e proposta marcada ao pagar boleto."
   }
@@ -169,7 +147,7 @@
   }
  ],
  "mencoes": {
-  "texto": "Redes sem posts sobre seguro na semana. No Reclame Aqui, 10 reclamações sobre o seguro entre 17 e 21/11 (9 na W46), quase todas dizem não ter contratado a cobrança de R$ 5,99, uma delas com a proposta marcada ao pagar boleto (18/11). Nas lojas de apps, 2 comentários sobre seguro Pix na W47 (5 na W46), nenhum positivo; no NPS Relacional, 1 comentário sobre o seguro embutido no Pix (19/11), contra 6 na W46.",
+  "texto": "Redes sem posts sobre seguro na semana. No Reclame Aqui, 13 reclamações sobre o seguro entre 16 e 21/11 (13 na W46), 7 delas dizendo não ter contratado a cobrança de R$ 5,99 e uma com a proposta marcada ao pagar boleto (18/11). Nas lojas de apps, 2 comentários sobre seguro Pix na W47 (5 na W46), nenhum positivo; no NPS Relacional, 1 comentário sobre o seguro embutido no Pix (19/11), contra 5 na W46.",
   "ra": [
    "ecz",
    "ed0",
@@ -180,17 +158,17 @@
   "oferta": "Reclame Aqui (18/11) e NPS Relacional (19/11) citam a proteção marcada ao pagar boleto e embutida no Pix; 69% dos contatos sobre seguro contestam a contratação.",
   "cobranca": "Descontos de R$ 5,99 (Pix e Cartão) e R$ 2,99 (Acidente e Renda) no saldo ou na fatura; há relatos de valor não devolvido e de nova cobrança após cancelar (tickets 46818601 e 46818790, 21/11).",
   "cobertura": "Poucas dúvidas de uso (3% dos contatos): como acionar o seguro e quanto a perda de renda paga (tickets 46745408 e 46753259, 09 e 11/11); no Empréstimo, dúvidas sobre cancelar o prestamista.",
-  "cancelamento": "Cancelamentos pedidos pelo cliente ficam estáveis no Pix e Cartão e sobem 255% no Acidente e Renda (95% no prazo de arrependimento); no Empréstimo, nenhum fora da quitação antecipada na W47.",
-  "atendimento": "Suporte humano da vertical +5% e CSAT Suporte humano em 78,3% (16 a 20/11); atendimento não prestado vai de 2 para 5 tickets (ex.: ticket 46820193, 21/11)."
+  "cancelamento": "Cancelamentos pedidos pelo cliente ficam estáveis no Pix e Cartão (−2%) e sobem 249% no Acidente e Renda (96% no prazo de arrependimento); no Empréstimo, nenhum fora da quitação antecipada na W47.",
+  "atendimento": "Suporte humano da vertical +1% e CSAT Suporte humano em 75,5% (66,7% na W46); estorno e cancelamento concentram 90% dos tickets, e o restante são poucos casos de dúvida e documentos."
  },
  "subs": {
   "seg_pix": {
    "analise": {
-    "clientes": "Quem procura o atendimento do Seguro Pix e Cartão diz que não contratou: 70% dos contatos sobre o seguro contestam a contratação, 72% pedem estorno e 33% querem cancelar; só 2% têm apenas dúvida. O desconto de R$ 5,99 aparece no saldo ou na fatura, com relatos de seguro marcado ao pagar boleto ou ao pagar empréstimo por Pix e de cobrança que volta depois do cancelamento.",
-    "mudou": "Os contatos sobre o seguro caem 7% (16 a 21/11 contra 09 a 14/11), com contestação −6%, e seguem 78% abaixo do pico semanal da W42. As apólices novas sobem 15% (picos de 9,7 mil e 8,8 mil em 18 e 19/11), os cancelamentos pedidos pelo cliente ficam estáveis e os feitos no prazo de arrependimento sobem 15%.",
+    "clientes": "Quem procura o atendimento do Seguro Pix e Cartão diz que não contratou: 70% dos contatos sobre o seguro contestam a contratação, 72% pedem estorno e 32% querem cancelar; só 3% têm apenas dúvida. O desconto de R$ 5,99 aparece no saldo ou na fatura, com relatos de seguro marcado ao pagar boleto ou ao pagar empréstimo por Pix e de cobrança que volta depois do cancelamento.",
+    "mudou": "Os contatos sobre o seguro caem 9% (W47 contra W46), com contestação −9%, e seguem 76% abaixo do pico semanal da W42. As apólices novas sobem 15% (picos de 9,7 mil e 8,8 mil em 18 e 19/11), os cancelamentos pedidos pelo cliente ficam estáveis (−2%) e os feitos no prazo de arrependimento sobem 13%. O domingo 22/11, que coincide com a instabilidade de Pix e checkout (00h18 às 03h21), não mostra queda de apólices novas (+2% sobre o domingo 08/11) nem alta de contatos.",
     "atencao": [
      "Contestação da contratação segue em 70% dos contatos, com relatos de seguro marcado ao pagar boleto (Reclame Aqui, 18/11) e embutido no Pix (NPS Relacional, 19/11).",
-     "Apólices novas +15% e cancelamentos no prazo de arrependimento +15%, com picos em 18 e 19/11.",
+     "Apólices novas +15% e cancelamentos no prazo de arrependimento +13%, com picos em 18 e 19/11.",
      "Cobrado após cancelar: em 21/11 clientes relatam valor não devolvido ou nova cobrança depois do cancelamento (tickets 46818601 e 46818790)."
     ]
    },
@@ -198,28 +176,28 @@
     {
      "canal": "Contatos classificados",
      "t": "Contesta a contratação",
-     "n": 469,
+     "n": 502,
      "tom": "neg",
      "x": "Diz que não contratou o seguro de R$ 5,99 descontado do saldo ou do cartão."
     },
     {
      "canal": "Contatos classificados",
      "t": "Pede estorno",
-     "n": 479,
+     "n": 514,
      "tom": "neg",
      "x": "Quer o valor de volta, inclusive depois de cancelar."
     },
     {
      "canal": "Contatos classificados",
      "t": "Quer cancelar",
-     "n": 220,
+     "n": 231,
      "tom": "neg",
      "x": "Pede o cancelamento da proteção."
     },
     {
      "canal": "Contatos classificados",
      "t": "Só dúvida",
-     "n": 16,
+     "n": 18,
      "tom": "neu",
      "x": "Pergunta o que é o seguro e por que está sendo cobrado."
     }
@@ -236,7 +214,7 @@
    },
    "eventos": [],
    "mencoes": {
-    "texto": "Redes sem posts sobre seguro na semana. No Reclame Aqui, 10 reclamações sobre o seguro entre 17 e 21/11 (9 na W46), quase todas dizem não ter contratado a cobrança de R$ 5,99, uma delas com a proposta marcada ao pagar boleto (18/11). Nas lojas de apps, 2 comentários sobre seguro Pix na W47 (5 na W46), nenhum positivo; no NPS Relacional, 1 comentário sobre o seguro embutido no Pix (19/11), contra 6 na W46.",
+    "texto": "Redes sem posts sobre seguro na semana. No Reclame Aqui, 13 reclamações sobre o seguro entre 16 e 21/11 (13 na W46), 7 delas dizendo não ter contratado a cobrança de R$ 5,99 e uma com a proposta marcada ao pagar boleto (18/11). Nas lojas de apps, 2 comentários sobre seguro Pix na W47 (5 na W46), nenhum positivo; no NPS Relacional, 1 comentário sobre o seguro embutido no Pix (19/11), contra 5 na W46.",
     "ra": [
      "ecz",
      "ed0",
@@ -246,40 +224,40 @@
   },
   "seg_ar": {
    "analise": {
-    "clientes": "Produto novo, com poucos contatos mas em alta (+42%, base pequena): 37% contestam a contratação, 59% pedem estorno, 37% querem cancelar e 19% só têm dúvida (para que serve, perda de renda). O cliente vê a cobrança de R$ 2,99 no cartão e diz não ter contratado (ticket 46820336, 21/11).",
-    "mudou": "As apólices novas sobem 159% (09 a 14/11 para 16 a 21/11), com 1,5 mil, 2,7 mil e 2,6 mil por dia de 19 a 21/11 contra cerca de 500 por dia antes. Os cancelamentos pedidos pelo cliente sobem 255%, 95% no prazo de arrependimento (4,7% das apólices novas, contra 3,4%), e a contestação passa de 5% para 37% dos contatos.",
+    "clientes": "Produto novo, com poucos contatos mas em alta (+71%, base pequena): 42% contestam a contratação, 56% pedem estorno, 36% querem cancelar e 19% só têm dúvida (para que serve, perda de renda). O cliente vê a cobrança de R$ 2,99 no cartão e diz não ter contratado (ticket 46820336, 21/11).",
+    "mudou": "As apólices novas sobem 169% (09 a 15/11 para 16 a 22/11), com 1,5 mil, 2,7 mil, 2,6 mil e 1,7 mil por dia de 19 a 22/11 contra cerca de 500 por dia antes: o salto continuou em 22/11, 32% abaixo do pico de 20 e 21/11 e ainda cerca de 3 vezes o patamar de 16 a 18/11. Os cancelamentos pedidos pelo cliente sobem 249%, 96% no prazo de arrependimento (4,9% das apólices novas, contra 3,8%), com 104 em 22/11 (cerca de 5 vezes o patamar de 16 a 18/11); a contestação passa de 5% para 42% dos contatos.",
     "atencao": [
-     "Cancelamentos pedidos pelo cliente +255%, 95% no prazo de arrependimento; 4,7% das apólices novas de 16 a 21/11 já foram canceladas (3,4% em 09 a 14/11).",
-     "Contestação passa de 5% para 37% dos contatos: \"Quero cancelar, eu nunca nem fiz esse seguro\" (ticket 46819526, 21/11).",
-     "Salto de vendas em 19, 20 e 21/11 sem causa identificada nas fontes consultadas."
+     "Cancelamentos pedidos pelo cliente +249%, 96% no prazo de arrependimento; 4,9% das apólices novas de 16 a 22/11 já foram canceladas (3,8% em 09 a 15/11).",
+     "Contestação passa de 5% para 42% dos contatos: \"Quero cancelar , eu nunca nem fiz esse seguro\" (ticket 46819526, 21/11).",
+     "Salto de vendas de 19 a 22/11, com 22/11 abaixo do pico, sem causa identificada nas fontes consultadas."
     ]
    },
    "temas": [
     {
      "canal": "Contatos classificados",
      "t": "Pede estorno",
-     "n": 16,
+     "n": 20,
      "tom": "neg",
      "x": "Quer o valor de volta depois de cancelar ou por não ter contratado."
     },
     {
      "canal": "Contatos classificados",
      "t": "Contesta a contratação",
-     "n": 10,
+     "n": 15,
      "tom": "neg",
      "x": "Diz que não contratou o seguro de R$ 2,99 cobrado no cartão."
     },
     {
      "canal": "Contatos classificados",
      "t": "Quer cancelar",
-     "n": 10,
+     "n": 13,
      "tom": "neg",
      "x": "Pede o cancelamento, inclusive por engano na contratação."
     },
     {
      "canal": "Contatos classificados",
      "t": "Só dúvida",
-     "n": 5,
+     "n": 7,
      "tom": "neu",
      "x": "Para que serve o seguro e como contratar ou acionar."
     }
@@ -309,7 +287,7 @@
   "seg_emp": {
    "analise": {
     "clientes": "Quem procura o atendimento do seguro do empréstimo (prestamista) quer cancelar ou receber o valor de volta: a maioria dos tickets é de cancelamento e os demais reclamam de desconto de seguro que dizem não ter pedido, um deles tirado do valor do empréstimo. Em um caso, o atendimento confirmou que o empréstimo não tinha seguro ativo e que o único seguro era o de Pix e Cartões, já cancelado.",
-    "mudou": "A adesão ao seguro cai para 44% dos empréstimos elegíveis (47% em 09 a 14/11) e vinha de 69% na semana de 14/09; as contratações caem 20%. Os tickets de seguro no Suporte humano são poucos (+25%, base pequena) e não há cancelamento fora da quitação antecipada na W47 (3 na W46).",
+    "mudou": "A adesão ao seguro cai para 44% dos empréstimos elegíveis (46% em 09 a 15/11) e vinha de 69% na semana de 14/09; as contratações caem 19%. Os tickets de seguro no Suporte humano são poucos e estáveis (base pequena) e não há cancelamento fora da quitação antecipada na W47 (3 na W46).",
     "atencao": [
      "Adesão em queda contínua: 69% (semana de 14/09), 62% (12/10), 49% (26/10) e 44% (16/11), com menos empréstimos elegíveis no período.",
      "Confusão entre seguros: em 20/11 um cliente pediu estorno do seguro protegido e o atendimento confirmou que o empréstimo não tinha seguro (ticket 46815604).",
@@ -346,8 +324,8 @@
     {
      "t": "Deseja cancelar o seguro",
      "n": 3,
-     "ant": 2,
-     "var": "+50%",
+     "ant": 3,
+     "var": "0%",
      "ex": [
       "eci",
       "ecj",
