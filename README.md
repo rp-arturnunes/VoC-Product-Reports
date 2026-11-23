@@ -1,24 +1,21 @@
-# VoC-Product-Reports — v3.21 (13/11/2026)
+# VoC-Product-Reports — v3.23 (23/11/2026)
 
 Painel 156 (Experiência do Produto) e Rotina única de reports VoC.
 
-## O que tem aqui
 | Caminho | O que é | Onde vai |
 |---|---|---|
-| `prompt-rotina-unica.txt` | Prompt v3.21 da rotina semanal | Rotina "Report Produto A" e repositório |
-| `painel-156/` | Arquivos que a rotina lê: contratos, validadores, montador, registro dos canais, shell, JS, CSS, 8 queries, documentação e exemplos da W45 | Repositório (substitui a pasta inteira) |
-| `publicacao-arturito/` | Pacote de publicação manual do dashboard 156: CSS, JS, html inicial, as 8 queries em SQL, documentação, descrição e o preview offline | Referência; o Arturito já tem as queries e a documentação (versão 198) |
-| `MUDANCAS-v3.21.md` | O que mudou, checklist da rotina e dúvidas em aberto | Repositório |
+| `prompt-rotina-unica.txt` | Prompt v3.23 da rotina semanal | Rotina "Report Produto A" e repositório |
+| `painel-156/` | Contratos, validadores, montador, scripts de histórico, registro dos canais, shell, JS, CSS, 8 queries, documentação, exemplos e `historico/` (semente W45) | Repositório (substitui a pasta inteira) |
+| `publicacao-arturito/` | Pacote de publicação manual do 156 (CSS, JS, queries, documentação, previews). **Não cole o `4-html-inicial.html`**: a rotina já publica o html semanal | Referência; **cole o JS e o CSS novos** |
+| `MUDANCAS-v3.23.md` | O que mudou e o checklist | Repositório |
 
-## O que mudou na v3.21
-- Slack: um report por canal (11 canais), uma resposta por produto na thread, executivo e geral só com o link do painel, RAF removido. Validador `painel-156/validar_slack.py`.
-- Destaques: 15 (5 cards + 10 temas em alta), todo squad com pelo menos um cenário, produtos correlacionados no mesmo destaque (`ps`).
-- Seguros com 3 subprodutos (Acidente e Renda, Empréstimo e Pix e Cartão), query `Seguros Subprodutos` e análise por subproduto.
-- NPS Transacional do Empréstimo Consignado; Top Up pela vertical `topup`.
-- Imagens dos destaques da pasta do Drive; html semanal com teto de 185 KB.
+## v3.23: histórico de 4 semanas nos destaques
+- Seletor de semanas nos Destaques, da mais antiga para a atual (abre na atual), com destaques, exemplos e movimentos arquivados; dados num bloco comprimido do html (~11 KB por semana), sem peso no código (JS +3 KB).
+- Rotina: `historico/` (uma semana por arquivo), `arquivar_semana.py`, `extrair_historico.py` e `montar_html_painel.py --historico`.
+- Veja `painel-156/contrato-ia-v2.md` (seção "Histórico de semanas") e `publicacao-arturito/preview-historico-TESTE.html`.
 
 ## Pendente fora deste pacote
-- Alinhar `SKILL.md` e `canais.json` (template antigo de 3 respostas por report, Report Executivo separado e entradas de RAF).
-- Pasta do Drive com acesso "Qualquer pessoa com o link: Leitor".
-- Colar o JS (`publicacao-arturito/3-js.js`) no dashboard 156 e rodar a rotina uma vez com `MODO=TESTE`.
-- Pode apagar do repositório: `catalogo-imagens-design-system.json`, `montar_html_reports.py` e `html-esqueleto.html` (nada usa).
+- Colar o novo JS e CSS no dashboard 156.
+- Alinhar `SKILL.md` e `canais.json` (template antigo do Slack, Report Executivo separado, RAF).
+- Repositório mudou de endereço (`rp-arturnunes/VoC-Product-Reports`): conferir referências.
+- Conferir o `ia/` da W46 com `validar_ia.py --completo` e rodar a rotina em `MODO=TESTE`.
