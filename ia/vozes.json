@@ -1,0 +1,356 @@
+{
+ "reclamam": [
+  {
+   "t": "Conta bloqueada ou encerrada sem explicação",
+   "p": "fraude",
+   "d": "Cliente diz não saber o motivo do bloqueio ou do encerramento e pede o saldo de volta; as menções caem de 82 na W45 para 40 na W46 e 39 na W47.",
+   "serie": {
+    "l": "Menções negativas a bloqueio, encerramento e saldo retido (NPS, lojas e redes)",
+    "v": [
+     21,
+     20,
+     31,
+     15,
+     31,
+     26,
+     36,
+     82,
+     40,
+     39
+    ],
+    "u": ""
+   },
+   "det": "O pico da W45 vem sobretudo das redes (63 comentários de 02 a 08/11); desde então o tema recua, mas segue acima das semanas de setembro e outubro. O relato repete o padrão: conta encerrada ou bloqueada sem aviso do motivo, saldo que o cliente não consegue retirar e pedido de atendimento sem retorno. Na Reclame Aqui o tema bloqueio e saldo retido também é o terceiro maior, com queda de 22% na W47.",
+   "ex": [
+    "voz-1",
+    "voz-2",
+    "voz-3",
+    "voz-4",
+    "voz-5"
+   ]
+  },
+  {
+   "t": "Taxas, anuidade e juros mais altos que o esperado",
+   "p": "cartao",
+   "d": "Cliente compara com o que pagava antes: taxa de 3,99% que virou 4,99%, anuidade cobrada e juros vistos como os maiores do mercado.",
+   "serie": {
+    "l": "Menções negativas a taxa, juros, anuidade e cobrança (NPS, lojas e redes)",
+    "v": [
+     52,
+     56,
+     66,
+     58,
+     66,
+     74,
+     92,
+     98,
+     92,
+     67
+    ],
+    "u": ""
+   },
+   "det": "O tema sobe desde a W42 e chega ao pico na W45 (98), com 92 na W46; a W47 (parcial) tem 67. É a reclamação mais constante do período e aparece em NPS, lojas e redes. Os comentários falam de taxa que aumentou, anuidade cobrada de quem tentava cancelar o cartão e taxa de Pix.",
+   "ex": [
+    "voz-6",
+    "voz-7",
+    "voz-8",
+    "voz-9",
+    "voz-10"
+   ]
+  },
+  {
+   "t": "Pix e app com erro ou instabilidade",
+   "p": "pix",
+   "d": "Pico na W46 (91 menções, três vezes o patamar de outubro) com relatos de Pix fora do ar em 14 e 15/11; cai para 30 na W47.",
+   "serie": {
+    "l": "Menções negativas a erro, travamento e instabilidade (NPS, lojas e redes)",
+    "v": [
+     16,
+     28,
+     23,
+     19,
+     22,
+     32,
+     35,
+     38,
+     91,
+     30
+    ],
+    "u": ""
+   },
+   "det": "A alta da W46 coincide com os relatos de 14 e 15/11: lojas e redes falam de quase 24 horas sem conseguir fazer Pix e de falta de explicação no app; na Reclame Aqui o tema Pix chega a 164 reclamações na W46 e volta a 76 na W47. Na W47 permanecem relatos isolados de Pix que recusa por saldo, mesmo com saldo na carteira (22/11).",
+   "ex": [
+    "voz-11",
+    "voz-12",
+    "voz-13",
+    "voz-14",
+    "voz-15"
+   ]
+  },
+  {
+   "t": "Atendimento que não resolve ou não responde",
+   "p": "conta",
+   "d": "Cliente fala de atendimento robótico, sem retorno por telefone ou e-mail e dificuldade de falar com uma pessoa; pico nas W44 e W45.",
+   "serie": {
+    "l": "Menções negativas a atendimento e suporte (NPS, lojas e redes)",
+    "v": [
+     22,
+     21,
+     17,
+     17,
+     15,
+     30,
+     71,
+     95,
+     45,
+     42
+    ],
+    "u": ""
+   },
+   "det": "A alta das W44 (71) e W45 (95) vem das redes, onde clientes sem acesso ao app ou à conta dizem não conseguir atendimento; na W46 e na W47 o tema fica em 45 e 42, ainda o dobro de setembro. No NPS o comentário típico é atendimento \"robótico\" e compra recusada sem suporte imediato.",
+   "ex": [
+    "voz-16",
+    "voz-17",
+    "voz-18",
+    "voz-19",
+    "voz-20"
+   ]
+  },
+  {
+   "t": "Fim do cashback",
+   "p": "boletos",
+   "d": "As menções negativas a cashback passam de 4 na W43 para 47 na W45 e seguem em 39 na W47; cliente cita o fim em boletos e no cartão.",
+   "serie": {
+    "l": "Menções negativas a cashback (NPS, lojas e redes)",
+    "v": [
+     1,
+     3,
+     4,
+     6,
+     4,
+     4,
+     10,
+     47,
+     26,
+     39
+    ],
+    "u": ""
+   },
+   "det": "A alta começa na W45 e coincide com a mudança do cashback em boletos pagos com saldo registrada em 05/11. No NPS aparecem relatos de que o cashback era o principal motivo de uso e, na W47, de que o cartão deixou de garantir o cashback de 1,5%. Nas lojas, o fim do cashback em boletos entra no balanço geral do app (\"fica pior\").",
+   "ex": [
+    "voz-21",
+    "voz-22",
+    "voz-23",
+    "voz-24",
+    "voz-25"
+   ]
+  }
+ ],
+ "pedem": [
+  {
+   "t": "Mais limite de crédito e empréstimo maior",
+   "p": "emprestimo",
+   "d": "É o pedido mais frequente e o mais estável: aparece em cerca de 250 a 300 comentários por semana desde setembro.",
+   "serie": {
+    "l": "Pedidos de limite ou empréstimo maior (NPS, lojas e redes)",
+    "v": [
+     248,
+     241,
+     242,
+     225,
+     228,
+     304,
+     262,
+     295,
+     290,
+     258
+    ],
+    "u": ""
+   },
+   "det": "Vem sobretudo do NPS Relacional: o cliente avalia bem o produto e diz que o limite ou o valor do empréstimo é pequeno (\"só gostaria de ter uns 1.000 reais de limite\"). Lojas e redes trazem o contraponto: liberação de R$ 10 de empréstimo vista como desproporcional. O volume não muda de patamar na W47.",
+   "ex": [
+    "voz-26",
+    "voz-27",
+    "voz-28",
+    "voz-29",
+    "voz-30"
+   ]
+  },
+  {
+   "t": "Cashback maior ou de volta",
+   "p": "boletos",
+   "d": "Pedidos de cashback sobem de 15 na W46 para 41 na W47, a maior marca em 10 semanas.",
+   "serie": {
+    "l": "Pedidos de cashback maior, de volta ou nos boletos (NPS, lojas e redes)",
+    "v": [
+     5,
+     6,
+     5,
+     5,
+     4,
+     7,
+     17,
+     17,
+     15,
+     41
+    ],
+    "u": ""
+   },
+   "det": "Os pedidos dobram na W44 e quase triplicam na W47, em linha com a reclamação sobre o fim do cashback. O cliente pede de volta o cashback em contas e boletos, um percentual mínimo no cartão (1% a 1,2%) e, junto, a versão física do cartão. Há quem cite concorrente que paga cashback.",
+   "ex": [
+    "voz-31",
+    "voz-32",
+    "voz-33",
+    "voz-34",
+    "voz-35"
+   ]
+  },
+  {
+   "t": "Juros, taxas e anuidade menores",
+   "p": "cartao",
+   "d": "Cliente compara com concorrentes e pede juros de parcelamento e anuidade menores; é o maior volume em 10 semanas na W47.",
+   "serie": {
+    "l": "Pedidos de taxa, juros ou anuidade menores (NPS, lojas e redes)",
+    "v": [
+     27,
+     35,
+     29,
+     39,
+     36,
+     32,
+     31,
+     36,
+     38,
+     44
+    ],
+    "u": ""
+   },
+   "det": "O pedido cresce devagar e na W47 chega a 44, o maior valor da série. O texto mais comum é \"poderia melhorar os juros\" de quem já usa e gosta do app, e a comparação direta com valores encontrados na concorrência.",
+   "ex": [
+    "voz-36",
+    "voz-37",
+    "voz-38",
+    "voz-39",
+    "voz-40"
+   ]
+  },
+  {
+   "t": "Atendimento mais rápido e por chat",
+   "p": "conta",
+   "d": "Cliente pede atendimento por chat e um acesso melhor ao suporte; o pedido variou pouco, com picos nas W44 e W47.",
+   "serie": {
+    "l": "Pedidos de melhoria de atendimento e suporte (NPS, lojas e redes)",
+    "v": [
+     11,
+     7,
+     9,
+     2,
+     8,
+     10,
+     41,
+     9,
+     5,
+     14
+    ],
+    "u": ""
+   },
+   "det": "O pico da W44 (41) vem das redes; no NPS, na W47, os pedidos sobem de 4 para 14 e falam de chat rápido, de FAQ que não traz todas as respostas e de dificuldade de acesso ao suporte.",
+   "ex": [
+    "voz-41",
+    "voz-42",
+    "voz-43",
+    "voz-44",
+    "voz-45"
+   ]
+  }
+ ],
+ "elogiam": [
+  {
+   "t": "App fácil, prático e rápido",
+   "p": "pix",
+   "d": "É o elogio mais frequente e o mais estável: cerca de 330 a 410 comentários positivos por semana citam facilidade ou praticidade.",
+   "serie": {
+    "l": "Elogios a facilidade, praticidade e rapidez (NPS e lojas)",
+    "v": [
+     399,
+     387,
+     354,
+     400,
+     398,
+     373,
+     341,
+     413,
+     400,
+     329
+    ],
+    "u": ""
+   },
+   "det": "Vem de promotores do NPS e de avaliações positivas das lojas. O cliente destaca simplicidade de uso, comprovantes e fazer compras sem abrir o app. A W47 é parcial (dados até 21/11) e fica abaixo apenas por ter menos dias.",
+   "ex": [
+    "voz-46",
+    "voz-47",
+    "voz-48",
+    "voz-49",
+    "voz-50"
+   ]
+  },
+  {
+   "t": "Cashback do cartão",
+   "p": "cartao",
+   "d": "Os elogios ao cashback sobem de 22 na W45 para 68 na W47, muitos de quem usa o cartão e pede um cartão físico.",
+   "serie": {
+    "l": "Elogios a cashback (NPS e lojas)",
+    "v": [
+     8,
+     11,
+     9,
+     12,
+     10,
+     13,
+     15,
+     22,
+     22,
+     68
+    ],
+    "u": ""
+   },
+   "det": "A alta da W47 mistura elogio e pedido: o cliente diz que o cashback é o motivo de usar o cartão, e, no mesmo comentário, que sente falta do cashback em pagamentos ou de uma versão física. Os mesmos temas aparecem em reclamações e em pedidos, então a leitura é de um benefício muito valorizado.",
+   "ex": [
+    "voz-51",
+    "voz-52",
+    "voz-53",
+    "voz-54",
+    "voz-55"
+   ]
+  },
+  {
+   "t": "Atendimento bom e rápido",
+   "p": "conta",
+   "d": "Cerca de 15 a 22 comentários por semana elogiam o atendimento, sem variação relevante desde setembro.",
+   "serie": {
+    "l": "Elogios a atendimento e suporte (NPS e lojas)",
+    "v": [
+     21,
+     20,
+     18,
+     18,
+     18,
+     14,
+     17,
+     20,
+     15,
+     22
+    ],
+    "u": ""
+   },
+   "det": "Os elogios são estáveis e vêm de clientes que resolveram o que precisavam, inclusive de quem recebeu empréstimo. Contrastam com as reclamações de atendimento das redes na W44 e W45, que não aparecem no NPS.",
+   "ex": [
+    "voz-56",
+    "voz-57",
+    "voz-58",
+    "voz-59",
+    "voz-60"
+   ]
+  }
+ ]
+}

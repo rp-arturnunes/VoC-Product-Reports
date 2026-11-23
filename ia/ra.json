@@ -1,0 +1,246 @@
+{
+ "texto": "O Reclame Aqui recebeu 383 reclamações na W47, 31% abaixo da W46 (554) e no patamar de 360 a 410 das semanas anteriores à W45. A queda vem de Pix (-54% depois do pico da W46, que coincide com a instabilidade de 14 e 15/11), cobrança, fatura e anuidade (-33%, depois do pico da W45) e atendimento sem solução (-32%). Golpe e fraude (+2%) e seguro não contratado (estável) não recuam. Empréstimo e limite (-20%) e saldo bloqueado e conta encerrada (-22%) seguem como temas de maior volume junto com cobrança.",
+ "aviso": "Base HugMe (prod.cx.fat_hugme_tickets), pela data da reclamação. Os temas são identificados por palavras no título e no texto, e uma reclamação pode ter mais de um tema. Os exemplos são títulos literais das reclamações; o id é o da reclamação no Reclame Aqui.",
+ "temas": [
+  {
+   "t": "Cobrança, fatura e anuidade",
+   "p": "cartao",
+   "v": [
+    97,
+    106,
+    132,
+    147,
+    114,
+    97,
+    124,
+    226,
+    179,
+    120
+   ],
+   "det": "Recua 33% na W47 depois do pico da W45 (226, maior marca do período) e de 179 na W46. Cliente diz ter sido cobrado no cartão por parcelas, seguro ou valor resgatado que não reconhece.",
+   "ex": [
+    "ra-1",
+    "ra-2",
+    "ra-3",
+    "ra-4",
+    "ra-5"
+   ]
+  },
+  {
+   "t": "Empréstimo e limite",
+   "p": "emprestimo",
+   "v": [
+    175,
+    160,
+    159,
+    159,
+    137,
+    159,
+    146,
+    198,
+    200,
+    159
+   ],
+   "det": "Cai 20% na W47 e volta ao patamar anterior à W45. Cliente diz que pagou o empréstimo e não recebe nova oferta, que o limite de R$ 10 não foi disponibilizado e que cobraram após o pagamento.",
+   "ex": [
+    "ra-6",
+    "ra-7",
+    "ra-8",
+    "ra-9",
+    "ra-10"
+   ]
+  },
+  {
+   "t": "Saldo bloqueado e conta encerrada",
+   "p": "fraude",
+   "v": [
+    96,
+    111,
+    125,
+    130,
+    127,
+    125,
+    135,
+    136,
+    139,
+    108
+   ],
+   "det": "Recua 22% na W47, mas fica acima das semanas de setembro. Cliente fala de saldo retido há dias, Pix pendente depois da instabilidade e conta bloqueada mesmo depois de pagar a dívida.",
+   "ex": [
+    "ra-11",
+    "ra-12",
+    "ra-13",
+    "ra-14",
+    "ra-15"
+   ]
+  },
+  {
+   "t": "Pix não concluído ou não recebido",
+   "p": "pix",
+   "v": [
+    62,
+    81,
+    86,
+    92,
+    76,
+    78,
+    77,
+    95,
+    164,
+    76
+   ],
+   "det": "Dobra na W46 (164) e volta a 76 na W47 (-54%). A alta coincide com as reclamações de 15/11 sobre Pix em instabilidade, em revisão por horas ou pendente.",
+   "ex": [
+    "ra-16",
+    "ra-17",
+    "ra-10",
+    "ra-18",
+    "ra-15"
+   ]
+  },
+  {
+   "t": "Acesso e cadastro",
+   "p": "conta",
+   "v": [
+    63,
+    57,
+    67,
+    71,
+    73,
+    80,
+    78,
+    89,
+    77,
+    68
+   ],
+   "det": "Cai 12% na W47 depois de crescer por seis semanas. Cliente cita app sem funcionar, reconhecimento facial que não passa, cadastro não aprovado e conta PJ inativada.",
+   "ex": [
+    "ra-19",
+    "ra-20",
+    "ra-21",
+    "ra-22",
+    "ra-23"
+   ]
+  },
+  {
+   "t": "Atendimento sem solução",
+   "p": "conta",
+   "v": [
+    112,
+    91,
+    92,
+    95,
+    94,
+    111,
+    101,
+    127,
+    137,
+    93
+   ],
+   "det": "Cai 32% na W47 depois da alta das W45 e W46. A queixa é \"ninguém resolve\": investimento que não resgata, conta encerrada com dinheiro sumido e suporte que não ajuda em falha do app.",
+   "ex": [
+    "ra-24",
+    "ra-25",
+    "ra-26",
+    "ra-27",
+    "ra-28"
+   ]
+  },
+  {
+   "t": "Estorno e reembolso",
+   "p": "fraude",
+   "v": [
+    70,
+    60,
+    67,
+    77,
+    60,
+    70,
+    73,
+    87,
+    94,
+    75
+   ],
+   "det": "Cai 20% na W47. Pedidos de estorno de compra cancelada, seguro não contratado, cobrança no cartão e compra antecipada sem crédito liberado.",
+   "ex": [
+    "ra-29",
+    "ra-30",
+    "ra-31",
+    "ra-32",
+    "ra-33"
+   ]
+  },
+  {
+   "t": "Golpe e fraude",
+   "p": "fraude",
+   "v": [
+    51,
+    45,
+    59,
+    54,
+    43,
+    64,
+    58,
+    75,
+    61,
+    62
+   ],
+   "det": "É o único tema estável na W47 (+2%), e fica acima das semanas de setembro. Cliente não reconhece compras e transferências, cita golpe com acesso à conta e contas abertas em nome de terceiros.",
+   "ex": [
+    "ra-34",
+    "ra-35",
+    "ra-36",
+    "ra-37",
+    "ra-38"
+   ]
+  },
+  {
+   "t": "Seguro não contratado",
+   "p": "seguros",
+   "v": [
+    17,
+    14,
+    28,
+    27,
+    13,
+    8,
+    13,
+    27,
+    22,
+    22
+   ],
+   "det": "Estável na W47 (22) e na W46 (22), com picos nas W43 e W45. Cliente diz não ter contratado o seguro e pede cancelamento e reembolso.",
+   "ex": [
+    "ra-2",
+    "ra-39",
+    "ra-40",
+    "ra-41",
+    "ra-42"
+   ]
+  },
+  {
+   "t": "Cashback e boletos",
+   "p": "boletos",
+   "v": [
+    14,
+    14,
+    18,
+    19,
+    12,
+    20,
+    7,
+    19,
+    17,
+    16
+   ],
+   "det": "Estável, com volume pequeno (16 na W47). Cashback prometido que não chegou e boletos falsos ou não recebidos.",
+   "ex": [
+    "ra-43",
+    "ra-44",
+    "ra-45",
+    "ra-46",
+    "ra-47"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,135 @@
+{
+ "texto": "Nas lojas, 53% das avaliações da W47 (parcial, até 22/11) são positivas, contra 50% na W46, a menor parcela em 10 semanas (era de 68% na W41), e o volume da W47 é menor por ter menos dias. Cartão, Empréstimo e Pix concentram as avaliações negativas: anuidade e cashback retirado, empréstimo de valor muito baixo e Pix que não deixa usar o saldo. As redes têm 57% de interações negativas na W47 contra 43% na W46, quando o volume foi o maior do período (586 interações) com a instabilidade do Pix de 14 e 15/11; os relatos de bloqueio e de falta de atendimento ficam mais isolados.",
+ "aviso": "A classificação de sentimento das redes (Buzzmonitor) marca reclamações e conteúdo fora do tema como positivos; por isso a % positiva das redes não é usada e a leitura é pela % negativa. Produtos pela mesma regra da query Lojas Redes Produtos (palavras-chave no texto; um comentário pode ter mais de um produto). Exemplos abaixo.",
+ "loja": {
+  "temas": [
+   {
+    "t": "Empréstimo e limite",
+    "p": "emprestimo",
+    "n": 22,
+    "neg": 14,
+    "tom": "mix",
+    "x": "Empréstimo de R$ 10 visto como desproporcional (\"pagar 15\"), limite cortado após quitação antecipada e cobrança depois do pagamento. Do lado positivo, liberação rápida e limite que cresce pagando em dia."
+   },
+   {
+    "t": "Cartão: anuidade, fatura e cobrança",
+    "p": "cartao",
+    "n": 21,
+    "neg": 14,
+    "tom": "neg",
+    "x": "Anuidade passou a ser cobrada, taxa boa restrita a quem usa o cartão, cashback retirado de boleto e fatura e saldo do cartão que sumiu."
+   },
+   {
+    "t": "Pix: instabilidade e taxa",
+    "p": "pix",
+    "n": 15,
+    "neg": 12,
+    "tom": "neg",
+    "x": "Na W46 (61 avaliações, 48 negativas) predominam Pix fora do ar em 14 e 15/11; na W47 restam relatos de Pix que não deixa usar o saldo e reclamação de taxa de transferência."
+   },
+   {
+    "t": "Conta, cadastro e selfie",
+    "p": "conta",
+    "n": 5,
+    "neg": 4,
+    "tom": "neg",
+    "x": "Validação por selfie que dá erro por dias, suporte que não resolve e exigência de Open Finance para adicionar cartão."
+   },
+   {
+    "t": "Bloqueio e conta encerrada",
+    "p": "fraude",
+    "n": 5,
+    "neg": 4,
+    "tom": "neg",
+    "x": "Conta encerrada ou bloqueada sem motivo informado e pedido de explicação."
+   },
+   {
+    "t": "Transporte e contas",
+    "p": "transp",
+    "n": 6,
+    "neg": 3,
+    "tom": "mix",
+    "x": "Base pequena na semana; avaliações de transporte e boletos dividem-se entre positivas e negativas."
+   }
+  ],
+  "neg": [
+   "lr-1",
+   "lr-2",
+   "lr-3",
+   "lr-4",
+   "lr-5",
+   "lr-6"
+  ],
+  "pos": [
+   "lr-7",
+   "lr-8",
+   "lr-9",
+   "lr-10",
+   "lr-11"
+  ]
+ },
+ "rede": {
+  "temas": [
+   {
+    "t": "Cartão: anuidade, fatura e cobrança",
+    "p": "cartao",
+    "n": 24,
+    "neg": 20,
+    "tom": "neg",
+    "x": "Cobrança mensal no cartão que o cliente chama de desconto indevido, cartão bloqueado há uma semana e fatura sem acesso ao app para pagar."
+   },
+   {
+    "t": "Empréstimo e limite",
+    "p": "emprestimo",
+    "n": 20,
+    "neg": 15,
+    "tom": "neg",
+    "x": "Oferta de R$ 10 de empréstimo, limite que foi retirado de quem pagava em dia e comparação entre quem recebeu e quem não recebeu limite."
+   },
+   {
+    "t": "Pix: instabilidade",
+    "p": "pix",
+    "n": 16,
+    "neg": 14,
+    "tom": "neg",
+    "x": "Relatos de Pix que não funciona e de erro de saldo insuficiente com saldo na carteira (22/11). Na W46 (101 interações, 65 negativas) concentram a instabilidade de 14 e 15/11 em Instagram."
+   },
+   {
+    "t": "Bloqueio, conta e saldo",
+    "p": "fraude",
+    "n": 3,
+    "neg": 3,
+    "tom": "neg",
+    "x": "Poucos relatos na W47 (14 na W46): conta e saldo bloqueados \"do nada\" e em análise de segurança."
+   },
+   {
+    "t": "Conta e cadastro",
+    "p": "conta",
+    "n": 3,
+    "neg": 1,
+    "tom": "mix",
+    "x": "Base pequena na semana."
+   },
+   {
+    "t": "Tap to Pay e CDB",
+    "p": "t2p",
+    "n": 10,
+    "neg": 4,
+    "tom": "mix",
+    "x": "Base pequena na semana; predominam menções neutras ou positivas."
+   }
+  ],
+  "neg": [
+   "lr-12",
+   "lr-13",
+   "lr-14",
+   "lr-15",
+   "lr-16",
+   "lr-17"
+  ],
+  "falsopos": [
+   "lr-18",
+   "lr-19"
+  ]
+ }
+}
