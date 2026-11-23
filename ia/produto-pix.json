@@ -1,0 +1,363 @@
+{
+ "analise": {
+  "clientes": "O suporte humano de Pix cai 30,4% em W47 (dados até 21/11) frente aos mesmos dias da W46, que teve o pico de instabilidade de 15/11. Os contatos se dividem entre quem paga o Pix com cartão e o vê pendente ou recusado com o limite já usado, quem espera um Pix que não aparece e quem foi vítima de golpe e acompanha a contestação. A taxa de 4,99% no Pix com cartão (inclusive Google Pay e Apple Pay, antes 3,99%) segue citada: 28 de 238 comentários do NPS Transacional Pix Out CC falam de taxa.",
+  "mudou": "Suporte humano −30,4% (16 a 21/11 contra 09 a 14/11): Pix In −52,5%, Pix Out −29,1% (\"não consegue realizar o Pix\" −39%), Pix Out Wallet −14,3% e Pix CC −43,3%. A W46 incluiu a instabilidade de 15/11, que não se repete. NPS Transacional: Pix Out Wallet 59,3 (62,5 na W46) e Pix Out CC 67,6 (estável). CSAT do atendimento de Pix 46,3% (65,7%), em base pequena. Reclame Aqui com Pix −56%; redes com 88% de interações negativas (64%).",
+  "atencao": [
+   "Pix Out Wallet: NPS cai 3,2 pontos; detratores citam bloqueio ou verificação que trava o Pix mesmo com saldo (NPS 18/11, loja 19/11).",
+   "Contestação de golpe: clientes relatam contestação recusada ou com valor devolvido menor, sem poder apresentar provas; aparece também no NPS Pix Out CC (nota 0, 21/11) e no Reclame Aqui.",
+   "Posts de 22/11 em redes citam Pix sem funcionar e \"sem saldo\" com saldo; dados de suporte vão só até 21/11, ainda não medido."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Não consegue realizar o Pix (Pix Out)",
+   "n": 219,
+   "ant": 359,
+   "var": "−39%",
+   "det": {
+    "res": "Quase todos os relatos são de Pix pago com cartão de crédito: fica pendente ou é recusado por segurança, o limite já aparece usado na fatura e o cliente quer cancelar ou saber se haverá estorno. Há também Pix com saldo negado por verificação.",
+    "dor": [
+     "<b>Pix aprovado no banco, não concluído aqui:</b> o app do banco mostra a transação como aprovada e o RecargaPay como não concluída (tickets 46801319, 46805285).",
+     "<b>Recusa por segurança sem motivo:</b> cartão validado e com limite, mas a compra é rejeitada toda vez (ticket 46788958) ou estornada sem explicação (46793990).",
+     "<b>Pendente por verificação:</b> o app pede atualizar dados e a marca de ok já aparece, mas o Pix não segue (tickets 46788810, 46809006); também nega Pix com saldo na carteira (46787721)."
+    ],
+    "exp": "Saber por que o Pix foi recusado ou ficou pendente, e concluir ou cancelar sem perder o limite do cartão.",
+    "falha": [
+     [
+      "Produto",
+      "Pix pendente ou recusado sem motivo claro nem prazo para o limite do cartão voltar; o cliente descobre o estorno só pela fatura."
+     ]
+    ],
+    "ex": [
+     "pix-1",
+     "pix-2",
+     "pix-3",
+     "pix-4",
+     "pix-5",
+     "pix-6",
+     "pix-7",
+     "pix-8",
+     "pix-9"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Problemas com uma transação Pix (Pix Out)",
+   "n": 88,
+   "ant": 91,
+   "var": "−3%",
+   "det": {
+    "res": "O cliente espera um Pix que não aparece: enviado e não recebido, recebido com comprovante mas sem saldo, ou pago por cartão com cobrança na fatura sem a transferência. Pix In e Pix Out Wallet seguem o mesmo padrão em volume menor.",
+    "dor": [
+     "<b>Pix que não chega:</b> comprovante enviado e valor fora do saldo (tickets 46789278, 46817440, 46804449).",
+     "<b>Cobrado no cartão sem Pix:</b> o valor entra na fatura e o destinatário não recebe (tickets 46806620, 46815242).",
+     "<b>Saque Pix:</b> QR Code lido no caixa, saldo debitado e dinheiro não liberado (ticket 46797565)."
+    ],
+    "exp": "Ver o Pix concluído ou o valor de volta, com um prazo claro de análise.",
+    "falha": [
+     [
+      "Produto",
+      "Pix \"em processamento\" ou debitado sem destino, sem prazo visível; o cliente depende do comprovante para provar."
+     ]
+    ],
+    "ex": [
+     "pix-10",
+     "pix-11",
+     "pix-12",
+     "pix-13",
+     "pix-14",
+     "pix-15",
+     "pix-16"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Como acompanhar minha denúncia (Pix Out)",
+   "n": 48,
+   "ant": 69,
+   "var": "−30%",
+   "det": {
+    "res": "Vítimas de golpe que já abriram contestação perguntam o andamento e questionam o resultado: valor devolvido menor, contestação negada alegando que não houve golpe ou finalizada sem que pudessem apresentar provas.",
+    "dor": [
+     "<b>Resultado contestado:</b> uma contestação aprovada com valor irrisório e outra negada (ticket 46790340); conclusão sem oportunidade de provas (46789776).",
+     "<b>Banco analisou e negou:</b> o cliente não recebeu a mercadoria e a análise disse que não houve golpe (ticket 46799484).",
+     "<b>Dúvida sobre o estorno:</b> se o valor só volta quando há saldo na conta do golpista (ticket 46808414)."
+    ],
+    "exp": "Acompanhar a contestação com um prazo e poder complementar provas depois da decisão.",
+    "falha": [
+     [
+      "Processo",
+      "A decisão chega sem espaço para apresentar provas e o cliente não entende o critério da devolução parcial."
+     ]
+    ],
+    "ex": [
+     "pix-24",
+     "pix-25",
+     "pix-26",
+     "pix-27",
+     "pix-28",
+     "pix-29"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Denunciar um Pix indevido (Pix Out)",
+   "n": 42,
+   "ant": 44,
+   "var": "−5%",
+   "det": {
+    "res": "Golpes por falso empréstimo, WhatsApp, venda online e celular invadido: o cliente quer contestar e recuperar o valor; parte já contestou e não vê o status.",
+    "dor": [
+     "<b>Golpe com empréstimo:</b> golpista pede empréstimo no nome de familiar e repassa o dinheiro (ticket 46805509); Pix enviado para liberar empréstimo por WhatsApp (46807071).",
+     "<b>Celular invadido:</b> transações e empréstimo feitos na conta, cliente pede a contestação (ticket 46807991).",
+     "<b>Contestação sem status:</b> contestou no mesmo dia e a contestação não consta (ticket 46813080)."
+    ],
+    "exp": "Que a denúncia devolva o valor e mostre o status logo depois do pedido.",
+    "falha": [
+     [
+      "Processo",
+      "O cliente não vê a contestação registrada e depende do atendimento para confirmar o status."
+     ]
+    ],
+    "ex": [
+     "pix-18",
+     "pix-19",
+     "pix-20",
+     "pix-21",
+     "pix-22",
+     "pix-23"
+    ]
+   },
+   "ex": null
+  }
+ ],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Taxa do Pix com cartão",
+   "n": 28,
+   "tom": "neg",
+   "x": "28 de 238 comentários do Pix Out CC citam taxa; clientes relatam 4,99% inclusive no Google Pay e Apple Pay (antes 3,99%) sem aviso. (44 detratores (0–6) no canal)"
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Bloqueio e verificação travam o Pix",
+   "n": 11,
+   "tom": "neg",
+   "x": "Pix Out Wallet: bloqueio da carteira sem aviso e Pix negado com saldo; nota média do canal cai de 62,5 para 59,3 de NPS. (49 detratores (0–6) no canal)"
+  },
+  {
+   "canal": "NPS Relacional",
+   "t": "Taxa e instabilidade do Pix",
+   "n": 33,
+   "tom": "neg",
+   "x": "33 comentários citam Pix, 12 de detratores: taxa de 4,99% no cartão, troca para outro app e instabilidade do Pix; elogio ao Pix no crédito."
+  },
+  {
+   "canal": "Lojas",
+   "t": "Taxa e seguro Pix",
+   "n": 15,
+   "tom": "neg",
+   "x": "5 de 15 avaliações com Pix citam taxa ou cobrança e 2 citam o seguro Pix cobrado sem o cliente perceber; 13% positivas."
+  }
+ ],
+ "exemplos": {
+  "Suporte": [
+   "pix-1",
+   "pix-10"
+  ],
+  "NPS Transacional": [
+   "pix-40",
+   "pix-44"
+  ],
+  "NPS Relacional": [
+   "pix-47"
+  ],
+  "Lojas": [
+   "pix-50",
+   "pix-51"
+  ],
+  "Redes": [
+   "pix-61",
+   "pix-62"
+  ]
+ },
+ "mencoes": {
+  "texto": "Nas lojas, o Pix aparece em 15 avaliações em W47 (61 na W46, semana da instabilidade) e 13% são positivas (11% na W46), sobre taxa, seguro Pix e Pix negado com saldo. Nas redes, 16 interações com 88% negativas (64% na W46); as de 22/11 citam Pix sem funcionar. No NPS, o Pix Out CC tem comentários de taxa de 4,99% e golpe contestado sem devolução. No Reclame Aqui, 79 reclamações citam Pix em W47 (179 na W46), sobre contestação recusada, Pix com cartão sem cancelamento e selfie que trava transferências.",
+  "ra": [
+   "pix-70",
+   "pix-71",
+   "pix-72"
+  ]
+ },
+ "eventos": [
+  {
+   "d": "22/11",
+   "tag": "Sinal em redes",
+   "t": "Posts de 22/11 em redes relatam Pix sem funcionar e \"sem saldo\" com saldo na carteira; dados de suporte só vão até 21/11, ainda não medido."
+  },
+  {
+   "d": "15/11",
+   "tag": "Incidente",
+   "t": "Instabilidade no app (domingo): o dia concentra o maior volume de contatos de Pix de 09 a 21/11, com \"instabilidade no app\" como motivo dominante; volume normaliza em 16/11."
+  },
+  {
+   "d": "05/11",
+   "tag": "Teste de produto",
+   "t": "Teste da taxa de 4,99% no Pix com cartão (registro da W45); em W47 clientes ainda citam a taxa, inclusive no Google Pay e Apple Pay (antes 3,99%)."
+  }
+ ],
+ "jornada": {
+  "cartao": "Pix com cartão: 21% dos comentários de Pix (NPS e lojas, 30 dias), 59% positivos, abaixo da média do produto (69%); recusa, taxa e limite preso aparecem nos contatos de W47.",
+  "rapidez": "Rapidez: 18% dos comentários, 84% positivos, a etapa mais bem avaliada, acima da média do produto (69%).",
+  "limite": "Limite: 11% dos comentários, 53% positivos, abaixo da média (69%); inclui limite do cartão usado em Pix pendente ou estornado.",
+  "custos": "Custos e tarifas: 10% dos comentários, 47% positivos, abaixo da média (69%); a taxa de 4,99% no Pix com cartão é o assunto central.",
+  "falhas": "Erros e instabilidade: 2% dos comentários, só 19% positivos, o pior índice da jornada (média 69%); concentra Pix pendente e fora do ar.",
+  "envio": "Envio e pagamento: 9% dos comentários, 49% positivos, abaixo da média (69%); Pix recusado com saldo e verificação de identidade."
+ },
+ "subs": {
+  "pix_in": {
+   "analise": {
+    "clientes": "Pix In cai 52,5% no suporte humano em W47 (dados até 21/11) frente aos mesmos dias da W46, que teve a instabilidade de 15/11 concentrada em recebimento. Os contatos restantes são de Pix recebido que não aparece no saldo e de chave com erro de conta bloqueada; \"instabilidade no app\" some do ranking.",
+    "mudou": "\"Problemas com uma transação Pix\" vai de 50 a 37 e \"instabilidade no app\" de 24 a 3 nos mesmos dias comparáveis; \"denunciar um Pix indevido\" de 32 a 5. Pix In não tem NPS próprio.",
+    "atencao": [
+     "Chave Pix com erro de conta bloqueada para quem paga (ticket 46790539, 16/11), ainda sem outros registros."
+    ]
+   },
+   "motivos": [
+    {
+     "t": "Problemas com uma transação Pix (Pix In)",
+     "n": 37,
+     "ant": 50,
+     "var": "−26%",
+     "det": {
+      "res": "Quem recebe um Pix de outra instituição vê o comprovante de envio, mas o valor não aparece no saldo; há também chave Pix de trabalho que passa a dar erro de conta bloqueada para quem paga.",
+      "dor": [
+       "<b>Recebido e fora do saldo:</b> comprovante de recebimento sem o valor na carteira (tickets 46817440, 46788145).",
+       "<b>Reembolso que não cai:</b> Pix cancelado e estornado pelo destino, sem retorno ao saldo (ticket 46808639).",
+       "<b>Chave bloqueada para pagadores:</b> erro de conta bloqueada ao receber (ticket 46790539)."
+      ],
+      "exp": "Ver o Pix recebido no saldo ou saber o motivo e o prazo.",
+      "falha": [
+       [
+        "Produto",
+        "O valor recebido não aparece no saldo e o cliente depende do comprovante da instituição de origem."
+       ]
+      ],
+      "ex": [
+       "pix-10",
+       "pix-11",
+       "pix-15",
+       "pix-17",
+       "pix-32"
+      ]
+     },
+     "ex": null
+    }
+   ],
+   "temas": [
+    {
+     "canal": "Suporte",
+     "t": "Pix recebido que não aparece no saldo",
+     "n": 37,
+     "tom": "neg",
+     "x": "Comprovante de envio da outra instituição, valor ausente da carteira e reembolso que não cai."
+    }
+   ],
+   "exemplos": {
+    "Suporte": [
+     "pix-10",
+     "pix-11"
+    ]
+   },
+   "eventos": []
+  },
+  "pix_wallet": {
+   "analise": {
+    "clientes": "O Pix Out Wallet tem o menor recuo do suporte humano (−14,3% em W47, dados até 21/11) e o NPS Transacional cai de 62,5 para 59,3, com 49 detratores em 313 comentários. Quem usa a carteira reclama de bloqueio ou verificação que trava o Pix mesmo com saldo e de não ver o saldo na hora de enviar.",
+    "mudou": "Suporte humano −14,3% (96 contra 112 nos mesmos dias comparáveis em tickets); \"problemas com uma transação\" sobe de 13 a 22 e \"atendimento não prestado\" de 4 a 11, enquanto \"denunciar um Pix indevido\" cai de 53 a 22. NPS Transacional 59,3 (62,5).",
+    "atencao": [
+     "Bloqueio da carteira sem aviso e Pix negado com saldo aparecem no NPS 0 (18/11) e em loja (19/11, 22/11); redes de 22/11 citam \"sem saldo\" com saldo."
+    ]
+   },
+   "motivos": [],
+   "temas": [
+    {
+     "canal": "NPS Transacional",
+     "t": "Bloqueio e verificação travam o Pix",
+     "n": 11,
+     "tom": "neg",
+     "x": "Bloqueio sem aviso e Pix negado com saldo; saldo não exibido na hora de enviar."
+    },
+    {
+     "canal": "NPS Transacional",
+     "t": "Rapidez e praticidade",
+     "n": 0,
+     "tom": "pos",
+     "x": "Elogio à rapidez e à facilidade de enviar Pix; etapa com 84% de comentários positivos em 30 dias."
+    }
+   ],
+   "exemplos": {
+    "Suporte": [
+     "pix-7",
+     "pix-9"
+    ],
+    "NPS Transacional": [
+     "pix-43",
+     "pix-44",
+     "pix-45"
+    ],
+    "Lojas": [
+     "pix-54"
+    ]
+   },
+   "eventos": []
+  },
+  "pix_cc": {
+   "analise": {
+    "clientes": "O Pix Out CC mantém NPS Transacional estável em 67,6 em W47, mas o suporte humano de Pix CC cai 43,3% (dados até 21/11) e os comentários giram em torno da taxa de 4,99%, de Google Pay e Apple Pay (antes 3,99%) e de golpe contestado sem devolução.",
+    "mudou": "Suporte humano de Pix CC (cartão RecargaPay e de terceiros) cai de 60 para 34 nos mesmos dias comparáveis; \"problemas com uma transação\" de 17 a 4. Pix Out CC NPS 67,6 (67,6), com 44 detratores em 238 comentários. A maior parte das conversas de Pix com cartão está classificada em Pix Out, por isso seus motivos estão no produto.",
+    "atencao": [
+     "Taxa de 4,99% sem aviso, inclusive no Google Pay e Apple Pay: 28 de 238 comentários do NPS Pix Out CC citam taxa.",
+     "Limite de crédito exibido em todas as ações do cartão é citado como risco de segurança (NPS 0, 18/11)."
+    ]
+   },
+   "motivos": [],
+   "temas": [
+    {
+     "canal": "NPS Transacional",
+     "t": "Taxa do Pix com cartão",
+     "n": 28,
+     "tom": "neg",
+     "x": "Taxa de 4,99% inclusive no Google Pay e Apple Pay (antes 3,99%), sem aviso."
+    },
+    {
+     "canal": "NPS Transacional",
+     "t": "Golpe contestado sem devolução",
+     "n": 2,
+     "tom": "neg",
+     "x": "Contestação decidida a favor do golpista, segundo o cliente (nota 0, 21/11)."
+    }
+   ],
+   "exemplos": {
+    "Suporte": [
+     "pix-2",
+     "pix-4"
+    ],
+    "NPS Transacional": [
+     "pix-40",
+     "pix-41",
+     "pix-42"
+    ],
+    "Lojas": [
+     "pix-52",
+     "pix-53"
+    ]
+   },
+   "eventos": []
+  }
+ }
+}

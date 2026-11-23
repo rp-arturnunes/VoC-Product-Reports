@@ -1,0 +1,204 @@
+{
+ "analise": {
+  "clientes": "O cliente de Contas e Boletos reclama do fim do cashback no pagamento de contas e boletos: o tema domina os tickets, as avaliações de loja e os comentários do NPS, e há quem fale em encerrar a conta ou use o app como renda extra. Há dúvida sobre pagar no cartão de crédito e sobre a taxa. Quem emite boleto de cobrança relata pagamento que não compensa e limite mensal de emissão.",
+  "mudou": "Dados até 21/11. Suporte humano cai 56,2% frente aos mesmos 6 dias da W46, com \"não recebi o cashback\" em −84% e \"informações sobre bônus e cashback\" em −42%, após o pico seguinte à descontinuação do cashback em 05/11; \"quero cancelar um pagamento\" sobe 133%. NPS Transacional vai de 57,7 para 63,3; CSAT cai de 89,3% para 66,7% (base de 15 respostas).",
+  "atencao": [
+   "Perfil de renda extra com boletos fala em encerrar a conta ou deixar de usar o app (lojas de 10/11 e 14/11; redes de 11/11).",
+   "Pagamento com cartão de crédito debitado do saldo e comprovante sem a taxa do cartão (tickets de 18/11 e 20/11; NPS de 22/11).",
+   "Boleto pago que aparece como cancelado ou sem entrar na carteira (tickets de 16/11, 17/11 e 21/11); sem solução registrada."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Não recebi o cashback",
+   "n": 8,
+   "ant": 50,
+   "var": "−84%",
+   "det": {
+    "res": "O cliente nota que pagar contas e boletos não gera mais cashback; parte pergunta como ganhar pagando com saldo da carteira e parte entende que só o pagamento com cartão de crédito rende.",
+    "dor": [
+     "<b>Saldo da carteira:</b> cliente pergunta como ganhar cashback pagando boleto com saldo (ticket 46815743).",
+     "<b>Dias sem bonificação:</b> cliente nota há dias que paga e não recebe (ticket 46802217).",
+     "<b>Dúvida direta:</b> \"não recebo mais cashback nos pagamento de boletos?\" (ticket 46796834)."
+    ],
+    "exp": "Saber antes de pagar se o pagamento gera cashback e em que condição.",
+    "falha": [
+     [
+      "Produto",
+      "O fim do cashback nos pagamentos é percebido depois: o menu já mostra \"sem cashback total\" (ticket 46769391)."
+     ]
+    ],
+    "ex": [
+     "bol-1",
+     "bol-2",
+     "bol-3",
+     "bol-4",
+     "bol-5",
+     "bol-6"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Informações sobre bônus e cashback",
+   "n": 11,
+   "ant": 19,
+   "var": "−42%",
+   "det": {
+    "res": "Dúvida sobre a nova regra: se é preciso pagar com cartão de crédito, se há juros ou taxa ao colocar saldo no cartão e por que a bonificação parou.",
+    "dor": [
+     "<b>Cartão obrigatório?</b> cliente pergunta se precisa pagar boletos no cartão dentro do app (ticket 46819768).",
+     "<b>Juros no cartão:</b> pergunta se pagar no cartão tem juros (ticket 46807686).",
+     "<b>Taxa ao pôr saldo:</b> dúvida se há taxa ao adicionar dinheiro no cartão para pagar contas (ticket 46796358)."
+    ],
+    "exp": "Entender o que mudou no cashback e quanto custa pagar no cartão.",
+    "falha": [
+     [
+      "Produto",
+      "A regra nova chega pelo atendimento; o cliente ainda pergunta se pagar no cartão tem juros ou taxa."
+     ]
+    ],
+    "ex": [
+     "bol-7",
+     "bol-8",
+     "bol-9",
+     "bol-10",
+     "bol-11"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Como realizar pagamentos de contas e boletos",
+   "n": 10,
+   "ant": 10,
+   "var": "0%",
+   "det": {
+    "res": "Dúvidas de processamento: boleto pago que aparece cancelado, pagamento que não entra na carteira, horário de corte e cobrança no saldo sem escolha do cliente.",
+    "dor": [
+     "<b>Pago e cancelado:</b> boleto pago há semanas que consta cancelado (ticket 46819607).",
+     "<b>Horário de corte:</b> não foi exibido aviso de processamento no próximo dia útil (ticket 46789473).",
+     "<b>Cobrança no saldo:</b> cliente diz que cobraram no saldo sem permissão (ticket 46805891)."
+    ],
+    "exp": "Ter certeza de que o pagamento foi processado e quando.",
+    "falha": [
+     [
+      "Produto",
+      "No ato do pagamento não aparece aviso de que será processado só no próximo dia útil (ticket 46789473)."
+     ]
+    ],
+    "ex": [
+     "bol-12",
+     "bol-13",
+     "bol-14",
+     "bol-15",
+     "bol-16"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Quero cancelar um pagamento",
+   "n": 7,
+   "ant": 3,
+   "var": "+133%",
+   "det": {
+    "res": "Pedidos de estorno de pagamento feito de forma não escolhida: cartão de crédito que debitou do saldo, parcelamento não compreendido e boleto de cobrança que não cancela pelo app.",
+    "dor": [
+     "<b>Débito no lugar do cartão:</b> pagamento com cartão que retirou valor da conta como débito (ticket 46814665).",
+     "<b>Parcelamento:</b> cliente diz ter parcelado por engano e pede cancelar tudo (ticket 46802600).",
+     "<b>Boleto de cobrança:</b> cliente não consegue cancelar pelo app (ticket 46796628)."
+    ],
+    "exp": "Cancelar ou estornar um pagamento e ver o valor de volta no saldo.",
+    "falha": [
+     [
+      "Produto",
+      "Pagamento no cartão de crédito saiu do saldo como débito (ticket 46814665)."
+     ]
+    ],
+    "ex": [
+     "bol-19",
+     "bol-20",
+     "bol-21",
+     "bol-22",
+     "bol-23",
+     "bol-24"
+    ]
+   },
+   "ex": null
+  }
+ ],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Fim do cashback",
+   "n": 7,
+   "tom": "neg",
+   "x": "Os 7 comentários da W47 que citam cashback vêm de notas até 6; há quem \"gostava do cashback\" e pense em mudar de app."
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Pedido de crédito e limite",
+   "n": 16,
+   "tom": "pos",
+   "x": "Clientes satisfeitos pedem limite de crédito ou empréstimo; 16 dos 65 comentários da W47."
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Comprovante e taxa do cartão",
+   "n": 3,
+   "tom": "neg",
+   "x": "Pedem comprovante com o valor da taxa do cartão e acesso ao comprovante fora do histórico (21/11 e 22/11)."
+  },
+  {
+   "canal": "Lojas",
+   "t": "Cashback de boletos",
+   "n": 4,
+   "tom": "neg",
+   "x": "Duas das 4 avaliações da W47 falam do fim do cashback nos boletos; uma pede de volta opções por conta bancária e uma elogia o app."
+  }
+ ],
+ "exemplos": {
+  "Suporte": [
+   "bol-1",
+   "bol-12",
+   "bol-30"
+  ],
+  "Lojas": [
+   "bol-34",
+   "bol-37"
+  ],
+  "Redes": [
+   "bol-40",
+   "bol-41"
+  ],
+  "NPS Transacional": [
+   "bol-42",
+   "bol-43"
+  ]
+ },
+ "mencoes": {
+  "texto": "Nas lojas, 4 avaliações da W47 (25% positivas), contra 10 na W46 (30% positivas); as que citam cashback são negativas e uma diz que vai excluir a conta. Nas redes, 1 menção na W47 e 3 na W46: base pequena; uma pergunta se o cashback foi suspenso e uma resposta publicada em 16/11 diz que o benefício foi descontinuado, sem previsão de retorno. No NPS Transacional, os 7 comentários da W47 que citam cashback têm nota até 6. No Reclame Aqui não há reclamação classificada em Contas e Boletos na W46 nem na W47.",
+  "ra": []
+ },
+ "eventos": [
+  {
+   "d": "16/11",
+   "tag": "Produto",
+   "t": "Resposta pública nas redes diz que o cashback em contas e boletos foi descontinuado, sem previsão de retorno."
+  },
+  {
+   "d": "05/11",
+   "tag": "Produto",
+   "t": "Cashback em pagamentos de contas e boletos suspenso; avaliação de loja de 09/11 cita a atualização de 05/11, e os tickets de cashback têm pico em seguida."
+  }
+ ],
+ "jornada": {
+  "pagamento": "Etapa de maior volume: 169 menções em 30 dias (126 antes), 55% positivas contra 66%. Dúvidas de processamento, boleto pago que consta cancelado e cobrança no saldo (tickets de 16/11 a 21/11).",
+  "cashback": "67 menções (35 antes), quase o dobro; positivas caem de 66% para 40%. Coincide com a suspensão do cashback em 05/11; lojas e NPS dizem \"gostava do cashback\" e \"retiraram os ganhos\".",
+  "taxas": "48 menções (54 antes), 73% positivas contra 69%. Pergunta recorrente se pagar no cartão tem juros ou taxa; um cliente de 22/11 pede comprovante com a taxa do cartão.",
+  "renda": "25 menções (17 antes); positivas caem de 76% para 44%. Quem recebe boletos de terceiros fala em perder a renda extra (loja, 12/11; redes, 11/11).",
+  "compensacao": "18 menções (27 antes), 61% positivas contra 78%. Boletos pagos que não entram na carteira ou aparecem cancelados (tickets de 16/11 e 17/11).",
+  "atendimento": "28 menções (32 antes); positivas caem de 91% para 71%. Cliente diz ter pago \"muitas taxas\" e ouvir que não há o que fazer (ticket de 19/11)."
+ }
+}

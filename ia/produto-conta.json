@@ -1,0 +1,208 @@
+{
+ "analise": {
+  "clientes": "O cliente de Minha Conta quer entrar no app, abrir ou encerrar a conta, e a selfie é o ponto que trava: reconhecimento facial recusado, câmera que não abre e falta de alternativa à foto repetem-se nos tickets. No Reclame Aqui, 6 das 21 reclamações da W47 falam de conta aprovada que depois aparece como reprovada, junto a e-mails de crédito pré-aprovado. Nas lojas, nenhuma das 5 avaliações da W47 é positiva: selfie recusada e acesso bloqueado.",
+  "mudou": "Dados até 21/11. Suporte humano cai 22,5% frente aos mesmos 6 dias da W46, puxado por acesso ao cadastro (−32%) e encerramento (−29%); validação sobe 13% e atendimento não prestado, 56%. O CSAT fica em 34,8% (base de 23 respostas), contra 88,9% na W46. O NPS Relacional geral do app está em 45,6, contra 35,9 (não é específico de Minha Conta).",
+  "atencao": [
+   "CSAT do Suporte humano em 34,8% na W47, contra 88,9% na W46; base pequena (23 respostas na W47, 18 na W46).",
+   "Reclame Aqui: 6 das 21 reclamações da W47 citam conta aprovada e depois reprovada, com e-mail de crédito pré-aprovado; sem solução registrada.",
+   "Tickets citam aviso de encerramento da conta com data futura (05/12 e 18/12), inclusive por descumprimento dos Termos e Condições."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Não consegue acessar seu cadastro",
+   "n": 234,
+   "ant": 344,
+   "var": "−32%",
+   "det": {
+    "res": "Quem não entra no app relata a selfie de reconhecimento facial que não passa, mesmo reinstalando e com boa luz, o código que chega mas leva de novo à selfie e a conta que aparece como reprovada ou encerrada sem explicação.",
+    "dor": [
+     "<b>Selfie que não reconhece:</b> o cliente refaz a foto várias vezes e volta à mesma tela (tickets 46748768 e 46754401).",
+     "<b>Semanas sem acesso:</b> um cliente tenta há mais de três semanas e o app pede novos envios (ticket 46803114).",
+     "<b>Conta tirada sem aviso:</b> o cliente fala em fraude e não entende por que a conta foi encerrada (ticket 46796152)."
+    ],
+    "exp": "Voltar a acessar a conta sem repetir a selfie e saber o motivo quando o acesso é negado.",
+    "falha": [
+     [
+      "Produto",
+      "A selfie é a única via para liberar um novo aparelho e o app não troca por senha; em 16/11 o cliente ouve que não há substituição da foto."
+     ]
+    ],
+    "ex": [
+     "cta-1",
+     "cta-2",
+     "cta-3",
+     "cta-4",
+     "cta-5",
+     "cta-6"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Solicita encerramento do cadastro",
+   "n": 119,
+   "ant": 168,
+   "var": "−29%",
+   "det": {
+    "res": "O cliente pede encerrar a conta e os produtos vinculados; há quem cite aviso de encerramento com data, conta PJ de sócia falecida e quem queira desativar só o Tap to Pay, mantendo a conta pessoal.",
+    "dor": [
+     "<b>Tudo vinculado ao CPF:</b> pedido de cancelar todos os produtos e serviços financeiros, com faturas ainda chegando (ticket 46814322).",
+     "<b>Aviso com data:</b> cliente quer prazo exato para retirar o saldo antes do encerramento em 05/12 (ticket 46741110).",
+     "<b>Casos específicos:</b> conta PJ com sócia falecida (ticket 46749023) e desativação só do Tap to Pay (ticket 46772410)."
+    ],
+    "exp": "Encerrar a conta e os produtos vinculados com prazo claro e sem perder o saldo.",
+    "falha": [
+     [
+      "Processo",
+      "Quem perdeu o acesso ao app não consegue pedir o encerramento; no Reclame Aqui há reclamações de conta cancelada que continua no Registrato."
+     ]
+    ],
+    "ex": [
+     "cta-13",
+     "cta-14",
+     "cta-15",
+     "cta-16",
+     "cta-17"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Não consegue validar seu cadastro",
+   "n": 96,
+   "ant": 85,
+   "var": "+13%",
+   "det": {
+    "res": "É a selfie: reconhecimento facial recusado em loop, câmera que não abre e documentos que o fluxo não aceita, como a CIN e o passaporte de estrangeiros com CPF ativo.",
+    "dor": [
+     "<b>Selfie que não passa:</b> quase 3 semanas tentando, mesmo com claridade e depois de atualizar o app (ticket 46745249).",
+     "<b>Documento fora do fluxo:</b> estrangeiro com CPF ativo preso no erro \"Foto inválida\" sem conseguir enviar passaporte (ticket 46791166).",
+     "<b>Câmera:</b> aparelho com câmera que não abre e e-mail antigo perdido impedem a verificação (ticket 46801185)."
+    ],
+    "exp": "Concluir a validação por outro meio quando a selfie falha.",
+    "falha": [
+     [
+      "Produto",
+      "O app não oferece envio de documento alternativo quando a selfie falha; o cliente pede validação por outro meio (ticket 46746505)."
+     ]
+    ],
+    "ex": [
+     "cta-7",
+     "cta-8",
+     "cta-9",
+     "cta-10",
+     "cta-11",
+     "cta-12"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Atendimento não prestado",
+   "n": 25,
+   "ant": 16,
+   "var": "+56%",
+   "det": {
+    "res": "Reúne casos que não cabem em outro motivo: conta cancelada sem aviso, familiar que não consegue acessar o app com o salário depositado e e-mails de crédito disponível sem conseguir entrar.",
+    "dor": [
+     "<b>Conta cancelada:</b> cliente com movimentação mensal e limite não aceita o cancelamento (ticket 46801672).",
+     "<b>Saldo sem acesso:</b> cônjuge transferiu o salário e não entra no app há mais de 1 mês (ticket 46798865).",
+     "<b>Crédito que não se usa:</b> recebe e-mails de crédito disponível, mas não consegue entrar (ticket 46742951)."
+    ],
+    "exp": "Ter o caso tratado sem repetir a explicação em novos contatos.",
+    "falha": [
+     [
+      "Produto",
+      "O cliente recebe e-mail de crédito disponível mas não consegue abrir ou acessar a conta (ticket 46742951)."
+     ]
+    ],
+    "ex": [
+     "cta-18",
+     "cta-19",
+     "cta-20",
+     "cta-21",
+     "cta-22",
+     "cta-23"
+    ]
+   },
+   "ex": null
+  }
+ ],
+ "temas": [
+  {
+   "canal": "Lojas",
+   "t": "Selfie e acesso",
+   "n": 5,
+   "tom": "neg",
+   "x": "Nenhuma das 5 avaliações da W47 é positiva: selfie nunca reconhecida, validação por biometria com erro e conta que aparece como reprovada."
+  },
+  {
+   "canal": "Reclame Aqui",
+   "t": "Conta aprovada e depois reprovada",
+   "n": 6,
+   "tom": "neg",
+   "x": "Cliente recebe confirmação de abertura e e-mail de crédito pré-aprovado, mas ao entrar vê a conta como reprovada."
+  },
+  {
+   "canal": "Reclame Aqui",
+   "t": "Encerramento e Registrato",
+   "n": 7,
+   "tom": "neg",
+   "x": "Pedidos de encerramento definitivo e reclamação de conta cancelada que continua ativa no Registrato."
+  },
+  {
+   "canal": "Redes",
+   "t": "Burocracia para abrir a conta",
+   "n": 3,
+   "tom": "neg",
+   "x": "Menções à burocracia do cadastro e à falta de chat para resolver o problema com a chave Pix."
+  }
+ ],
+ "exemplos": {
+  "Suporte": [
+   "cta-1",
+   "cta-7"
+  ],
+  "Lojas": [
+   "cta-25",
+   "cta-26"
+  ],
+  "Redes": [
+   "cta-29",
+   "cta-30"
+  ],
+  "Reclame Aqui": [
+   "cta-34",
+   "cta-36"
+  ]
+ },
+ "mencoes": {
+  "texto": "Nas lojas, 5 avaliações da W47 citam cadastro, selfie ou conta (0% positivas), contra 8 na W46 (13% positivas); falam de selfie que não valida e de conta que aparece como reprovada. Nas redes, 3 menções (1 negativa), contra 7 na W46 (5 negativas): burocracia para abrir a conta e falta de chat. No Reclame Aqui, 21 reclamações de Minha Conta na W47, contra 38 na W46: 6 falam de conta aprovada e depois reprovada com e-mail de crédito pré-aprovado e 7 de encerramento e permanência no Registrato.",
+  "ra": [
+   "cta-34",
+   "cta-36",
+   "cta-37"
+  ]
+ },
+ "eventos": [
+  {
+   "d": "29/10",
+   "tag": "Produto",
+   "t": "WAF passa a aceitar só acesso do Brasil; coincide com reclamação de cliente em Londres sem acesso ao app (Reclame Aqui, 19/11)."
+  },
+  {
+   "d": "28/10",
+   "tag": "Processo",
+   "t": "Atendimento passa a checar cadastro encerrado do mesmo CPF antes de orientar (registro da análise da W45)."
+  }
+ ],
+ "jornada": {
+  "abertura": "Etapa de maior volume: 37 menções em 30 dias (53 nos 30 dias anteriores), 41% positivas contra 26%. Quem comenta fala de cadastro demorado (loja, 16/11) e conta aprovada e depois reprovada.",
+  "app": "19 menções (32 antes), 37% positivas contra 25%. Base pequena; os comentários tratam de praticidade do app e dos ajustes de cadastro de cartão.",
+  "acesso": "12 menções (8 antes) e só 1 positiva: selfie nunca reconhecida e acesso bloqueado ao trocar de aparelho (lojas, 14/11 e 17/11). Cresce enquanto o volume geral cai.",
+  "validacao": "8 menções (3 antes), nenhuma positiva, em ambos os períodos. Lojas de 15/11 e 18/11 falam de dias tentando validar a selfie e erro de biometria após reiniciar o aparelho.",
+  "atendimento": "11 menções (8 antes), 2 positivas. Loja de 15/11: \"vou no suporte e eles não resolve nada\"; no Reclame Aqui, clientes dizem não achar suporte sem estar logados.",
+  "dados": "10 menções (15 antes), 50% positivas contra 27%. Base pequena; e-mail ou telefone antigo aparece no acesso e na recuperação da conta."
+ }
+}

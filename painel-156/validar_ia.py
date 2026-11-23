@@ -203,7 +203,7 @@ def main(d,comp=False):
     if ra:
         txt_ok('ra.texto',ra.get('texto'),LIM['texto'])
         for i,t in enumerate(ra.get('temas',[])):
-            txt_ok(f'ra.temas[{i}].t',t.get('t'),100); serie(f'ra.temas[{i}]',{'v':t.get('v'),'l':'x'},True); exemplos(f'ra.temas[{i}].ex',t.get('ex'),3)
+            txt_ok(f'ra.temas[{i}].t',t.get('t'),100); serie(f'ra.temas[{i}]',{'v':t.get('v'),'l':'x'},True); exemplos(f'ra.temas[{i}].ex',t.get('ex'),6)
             if 'det' in t: txt_ok(f'ra.temas[{i}].det',t['det'],LIM['det'])
     ev=ler(d,'eventos')
     if ev is not None:

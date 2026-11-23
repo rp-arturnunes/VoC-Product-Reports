@@ -1,0 +1,91 @@
+{
+ "analise": {
+  "clientes": "O NPS Transacional do Top Up cai 17 pontos na W47 (58,4 contra 75,5 na W46), com mais detratores, e os comentários citam o fim do cashback e da bonificação nos pagamentos. No Suporte humano a base é muito pequena: poucos tickets de recarga que não chegou ou desistência, sem tendência confiável. Quem revende reclama da comissão da recarga (05/11).",
+  "mudou": "Suporte humano −67% sobre a W46 comparável, em base de poucos tickets. NPS Transacional 58,4 (75,5) e detratores de 10 para 15 respondentes; cerca de 18% dos comentários citam cashback ou bonificação. Na jornada, comentários sobre bônus passam de 8 para 18 nos últimos 30 dias, com 39% positivos.",
+  "atencao": [
+   "Queda de 17 pontos no NPS Transacional do Top Up; comentários citam a retirada do cashback de boletos (15/11 a 21/11).",
+   "Recarga que debita e não credita: dois tickets na W47 (16/11 e 18/11); sem solução registrada.",
+   "Base pequena no Suporte humano: variações percentuais não indicam tendência."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Teve problema com a recarga de celular",
+   "n": 2,
+   "ant": 4,
+   "var": "−50%",
+   "det": null,
+   "ex": [
+    "etp1",
+    "etp2",
+    "etp3",
+    "etp4",
+    "etp5"
+   ]
+  },
+  {
+   "t": "Desistência do cliente sobre uma transação no app",
+   "n": 1,
+   "ant": 2,
+   "var": "−50%",
+   "det": null,
+   "ex": [
+    "etp6",
+    "etp7",
+    "etp8"
+   ]
+  },
+  {
+   "t": "Não conseguiu realizar uma recarga",
+   "n": 0,
+   "ant": 1,
+   "var": "−100%",
+   "det": null,
+   "ex": [
+    "etp9",
+    "etp10",
+    "etp11"
+   ]
+  }
+ ],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Cashback e bonificação",
+   "n": 7,
+   "tom": "neg",
+   "x": "Clientes citam o fim do cashback em boletos e bonificação que \"tiraram\"; pedem cashback nas recargas."
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Taxas e comissão",
+   "n": 4,
+   "tom": "mix",
+   "x": "Comissão baixa para quem revende e taxas altas; convivem com elogio à experiência."
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Rapidez e praticidade da recarga",
+   "n": 13,
+   "tom": "pos",
+   "x": "\"Melhor app de recargas\", facilidade e rapidez; elogio dominante entre promotores."
+  }
+ ],
+ "exemplos": {
+  "NPS Transacional": [
+   "etp12",
+   "etp14"
+  ]
+ },
+ "eventos": [],
+ "mencoes": {
+  "texto": "Top Up aparece pouco fora do NPS: 1 avaliação de loja na W47 (3 na W46) e 1 menção nas redes (4 na W46), sem reclamação classificada no Reclame Aqui nas duas semanas. No NPS Transacional, 40 comentários na W47: elogio à recarga e queixa do fim do cashback em boletos.",
+  "ra": []
+ },
+ "jornada": {
+  "recarga": "76 comentários (34% do produto), 66% positivos, abaixo da média do produto (76%) e dos 30 dias anteriores (74%).",
+  "pagamento": "42 comentários (19% do produto), 62% positivos, abaixo da média do produto (76%).",
+  "bonus": "18 comentários (8% do produto), 39% positivos, volume mais que dobra (eram 8); a etapa mais crítica do produto.",
+  "atendimento": "9 comentários (4% do produto), 67% positivos, abaixo da média do produto (76%), em base pequena."
+ }
+}

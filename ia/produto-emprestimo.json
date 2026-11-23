@@ -1,0 +1,210 @@
+{
+ "analise": {
+  "clientes": "O cliente do Empréstimo quer pagar e ter o limite de volta: o Suporte humano cai cerca de 25% na W47 (dados até 21/11), mas o contato migra para limite reduzido depois de quitar, cobrança automática e fatura do cartão. Quem quita antes do prazo relata oferta de R$ 10 ou nenhuma oferta; quem atrasa conta que saldo ou limite do cartão cadastrado foi debitado sem aviso. Em 16/11, clientes não conseguiram gerar Pix ou QR para pagar a parcela (\"serviço indisponível\"). No NPS Transacional, cerca de 36% dos comentários citam limite, a maioria pedindo valor maior.",
+  "mudou": "Suporte humano −25% (Empréstimo e Consignado somados, 16–21/11 contra 09–14/11). \"Problemas com cartão de crédito\" cai 53%, \"desconhece a cobrança\" 45% e \"deseja cancelar\" 37%; sobem \"não consegue efetuar o pagamento\" (+60%), \"discorda do limite\" (+24%) e \"instabilidade no app\", que não aparecia na W46 comparável. NPS Transacional em 65,3 (63,9 na W46) e CSAT em 59,8% (63,1%).",
+  "atencao": [
+   "Limite que cai ou fica em R$ 10 depois de quitar: aparece em NPS, lojas e redes na W47; sem solução registrada nas fontes consultadas.",
+   "Débito automático de saldo e do limite do cartão cadastrado em empréstimo atrasado: clientes dizem não ter autorizado (16/11 a 20/11); sem posicionamento registrado.",
+   "Empréstimo quitado que segue com cobrança: INC-16398 aberto há 41 dias e INC-16785 há 5 dias (Slack, #equipe-lending-bugs-semanal, 23/11)."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Não consegue contratar um empréstimo",
+   "n": 104,
+   "ant": 131,
+   "var": "−21%",
+   "det": {
+    "res": "Quem já quitou não vê nova oferta ou vê um valor menor, e a resposta é que a análise é automática. Parte tenta contratar o valor exibido e recebe \"cadastro não habilitado\".",
+    "dor": [
+     "<b>Limite menor após pagar:</b> cliente paga o empréstimo e o valor disponível cai; tenta contratar e a conta \"não está habilitada\" (tickets 46800558, 46788452).",
+     "<b>Pagou para liberar limite:</b> cliente quitou esperando nova oferta e ficou sem o valor para outras contas (tickets 46810047, 46793805).",
+     "<b>Sem critério:</b> pedem saber o critério ou uma análise feita por atendente (tickets 46813979, 46801175)."
+    ],
+    "exp": "Receber nova oferta logo após quitar e saber o motivo quando ela não vem.",
+    "falha": [
+     [
+      "Produto",
+      "A oferta depende de análise automática sem aviso de prazo ou critério; o atendimento não consegue liberar."
+     ]
+    ],
+    "ex": [
+     "emp1",
+     "emp2",
+     "emp3",
+     "emp4",
+     "emp5",
+     "emp6"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Deseja cancelar o empréstimo",
+   "n": 59,
+   "ant": 94,
+   "var": "−37%",
+   "det": {
+    "res": "Contratação feita sem querer ou sem entender que o valor foi para o limite do cartão; o cliente quer cancelar ou resgatar o saldo e há quem relate cobrança com juros depois de cancelamento aprovado.",
+    "dor": [
+     "<b>Sem querer:</b> cliente contratou o valor total disponível ou finalizou sem intenção (tickets 46787062, 46795102).",
+     "<b>Valor no cartão:</b> não acha o saldo na carteira após resgatar (ticket 46787846) ou não sabe que contratou um cartão (ticket 46787670).",
+     "<b>Cobrança após cancelar:</b> cancelamento confirmado em 1 dia útil e cobrança com juros em seguida (ticket 46816427)."
+    ],
+    "exp": "Cancelar logo, dentro dos 7 dias, e ver para onde foi o dinheiro.",
+    "falha": [
+     [
+      "Produto",
+      "O fluxo não deixa claro que o valor vira limite no cartão e o cancelamento depende de pedido e prazo de 1 dia útil."
+     ]
+    ],
+    "ex": [
+     "emp7",
+     "emp8",
+     "emp9",
+     "emp10",
+     "emp11",
+     "emp12"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Desconhece ou não concorda com a cobrança",
+   "n": 57,
+   "ant": 103,
+   "var": "−45%",
+   "det": {
+    "res": "Na W47 aparece o débito automático de saldo e do limite de cartão cadastrado para cobrir empréstimo em atraso, que o cliente diz não ter autorizado; também há dúvida sobre valores já pagos.",
+    "dor": [
+     "<b>Débito sem autorização:</b> dinheiro recebido por Pix é cobrado na hora (tickets 46793179, 46790934).",
+     "<b>Limite do cartão usado:</b> cliente em atraso diz que o limite do cartão cadastrado foi usado sem consentimento (tickets 46816999, 46813994).",
+     "<b>Transação com cartão:</b> saldo da conta passa ao cartão e gera transações que o cliente não entende (ticket 46811001)."
+    ],
+    "exp": "Entender de onde vem cada débito e autorizar antes de cobrar o saldo ou o cartão.",
+    "falha": [
+     [
+      "Produto",
+      "O débito automático em atraso chega sem aviso claro e o cliente não encontra onde foi autorizado."
+     ]
+    ],
+    "ex": [
+     "emp13",
+     "emp14",
+     "emp15",
+     "emp16",
+     "emp17",
+     "emp19"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Quer entender porque seu pagamento não compensou",
+   "n": 39,
+   "ant": 42,
+   "var": "−7%",
+   "det": {
+    "res": "O cliente pagou e continua recebendo cobrança ou vê o empréstimo em atraso; há casos de pagamento parcial sem abatimento e de renegociação paga como quitação total.",
+    "dor": [
+     "<b>Pagou e segue cobrado:</b> pagamento feito e mensagens de dívida em aberto continuam (tickets 46788782, 46796536).",
+     "<b>Parcial sem abatimento:</b> pagou parte e não vê o valor abatido (ticket 46788138).",
+     "<b>Renegociação:</b> gerou QR de renegociação, pagou o total e a cobrança segue pelo valor do acordo (ticket 46819130)."
+    ],
+    "exp": "Ver o pagamento abatido logo e deixar de receber cobrança por dívida quitada.",
+    "falha": [
+     [
+      "Produto",
+      "A compensação e a baixa não chegam ao cliente no mesmo momento, e a cobrança continua ativa."
+     ]
+    ],
+    "ex": [
+     "emp20",
+     "emp21",
+     "emp22",
+     "emp23",
+     "emp24",
+     "emp25"
+    ]
+   },
+   "ex": null
+  }
+ ],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Limite e valor do empréstimo",
+   "n": 140,
+   "tom": "mix",
+   "x": "Elogio: rapidez (\"cai na hora\") e ajuda em necessidade. Crítica: limite fixo ou reduzido a R$ 10 mesmo pagando em dia; pedem valor maior. 32 dos 74 detratores citam limite."
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Juros e taxas",
+   "n": 23,
+   "tom": "neg",
+   "x": "Juros no atraso e juros altos aparecem junto de elogio ao produto, em notas entre 6 e 10."
+  },
+  {
+   "canal": "Lojas",
+   "t": "Oferta que cai depois de quitar",
+   "n": 21,
+   "tom": "neg",
+   "x": "Limite reduzido a R$ 10 após pagamento antecipado, cobrança de juros e painel que mostra dívida depois de pagar. 29% das avaliações são positivas."
+  },
+  {
+   "canal": "Redes",
+   "t": "Oferta de R$ 7 a R$ 10",
+   "n": 19,
+   "tom": "neg",
+   "x": "Clientes comparam oferta anterior (R$ 185) com a atual (R$ 7 a R$ 10); um mesmo comentário sobre fatura e empréstimo se repete várias vezes."
+  }
+ ],
+ "exemplos": {
+  "NPS Transacional": [
+   "emp50",
+   "emp54"
+  ],
+  "Lojas": [
+   "emp64",
+   "emp66"
+  ],
+  "Redes": [
+   "emp71",
+   "emp72"
+  ]
+ },
+ "mencoes": {
+  "texto": "Nas lojas, o Empréstimo aparece em menos avaliações na W47 (21 contra 41 na W46, mesmos dias até 21/11) e 29% são positivas (37% na W46): limite reduzido a R$ 10 depois de quitar e juros cobrados. Nas redes, as menções vão de 16 para 19 e a maioria é negativa, com um mesmo comentário repetido várias vezes. No Reclame Aqui, as reclamações caem de 163 (W46) para 108 (W47 até 21/11) e as resolvidas passam de 20 para 7: cobrança de empréstimo quitado, cobrança em cartão de outro banco e consignado assinado que desaparece do app.",
+  "ra": [
+   "emp74",
+   "emp75",
+   "emp78"
+  ]
+ },
+ "eventos": [
+  {
+   "d": "19/11",
+   "tag": "Incidente",
+   "t": "Admin: aba de Empréstimos fora do ar até ~20:28 (impacto interno, 0 contatos atribuíveis); coincide com o dia de maior volume de \"discorda do limite\" da W47. Efeito no cliente ainda não medido."
+  },
+  {
+   "d": "16/11",
+   "tag": "Incidente",
+   "t": "Clientes não conseguem gerar Pix ou QR para pagar a parcela (\"serviço indisponível\"); o bot avisou instabilidade de Pix na manhã de 16/11. Impacto: contatos por instabilidade no app aparecem na W47, sem registro na W46."
+  },
+  {
+   "d": "19/11",
+   "tag": "Produto",
+   "t": "Squad Lending adapta testes e2e ao novo layout da home de Empréstimos (PR no #squad-lending). Impacto ainda não medido."
+  }
+ ],
+ "jornada": {
+  "limite": "1.288 comentários (35% do produto), 61% positivos, abaixo da média do produto (65%) e da faixa anterior (65%).",
+  "oferta": "596 comentários (16% do produto), 52% positivos, abaixo da média do produto (65%); estável contra os 30 dias anteriores.",
+  "parcelas": "409 comentários (11% do produto), 50% positivos, abaixo da média do produto (65%); eram 52%.",
+  "cartao": "238 comentários (7% do produto), 48% positivos, bem abaixo da média (65%); volume +58% sobre os 30 dias anteriores (151).",
+  "cobranca": "69 comentários (2% do produto), 36% positivos e volume +64% (eram 42); a menor satisfação da jornada.",
+  "atendimento": "231 comentários (6% do produto), 74% positivos, acima da média do produto (65%)."
+ }
+}
