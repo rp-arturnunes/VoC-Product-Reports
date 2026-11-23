@@ -53,19 +53,19 @@
    }
   ],
   "neg": [
-   "lr-1",
-   "lr-2",
-   "lr-3",
-   "lr-4",
-   "lr-5",
-   "lr-6"
+   "eh9",
+   "eha",
+   "ehb",
+   "ehc",
+   "ehd",
+   "ehe"
   ],
   "pos": [
-   "lr-7",
-   "lr-8",
-   "lr-9",
-   "lr-10",
-   "lr-11"
+   "ehf",
+   "ehg",
+   "ehh",
+   "ehi",
+   "ehj"
   ]
  },
  "rede": {
@@ -120,16 +120,16 @@
    }
   ],
   "neg": [
-   "lr-12",
-   "lr-13",
-   "lr-14",
-   "lr-15",
-   "lr-16",
-   "lr-17"
+   "ehk",
+   "ehl",
+   "ehm",
+   "ehn",
+   "eho",
+   "ehp"
   ],
   "falsopos": [
-   "lr-18",
-   "lr-19"
+   "ehq",
+   "ehr"
   ]
  }
 }

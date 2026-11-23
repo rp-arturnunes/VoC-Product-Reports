@@ -1,0 +1,376 @@
+{
+ "novos": [
+  {
+   "t": "Seguros Acidente e Renda: vendas e arrependimentos disparam",
+   "p": "seguros",
+   "m": "Apólices +159%; cancelamentos +255%",
+   "x": "95% dos cancelamentos pedidos estão no prazo de arrependimento; contatos de Acidente e Renda +42%.",
+   "sl": "Em apuração",
+   "s": "Nenhum evento correlato encontrado no Slack nem nos reports; salto de 19 a 21/11.",
+   "det": "Nos três dias de 19 a 21/11, a venda diária de Acidente e Renda sobe de cerca de 500 para entre 1,5 mil e 2,7 mil. Os cancelamentos pedidos pelo cliente sobem 255% e quase todos ocorrem no arrependimento. Em Pix e Cartão, apólices novas sobem 15% e os contatos caem 7%. A base de contatos de Acidente e Renda é pequena (27 contra 19).",
+   "ex": [
+    "ebt",
+    "ebu",
+    "ebv",
+    "ebx",
+    "ec4",
+    "ec6"
+   ],
+   "rank": 6,
+   "img": "https://lh3.googleusercontent.com/d/1YAh50j2jrGFmpOc033oHpKAbtB6biDKu=w400"
+  },
+  {
+   "t": "CDB: \"não recebi o valor\" sobe e CDB 107% sai do app",
+   "p": "cdb",
+   "m": "\"Não recebi o valor do CDB\" de 5 para 13",
+   "x": "Surgem relatos de CDB reinvestido no vencimento e de contratação com problema.",
+   "sl": "Em apuração",
+   "s": "A saída do CDB 107% do app em 16/11 coincide com a semana; sem relação confirmada nos reports.",
+   "det": "O suporte humano do CDB cai 5,0%, com resgate antecipado (96% dos contatos) em −9%. \"Não recebi o valor do CDB\" sobe 160% e \"problemas ao contratar\" de 2 para 6. O NPS Transacional fica em 68,1 (70,0 na W46) e o CSAT em 80,0%. O produto não tem avaliações de loja nem Reclame Aqui na semana.",
+   "ex": [
+    "e1x",
+    "e1y",
+    "e1z",
+    "e20",
+    "e21",
+    "e1l"
+   ],
+   "rank": 7,
+   "img": "https://lh3.googleusercontent.com/d/1FaWpztB4nKO6EQkegcTUCwPwPIL10EyN=w400"
+  },
+  {
+   "t": "Empréstimo: limite cai ou fica em R$ 10 após quitar",
+   "p": "emprestimo",
+   "m": "Suporte humano −25%",
+   "x": "O contato migra para limite reduzido após quitar, cobrança automática e fatura do cartão.",
+   "sl": "Sem solução registrada",
+   "s": "Manutenção e virada da Matera em 18/11 coincide com a semana; sem relação confirmada nos reports.",
+   "det": "O suporte humano de Empréstimo e Consignado cai cerca de 25% e o CSAT vai de 63,1% para 59,8%. \"Problemas com cartão de crédito\" cai 53% e \"desconhece a cobrança\" 45%. Quem quita antes do prazo relata limite que cai ou fica em R$ 10 e débito automático do cartão cadastrado em atraso. O Reclame Aqui de empréstimo cai 20%.",
+   "ex": [
+    "e7k",
+    "e7l",
+    "e7m",
+    "e7n",
+    "e7o",
+    "e7p"
+   ],
+   "rank": 8,
+   "img": "https://lh3.googleusercontent.com/d/1d07zoUjKi3hOieTLWr5O1z8c9IY02Pjh=w400"
+  },
+  {
+   "t": "Top Up: NPS Transacional cai 17 pontos",
+   "p": "topup",
+   "m": "NPS 58,4 (75,5 na W46)",
+   "x": "Detratores de 10 para 15; comentários citam o fim do cashback e da bonificação.",
+   "sl": "Sem solução registrada",
+   "s": "Sem ação registrada; relação com o fim do cashback é de tema, não confirmada.",
+   "det": "O NPS Transacional do Top Up vai de 75,5 para 58,4, com mais detratores, e cerca de 18% dos comentários citam cashback ou bonificação. O suporte humano tem base mínima de tickets, sem tendência confiável.",
+   "ex": [
+    "e9o",
+    "e9p",
+    "e9q",
+    "e9r",
+    "e9s",
+    "e9t"
+   ],
+   "rank": 9,
+   "img": "https://lh3.googleusercontent.com/d/1LU1E91gcAthQ3K4Irt5BEDTf-aZgTwr_=w400",
+   "ps": [
+    "boletos"
+   ]
+  },
+  {
+   "t": "Minha Conta: selfie e validação travam o acesso",
+   "p": "conta",
+   "m": "Validação +13%",
+   "x": "Reconhecimento facial recusado, câmera que não abre e falta de alternativa à foto repetem-se nos tickets.",
+   "sl": "Sem registro",
+   "s": "Sem evento correlato nos reports e no Slack da semana.",
+   "det": "O suporte humano de Minha Conta cai 22,5%, com acesso ao cadastro (−32%) e encerramento (−29%) em queda, mas \"não consegue validar seu cadastro\" sobe 13%. No Reclame Aqui, 6 das 21 reclamações do tema acesso e cadastro falam da selfie.",
+   "ex": [
+    "e5c",
+    "e5d",
+    "e5e",
+    "e5f",
+    "e5g",
+    "e5h"
+   ],
+   "rank": 10,
+   "img": "https://lh3.googleusercontent.com/d/1PiVbmBTFM1AreGRzBT_vKiV5Tw1HSDDS=w400"
+  }
+ ],
+ "oport": [
+  {
+   "t": "Bloqueios: saldo parcial bloqueado sobe 32%",
+   "p": "fraude",
+   "m": "Suporte humano −34,5%",
+   "x": "Saldo todo bloqueado cai 47%, mas \"parte do saldo\" bloqueado sobe 32%.",
+   "sl": "Parcialmente resolvido",
+   "s": "Fix da rotina de desbloqueio de carteiras em 17/11 coincide com queda de cerca de 52% em contatos de saldo bloqueado (Slack).",
+   "det": "O suporte humano de Bloqueios e fraude cai 34,5%: Carteira Desativada −37,8%, Conta Desativada −39,3% e Chargeback Recovery −15,8%. O CSAT do produto sobe de 45,7% para 53,7%. A regra de validação de celular roubado e invasão passou a checar só 2 dos 5 dados em 18/11 (Slack).",
+   "ex": [
+    "e3c",
+    "e3d",
+    "e3e",
+    "e3f",
+    "e3g",
+    "e3h"
+   ],
+   "rank": 11,
+   "img": "https://lh3.googleusercontent.com/d/17gN8pInhyH3YPvOGwFAfm993U1mxXG63=w400"
+  },
+  {
+   "t": "Pix com cartão: pendente ou recusado com limite usado",
+   "p": "pix",
+   "m": "Pix CC −43,3% no suporte humano",
+   "x": "Parte dos contatos é de quem paga o Pix com cartão e o vê pendente ou recusado.",
+   "sl": "Em acompanhamento",
+   "s": "Sem mudança registrada; queda compara com a semana do pico de 15/11.",
+   "det": "O suporte humano de Pix CC cai 43,3% frente aos mesmos dias da W46. As lojas têm 15 avaliações citando Pix e 13% positivas; as redes têm 88% de menções negativas contra 64% na W46.",
+   "ex": [
+    "eab",
+    "eac",
+    "ead",
+    "eae",
+    "eaf",
+    "eag"
+   ],
+   "rank": 12,
+   "img": "https://lh3.googleusercontent.com/d/1LbV6FWjIDl06HSLiGWgTx_oczTbVOr39=w400",
+   "ps": [
+    "cartao"
+   ]
+  },
+  {
+   "t": "Transporte: NPS sobe, crédito que não aparece segue estável",
+   "p": "transp",
+   "m": "NPS 75,5 (70,3)",
+   "x": "\"Recarga realizada e crédito não disponibilizado\" fica estável no maior motivo.",
+   "sl": "Estável",
+   "s": "Sem evento correlato nos reports e no Slack da semana.",
+   "det": "O suporte humano de Transporte cai 14,9% e o NPS Transacional sobe de 70,3 para 75,5; quem comenta elogia a praticidade e pede crédito imediato. O CSAT tem só 9 respostas (44,4%).",
+   "ex": [
+    "e2g",
+    "e2h",
+    "e2i",
+    "e2j",
+    "e2k",
+    "e2l"
+   ],
+   "rank": 13,
+   "img": "https://lh3.googleusercontent.com/d/1IE8ZGjG0ajqNglRXvokaMvLvKnbceVEs=w400"
+  },
+  {
+   "t": "Tap to Pay: menos contatos e NPS em alta",
+   "p": "t2p",
+   "m": "Suporte humano −46,2%; NPS 83,3",
+   "x": "\"Não recebeu a venda\" cai 50%, mas as transações caem 16,5% e houve atraso de pagamento em 22/11.",
+   "sl": "Em acompanhamento",
+   "s": "Atraso de pagamento das vendas em 22/11 até 19h34 (Slack); ainda sem efeito medido.",
+   "det": "Todos os motivos do Tap to Pay caem frente aos mesmos dias da W46. O NPS Transacional vai de 81,2 para 83,3 e o CSAT para 84,2%. Entre quem relata não ter recebido a venda, 74% citam cartão, limite ou Cartão Empreendedor.",
+   "ex": [
+    "ed4",
+    "ed5",
+    "ed6",
+    "ed7",
+    "ed8",
+    "ed9"
+   ],
+   "rank": 14,
+   "img": "https://lh3.googleusercontent.com/d/1PxAFlj6fbSoZSzzMmjd1xIzIYhoO3AxA=w400",
+   "ps": [
+    "link"
+   ]
+  },
+  {
+   "t": "Cartão: cashback do cartão é o elogio que mais cresce",
+   "p": "cartao",
+   "m": "Elogios 8 → 68 em 10 semanas",
+   "x": "Elogios ao cashback do cartão sobem de 22 para 68 na W47; NPS Transacional do Cartão vai de 45,6 para 56,1.",
+   "sl": "Estável",
+   "s": "Sem ação necessária registrada; o suporte humano do Cartão cai 23,8%.",
+   "det": "O NPS Transacional do Cartão sobe 10,5 pontos na W47 parcial (262 respostas), com Garantido de 44,1 para 56,9 e Concedido de 52,6 para 58,3. Em paralelo, lojas têm 19% de avaliações positivas (32% antes) e as redes 90% negativas.",
+   "ex": [
+    "egz",
+    "eh0",
+    "eh1",
+    "eh2",
+    "eh3",
+    "e7"
+   ],
+   "rank": 15,
+   "img": "https://lh3.googleusercontent.com/d/1G9fI1L4EvwIVDgHTJSDeq-o_rf70eFQd=w400",
+   "serie": {
+    "l": "Elogios ao cashback do cartão",
+    "v": [
+     8,
+     11,
+     9,
+     12,
+     10,
+     13,
+     15,
+     22,
+     22,
+     68
+    ]
+   }
+  }
+ ],
+ "agir": [
+  {
+   "t": "Link de Pagamento fora do ar após ataque",
+   "p": "link",
+   "m": "Suporte humano +13,8%; transações −77%",
+   "x": "Lojistas ficaram sem gerar link desde 17/11 e o app mostra \"Em breve\"; \"instabilidade no app\" vira o maior motivo.",
+   "sl": "Em andamento",
+   "s": "Endpoint desligado pelo time de Cyber após ataque (relato em #subacquirer-cx, 18/11); retorno previsto para 23/11.",
+   "det": "Os contatos do Link sobem com pico em 18/11 e as transações caem 77% no recorte de 16 a 21/11 frente a 09 a 14/11, sem registro a partir de 18/11. \"Instabilidade no app\" não tinha registro na semana anterior. O NPS Transacional do Link vai de 30,2 para 21,2, em base pequena (33 respostas). O relato do squad atribui o desligamento ao ataque; o retorno ainda não foi confirmado nos dados até 21/11.",
+   "ex": [
+    "eek",
+    "eel",
+    "eem",
+    "een",
+    "eeo",
+    "eep"
+   ],
+   "rank": 1,
+   "img": "https://lh3.googleusercontent.com/d/1coBm8idviYCCIZLG7IFJ1D5T7MfL0omP=w400",
+   "ps": [
+    "t2p"
+   ]
+  },
+  {
+   "t": "Cartão: compra recusada mesmo com limite",
+   "p": "cartao",
+   "m": "Uso do cartão +56% no suporte humano",
+   "x": "Mais da metade das conversas de uso fala de compra negada com limite, em assinaturas e parcelados.",
+   "sl": "Em apuração",
+   "s": "Sem evento correlato registrado nos reports e no Slack da semana; recusas antifraude em parceiro de pagamento em curso desde 11/11.",
+   "det": "\"Problemas com o uso do cartão\" sobe 56% frente aos mesmos 6 dias da W46, enquanto fatura (−38%) e bloqueio ou cancelamento (−53%) caem. As conversas citam recusa sem motivo exibido, compra parcelada aceita só em 3 vezes e assinaturas recorrentes negadas \"por segurança\". O relato do cliente não cita o evento do parceiro; a ligação é só de tema e janela.",
+   "ex": [
+    "e1",
+    "e2",
+    "e3",
+    "e4",
+    "e5",
+    "e6"
+   ],
+   "rank": 2,
+   "img": "https://lh3.googleusercontent.com/d/1G9fI1L4EvwIVDgHTJSDeq-o_rf70eFQd=w400"
+  },
+  {
+   "t": "Fim do cashback em contas, boletos e recarga",
+   "p": "boletos",
+   "m": "Reclamações do tema 1 → 39 em 10 semanas",
+   "x": "O tema domina tickets, lojas e NPS; há quem fale em encerrar a conta ou usar o app como renda extra.",
+   "sl": "Sem solução registrada",
+   "s": "Descontinuação do cashback sem reversão registrada nos reports e no Slack até 21/11.",
+   "det": "O fim do cashback aparece nas reclamações (de 1 para 39 em dez semanas, com pico de 47 na W45) e nos pedidos de cashback maior ou de volta (de 15 para 41 na W47). Em Contas e Boletos, \"não recebi o cashback\" cai 84% depois do pico seguinte à descontinuação; no Top Up, o NPS Transacional cai de 75,5 para 58,4 com comentários sobre o fim da bonificação.",
+   "ex": [
+    "e68",
+    "e69",
+    "e6a",
+    "e6b",
+    "e6c",
+    "e6d"
+   ],
+   "rank": 3,
+   "img": "https://lh3.googleusercontent.com/d/1yXTaRiMbjXzEWGWFyTaeDAW5rkmZgrXp=w400",
+   "ps": [
+    "topup",
+    "conta"
+   ],
+   "serie": {
+    "l": "Reclamações sobre o fim do cashback (NPS, lojas e redes)",
+    "v": [
+     1,
+     3,
+     4,
+     6,
+     4,
+     4,
+     10,
+     47,
+     26,
+     39
+    ]
+   }
+  },
+  {
+   "t": "Pix: instabilidade de 22/11 e pico de 15/11",
+   "p": "pix",
+   "m": "Suporte humano Pix −30,4% (6 dias)",
+   "x": "A W46 teve o pico de instabilidade de 15/11; em 22/11 nova falha de Pix e checkout, ainda sem efeito medido.",
+   "sl": "Resolvido",
+   "s": "Normalizado às 03h21 de 22/11 (Slack); Tap to Pay seguiu com atraso de pagamento até 19h34.",
+   "det": "A queda de 30,4% no suporte humano de Pix compara a W47 parcial com 09 a 14/11, antes do pico de 15/11 (cerca de 600 contatos de \"instabilidade no app\"). A falha de 22/11 (00h18 às 03h21, aprovações −34% segundo o Slack) cai fora da série consolidada. Os relatos de \"não consegue realizar o Pix\" (−39%) envolvem sobretudo cartão. O CSAT do atendimento de Pix é 46,3% contra 65,7%, em base pequena.",
+   "ex": [
+    "eab",
+    "eac",
+    "ead",
+    "eae",
+    "eaf",
+    "eag"
+   ],
+   "rank": 4,
+   "img": "https://lh3.googleusercontent.com/d/1LbV6FWjIDl06HSLiGWgTx_oczTbVOr39=w400",
+   "ps": [
+    "t2p",
+    "cartao"
+   ],
+   "serie": {
+    "l": "Reclamações de Pix e app com erro",
+    "v": [
+     16,
+     28,
+     23,
+     19,
+     22,
+     32,
+     35,
+     38,
+     91,
+     30
+    ]
+   }
+  },
+  {
+   "t": "Atendimento que não resolve ou não responde",
+   "p": "conta",
+   "m": "Atendimento não prestado +56%",
+   "x": "Cresce o relato de atendimento sem resposta e o CSAT de Minha Conta fica em base pequena e baixa.",
+   "sl": "Sem registro",
+   "s": "Sem ação registrada nos reports e no Slack da semana.",
+   "det": "\"Atendimento não prestado\" sobe 56% em Minha Conta e em Seguros de 2 para 5 tickets. No Reclame Aqui, \"atendimento sem solução\" é o segundo maior tema e cai 32% na semana. O CSAT de Minha Conta é 34,8% (8 de 23 respostas) contra 88,9% na W46, em base pequena.",
+   "ex": [
+    "e5n",
+    "e5o",
+    "e5p",
+    "e5q",
+    "e5r",
+    "e5s"
+   ],
+   "rank": 5,
+   "img": "https://lh3.googleusercontent.com/d/1PiVbmBTFM1AreGRzBT_vKiV5Tw1HSDDS=w400",
+   "ps": [
+    "seguros"
+   ],
+   "serie": {
+    "l": "Reclamações de atendimento que não resolve",
+    "v": [
+     22,
+     21,
+     17,
+     17,
+     15,
+     30,
+     71,
+     95,
+     45,
+     42
+    ]
+   }
+  }
+ ]
+}

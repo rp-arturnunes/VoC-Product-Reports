@@ -29,12 +29,12 @@
      ]
     ],
     "ex": [
-     "emp1",
-     "emp2",
-     "emp3",
-     "emp4",
-     "emp5",
-     "emp6"
+     "e7k",
+     "e7l",
+     "e7m",
+     "e7n",
+     "e7o",
+     "e7p"
     ]
    },
    "ex": null
@@ -59,12 +59,12 @@
      ]
     ],
     "ex": [
-     "emp7",
-     "emp8",
-     "emp9",
-     "emp10",
-     "emp11",
-     "emp12"
+     "e7q",
+     "e7r",
+     "e7s",
+     "e7t",
+     "e7u",
+     "e7v"
     ]
    },
    "ex": null
@@ -89,12 +89,12 @@
      ]
     ],
     "ex": [
-     "emp13",
-     "emp14",
-     "emp15",
-     "emp16",
-     "emp17",
-     "emp19"
+     "e7w",
+     "e7x",
+     "e7y",
+     "e7z",
+     "e80",
+     "e82"
     ]
    },
    "ex": null
@@ -119,12 +119,12 @@
      ]
     ],
     "ex": [
-     "emp20",
-     "emp21",
-     "emp22",
-     "emp23",
-     "emp24",
-     "emp25"
+     "e83",
+     "e84",
+     "e85",
+     "e86",
+     "e87",
+     "e88"
     ]
    },
    "ex": null
@@ -162,24 +162,24 @@
  ],
  "exemplos": {
   "NPS Transacional": [
-   "emp50",
-   "emp54"
+   "e8v",
+   "e8z"
   ],
   "Lojas": [
-   "emp64",
-   "emp66"
+   "e99",
+   "e9b"
   ],
   "Redes": [
-   "emp71",
-   "emp72"
+   "e9g",
+   "e9h"
   ]
  },
  "mencoes": {
   "texto": "Nas lojas, o Empréstimo aparece em menos avaliações na W47 (21 contra 41 na W46, mesmos dias até 21/11) e 29% são positivas (37% na W46): limite reduzido a R$ 10 depois de quitar e juros cobrados. Nas redes, as menções vão de 16 para 19 e a maioria é negativa, com um mesmo comentário repetido várias vezes. No Reclame Aqui, as reclamações caem de 163 (W46) para 108 (W47 até 21/11) e as resolvidas passam de 20 para 7: cobrança de empréstimo quitado, cobrança em cartão de outro banco e consignado assinado que desaparece do app.",
   "ra": [
-   "emp74",
-   "emp75",
-   "emp78"
+   "e9j",
+   "e9k",
+   "e9n"
   ]
  },
  "eventos": [

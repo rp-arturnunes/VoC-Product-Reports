@@ -29,12 +29,12 @@
      ]
     ],
     "ex": [
-     "cta-1",
-     "cta-2",
-     "cta-3",
-     "cta-4",
-     "cta-5",
-     "cta-6"
+     "e56",
+     "e57",
+     "e58",
+     "e59",
+     "e5a",
+     "e5b"
     ]
    },
    "ex": null
@@ -59,11 +59,11 @@
      ]
     ],
     "ex": [
-     "cta-13",
-     "cta-14",
-     "cta-15",
-     "cta-16",
-     "cta-17"
+     "e5i",
+     "e5j",
+     "e5k",
+     "e5l",
+     "e5m"
     ]
    },
    "ex": null
@@ -88,12 +88,12 @@
      ]
     ],
     "ex": [
-     "cta-7",
-     "cta-8",
-     "cta-9",
-     "cta-10",
-     "cta-11",
-     "cta-12"
+     "e5c",
+     "e5d",
+     "e5e",
+     "e5f",
+     "e5g",
+     "e5h"
     ]
    },
    "ex": null
@@ -118,12 +118,12 @@
      ]
     ],
     "ex": [
-     "cta-18",
-     "cta-19",
-     "cta-20",
-     "cta-21",
-     "cta-22",
-     "cta-23"
+     "e5n",
+     "e5o",
+     "e5p",
+     "e5q",
+     "e5r",
+     "e5s"
     ]
    },
    "ex": null
@@ -161,28 +161,28 @@
  ],
  "exemplos": {
   "Suporte": [
-   "cta-1",
-   "cta-7"
+   "e56",
+   "e5c"
   ],
   "Lojas": [
-   "cta-25",
-   "cta-26"
+   "e5u",
+   "e5v"
   ],
   "Redes": [
-   "cta-29",
-   "cta-30"
+   "e5y",
+   "e5z"
   ],
   "Reclame Aqui": [
-   "cta-34",
-   "cta-36"
+   "e63",
+   "e65"
   ]
  },
  "mencoes": {
   "texto": "Nas lojas, 5 avaliações da W47 citam cadastro, selfie ou conta (0% positivas), contra 8 na W46 (13% positivas); falam de selfie que não valida e de conta que aparece como reprovada. Nas redes, 3 menções (1 negativa), contra 7 na W46 (5 negativas): burocracia para abrir a conta e falta de chat. No Reclame Aqui, 21 reclamações de Minha Conta na W47, contra 38 na W46: 6 falam de conta aprovada e depois reprovada com e-mail de crédito pré-aprovado e 7 de encerramento e permanência no Registrato.",
   "ra": [
-   "cta-34",
-   "cta-36",
-   "cta-37"
+   "e63",
+   "e65",
+   "e66"
   ]
  },
  "eventos": [

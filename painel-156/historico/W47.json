@@ -1,0 +1,810 @@
+{
+"semana": {
+"w": "W47",
+"ini": "16/11",
+"fim": "22/11/2026",
+"pub": "23/11/2026"
+},
+"pulso": "W47 parcial (dados até 21/11): NPS Transacional em 65,1 (63,6) e suporte humano em queda na maioria dos produtos, mas o NPS Relacional cai para 37,1 e as redes ficam mais negativas (57%). O Link de Pagamento fica fora do ar após ataque e o fim do cashback segue como principal reclamação em contas, boletos e Top Up. Pix e checkout falham de novo em 22/11.",
+"resumo": "Os destaques da W47 combinam um incidente (Link de Pagamento fora do ar desde 17/11, retorno previsto em 23/11), dois temas de reputação (compra recusada no Cartão e fim do cashback) e a instabilidade de Pix e checkout de 22/11, ainda sem efeito medido. Entre os temas em alta estão o salto de vendas e arrependimentos em Acidente e Renda e o NPS do Top Up.",
+"destaques": {
+"novos": [
+{
+"t": "Seguros Acidente e Renda: vendas e arrependimentos disparam",
+"p": "seguros",
+"m": "Apólices +159%; cancelamentos +255%",
+"x": "95% dos cancelamentos pedidos estão no prazo de arrependimento; contatos de Acidente e Renda +42%.",
+"sl": "Em apuração",
+"s": "Nenhum evento correlato encontrado no Slack nem nos reports; salto de 19 a 21/11.",
+"det": "Nos três dias de 19 a 21/11, a venda diária de Acidente e Renda sobe de cerca de 500 para entre 1,5 mil e 2,7 mil. Os cancelamentos pedidos pelo cliente sobem 255% e quase todos ocorrem no arrependimento. Em Pix e Cartão, apólices novas sobem 15% e os contatos caem 7%. A base de contatos de Acidente e Renda é pequena (27 contra 19).",
+"ex": [
+"ebt",
+"ebu",
+"ebv"
+],
+"rank": 6,
+"img": "https://lh3.googleusercontent.com/d/1YAh50j2jrGFmpOc033oHpKAbtB6biDKu=w400"
+},
+{
+"t": "CDB: \"não recebi o valor\" sobe e CDB 107% sai do app",
+"p": "cdb",
+"m": "\"Não recebi o valor do CDB\" de 5 para 13",
+"x": "Surgem relatos de CDB reinvestido no vencimento e de contratação com problema.",
+"sl": "Em apuração",
+"s": "A saída do CDB 107% do app em 16/11 coincide com a semana; sem relação confirmada nos reports.",
+"det": "O suporte humano do CDB cai 5,0%, com resgate antecipado (96% dos contatos) em −9%. \"Não recebi o valor do CDB\" sobe 160% e \"problemas ao contratar\" de 2 para 6. O NPS Transacional fica em 68,1 (70,0 na W46) e o CSAT em 80,0%. O produto não tem avaliações de loja nem Reclame Aqui na semana.",
+"ex": [
+"e1x",
+"e1y",
+"e1z"
+],
+"rank": 7,
+"img": "https://lh3.googleusercontent.com/d/1FaWpztB4nKO6EQkegcTUCwPwPIL10EyN=w400"
+},
+{
+"t": "Empréstimo: limite cai ou fica em R$ 10 após quitar",
+"p": "emprestimo",
+"m": "Suporte humano −25%",
+"x": "O contato migra para limite reduzido após quitar, cobrança automática e fatura do cartão.",
+"sl": "Sem solução registrada",
+"s": "Manutenção e virada da Matera em 18/11 coincide com a semana; sem relação confirmada nos reports.",
+"det": "O suporte humano de Empréstimo e Consignado cai cerca de 25% e o CSAT vai de 63,1% para 59,8%. \"Problemas com cartão de crédito\" cai 53% e \"desconhece a cobrança\" 45%. Quem quita antes do prazo relata limite que cai ou fica em R$ 10 e débito automático do cartão cadastrado em atraso. O Reclame Aqui de empréstimo cai 20%.",
+"ex": [
+"e7k",
+"e7l",
+"e7m"
+],
+"rank": 8,
+"img": "https://lh3.googleusercontent.com/d/1d07zoUjKi3hOieTLWr5O1z8c9IY02Pjh=w400"
+},
+{
+"t": "Top Up: NPS Transacional cai 17 pontos",
+"p": "topup",
+"m": "NPS 58,4 (75,5 na W46)",
+"x": "Detratores de 10 para 15; comentários citam o fim do cashback e da bonificação.",
+"sl": "Sem solução registrada",
+"s": "Sem ação registrada; relação com o fim do cashback é de tema, não confirmada.",
+"det": "O NPS Transacional do Top Up vai de 75,5 para 58,4, com mais detratores, e cerca de 18% dos comentários citam cashback ou bonificação. O suporte humano tem base mínima de tickets, sem tendência confiável.",
+"ex": [
+"e9o",
+"e9p",
+"e9q"
+],
+"rank": 9,
+"img": "https://lh3.googleusercontent.com/d/1LU1E91gcAthQ3K4Irt5BEDTf-aZgTwr_=w400",
+"ps": [
+"boletos"
+]
+},
+{
+"t": "Minha Conta: selfie e validação travam o acesso",
+"p": "conta",
+"m": "Validação +13%",
+"x": "Reconhecimento facial recusado, câmera que não abre e falta de alternativa à foto repetem-se nos tickets.",
+"sl": "Sem registro",
+"s": "Sem evento correlato nos reports e no Slack da semana.",
+"det": "O suporte humano de Minha Conta cai 22,5%, com acesso ao cadastro (−32%) e encerramento (−29%) em queda, mas \"não consegue validar seu cadastro\" sobe 13%. No Reclame Aqui, 6 das 21 reclamações do tema acesso e cadastro falam da selfie.",
+"ex": [
+"e5c",
+"e5d",
+"e5e"
+],
+"rank": 10,
+"img": "https://lh3.googleusercontent.com/d/1PiVbmBTFM1AreGRzBT_vKiV5Tw1HSDDS=w400"
+}
+],
+"oport": [
+{
+"t": "Bloqueios: saldo parcial bloqueado sobe 32%",
+"p": "fraude",
+"m": "Suporte humano −34,5%",
+"x": "Saldo todo bloqueado cai 47%, mas \"parte do saldo\" bloqueado sobe 32%.",
+"sl": "Parcialmente resolvido",
+"s": "Fix da rotina de desbloqueio de carteiras em 17/11 coincide com queda de cerca de 52% em contatos de saldo bloqueado (Slack).",
+"det": "O suporte humano de Bloqueios e fraude cai 34,5%: Carteira Desativada −37,8%, Conta Desativada −39,3% e Chargeback Recovery −15,8%. O CSAT do produto sobe de 45,7% para 53,7%. A regra de validação de celular roubado e invasão passou a checar só 2 dos 5 dados em 18/11 (Slack).",
+"ex": [
+"e3c",
+"e3d",
+"e3e"
+],
+"rank": 11,
+"img": "https://lh3.googleusercontent.com/d/17gN8pInhyH3YPvOGwFAfm993U1mxXG63=w400"
+},
+{
+"t": "Pix com cartão: pendente ou recusado com limite usado",
+"p": "pix",
+"m": "Pix CC −43,3% no suporte humano",
+"x": "Parte dos contatos é de quem paga o Pix com cartão e o vê pendente ou recusado.",
+"sl": "Em acompanhamento",
+"s": "Sem mudança registrada; queda compara com a semana do pico de 15/11.",
+"det": "O suporte humano de Pix CC cai 43,3% frente aos mesmos dias da W46. As lojas têm 15 avaliações citando Pix e 13% positivas; as redes têm 88% de menções negativas contra 64% na W46.",
+"ex": [
+"eab",
+"eac",
+"ead"
+],
+"rank": 12,
+"img": "https://lh3.googleusercontent.com/d/1LbV6FWjIDl06HSLiGWgTx_oczTbVOr39=w400",
+"ps": [
+"cartao"
+]
+},
+{
+"t": "Transporte: NPS sobe, crédito que não aparece segue estável",
+"p": "transp",
+"m": "NPS 75,5 (70,3)",
+"x": "\"Recarga realizada e crédito não disponibilizado\" fica estável no maior motivo.",
+"sl": "Estável",
+"s": "Sem evento correlato nos reports e no Slack da semana.",
+"det": "O suporte humano de Transporte cai 14,9% e o NPS Transacional sobe de 70,3 para 75,5; quem comenta elogia a praticidade e pede crédito imediato. O CSAT tem só 9 respostas (44,4%).",
+"ex": [
+"e2g",
+"e2h",
+"e2i"
+],
+"rank": 13,
+"img": "https://lh3.googleusercontent.com/d/1IE8ZGjG0ajqNglRXvokaMvLvKnbceVEs=w400"
+},
+{
+"t": "Tap to Pay: menos contatos e NPS em alta",
+"p": "t2p",
+"m": "Suporte humano −46,2%; NPS 83,3",
+"x": "\"Não recebeu a venda\" cai 50%, mas as transações caem 16,5% e houve atraso de pagamento em 22/11.",
+"sl": "Em acompanhamento",
+"s": "Atraso de pagamento das vendas em 22/11 até 19h34 (Slack); ainda sem efeito medido.",
+"det": "Todos os motivos do Tap to Pay caem frente aos mesmos dias da W46. O NPS Transacional vai de 81,2 para 83,3 e o CSAT para 84,2%. Entre quem relata não ter recebido a venda, 74% citam cartão, limite ou Cartão Empreendedor.",
+"ex": [
+"ed4",
+"ed5",
+"ed6"
+],
+"rank": 14,
+"img": "https://lh3.googleusercontent.com/d/1PxAFlj6fbSoZSzzMmjd1xIzIYhoO3AxA=w400",
+"ps": [
+"link"
+]
+},
+{
+"t": "Cartão: cashback do cartão é o elogio que mais cresce",
+"p": "cartao",
+"m": "Elogios 8 → 68 em 10 semanas",
+"x": "Elogios ao cashback do cartão sobem de 22 para 68 na W47; NPS Transacional do Cartão vai de 45,6 para 56,1.",
+"sl": "Estável",
+"s": "Sem ação necessária registrada; o suporte humano do Cartão cai 23,8%.",
+"det": "O NPS Transacional do Cartão sobe 10,5 pontos na W47 parcial (262 respostas), com Garantido de 44,1 para 56,9 e Concedido de 52,6 para 58,3. Em paralelo, lojas têm 19% de avaliações positivas (32% antes) e as redes 90% negativas.",
+"ex": [
+"egz",
+"eh0",
+"eh1"
+],
+"rank": 15,
+"img": "https://lh3.googleusercontent.com/d/1G9fI1L4EvwIVDgHTJSDeq-o_rf70eFQd=w400",
+"serie": {
+"l": "Elogios ao cashback do cartão",
+"v": [
+8,
+11,
+9,
+12,
+10,
+13,
+15,
+22,
+22,
+68
+]
+}
+}
+],
+"agir": [
+{
+"t": "Link de Pagamento fora do ar após ataque",
+"p": "link",
+"m": "Suporte humano +13,8%; transações −77%",
+"x": "Lojistas ficaram sem gerar link desde 17/11 e o app mostra \"Em breve\"; \"instabilidade no app\" vira o maior motivo.",
+"sl": "Em andamento",
+"s": "Endpoint desligado pelo time de Cyber após ataque (relato em #subacquirer-cx, 18/11); retorno previsto para 23/11.",
+"det": "Os contatos do Link sobem com pico em 18/11 e as transações caem 77% no recorte de 16 a 21/11 frente a 09 a 14/11, sem registro a partir de 18/11. \"Instabilidade no app\" não tinha registro na semana anterior. O NPS Transacional do Link vai de 30,2 para 21,2, em base pequena (33 respostas). O relato do squad atribui o desligamento ao ataque; o retorno ainda não foi confirmado nos dados até 21/11.",
+"ex": [
+"eek",
+"eel",
+"eem"
+],
+"rank": 1,
+"img": "https://lh3.googleusercontent.com/d/1coBm8idviYCCIZLG7IFJ1D5T7MfL0omP=w400",
+"ps": [
+"t2p"
+]
+},
+{
+"t": "Cartão: compra recusada mesmo com limite",
+"p": "cartao",
+"m": "Uso do cartão +56% no suporte humano",
+"x": "Mais da metade das conversas de uso fala de compra negada com limite, em assinaturas e parcelados.",
+"sl": "Em apuração",
+"s": "Sem evento correlato registrado nos reports e no Slack da semana; recusas antifraude em parceiro de pagamento em curso desde 11/11.",
+"det": "\"Problemas com o uso do cartão\" sobe 56% frente aos mesmos 6 dias da W46, enquanto fatura (−38%) e bloqueio ou cancelamento (−53%) caem. As conversas citam recusa sem motivo exibido, compra parcelada aceita só em 3 vezes e assinaturas recorrentes negadas \"por segurança\". O relato do cliente não cita o evento do parceiro; a ligação é só de tema e janela.",
+"ex": [
+"e1",
+"e2",
+"e3"
+],
+"rank": 2,
+"img": "https://lh3.googleusercontent.com/d/1G9fI1L4EvwIVDgHTJSDeq-o_rf70eFQd=w400"
+},
+{
+"t": "Fim do cashback em contas, boletos e recarga",
+"p": "boletos",
+"m": "Reclamações do tema 1 → 39 em 10 semanas",
+"x": "O tema domina tickets, lojas e NPS; há quem fale em encerrar a conta ou usar o app como renda extra.",
+"sl": "Sem solução registrada",
+"s": "Descontinuação do cashback sem reversão registrada nos reports e no Slack até 21/11.",
+"det": "O fim do cashback aparece nas reclamações (de 1 para 39 em dez semanas, com pico de 47 na W45) e nos pedidos de cashback maior ou de volta (de 15 para 41 na W47). Em Contas e Boletos, \"não recebi o cashback\" cai 84% depois do pico seguinte à descontinuação; no Top Up, o NPS Transacional cai de 75,5 para 58,4 com comentários sobre o fim da bonificação.",
+"ex": [
+"e68",
+"e69",
+"e6a"
+],
+"rank": 3,
+"img": "https://lh3.googleusercontent.com/d/1yXTaRiMbjXzEWGWFyTaeDAW5rkmZgrXp=w400",
+"ps": [
+"topup",
+"conta"
+],
+"serie": {
+"l": "Reclamações sobre o fim do cashback (NPS, lojas e redes)",
+"v": [
+1,
+3,
+4,
+6,
+4,
+4,
+10,
+47,
+26,
+39
+]
+}
+},
+{
+"t": "Pix: instabilidade de 22/11 e pico de 15/11",
+"p": "pix",
+"m": "Suporte humano Pix −30,4% (6 dias)",
+"x": "A W46 teve o pico de instabilidade de 15/11; em 22/11 nova falha de Pix e checkout, ainda sem efeito medido.",
+"sl": "Resolvido",
+"s": "Normalizado às 03h21 de 22/11 (Slack); Tap to Pay seguiu com atraso de pagamento até 19h34.",
+"det": "A queda de 30,4% no suporte humano de Pix compara a W47 parcial com 09 a 14/11, antes do pico de 15/11 (cerca de 600 contatos de \"instabilidade no app\"). A falha de 22/11 (00h18 às 03h21, aprovações −34% segundo o Slack) cai fora da série consolidada. Os relatos de \"não consegue realizar o Pix\" (−39%) envolvem sobretudo cartão. O CSAT do atendimento de Pix é 46,3% contra 65,7%, em base pequena.",
+"ex": [
+"eab",
+"eac",
+"ead"
+],
+"rank": 4,
+"img": "https://lh3.googleusercontent.com/d/1LbV6FWjIDl06HSLiGWgTx_oczTbVOr39=w400",
+"ps": [
+"t2p",
+"cartao"
+],
+"serie": {
+"l": "Reclamações de Pix e app com erro",
+"v": [
+16,
+28,
+23,
+19,
+22,
+32,
+35,
+38,
+91,
+30
+]
+}
+},
+{
+"t": "Atendimento que não resolve ou não responde",
+"p": "conta",
+"m": "Atendimento não prestado +56%",
+"x": "Cresce o relato de atendimento sem resposta e o CSAT de Minha Conta fica em base pequena e baixa.",
+"sl": "Sem registro",
+"s": "Sem ação registrada nos reports e no Slack da semana.",
+"det": "\"Atendimento não prestado\" sobe 56% em Minha Conta e em Seguros de 2 para 5 tickets. No Reclame Aqui, \"atendimento sem solução\" é o segundo maior tema e cai 32% na semana. O CSAT de Minha Conta é 34,8% (8 de 23 respostas) contra 88,9% na W46, em base pequena.",
+"ex": [
+"e5n",
+"e5o",
+"e5p"
+],
+"rank": 5,
+"img": "https://lh3.googleusercontent.com/d/1PiVbmBTFM1AreGRzBT_vKiV5Tw1HSDDS=w400",
+"ps": [
+"seguros"
+],
+"serie": {
+"l": "Reclamações de atendimento que não resolve",
+"v": [
+22,
+21,
+17,
+17,
+15,
+30,
+71,
+95,
+45,
+42
+]
+}
+}
+]
+},
+"eventos": [
+{
+"d": "22/11",
+"t": "Pix e checkout falham por cerca de 3 horas",
+"tipo": "Incidente",
+"res": "Entre 00h18 e 03h21, pagamentos com wallet, sobretudo Pix, falharam (alerta de envio de Pix e P1 em Payments). Resolvido; conciliação de débitos de wallet segue pendente.",
+"imp": [
+[
+"Suporte",
+"Sem efeito",
+"ainda não medido (W47 parcial)"
+],
+[
+"NPS Tx",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Lojas",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Redes",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Reputação",
+"Sem efeito",
+"sem leitura ainda"
+]
+]
+},
+{
+"d": "22/11",
+"t": "Tap to Pay: atraso no pagamento de vendas",
+"tipo": "Incidente",
+"res": "Alerta automático ligado às 02h00 e ainda ativo às 17h (14h05 em novo ciclo); atraso registrado até 19h34 segundo o monitoramento de impacto. Aviso do bot não apareceu nas conversas do período.",
+"imp": [
+[
+"Suporte",
+"Sem efeito",
+"ainda não medido (W47 parcial)"
+],
+[
+"NPS Tx",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Lojas",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Redes",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Reputação",
+"Sem efeito",
+"sem leitura ainda"
+]
+]
+},
+{
+"d": "19/11",
+"t": "Quedas do Admin (ferramenta interna)",
+"tipo": "Incidente",
+"res": "Duas quedas (12h57 a 13h27 e cerca de 17h28 a 18h03) e aba de Empréstimos fora até cerca de 20h28. Sem contatos atribuíveis de cliente.",
+"imp": [
+[
+"Suporte",
+"Sem efeito",
+"ainda não medido (W47 parcial)"
+],
+[
+"NPS Tx",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Lojas",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Redes",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Reputação",
+"Sem efeito",
+"sem leitura ainda"
+]
+]
+},
+{
+"d": "18/11",
+"t": "Link de Pagamento desligado após ataque",
+"tipo": "Incidente",
+"res": "Na noite de 17/11 o produto sofreu ataque e o endpoint foi desligado; aviso no bot desde 15h59 de 18/11, ainda ativo em 19/11, com retorno previsto para 23/11.",
+"imp": [
+[
+"Suporte",
+"Atenção",
+"18/11: contatos do produto cerca de 2,4x um dia útil normal; o que chegou ao humano cresceu cerca de 5x e o bot reteve 64%"
+],
+[
+"NPS Tx",
+"Sem efeito",
+"ainda não medido; NPS do Link já vinha em queda na W46 (53,7 para 29,0), antes do desligamento"
+],
+[
+"Lojas",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Redes",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Reputação",
+"Sem efeito",
+"sem leitura ainda"
+]
+]
+},
+{
+"d": "18/11",
+"t": "Empréstimo: manutenção da Matera e virada do dia",
+"tipo": "Incidente",
+"res": "Virada do dia da Matera (01h00 a 04h35) com 1.632 usuários com contratação recusada e manutenção Matera/Oracle (21h00 a 22h50). Resolvido.",
+"imp": [
+[
+"Suporte",
+"Em linha",
+"poucos contatos na virada; a janela da noite teve 2,4x a mesma janela de 11/11, com retenção do bot acima da média"
+],
+[
+"NPS Tx",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Lojas",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Redes",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Reputação",
+"Sem efeito",
+"sem leitura ainda"
+]
+]
+},
+{
+"d": "18/11",
+"t": "Bloqueio de celular roubado e invasão valida só 2 dos 5 dados",
+"tipo": "Mudança",
+"res": "Nos formulários de segurança, o bloqueio automático passa a exigir só CPF e data de nascimento; e-mail e telefone viram evidência no ticket. Comunicado em #lideres-cx-e-cxm.",
+"imp": [
+[
+"Suporte",
+"Sem efeito",
+"ainda não medido (W47 parcial)"
+],
+[
+"NPS Tx",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Lojas",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Redes",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Reputação",
+"Sem efeito",
+"sem leitura ainda"
+]
+]
+},
+{
+"d": "17/11",
+"t": "Correção da rotina de desbloqueio de carteiras",
+"tipo": "Mudança",
+"res": "A revisão automática, parada de 08/11 a 15/11, voltou em parte a 16/11 (15h46) e roda o dia todo desde 17/11; backlog caiu de 5,6 mil carteiras (11/11) para cerca de 2,4 mil (21/11).",
+"imp": [
+[
+"Suporte",
+"Em linha",
+"contatos de \"saldo da carteira bloqueado - todo o saldo\" caem cerca de 52% em 17/11 contra 16/11"
+],
+[
+"NPS Tx",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Lojas",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Redes",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Reputação",
+"Sem efeito",
+"sem leitura ainda"
+]
+]
+},
+{
+"d": "16/11",
+"t": "Pix e parcelas de Empréstimo falham; segunda onda de recebimento do Pix",
+"tipo": "Incidente",
+"res": "Pagamento de parcelas por Pix QR e boleto (08h00 a 10h44), envio de Pix (09h26 a 10h38) e recebimento de Pix (até 07h13), atribuídos à falha de certificado com o BTG. Resolvido no dia.",
+"imp": [
+[
+"Suporte",
+"Sem efeito",
+"ainda não medido (W47 parcial)"
+],
+[
+"NPS Tx",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Lojas",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Redes",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Reputação",
+"Sem efeito",
+"sem leitura ainda"
+]
+]
+},
+{
+"d": "16/11",
+"t": "CDB 107% do CDI com liquidez diária sai do app",
+"tipo": "Mudança",
+"res": "Por estratégia de produto, a oferta 107% foi retirada; fica o CDB 103%. Quem já tem 107% mantém até o vencimento; reinvestimento automático vai a 103%. Vencimentos começaram em 17/11.",
+"imp": [
+[
+"Suporte",
+"Sem efeito",
+"ainda não medido (W47 parcial)"
+],
+[
+"NPS Tx",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Lojas",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Redes",
+"Sem efeito",
+"ainda não medido"
+],
+[
+"Reputação",
+"Sem efeito",
+"sem leitura ainda"
+]
+]
+}
+],
+"exemplos": {
+"ebt": {
+"t": "Meu saldo foi descontado de seguro Pix cartão que eu mesmo não pedir quero meu saldo",
+"m": "Suporte humano · ticket 46817272 · 21/11 · usuário 51737495"
+},
+"ebu": {
+"t": "Foi descontado 5.99 da conta falando que é de seguro, eu não contratei nenhum seguro",
+"m": "Suporte humano · ticket 46814808 · 20/11 · usuário 35046361"
+},
+"ebv": {
+"t": "quero reembolso das cobranças do seguro pix, pois nao contratei e nao autorizei",
+"m": "Suporte humano · ticket 46788067 · 16/11 · usuário 45052238"
+},
+"e1x": {
+"t": "Meu vencimento hoje do CDB titan, não estou conseguindo receber o dinheiro na carteira",
+"m": "Suporte · ticket 46787112 · 16/11 · usuário 48534214"
+},
+"e1y": {
+"t": "Fiz o resgate do investimento hj as 8:30 e não entrou na conta está pendente porque?",
+"m": "Suporte · ticket 46794629 · 17/11 · usuário 55263613"
+},
+"e1z": {
+"t": "Eu vi que já foi tirado do investimento mais não apareceu na carteira",
+"m": "Suporte · ticket 46787714 · 16/11 · usuário 47023118"
+},
+"e7k": {
+"t": "eu paguei meu empréstimo que vvencia hoje, meu limite foi reduzido, e não consigo contratar o valor que aparece…",
+"m": "Suporte · ticket 46800558 · 18/11 · usuário 54834081"
+},
+"e7l": {
+"t": "Eu sempre paguei certinho os empréstimos porém está disponível 50 reais eu estou tentando fazer o saque e diz q…",
+"m": "Suporte · ticket 46788452 · 16/11 · usuário 47001924"
+},
+"e7m": {
+"t": "Fiz um pagamento do empréstimo achando que ia me liberar de novo e o dinheiro que eu fiz o pagamento era que ia…",
+"m": "Suporte · ticket 46810047 · 19/11 · usuário 42386371"
+},
+"e9o": {
+"t": "O valor saiu da minha conta mais não chegou a recarga e meu número bloqueou",
+"m": "Suporte · ticket 46787769 · 16/11 · usuário 42680864"
+},
+"e9p": {
+"t": "Dboa por causa disso agora eu tô numa situação complicada aqui em casa com minha filha",
+"m": "Suporte · ticket 46804253 · 18/11 · usuário 56902980"
+},
+"e9q": {
+"t": "Fiz essa recarga e já passou dos 48 horas e até aqui não entrou meu valor quero saber o motivo",
+"m": "Suporte · ticket 46743928 · 09/11 · usuário 57556294"
+},
+"e5c": {
+"t": "A quase 3 semana venho tentando validar a selfie porém não vai, mesmo sobre a luz claridade, aguardando 24h",
+"m": "Suporte · ticket 46745249 · 09/11 · usuário 59488340"
+},
+"e5d": {
+"t": "Faz dias que estou tentando fazer inúmeras selfies e nunca reconhece e nem sei pq não reconhece se ainda nem…",
+"m": "Suporte · ticket 46764402 · 12/11 · usuário 59383461"
+},
+"e5e": {
+"t": "Sou estrangeiro com CPF ativo, mas a validação por selfie está presa em loop após o erro \"Foto inválida",
+"m": "Suporte · ticket 46791166 · 16/11 · usuário 60003749"
+},
+"e3c": {
+"t": "Entendo, mas não considero justo ter que aguardar sem receber informações claras sobre o motivo do bloqueio.",
+"m": "Suporte · ticket 46794241 · 17/11 · usuário 18911406"
+},
+"e3d": {
+"t": "Recebi uma contestação de Pix (MED) no valor de R$ 200, mas o sistema bloqueou o meu saldo total de R$ 500.",
+"m": "Suporte · ticket 46818770 · 21/11 · usuário 58374293"
+},
+"e3e": {
+"t": "Minha conta entrou em análise de segurança, com prazo informado de 24 a 72 horas. Consigo acessar normalmente o…",
+"m": "Suporte · ticket 46815278 · 20/11 · usuário 60140198"
+},
+"eab": {
+"t": "Vocês dizem que não tem ID e que a transação não foi aprovada, mas o aplicativo do meu banco está mostrando exa…",
+"m": "Suporte · ticket 46801319 · 18/11 · usuário 29758563"
+},
+"eac": {
+"t": "Esse pix no cartão foi realizado e aprovado pelo banco, mas ele não se concretizou por aqui",
+"m": "Suporte · ticket 46805285 · 18/11 · usuário 29085299"
+},
+"ead": {
+"t": "Eu cadastrei e validei meu cartão de crédito para fazer pix, mas toda vez fala que a compra foi rejeitada por q…",
+"m": "Suporte · ticket 46788958 · 16/11 · usuário 57779225"
+},
+"e2g": {
+"t": "Fiz essa recarga desde do mês passado até agora ainda não caiu no cartão de transporte,fui no terminal eles man…",
+"m": "Suporte · ticket 46801873 · 18/11 · usuário 28342763"
+},
+"e2h": {
+"t": "Então porque algumas transações o valor aparece na mesma hora no bilhete único e outras não? Além de outra vez…",
+"m": "Suporte · ticket 46758421 · 11/11 · usuário 39641689"
+},
+"e2i": {
+"t": "Fui pessoalmente na VAMU para tentar resolver essa questão e eles disseram para falar com o aplicativo, que não…",
+"m": "Suporte · ticket 46743061 · 09/11 · usuário 41689254"
+},
+"ed4": {
+"t": "Entao Eu vendi , foi debitado no cartão da cliente , saiu do limite do cartão dela mas no meu aplicativo ta par…",
+"m": "Suporte · ticket 46818213 · 21/11 · usuário 43202332"
+},
+"ed5": {
+"t": "Gostaria de solicitar uma confirmação formal sobre essa transação. A venda foi realizada pelo Tap to Pay, mas c…",
+"m": "Suporte · ticket 46819026 · 21/11 · usuário 34054488"
+},
+"ed6": {
+"t": "Boa noite , gerei um pagamento no tap , aqui no meu registro disse que foi rejeitado, mas da pessoa foi descont…",
+"m": "Suporte · ticket 46817435 · 20/11 · usuário 42973550"
+},
+"egz": {
+"t": "excelente rendimento, boas funções e o cashback é ótimo",
+"m": "NPS · resposta com comentário · 14/11 · usuário 52357378"
+},
+"eh0": {
+"t": "bom cashback priorizei o uso desse cartão por causa disso",
+"m": "NPS · resposta com comentário · 17/11 · usuário 36911651"
+},
+"eh1": {
+"t": "excelentes funcionalidades, e tenho o cashback nas compras com o cartão de crédito!",
+"m": "NPS · resposta com comentário · 06/11 · usuário 7547621"
+},
+"eek": {
+"t": "boa noite, o q esta acontecendo com o link de pagamento qnd eu clico pra gerar, ele não abre e está escrito EM…",
+"m": "Suporte · ticket 46812855 · 19/11 · usuário 51449134"
+},
+"eel": {
+"t": "Meu link de pagamento não está disponível, resolve isso por favor",
+"m": "Suporte · ticket 46816351 · 20/11 · usuário 17410429"
+},
+"eem": {
+"t": "Não consigo fazer resgate e meu link também não funciona",
+"m": "Suporte · ticket 46814597 · 20/11 · usuário 42781736"
+},
+"e1": {
+"t": "Nao estou conseguindo fazer uma compra, so da recusada mesmo com limite",
+"m": "Suporte · ticket 46810920 · 19/11 · usuário 26490035"
+},
+"e2": {
+"t": "ontem tentei fazer uma compra no mercado livre e foi negada duas vezes, me prejudiquei por era um produto em of…",
+"m": "Suporte · ticket 46791436 · 16/11 · usuário 2416436"
+},
+"e3": {
+"t": "o recarga pay n está aceitando parcelas acima de 3. O próprio aplicativo me diz para realizar uma nova tentativ…",
+"m": "Suporte · ticket 46799662 · 17/11 · usuário 33485863"
+},
+"e68": {
+"t": "Como faço pra ganhar cashback pagando boleto de R$ 20,00 usando saldo da carteira??????????????",
+"m": "Suporte · ticket 46815743 · 20/11 · usuário 22707228"
+},
+"e69": {
+"t": "Já faz uns dias que venho percebendo que pago os boletos e não recebo cashback",
+"m": "Suporte · ticket 46802217 · 18/11 · usuário 24042688"
+},
+"e6a": {
+"t": "nao estou recebendo cash nos pagamentos , quero saber qual o motivo",
+"m": "Suporte · ticket 46795517 · 17/11 · usuário 55062836"
+},
+"e5n": {
+"t": "Eu fazia uma movimentação considerável todo mês, pagava minhas contas pelo aplicativo, tinha limite disponível…",
+"m": "Suporte · ticket 46801672 · 18/11 · usuário 60113641"
+},
+"e5o": {
+"t": "há mais de 1 mês que minha esposa tá tentando acessar o App, mas não consegue, e o dinheiro do meu salário ela…",
+"m": "Suporte · ticket 46798865 · 17/11 · usuário 60087644"
+},
+"e5p": {
+"t": "todos os dias recebo e-mail de vocês dizendo que tenho crédito disponível mas quando tento entrar no…",
+"m": "Suporte · ticket 46742951 · 09/11 · usuário 53831733"
+}
+}
+}

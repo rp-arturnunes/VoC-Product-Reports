@@ -1,0 +1,31 @@
+{
+ "semana": {
+  "w": "W47",
+  "ini": "16/11",
+  "fim": "22/11/2026",
+  "pub": "23/11/2026",
+  "modelo": "Sonnet (rotina semanal)"
+ },
+ "pulso": "W47 parcial (dados até 21/11): NPS Transacional em 65,1 (63,6) e suporte humano em queda na maioria dos produtos, mas o NPS Relacional cai para 37,1 e as redes ficam mais negativas (57%). O Link de Pagamento fica fora do ar após ataque e o fim do cashback segue como principal reclamação em contas, boletos e Top Up. Pix e checkout falham de novo em 22/11.",
+ "atencao": [
+  "Link de Pagamento desligado desde 17/11 após ataque; retorno previsto para 23/11, sem confirmação nos dados.",
+  "Fim do cashback: reclamações de 1 para 39 em dez semanas e NPS do Top Up de 75,5 para 58,4.",
+  "Cartão: compra recusada com limite lidera o suporte humano (+56%).",
+  "Acidente e Renda: vendas e cancelamentos por arrependimento disparam em 19 a 21/11, sem evento que explique.",
+  "Dados até 21/11: o domingo 22/11 ainda não estava consolidado."
+ ],
+ "imagens": {
+  "pix": "https://lh3.googleusercontent.com/d/1LbV6FWjIDl06HSLiGWgTx_oczTbVOr39=w400",
+  "cartao": "https://lh3.googleusercontent.com/d/1G9fI1L4EvwIVDgHTJSDeq-o_rf70eFQd=w400",
+  "emprestimo": "https://lh3.googleusercontent.com/d/1d07zoUjKi3hOieTLWr5O1z8c9IY02Pjh=w400",
+  "t2p": "https://lh3.googleusercontent.com/d/1PxAFlj6fbSoZSzzMmjd1xIzIYhoO3AxA=w400",
+  "link": "https://lh3.googleusercontent.com/d/1coBm8idviYCCIZLG7IFJ1D5T7MfL0omP=w400",
+  "conta": "https://lh3.googleusercontent.com/d/1PiVbmBTFM1AreGRzBT_vKiV5Tw1HSDDS=w400",
+  "seguros": "https://lh3.googleusercontent.com/d/1YAh50j2jrGFmpOc033oHpKAbtB6biDKu=w400",
+  "cdb": "https://lh3.googleusercontent.com/d/1FaWpztB4nKO6EQkegcTUCwPwPIL10EyN=w400",
+  "transp": "https://lh3.googleusercontent.com/d/1IE8ZGjG0ajqNglRXvokaMvLvKnbceVEs=w400",
+  "fraude": "https://lh3.googleusercontent.com/d/17gN8pInhyH3YPvOGwFAfm993U1mxXG63=w400",
+  "boletos": "https://lh3.googleusercontent.com/d/1yXTaRiMbjXzEWGWFyTaeDAW5rkmZgrXp=w400",
+  "topup": "https://lh3.googleusercontent.com/d/1LU1E91gcAthQ3K4Irt5BEDTf-aZgTwr_=w400"
+ }
+}

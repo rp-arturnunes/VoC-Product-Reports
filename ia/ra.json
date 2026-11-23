@@ -19,11 +19,11 @@
    ],
    "det": "Recua 33% na W47 depois do pico da W45 (226, maior marca do período) e de 179 na W46. Cliente diz ter sido cobrado no cartão por parcelas, seguro ou valor resgatado que não reconhece.",
    "ex": [
-    "ra-1",
-    "ra-2",
-    "ra-3",
-    "ra-4",
-    "ra-5"
+    "ehs",
+    "eht",
+    "ehu",
+    "ehv",
+    "ehw"
    ]
   },
   {
@@ -43,11 +43,11 @@
    ],
    "det": "Cai 20% na W47 e volta ao patamar anterior à W45. Cliente diz que pagou o empréstimo e não recebe nova oferta, que o limite de R$ 10 não foi disponibilizado e que cobraram após o pagamento.",
    "ex": [
-    "ra-6",
-    "ra-7",
-    "ra-8",
-    "ra-9",
-    "ra-10"
+    "ehx",
+    "ehy",
+    "ehz",
+    "ei0",
+    "ei1"
    ]
   },
   {
@@ -67,11 +67,11 @@
    ],
    "det": "Recua 22% na W47, mas fica acima das semanas de setembro. Cliente fala de saldo retido há dias, Pix pendente depois da instabilidade e conta bloqueada mesmo depois de pagar a dívida.",
    "ex": [
-    "ra-11",
-    "ra-12",
-    "ra-13",
-    "ra-14",
-    "ra-15"
+    "ei2",
+    "ei3",
+    "ei4",
+    "ei5",
+    "ei6"
    ]
   },
   {
@@ -91,11 +91,11 @@
    ],
    "det": "Dobra na W46 (164) e volta a 76 na W47 (-54%). A alta coincide com as reclamações de 15/11 sobre Pix em instabilidade, em revisão por horas ou pendente.",
    "ex": [
-    "ra-16",
-    "ra-17",
-    "ra-10",
-    "ra-18",
-    "ra-15"
+    "ei7",
+    "ei8",
+    "ei1",
+    "ei9",
+    "ei6"
    ]
   },
   {
@@ -115,11 +115,11 @@
    ],
    "det": "Cai 12% na W47 depois de crescer por seis semanas. Cliente cita app sem funcionar, reconhecimento facial que não passa, cadastro não aprovado e conta PJ inativada.",
    "ex": [
-    "ra-19",
-    "ra-20",
-    "ra-21",
-    "ra-22",
-    "ra-23"
+    "eia",
+    "eib",
+    "eic",
+    "eid",
+    "eie"
    ]
   },
   {
@@ -139,11 +139,11 @@
    ],
    "det": "Cai 32% na W47 depois da alta das W45 e W46. A queixa é \"ninguém resolve\": investimento que não resgata, conta encerrada com dinheiro sumido e suporte que não ajuda em falha do app.",
    "ex": [
-    "ra-24",
-    "ra-25",
-    "ra-26",
-    "ra-27",
-    "ra-28"
+    "eif",
+    "eig",
+    "eih",
+    "eii",
+    "eij"
    ]
   },
   {
@@ -163,11 +163,11 @@
    ],
    "det": "Cai 20% na W47. Pedidos de estorno de compra cancelada, seguro não contratado, cobrança no cartão e compra antecipada sem crédito liberado.",
    "ex": [
-    "ra-29",
-    "ra-30",
-    "ra-31",
-    "ra-32",
-    "ra-33"
+    "eik",
+    "eil",
+    "eim",
+    "ein",
+    "eio"
    ]
   },
   {
@@ -187,11 +187,11 @@
    ],
    "det": "É o único tema estável na W47 (+2%), e fica acima das semanas de setembro. Cliente não reconhece compras e transferências, cita golpe com acesso à conta e contas abertas em nome de terceiros.",
    "ex": [
-    "ra-34",
-    "ra-35",
-    "ra-36",
-    "ra-37",
-    "ra-38"
+    "eip",
+    "eiq",
+    "eir",
+    "eis",
+    "eit"
    ]
   },
   {
@@ -211,11 +211,11 @@
    ],
    "det": "Estável na W47 (22) e na W46 (22), com picos nas W43 e W45. Cliente diz não ter contratado o seguro e pede cancelamento e reembolso.",
    "ex": [
-    "ra-2",
-    "ra-39",
-    "ra-40",
-    "ra-41",
-    "ra-42"
+    "eht",
+    "eiu",
+    "eiv",
+    "eiw",
+    "eix"
    ]
   },
   {
@@ -235,11 +235,11 @@
    ],
    "det": "Estável, com volume pequeno (16 na W47). Cashback prometido que não chegou e boletos falsos ou não recebidos.",
    "ex": [
-    "ra-43",
-    "ra-44",
-    "ra-45",
-    "ra-46",
-    "ra-47"
+    "eiy",
+    "eiz",
+    "ej0",
+    "ej1",
+    "ej2"
    ]
   }
  ]

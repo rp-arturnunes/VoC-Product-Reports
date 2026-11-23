@@ -16,11 +16,11 @@
    "var": "−50%",
    "det": null,
    "ex": [
-    "etp1",
-    "etp2",
-    "etp3",
-    "etp4",
-    "etp5"
+    "e9o",
+    "e9p",
+    "e9q",
+    "e9r",
+    "e9s"
    ]
   },
   {
@@ -30,9 +30,9 @@
    "var": "−50%",
    "det": null,
    "ex": [
-    "etp6",
-    "etp7",
-    "etp8"
+    "e9t",
+    "e9u",
+    "e9v"
    ]
   },
   {
@@ -42,9 +42,9 @@
    "var": "−100%",
    "det": null,
    "ex": [
-    "etp9",
-    "etp10",
-    "etp11"
+    "e9w",
+    "e9x",
+    "e9y"
    ]
   }
  ],
@@ -73,8 +73,8 @@
  ],
  "exemplos": {
   "NPS Transacional": [
-   "etp12",
-   "etp14"
+   "e9z",
+   "ea1"
   ]
  },
  "eventos": [],

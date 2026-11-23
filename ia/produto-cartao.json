@@ -29,12 +29,12 @@
      ]
     ],
     "ex": [
-     "cc-1",
-     "cc-2",
-     "cc-3",
-     "cc-4",
-     "cc-5",
-     "cc-6"
+     "e1",
+     "e2",
+     "e3",
+     "e4",
+     "e5",
+     "e6"
     ]
    },
    "ex": null
@@ -59,12 +59,12 @@
      ]
     ],
     "ex": [
-     "cc-7",
-     "cc-8",
-     "cc-9",
-     "cc-10",
-     "cc-11",
-     "cc-12"
+     "e7",
+     "e8",
+     "e9",
+     "ea",
+     "eb",
+     "ec"
     ]
    },
    "ex": null
@@ -89,12 +89,12 @@
      ]
     ],
     "ex": [
-     "cc-13",
-     "cc-14",
-     "cc-15",
-     "cc-16",
-     "cc-17",
-     "cc-18"
+     "ed",
+     "ee",
+     "ef",
+     "eg",
+     "eh",
+     "ei"
     ]
    },
    "ex": null
@@ -119,12 +119,12 @@
      ]
     ],
     "ex": [
-     "cc-19",
-     "cc-20",
-     "cc-21",
-     "cc-22",
-     "cc-23",
-     "cc-24"
+     "ej",
+     "ek",
+     "el",
+     "em",
+     "en",
+     "eo"
     ]
    },
    "ex": null
@@ -162,32 +162,32 @@
  ],
  "exemplos": {
   "Suporte": [
-   "cc-1",
-   "cc-7",
-   "cc-20"
+   "e1",
+   "e7",
+   "ek"
   ],
   "NPS Transacional": [
-   "cc-25",
-   "cc-28",
-   "cc-34"
+   "ep",
+   "es",
+   "ey"
   ],
   "Lojas": [
-   "cc-37",
-   "cc-39",
-   "cc-40"
+   "e11",
+   "e13",
+   "e14"
   ],
   "Redes": [
-   "cc-44",
-   "cc-45",
-   "cc-46"
+   "e18",
+   "e19",
+   "e1a"
   ]
  },
  "mencoes": {
   "texto": "Nas lojas, o Cartão aparece em 21 avaliações em 16/11 a 21/11 (28 em 09/11 a 14/11) e só 19% são positivas (32%): anuidade, fatura com valor descontado e cartão físico que não chegou. Nas redes são 21 interações, 90% negativas (78%), com fatura paga por empréstimo que o cliente diz não ter autorizado, compra parcelada recusada e juros do cartão. No Reclame Aqui, as reclamações sobre cartão, fatura e anuidade caem 47% (68 contra 129), com anuidade em cartão bloqueado, assinatura recusada e fatura após empréstimo ou venda do Tap to Pay.",
   "ra": [
-   "cc-50",
-   "cc-51",
-   "cc-52"
+   "e1e",
+   "e1f",
+   "e1g"
   ]
  },
  "eventos": [

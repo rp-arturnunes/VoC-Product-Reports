@@ -29,12 +29,12 @@
      ]
     ],
     "ex": [
-     "t2p-1",
-     "t2p-2",
-     "t2p-3",
-     "t2p-4",
-     "t2p-5",
-     "t2p-6"
+     "ed4",
+     "ed5",
+     "ed6",
+     "ed7",
+     "ed8",
+     "ed9"
     ]
    },
    "ex": null
@@ -59,12 +59,12 @@
      ]
     ],
     "ex": [
-     "t2p-10",
-     "t2p-11",
-     "t2p-12",
-     "t2p-13",
-     "t2p-14",
-     "t2p-15"
+     "edd",
+     "ede",
+     "edf",
+     "edg",
+     "edh",
+     "edi"
     ]
    },
    "ex": null
@@ -89,12 +89,12 @@
      ]
     ],
     "ex": [
-     "t2p-17",
-     "t2p-18",
-     "t2p-19",
-     "t2p-20",
-     "t2p-21",
-     "t2p-22"
+     "edk",
+     "edl",
+     "edm",
+     "edn",
+     "edo",
+     "edp"
     ]
    },
    "ex": null
@@ -119,11 +119,11 @@
      ]
     ],
     "ex": [
-     "t2p-24",
-     "t2p-25",
-     "t2p-26",
-     "t2p-27",
-     "t2p-28"
+     "edr",
+     "eds",
+     "edt",
+     "edu",
+     "edv"
     ]
    },
    "ex": null
@@ -173,20 +173,20 @@
  ],
  "exemplos": {
   "NPS Transacional": [
-   "t2p-41",
-   "t2p-37"
+   "ee8",
+   "ee4"
   ],
   "Reclame Aqui": [
-   "t2p-47",
-   "t2p-48"
+   "eee",
+   "eef"
   ]
  },
  "mencoes": {
   "texto": "O Tap to Pay tem pouca presença nas lojas de apps: 1 avaliação na W47, negativa. Nas redes, 5 menções (40% negativas, contra 25% na W46); como o Buzzmonitor classifica mal o sentimento, vale mais o volume que o tom. No Reclame Aqui há 13 reclamações até 21/11 contra 28 na semana anterior inteira, e os temas são os mesmos do suporte: venda que virou limite ou fatura do Cartão Empreendedor, venda rejeitada com cliente debitado e estorno demorado.",
   "ra": [
-   "t2p-47",
-   "t2p-48",
-   "t2p-50"
+   "eee",
+   "eef",
+   "eeh"
   ]
  },
  "jornada": {

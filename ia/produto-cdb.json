@@ -1,0 +1,202 @@
+{
+ "analise": {
+  "clientes": "Quem investiu em CDB quer o dinheiro antes do vencimento: 96% dos contatos de Suporte humano do produto têm a causa raiz de resgate antecipado, muitas vezes por prazo fechado que o cliente diz não ter visto. Em W47 surgem relatos de CDB reinvestido no vencimento e indisponível para resgate. NPS Transacional em 68,1 e CSAT Suporte humano em 80,0%; quem comenta no NPS pede taxa maior e acha o app confuso. Nas redes, um post fala de reaplicação a 103% do CDI sem autorização.",
+  "mudou": "Suporte humano cai 5,0% (dados até 21/11, contra os mesmos 6 dias da W46). Resgate antecipado cai 9%; \"Não recebi o valor do CDB\" sobe de 5 para 13 e \"Problemas ao contratar o CDB\" de 2 para 6. NPS Transacional vai de 70,0 para 68,1 e o CSAT Suporte humano de 79,4% para 80,0%. Nenhuma avaliação de loja cita investimento em W47 (2 no mesmo período da W46) e o Reclame Aqui não tem reclamação de CDB (3 antes).",
+  "atencao": [
+   "CDB reinvestido no vencimento e indisponível para resgate aparece em dois tickets (17 e 18/11) e em post de 19/11; nenhuma fonte lida confirma a regra do produto.",
+   "Taxa de 110% para 103% do CDI citada no NPS Transacional (18/11, nota 2) coincide com a opção de 107% diário não aparecer em nova aplicação (tickets de 18 e 19/11).",
+   "\"Não recebi o valor do CDB\" sobe 160%, com relatos de 16 e 17/11 de resgate que saiu do investimento e não entrou na carteira."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Quer resgatar CDB antes do vencimento",
+   "n": 135,
+   "ant": 149,
+   "var": "−9%",
+   "det": {
+    "res": "Quem aplicou em CDB de prazo fechado pede o dinheiro antes do vencimento, por engano de prazo ou por precisar do valor; 96% dos contatos têm a causa raiz \"solicita resgate antecipado\".",
+    "dor": [
+     "<b>Aplicou sem ver o prazo:</b> investiu 150 reais por engano em CDB de 110% e ficou com o dinheiro travado (ticket 46788861); outro aceita perder rendimento para ter 100 reais hoje (ticket 46787955).",
+     "<b>Regra sem explicação prévia:</b> \"Vocês estão explicando AGORA! Antes não foi explicado\", com ameaça de ouvidoria e processo (ticket 46798668).",
+     "<b>Liquidez que muda:</b> resgate que estava disponível num dia passa para o dia seguinte (ticket 46786720)."
+    ],
+    "exp": "Resgatar o CDB antes do prazo sabendo, antes de aplicar, a regra e o que se perde.",
+    "falha": [
+     [
+      "Produto",
+      "Clientes dizem não ter visto o prazo fechado na aplicação e só o descobrem no atendimento."
+     ]
+    ],
+    "ex": [
+     "e1l",
+     "e1m",
+     "e1n",
+     "e1o",
+     "e1p",
+     "e1q"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Dúvidas sobre resgate de CDB de liquidez diária",
+   "n": 15,
+   "ant": 17,
+   "var": "−12%",
+   "det": {
+    "res": "O cliente com liquidez diária não vê o resgate disponível, ou resgata e o valor não entra; aparece também CDB que venceu e foi reinvestido, ficando indisponível.",
+    "dor": [
+     "<b>Reinvestido no vencimento:</b> investimento que venceu foi reinvestido em outro CDB e ficou indisponível (tickets 46795835 e 46804172).",
+     "<b>Resgate que não entra:</b> \"resgatei o investimento só q não caiu até hj\" (ticket 46797856).",
+     "<b>Sem explicação:</b> o atendimento não explicou por que o resgate do CDB diário não estava disponível nem encaminhou a quem resolve (ticket 46805237)."
+    ],
+    "exp": "Ver quando o resgate do CDB diário fica disponível e receber o valor no prazo informado.",
+    "falha": [
+     [
+      "Produto",
+      "Há relatos de CDB reinvestido no vencimento sem que o cliente esperasse, e ele só descobre ao tentar resgatar."
+     ]
+    ],
+    "ex": [
+     "e1r",
+     "e1s",
+     "e1t",
+     "e1u",
+     "e1v",
+     "e1w"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Não recebi o valor do CDB",
+   "n": 13,
+   "ant": 5,
+   "var": "+160%",
+   "det": {
+    "res": "Resgate ou vencimento feito e o valor não aparece na carteira: relatos de 16 e 17/11 de dinheiro que já saiu do investimento e não chegou.",
+    "dor": [
+     "<b>Vencimento sem crédito:</b> vencimento do CDB Titan e dinheiro que não chega à carteira (ticket 46787112).",
+     "<b>Resgate pendente:</b> resgate pedido às 8:30 segue pendente no fim do dia (ticket 46794629).",
+     "<b>Prazo do vencimento:</b> cliente confirma se recebe em até 2 dias úteis após o vencimento (ticket 46790342)."
+    ],
+    "exp": "Receber o valor do CDB na carteira no prazo e ver o status do resgate.",
+    "falha": [
+     [
+      "Produto",
+      "O app não mostra o status do resgate entre a saída do investimento e a entrada na carteira."
+     ]
+    ],
+    "ex": [
+     "e1x",
+     "e1y",
+     "e1z",
+     "e20",
+     "e21"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Dúvidas na contratação do CDB",
+   "n": 11,
+   "ant": 12,
+   "var": "−8%",
+   "det": {
+    "res": "Quem já tem CDB não vê a opção de liquidez diária a 107% em nova aplicação e pergunta se pode somar valores ao mesmo CDB; a contratação ligada ao cartão também gera dúvida.",
+    "dor": [
+     "<b>Opção que some:</b> cliente com CDB diário de 107% só vê 103% diário e 110% por 12 meses numa nova aplicação (ticket 46803453).",
+     "<b>Condição de valor:</b> foi informado que precisava de mais de mil reais na conta para a opção aparecer (ticket 46808689).",
+     "<b>Cartão:</b> cartão Titan recusando compras com limite investido no CDB Titan (ticket 46792735)."
+    ],
+    "exp": "Saber quais CDBs pode contratar e se pode aportar no mesmo.",
+    "falha": [
+     [
+      "Produto",
+      "A oferta de CDB muda entre aplicações do mesmo cliente sem explicação visível."
+     ]
+    ],
+    "ex": [
+     "e22",
+     "e23",
+     "e24",
+     "e25",
+     "e26",
+     "e27"
+    ]
+   },
+   "ex": null
+  }
+ ],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Taxa e rendimento do CDB",
+   "n": 2,
+   "tom": "neg",
+   "x": "Queda da taxa de 110% para 103% do CDI deixa o CDB menos atrativo para quem pensa em migrar para LCI de outro banco; outro cliente pede ganho maior."
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Experiência com o investimento",
+   "n": 10,
+   "tom": "pos",
+   "x": "Quem aplicou elogia (\"exatamente o que eu esperava de um CDB\"), muitos na primeira aplicação e ainda sem avaliar o rendimento."
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "App confuso",
+   "n": 3,
+   "tom": "mix",
+   "x": "Muitos caminhos e botões que levam às mesmas telas; quem está se adaptando diz ainda ficar confuso."
+  },
+  {
+   "canal": "Redes",
+   "t": "Reaplicação sem autorização",
+   "n": 1,
+   "tom": "neg",
+   "x": "Post de 19/11 diz que o investimento foi reaplicado sem permissão a 103% do CDI e pede retirar o dinheiro."
+  }
+ ],
+ "eventos": [
+  {
+   "d": "15/11",
+   "tag": "Incidente",
+   "t": "Instabilidade no app: 412 tickets de Suporte humano em 15/11 (domingo); avaliação de loja do mesmo dia diz que não consegue pagar nem receber e ainda tem dinheiro no investimento."
+  },
+  {
+   "d": "17/11",
+   "tag": "Produto",
+   "t": "Tickets de 17 e 18/11 e post de 19/11 relatam CDB reinvestido no vencimento e indisponível para resgate; sem comunicado de produto lido que confirme a regra."
+  },
+  {
+   "d": "18/11",
+   "tag": "Produto",
+   "t": "NPS Transacional (18/11, nota 2) cita taxa de 110% caindo para 103% do CDI; tickets de 18 e 19/11 dizem que a opção de 107% diário não aparece em nova aplicação."
+  }
+ ],
+ "exemplos": {
+  "NPS Transacional": [
+   "e28",
+   "e2a"
+  ],
+  "Lojas": [
+   "e2c",
+   "e2d"
+  ],
+  "Redes": [
+   "e2e"
+  ]
+ },
+ "mencoes": {
+  "texto": "Nas lojas, nenhuma avaliação cita investimento em W47 (2 no mesmo período da W46, ambas negativas: prazo maior no CDB Titan e instabilidade do app com dinheiro investido). Nas redes, o post relevante de 19/11 relata reaplicação a 103% do CDI sem autorização. No Reclame Aqui, nenhuma reclamação de CDB em W47 (3 na W46). No NPS Transacional, em 68,1, quem comenta elogia o investimento e pede taxa maior.",
+  "ra": []
+ },
+ "jornada": {
+  "aplicacao": "199 comentários (65% do produto) nos últimos 30 dias, 35% positivos, abaixo da média do produto (41%); o NPS de 17/11 acha o app confuso para chegar aos valores.",
+  "cartao": "156 comentários (51% do produto), 31% positivos, abaixo da média (41%); resgate ligado ao limite do cartão Titan aparece em ticket de 16/11 (cartão recusando compras com limite investido).",
+  "rendimento": "107 comentários (35% do produto), 31% positivos, abaixo da média (41%); taxa de 110% para 103% do CDI citada no NPS de 18/11.",
+  "resgate": "32 comentários (10% do produto), 3% positivos (1 de 32), muito abaixo da média (41%); tickets de 16 a 18/11 relatam resgate pendente e CDB reinvestido."
+ }
+}

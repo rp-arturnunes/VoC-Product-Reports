@@ -29,12 +29,12 @@
      ]
     ],
     "ex": [
-     "pix-1",
-     "pix-2",
-     "pix-3",
-     "pix-4",
-     "pix-5",
-     "pix-6"
+     "eab",
+     "eac",
+     "ead",
+     "eae",
+     "eaf",
+     "eag"
     ]
    },
    "ex": null
@@ -59,12 +59,12 @@
      ]
     ],
     "ex": [
-     "pix-10",
-     "pix-11",
-     "pix-12",
-     "pix-13",
-     "pix-14",
-     "pix-16"
+     "eak",
+     "eal",
+     "eam",
+     "ean",
+     "eao",
+     "eaq"
     ]
    },
    "ex": null
@@ -89,12 +89,12 @@
      ]
     ],
     "ex": [
-     "pix-24",
-     "pix-25",
-     "pix-26",
-     "pix-27",
-     "pix-28",
-     "pix-29"
+     "eay",
+     "eaz",
+     "eb0",
+     "eb1",
+     "eb2",
+     "eb3"
     ]
    },
    "ex": null
@@ -119,12 +119,12 @@
      ]
     ],
     "ex": [
-     "pix-18",
-     "pix-19",
-     "pix-20",
-     "pix-21",
-     "pix-22",
-     "pix-23"
+     "eas",
+     "eat",
+     "eau",
+     "eav",
+     "eaw",
+     "eax"
     ]
    },
    "ex": null
@@ -162,31 +162,31 @@
  ],
  "exemplos": {
   "Suporte": [
-   "pix-1",
-   "pix-10"
+   "eab",
+   "eak"
   ],
   "NPS Transacional": [
-   "pix-40",
-   "pix-44"
+   "eb7",
+   "ebb"
   ],
   "NPS Relacional": [
-   "pix-47"
+   "ebe"
   ],
   "Lojas": [
-   "pix-50",
-   "pix-51"
+   "ebg",
+   "ebh"
   ],
   "Redes": [
-   "pix-61",
-   "pix-62"
+   "ebm",
+   "ebn"
   ]
  },
  "mencoes": {
   "texto": "Nas lojas, o Pix aparece em 15 avaliações em W47 (61 na W46, semana da instabilidade) e 13% são positivas (11% na W46), sobre taxa, seguro Pix e Pix negado com saldo. Nas redes, 16 interações com 88% negativas (64% na W46); as de 22/11 citam Pix sem funcionar. No NPS, o Pix Out CC tem comentários de taxa de 4,99% e golpe contestado sem devolução. No Reclame Aqui, 79 reclamações citam Pix em W47 (179 na W46), sobre contestação recusada, Pix com cartão sem cancelamento e selfie que trava transferências.",
   "ra": [
-   "pix-70",
-   "pix-71",
-   "pix-72"
+   "ebq",
+   "ebr",
+   "ebs"
   ]
  },
  "eventos": [
@@ -244,11 +244,11 @@
        ]
       ],
       "ex": [
-       "pix-10",
-       "pix-11",
-       "pix-15",
-       "pix-17",
-       "pix-32"
+       "eak",
+       "eal",
+       "eap",
+       "ear",
+       "eb6"
       ]
      },
      "ex": null
@@ -265,8 +265,8 @@
    ],
    "exemplos": {
     "Suporte": [
-     "pix-10",
-     "pix-11"
+     "eak",
+     "eal"
     ]
    },
    "eventos": []
@@ -291,16 +291,16 @@
    ],
    "exemplos": {
     "Suporte": [
-     "pix-7",
-     "pix-9"
+     "eah",
+     "eaj"
     ],
     "NPS Transacional": [
-     "pix-43",
-     "pix-44",
-     "pix-45"
+     "eba",
+     "ebb",
+     "ebc"
     ],
     "Lojas": [
-     "pix-54"
+     "ebk"
     ]
    },
    "eventos": []
@@ -333,17 +333,17 @@
    ],
    "exemplos": {
     "Suporte": [
-     "pix-2",
-     "pix-4"
+     "eac",
+     "eae"
     ],
     "NPS Transacional": [
-     "pix-40",
-     "pix-41",
-     "pix-42"
+     "eb7",
+     "eb8",
+     "eb9"
     ],
     "Lojas": [
-     "pix-52",
-     "pix-53"
+     "ebi",
+     "ebj"
     ]
    },
    "eventos": []

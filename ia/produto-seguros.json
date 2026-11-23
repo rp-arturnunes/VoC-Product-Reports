@@ -23,12 +23,12 @@
     ],
     "exp": "Receber de volta o valor descontado, sem passos extras.",
     "ex": [
-     "seg-1",
-     "seg-2",
-     "seg-3",
-     "seg-5",
-     "seg-12",
-     "seg-14"
+     "ebt",
+     "ebu",
+     "ebv",
+     "ebx",
+     "ec4",
+     "ec6"
     ],
     "falha": [
      [
@@ -53,12 +53,12 @@
     ],
     "exp": "Cancelar o seguro e deixar de ser cobrado.",
     "ex": [
-     "seg-8",
-     "seg-9",
-     "seg-7",
-     "seg-6",
-     "seg-ar6",
-     "seg-ar10"
+     "ec0",
+     "ec1",
+     "ebz",
+     "eby",
+     "ecd",
+     "ech"
     ],
     "falha": [
      [
@@ -82,11 +82,11 @@
     ],
     "exp": "Ter o pedido de estorno atendido no primeiro contato.",
     "ex": [
-     "seg-anp1",
-     "seg-anp2",
-     "seg-anp3",
-     "seg-anp4",
-     "seg-anp5"
+     "ecq",
+     "ecr",
+     "ecs",
+     "ect",
+     "ecu"
     ]
    },
    "ex": null
@@ -104,10 +104,10 @@
     ],
     "exp": "Encontrar o seguro e o pedido de reembolso no app.",
     "ex": [
-     "seg-doc1",
-     "seg-doc2",
-     "seg-doc3",
-     "seg-doc4"
+     "ecv",
+     "ecw",
+     "ecx",
+     "ecy"
     ]
    },
    "ex": null
@@ -145,20 +145,20 @@
  ],
  "exemplos": {
   "Contatos classificados": [
-   "seg-1",
-   "seg-6",
-   "seg-ar1"
+   "ebt",
+   "eby",
+   "ec8"
   ],
   "Reclame Aqui": [
-   "seg-ra1",
-   "seg-ra2",
-   "seg-ra3"
+   "ecz",
+   "ed0",
+   "ed1"
   ],
   "NPS Relacional": [
-   "seg-nps1"
+   "ed2"
   ],
   "Loja de apps": [
-   "seg-loja1"
+   "ed3"
   ]
  },
  "eventos": [
@@ -171,9 +171,9 @@
  "mencoes": {
   "texto": "Redes sem posts sobre seguro na semana. No Reclame Aqui, 10 reclamações sobre o seguro entre 17 e 21/11 (9 na W46), quase todas dizem não ter contratado a cobrança de R$ 5,99, uma delas com a proposta marcada ao pagar boleto (18/11). Nas lojas de apps, 2 comentários sobre seguro Pix na W47 (5 na W46), nenhum positivo; no NPS Relacional, 1 comentário sobre o seguro embutido no Pix (19/11), contra 6 na W46.",
   "ra": [
-   "seg-ra1",
-   "seg-ra2",
-   "seg-ra3"
+   "ecz",
+   "ed0",
+   "ed1"
   ]
  },
  "jornada": {
@@ -226,21 +226,21 @@
    ],
    "exemplos": {
     "Contatos classificados": [
-     "seg-1",
-     "seg-2",
-     "seg-3",
-     "seg-6",
-     "seg-8",
-     "seg-10"
+     "ebt",
+     "ebu",
+     "ebv",
+     "eby",
+     "ec0",
+     "ec2"
     ]
    },
    "eventos": [],
    "mencoes": {
     "texto": "Redes sem posts sobre seguro na semana. No Reclame Aqui, 10 reclamações sobre o seguro entre 17 e 21/11 (9 na W46), quase todas dizem não ter contratado a cobrança de R$ 5,99, uma delas com a proposta marcada ao pagar boleto (18/11). Nas lojas de apps, 2 comentários sobre seguro Pix na W47 (5 na W46), nenhum positivo; no NPS Relacional, 1 comentário sobre o seguro embutido no Pix (19/11), contra 6 na W46.",
     "ra": [
-     "seg-ra1",
-     "seg-ra2",
-     "seg-ra3"
+     "ecz",
+     "ed0",
+     "ed1"
     ]
    }
   },
@@ -286,12 +286,12 @@
    ],
    "exemplos": {
     "Contatos classificados": [
-     "seg-ar1",
-     "seg-ar2",
-     "seg-ar3",
-     "seg-ar5",
-     "seg-ar6",
-     "seg-ar7"
+     "ec8",
+     "ec9",
+     "eca",
+     "ecc",
+     "ecd",
+     "ece"
     ]
    },
    "motivos": [],
@@ -334,12 +334,12 @@
    ],
    "exemplos": {
     "Suporte humano": [
-     "seg-emp1",
-     "seg-emp2",
-     "seg-emp3",
-     "seg-emp4",
-     "seg-emp5",
-     "seg-emp6"
+     "eci",
+     "ecj",
+     "eck",
+     "ecl",
+     "ecm",
+     "ecn"
     ]
    },
    "motivos": [
@@ -349,11 +349,11 @@
      "ant": 2,
      "var": "+50%",
      "ex": [
-      "seg-emp1",
-      "seg-emp2",
-      "seg-emp5",
-      "seg-emp6",
-      "seg-emp8"
+      "eci",
+      "ecj",
+      "ecm",
+      "ecn",
+      "ecp"
      ]
     },
     {
@@ -362,8 +362,8 @@
      "ant": 2,
      "var": "0%",
      "ex": [
-      "seg-emp3",
-      "seg-emp4"
+      "eck",
+      "ecl"
      ]
     }
    ],
