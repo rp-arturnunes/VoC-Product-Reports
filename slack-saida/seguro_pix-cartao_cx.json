@@ -1,0 +1,12 @@
+{
+ "canal": "#seguro_pix-cartão_cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Seguros · Semana 47 · 16/11–22/11/2026\n**Acidente e Renda dispara: apólices +159% e cancelamentos por arrependimento +255% entre 19 e 21/11, sem evento que explique**\nO suporte humano de Seguros sobe 5% (16 a 21/11 contra 09 a 14/11); os contatos sobre seguro caem 5% no conjunto.\nNa thread: um resumo, os destaques da semana e as menções de cada produto (Seguros).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Seguros",
+   "chave": "seguros",
+   "texto": "**Seguros**\n**Resumo:** O suporte humano da vertical sobe 5% frente aos mesmos 6 dias da W46 e o CSAT fica em 78,3% (dados até 20/11). Em Pix e Cartão, os contatos caem 7%; em Acidente e Renda sobem 42%, em base pequena; no seguro prestamista do Empréstimo, a adesão fica em 44% dos elegíveis (47% antes).\n**Destaques da semana:**\n• Acidente e Renda: venda diária de cerca de 500 para entre 1,5 mil e 2,7 mil em 19 a 21/11 e 95% dos cancelamentos pedidos no prazo de arrependimento. Nenhum evento correlato no Slack nem nos reports. Em apuração.\n• Quem procura o atendimento quer o dinheiro de volta: 69% contestam a contratação e 71% pedem estorno. Sem solução registrada.\n• Atendimento não prestado sobe de 2 para 5 tickets.\n**Menções:**\n• Reclame Aqui: 10 reclamações (9 na W46), quase todas dizem não ter contratado a cobrança de R$ 5,99.\n• Lojas: 2 comentários sobre seguro Pix, nenhum positivo.\n• Redes: sem posts sobre seguro na semana.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=seguros/rep|Ver no Report de Seguros>"
+  }
+ ]
+}

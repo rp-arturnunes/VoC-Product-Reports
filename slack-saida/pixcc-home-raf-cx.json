@@ -1,0 +1,17 @@
+{
+ "canal": "#pixcc-home-raf-cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Pix e Pix CC · Semana 47 · 16/11–22/11/2026\n**O suporte humano de Pix cai 30,4% sobre a semana do pico de 15/11, mas Pix e checkout falham de novo em 22/11**\nPix In −52,5%, Pix Out −29,1%, Pix Out Wallet −14,3% e Pix CC −43,3% (16 a 21/11 contra 09 a 14/11).\nNa thread: um resumo, os destaques da semana e as menções de cada produto (Pix e Pix CC).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Pix",
+   "chave": "pix",
+   "texto": "**Pix**\n**Resumo:** O suporte humano de Pix cai 30,4% frente aos mesmos 6 dias da W46, que incluiu o pico de instabilidade de 15/11. O NPS Transacional é 59,3 no Pix Out Wallet (62,5 na W46) e o CSAT do atendimento de Pix 46,3% (65,7%), em base pequena.\n**Destaques da semana:**\n• Instabilidade de 22/11: Pix e checkout falham de 00h18 a 03h21 com queda de 34% nas aprovações (Slack); o dia fica fora da série consolidada e o efeito não foi medido. Resolvido às 03h21.\n• \"Não consegue realizar o Pix\" cai 39%; os relatos envolvem sobretudo Pix pago com cartão pendente ou recusado com limite já usado. Em acompanhamento.\n**Menções:**\n• Lojas: 15 avaliações citando Pix (61 na W46), 13% positivas.\n• Redes: 16 interações, 88% negativas (64%); as de 22/11 citam Pix sem funcionar.\n• Reclame Aqui: 79 reclamações (179 na W46).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=pix/rep|Ver no Report de Pix>"
+  },
+  {
+   "produto": "Pix CC",
+   "chave": "pix/cartao",
+   "texto": "**Pix CC**\n**Resumo:** O suporte humano de Pix CC cai 43,3% e o NPS Transacional do Pix Out CC fica estável em 67,6.\n**Destaques da semana:**\n• Taxa de 4,99% e Google Pay e Apple Pay (antes 3,99%) seguem nos comentários do NPS. Em acompanhamento.\n• Golpe contestado sem devolução aparece nos comentários. Sem registro de solução.\n**Menções:**\n• NPS Transacional: comentários sobre a taxa de 4,99% e golpe contestado sem devolução.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=pix/cartao/rep|Ver no Report de Pix CC>"
+  }
+ ]
+}

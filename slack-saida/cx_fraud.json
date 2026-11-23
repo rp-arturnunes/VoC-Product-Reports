@@ -1,0 +1,22 @@
+{
+ "canal": "#cx_fraud",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Bloqueios e fraude · Semana 47 · 16/11–22/11/2026\n**O suporte humano de Bloqueios cai 34,5%, mas o saldo parcialmente bloqueado sobe 32% e o CSAT segue baixo**\nCarteira Desativada −37,8%, Conta Desativada −39,3% e Chargeback Recovery −15,8% (16 a 21/11 contra 09 a 14/11).\nNa thread: um resumo, os destaques da semana e as menções de cada produto (Conta Desativada, Carteira Desativada e Chargeback Recovery).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Conta Desativada",
+   "chave": "fraude/conta desativada",
+   "texto": "**Conta Desativada**\n**Resumo:** O suporte humano de Conta Desativada cai 39,3% frente aos mesmos 6 dias da W46, com segurança no cadastro −38%, encerramento −37% e denúncia de fraude −56%. O CSAT do suporte humano fica em 31,3% (23,8% na W46).\n**Destaques da semana:**\n• Golpes, invasão e conta aberta com dados de terceiros lideram os contatos; quem recebe aviso de encerramento não entende o motivo. Sem registro de solução.\n• A regra de validação de celular roubado e invasão passou a checar 2 dos 5 dados em 18/11 (Slack); efeito ainda não medido. Em acompanhamento.\n**Menções:**\n• Reclame Aqui: conta suspensa, abertura reprovada e chave Pix marcada como suspeita.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=fraude/conta%20desativada/rep|Ver no Report de Conta Desativada>"
+  },
+  {
+   "produto": "Carteira Desativada",
+   "chave": "fraude/carteira desativada",
+   "texto": "**Carteira Desativada**\n**Resumo:** O suporte humano de Carteira Desativada cai 37,8%, com saldo todo bloqueado −47% e parte do saldo +32% (ofícios judiciais e venda no Tap to Pay). O CSAT vai de 56,8% para 63,4%.\n**Destaques da semana:**\n• Saldo parcial bloqueado: a única linha em alta; os relatos citam ofício judicial e venda no Tap to Pay que cai menor. Parcialmente resolvido: o fix da rotina de desbloqueio de carteiras em 17/11 coincide com queda de cerca de 52% nos contatos de saldo bloqueado (Slack).\n• Prazo de desbloqueio vencido aparece em lojas e Reclame Aqui. Sem registro de solução.\n**Menções:**\n• Lojas: 6 avaliações de bloqueio ou encerramento, nenhuma positiva (3 na W46).\n• Redes: 4 posts, todos negativos (14 na W46).\n• Reclame Aqui: 20 reclamações contra 48 no mesmo período da W46.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=fraude/carteira%20desativada/rep|Ver no Report de Carteira Desativada>"
+  },
+  {
+   "produto": "Chargeback Recovery",
+   "chave": "fraude/chargeback recovery",
+   "texto": "**Chargeback Recovery**\n**Resumo:** O suporte humano de Chargeback Recovery cai 15,8%, com \"não entende ou concorda com a cobrança\" −11% e \"precisa de ajuda para resolver\" +11%. O CSAT vai de 44,8% para 52,0%.\n**Destaques da semana:**\n• Pix e saque bloqueados por contestação em aberto: parte diz já ter pago e outros não reconhecem a contestação. Sem registro de solução.\n• Pedido de ajuda para resolver cresce. Em acompanhamento.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=fraude/chargeback%20recovery/rep|Ver no Report de Chargeback Recovery>"
+  }
+ ]
+}

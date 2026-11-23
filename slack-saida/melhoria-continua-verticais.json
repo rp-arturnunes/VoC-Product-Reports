@@ -1,0 +1,22 @@
+{
+ "canal": "#melhoria-continua-verticais",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Transporte, Contas e Boletos e Recarga · Semana 47 · 16/11–22/11/2026\n**O fim do cashback segue como principal dor em Contas e Boletos e derruba o NPS da Recarga de Celular a 58,4**\nO NPS Transacional de Transporte sobe a 75,5; Contas e Boletos tem queda de 56% no suporte humano (16 a 21/11 contra 09 a 14/11).\nNa thread: um resumo, os destaques da semana e as menções de cada produto (Transporte, Contas e Boletos e Recarga de Celular).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Transporte",
+   "chave": "transporte",
+   "texto": "**Transporte**\n**Resumo:** O suporte humano de Transporte cai 14,9% frente aos mesmos 6 dias da W46 e o NPS Transacional sobe de 70,3 para 75,5. O CSAT tem só 9 respostas (44,4%).\n**Destaques da semana:**\n• \"Recarga realizada e crédito não disponibilizado\" é o maior motivo e fica estável; o relato é de bilhete que mostra sem saldo. Sem registro de solução.\n**Menções:**\n• Lojas: 6 avaliações, 33% positivas.\n• Reclame Aqui: 4 reclamações (6 na W46), sobre recarga em cartão URBS não creditada e saldo que não caiu no bilhete único.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=transporte/rep|Ver no Report de Transporte>"
+  },
+  {
+   "produto": "Contas e Boletos",
+   "chave": "outros/utilities",
+   "texto": "**Contas e Boletos**\n**Resumo:** O suporte humano de Contas e Boletos (com Boleto de Cobrança) cai 56,2% frente aos mesmos 6 dias da W46, com \"não recebi o cashback\" −84% depois do pico seguinte à descontinuação. O NPS Transacional vai de 57,7 para 63,3.\n**Destaques da semana:**\n• Fim do cashback: domina tickets, lojas e NPS; há quem fale em encerrar a conta. Resposta publicada em 16/11 diz que o benefício foi descontinuado, sem previsão de retorno. Sem solução registrada.\n• \"Quero cancelar um pagamento\" sobe 133%. Em apuração.\n**Menções:**\n• Lojas: 4 avaliações, 25% positivas (10 na W46).\n• NPS Transacional: os 7 comentários que citam cashback têm nota até 6.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=outros/utilities/rep|Ver no Report de Contas e Boletos>"
+  },
+  {
+   "produto": "Recarga de Celular",
+   "chave": "outros/topup",
+   "texto": "**Recarga de Celular**\n**Resumo:** O NPS Transacional da Recarga de Celular cai de 75,5 para 58,4, com detratores de 10 para 15. O suporte humano tem base mínima de tickets, sem tendência confiável.\n**Destaques da semana:**\n• Cerca de 18% dos comentários citam cashback ou bonificação; a ligação com o fim do cashback é de tema. Sem solução registrada.\n**Menções:**\n• NPS Transacional: 40 comentários na W47, com elogio à recarga e queixa do fim do cashback em boletos.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=outros/topup/rep|Ver no Report de Recarga de Celular>"
+  }
+ ]
+}

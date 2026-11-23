@@ -1,0 +1,17 @@
+{
+ "canal": "#subacquirer-cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Tap to Pay e Link de Pagamento · Semana 47 · 16/11–22/11/2026\n**O Link de Pagamento fica fora do ar após ataque e o NPS cai a 21,2; o Tap to Pay tem NPS em alta e atraso de pagamento em 22/11**\nLink de Pagamento +13,8% e Tap to Pay −46,2% no suporte humano (16 a 21/11 contra 09 a 14/11).\nNa thread: um resumo, os destaques da semana e as menções de cada produto (Tap to Pay e Link de Pagamento).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Tap to Pay",
+   "chave": "t2p",
+   "texto": "**Tap to Pay**\n**Resumo:** O suporte humano do Tap to Pay cai 46,2% frente aos mesmos 6 dias da W46, com queda em todos os motivos; as transações caem 16,5%. O NPS Transacional vai de 81,2 para 83,3 e o CSAT de 71,0% para 84,2%.\n**Destaques da semana:**\n• \"Não recebeu a venda\" cai 50%; 74% dessas conversas citam cartão, limite ou Cartão Empreendedor. Em acompanhamento.\n• Atraso de pagamento das vendas em 22/11 até 19h34 (Slack); efeito ainda não medido.\n**Menções:**\n• Lojas: 1 avaliação, negativa.\n• Reclame Aqui: 13 reclamações até 21/11 contra 28 na semana anterior inteira.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=t2p/rep|Ver no Report de Tap to Pay>"
+  },
+  {
+   "produto": "Link de Pagamento",
+   "chave": "link",
+   "texto": "**Link de Pagamento**\n**Resumo:** O suporte humano do Link de Pagamento sobe 13,8%, com pico em 18/11, e as transações caem 77%. O NPS Transacional vai de 30,2 para 21,2, em base pequena.\n**Destaques da semana:**\n• Endpoint desligado pelo time de Cyber após ataque (relato em #subacquirer-cx, 18/11); retorno previsto para 23/11. \"Instabilidade no app\" vira o maior motivo, sem registro na semana anterior. Em andamento.\n**Menções:**\n• Reclame Aqui: uma reclamação em 21/11 sobre o aviso \"Em breve\" ao gerar o link.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=link/rep|Ver no Report de Link de Pagamento>"
+  }
+ ]
+}

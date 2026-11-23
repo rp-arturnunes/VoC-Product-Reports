@@ -1,0 +1,12 @@
+{
+ "canal": "#cc-produto-e-cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Cartão de Crédito · Semana 47 · 16/11–22/11/2026\n**O NPS do Cartão sobe a 56,1, mas compra recusada com limite lidera o suporte humano (+56%)**\nO suporte humano do Cartão cai 23,8% (16 a 21/11 contra 09 a 14/11) e o NPS Transacional vai de 45,6 para 56,1.\nNa thread: um resumo, os destaques da semana e as menções de cada produto (Cartão de Crédito).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Cartão de Crédito",
+   "chave": "cartao",
+   "texto": "**Cartão de Crédito**\n**Resumo:** O suporte humano do Cartão cai 23,8% frente aos mesmos 6 dias da W46, após o dia mais alto do mês em 03/11; o NPS Transacional vai de 45,6 para 56,1 (Garantido 44,1 para 56,9; Concedido 52,6 para 58,3) e o CSAT de 75,0% para 70,0%. Garantido cai 33%, Concedido sobe 7% e Investimento 16%.\n**Destaques da semana:**\n• Compra recusada com limite: \"problemas com o uso do cartão\" sobe 56%; mais da metade das conversas cita recusa, inclusive em assinaturas recorrentes e parceladas só em 3 vezes. Recusas antifraude em parceiro de pagamento em curso desde 11/11 (Slack); o relato do cliente não cita o evento. Em apuração.\n• Fatura e bloqueio em queda: \"não entende porque recebeu uma fatura\" cai 38% e \"bloquear ou cancelar\" 53%. Estável.\n• Cashback do cartão: elogios sobem de 22 para 68 na W47. Estável.\n**Menções:**\n• Lojas: 21 avaliações, 19% positivas (32% na W46), sobre anuidade, fatura com valor descontado e cartão físico que não chegou.\n• Redes: 21 interações, 90% negativas (78%).\n• Reclame Aqui: reclamações de cartão, fatura e anuidade caem 47%.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=cartao/rep|Ver no Report de Cartão de Crédito>"
+  }
+ ]
+}

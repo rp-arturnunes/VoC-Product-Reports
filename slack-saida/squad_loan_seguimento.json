@@ -1,0 +1,17 @@
+{
+ "canal": "#squad_loan_seguimento",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Empréstimo · Semana 47 · 16/11–22/11/2026\n**O suporte humano de Empréstimo cai cerca de 25%, mas o contato migra para limite após quitar e cobrança automática**\nEmpréstimo Pessoal −24% e Consignado −26% (16 a 21/11 contra 09 a 14/11); NPS Transacional em 65,3 (63,9).\nNa thread: um resumo, os destaques da semana e as menções de cada produto (Empréstimo Pessoal e Empréstimo Consignado).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Empréstimo Pessoal",
+   "chave": "emprestimo/pessoal",
+   "texto": "**Empréstimo Pessoal**\n**Resumo:** O suporte humano de Empréstimo Pessoal cai 24% frente aos mesmos 6 dias da W46. O NPS Transacional dos empréstimos vai de 63,9 para 65,3 e o CSAT de 63,1% para 59,8%.\n**Destaques da semana:**\n• Limite que cai ou fica em R$ 10 após quitar e débito automático do cartão cadastrado em atraso são os novos relatos. Sem solução registrada.\n• Manutenção e virada da Matera em 18/11 coincide com a semana; falhas de parcelas por certificado do BTG em 16 e 17/11 (Slack). Sem relação confirmada com os contatos.\n**Menções:**\n• Lojas: 21 avaliações (41 na W46), 29% positivas.\n• Reclame Aqui: 108 reclamações até 21/11 contra 163 na W46; as resolvidas vão de 20 para 7.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=emprestimo/pessoal/rep|Ver no Report de Empréstimo Pessoal>"
+  },
+  {
+   "produto": "Empréstimo Consignado",
+   "chave": "emprestimo/consignado",
+   "texto": "**Empréstimo Consignado**\n**Resumo:** O suporte humano de Empréstimo Consignado cai 26% frente aos mesmos 6 dias da W46, em base pequena.\n**Destaques da semana:**\n• No Reclame Aqui aparece consignado assinado que desaparece do app. Sem solução registrada.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=emprestimo/consignado/rep|Ver no Report de Empréstimo Consignado>"
+  }
+ ]
+}

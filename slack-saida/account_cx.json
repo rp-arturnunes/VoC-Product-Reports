@@ -1,0 +1,12 @@
+{
+ "canal": "#account_cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Minha Conta · Semana 47 · 16/11–22/11/2026\n**Minha Conta tem menos contatos, mas selfie e validação travam o acesso e o atendimento não prestado sobe 56%**\nO suporte humano cai 22,5% (16 a 21/11 contra 09 a 14/11); \"não consegue validar seu cadastro\" sobe 13%.\nNa thread: um resumo, os destaques da semana e as menções de cada produto (Minha Conta).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "Minha Conta",
+   "chave": "account",
+   "texto": "**Minha Conta**\n**Resumo:** O suporte humano de Minha Conta cai 22,5% frente aos mesmos 6 dias da W46, com acesso ao cadastro −32% e encerramento −29%. O CSAT do suporte humano fica em 34,8% (8 de 23 respostas) contra 88,9%, em base pequena. O NPS Transacional não existe para o produto.\n**Destaques da semana:**\n• Selfie e validação: \"não consegue validar seu cadastro\" sobe 13%; os relatos falam de reconhecimento facial recusado, câmera que não abre e falta de alternativa à foto. Sem evento correlato registrado. Sem registro de solução.\n• Atendimento não prestado: sobe 56% no produto. Sem registro de solução.\n• Acesso e cadastro no Reclame Aqui: 6 das 21 reclamações da W47 falam de conta aprovada e depois reprovada.\n**Menções:**\n• Lojas: 5 avaliações sobre cadastro, selfie ou conta, nenhuma positiva (8 na W46).\n• Redes: 3 menções (7 na W46), sobre burocracia para abrir a conta e falta de chat.\n• Reclame Aqui: 21 reclamações (38 na W46); 7 falam de encerramento e permanência no Registrato.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=account/rep|Ver no Report de Minha Conta>"
+  }
+ ]
+}

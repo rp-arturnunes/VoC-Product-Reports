@@ -1,0 +1,22 @@
+{
+ "canal": "#investments-e-cx",
+ "tipo": "produto",
+ "principal": ":bar_chart: Report VoC — Investimentos · Semana 47 · 16/11–22/11/2026\n**O CDB tem menos contatos, mas \"não recebi o valor\" sobe de 5 para 13 na semana em que o CDB 107% saiu do app**\nO suporte humano do CDB cai 5,0% (16 a 21/11 contra 09 a 14/11) e o NPS Transacional fica em 68,1.\nNa thread: um resumo, os destaques da semana e as menções de cada produto (CDB, Rendimento CDI e Movimentações Financeiras).\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=141|Experiência RecargaPay>",
+ "threads": [
+  {
+   "produto": "CDB",
+   "chave": "cdb",
+   "texto": "**CDB**\n**Resumo:** O suporte humano do CDB cai 5,0% frente aos mesmos 6 dias da W46, com resgate antecipado (96% dos contatos) −9%. O NPS Transacional vai de 70,0 para 68,1 e o CSAT de 79,4% para 80,0%.\n**Destaques da semana:**\n• \"Não recebi o valor do CDB\" sobe 160% e \"problemas ao contratar\" de 2 para 6; a saída do CDB 107% do app em 16/11 coincide com a semana, sem relação confirmada. Em apuração.\n• Relatos de CDB reinvestido no vencimento; um post de 19/11 fala em reaplicação a 103% do CDI sem autorização. Sem registro de solução.\n**Menções:**\n• Redes: um post relevante em 19/11 sobre reaplicação sem autorização.\n• NPS Transacional: quem comenta elogia o investimento e pede taxa maior.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=cdb/rep|Ver no Report de CDB>"
+  },
+  {
+   "produto": "Rendimento CDI",
+   "chave": "outros/cashback e rendimento",
+   "texto": "**Rendimento CDI**\n**Resumo:** Rendimento CDI tem base mínima de suporte humano na semana (5 tickets contra 1 na semana comparável da W46), sem tendência confiável.\n**Destaques da semana:**\n• Sem tema novo nem ponto de atenção registrado nos reports e no Slack da semana. Estável.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=outros/cashback%20e%20rendimento/rep|Ver no Report de Rendimento CDI>"
+  },
+  {
+   "produto": "Movimentações Financeiras",
+   "chave": "outros/movimentações financeiras",
+   "texto": "**Movimentações Financeiras**\n**Resumo:** O suporte humano de Movimentações Financeiras cai 39% frente aos mesmos 6 dias da W46.\n**Destaques da semana:**\n• Queda em linha com a maioria dos produtos, que compara com a semana do pico de instabilidade de 15/11. Estável.\n• Sem evento correlato registrado nos reports e no Slack da semana.\n<https://optimus.recargapay.com/PHP/dashboard_view.php?id=156&r=outros/movimentações%20financeiras/rep|Ver no Report de Movimentações Financeiras>"
+  }
+ ]
+}

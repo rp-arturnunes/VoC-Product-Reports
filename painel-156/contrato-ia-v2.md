@@ -15,8 +15,8 @@ A Rotina envia ao Arturito **somente `html` e `rationale_md`**, nunca `js`, `css
 `painel-156/montar_html_painel.py` junta `shell.html` (a estrutura fixa) com os 20 blocos de IA. A Rotina:
 
 1. escreve os JSON em uma pasta `ia/`, um arquivo por bloco (lista abaixo);
-2. roda `python3 painel-156/montar_html_painel.py --ia ia --shell painel-156/shell.html --out html-painel-156.html --max-total 165000`;
-3. corrige o que o validador apontar (até 2 rodadas); o que continuar inválido é **omitido** e o painel mostra "indisponível" só nessa parte;
+2. roda `python3 painel-156/montar_html_painel.py --ia ia --shell painel-156/shell.html --out html-painel-156.html --historico painel-156/historico --semanas-historico 3` (teto de 240 KB);
+3. corrige o que o validador apontar (até 3 ciclos): o montador **não gera** html incompleto (a rotina não publica e avisa; veja "Completude obrigatória");
 4. envia `html-painel-156.html` e `rationale-painel-156.md` com `arturito_update_dashboard`.
 
 O JS nunca quebra por causa da IA: bloco ausente ou com JSON inválido só some, e um aviso no topo lista o que ficou de fora. Se a semana da análise for diferente da semana dos indicadores (por exemplo, entre 9:30 e 10:11 de segunda), o aviso informa os dois.
@@ -46,7 +46,7 @@ Os blocos de IA do html são substituídos por completo a cada rodada, então o 
 - **O que cada semana guarda** (`historico/{W}.json`): `semana`, `pulso`, `resumo` (da seção Destaques), os 15 `destaques` (com no máximo 3 exemplos cada, resolvidos num `exemplos` próprio da semana), e os `eventos` cujo dia cai dentro daquela semana (a lista da rodada cobre 30 dias; cada semana guarda só os seus).
 - **No painel:** um seletor "Semana" acima dos Destaques, da mais antiga para a atual (da esquerda para a direita), que abre sempre na atual (W atual + 3 anteriores). A semana arquivada mostra os 5 cards, os 10 temas em alta, o painel de análise de cada um e a lista "Movimentos da semana". Os indicadores continuam sempre os da semana atual, e a aba "Destaques" de cada produto também.
 - **Custo no html:** ~11 KB por semana arquivada (comprimido). Com 3 semanas anteriores: ~35 KB; com 7: ~85 KB. Teto do montador: 260 KB.
-- **Rotina:** `arquivar_semana.py` (grava a semana da rodada), `extrair_historico.py` (restaura `historico/` a partir de um html publicado) e `montar_html_painel.py --historico historico/ --semanas-historico 3`. A pasta `historico/` guarda todas as semanas; o painel usa as 3 mais recentes antes da atual. Sem histórico, o painel mostra só a semana atual.
+- **Rotina:** `restaurar_historico.py` (junta as semanas de todas as branches do repositório, porque cada rodada empurra para uma branch `claude/*` diferente e nada é mesclado; deriva a semana de branches que só têm o `html-painel-156.html`), `arquivar_semana.py` (grava a semana da rodada), `extrair_historico.py` (restaura a partir de um html publicado) e `montar_html_painel.py --historico historico/ --semanas-historico 3`. A pasta `historico/` guarda todas as semanas; o painel usa as 3 mais recentes antes da atual. Sem histórico, o painel mostra só a semana atual.
 - **Limites:** exige navegador com `DecompressionStream` (Chrome, Edge, Safari 16.4+, Firefox 113+); sem ele o seletor não aparece. As semanas arquivadas guardam 3 exemplos por destaque (a semana atual mostra todos). Vozes, lojas, redes e Reclame Aqui não entram no histórico.
 
 ## Completude obrigatória (toda rodada)
@@ -116,7 +116,7 @@ Os números de cada subproduto saem da query `Seguros Subprodutos`; os exemplos 
 - **Exemplos:** trecho real de até 112 caracteres (corte com …), guardado em `exemplos.json` e citado por id. `m` = canal, id do ticket ou usuário e data (dd/mm). Remova nome, CPF, CNPJ, e-mail, telefone, links e nome de atendente. Para tickets, prefira a **mensagem mais longa do cliente** (as primeiras costumam ser só cliques de menu como "Falar com atendente").
 - **Pelo menos 5 exemplos** em cada destaque, em cada tema de "O que os clientes dizem" e em cada motivo de contato dos produtos (o validador avisa quando faltar). Reaproveite exemplos entre temas parecidos. Se o volume da semana não permitir 5 (motivo com poucos tickets), use todos os que existirem e registre na notificação interna.
 - **Reclame Aqui:** base `prod.cx.fat_hugme_tickets`, pela data da reclamação. O id do cliente na HugMe não é o userId do RecargaPay. Não use "recarga" sozinha para classificar transporte (casa com o nome do RecargaPay); use bilhete, transporte ou ônibus.
-- **Tamanho:** o html completo fica abaixo de 165 KB (o maior tamanho já aceito pelo Arturito é cerca de 167 KB). Os limites acima mantêm o conjunto em cerca de 164 KB (a W45 tem 164 KB). Se a Rotina tiver dificuldade para enviar o html, reduza exemplos e `det` antes de tudo.
+- **Tamanho:** o teto do montador é **240 KB** (o contrato antigo dizia 165 KB; esse número não vale mais). O html completo da W45 tem ~182 KB e a W47 passou de 250 KB com ~690 exemplos. O montador compacta sozinho (exemplos repetidos viram um só id, no máximo 5 por lista, pool só com o que é citado) e encolhe o histórico para caber; se ainda passar do teto, ele lista os maiores blocos. Plano B de publicação: `--compacto` (3 exemplos por lista) e `--semanas-historico 0`. A rotina nunca deixa de tentar publicar por causa do tamanho.
 
 ## Links dos reports
 
