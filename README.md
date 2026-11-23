@@ -1,21 +1,14 @@
-# VoC-Product-Reports — v3.23 (23/11/2026)
-
-Painel 156 (Experiência do Produto) e Rotina única de reports VoC.
+# VoC-Product-Reports — v3.24 (23/11/2026)
 
 | Caminho | O que é | Onde vai |
 |---|---|---|
-| `prompt-rotina-unica.txt` | Prompt v3.23 da rotina semanal | Rotina "Report Produto A" e repositório |
-| `painel-156/` | Contratos, validadores, montador, scripts de histórico, registro dos canais, shell, JS, CSS, 8 queries, documentação, exemplos e `historico/` (semente W45) | Repositório (substitui a pasta inteira) |
-| `publicacao-arturito/` | Pacote de publicação manual do 156 (CSS, JS, queries, documentação, previews). **Não cole o `4-html-inicial.html`**: a rotina já publica o html semanal | Referência; **cole o JS e o CSS novos** |
-| `MUDANCAS-v3.23.md` | O que mudou e o checklist | Repositório |
+| `prompt-rotina-unica.txt` | Prompt v3.24 da rotina semanal | Rotina "Report Produto A" e repositório |
+| `retomar-w47.txt` | Prompt para finalizar a W47 (publicar o painel e enviar o Slack) | Colar numa sessão do Claude Code |
+| `painel-156/` | Contratos, validadores, montador (compacta e ajusta o tamanho), scripts de histórico (`restaurar_historico.py`, `arquivar_semana.py`, `extrair_historico.py`), registro dos canais, shell, JS, CSS, queries, exemplos e `historico/` | Repositório (substitui a pasta inteira) |
+| `publicacao-arturito/` | Pacote de publicação manual do 156. **Não cole o `4-html-inicial.html`** | Referência; JS e CSS novos já devem estar no 156 |
+| `MUDANCAS-v3.24.md` | Causas do travamento da W47 e correções | Repositório |
 
-## v3.23: histórico de 4 semanas nos destaques
-- Seletor de semanas nos Destaques, da mais antiga para a atual (abre na atual), com destaques, exemplos e movimentos arquivados; dados num bloco comprimido do html (~11 KB por semana), sem peso no código (JS +3 KB).
-- Rotina: `historico/` (uma semana por arquivo), `arquivar_semana.py`, `extrair_historico.py` e `montar_html_painel.py --historico`.
-- Veja `painel-156/contrato-ia-v2.md` (seção "Histórico de semanas") e `publicacao-arturito/preview-historico-TESTE.html`.
-
-## Pendente fora deste pacote
-- Colar o novo JS e CSS no dashboard 156.
-- Alinhar `SKILL.md` e `canais.json` (template antigo do Slack, Report Executivo separado, RAF).
-- Repositório mudou de endereço (`rp-arturnunes/VoC-Product-Reports`): conferir referências.
-- Conferir o `ia/` da W46 com `validar_ia.py --completo` e rodar a rotina em `MODO=TESTE`.
+## Antes da próxima segunda-feira
+1. Subir este pacote na `main` do repositório (sem isso a rotina começa do clone antigo e repete os problemas) e colar o prompt v3.24 na rotina.
+2. Finalizar a W47 com `retomar-w47.txt`.
+3. Conferir o `SKILL.md` e o `canais.json` (template antigo do Slack, Report Executivo separado, RAF) e o endereço do repositório (`rp-arturnunes/VoC-Product-Reports`).
