@@ -1,0 +1,189 @@
+{
+ "analise": {
+  "clientes": "Os lojistas ficaram sem o Link de Pagamento a partir de 17/11: o time de Cyber desligou o endpoint depois de um ataque (relato do squad em 18/11) e o app passou a mostrar \"Em breve\". \"Instabilidade no app\" vira o maior motivo, sem registro na semana anterior; os clientes acham que é erro ou restrição na própria conta e perguntam quando volta (retorno previsto para 23/11, segundo o CX). Antes disso, o que mais pesava era o prazo de recebimento: 17 dos 31 comentários do NPS Transacional falam de esperar o próximo dia útil.",
+  "mudou": "Suporte humano sobe 13,8% (W47 parcial, dados até 21/11, contra 09–14/11), com pico em 18/11, e as transações do Link de Pagamento caem 77% no mesmo recorte, sem registro a partir de 18/11. O NPS Transacional vai de 30,2 a 21,2 (33 respostas, base pequena) e o CSAT Suporte humano de 62,5% a 78,6% (14 respostas). \"Não recebeu a venda\" cai 56%.",
+  "atencao": [
+   "Retorno do produto previsto para 23/11 (relato do CX em 19/11); até 21/11 os clientes ainda perguntam quando volta e desconfiam da própria conta (tickets 46801679, 46821005).",
+   "O alerta \"Instabilidade no Link de Pagamento\" da Central de Ajuda ligou em 18/11 e passou do limite de 2h (aviso de 19/11).",
+   "NPS Transacional em 21,2 pts com 33 respostas (uma resposta move ~3 pts); 17 de 31 comentários falam do prazo de recebimento."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Instabilidade no app",
+   "n": 33,
+   "ant": 0,
+   "var": "novo",
+   "det": {
+    "res": "Clientes encontram o Link de Pagamento como \"Em breve\" ou sem abrir e atribuem a erro do app ou da conta; o produto foi desligado pelo time de Cyber (relato do squad em 18/11).",
+    "dor": [
+     "<b>Link indisponível no app:</b> ao gerar, aparece \"EM BREVE\" e o cliente pede a volta (tickets 46812855, 46816351).",
+     "<b>Sem criar links novos:</b> não conseguem gerar links pelo aplicativo (tickets 46811574, 46821463).",
+     "<b>Resgate junto:</b> um cliente relata que o resgate e o link não funcionam (ticket 46814597)."
+    ],
+    "exp": "Saber se o link está fora do ar e quando volta, sem desconfiar da própria conta.",
+    "falha": [
+     [
+      "Produto",
+      "O app mostra \"Em breve\" sem dizer que o produto foi desligado; clientes interpretam como erro ou restrição na conta."
+     ]
+    ],
+    "ex": [
+     "lnk-1",
+     "lnk-2",
+     "lnk-3",
+     "lnk-4",
+     "lnk-5",
+     "lnk-6"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Não recebeu a venda",
+   "n": 18,
+   "ant": 41,
+   "var": "−56%",
+   "det": {
+    "res": "O lojista espera o valor de vendas por link e não sabe quando cai: perguntam do prazo das 13h, venda aprovada que segue \"a receber\" e cliente debitado sem o valor na conta.",
+    "dor": [
+     "<b>Prazo:</b> a venda aprovada fica \"a receber\" e o lojista pergunta se cai até as 13h (tickets 46789583, 46795159).",
+     "<b>Cliente debitado:</b> o cartão do comprador foi cobrado e o valor não chegou (ticket 46788877).",
+     "<b>Cobrança cancelada:</b> venda parcelada aparece como cancelada sem motivo (ticket 46792241)."
+    ],
+    "exp": "Receber na hora ou saber o prazo antes de vender.",
+    "falha": [
+     [
+      "Produto",
+      "O prazo de recebimento (próximo dia útil até 13h) não aparece junto da venda."
+     ]
+    ],
+    "ex": [
+     "lnk-8",
+     "lnk-9",
+     "lnk-10",
+     "lnk-11",
+     "lnk-12",
+     "lnk-13"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Não consegue gerar link de pagamento",
+   "n": 9,
+   "ant": 1,
+   "var": "+800%",
+   "det": {
+    "res": "O lojista não consegue gerar ou usar o link: o produto aparece inativo na conta e links já enviados abrem página de erro para o comprador.",
+    "dor": [
+     "<b>Link inativo:</b> o produto aparece como inativo ou indisponível na conta (tickets 46816533, 46811811).",
+     "<b>Link enviado não abre:</b> o comprador recebe página de erro (tickets 46803583, 46797080).",
+     "<b>Dúvida sobre a conta:</b> perguntam se há restrição no cadastro (ticket 46810386)."
+    ],
+    "exp": "Gerar e enviar o link sem erro.",
+    "falha": [
+     [
+      "Produto",
+      "Links já enviados deixam de abrir para o comprador sem aviso ao lojista."
+     ]
+    ],
+    "ex": [
+     "lnk-15",
+     "lnk-16",
+     "lnk-17",
+     "lnk-18",
+     "lnk-19"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Como funciona o link de pagamento",
+   "n": 7,
+   "ant": 1,
+   "var": "+600%",
+   "det": {
+    "res": "Perguntas sobre quando o link volta, por que a conta não gera mais e como funciona o recebimento de vendas parceladas.",
+    "dor": [
+     "<b>Quando volta:</b> pedem previsão de retorno (tickets 46806545, 46801679).",
+     "<b>Por que parou:</b> querem entender o que acontece com o produto (tickets 46803337, 46821005).",
+     "<b>Recebimento parcelado:</b> querem saber se recebem o valor todo no prazo (ticket 46792062)."
+    ],
+    "exp": "Entender se o produto volta e quando, e como receber vendas parceladas.",
+    "falha": [
+     [
+      "Produto",
+      "Falta uma explicação visível do desligamento e do prazo de volta."
+     ]
+    ],
+    "ex": [
+     "lnk-20",
+     "lnk-21",
+     "lnk-22",
+     "lnk-23",
+     "lnk-24",
+     "lnk-25"
+    ]
+   },
+   "ex": null
+  }
+ ],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Prazo de recebimento",
+   "n": 17,
+   "tom": "neg",
+   "x": "Querem o valor no mesmo dia e reclamam de esperar o próximo dia útil, sobretudo de sexta para segunda. (nota média 5,4 · 12 detratores (0–6))"
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Praticidade do link",
+   "n": 11,
+   "tom": "pos",
+   "x": "Elogio à facilidade de gerar o link e de o cliente pagar. (nota média 8,8 · 2 detratores (0–6))"
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Taxas e juros",
+   "n": 9,
+   "tom": "mix",
+   "x": "Pedem taxas menores e juros visíveis antes da venda. (nota média 7,6 · 4 detratores (0–6))"
+  }
+ ],
+ "eventos": [
+  {
+   "d": "18/11",
+   "tag": "Incidente",
+   "t": "Time de Cyber desliga o endpoint do Link de Pagamento após ataque (relato do squad); app mostra \"Em breve\" e as transações somem a partir de 18/11. Coincide com \"instabilidade no app\" como maior motivo."
+  },
+  {
+   "d": "05/11",
+   "tag": "Incidente",
+   "t": "Regularização do incidente de taxa de 13/10 (INC-16517/16518): crédito de R$ 1.773,36 a 56 usuários; sem registro de conclusão até 21/11."
+  }
+ ],
+ "exemplos": {
+  "NPS Transacional": [
+   "lnk-29",
+   "lnk-31"
+  ],
+  "Suporte humano": [
+   "lnk-1",
+   "lnk-17"
+  ]
+ },
+ "mencoes": {
+  "texto": "O Link de Pagamento quase não aparece nas lojas de apps (nenhuma avaliação na W47). Nas redes, 4 menções (2 negativas), contra 3 na W46; o sentimento do Buzzmonitor é pouco confiável, então vale o volume. No Reclame Aqui, uma reclamação em 21/11 conta o aviso \"Em breve\" ao gerar o link. A voz do cliente vem do NPS Transacional e do suporte.",
+  "ra": [
+   "lnk-37"
+  ]
+ },
+ "jornada": {
+  "recebimento": "23 comentários (39% do produto), 22% positivos, abaixo da média do produto (44%); o prazo do próximo dia útil domina as menções.",
+  "pagamento": "18 comentários (31% do produto), 17% positivos, abaixo da média (44%); no suporte, compradores que não conseguem pagar e, a partir de 17/11, links que não abrem (tickets 46799226, 46796996).",
+  "criar": "12 comentários (20% do produto), 25% positivos, abaixo da média (44%); a partir de 18/11, \"Em breve\" no lugar de gerar o link (ticket 46812855).",
+  "taxas": "7 comentários (12% do produto), 43% positivos, em linha com a média (44%)."
+ }
+}
