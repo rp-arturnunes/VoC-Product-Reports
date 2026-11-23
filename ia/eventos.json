@@ -574,5 +574,149 @@
   "analise": "Entre os tickets humanos, 44% eram de Pix não concluído ou não recebido. Foi de 2,2 a 5 vezes o volume das sextas anteriores no mesmo horário.",
   "marca": "Sem leitura de marca até aqui.",
   "pred": "O efeito residual aparece na W46, junto com a nova queda de Pix."
+ },
+ {
+  "d": "05/11",
+  "t": "Fim do cashback em contas e boletos pagos com saldo",
+  "tipo": "Mudança",
+  "res": "A partir de 05/11 deixam de gerar cashback (PF e PJ). Comunicado por e-mail e push a cerca de 130 mil clientes em 04/11; cashback acumulado preservado.",
+  "imp": [
+   [
+    "Suporte",
+    "Crítico",
+    "Contas e Boletos de 52 para 246 na W45 (pico no dia 05/11); normaliza desde 13/11"
+   ],
+   [
+    "NPS Tx",
+    "Atenção",
+    "NPS de Contas e Boletos cai 11,8 pts na W46"
+   ],
+   [
+    "Lojas",
+    "Em linha",
+    "avaliação do app estável (4,09 contra 4,11), segundo painel de impacto até 16/11"
+   ],
+   [
+    "Redes",
+    "Crítico",
+    "sentimento negativo de 22% para 60% nos primeiros dias, segundo o painel de impacto"
+   ],
+   [
+    "Reputação",
+    "Atenção",
+    "46 de 153 tickets lidos citam saída ou risco de saída"
+   ]
+  ],
+  "analise": "Clientes reclamam de renda perdida, taxa do cartão e aviso na véspera. TPV de Bills com saldo de PJ cai 14% por dia útil contra outubro. O pico de contatos foi pontual e passou em 13/11.",
+  "marca": "Sentimento negativo nas redes subiu de 22% para 60% nos primeiros dias, segundo a fonte.",
+  "pred": "O efeito tende a ficar em NPS e redes; contatos já voltaram ao normal."
+ },
+ {
+  "d": "05/11",
+  "t": "Teste da taxa de 4,99% no Pix com cartão de crédito",
+  "tipo": "Mudança",
+  "res": "Para 50% dos clientes com limite concedido, a taxa passa de 2,99% para 4,99%; clientes na mesma situação podem ver taxas diferentes.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "sem comparação direta: contagem parcial na W45"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Na W45 só 34% dos tickets de Pix Out tinham resumo de conversa, então a comparação com a semana anterior não é direta.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"taxa do Pix com cartão\" em Pix CC."
+ },
+ {
+  "d": "02/11",
+  "t": "Cobrança de R$ 9,90 por inatividade no cartão",
+  "tipo": "Mudança",
+  "res": "Cobrança de 02/11 atingiu cerca de 48,3 mil clientes, quase o dobro dos lotes anteriores; pico de contatos em 03/11, como nas ondas de 08/10, 13/10 e 30/10.",
+  "imp": [
+   [
+    "Suporte",
+    "Crítico",
+    "Cartão +26,7% na W45; \"não entende porque recebeu uma fatura\" de 207 para 367"
+   ],
+   [
+    "NPS Tx",
+    "Crítico",
+    "NPS do Cartão de 52,3 para 41,2 na W45; segue 45,8 na W46, abaixo do mínimo de 55"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Clientes pedem cancelamento, dizem não reconhecer o cartão e reclamam que a cobrança lançada não é estornada. Cancelar o cartão não encerra a conta cartão, e a cobrança continua.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "O efeito residual aparece em \"cancelar o cartão\" e isenção de anuidade nas próximas ondas."
+ },
+ {
+  "d": "29/10",
+  "t": "Login bloqueado fora do Brasil",
+  "tipo": "Mudança",
+  "res": "Desde 29/10 o WAF só aceita acesso do Brasil; quem tenta de outro país vê \"problema com a gente\". Cerca de 2.600 usuários únicos afetados; exceção em avaliação, sem definição em 04/11.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "sem leitura isolada"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Atenção",
+    "reclamações já aparecem nas redes, segundo a fonte"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "A mensagem se parece com falha do próprio RecargaPay. Em #cxm-team consta uma conta de clientes no exterior sem acesso ao app, ainda por concluir.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"não consegue acessar o app\" de Minha Conta."
  }
 ]
