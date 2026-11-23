@@ -5,7 +5,7 @@
 "fim": "22/11/2026",
 "pub": "23/11/2026"
 },
-"pulso": "W47 completa (16 a 22/11): NPS Transacional em 65,1 (63,6) e suporte humano 26% abaixo da W46, que inclui o pico de instabilidade de 15/11. O Link de Pagamento segue fora do ar após ataque, Pix e checkout falham de novo na madrugada de 22/11 (NPS do Pix Out Wallet do dia em 42,2) e o fim do cashback é a principal reclamação em contas e boletos. O NPS Relacional cai a 37,1 e as redes ficam 57% negativas.",
+"pulso": "W47 completa (16 a 22/11): NPS Transacional em 65,1 (63,6) e suporte humano 26% abaixo da W46, que inclui o pico de instabilidade de 15/11. O Link de Pagamento segue fora do ar após ataque, Pix e checkout falham de novo na madrugada de 22/11 (NPS do Pix Out Wallet do dia em 42,2) e o fim do cashback é a principal reclamação em contas e boletos. O NPS Relacional, sem as pesquisas de Cartão de Crédito, sobe a 47,1 (39,2) e as redes ficam 57% negativas.",
 "resumo": "Os destaques da W47 combinam dois incidentes (Link de Pagamento fora do ar e a falha de madrugada de Pix e checkout em 22/11, já medida no NPS e nas redes), dois temas críticos do Cartão (compra recusada e cartão físico que não chega) e o fim do cashback. Seguros tem uma anomalia sem evento registrado (Acidente e Renda) e o CSAT de Bloqueios e fraude segue abaixo do piso. Os demais itens são pontos de acompanhamento ou referências positivas.",
 "destaques": {
 "novos": [
@@ -164,7 +164,7 @@
 "x": "Acesso ao cadastro −15% e encerramento −13%; CSAT de 38,5% em base de 26 respostas.",
 "sl": "Estável",
 "s": "A W46 teve alta em 14 e 15/11, que coincide com a instabilidade do Pix; sem alta em 22/11.",
-"det": "Validação do cadastro fica estável (+3%) e o Reclame Aqui traz 6 de 21 reclamações de conta aprovada e depois reprovada. O NPS Relacional geral do app está em 36,4 (39,2), sem ser específico de Minha Conta.",
+"det": "Validação do cadastro fica estável (+3%) e o Reclame Aqui traz 6 de 21 reclamações de conta aprovada e depois reprovada. O NPS Relacional geral do app, sem as pesquisas de Cartão de Crédito, está em 47,1 (39,2), sem ser específico de Minha Conta.",
 "ex": [
 "e56",
 "e57",
