@@ -1,0 +1,247 @@
+{
+ "analise": {
+  "clientes": "O cliente de Cartão fala em W47 de compra recusada, de fatura que não esperava e de anuidade: 53% das conversas de uso do cartão citam recusa, mesmo com limite e em assinaturas recorrentes ou parceladas acima de 3 vezes. Na fatura, 38% citam empréstimo, 13% venda ou maquininha e 18% saldo ou limite garantido: acham que quitar o empréstimo ou receber uma venda não deveria gerar fatura. Em cancelar o cartão, 59% falam em cancelar ou encerrar e 27% em anuidade. Quem pede o físico (73% falam em chegada ou entrega) relata status \"entregue\" sem ter recebido e a taxa de R$ 20 que diz não ter visto.",
+  "mudou": "O suporte humano do Cartão cai 23,8% (16/11 a 21/11 contra 09/11 a 14/11), após o dia mais alto do mês em 03/11, e o NPS Transacional sobe de 45,6 para 56,1 (dados até 21/11). O CSAT vai de 75,0% para 70,0%. Os motivos se invertem: \"problemas com o uso do cartão\" sobe 56% e \"não recebeu o cartão físico\" 28%, enquanto fatura cai 38% e bloquear ou cancelar, 53%. Nas lojas, 19% das avaliações são positivas (32% na semana anterior) e 90% das interações nas redes são negativas (78%). No Reclame Aqui, as reclamações caem 47%.",
+  "atencao": [
+   "Compras recusadas com limite disponível sobem 56% no suporte humano; o cliente recebe \"declinada por segurança\" ou só aceita até 3 parcelas e não sabe o motivo (16/11 a 21/11).",
+   "Cartão físico com status \"entregue\" sem ter chegado e taxa de R$ 20 que o cliente diz não ter visto no app (tickets de 18/11 e 20/11); no tipo Investimento o motivo sobe 53%.",
+   "Fatura com origem em empréstimo ou venda do Tap to Pay segue citada no suporte, no NPS e no Reclame Aqui, mesmo com o motivo em queda de 38%."
+  ]
+ },
+ "motivos": [
+  {
+   "t": "Problemas com o uso do cartão",
+   "n": 302,
+   "ant": 194,
+   "var": "+56%",
+   "det": {
+    "res": "Mais da metade das conversas é compra recusada: o cliente tem limite, o cartão está desbloqueado e a transação é negada em lojas, assinaturas recorrentes e compras online; o motivo da recusa não aparece para ele.",
+    "dor": [
+     "<b>Recusa com limite:</b> 53% das conversas citam recusa ou compra negada, inclusive em compras no app de marketplace e delivery.",
+     "<b>Parcelado só em 3 vezes:</b> há relatos de que o app pede para refazer a compra em 3 parcelas e de que o cartão só aprova à vista.",
+     "<b>Recorrente e \"por segurança\":</b> assinaturas mensais negadas e mensagem \"declinamos sua compra por segurança\" sem explicar o motivo; 18% mencionam carteira digital ou cartão virtual."
+    ],
+    "exp": "Que uma compra feita com limite disponível seja aprovada ou, quando negada, que o cliente saiba o motivo.",
+    "falha": [
+     [
+      "Produto",
+      "A recusa chega sem motivo ao cliente, e o atendimento só confirma que limite e dados estão corretos. Indício: relatos de 16/11 a 20/11 repetem \"tenho limite\" e \"não diz o motivo\"."
+     ]
+    ],
+    "ex": [
+     "cc-1",
+     "cc-2",
+     "cc-3",
+     "cc-4",
+     "cc-5",
+     "cc-6"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Não entende porque recebeu uma fatura",
+   "n": 186,
+   "ant": 301,
+   "var": "-38%",
+   "det": {
+    "res": "O motivo recua desde o pico de 03/11, mas segue com o mesmo padrão: o valor de um empréstimo ou de uma venda virou limite no cartão e gerou fatura que o cliente não reconhece.",
+    "dor": [
+     "<b>Empréstimo pago, fatura aberta:</b> 38% das conversas citam empréstimo; o cliente quitou antes do prazo e vê a cobrança também no cartão.",
+     "<b>Venda que virou limite:</b> 13% falam de venda ou maquininha; o dinheiro recebido entrou como limite e voltou como fatura.",
+     "<b>Saldo que não quita sozinho:</b> 18% citam saldo ou limite garantido; esperam que o saldo da conta pague a fatura sem passo extra."
+    ],
+    "exp": "Que o valor de empréstimo ou venda não gere fatura e que, havendo fatura, o cliente veja de onde vem o valor.",
+    "falha": [
+     [
+      "Produto",
+      "Fatura e aviso não explicam a origem do valor. Indício: 12% dos clientes dizem que nunca pediram o cartão ou nunca o usaram."
+     ]
+    ],
+    "ex": [
+     "cc-7",
+     "cc-8",
+     "cc-9",
+     "cc-10",
+     "cc-11",
+     "cc-12"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Bloquear, desbloquear ou cancelar cartão",
+   "n": 140,
+   "ant": 295,
+   "var": "-53%",
+   "det": {
+    "res": "Metade do volume da semana anterior: o pedido é, em sua maioria, cancelar o cartão para não pagar anuidade, e há cliente que não encontra a opção de cancelar ou de pedir novo cartão no app.",
+    "dor": [
+     "<b>Cancelar por anuidade:</b> 27% citam anuidade ou os R$ 9,90 e 59% falam em cancelar ou encerrar.",
+     "<b>Cartão bloqueado e cobrado:</b> clientes com cartão bloqueado ou sem uso perguntam se precisam cancelar para parar a anuidade.",
+     "<b>Sem opção no app:</b> mensagem de \"não há cartões para cancelar\" e falta da opção de novo cartão físico após extravio."
+    ],
+    "exp": "Que cancelar o cartão encerre as cobranças e que o app ofereça a opção de cancelar ou pedir novo cartão.",
+    "falha": [
+     [
+      "Produto",
+      "O app mostra \"não há cartões para cancelar\" a quem tenta cancelar, e a regra da anuidade (6 meses sem uso) só aparece no atendimento. Indício: tickets de 19/11 e 21/11."
+     ]
+    ],
+    "ex": [
+     "cc-13",
+     "cc-14",
+     "cc-15",
+     "cc-16",
+     "cc-17",
+     "cc-18"
+    ]
+   },
+   "ex": null
+  },
+  {
+   "t": "Não recebeu o cartão físico",
+   "n": 113,
+   "ant": 88,
+   "var": "+28%",
+   "det": {
+    "res": "Cresce com o cartão físico em produção ou \"entregue\" sem ter chegado; o tipo Investimento concentra o aumento (49 contra 32 tickets) e parte reclama da taxa de R$ 20.",
+    "dor": [
+     "<b>Entregue que não chegou:</b> 73% das conversas falam de chegada, entrega ou rastreio; o app marca como entregue e o cliente diz não ter recebido.",
+     "<b>Prazo vencido:</b> pedidos \"em produção\" desde 04/11 e entregas com mais de um mês.",
+     "<b>Taxa de R$ 20:</b> clientes dizem não ter visto a cobrança e pedem devolução ao desistir pela demora."
+    ],
+    "exp": "Receber o cartão físico no prazo informado e saber, antes de pedir, que há taxa.",
+    "falha": [
+     [
+      "Produto",
+      "O status de entrega no app diverge do que o cliente relata e a taxa não é vista na solicitação. Indício: tickets de 18/11 e 20/11."
+     ]
+    ],
+    "ex": [
+     "cc-19",
+     "cc-20",
+     "cc-21",
+     "cc-22",
+     "cc-23",
+     "cc-24"
+    ]
+   },
+   "ex": null
+  }
+ ],
+ "temas": [
+  {
+   "canal": "NPS Transacional",
+   "t": "Limite baixo, travado ou sem uso",
+   "n": 61,
+   "tom": "neg",
+   "x": "Quem não consegue usar o limite, ou diz que ele não libera mesmo usando o cartão, dá nota baixa; quem elogia pede limite maior. 20% dos comentários de cartão dos últimos 30 dias citam limite."
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Anuidade, taxa e cashback",
+   "n": 83,
+   "tom": "neg",
+   "x": "Maior tema dos últimos 30 dias (27% dos comentários, 18% positivos): anuidade que o cliente diz não esperar, taxa do Pix no cartão e cashback que voltou ou caiu."
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Fatura e pagamento",
+   "n": 82,
+   "tom": "neg",
+   "x": "Débito automático que não ocorreu, juros sobre o próprio dinheiro e fatura gerada por saldo que o cliente colocou (21% de positivos)."
+  },
+  {
+   "canal": "NPS Transacional",
+   "t": "Praticidade e aceitação",
+   "n": 73,
+   "tom": "pos",
+   "x": "Quem elogia fala de cartão virtual, aceitação em vários lugares e facilidade de colocar dinheiro para virar limite (29% positivos no uso)."
+  }
+ ],
+ "exemplos": {
+  "Suporte": [
+   "cc-1",
+   "cc-7",
+   "cc-20"
+  ],
+  "NPS Transacional": [
+   "cc-25",
+   "cc-28",
+   "cc-34"
+  ],
+  "Lojas": [
+   "cc-37",
+   "cc-39",
+   "cc-40"
+  ],
+  "Redes": [
+   "cc-44",
+   "cc-45",
+   "cc-46"
+  ]
+ },
+ "mencoes": {
+  "texto": "Nas lojas, o Cartão aparece em 21 avaliações em 16/11 a 21/11 (28 em 09/11 a 14/11) e só 19% são positivas (32%): anuidade, fatura com valor descontado e cartão físico que não chegou. Nas redes são 21 interações, 90% negativas (78%), com fatura paga por empréstimo que o cliente diz não ter autorizado, compra parcelada recusada e juros do cartão. No Reclame Aqui, as reclamações sobre cartão, fatura e anuidade caem 47% (68 contra 129), com anuidade em cartão bloqueado, assinatura recusada e fatura após empréstimo ou venda do Tap to Pay.",
+  "ra": [
+   "cc-50",
+   "cc-51",
+   "cc-52"
+  ]
+ },
+ "eventos": [
+  {
+   "d": "03/11",
+   "tag": "Pico",
+   "t": "Dia mais alto do mês no suporte humano do Cartão, com \"não entende porque recebeu uma fatura\" em alta; o motivo cai 38% em 16/11 a 21/11 contra 09/11 a 14/11."
+  },
+  {
+   "d": "16/11",
+   "tag": "Produto",
+   "t": "\"Problemas com o uso do cartão\" sobe 56% em 16/11 a 21/11 e o tipo Concedido mais que dobra o motivo (94 contra 45 tickets); coincide com relatos de compras recusadas por segurança."
+  },
+  {
+   "d": "28/09",
+   "tag": "Produto",
+   "t": "Regra de anuidade de R$ 9,90 passa a valer só após 6 meses sem uso (informada pelo bot em ticket de 18/11); segue citada em cancelamentos e no Reclame Aqui."
+  }
+ ],
+ "jornada": {
+  "custos": "83 comentários em 30 dias (27% dos de cartão), 18% positivos, abaixo da média do produto (30%): anuidade, taxa do Pix no cartão e cashback; no Reclame Aqui, anuidade em cartão bloqueado.",
+  "fatura": "82 comentários (27%), 21% positivos, abaixo da média (30%): fatura de empréstimo ou venda, débito automático que falhou e juros; o motivo de fatura no suporte cai 38% em W47 parcial.",
+  "uso": "73 comentários (24%), 29% positivos, em linha com a média (30%); no suporte, \"problemas com o uso do cartão\" é o maior motivo e sobe 56%, com 53% das conversas citando recusa.",
+  "ativacao": "67 comentários (22%), 25% positivos; no suporte, \"não recebeu o cartão físico\" sobe 28% e 73% das conversas falam de chegada ou entrega.",
+  "limite": "61 comentários (20%), 25% positivos, abaixo da média: limite baixo, que não libera ou não aparece para uso.",
+  "encerramento": "29 comentários (9%), nenhum positivo: pedidos de cancelar o cartão; no suporte, bloquear ou cancelar cai 53%, com 59% das conversas falando em cancelar."
+ },
+ "subs": {
+  "cc_g": {
+   "analise": {
+    "clientes": "No Garantido, o contato é de fatura e cancelamento: \"não entende porque recebeu uma fatura\" (174 tickets) e \"bloquear, desbloquear ou cancelar\" (105) lideram, ligados a saldo ou limite garantido que o cliente não espera ver como fatura e à anuidade.",
+    "mudou": "O suporte humano do Garantido cai 33% (16/11 a 21/11 contra 09/11 a 14/11) e o NPS Transacional sobe de 44,1 para 56,9. Fatura cai 39% e bloquear ou cancelar, 56%; \"problemas com o uso do cartão\" sobe 14%.",
+    "atencao": [
+     "Fatura gerada por saldo ou limite garantido segue como maior motivo do tipo, apesar da queda."
+    ]
+   }
+  },
+  "cc_c": {
+   "analise": {
+    "clientes": "No Concedido, o contato é de uso: \"problemas com o uso do cartão\" é o maior motivo, com compras recusadas apesar do limite concedido; bloquear ou cancelar vem em seguida.",
+    "mudou": "O suporte humano do Concedido sobe 7% (16/11 a 21/11 contra 09/11 a 14/11) e o NPS Transacional vai de 52,6 para 58,3. O motivo de uso mais que dobra (94 contra 45 tickets) e bloquear ou cancelar cai 46%.",
+    "atencao": [
+     "Compras recusadas concentram o aumento do tipo."
+    ]
+   }
+  },
+  "cc_i": {
+   "analise": {
+    "clientes": "No Investimento, o contato é de uso e de entrega: \"problemas com o uso do cartão\" lidera e \"não recebeu o cartão físico\" vem em segundo, ligado ao cartão físico em produção ou entregue que não chegou.",
+    "mudou": "O suporte humano do Investimento sobe 16% (16/11 a 21/11 contra 09/11 a 14/11). O motivo de uso sobe 69% (110 contra 65 tickets) e o de cartão físico, 53% (49 contra 32). O NPS Transacional tem só 7 respostas na semana (13 na anterior), base pequena.",
+    "atencao": [
+     "Uso e cartão físico concentram o aumento do tipo."
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,722 @@
+[
+ {
+  "d": "22/11",
+  "t": "Pix e checkout falham por cerca de 3 horas",
+  "tipo": "Incidente",
+  "res": "Entre 00h18 e 03h21, pagamentos com wallet, sobretudo Pix, falharam (alerta de envio de Pix e P1 em Payments). Resolvido; conciliação de débitos de wallet segue pendente.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "ainda não medido (W47 parcial)"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Madrugada de domingo, com queda de 34% nas aprovações no período e cerca de 104 mil ordens com erro. Entre os tickets humanos do dia, 73% têm sentimento negativo e parte trata de Pix não concluído. O efeito em suporte, NPS e lojas ainda não foi medido porque 22/11 está fora do último dado consolidado (21/11).",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"Pix não concluído\" e \"instabilidade no app\" do Pix em W47 e W48, além de contatos sobre débito sem ordem aprovada."
+ },
+ {
+  "d": "22/11",
+  "t": "Tap to Pay: atraso no pagamento de vendas",
+  "tipo": "Incidente",
+  "res": "Alerta automático ligado às 02h00 e ainda ativo às 17h (14h05 em novo ciclo); atraso registrado até 19h34 segundo o monitoramento de impacto. Aviso do bot não apareceu nas conversas do período.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "ainda não medido (W47 parcial)"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "O alerta tinha previsão de 2h e ficou ligado quase 9 vezes esse tempo. Foram poucos contatos, todos com atendimento humano e a maioria sobre venda não recebida. Efeito ainda não medido em W47.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"não recebeu a venda\" de Tap to Pay em W47 e W48."
+ },
+ {
+  "d": "19/11",
+  "t": "Quedas do Admin (ferramenta interna)",
+  "tipo": "Incidente",
+  "res": "Duas quedas (12h57 a 13h27 e cerca de 17h28 a 18h03) e aba de Empréstimos fora até cerca de 20h28. Sem contatos atribuíveis de cliente.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "ainda não medido (W47 parcial)"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Parte da operação interna e todo o BPO ficaram sem acesso, com fila formada. O volume de tickets não subiu no período (13h a 20h em linha com a quinta anterior); o impacto foi na capacidade de atendimento, que o monitoramento de volume não mede.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em tempo de resposta e fila de 19/11, não em volume de contatos."
+ },
+ {
+  "d": "18/11",
+  "t": "Link de Pagamento desligado após ataque",
+  "tipo": "Incidente",
+  "res": "Na noite de 17/11 o produto sofreu ataque e o endpoint foi desligado; aviso no bot desde 15h59 de 18/11, ainda ativo em 19/11, com retorno previsto para 23/11.",
+  "imp": [
+   [
+    "Suporte",
+    "Atenção",
+    "18/11: contatos do produto cerca de 2,4x um dia útil normal; o que chegou ao humano cresceu cerca de 5x e o bot reteve 64%"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido; NPS do Link já vinha em queda na W46 (53,7 para 29,0), antes do desligamento"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Clientes interpretam como erro ou instabilidade e parte desconfia da própria conta; 23 dos 29 tickets humanos de 18/11 chegaram antes do aviso no bot. O NPS Tx do Link cair na W46 é anterior ao desligamento e não deve ser atribuído a ele.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"não recebeu a venda\" e dúvidas sobre disponibilidade do Link em W47 e na retomada de 23/11."
+ },
+ {
+  "d": "18/11",
+  "t": "Empréstimo: manutenção da Matera e virada do dia",
+  "tipo": "Incidente",
+  "res": "Virada do dia da Matera (01h00 a 04h35) com 1.632 usuários com contratação recusada e manutenção Matera/Oracle (21h00 a 22h50). Resolvido.",
+  "imp": [
+   [
+    "Suporte",
+    "Em linha",
+    "poucos contatos na virada; a janela da noite teve 2,4x a mesma janela de 11/11, com retenção do bot acima da média"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "O impacto apareceu mais no produto (contratações recusadas) do que no atendimento. Em 11/11 e 10/11 houve eventos parecidos na Matera, o que dificulta isolar o efeito de cada um.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"não consegue contratar\" do Empréstimo Pessoal em W47."
+ },
+ {
+  "d": "18/11",
+  "t": "Bloqueio de celular roubado e invasão valida só 2 dos 5 dados",
+  "tipo": "Mudança",
+  "res": "Nos formulários de segurança, o bloqueio automático passa a exigir só CPF e data de nascimento; e-mail e telefone viram evidência no ticket. Comunicado em #lideres-cx-e-cxm.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "ainda não medido (W47 parcial)"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Antes, errar qualquer dado gerava ticket humano por negativa. A fonte indica expectativa de redução desses casos em Conta Desativada; ainda não há medição.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"celular roubado ou furtado\" e \"suspeita de invasão\" de Conta Desativada em W47 e W48."
+ },
+ {
+  "d": "17/11",
+  "t": "Correção da rotina de desbloqueio de carteiras",
+  "tipo": "Mudança",
+  "res": "A revisão automática, parada de 08/11 a 15/11, voltou em parte a 16/11 (15h46) e roda o dia todo desde 17/11; backlog caiu de 5,6 mil carteiras (11/11) para cerca de 2,4 mil (21/11).",
+  "imp": [
+   [
+    "Suporte",
+    "Em linha",
+    "contatos de \"saldo da carteira bloqueado - todo o saldo\" caem cerca de 52% em 17/11 contra 16/11"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "A queda diária de contatos coincide com o retorno da rotina. Em 22/11 o backlog segue em 2,4 mil carteiras, com fila acima do SLA em CCRP Fraude com Merchant. Sentimento negativo no Zendesk em 55% em 7 dias (fonte: #cx_fraud).",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se a tendência se mantiver, \"saldo bloqueado\" de Carteira Desativada tende a recuar na W47 contra a W46; a leitura confirma na W48."
+ },
+ {
+  "d": "16/11",
+  "t": "Pix e parcelas de Empréstimo falham; segunda onda de recebimento do Pix",
+  "tipo": "Incidente",
+  "res": "Pagamento de parcelas por Pix QR e boleto (08h00 a 10h44), envio de Pix (09h26 a 10h38) e recebimento de Pix (até 07h13), atribuídos à falha de certificado com o BTG. Resolvido no dia.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "ainda não medido (W47 parcial)"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Em Empréstimo não houve aviso de instabilidade ao cliente. No Pix, o volume ficou cerca de 2x o de uma segunda normal no mesmo horário e o bot reteve menos que a média. Continuação direta do incidente de 14 a 15/11.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"pagamento de parcela\" no Empréstimo e em \"transação Pix\" em W47."
+ },
+ {
+  "d": "16/11",
+  "t": "CDB 107% do CDI com liquidez diária sai do app",
+  "tipo": "Mudança",
+  "res": "Por estratégia de produto, a oferta 107% foi retirada; fica o CDB 103%. Quem já tem 107% mantém até o vencimento; reinvestimento automático vai a 103%. Vencimentos começaram em 17/11.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "ainda não medido (W47 parcial)"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "A retenção potencial informada é de R$ 29 milhões em 2 semanas, com maioria de clientes com opt-in ativo. A fonte pede acompanhamento do efeito no CX; não há medição ainda.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"resgate antecipado\" e dúvidas de reinvestimento do CDB em W47 e W48."
+ },
+ {
+  "d": "14/11",
+  "t": "Pix cai por certificado vencido do BTG",
+  "tipo": "Incidente",
+  "res": "Certificado venceu às 23h22 de 14/11; Pix Out, chaves e Pix In falharam de forma intermitente; normalizado às 10h12 de 15/11. Aviso na Central ligou às 23h33 e ficou até 13h.",
+  "imp": [
+   [
+    "Suporte",
+    "Crítico",
+    "suporte humano do Pix +91% na W46; \"instabilidade no app\" de 42 para 628"
+   ],
+   [
+    "NPS Tx",
+    "Em linha",
+    "NPS Tx do Pix estável em 65,1 na W46; NPS geral da empresa cai a 63,6, o menor em 10 semanas"
+   ],
+   [
+    "Lojas",
+    "Atenção",
+    "avaliações negativas do dia 15/11 concentradas em Pix pendente ou fora do ar"
+   ],
+   [
+    "Redes",
+    "Atenção",
+    "DMs no Instagram em 15/11 muito acima da média dos 4 domingos anteriores"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Maior incidente dos últimos 30 dias em contatos; o bot reteve só 12% e a fila passou de 520 clientes. Nenhum alerta avisou do vencimento. Sentimento negativo de 82% nos tickets com sentimento; dores: Pix pendente, orientação genérica do bot e urgência.",
+  "marca": "Reputação exposta nas lojas e no Instagram no dia 15/11; sem leitura de Reclame Aqui nesta rodada.",
+  "pred": "O efeito residual aparece em \"instabilidade no app\" e \"stores\" no início da W47 e na leitura de NPS Tx da W47."
+ },
+ {
+  "d": "12/11",
+  "t": "Cerca de 500 usuários bloqueados por Risk & Fraud",
+  "tipo": "Comunicado",
+  "res": "Bloqueio de wallet e conta cartão por análise de segurança; orientação de não desbloquear nem abrir derivação, com resposta padrão ao cliente. Ativo.",
+  "imp": [
+   [
+    "Suporte",
+    "Atenção",
+    "Carteira Desativada mais que dobra na W46; coincide também com a falha da rotina de desbloqueio"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "sem leitura isolada"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "A própria equipe de atendimento previu contatos de conta bloqueada nos dias seguintes. A fila de carteiras e a falha da rotina de desbloqueio (desde 07/11) se sobrepõem no mesmo período, então o efeito isolado deste bloqueio não é separável.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"conta desativada\" e \"saldo bloqueado\" em W47."
+ },
+ {
+  "d": "11/11",
+  "t": "Recusas antifraude em compras no Mercado Pago/Livre com cartão",
+  "tipo": "Mudança",
+  "res": "Desde 11/11 as recusas antifraude subiram para 3,5 a 4,9 mil por dia (de cerca de 600), cerca de 79% em Mercado Pago/Livre. Segundo o Risco, houve ataque e o bloqueio é intencional; ainda sem sinal de retirada em 18/11.",
+  "imp": [
+   [
+    "Suporte",
+    "Crítico",
+    "\"problemas com o uso do cartão\" mais que dobra na W46 (91 para 209); de cerca de 14 para 42 por dia"
+   ],
+   [
+    "NPS Tx",
+    "Atenção",
+    "NPS do Cartão sobe 4,4 pts a 45,8, ainda abaixo do mínimo de 55; CSAT cai a 75,5%"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Clientes não entendem o motivo (o push não orienta quem fez a compra) e apenas cerca de 2% dos afetados ligam, segundo a fonte. O tema passou de 4,8% a 15,8% dos contatos humanos de cartão.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se o bloqueio seguir, \"problemas com o uso do cartão\" permanece elevado em W47."
+ },
+ {
+  "d": "10/11",
+  "t": "Matera: virada do dia sem concluir, renegociação indisponível",
+  "tipo": "Incidente",
+  "res": "Das 01h32 às 14h09 a virada não terminou; renegociação de contratos ficou indisponível (contratação e pagamento de contratos antigos seguiram). Normalizado às 14h09.",
+  "imp": [
+   [
+    "Suporte",
+    "Em linha",
+    "volume abaixo das 4 terças anteriores no mesmo horário; pedidos de renegociação caíram"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "sem leitura isolada"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "O aviso dizia que a contratação estava parada, mas só a renegociação estava. Nenhum ticket cita a Matera. O efeito aparece no produto, não no atendimento.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Pouco efeito esperado em contatos; o monitoramento é a renegociação de Empréstimo em W46."
+ },
+ {
+  "d": "09/11",
+  "t": "Equifax instável e erro 500 em endpoints de Empréstimo",
+  "tipo": "Incidente",
+  "res": "Entre 13h53 e 15h54, desembolsos falharam para cerca de 391 usuários em 80 minutos. Aviso de instabilidade não foi ativado. Resolvido.",
+  "imp": [
+   [
+    "Suporte",
+    "Em linha",
+    "volume abaixo das 4 segundas anteriores; nenhum ticket humano cita a falha"
+   ],
+   [
+    "NPS Tx",
+    "Atenção",
+    "NPS do Empréstimo Pessoal cai a 64,0 e CSAT a 61,7% (−10,9 pp) na W46; coincide com o incidente, sem prova de causa"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "O impacto foi no produto, não nos contatos. A queda de CSAT e NPS do Empréstimo na W46 coincide com a semana do incidente, mas outros eventos de Empréstimo também ocorreram (Matera em 10/11).",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"não consegue contratar\" e em CSAT do Empréstimo na W47."
+ },
+ {
+  "d": "09/11",
+  "t": "Cartão: cancelamento e reemissão no app e negociação do saldo devedor total",
+  "tipo": "Lançamento",
+  "res": "Rollout faseado de cancelamento e reemissão de cartão físico no app (R$ 20 pela 2ª via) e de renegociação de todo o saldo devedor. Sem estoque Gold e Standard, pedido de físico removido em 13/11.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "sem leitura comparável nas fontes lidas; fonte aponta demanda reprimida de anuidade"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "A tela de motivo teve 54% de decisões em 09 a 17/11; a subida para 100% estava prevista para 18/11. Sem medição de efeito nos contatos.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"cancelar o cartão\" e em pedidos de segunda via do Cartão em W47."
+ },
+ {
+  "d": "06/11",
+  "t": "Queda do DICT do Banco Central",
+  "tipo": "Incidente",
+  "res": "Sexta, 19h26 a 21h02 (P2). Resolvido.",
+  "imp": [
+   [
+    "Suporte",
+    "Atenção",
+    "204 tickets de Pix no dia; \"problemas com transação\" de 145 para 227 na W45; bot reteve 13,6%"
+   ],
+   [
+    "NPS Tx",
+    "Crítico",
+    "NPS Tx do Pix em 65,1 na W45, o menor da série"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "sem leitura"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Entre os tickets humanos, 44% eram de Pix não concluído ou não recebido. Foi de 2,2 a 5 vezes o volume das sextas anteriores no mesmo horário.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "O efeito residual aparece na W46, junto com a nova queda de Pix."
+ },
+ {
+  "d": "05/11",
+  "t": "Fim do cashback em contas e boletos pagos com saldo",
+  "tipo": "Mudança",
+  "res": "A partir de 05/11 deixam de gerar cashback (PF e PJ). Comunicado por e-mail e push a cerca de 130 mil clientes em 04/11; cashback acumulado preservado.",
+  "imp": [
+   [
+    "Suporte",
+    "Crítico",
+    "Contas e Boletos de 52 para 246 na W45 (pico no dia 05/11); normaliza desde 13/11"
+   ],
+   [
+    "NPS Tx",
+    "Atenção",
+    "NPS de Contas e Boletos cai 11,8 pts na W46"
+   ],
+   [
+    "Lojas",
+    "Em linha",
+    "avaliação do app estável (4,09 contra 4,11), segundo painel de impacto até 16/11"
+   ],
+   [
+    "Redes",
+    "Crítico",
+    "sentimento negativo de 22% para 60% nos primeiros dias, segundo o painel de impacto"
+   ],
+   [
+    "Reputação",
+    "Atenção",
+    "46 de 153 tickets lidos citam saída ou risco de saída"
+   ]
+  ],
+  "analise": "Clientes reclamam de renda perdida, taxa do cartão e aviso na véspera. TPV de Bills com saldo de PJ cai 14% por dia útil contra outubro. O pico de contatos foi pontual e passou em 13/11.",
+  "marca": "Sentimento negativo nas redes subiu de 22% para 60% nos primeiros dias, segundo a fonte.",
+  "pred": "O efeito tende a ficar em NPS e redes; contatos já voltaram ao normal."
+ },
+ {
+  "d": "05/11",
+  "t": "Teste da taxa de 4,99% no Pix com cartão de crédito",
+  "tipo": "Mudança",
+  "res": "Para 50% dos clientes com limite concedido, a taxa passa de 2,99% para 4,99%; clientes na mesma situação podem ver taxas diferentes.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "sem comparação direta: contagem parcial na W45"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Na W45 só 34% dos tickets de Pix Out tinham resumo de conversa, então a comparação com a semana anterior não é direta.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"taxa do Pix com cartão\" em Pix CC."
+ },
+ {
+  "d": "02/11",
+  "t": "Cobrança de R$ 9,90 por inatividade no cartão",
+  "tipo": "Mudança",
+  "res": "Cobrança de 02/11 atingiu cerca de 48,3 mil clientes, quase o dobro dos lotes anteriores; pico de contatos em 03/11, como nas ondas de 08/10, 13/10 e 30/10.",
+  "imp": [
+   [
+    "Suporte",
+    "Crítico",
+    "Cartão +26,7% na W45; \"não entende porque recebeu uma fatura\" de 207 para 367"
+   ],
+   [
+    "NPS Tx",
+    "Crítico",
+    "NPS do Cartão de 52,3 para 41,2 na W45; segue 45,8 na W46, abaixo do mínimo de 55"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "Clientes pedem cancelamento, dizem não reconhecer o cartão e reclamam que a cobrança lançada não é estornada. Cancelar o cartão não encerra a conta cartão, e a cobrança continua.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "O efeito residual aparece em \"cancelar o cartão\" e isenção de anuidade nas próximas ondas."
+ },
+ {
+  "d": "29/10",
+  "t": "Login bloqueado fora do Brasil",
+  "tipo": "Mudança",
+  "res": "Desde 29/10 o WAF só aceita acesso do Brasil; quem tenta de outro país vê \"problema com a gente\". Cerca de 2.600 usuários únicos afetados; exceção em avaliação, sem definição em 04/11.",
+  "imp": [
+   [
+    "Suporte",
+    "Sem efeito",
+    "sem leitura isolada"
+   ],
+   [
+    "NPS Tx",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Lojas",
+    "Sem efeito",
+    "ainda não medido"
+   ],
+   [
+    "Redes",
+    "Atenção",
+    "reclamações já aparecem nas redes, segundo a fonte"
+   ],
+   [
+    "Reputação",
+    "Sem efeito",
+    "sem leitura ainda"
+   ]
+  ],
+  "analise": "A mensagem se parece com falha do próprio RecargaPay. Em #cxm-team consta uma conta de clientes no exterior sem acesso ao app, ainda por concluir.",
+  "marca": "Sem leitura de marca até aqui.",
+  "pred": "Se houver efeito, ele aparece em \"não consegue acessar o app\" de Minha Conta."
+ }
+]

@@ -1,0 +1,58 @@
+{
+ "pasta": "1ZEWdNRx9Hb09SbylBFLkgX1PLi25bxG6",
+ "formato": "https://lh3.googleusercontent.com/d/<id>=w400",
+ "padrao_por_produto": {
+  "_ (genérica)": {
+   "id": "1IHaWUCXxrBrtsxgcBlxTh5JaSoGbOMMs",
+   "nome": "media-atencao"
+  },
+  "pix": {
+   "id": "1LbV6FWjIDl06HSLiGWgTx_oczTbVOr39",
+   "nome": "media-celular-pix"
+  },
+  "cartao": {
+   "id": "1G9fI1L4EvwIVDgHTJSDeq-o_rf70eFQd",
+   "nome": "onboarding-offer-cartao-cashback"
+  },
+  "emprestimo": {
+   "id": "1d07zoUjKi3hOieTLWr5O1z8c9IY02Pjh",
+   "nome": "media-rp-empresta"
+  },
+  "t2p": {
+   "id": "1PxAFlj6fbSoZSzzMmjd1xIzIYhoO3AxA",
+   "nome": "media-ccrp-taptopay-circular"
+  },
+  "link": {
+   "id": "1coBm8idviYCCIZLG7IFJ1D5T7MfL0omP",
+   "nome": "media-pagamento-multiplo"
+  },
+  "conta": {
+   "id": "1PiVbmBTFM1AreGRzBT_vKiV5Tw1HSDDS",
+   "nome": "media-conta-atencao"
+  },
+  "seguros": {
+   "id": "1YAh50j2jrGFmpOc033oHpKAbtB6biDKu",
+   "nome": "media-cadeado"
+  },
+  "cdb": {
+   "id": "1FaWpztB4nKO6EQkegcTUCwPwPIL10EyN",
+   "nome": "media-evolucao-investimento"
+  },
+  "transp": {
+   "id": "1IE8ZGjG0ajqNglRXvokaMvLvKnbceVEs",
+   "nome": "media-bilhete-transporte"
+  },
+  "fraude": {
+   "id": "17gN8pInhyH3YPvOGwFAfm993U1mxXG63",
+   "nome": "media-golpe-fraude-atencao"
+  },
+  "boletos": {
+   "id": "1yXTaRiMbjXzEWGWFyTaeDAW5rkmZgrXp",
+   "nome": "media-boleto-celular"
+  },
+  "topup": {
+   "id": "1LU1E91gcAthQ3K4Irt5BEDTf-aZgTwr_",
+   "nome": "media-celular-sucesso"
+  }
+ }
+}
