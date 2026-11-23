@@ -1,7 +1,7 @@
 {
  "analise": {
   "clientes": "O cliente de Contas e Boletos reclama do fim do cashback no pagamento de contas e boletos: o tema domina os tickets, as avaliações de loja e os comentários do NPS, e há quem fale em encerrar a conta ou use o app como renda extra. Há dúvida sobre pagar no cartão de crédito e sobre a taxa. Quem emite boleto de cobrança relata pagamento que não compensa e limite mensal de emissão.",
-  "mudou": "Dados até 21/11. Suporte humano cai 56,2% frente aos mesmos 6 dias da W46, com \"não recebi o cashback\" em −84% e \"informações sobre bônus e cashback\" em −42%, após o pico seguinte à descontinuação do cashback em 05/11; \"quero cancelar um pagamento\" sobe 133%. NPS Transacional vai de 57,7 para 63,3; CSAT cai de 89,3% para 66,7% (base de 15 respostas).",
+  "mudou": "Suporte humano cai 55,4% frente à W46, com \"não recebi o cashback\" em −82% e \"informações sobre bônus e cashback\" em −42%, após o pico seguinte à descontinuação do cashback em 05/11; \"quero cancelar um pagamento\" sobe 133% (base pequena). NPS Transacional vai de 57,7 para 63,3; CSAT cai de 89,3% para 75,0% (base de 16 respostas, contra 28). Em 22/11, dia do incidente de Pix e checkout, não há alta de contatos do produto.",
   "atencao": [
    "Perfil de renda extra com boletos fala em encerrar a conta ou deixar de usar o app (lojas de 10/11 e 14/11; redes de 11/11).",
    "Pagamento com cartão de crédito debitado do saldo e comprovante sem a taxa do cartão (tickets de 18/11 e 20/11; NPS de 22/11).",
@@ -11,9 +11,9 @@
  "motivos": [
   {
    "t": "Não recebi o cashback",
-   "n": 8,
-   "ant": 50,
-   "var": "−84%",
+   "n": 9,
+   "ant": 51,
+   "var": "−82%",
    "det": {
     "res": "O cliente nota que pagar contas e boletos não gera mais cashback; parte pergunta como ganhar pagando com saldo da carteira e parte entende que só o pagamento com cartão de crédito rende.",
     "dor": [
@@ -139,9 +139,9 @@
   {
    "canal": "NPS Transacional",
    "t": "Pedido de crédito e limite",
-   "n": 16,
+   "n": 14,
    "tom": "pos",
-   "x": "Clientes satisfeitos pedem limite de crédito ou empréstimo; 16 dos 65 comentários da W47."
+   "x": "Clientes satisfeitos pedem limite de crédito ou empréstimo; 14 dos 70 comentários da W47."
   },
   {
    "canal": "NPS Transacional",
@@ -194,11 +194,11 @@
   }
  ],
  "jornada": {
-  "pagamento": "Etapa de maior volume: 169 menções em 30 dias (126 antes), 55% positivas contra 66%. Dúvidas de processamento, boleto pago que consta cancelado e cobrança no saldo (tickets de 16/11 a 21/11).",
-  "cashback": "67 menções (35 antes), quase o dobro; positivas caem de 66% para 40%. Coincide com a suspensão do cashback em 05/11; lojas e NPS dizem \"gostava do cashback\" e \"retiraram os ganhos\".",
-  "taxas": "48 menções (54 antes), 73% positivas contra 69%. Pergunta recorrente se pagar no cartão tem juros ou taxa; um cliente de 22/11 pede comprovante com a taxa do cartão.",
-  "renda": "25 menções (17 antes); positivas caem de 76% para 44%. Quem recebe boletos de terceiros fala em perder a renda extra (loja, 12/11; redes, 11/11).",
-  "compensacao": "18 menções (27 antes), 61% positivas contra 78%. Boletos pagos que não entram na carteira ou aparecem cancelados (tickets de 16/11 e 17/11).",
-  "atendimento": "28 menções (32 antes); positivas caem de 91% para 71%. Cliente diz ter pago \"muitas taxas\" e ouvir que não há o que fazer (ticket de 19/11)."
+  "pagamento": "Etapa de maior volume: 147 menções em 30 dias (111 antes), 52% positivas contra 64%. Dúvidas de processamento, boleto pago que consta cancelado e cobrança no saldo (tickets de 16/11 a 21/11).",
+  "cashback": "59 menções (32 antes), quase o dobro; positivas caem de 66% para 34%. Coincide com a suspensão do cashback em 05/11; lojas e NPS dizem \"gostava do cashback\" e \"retiraram os ganhos\".",
+  "taxas": "47 menções (53 antes), 74% positivas contra 68%. Pergunta recorrente se pagar no cartão tem juros ou taxa; um cliente de 22/11 pede comprovante com a taxa do cartão.",
+  "renda": "24 menções (16 antes); positivas caem de 75% para 42%. Quem recebe boletos de terceiros fala em perder a renda extra (loja, 12/11; redes, 11/11).",
+  "compensacao": "18 menções (25 antes), 61% positivas contra 76%. Boletos pagos que não entram na carteira ou aparecem cancelados (tickets de 16/11 e 17/11).",
+  "atendimento": "27 menções (31 antes); positivas caem de 90% para 70%. Cliente diz ter pago \"muitas taxas\" e ouvir que não há o que fazer (ticket de 19/11)."
  }
 }

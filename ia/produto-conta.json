@@ -1,9 +1,9 @@
 {
  "analise": {
   "clientes": "O cliente de Minha Conta quer entrar no app, abrir ou encerrar a conta, e a selfie é o ponto que trava: reconhecimento facial recusado, câmera que não abre e falta de alternativa à foto repetem-se nos tickets. No Reclame Aqui, 6 das 21 reclamações da W47 falam de conta aprovada que depois aparece como reprovada, junto a e-mails de crédito pré-aprovado. Nas lojas, nenhuma das 5 avaliações da W47 é positiva: selfie recusada e acesso bloqueado.",
-  "mudou": "Dados até 21/11. Suporte humano cai 22,5% frente aos mesmos 6 dias da W46, puxado por acesso ao cadastro (−32%) e encerramento (−29%); validação sobe 13% e atendimento não prestado, 56%. O CSAT fica em 34,8% (base de 23 respostas), contra 88,9% na W46. O NPS Relacional geral do app está em 45,6, contra 35,9 (não é específico de Minha Conta).",
+  "mudou": "Suporte humano cai 12,3% frente à W46: de segunda a sexta o volume fica estável (+3%) e a queda vem do fim de semana (a W46 teve alta em 14/11 e 15/11, que coincide com a instabilidade do Pix). Acesso ao cadastro cai 15% e encerramento 13%; validação sobe 3% e atendimento não prestado, 32% (base pequena). O CSAT fica em 38,5% (base de 26 respostas), contra 88,9% na W46. O NPS Relacional geral do app está em 36,4, contra 39,2 (não é específico de Minha Conta). Em 22/11, dia do incidente de Pix e checkout, não há alta de contatos.",
   "atencao": [
-   "CSAT do Suporte humano em 34,8% na W47, contra 88,9% na W46; base pequena (23 respostas na W47, 18 na W46).",
+   "CSAT do Suporte humano em 38,5% na W47, contra 88,9% na W46; base pequena (26 respostas na W47, 18 na W46).",
    "Reclame Aqui: 6 das 21 reclamações da W47 citam conta aprovada e depois reprovada, com e-mail de crédito pré-aprovado; sem solução registrada.",
    "Tickets citam aviso de encerramento da conta com data futura (05/12 e 18/12), inclusive por descumprimento dos Termos e Condições."
   ]
@@ -11,9 +11,9 @@
  "motivos": [
   {
    "t": "Não consegue acessar seu cadastro",
-   "n": 234,
-   "ant": 344,
-   "var": "−32%",
+   "n": 323,
+   "ant": 379,
+   "var": "−15%",
    "det": {
     "res": "Quem não entra no app relata a selfie de reconhecimento facial que não passa, mesmo reinstalando e com boa luz, o código que chega mas leva de novo à selfie e a conta que aparece como reprovada ou encerrada sem explicação.",
     "dor": [
@@ -41,9 +41,9 @@
   },
   {
    "t": "Solicita encerramento do cadastro",
-   "n": 119,
-   "ant": 168,
-   "var": "−29%",
+   "n": 163,
+   "ant": 188,
+   "var": "−13%",
    "det": {
     "res": "O cliente pede encerrar a conta e os produtos vinculados; há quem cite aviso de encerramento com data, conta PJ de sócia falecida e quem queira desativar só o Tap to Pay, mantendo a conta pessoal.",
     "dor": [
@@ -70,9 +70,9 @@
   },
   {
    "t": "Não consegue validar seu cadastro",
-   "n": 96,
-   "ant": 85,
-   "var": "+13%",
+   "n": 105,
+   "ant": 102,
+   "var": "+3%",
    "det": {
     "res": "É a selfie: reconhecimento facial recusado em loop, câmera que não abre e documentos que o fluxo não aceita, como a CIN e o passaporte de estrangeiros com CPF ativo.",
     "dor": [
@@ -101,8 +101,8 @@
   {
    "t": "Atendimento não prestado",
    "n": 25,
-   "ant": 16,
-   "var": "+56%",
+   "ant": 19,
+   "var": "+32%",
    "det": {
     "res": "Reúne casos que não cabem em outro motivo: conta cancelada sem aviso, familiar que não consegue acessar o app com o salário depositado e e-mails de crédito disponível sem conseguir entrar.",
     "dor": [
@@ -198,11 +198,11 @@
   }
  ],
  "jornada": {
-  "abertura": "Etapa de maior volume: 37 menções em 30 dias (53 nos 30 dias anteriores), 41% positivas contra 26%. Quem comenta fala de cadastro demorado (loja, 16/11) e conta aprovada e depois reprovada.",
-  "app": "19 menções (32 antes), 37% positivas contra 25%. Base pequena; os comentários tratam de praticidade do app e dos ajustes de cadastro de cartão.",
+  "abertura": "Etapa de maior volume: 31 menções em 30 dias (41 nos 30 dias anteriores), 35% positivas contra 17%. Quem comenta fala de cadastro demorado (loja, 16/11) e conta aprovada e depois reprovada.",
+  "app": "16 menções (26 antes), 31% positivas contra 19%. Base pequena; os comentários tratam de praticidade do app e dos ajustes de cadastro de cartão.",
   "acesso": "12 menções (8 antes) e só 1 positiva: selfie nunca reconhecida e acesso bloqueado ao trocar de aparelho (lojas, 14/11 e 17/11). Cresce enquanto o volume geral cai.",
-  "validacao": "8 menções (3 antes), nenhuma positiva, em ambos os períodos. Lojas de 15/11 e 18/11 falam de dias tentando validar a selfie e erro de biometria após reiniciar o aparelho.",
-  "atendimento": "11 menções (8 antes), 2 positivas. Loja de 15/11: \"vou no suporte e eles não resolve nada\"; no Reclame Aqui, clientes dizem não achar suporte sem estar logados.",
-  "dados": "10 menções (15 antes), 50% positivas contra 27%. Base pequena; e-mail ou telefone antigo aparece no acesso e na recuperação da conta."
+  "validacao": "7 menções (3 antes), nenhuma positiva, em ambos os períodos. Lojas de 15/11 e 18/11 falam de dias tentando validar a selfie e erro de biometria após reiniciar o aparelho.",
+  "atendimento": "9 menções (8 antes), 1 positiva. Loja de 15/11: \"vou no suporte e eles não resolve nada\"; no Reclame Aqui, clientes dizem não achar suporte sem estar logados.",
+  "dados": "9 menções (11 antes), 44% positivas contra 9%. Base pequena; e-mail ou telefone antigo aparece no acesso e na recuperação da conta."
  }
 }
