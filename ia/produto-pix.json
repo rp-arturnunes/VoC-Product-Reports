@@ -34,10 +34,7 @@
      "pix-3",
      "pix-4",
      "pix-5",
-     "pix-6",
-     "pix-7",
-     "pix-8",
-     "pix-9"
+     "pix-6"
     ]
    },
    "ex": null
@@ -67,7 +64,6 @@
      "pix-12",
      "pix-13",
      "pix-14",
-     "pix-15",
      "pix-16"
     ]
    },
@@ -222,7 +218,7 @@
   "pix_in": {
    "analise": {
     "clientes": "Pix In cai 52,5% no suporte humano em W47 (dados até 21/11) frente aos mesmos dias da W46, que teve a instabilidade de 15/11 concentrada em recebimento. Os contatos restantes são de Pix recebido que não aparece no saldo e de chave com erro de conta bloqueada; \"instabilidade no app\" some do ranking.",
-    "mudou": "\"Problemas com uma transação Pix\" vai de 50 a 37 e \"instabilidade no app\" de 24 a 3 nos mesmos dias comparáveis; \"denunciar um Pix indevido\" de 32 a 5. Pix In não tem NPS próprio.",
+    "mudou": "\"Problemas com uma transação Pix\" cai 26%, \"instabilidade no app\" 88% e \"denunciar um Pix indevido\" 84% nos mesmos dias comparáveis. Pix In não tem NPS próprio.",
     "atencao": [
      "Chave Pix com erro de conta bloqueada para quem paga (ticket 46790539, 16/11), ainda sem outros registros."
     ]
@@ -278,7 +274,7 @@
   "pix_wallet": {
    "analise": {
     "clientes": "O Pix Out Wallet tem o menor recuo do suporte humano (−14,3% em W47, dados até 21/11) e o NPS Transacional cai de 62,5 para 59,3, com 49 detratores em 313 comentários. Quem usa a carteira reclama de bloqueio ou verificação que trava o Pix mesmo com saldo e de não ver o saldo na hora de enviar.",
-    "mudou": "Suporte humano −14,3% (96 contra 112 nos mesmos dias comparáveis em tickets); \"problemas com uma transação\" sobe de 13 a 22 e \"atendimento não prestado\" de 4 a 11, enquanto \"denunciar um Pix indevido\" cai de 53 a 22. NPS Transacional 59,3 (62,5).",
+    "mudou": "Suporte humano −14,3% nos mesmos dias comparáveis; \"problemas com uma transação\" sobe 69% e \"atendimento não prestado\" sobe mais de 2 vezes, enquanto \"denunciar um Pix indevido\" cai 58%. NPS Transacional 59,3 (62,5).",
     "atencao": [
      "Bloqueio da carteira sem aviso e Pix negado com saldo aparecem no NPS 0 (18/11) e em loja (19/11, 22/11); redes de 22/11 citam \"sem saldo\" com saldo."
     ]
@@ -291,13 +287,6 @@
      "n": 11,
      "tom": "neg",
      "x": "Bloqueio sem aviso e Pix negado com saldo; saldo não exibido na hora de enviar."
-    },
-    {
-     "canal": "NPS Transacional",
-     "t": "Rapidez e praticidade",
-     "n": 0,
-     "tom": "pos",
-     "x": "Elogio à rapidez e à facilidade de enviar Pix; etapa com 84% de comentários positivos em 30 dias."
     }
    ],
    "exemplos": {
@@ -319,7 +308,7 @@
   "pix_cc": {
    "analise": {
     "clientes": "O Pix Out CC mantém NPS Transacional estável em 67,6 em W47, mas o suporte humano de Pix CC cai 43,3% (dados até 21/11) e os comentários giram em torno da taxa de 4,99%, de Google Pay e Apple Pay (antes 3,99%) e de golpe contestado sem devolução.",
-    "mudou": "Suporte humano de Pix CC (cartão RecargaPay e de terceiros) cai de 60 para 34 nos mesmos dias comparáveis; \"problemas com uma transação\" de 17 a 4. Pix Out CC NPS 67,6 (67,6), com 44 detratores em 238 comentários. A maior parte das conversas de Pix com cartão está classificada em Pix Out, por isso seus motivos estão no produto.",
+    "mudou": "Suporte humano de Pix CC (cartão RecargaPay e de terceiros) cai 43,3% nos mesmos dias comparáveis; \"problemas com uma transação\" cai 76%. Pix Out CC NPS 67,6 (67,6), com 44 detratores em 238 comentários. A maior parte das conversas de Pix com cartão está classificada em Pix Out, por isso seus motivos estão no produto.",
     "atencao": [
      "Taxa de 4,99% sem aviso, inclusive no Google Pay e Apple Pay: 28 de 238 comentários do NPS Pix Out CC citam taxa.",
      "Limite de crédito exibido em todas as ações do cartão é citado como risco de segurança (NPS 0, 18/11)."
